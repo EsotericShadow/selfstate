@@ -68,3 +68,11 @@
 4. Mutate resources and practice lineages through usefulness, memory strength, maintenance burden, adaptation, or forgetting.
 5. Record emergent effects without assigning intent or unlocking a named technology.
 6. Keep hidden laws audit-only and preserve the timeline for save/return.
+
+## Deep-time to village feedback loop
+
+1. A compressed epoch creates an emergent effect from pressure and lineage state.
+2. The effect is applied to one resident as schedule and memory pressure.
+3. The Village Board receives a concern and proposal tied to the effect.
+4. The Reality Constraint Ledger records the effect as an obligation, not free construction.
+5. The player can support, question, wait, or ignore the resulting proposal.

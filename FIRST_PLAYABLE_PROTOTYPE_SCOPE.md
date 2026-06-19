@@ -31,3 +31,7 @@ A new player can enter the village, learn that residents have their own concerns
 - New consciousness/metaphysics mechanics.
 - Full 3D engine replacement.
 - Production backend persistence.
+
+## Deep-time prototype target
+
+The first prototype may include a compressed million-year simulation as long as it remains tied to the one-village playable loop. Deep-time effects should become resident schedules, memories, public proposals, and audit rows rather than detached lore text.

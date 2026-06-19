@@ -2167,6 +2167,8 @@ function ensureDeepTimeCivilization() {
       timeline: [],
       lineages: [],
       emergentEffects: [],
+      villageConsequences: [],
+      boardLinks: [],
       extinctions: [],
       pressureLedger: [],
       entropyLedger: [],
@@ -2289,6 +2291,7 @@ function runCivilizationDeepTimeEpoch(yearOverride) {
     outcome: effectSource.status === 'forgotten' ? 'trace fossil only' : (effectSource.status === 'burdened' ? 'costly survival habit' : 'living cultural technique'),
   };
   sim.emergentEffects.push(effect);
+  applyDeepTimeEffectToVillage(effect, delta);
   sim.timeline.push({
     epoch: sim.epoch,
     year: sim.year,
@@ -2300,6 +2303,93 @@ function runCivilizationDeepTimeEpoch(yearOverride) {
   });
   recordPrototypeMilestone('deep-time-epoch', `+${years} years; ${pressure}; effect ${effect.effect_id}`);
   return log('runCivilizationDeepTimeEpoch', { yearsAdvanced: years, year: sim.year, pressure, lineages: lineages.length, effects: sim.emergentEffects.length, entropy });
+}
+
+function applyDeepTimeEffectToVillage(effect, resourceDelta = null) {
+  const sim = ensureDeepTimeCivilization();
+  const board = ensureVillageBoard();
+  const residentNames = Object.keys(world.residents);
+  const resident = residentNames[(effect.epoch + effect.local_name.length) % residentNames.length];
+  const consequenceId = `DTC-${String(sim.villageConsequences.length + 1).padStart(3, '0')}`;
+  const scheduleVerb = effect.outcome.includes('trace') ? 'asks elders about' : effect.outcome.includes('costly') ? 'maintains' : 'teaches';
+  mutateResident(resident, {
+    trust: effect.outcome.includes('costly') ? -0.004 : 0.006,
+    progress: effect.outcome.includes('trace') ? 0.002 : 0.01,
+    schedule: `${scheduleVerb} ${effect.local_name}`,
+    memory: `carries deep-time effect ${effect.effect_id}: ${effect.local_name}`,
+    historyEvent: 'deep-time consequence',
+    historyDetail: `${effect.outcome}; emerged without intent ${effect.emerged_without_intent ? 'yes' : 'no'}`
+  });
+  const concern = {
+    concern_id: `VBC-DT-${String(board.concerns.length + 1).padStart(2, '0')}`,
+    resident,
+    problem: `deep-time pressure left ${effect.outcome} around ${effect.local_name}`,
+    source: effect.effect_id,
+    urgency: effect.outcome.includes('costly') ? 'high' : effect.outcome.includes('trace') ? 'low' : 'medium',
+    who_felt_this: resident,
+    avatar_direct_control: false
+  };
+  const proposal = {
+    proposal_id: `VBP-DT-${String(board.projectProposals.length + 1).padStart(2, '0')}`,
+    proposer: resident,
+    problem_addressed: concern.problem,
+    materials_needed: effect.outcome.includes('costly') ? ['fiber', 'wood', 'care'] : ['fiber', 'care'],
+    likely_helpers: residentNames.filter(name => name !== resident).slice(0, 2),
+    resident_willingness: Number(Math.max(0.16, Math.min(0.9, world.residents[resident].trust - world.residents[resident].debt * 0.04)).toFixed(3)),
+    known_objections: ['nobody planned this effect', 'maintenance burden may outlive the current residents'],
+    risk: concern.urgency,
+    maintenance_cost: effect.outcome.includes('costly') ? 3 : 1,
+    related_memories: [world.residents[resident].memory],
+    related_practice_nodes: [effect.source_lineage_id],
+    possible_failure_modes: ['lineage forgotten', 'materials run short', 'ritual replaces useful habit'],
+    current_support_level: 0,
+    avatar_can_force: false,
+    status: 'deep-time consequence proposed'
+  };
+  board.concerns.push(concern);
+  board.projectProposals.push(proposal);
+  const consequence = {
+    consequence_id: consequenceId,
+    effect_id: effect.effect_id,
+    resident,
+    schedule: world.residents[resident].schedule,
+    proposal_id: proposal.proposal_id,
+    emerged_without_intent: true,
+    hidden_law_named_to_residents: false,
+    resource_delta: resourceDelta || {},
+  };
+  sim.villageConsequences.push(consequence);
+  sim.boardLinks.push({ effect_id: effect.effect_id, concern_id: concern.concern_id, proposal_id: proposal.proposal_id, resident, avatar_commanded: false });
+  recordRealityConstraint('deep_time_effect_to_village', {
+    resident,
+    sourceBeliefId: effect.effect_id,
+    materials: proposal.materials_needed,
+    publicObservation: effect.local_name,
+    residentInterpretation: proposal.status,
+    materialTransformation: 'deep-time pressure changed obligations, not a free construction',
+    timeCost: 1,
+    workCost: proposal.maintenance_cost,
+    toolWear: effect.outcome.includes('costly') ? 1 : 0,
+    maintenanceObligation: proposal.proposal_id,
+    unintendedConsequence: effect.outcome,
+    hiddenLawInvolved: 'audit-only deep-time lineage source',
+    conservationCheck: true
+  });
+  return consequence;
+}
+
+function applyLatestDeepTimeEffectToVillage() {
+  const sim = ensureDeepTimeCivilization();
+  if (!sim.emergentEffects.length) runCivilizationDeepTimeEpoch();
+  const effect = sim.emergentEffects[sim.emergentEffects.length - 1];
+  const existing = (sim.villageConsequences || []).find(row => row.effect_id === effect.effect_id);
+  if (existing) {
+    recordPrototypeMilestone('apply-deep-time-effect', `${effect.effect_id} was already affecting ${existing.resident} through ${existing.proposal_id}`);
+    return log('applyLatestDeepTimeEffectToVillage', { resident: existing.resident, proposalId: existing.proposal_id, effectId: effect.effect_id, alreadyApplied: true });
+  }
+  const consequence = applyDeepTimeEffectToVillage(effect, { replayed_by_player: true });
+  recordPrototypeMilestone('apply-deep-time-effect', `${effect.effect_id} affected ${consequence.resident} through ${consequence.proposal_id}`);
+  return log('applyLatestDeepTimeEffectToVillage', { resident: consequence.resident, proposalId: consequence.proposal_id, effectId: effect.effect_id });
 }
 
 function runCivilizationMillionYearSim() {
@@ -2335,12 +2425,13 @@ function formatPrototypePublicOutcomes() {
   const branchRows = world.hintBranchPersistence ? world.hintBranchPersistence.continuityRows.length : 0;
   const latestBranch = branchRows ? world.hintBranchPersistence.continuityRows[world.hintBranchPersistence.continuityRows.length - 1] : null;
   const deepTime = world.deepTimeCivilization;
+  const consequenceCount = deepTime && deepTime.villageConsequences ? deepTime.villageConsequences.length : 0;
   return [
     `Practice graph: ${practiceCount} node(s)${latestPractice ? ` / latest ${latestPractice.local_name || latestPractice.practice_id}` : ''}`,
     `Village board: ${boardCount} proposal(s)${latestProposal ? ` / latest ${latestProposal.problem_addressed || latestProposal.proposal_id}` : ''}`,
     `Reality ledger: ${ledgerRows} causal row(s)`,
     `Return branches: ${branchRows} continuity row(s)${latestBranch ? ` / latest ${latestBranch.return_status}` : ''}`,
-    `Deep time: ${deepTime ? `${deepTime.year} years / ${deepTime.emergentEffects.length} emergent effect(s)` : 'not started'}`,
+    `Deep time: ${deepTime ? `${deepTime.year} years / ${deepTime.emergentEffects.length} emergent effect(s) / ${consequenceCount} village consequence(s)` : 'not started'}`,
     `Audit mode: ${world.audit ? 'on' : 'off'} / hidden law normal view: no`,
   ].join('\n');
 }
@@ -2362,6 +2453,7 @@ function formatPrototypeDeepTime() {
   if (!sim) return 'No deep-time epochs yet. Run Deep-time epoch or Million-year sim.';
   const latestTimeline = sim.timeline.slice(-6).map(row => `epoch ${row.epoch}: year ${row.year}, ${row.pressure}, effect=${row.effect_id}`);
   const latestEffects = sim.emergentEffects.slice(-6).map(row => `${row.effect_id}: ${row.local_name} -> ${row.outcome}`);
+  const latestConsequences = (sim.villageConsequences || []).slice(-6).map(row => `${row.consequence_id}: ${row.effect_id} changed ${row.resident} schedule via ${row.proposal_id}`);
   const lineageRows = sim.lineages.slice(0, 6).map(row => `${row.lineage_id}: ${row.local_name}; status=${row.status}; age=${row.age_years}; memory=${row.memory_strength.toFixed(2)}; burden=${row.maintenance_burden}`);
   return [
     `Compressed year: ${sim.year}`,
@@ -2374,6 +2466,8 @@ function formatPrototypeDeepTime() {
     ...(latestTimeline.length ? latestTimeline : ['none']),
     'Emergent effects:',
     ...(latestEffects.length ? latestEffects : ['none']),
+    'Village consequences:',
+    ...(latestConsequences.length ? latestConsequences : ['none']),
   ].join('\n');
 }
 
@@ -3029,6 +3123,7 @@ function describeReplayRow(row) {
     runPrototypeReturnProof: `prototype return proof branches=${payload.branchRows} revivals=${payload.revivalRows}`,
     runFirstPlayablePrototypeLoop: `first playable prototype milestones=${payload.milestones} branches=${payload.branchContinuity}`,
     runCivilizationDeepTimeEpoch: `deep-time epoch +${payload.yearsAdvanced} years pressure=${payload.pressure} lineages=${payload.lineages}`,
+    applyLatestDeepTimeEffectToVillage: `deep-time effect applied resident=${payload.resident} proposal=${payload.proposalId}`,
     runCivilizationMillionYearSim: `million-year sim year=${payload.year} epochs=${payload.epochs} effects=${payload.effects}`,
     supportVillageProposal: `supported village proposal ${payload.proposalId} accepted=${payload.accepted}`,
     askVillageBoardQuestion: `asked village board question ${payload.proposalId}`,
@@ -4210,6 +4305,6 @@ function renderHintBranchPersistence() {
   ].join('\n');
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, runCivilizationDeepTimeEpoch, runCivilizationMillionYearSim, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, runCivilizationDeepTimeEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

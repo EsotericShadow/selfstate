@@ -200,3 +200,13 @@ The first playable loop includes a direct save/return pass: enter the village, l
 4. The action reuses existing systems and records no direct resident command.
 5. The nearby ledger preserves zone, room, selected resident, result event, and causal trace.
 6. Save/return, QA, acceptance, replay, and the canvas surface all expose the location-sensitive action path.
+
+
+## Village day-cycle loop
+
+1. The player ends the day instead of manually pressing every subsystem.
+2. Weather/resource pressure applies through bounded material deltas.
+3. Residents take several autonomous actions without direct player command.
+4. Accepted project work may advance, and low or stalled commons may receive source-traced support.
+5. The day recap records weather, resident actions, resources after, project result, commons result, and causal ledger evidence.
+6. Save/return, QA, acceptance, replay, and the canvas top bar preserve day-cycle history.

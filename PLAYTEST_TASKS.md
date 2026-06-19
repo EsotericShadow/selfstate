@@ -38,3 +38,5 @@
 23. Use Support commons after a low reserve or project stall and confirm Commons support shows a named source, resident labor, resource change or blocked reason, and a causal ledger row instead of free resource spawning.
 
 24. Move or click into different village zones, use Nearby action, and confirm the action changes by place while the Nearby card, replay, and causal ledger preserve zone, resident, result, and no direct command.
+
+25. Use End day and confirm the Day cycle card, canvas top bar, replay, and Reality Constraint Ledger show weather/resource pressure, autonomous resident actions, project or commons follow-through, and no free time skip.

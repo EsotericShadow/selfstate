@@ -146,3 +146,8 @@ The prototype now includes a `Support commons` loop for recovering low resources
 ## Prototype v0 location-sensitive play update
 
 The prototype now includes a `Nearby action` control tied to the avatar's current place. Moving or clicking in the canvas changes the available local action: shelter routes to bounded help, storage routes to commons support, the work yard routes to practical discovery or project work, the Village Board routes to resident proposals, and ordinary village space routes to schedule inquiry. Each nearby action records zone, room, selected resident, result event, and no direct command, then writes causal trace evidence.
+
+
+## Prototype v0 village day-cycle update
+
+The prototype now includes an `End day` loop. One button advances weather/resource pressure, several autonomous resident actions, accepted project work when possible, commons recovery when needed, and a readable day recap. Weather changes are bounded and causal: drizzle can damp fiber while adding water, dry wind can reduce water while helping fiber, cold can consume care, fallen branches can add wood, and storage damp can decay stored material. Each day writes weather, resident, project, commons, and causal ledger evidence instead of skipping time for free.

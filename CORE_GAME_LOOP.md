@@ -121,11 +121,21 @@
 ## Autonomous resident loop
 
 1. Runtime entropy selects a resident and pressure context.
-2. The resident chooses an action from needs, resources, autonomy, safety, proposals, and practices.
-3. The action changes needs, schedule, memory, resources, proposal support, or practice maintenance.
-4. Residents may refuse implied priorities when autonomy pressure is high.
-5. Each action writes a causal ledger row so stochastic autonomy remains inspectable.
-6. Seasonal autonomous activity can trigger compressed deep-time evolution.
+2. The resident reads physical routine context from visible construction, strained components, carried materials, and active practice sites.
+3. The resident chooses an action from needs, resources, autonomy, safety, proposals, practices, and that physical context.
+4. The action changes needs, schedule, memory, resources, proposal support, component repair, or practice maintenance.
+5. Residents may refuse implied priorities when autonomy pressure is high.
+6. Each action writes a causal ledger row and a routine-context row so stochastic autonomy remains inspectable.
+7. Seasonal autonomous activity can trigger compressed deep-time evolution.
+
+## Resident physical routine-context loop
+
+1. The shell derives current worksite context from project visual rows, construction rows, weak components, project-built components, carried components, and practice nodes.
+2. The context suggests repair, proposal work, practice maintenance, or observation without forcing the resident.
+3. Needs and autonomy can override the suggestion.
+4. The chosen action records the worksite/component/practice link.
+5. Normal village state shows the public routine link while hidden laws remain audit-only.
+6. Acceptance requires routine rows to stay no-direct-command and normal-view safe.
 
 ## Prototype QA loop
 

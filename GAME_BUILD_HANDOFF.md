@@ -238,6 +238,12 @@ Handling actions mutate actual components: position, carried-by state, moisture,
 
 The avatar still does not assign object work directly. The game loop exposes resident physical manipulation as a living-world consequence: residents try, fail, remember, teach, rename, and stabilize handling practices from material contact.
 
+## Prototype v0 physical routine-context update
+
+Autonomous resident routines now read the physical village before choosing work. The resident tick derives a routine context from visible project construction, component damage/stability, carried or project-built components, and active practice nodes. That context can bias a resident toward repair, project work, or practice maintenance, but needs, hunger, safety, autonomy, and resource pressure can still override it.
+
+Each tick writes a `routineContextLedger` row and links the action row back to the physical context. The normal village state and autonomous resident card show the latest worksite/component/practice link, while acceptance now checks that resident routines use physical context without direct player command or hidden-law exposure.
+
 ## Prototype v0 deep-time stochastic physics update
 
 Compressed civilization history now starts with stochastic physics, not only lineage mutation. Each deep-time epoch writes a physics epoch row and material flux rows before cultural consequences are interpreted. The epoch pass advances physical substeps, then applies long-horizon moisture, heat, decay, settlement, mass loss, stability drift, and ruined-trace state to actual components.

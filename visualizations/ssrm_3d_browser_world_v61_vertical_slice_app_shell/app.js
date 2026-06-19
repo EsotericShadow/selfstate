@@ -878,11 +878,13 @@ function endVillageDay(options = {}) {
   const constraintResult = runContactConstraintPhysicsStep('village day contact constraints').payload;
   const materialStateResult = runMaterialStatePhysicsStep('village day material state').payload;
 	  const beforeActions = world.autonomousResidents ? world.autonomousResidents.actionLog.length : 0;
+  const beforeRoutineContexts = world.autonomousResidents && world.autonomousResidents.routineContextLedger ? world.autonomousResidents.routineContextLedger.length : 0;
   const residentActionIds = [];
   for (let i = 0; i < 4; i += 1) {
     const row = runAutonomousResidentTick().payload;
     residentActionIds.push(`${row.resident}:${row.action}`);
   }
+  const routineContextRows = world.autonomousResidents && world.autonomousResidents.routineContextLedger ? world.autonomousResidents.routineContextLedger.slice(beforeRoutineContexts) : [];
   let projectResult = null;
   const acceptedProject = world.villageBoard && world.villageBoard.projectProposals && world.villageBoard.projectProposals.some(row => !row.project_completed && (row.status === 'accepted' || row.status === 'in progress'));
   if (acceptedProject) projectResult = advanceVillageProject().payload;
@@ -907,6 +909,8 @@ function endVillageDay(options = {}) {
     material_state_result: materialStateResult ? { stepId: materialStateResult.stepId || 'none', phaseChanges: materialStateResult.phaseChanges || 0, riskyComponents: materialStateResult.riskyComponents || 0, repairRows: materialStateResult.repairRows || 0 } : null,
 	    resident_actions_added: (world.autonomousResidents ? world.autonomousResidents.actionLog.length : 0) - beforeActions,
     resident_action_sample: residentActionIds,
+    routine_context_rows_added: routineContextRows.length,
+    routine_context_sample: routineContextRows.slice(-4).map(row => `${row.resident}:${row.suggested_action || 'none'}:${row.latest_project_visual_id !== 'none' ? row.latest_project_visual_id : row.practice_id}`),
     project_result: projectResult ? { proposalId: projectResult.proposalId || 'none', status: projectResult.status || projectResult.reason || 'none', completed: projectResult.completed === true } : null,
     commons_result: commonsResult ? { resource: commonsResult.resource, amount: commonsResult.amount, blocked: commonsResult.blocked === true } : null,
     resources_after: { ...world.resources },
@@ -917,11 +921,11 @@ function endVillageDay(options = {}) {
   cycle.recapLedger.push({
     recap_id: `GPDR-${String(cycle.recapLedger.length + 1).padStart(3, '0')}`,
     day: dayNumber,
-	    summary: `${offscreen ? 'offscreen ' : ''}${weather.weather}; physics ${dayRow.physics_result ? dayRow.physics_result.stepId : 'none'}; resources ${dayRow.resource_result ? dayRow.resource_result.stepId : 'none'}; thermal ${dayRow.thermal_result ? dayRow.thermal_result.stepId : 'none'}; water ${dayRow.water_result ? dayRow.water_result.stepId : 'none'}; ecology ${dayRow.ecology_result ? dayRow.ecology_result.stepId : 'none'}; structure ${dayRow.structural_result ? dayRow.structural_result.stepId : 'none'}; constraints ${dayRow.constraint_result ? dayRow.constraint_result.stepId : 'none'}; material ${dayRow.material_state_result ? dayRow.material_state_result.stepId : 'none'}; ${dayRow.resident_actions_added} resident action(s); project ${dayRow.project_result ? dayRow.project_result.status : 'none'}; commons ${dayRow.commons_result ? dayRow.commons_result.resource : 'none'}`,
+	    summary: `${offscreen ? 'offscreen ' : ''}${weather.weather}; physics ${dayRow.physics_result ? dayRow.physics_result.stepId : 'none'}; resources ${dayRow.resource_result ? dayRow.resource_result.stepId : 'none'}; thermal ${dayRow.thermal_result ? dayRow.thermal_result.stepId : 'none'}; water ${dayRow.water_result ? dayRow.water_result.stepId : 'none'}; ecology ${dayRow.ecology_result ? dayRow.ecology_result.stepId : 'none'}; structure ${dayRow.structural_result ? dayRow.structural_result.stepId : 'none'}; constraints ${dayRow.constraint_result ? dayRow.constraint_result.stepId : 'none'}; material ${dayRow.material_state_result ? dayRow.material_state_result.stepId : 'none'}; ${dayRow.resident_actions_added} resident action(s); ${dayRow.routine_context_rows_added} physical routine context(s); project ${dayRow.project_result ? dayRow.project_result.status : 'none'}; commons ${dayRow.commons_result ? dayRow.commons_result.resource : 'none'}`,
 	  });
   world.gamePrototypeCommons = null;
   recordPrototypeMilestone('village-day-ended', `day ${dayNumber}: ${weather.weather}, ${dayRow.resident_actions_added} resident action(s)`);
-	  return log('endVillageDay', { day: dayNumber, weather: weather.weather, physicsStepId: dayRow.physics_result ? dayRow.physics_result.stepId : null, physicsProposalId: dayRow.physics_result ? dayRow.physics_result.proposalId : null, resourceStepId: dayRow.resource_result ? dayRow.resource_result.stepId : null, thermalStepId: dayRow.thermal_result ? dayRow.thermal_result.stepId : null, waterStepId: dayRow.water_result ? dayRow.water_result.stepId : null, ecologyStepId: dayRow.ecology_result ? dayRow.ecology_result.stepId : null, structuralStepId: dayRow.structural_result ? dayRow.structural_result.stepId : null, constraintStepId: dayRow.constraint_result ? dayRow.constraint_result.stepId : null, materialStateStepId: dayRow.material_state_result ? dayRow.material_state_result.stepId : null, actionsAdded: dayRow.resident_actions_added, projectStatus: dayRow.project_result ? dayRow.project_result.status : 'none', commonsResource: dayRow.commons_result ? dayRow.commons_result.resource : 'none', offscreen, directCommand: false });
+	  return log('endVillageDay', { day: dayNumber, weather: weather.weather, physicsStepId: dayRow.physics_result ? dayRow.physics_result.stepId : null, physicsProposalId: dayRow.physics_result ? dayRow.physics_result.proposalId : null, resourceStepId: dayRow.resource_result ? dayRow.resource_result.stepId : null, thermalStepId: dayRow.thermal_result ? dayRow.thermal_result.stepId : null, waterStepId: dayRow.water_result ? dayRow.water_result.stepId : null, ecologyStepId: dayRow.ecology_result ? dayRow.ecology_result.stepId : null, structuralStepId: dayRow.structural_result ? dayRow.structural_result.stepId : null, constraintStepId: dayRow.constraint_result ? dayRow.constraint_result.stepId : null, materialStateStepId: dayRow.material_state_result ? dayRow.material_state_result.stepId : null, actionsAdded: dayRow.resident_actions_added, routineContextsAdded: dayRow.routine_context_rows_added, projectStatus: dayRow.project_result ? dayRow.project_result.status : 'none', commonsResource: dayRow.commons_result ? dayRow.commons_result.resource : 'none', offscreen, directCommand: false });
 	}
 
 function ensurePrototypeReturnLater() {
@@ -8456,18 +8460,23 @@ function ensureAutonomousResidents() {
       refusalLog: [],
       careLedger: [],
       expressionLedger: [],
+      routineContextLedger: [],
       entropyLedger: [],
       boundary: {
         noDirectPlayerCommand: true,
         residentsCanRefuse: true,
         actionsCostTimeAndNeed: true,
         expressionsArePublicCuesOnly: true,
+        routinesUsePhysicalContext: true,
         stochasticButAudited: true,
       },
     };
   }
+  if (!world.autonomousResidents.boundary) world.autonomousResidents.boundary = {};
   if (!world.autonomousResidents.expressionLedger) world.autonomousResidents.expressionLedger = [];
+  if (!world.autonomousResidents.routineContextLedger) world.autonomousResidents.routineContextLedger = [];
   if (!world.autonomousResidents.boundary.expressionsArePublicCuesOnly) world.autonomousResidents.boundary.expressionsArePublicCuesOnly = true;
+  if (!world.autonomousResidents.boundary.routinesUsePhysicalContext) world.autonomousResidents.boundary.routinesUsePhysicalContext = true;
   return world.autonomousResidents;
 }
 
@@ -10233,6 +10242,86 @@ function currentPhysicsPressure() {
   return pressure;
 }
 
+function deriveResidentPhysicalRoutineContext(residentName, entropy) {
+  const materialWorld = world.gamePrototype3DWorld || null;
+  const projects = world.gamePrototypeProjects || null;
+  const practiceGraph = world.emergentPracticeGraph || null;
+  const visualRows = projects && projects.visualLedger ? projects.visualLedger : [];
+  const constructionRows = materialWorld && materialWorld.constructionLedger ? materialWorld.constructionLedger : [];
+  const latestVisual = visualRows.length ? visualRows[visualRows.length - 1] : null;
+  const latestConstruction = constructionRows.length ? constructionRows[constructionRows.length - 1] : null;
+  const components = materialWorld && materialWorld.components ? materialWorld.components : [];
+  const weakComponents = components.filter(component => Number(component.stability || 1) < 0.72 || Number(component.damage || 0) > 0.16);
+  const carriedComponents = components.filter(component => component.carried_by === residentName);
+  const projectBuiltComponents = components.filter(component => component.project_built === true);
+  const linkedPractice = latestConstruction && latestConstruction.practice_id && practiceGraph && practiceGraph.nodes
+    ? practiceGraph.nodes.find(row => row.practice_id === latestConstruction.practice_id)
+    : null;
+  const latestPractice = linkedPractice || (practiceGraph && practiceGraph.nodes && practiceGraph.nodes.length ? practiceGraph.nodes[practiceGraph.nodes.length - 1] : null);
+  const pressure = currentPhysicsPressure();
+  const latestComponent = weakComponents[0] || carriedComponents[0] || projectBuiltComponents[projectBuiltComponents.length - 1] || components[0] || null;
+  let suggestedAction = null;
+  let scheduleHint = 'ordinary route check';
+  let pressureReason = 'no active physical context';
+  if (weakComponents.length > 0 || (pressure && pressure.active)) {
+    suggestedAction = 'physics_repair';
+    scheduleHint = `checks strained physical work ${latestComponent ? latestComponent.component_id : pressure ? pressure.latestStepId : 'unknown'}`;
+    pressureReason = `weak=${weakComponents.length}, failures=${pressure ? pressure.failures : 0}, collisions=${pressure ? pressure.collisions : 0}`;
+  } else if (latestVisual) {
+    suggestedAction = 'proposal_work';
+    scheduleHint = `returns to visible project ${latestVisual.visual_id || latestVisual.construction_id || 'worksite'}`;
+    pressureReason = latestVisual.canvas_cue || latestVisual.resident_term || 'visible construction cue';
+  } else if (latestPractice) {
+    suggestedAction = 'practice_maintenance';
+    scheduleHint = `keeps ${latestPractice.local_name || latestPractice.practice_id} physically usable`;
+    pressureReason = latestPractice.status || 'practice upkeep';
+  } else if (carriedComponents.length > 0) {
+    suggestedAction = 'observe';
+    scheduleHint = `checks carried component ${carriedComponents[0].component_id}`;
+    pressureReason = 'resident is carrying material';
+  }
+  return {
+    latest_project_visual_id: latestVisual ? (latestVisual.visual_id || latestVisual.construction_id || 'visible-project') : 'none',
+    latest_project_cue: latestVisual ? (latestVisual.canvas_cue || latestVisual.resident_term || 'visible project work') : 'none',
+    latest_construction_id: latestConstruction ? (latestConstruction.construction_id || latestConstruction.project_id || 'construction-row') : 'none',
+    latest_component_id: latestComponent ? latestComponent.component_id : 'none',
+    weak_component_count: weakComponents.length,
+    project_built_component_count: projectBuiltComponents.length,
+    carried_component_count: carriedComponents.length,
+    practice_id: latestPractice ? (latestPractice.practice_id || latestPractice.local_name || 'practice') : 'none',
+    resident_term: latestVisual && latestVisual.resident_term ? latestVisual.resident_term : latestConstruction && latestConstruction.resident_term ? latestConstruction.resident_term : latestPractice && latestPractice.local_name ? latestPractice.local_name : pressure && pressure.residentTerm ? pressure.residentTerm : 'none',
+    suggested_action: suggestedAction,
+    schedule_hint: scheduleHint,
+    pressure_reason: pressureReason,
+    maintenance_obligation: latestConstruction ? (latestConstruction.maintenance_cost_after || latestConstruction.maintenance_cost || 'construction upkeep') : latestPractice ? latestPractice.maintenance_cost || 'practice upkeep' : pressure && pressure.active ? 'physical inspection' : 'none',
+    no_direct_player_command: true,
+    hidden_law_normal_view: false,
+    entropy_mod: entropy % 17,
+  };
+}
+
+function recordResidentRoutineContext(residentName, action, context, entropy) {
+  const sim = ensureAutonomousResidents();
+  const row = {
+    context_id: `ARC-${String(sim.routineContextLedger.length + 1).padStart(3, '0')}`,
+    day: sim.day,
+    season: sim.season,
+    resident: residentName,
+    action,
+    entropy,
+    ...context,
+  };
+  sim.routineContextLedger.push(row);
+  if (sim.routineContextLedger.length > 120) sim.routineContextLedger.shift();
+  return row;
+}
+
+function latestRoutineContextFor(residentName) {
+  const sim = world.autonomousResidents;
+  if (!sim || !sim.routineContextLedger) return null;
+  return sim.routineContextLedger.slice().reverse().find(row => row.resident === residentName) || null;
+}
+
 function clampNeed(value) {
   return Math.max(0, Math.min(1, Number(value || 0)));
 }
@@ -10262,11 +10351,15 @@ function chooseAutonomousResidentAction(residentName, entropy) {
   const hasPractice = Boolean(world.emergentPracticeGraph && world.emergentPracticeGraph.nodes && world.emergentPracticeGraph.nodes.length);
   const lowResource = (world.resources.water || 0) < 5 || (world.resources.fiber || 0) < 5 || (world.resources.care || 0) < 3 || (world.resources.food || 0) < 3;
   const physicsPressure = currentPhysicsPressure();
+  const routineContext = deriveResidentPhysicalRoutineContext(residentName, entropy);
   if (needs.energy < 0.22 || needs.hunger > 0.78) return 'rest';
   if (needs.autonomy > 0.74 && entropy % 5 === 0) return 'refuse';
   if (needs.safety < 0.42) return 'repair_safety';
+  if (routineContext.suggested_action === 'physics_repair' && entropy % 5 !== 0) return 'physics_repair';
   if (physicsPressure && physicsPressure.active && entropy % 3 !== 0) return 'physics_repair';
   if (lowResource) return 'forage';
+  if (routineContext.suggested_action === 'proposal_work' && hasProposal && entropy % 4 !== 0) return 'proposal_work';
+  if (routineContext.suggested_action === 'practice_maintenance' && hasPractice && entropy % 3 !== 2) return 'practice_maintenance';
   if (hasProposal && entropy % 3 !== 0) return 'proposal_work';
   if (hasPractice && entropy % 4 === 0) return 'practice_maintenance';
   if (hasPractice && entropy % 4 === 1) return 'teach';
@@ -10404,6 +10497,8 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
   const board = ensureVillageBoard();
   const proposal = board.projectProposals[board.projectProposals.length - 1] || null;
   const practice = world.emergentPracticeGraph && world.emergentPracticeGraph.nodes.length ? world.emergentPracticeGraph.nodes[world.emergentPracticeGraph.nodes.length - 1] : null;
+  const routineContext = deriveResidentPhysicalRoutineContext(residentName, entropy);
+  const routineContextRow = recordResidentRoutineContext(residentName, action, routineContext, entropy);
   let schedule = resident.schedule;
   let memory = resident.memory;
   let materialCost = [];
@@ -10439,8 +10534,10 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
     if (ecology.harvested > 0) world.resources.fiber = Math.min(99, world.resources.fiber + 1);
     progressDelta = 0.006;
   } else if (action === 'proposal_work' && proposal) {
-    schedule = `works on ${proposal.problem_addressed}`;
-    memory = `worked on resident proposal ${proposal.proposal_id}`;
+    schedule = routineContext.latest_project_visual_id !== 'none'
+      ? `${routineContext.schedule_hint}: ${proposal.problem_addressed}`
+      : `works on ${proposal.problem_addressed}`;
+    memory = `worked on resident proposal ${proposal.proposal_id}; ${routineContext.pressure_reason}`;
     materialCost = proposal.materials_needed.slice(0, 2);
     world.resources.fiber = Math.max(0, world.resources.fiber - (materialCost.includes('fiber') ? 1 : 0));
     world.resources.care = Math.max(0, world.resources.care - (materialCost.includes('care') ? 1 : 0));
@@ -10448,8 +10545,9 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
     progressDelta = 0.012;
     trustDelta = 0.003;
   } else if (action === 'practice_maintenance' && practice) {
-    schedule = `maintains ${practice.local_name || practice.practice_id}`;
-    memory = `kept practice ${practice.practice_id || practice.local_name} from decaying`;
+    const practiceName = routineContext.resident_term !== 'none' ? routineContext.resident_term : practice.local_name || practice.practice_id;
+    schedule = routineContext.practice_id !== 'none' ? routineContext.schedule_hint : `maintains ${practiceName}`;
+    memory = `kept practice ${practice.practice_id || practice.local_name} from decaying; ${routineContext.pressure_reason}`;
     materialCost = ['fiber'];
     world.resources.fiber = Math.max(0, world.resources.fiber - 1);
     progressDelta = 0.009;
@@ -10460,8 +10558,10 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
       .sort((a, b) => (Number(a.stability || 1) - Number(b.stability || 1)) || (Number(b.damage || 0) - Number(a.damage || 0)))[0];
     const term = materialWorld.language.terms.find(row => row.term_id === (weak ? weak.resident_term_id : 'TERM-TAKU-REN')) || materialWorld.language.terms[0];
     const spentFiber = Number(world.resources.fiber || 0) > 0;
-    schedule = `checks ${term ? term.resident_word : 'local support'} after physical strain`;
-    memory = spentFiber ? `retied ${term ? term.resident_word : 'raised support'} after weight and damp pressure` : `noticed ${term ? term.resident_word : 'raised support'} strain but lacked fiber`;
+    schedule = routineContext.schedule_hint !== 'ordinary route check'
+      ? routineContext.schedule_hint
+      : `checks ${term ? term.resident_word : 'local support'} after physical strain`;
+    memory = spentFiber ? `retied ${term ? term.resident_word : 'raised support'} after ${routineContext.pressure_reason}` : `noticed ${term ? term.resident_word : 'raised support'} strain but lacked fiber`;
     materialCost = spentFiber ? ['fiber'] : [];
     if (spentFiber) world.resources.fiber = Math.max(0, world.resources.fiber - 1);
     if (weak && spentFiber) {
@@ -10509,6 +10609,19 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
     schedule,
     memory,
     no_direct_player_command: true,
+    routine_context_id: routineContextRow.context_id,
+    physical_context: {
+      latest_project_visual_id: routineContext.latest_project_visual_id,
+      latest_construction_id: routineContext.latest_construction_id,
+      latest_component_id: routineContext.latest_component_id,
+      weak_component_count: routineContext.weak_component_count,
+      project_built_component_count: routineContext.project_built_component_count,
+      carried_component_count: routineContext.carried_component_count,
+      practice_id: routineContext.practice_id,
+      resident_term: routineContext.resident_term,
+      suggested_action: routineContext.suggested_action || 'none',
+      schedule_hint: routineContext.schedule_hint,
+    },
     body_physics_step_id: bodyPhysicsRow.body_step_id,
     body_fatigue_after: bodyPhysicsRow.after.fatigue,
     body_footing: bodyPhysicsRow.after.footing,
@@ -10522,13 +10635,13 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
     resident: residentName,
     sourceBeliefId: row.action_id,
     materials: materialCost,
-    publicObservation: schedule,
+    publicObservation: `${schedule}; context=${routineContext.schedule_hint}`,
     residentInterpretation: memory,
     materialTransformation: materialCost.length ? 'resident consumed or moved material through autonomous action' : 'attention/time spent without material transformation',
     timeCost: 1,
     workCost: ['rest', 'observe', 'refuse'].includes(action) ? 0 : 1,
     toolWear: ['proposal_work', 'practice_maintenance', 'repair_safety'].includes(action) ? 1 : 0,
-    maintenanceObligation: action === 'proposal_work' && proposal ? proposal.proposal_id : 'none',
+    maintenanceObligation: action === 'proposal_work' && proposal ? proposal.proposal_id : routineContext.maintenance_obligation,
     unintendedConsequence: action === 'refuse' ? 'resident autonomy preserved' : 'ordinary world state changed without player command',
     hiddenLawInvolved: 'none in normal view',
     conservationCheck: true
@@ -10574,7 +10687,10 @@ function formatPrototypeVillageState() {
       const expression = latestVisibleExpressionFor(name);
       const body = world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.bodies ? world.gamePrototypeResidentBodies.bodies[name] : null;
       const bodyText = body ? `body=(${body.position3d.x},${body.position3d.y}) fatigue=${body.fatigue} footing=${body.footing}` : 'body=not initialized';
-      return `${name}: ${row.schedule}; trust=${row.trust.toFixed(2)} debt=${row.debt} progress=${row.progress.toFixed(2)}; cue=${expression.marker}/${expression.posture}; ${bodyText}; memory=${row.memory}`;
+      const routine = latestRoutineContextFor(name);
+      const routineSource = routine ? (routine.latest_project_visual_id !== 'none' ? routine.latest_project_visual_id : routine.latest_component_id !== 'none' ? routine.latest_component_id : routine.practice_id) : 'not linked';
+      const routineText = routine ? `routine=${routine.suggested_action || 'none'} via ${routineSource}` : 'routine=not linked';
+      return `${name}: ${row.schedule}; trust=${row.trust.toFixed(2)} debt=${row.debt} progress=${row.progress.toFixed(2)}; cue=${expression.marker}/${expression.posture}; ${bodyText}; ${routineText}; memory=${row.memory}`;
     });
   const resources = Object.entries(world.resources).map(([key, value]) => `${key}=${value}`).join(', ');
   return [
@@ -11358,15 +11474,18 @@ function formatPrototypeResidentBodies() {
 function formatPrototypeAutonomousResidents() {
   const sim = world.autonomousResidents;
   if (!sim) return 'No autonomous resident ticks yet. Run Resident tick or Resident season.';
-  const actions = sim.actionLog.slice(-8).map(row => `${row.action_id}: day ${row.day}, ${row.resident} chose ${row.action}; energy=${row.needs.energy.toFixed(2)} hunger=${row.needs.hunger.toFixed(2)} safety=${row.needs.safety.toFixed(2)}; body=${row.body_physics_step_id || 'none'}`);
+  const actions = sim.actionLog.slice(-8).map(row => `${row.action_id}: day ${row.day}, ${row.resident} chose ${row.action}; energy=${row.needs.energy.toFixed(2)} hunger=${row.needs.hunger.toFixed(2)} safety=${row.needs.safety.toFixed(2)}; body=${row.body_physics_step_id || 'none'}; ctx=${row.routine_context_id || 'none'}${row.physical_context ? `/${row.physical_context.suggested_action}` : ''}`);
   const refusals = sim.refusalLog.slice(-4).map(row => `day ${row.day}: ${row.resident} refused because ${row.reason}`);
   const care = sim.careLedger.slice(-6).map(row => `${row.action_id}: ${row.resident} energy=${row.energy.toFixed(2)} hunger=${row.hunger.toFixed(2)} autonomy=${row.autonomy.toFixed(2)}`);
   const expressions = (sim.expressionLedger || []).slice(-8).map(row => `${row.expression_id}: ${row.resident} ${row.marker}; posture=${row.posture}; movement=${row.movementCue}; gaze=${row.gazeCue}`);
+  const routineContexts = (sim.routineContextLedger || []).slice(-6).map(row => `${row.context_id}: ${row.resident} ${row.action}; suggested=${row.suggested_action || 'none'}; visual=${row.latest_project_visual_id}; component=${row.latest_component_id}; practice=${row.practice_id}; hint=${row.schedule_hint}`);
   return [
     `Day: ${sim.day} / season: ${sim.season}`,
     `Boundary: stochastic autonomous actions; no direct player command; actions cost time/needs/materials.`,
     'Recent actions:',
     ...(actions.length ? actions : ['none']),
+    'Routine physical context:',
+    ...(routineContexts.length ? routineContexts : ['none']),
     'Visible expression cues:',
     ...(expressions.length ? expressions : ['none']),
     'Refusals:',
@@ -12312,6 +12431,11 @@ function buildPrototypeAcceptanceReceipt() {
 	  const deepPhysicsEpochRows = deepTime && deepTime.physicsEpochLedger ? deepTime.physicsEpochLedger.length : 0;
 	  const deepMaterialFluxRows = deepTime && deepTime.materialFluxLedger ? deepTime.materialFluxLedger.length : 0;
 	  const constructionLineageCount = deepTime && deepTime.lineages ? deepTime.lineages.filter(row => row.component_ids && row.component_ids.length).length : 0;
+  const routineContextRows = autonomous && autonomous.routineContextLedger ? autonomous.routineContextLedger.length : 0;
+  const routinePhysicalRows = autonomous && autonomous.routineContextLedger
+    ? autonomous.routineContextLedger.filter(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false && (row.latest_project_visual_id !== 'none' || row.latest_construction_id !== 'none' || row.latest_component_id !== 'none' || row.practice_id !== 'none' || Number(row.weak_component_count || 0) > 0)).length
+    : 0;
+  const routineActionLinks = autonomous && autonomous.actionLog ? autonomous.actionLog.filter(row => row.routine_context_id && row.physical_context).length : 0;
 	  const requirements = [
     { id: 'basic_visual_surface', pass: Boolean(world.entered && Object.keys(world.residents).length <= 6), evidence: `${Object.keys(world.residents).length} resident(s), room=${world.avatar.room}` },
     { id: 'persistent_save_return', pass: Boolean(saves && saves.slots && saves.slots.length > 0 && saves.returnLog && saves.returnLog.length > 0), evidence: saves ? `${saves.slots.length} slot(s), ${saves.returnLog.length} return(s)` : 'no prototype saves' },
@@ -12357,6 +12481,7 @@ function buildPrototypeAcceptanceReceipt() {
 	    { id: 'ecology_food_physics', pass: Boolean(ecologyPhysics && ecologyGrowthRows > 0 && ecologyHarvestRows > 0 && ecologySpoilageRows > 0 && ecologyHungerRows > 0 && ecologyPhysics.growthLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${ecologyGrowthRows} growth row(s), ${ecologyHarvestRows} harvest row(s), ${ecologySpoilageRows} spoilage row(s), ${ecologyHungerRows} hunger row(s), ${ecologySafetyRows} safety row(s)` },
 	    { id: 'resident_material_manipulation', pass: Boolean(manipulation && manipulationRows > 0 && manipulationPracticeLinks > 0 && embodiedManipulationRows > 0 && manipulation.actionLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false)), evidence: `${manipulationRows} handling row(s), ${manipulationPracticeLinks} practice link(s), ${embodiedManipulationRows} body-linked row(s)` },
 	    { id: 'resident_body_physics', pass: Boolean(residentBodies && residentBodyRows > 0 && residentBodyFatigueRows > 0 && residentBodies.bodyLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false && row.fatigue_delta >= 0)), evidence: `${residentBodyRows} body step(s), ${residentBodyContactRows} contact row(s), ${residentBodyRecoveryRows} recovery row(s)` },
+	    { id: 'resident_routines_use_physical_context', pass: Boolean(autonomous && routineContextRows > 0 && routinePhysicalRows > 0 && routineActionLinks > 0 && autonomous.routineContextLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false)), evidence: `${routineContextRows} routine context row(s), ${routinePhysicalRows} physical context row(s), ${routineActionLinks} action link(s)` },
 		    { id: 'physics_consequences_reach_residents', pass: Boolean(physicsProposalCount > 0 && board.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${physicsProposalCount} physics-linked proposal(s)` },
 		    { id: 'projects_construct_physical_components', pass: Boolean(constructionCount > 0 && projectVisualRows > 0 && projectBuiltComponentCount > 0 && materialWorld.constructionLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true) && projects.visualLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${constructionCount} construction row(s), ${projectVisualRows} visual row(s), ${projectBuiltComponentCount} project-built component(s)` },
 	    { id: 'construction_evolves_practice_language', pass: Boolean(constructionPracticeLinks > 0 && constructionPracticeNodes > 0 && materialWorld.language.terms.some(row => (row.meaning_drift || []).some(text => /repair|reinforced|retie/.test(text)))), evidence: `${constructionPracticeLinks} construction-practice link(s), ${constructionPracticeNodes} construction practice node(s)` },

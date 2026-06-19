@@ -16,6 +16,7 @@
 - One resident proposal/project loop.
 - One resident body physics layer for position, velocity, footing, load, fatigue, contact, slip risk, and bounded recovery.
 - One resident physical material-handling loop for carry, drop, stack, tie, dry, wet-test, and test actions.
+- One resident physical routine-context loop that links autonomous schedules to construction, components, project visuals, and practice sites.
 - One stochastic consequence and recovery loop.
 - One save/return loop.
 - One audit/replay mode.
@@ -150,6 +151,22 @@ Required evidence:
 - no installed correct modern concept
 
 This is the preferred next milestone for prototype work. Do not add new research reports to satisfy it; improve the playable shell.
+
+## Added scope gate: Resident routines use physical context
+
+`resident_routines_use_physical_context` is part of the first playable prototype scope.
+
+Required evidence:
+
+- autonomous resident rows include linked routine-context IDs
+- routine context rows reference physical state such as visible construction, construction rows, weak components, project-built components, carried components, or practice nodes
+- routine context can suggest repair, proposal work, practice maintenance, or observation
+- resident needs and autonomy can still override the suggestion
+- normal village state exposes only public worksite/component/practice context
+- hidden simulator law remains out of normal view
+- no direct resident command is introduced
+
+This gate prevents schedules from becoming abstract NPC text disconnected from the physical village.
 
 ## Added scope gate: Playable Village Day 0-3
 

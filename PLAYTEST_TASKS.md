@@ -193,6 +193,14 @@
 104. Inspect the Reality Constraint Ledger for `material_state_physics` with conservation and hidden-law separation.
 105. Save and return after material-state rows accumulate; confirm state/phase/property counters persist in the save panel.
 
+## Resident physical routine-context playtests
+
+106. Create visible construction or component strain, then run `Resident tick` and confirm the Autonomous residents card shows a `ctx=ARC-...` link.
+107. Run `End day` after construction exists and confirm the day recap reports physical routine context rows added.
+108. Inspect Village state and confirm at least one resident line shows routine context from a project visual, physical component, or practice node.
+109. Confirm a resident can choose repair, proposal work, or practice maintenance from physical context without direct player command.
+110. Export acceptance and confirm `resident_routines_use_physical_context` appears as a prototype requirement.
+
 ## Physics-to-practice slice playtests
 
 - Run `Playable slice` from a fresh village and inspect whether the card reaches `Acceptance ready: yes`.

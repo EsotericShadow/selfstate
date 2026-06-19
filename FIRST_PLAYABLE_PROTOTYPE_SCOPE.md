@@ -119,3 +119,9 @@ This is bounded survival ecology, not an agriculture tech tree.
 Prototype v0 now includes bounded structural stress for component-built structures. The included scope is support margin, bending/load stress, anchor slip, deformation, partial collapse markers, and repair proposals.
 
 Out of scope for v0: production-grade rigid-body simulation, finite-element accuracy, full fracture mechanics, polished construction art, and direct player building placement.
+
+## Included prototype physics layer: contact constraints
+
+Prototype v0 now includes bounded contact and joint constraints for component-built structures. The included scope is likely contact detection, joint/binding detection, friction limits, impulse transfer, slip probability, joint demand/strength, component wear, anchor slip, and repair pressure.
+
+Out of scope for v0: full continuous collision detection, exact rigid-body stacks, detailed rope simulation, fracture meshes, and production-grade physics certification.

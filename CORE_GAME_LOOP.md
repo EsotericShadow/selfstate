@@ -357,3 +357,11 @@ The playable loop now includes a structural pass:
 world/weather/material state -> base stochastic physics -> load path solve -> structural stress/deformation -> possible partial collapse row -> resident repair pressure -> proposal/social consequence -> save/return persistence.
 
 The player can inspect the stress panel, but normal play should feel like living near residents whose structures sag, slip, overload, and need repair over time. The avatar still influences conditions; it does not directly command repairs or install hidden physics knowledge.
+
+## Contact/joint constraint loop
+
+Structural stress now feeds a contact-constraint pass:
+
+component state -> likely contacts and bindings -> friction limit -> impulse transfer -> slip probability -> joint strength/demand -> component wear/slip -> resident repair pressure.
+
+This makes resident-built objects behave more like assemblies. Branches, bindings, covers, and vessels can touch, slip, hold, or need retying through ordinary time and weather.

@@ -209,3 +209,15 @@ Structural physics must preserve causal discipline:
 - no hidden load-path truth in normal resident view
 
 The current shell records `structural_stress_physics` rows with load paths, support margin, stress, deformation, collapse probability, repair pressure, and conservation checks.
+
+## Contact/joint constraint ledger rows
+
+Contact physics follows the same causal rules:
+
+- no slip without contact, jointing, friction, impulse, moisture, stress, or stochastic pressure
+- no failed joint without joint demand exceeding joint strength or a traced stochastic slip event
+- no repair pressure without affected components and labor/material implication
+- no material creation or deletion during contact updates
+- no hidden friction/joint calculations in normal resident view
+
+The current shell records `contact_constraint_physics` rows with contact counts, joint counts, slip counts, failed joints, repair pressure, and conservation checks.

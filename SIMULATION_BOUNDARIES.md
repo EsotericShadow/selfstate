@@ -101,3 +101,7 @@ Food should behave like a bounded ecological product. It must grow, be harvested
 ## Structural-stress physics boundary
 
 Structural stress is browser-local stochastic simulation scaffolding. It is intended to make structures materially consequential, not to claim real engineering accuracy. Stress, sag, and partial collapse must remain bounded, inspectable, repairable, and traceable to materials, load paths, weather, and stochastic field pressure.
+
+## Contact/joint constraint boundary
+
+Contact and joint constraints are bounded stochastic prototype physics. They are intended to make component assemblies physically consequential, not to provide exact rigid-body, rope, or contact simulation. Slips and failed joints must remain traceable, bounded, repairable, and resident-visible only as local effects.

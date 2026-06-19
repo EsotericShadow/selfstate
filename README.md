@@ -2204,3 +2204,5 @@ Water/fluid physics is now part of Prototype v0: contained jar water, puddles, a
 Ecology/food physics is now part of Prototype v0: edible patches grow or rot from terrain/water/heat pressure, harvest creates stored food, food can spoil, hunger relief consumes food, and food pressure can create recoverable resident proposals.
 
 Structural-stress physics now extends the game prototype shell with load paths, support margin, bending stress, anchor slip, deformation/sag, partial collapse rows, and resident repair pressure for component-built structures.
+
+Contact/joint constraint physics now extends the prototype with friction limits, impulse transfer, joint demand/strength, slipping contacts, failed bindings, and constraint repair pressure for component-built structures.

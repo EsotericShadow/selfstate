@@ -166,3 +166,11 @@
 93. Use `Stress loop`, then inspect the Reality Constraint Ledger for a `structural_stress_physics` row with conservation and hidden-law separation.
 94. Confirm resident proposals can mention physical strain without letting the avatar directly command a repair.
 95. Save and return after structural stress accumulates; confirm stress counters persist in the save panel.
+
+## Contact/joint constraint playtests
+
+96. Run `Contact constraints` and inspect contact, joint, friction, impulse, and repair rows.
+97. Run `Constraint loop` after `Stress loop` and confirm contact/joint state changes without spawning resources.
+98. End several village days and confirm constraint rows accumulate through ordinary time/weather progression.
+99. Inspect the Reality Constraint Ledger for `contact_constraint_physics` with hidden-law separation and conservation checks.
+100. Save and return after constraint rows accumulate; confirm contact/joint counters persist in the save panel.

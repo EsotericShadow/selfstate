@@ -50,7 +50,7 @@ const qaManifest = {
   publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'gamePrototypeAcceptance', 'gamePrototypeDivergence', 'gamePrototypeCommons', 'gamePrototypeProjects', 'gamePrototypeCommonsSupport', 'gamePrototypeNearbyActions', 'gamePrototypeDayCycle', 'gamePrototypeReturnLater', 'gamePrototype3DWorld', 'gamePrototypeMaterialManipulation', 'gamePrototypeResidentBodies', 'gamePrototypeTerrain', 'gamePrototypeTools', 'gamePrototypeResourcePhysics', 'gamePrototypeThermalPhysics', 'gamePrototypeWaterPhysics', 'gamePrototypeEcologyPhysics', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
-  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay', 'exportPrototypeAcceptanceReceipt', 'comparePrototypeDivergenceSeeds', 'auditPrototypeCommons', 'runPrototypeGuidedStep', 'advanceVillageProject', 'supportResourceCommons', 'performNearbyAction', 'endVillageDay', 'leaveAndReturnLater', 'runPrototypeMaterialWorldStep', 'runPrototypePhysicsStep', 'runStructuralPhysicsStep', 'runStructuralPhysicsLoop', 'runTerrainPhysicsStep', 'runTerrainPhysicsLoop', 'runToolPhysicsStep', 'runToolPhysicsLoop', 'runResourcePhysicsStep', 'runResourcePhysicsLoop', 'runThermalPhysicsStep', 'runThermalPhysicsLoop', 'runWaterPhysicsStep', 'runWaterPhysicsLoop', 'runEcologyPhysicsStep', 'runEcologyPhysicsLoop', 'runResidentMaterialManipulationStep', 'runResidentMaterialManipulationLoop', 'runResidentBodyPhysicsStep', 'runResidentBodyPhysicsLoop', 'runDeepTimePhysicsEpoch']
+  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay', 'exportPrototypeAcceptanceReceipt', 'comparePrototypeDivergenceSeeds', 'auditPrototypeCommons', 'runPrototypeGuidedStep', 'advanceVillageProject', 'supportResourceCommons', 'performNearbyAction', 'endVillageDay', 'leaveAndReturnLater', 'runPrototypeMaterialWorldStep', 'runPrototypePhysicsStep', 'runStructuralPhysicsStep', 'runStructuralPhysicsLoop', 'runContactConstraintPhysicsStep', 'runContactConstraintPhysicsLoop', 'runTerrainPhysicsStep', 'runTerrainPhysicsLoop', 'runToolPhysicsStep', 'runToolPhysicsLoop', 'runResourcePhysicsStep', 'runResourcePhysicsLoop', 'runThermalPhysicsStep', 'runThermalPhysicsLoop', 'runWaterPhysicsStep', 'runWaterPhysicsLoop', 'runEcologyPhysicsStep', 'runEcologyPhysicsLoop', 'runResidentMaterialManipulationStep', 'runResidentMaterialManipulationLoop', 'runResidentBodyPhysicsStep', 'runResidentBodyPhysicsLoop', 'runDeepTimePhysicsEpoch']
 };
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -859,6 +859,7 @@ function endVillageDay(options = {}) {
   const waterResult = runWaterPhysicsStep('village day water movement').payload;
   const ecologyResult = runEcologyPhysicsStep('village day ecology').payload;
   const structuralResult = runStructuralPhysicsStep('village day structural stress').payload;
+  const constraintResult = runContactConstraintPhysicsStep('village day contact constraints').payload;
 	  const beforeActions = world.autonomousResidents ? world.autonomousResidents.actionLog.length : 0;
   const residentActionIds = [];
   for (let i = 0; i < 4; i += 1) {
@@ -885,6 +886,7 @@ function endVillageDay(options = {}) {
     water_result: waterResult ? { stepId: waterResult.stepId || 'none', leaks: waterResult.leaks || 0, routePressure: waterResult.routePressure || 0, water: waterResult.water || world.resources.water } : null,
     ecology_result: ecologyResult ? { stepId: ecologyResult.stepId || 'none', harvested: ecologyResult.harvested || 0, fed: ecologyResult.fed || 0, food: ecologyResult.food || world.resources.food } : null,
     structural_result: structuralResult ? { stepId: structuralResult.stepId || 'none', stress: structuralResult.maxStress || 0, deflection: structuralResult.maxDeflection || 0, collapses: structuralResult.collapses || 0, repairRows: structuralResult.repairRows || 0 } : null,
+    constraint_result: constraintResult ? { stepId: constraintResult.stepId || 'none', contacts: constraintResult.contactRows || 0, joints: constraintResult.jointRows || 0, failedJoints: constraintResult.failedJoints || 0, repairRows: constraintResult.repairRows || 0 } : null,
 	    resident_actions_added: (world.autonomousResidents ? world.autonomousResidents.actionLog.length : 0) - beforeActions,
     resident_action_sample: residentActionIds,
     project_result: projectResult ? { proposalId: projectResult.proposalId || 'none', status: projectResult.status || projectResult.reason || 'none', completed: projectResult.completed === true } : null,
@@ -897,11 +899,11 @@ function endVillageDay(options = {}) {
   cycle.recapLedger.push({
     recap_id: `GPDR-${String(cycle.recapLedger.length + 1).padStart(3, '0')}`,
     day: dayNumber,
-	    summary: `${offscreen ? 'offscreen ' : ''}${weather.weather}; physics ${dayRow.physics_result ? dayRow.physics_result.stepId : 'none'}; resources ${dayRow.resource_result ? dayRow.resource_result.stepId : 'none'}; thermal ${dayRow.thermal_result ? dayRow.thermal_result.stepId : 'none'}; water ${dayRow.water_result ? dayRow.water_result.stepId : 'none'}; ecology ${dayRow.ecology_result ? dayRow.ecology_result.stepId : 'none'}; structure ${dayRow.structural_result ? dayRow.structural_result.stepId : 'none'}; ${dayRow.resident_actions_added} resident action(s); project ${dayRow.project_result ? dayRow.project_result.status : 'none'}; commons ${dayRow.commons_result ? dayRow.commons_result.resource : 'none'}`,
+	    summary: `${offscreen ? 'offscreen ' : ''}${weather.weather}; physics ${dayRow.physics_result ? dayRow.physics_result.stepId : 'none'}; resources ${dayRow.resource_result ? dayRow.resource_result.stepId : 'none'}; thermal ${dayRow.thermal_result ? dayRow.thermal_result.stepId : 'none'}; water ${dayRow.water_result ? dayRow.water_result.stepId : 'none'}; ecology ${dayRow.ecology_result ? dayRow.ecology_result.stepId : 'none'}; structure ${dayRow.structural_result ? dayRow.structural_result.stepId : 'none'}; constraints ${dayRow.constraint_result ? dayRow.constraint_result.stepId : 'none'}; ${dayRow.resident_actions_added} resident action(s); project ${dayRow.project_result ? dayRow.project_result.status : 'none'}; commons ${dayRow.commons_result ? dayRow.commons_result.resource : 'none'}`,
 	  });
   world.gamePrototypeCommons = null;
   recordPrototypeMilestone('village-day-ended', `day ${dayNumber}: ${weather.weather}, ${dayRow.resident_actions_added} resident action(s)`);
-	  return log('endVillageDay', { day: dayNumber, weather: weather.weather, physicsStepId: dayRow.physics_result ? dayRow.physics_result.stepId : null, physicsProposalId: dayRow.physics_result ? dayRow.physics_result.proposalId : null, resourceStepId: dayRow.resource_result ? dayRow.resource_result.stepId : null, thermalStepId: dayRow.thermal_result ? dayRow.thermal_result.stepId : null, waterStepId: dayRow.water_result ? dayRow.water_result.stepId : null, ecologyStepId: dayRow.ecology_result ? dayRow.ecology_result.stepId : null, structuralStepId: dayRow.structural_result ? dayRow.structural_result.stepId : null, actionsAdded: dayRow.resident_actions_added, projectStatus: dayRow.project_result ? dayRow.project_result.status : 'none', commonsResource: dayRow.commons_result ? dayRow.commons_result.resource : 'none', offscreen, directCommand: false });
+	  return log('endVillageDay', { day: dayNumber, weather: weather.weather, physicsStepId: dayRow.physics_result ? dayRow.physics_result.stepId : null, physicsProposalId: dayRow.physics_result ? dayRow.physics_result.proposalId : null, resourceStepId: dayRow.resource_result ? dayRow.resource_result.stepId : null, thermalStepId: dayRow.thermal_result ? dayRow.thermal_result.stepId : null, waterStepId: dayRow.water_result ? dayRow.water_result.stepId : null, ecologyStepId: dayRow.ecology_result ? dayRow.ecology_result.stepId : null, structuralStepId: dayRow.structural_result ? dayRow.structural_result.stepId : null, constraintStepId: dayRow.constraint_result ? dayRow.constraint_result.stepId : null, actionsAdded: dayRow.resident_actions_added, projectStatus: dayRow.project_result ? dayRow.project_result.status : 'none', commonsResource: dayRow.commons_result ? dayRow.commons_result.resource : 'none', offscreen, directCommand: false });
 	}
 
 function ensurePrototypeReturnLater() {
@@ -1016,7 +1018,7 @@ function ensurePrototype3DWorld() {
         integrator: 'bounded semi-implicit discrete timestep',
         timestep: 1,
         gravity: 9.8,
-        solver_layers: ['mass', 'weight', 'support', 'collision/contact', 'friction', 'moisture', 'heat', 'decay', 'tool wear', 'labor/work', 'stochastic field pressure', 'stochastic failure', 'load path', 'structural stress', 'deformation/sag', 'anchor slip', 'partial collapse'],
+        solver_layers: ['mass', 'weight', 'support', 'collision/contact', 'friction', 'moisture', 'heat', 'decay', 'tool wear', 'labor/work', 'stochastic field pressure', 'stochastic failure', 'load path', 'structural stress', 'deformation/sag', 'anchor slip', 'partial collapse', 'contact constraint', 'joint/binding constraint', 'surface friction', 'impulse transfer'],
         environment: { moisture: 0.31, heat: 0.46, wind: 0.18, decayPressure: 0.22, stress: 0.16 },
         forceLedger: [],
         supportLedger: [],
@@ -1029,6 +1031,11 @@ function ensurePrototype3DWorld() {
         deformationLedger: [],
         collapseLedger: [],
         structuralRepairLedger: [],
+        contactConstraintLedger: [],
+        jointConstraintLedger: [],
+        frictionLedger: [],
+        impulseLedger: [],
+        constraintRepairLedger: [],
         transformationLedger: [],
         latestStep: null
       },
@@ -1135,7 +1142,7 @@ function ensurePrototype3DWorld() {
       integrator: 'bounded semi-implicit discrete timestep',
       timestep: 1,
       gravity: 9.8,
-	      solver_layers: ['mass', 'weight', 'support', 'collision/contact', 'friction', 'moisture', 'heat', 'decay', 'tool wear', 'labor/work', 'stochastic field pressure', 'stochastic failure', 'load path', 'structural stress', 'deformation/sag', 'anchor slip', 'partial collapse'],
+	      solver_layers: ['mass', 'weight', 'support', 'collision/contact', 'friction', 'moisture', 'heat', 'decay', 'tool wear', 'labor/work', 'stochastic field pressure', 'stochastic failure', 'load path', 'structural stress', 'deformation/sag', 'anchor slip', 'partial collapse', 'contact constraint', 'joint/binding constraint', 'surface friction', 'impulse transfer'],
 	      environment: { moisture: 0.31, heat: 0.46, wind: 0.18, decayPressure: 0.22, stress: 0.16 },
 	      forceLedger: [],
 	      supportLedger: [],
@@ -1148,16 +1155,21 @@ function ensurePrototype3DWorld() {
 	      deformationLedger: [],
 	      collapseLedger: [],
 	      structuralRepairLedger: [],
+	      contactConstraintLedger: [],
+	      jointConstraintLedger: [],
+	      frictionLedger: [],
+	      impulseLedger: [],
+	      constraintRepairLedger: [],
 	      transformationLedger: [],
 	      latestStep: null
 	    };
 	  }
   if (!world.gamePrototype3DWorld.physics.environment) world.gamePrototype3DWorld.physics.environment = { moisture: 0.31, heat: 0.46, wind: 0.18, decayPressure: 0.22, stress: 0.16 };
-  ['forceLedger', 'supportLedger', 'collisionLedger', 'failureLedger', 'fieldLedger', 'energyLedger', 'loadPathLedger', 'stressLedger', 'deformationLedger', 'collapseLedger', 'structuralRepairLedger', 'transformationLedger'].forEach(key => {
+  ['forceLedger', 'supportLedger', 'collisionLedger', 'failureLedger', 'fieldLedger', 'energyLedger', 'loadPathLedger', 'stressLedger', 'deformationLedger', 'collapseLedger', 'structuralRepairLedger', 'contactConstraintLedger', 'jointConstraintLedger', 'frictionLedger', 'impulseLedger', 'constraintRepairLedger', 'transformationLedger'].forEach(key => {
     if (!Array.isArray(world.gamePrototype3DWorld.physics[key])) world.gamePrototype3DWorld.physics[key] = [];
   });
   if (!Array.isArray(world.gamePrototype3DWorld.physics.solver_layers)) world.gamePrototype3DWorld.physics.solver_layers = ['mass', 'weight', 'support', 'collision/contact', 'friction', 'moisture', 'heat', 'decay', 'tool wear', 'labor/work', 'stochastic field pressure', 'stochastic failure'];
-  ['heat', 'stochastic field pressure', 'load path', 'structural stress', 'deformation/sag', 'anchor slip', 'partial collapse'].forEach(layer => {
+  ['heat', 'stochastic field pressure', 'load path', 'structural stress', 'deformation/sag', 'anchor slip', 'partial collapse', 'contact constraint', 'joint/binding constraint', 'surface friction', 'impulse transfer'].forEach(layer => {
     if (!world.gamePrototype3DWorld.physics.solver_layers.includes(layer)) world.gamePrototype3DWorld.physics.solver_layers.push(layer);
   });
   return world.gamePrototype3DWorld;
@@ -1670,6 +1682,259 @@ function runStructuralPhysicsLoop() {
     deformationRows: physics.deformationLedger.length,
     collapseRows: physics.collapseLedger.length,
     repairRows: physics.structuralRepairLedger.length,
+    lastStepId: last ? last.stepId : null
+  });
+}
+
+function componentCenter(component) {
+  const pos = component.position3d || { x: 0, y: 0, z: 0 };
+  const dim = component.dimensions || { x: 1, y: 1, z: 1 };
+  return {
+    x: Number(pos.x || 0),
+    y: Number(pos.y || 0),
+    z: Number(pos.z || 0) + Number(dim.z || 1) / 2
+  };
+}
+
+function componentDistance(a, b) {
+  const ca = componentCenter(a);
+  const cb = componentCenter(b);
+  return Math.sqrt(((ca.x - cb.x) ** 2) + ((ca.y - cb.y) ** 2) + ((ca.z - cb.z) ** 2));
+}
+
+function componentsAreLikelyJointed(a, b) {
+  const pairText = `${a.affordance || ''} ${b.affordance || ''} ${a.material_id || ''} ${b.material_id || ''} ${a.shape || ''} ${b.shape || ''}`;
+  if (/binding|fiber|lash/.test(pairText)) return true;
+  if (a.resident_term_id && a.resident_term_id === b.resident_term_id && componentDistance(a, b) < 82) return true;
+  const fa = componentFootprint(a);
+  const fb = componentFootprint(b);
+  const verticalGap = Math.min(Math.abs(fa.maxZ - fb.minZ), Math.abs(fb.maxZ - fa.minZ));
+  return footprintsOverlapXY(fa, fb) && verticalGap <= 16;
+}
+
+function runContactConstraintPhysicsStep(source = 'manual contact constraints') {
+  ensureGamePrototype();
+  const sim = ensurePrototype3DWorld();
+  const physics = sim.physics;
+  ['contactConstraintLedger', 'jointConstraintLedger', 'frictionLedger', 'impulseLedger', 'constraintRepairLedger'].forEach(key => {
+    if (!Array.isArray(physics[key])) physics[key] = [];
+  });
+  ['contact constraint', 'joint/binding constraint', 'surface friction', 'impulse transfer'].forEach(layer => {
+    if (!physics.solver_layers.includes(layer)) physics.solver_layers.push(layer);
+  });
+  if (!physics.latestStructuralStep) runStructuralPhysicsStep(`${source} structural precheck`);
+  physics.constraintStep = (physics.constraintStep || 0) + 1;
+  const stepId = `G3J-${String(physics.constraintStep).padStart(3, '0')}`;
+  const entropy = typeof deepTimeEntropyByte === 'function' ? deepTimeEntropyByte() : ((world.tick * 107) % 256);
+  const field = physics.environment || { moisture: 0.31, heat: 0.46, wind: 0.18, stress: 0.16 };
+  const components = sim.components || [];
+  const contactRows = [];
+  const jointRows = [];
+  const frictionRows = [];
+  const impulseRows = [];
+  const repairRows = [];
+  let slippingContacts = 0;
+  let failedJoints = 0;
+  let maxImpulse = 0;
+  let maxSlip = 0;
+
+  for (let i = 0; i < components.length; i += 1) {
+    for (let j = i + 1; j < components.length; j += 1) {
+      const a = components[i];
+      const b = components[j];
+      const fa = componentFootprint(a);
+      const fb = componentFootprint(b);
+      const xyOverlap = footprintsOverlapXY(fa, fb);
+      const verticalGap = Math.min(Math.abs(fa.maxZ - fb.minZ), Math.abs(fb.maxZ - fa.minZ));
+      const distance = componentDistance(a, b);
+      const contact = xyOverlap && verticalGap <= 14;
+      const jointed = componentsAreLikelyJointed(a, b);
+      if (!contact && !jointed) continue;
+      const ma = sim.materialCatalog[a.material_id] || {};
+      const mb = sim.materialCatalog[b.material_id] || {};
+      const normalProxy = Number((((Number(a.mass || ma.mass || 1) + Number(b.mass || mb.mass || 1)) * Number(physics.gravity || 9.8)) / (contact ? 2.1 : 4.5)).toFixed(3));
+      const frictionCoefficient = Number(((Number(ma.friction || 0.4) + Number(mb.friction || 0.4)) / 2).toFixed(3));
+      const frictionLimit = Number((normalProxy * frictionCoefficient * Math.max(0.15, (Number(a.stability || 0.6) + Number(b.stability || 0.6)) / 2)).toFixed(3));
+      const relativeSlip = Math.abs(Number(a.deflection || 0) - Number(b.deflection || 0)) + Math.abs(Number(a.anchor_slip || 0) - Number(b.anchor_slip || 0)) + Number(field.wind || 0) * 0.08 + Number(field.stress || 0.16) * 0.12;
+      const surfaceMoisture = (Number(a.moisture || 0) + Number(b.moisture || 0)) / 2;
+      const impulse = Number((normalProxy * (0.04 + relativeSlip * 0.22 + surfaceMoisture * 0.035 + (entropy % 17) / 900)).toFixed(3));
+      const slipProbability = clamp((impulse / Math.max(1, frictionLimit)) * 0.16 + surfaceMoisture * 0.12 + relativeSlip * 0.18 + Number(field.stress || 0.16) * 0.08);
+      const threshold = ((entropy + i * 29 + j * 11 + stepId.length) % 100) / 100;
+      const slipped = slipProbability > 0.18 && threshold < slipProbability;
+      const jointStrength = jointed ? Number(((Number(ma.tensile_strength || 0.2) + Number(mb.tensile_strength || 0.2)) * 0.5 + (a.material_id === 'fiber' || b.material_id === 'fiber' ? 0.24 : 0) - surfaceMoisture * 0.14 - Math.max(Number(a.damage || 0), Number(b.damage || 0)) * 0.18).toFixed(3)) : 0;
+      const jointDemand = Number((impulse * (jointed ? 0.42 : 0.12) + relativeSlip * 0.18).toFixed(3));
+      const jointFailed = jointed && (jointDemand > Math.max(0.05, jointStrength) || (slipped && threshold < slipProbability * 0.6));
+      const slipDelta = slipped ? Number((0.018 + slipProbability * 0.04).toFixed(4)) : Number((relativeSlip * 0.003).toFixed(4));
+      a.anchor_slip = Number(clamp(Number(a.anchor_slip || 0) + slipDelta * (jointed ? 0.7 : 0.35)).toFixed(3));
+      b.anchor_slip = Number(clamp(Number(b.anchor_slip || 0) + slipDelta * (jointed ? 0.7 : 0.35)).toFixed(3));
+      a.damage = Number(clamp(Number(a.damage || 0) + impulse * 0.002 + (jointFailed ? 0.025 : 0)).toFixed(3));
+      b.damage = Number(clamp(Number(b.damage || 0) + impulse * 0.002 + (jointFailed ? 0.025 : 0)).toFixed(3));
+      a.stability = Number(clamp(Number(a.stability || 0.6) - slipDelta * 0.8 - (jointFailed ? 0.02 : 0)).toFixed(3));
+      b.stability = Number(clamp(Number(b.stability || 0.6) - slipDelta * 0.8 - (jointFailed ? 0.02 : 0)).toFixed(3));
+      if (slipped) slippingContacts += 1;
+      if (jointFailed) failedJoints += 1;
+      maxImpulse = Math.max(maxImpulse, impulse);
+      maxSlip = Math.max(maxSlip, slipDelta);
+      contactRows.push({
+        constraint_step_id: stepId,
+        component_a: a.component_id,
+        component_b: b.component_id,
+        contact,
+        jointed,
+        xy_overlap: xyOverlap,
+        vertical_gap: Number(verticalGap.toFixed(3)),
+        distance: Number(distance.toFixed(3)),
+        normal_proxy: normalProxy,
+        hidden_law_normal_view: false
+      });
+      frictionRows.push({
+        constraint_step_id: stepId,
+        component_a: a.component_id,
+        component_b: b.component_id,
+        friction_coefficient: frictionCoefficient,
+        friction_limit: frictionLimit,
+        surface_moisture: Number(surfaceMoisture.toFixed(3)),
+        slip_probability: Number(slipProbability.toFixed(3)),
+        threshold: Number(threshold.toFixed(3)),
+        slipped,
+        no_resource_spawning: true,
+        hidden_law_normal_view: false
+      });
+      impulseRows.push({
+        constraint_step_id: stepId,
+        component_a: a.component_id,
+        component_b: b.component_id,
+        impulse,
+        relative_slip: Number(relativeSlip.toFixed(3)),
+        slip_delta: slipDelta,
+        impulse_absorbed_by_damage: Number((impulse * 0.002).toFixed(4)),
+        conserved_components: true
+      });
+      if (jointed) {
+        jointRows.push({
+          constraint_step_id: stepId,
+          component_a: a.component_id,
+          component_b: b.component_id,
+          joint_strength: Number(jointStrength.toFixed(3)),
+          joint_demand: jointDemand,
+          joint_failed: jointFailed,
+          resident_term: a.resident_term_id || b.resident_term_id || 'local',
+          no_effect_without_cause: true,
+          no_resource_spawning: true,
+          hidden_law_normal_view: false
+        });
+      }
+      if (jointFailed || (slipped && slipProbability > 0.32)) {
+        repairRows.push({
+          repair_id: `G3JR-${String(physics.constraintRepairLedger.length + repairRows.length + 1).padStart(3, '0')}`,
+          constraint_step_id: stepId,
+          component_a: a.component_id,
+          component_b: b.component_id,
+          reason: jointFailed ? 'binding/joint demand exceeded strength' : 'wet friction surface slipped',
+          materials_needed: jointed ? ['fiber', 'care'] : ['care'],
+          labor_time_cost: jointed ? 2 : 1,
+          avatar_direct_command: false,
+          no_resource_spawning: true,
+          hidden_law_normal_view: false
+        });
+      }
+    }
+  }
+
+  (sim.structures || []).forEach(structure => {
+    const linkedRows = jointRows.filter(row => structure.component_ids.includes(row.component_a) || structure.component_ids.includes(row.component_b));
+    const failed = linkedRows.filter(row => row.joint_failed).length;
+    structure.constraint_slip = Number(clamp(Number(structure.constraint_slip || 0) + maxSlip + failed * 0.02).toFixed(3));
+    structure.collapse_risk = Number(clamp(Number(structure.collapse_risk || 0) + failed * 0.015 + slippingContacts * 0.002).toFixed(3));
+    if (failed > 0) structure.status = 'joint repair needed';
+  });
+
+  physics.contactConstraintLedger.push(...contactRows);
+  physics.jointConstraintLedger.push(...jointRows);
+  physics.frictionLedger.push(...frictionRows);
+  physics.impulseLedger.push(...impulseRows);
+  physics.constraintRepairLedger.push(...repairRows);
+  physics.contactConstraintLedger = physics.contactConstraintLedger.slice(-180);
+  physics.jointConstraintLedger = physics.jointConstraintLedger.slice(-180);
+  physics.frictionLedger = physics.frictionLedger.slice(-180);
+  physics.impulseLedger = physics.impulseLedger.slice(-180);
+  physics.constraintRepairLedger = physics.constraintRepairLedger.slice(-80);
+  physics.latestConstraintStep = {
+    step_id: stepId,
+    source,
+    entropy,
+    contact_rows: contactRows.length,
+    joint_rows: jointRows.length,
+    friction_rows: frictionRows.length,
+    impulse_rows: impulseRows.length,
+    repair_rows: repairRows.length,
+    slipping_contacts: slippingContacts,
+    failed_joints: failedJoints,
+    max_impulse: Number(maxImpulse.toFixed(3)),
+    max_slip_delta: Number(maxSlip.toFixed(4)),
+    hidden_law_normal_view: false,
+    no_resource_spawning: true
+  };
+  if (repairRows.length) {
+    applyPhysicsConsequencesToVillage({
+      step_id: stepId,
+      maintenance_pressure: true,
+      failures: failedJoints,
+      collisions: slippingContacts,
+      min_stability: components.reduce((min, component) => Math.min(min, Number(component.stability || 1)), 1),
+      max_damage: components.reduce((max, component) => Math.max(max, Number(component.damage || 0)), 0),
+      moisture_risk: Number(field.moisture || 0),
+      field_stress: Number(field.stress || 0),
+      field_heat: Number(field.heat || 0),
+      field_moisture: Number(field.moisture || 0),
+      related_constraint_step: stepId
+    }, source);
+  }
+  recordRealityConstraint('contact_constraint_physics', {
+    resident: world.selected,
+    sourceBeliefId: stepId,
+    materials: ['rough_branch', 'fiber', 'clay_vessel', 'reed_cover'],
+    publicObservation: `${contactRows.length} contact constraint(s), ${jointRows.length} joint row(s), ${slippingContacts} slip row(s), ${failedJoints} failed joint(s)`,
+    residentInterpretation: repairRows.length ? 'some tied or touching pieces shifted and need attention' : 'touching pieces held together this time',
+    materialTransformation: 'contact friction, joint demand, impulse transfer, component damage, stability, and anchor slip updated without creating or deleting material',
+    timeCost: 1,
+    workCost: repairRows.length ? 1 : 0,
+    toolWear: failedJoints,
+    maintenanceObligation: repairRows.length ? 'constraint repair pressure from slipping joints' : 'watch touching surfaces and bindings',
+    unintendedConsequence: repairRows.length ? 'joint repair entered resident planning' : 'constraint history accumulated silently',
+    hiddenLawInvolved: world.audit ? 'contact normal proxy, friction limit, joint strength, impulse transfer, stochastic slip probability' : 'audit only',
+    conservationCheck: true
+  });
+  recordPrototypeMilestone('contact-constraint-physics', `${stepId}: contact=${contactRows.length}, joint=${jointRows.length}, slip=${slippingContacts}, failed=${failedJoints}`);
+  return log('runContactConstraintPhysicsStep', {
+    stepId,
+    contactRows: contactRows.length,
+    jointRows: jointRows.length,
+    frictionRows: frictionRows.length,
+    impulseRows: impulseRows.length,
+    repairRows: repairRows.length,
+    slippingContacts,
+    failedJoints,
+    maxImpulse: physics.latestConstraintStep.max_impulse,
+    maxSlip: physics.latestConstraintStep.max_slip_delta
+  });
+}
+
+function runContactConstraintPhysicsLoop() {
+  ensureGamePrototype();
+  const before = ensurePrototype3DWorld().physics.contactConstraintLedger.length;
+  let last = null;
+  for (let index = 0; index < 4; index += 1) {
+    last = runContactConstraintPhysicsStep(`contact constraint loop ${index + 1}`).payload;
+  }
+  const physics = ensurePrototype3DWorld().physics;
+  return log('runContactConstraintPhysicsLoop', {
+    stepsAdded: physics.contactConstraintLedger.length - before,
+    contactRows: physics.contactConstraintLedger.length,
+    jointRows: physics.jointConstraintLedger.length,
+    frictionRows: physics.frictionLedger.length,
+    impulseRows: physics.impulseLedger.length,
+    repairRows: physics.constraintRepairLedger.length,
     lastStepId: last ? last.stepId : null
   });
 }
@@ -3741,8 +4006,9 @@ function runFirstPlayablePrototypeLoop() {
   runWaterPhysicsLoop();
   runEcologyPhysicsLoop();
   runStructuralPhysicsLoop();
+  runContactConstraintPhysicsLoop();
   runPrototypeReturnProof();
-  recordPrototypeMilestone('first-playable-loop-complete', 'opening, practice, proposal, tool physics, resource physics, thermal physics, water physics, ecology physics, structural stress, audit, save, return, and branch persistence executed from one game surface');
+  recordPrototypeMilestone('first-playable-loop-complete', 'opening, practice, proposal, tool physics, resource physics, thermal physics, water physics, ecology physics, structural stress, contact constraints, audit, save, return, and branch persistence executed from one game surface');
   return log('runFirstPlayablePrototypeLoop', {
     milestones: world.gamePrototype.milestones.length,
     practices: world.emergentPracticeGraph ? world.emergentPracticeGraph.nodes.length : 0,
@@ -3753,6 +4019,7 @@ function runFirstPlayablePrototypeLoop() {
     waterFlows: world.gamePrototypeWaterPhysics ? world.gamePrototypeWaterPhysics.flowLedger.length : 0,
     ecologyGrowth: world.gamePrototypeEcologyPhysics ? world.gamePrototypeEcologyPhysics.growthLedger.length : 0,
     structuralStress: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.stressLedger ? world.gamePrototype3DWorld.physics.stressLedger.length : 0,
+    contactConstraints: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.contactConstraintLedger ? world.gamePrototype3DWorld.physics.contactConstraintLedger.length : 0,
     branchContinuity: world.hintBranchPersistence ? world.hintBranchPersistence.continuityRows.length : 0,
   });
 }
@@ -7017,6 +7284,32 @@ function formatPrototypeStructuralPhysics() {
   ].join('\n');
 }
 
+function formatPrototypeContactConstraintPhysics() {
+  const sim = world.gamePrototype3DWorld || ensurePrototype3DWorld();
+  const physics = sim.physics || {};
+  const latest = physics.latestConstraintStep || null;
+  const contacts = (physics.contactConstraintLedger || []).slice(-6).map(row => `${row.component_a}<->${row.component_b}: contact=${row.contact}, jointed=${row.jointed}, gap=${row.vertical_gap}, normal=${row.normal_proxy}`);
+  const joints = (physics.jointConstraintLedger || []).slice(-6).map(row => `${row.component_a}<->${row.component_b}: demand=${row.joint_demand}, strength=${row.joint_strength}, failed=${row.joint_failed}`);
+  const friction = (physics.frictionLedger || []).slice(-6).map(row => `${row.component_a}<->${row.component_b}: limit=${row.friction_limit}, moisture=${row.surface_moisture}, slipP=${row.slip_probability}, slipped=${row.slipped}`);
+  const impulses = (physics.impulseLedger || []).slice(-5).map(row => `${row.component_a}<->${row.component_b}: impulse=${row.impulse}, relSlip=${row.relative_slip}, slipDelta=${row.slip_delta}`);
+  const repairs = (physics.constraintRepairLedger || []).slice(-5).map(row => `${row.repair_id}: ${row.component_a}<->${row.component_b}; ${row.reason}; materials=${row.materials_needed.join('+')}; labor=${row.labor_time_cost}`);
+  return [
+    latest ? `Latest: ${latest.step_id}; contacts=${latest.contact_rows}; joints=${latest.joint_rows}; slip=${latest.slipping_contacts}; failed=${latest.failed_joints}; impulse=${latest.max_impulse}` : 'Latest: none',
+    `Ledgers: contact=${(physics.contactConstraintLedger || []).length} / joint=${(physics.jointConstraintLedger || []).length} / friction=${(physics.frictionLedger || []).length} / impulse=${(physics.impulseLedger || []).length} / repair=${(physics.constraintRepairLedger || []).length}`,
+    'Contacts:',
+    ...(contacts.length ? contacts : ['none']),
+    'Joint constraints:',
+    ...(joints.length ? joints : ['none']),
+    'Friction:',
+    ...(friction.length ? friction : ['none']),
+    'Impulse transfer:',
+    ...(impulses.length ? impulses : ['none']),
+    'Repair pressure:',
+    ...(repairs.length ? repairs : ['none']),
+    'Boundary: contact constraints are bounded stochastic prototype physics; no hidden law in normal view and no material spawning.'
+  ].join('\n');
+}
+
 function formatPrototypeMaterialManipulation() {
   const loop = world.gamePrototypeMaterialManipulation || ensureMaterialManipulationLoop();
   const actions = loop.actionLedger.slice(-8).map(row => `${row.manipulation_id}: ${row.resident} ${row.action} ${row.component_id}/${row.resident_term}; success=${row.success}; tool=${row.tool_id || 'none'} fit=${row.tool_fit || 0} failed=${row.tool_failed === true}; cost=${Object.entries(row.resource_cost || {}).map(([key, value]) => `${key}:${value}`).join('+') || 'none'}; physics=${row.physics_step_id}`);
@@ -7288,6 +7581,7 @@ function formatPrototypePlayerGuide() {
     `Return later: ${returnLater ? `${returnLater.returnLedger.length} return(s), latest=${returnLater.latestReceipt ? returnLater.latestReceipt.return_id : 'none'}` : 'not used'}`,
     `Physics: ${world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.latestStep ? `${world.gamePrototype3DWorld.physics.latestStep.step_id}; support=${world.gamePrototype3DWorld.physics.latestStep.support_checks}; failures=${world.gamePrototype3DWorld.physics.latestStep.failures}; field=${world.gamePrototype3DWorld.physics.latestStep.field_id || 'none'}; stress=${world.gamePrototype3DWorld.physics.latestStep.field_stress || 'n/a'}` : 'not stepped'} / residents use local terms and imperfect glosses, not engine truth`,
     `Structural stress: ${world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.latestStructuralStep ? `${world.gamePrototype3DWorld.physics.latestStructuralStep.step_id}; max=${world.gamePrototype3DWorld.physics.latestStructuralStep.max_stress}; deflect=${world.gamePrototype3DWorld.physics.latestStructuralStep.max_deflection}; repair=${world.gamePrototype3DWorld.physics.latestStructuralStep.repair_rows}` : 'not stepped'}`,
+    `Contact constraints: ${world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.latestConstraintStep ? `${world.gamePrototype3DWorld.physics.latestConstraintStep.step_id}; contact=${world.gamePrototype3DWorld.physics.latestConstraintStep.contact_rows}; joints=${world.gamePrototype3DWorld.physics.latestConstraintStep.joint_rows}; failed=${world.gamePrototype3DWorld.physics.latestConstraintStep.failed_joints}` : 'not stepped'}`,
     `Seed divergence: ${world.gamePrototypeDivergence ? `${world.gamePrototypeDivergence.branches.length} branch(es), diverged=${world.gamePrototypeDivergence.diverged}` : 'not compared'}`,
     `Commons: ${world.gamePrototypeCommons ? `${world.gamePrototypeCommons.pressure_level}, resources=${world.gamePrototypeCommons.resource_total}, pass=${world.gamePrototypeCommons.pass}` : 'not audited'}`,
     `Caution: ${guide.caution}`,
@@ -7418,6 +7712,7 @@ function runPrototypeQASmoke() {
   runWaterPhysicsLoop();
   runEcologyPhysicsLoop();
   runStructuralPhysicsLoop();
+  runContactConstraintPhysicsLoop();
   runResidentMaterialManipulationLoop();
 	  advanceVillageProject();
   advanceVillageProject();
@@ -7465,6 +7760,11 @@ function runPrototypeQASmoke() {
 	    structuralDeformationRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.deformationLedger ? world.gamePrototype3DWorld.physics.deformationLedger.length : 0,
 	    structuralCollapseRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.collapseLedger ? world.gamePrototype3DWorld.physics.collapseLedger.length : 0,
 	    structuralRepairRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.structuralRepairLedger ? world.gamePrototype3DWorld.physics.structuralRepairLedger.length : 0,
+	    contactConstraintRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.contactConstraintLedger ? world.gamePrototype3DWorld.physics.contactConstraintLedger.length : 0,
+	    jointConstraintRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.jointConstraintLedger ? world.gamePrototype3DWorld.physics.jointConstraintLedger.length : 0,
+	    frictionRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.frictionLedger ? world.gamePrototype3DWorld.physics.frictionLedger.length : 0,
+	    impulseRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.impulseLedger ? world.gamePrototype3DWorld.physics.impulseLedger.length : 0,
+	    constraintRepairRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.constraintRepairLedger ? world.gamePrototype3DWorld.physics.constraintRepairLedger.length : 0,
     terrainRows: world.gamePrototypeTerrain && world.gamePrototypeTerrain.terrainLedger ? world.gamePrototypeTerrain.terrainLedger.length : 0,
     terrainFlowRows: world.gamePrototypeTerrain && world.gamePrototypeTerrain.flowLedger ? world.gamePrototypeTerrain.flowLedger.length : 0,
     terrainSupportRows: world.gamePrototypeTerrain && world.gamePrototypeTerrain.supportLedger ? world.gamePrototypeTerrain.supportLedger.length : 0,
@@ -7530,6 +7830,7 @@ function runPrototypeQASmoke() {
 	    { id: 'return-later-forward-persistence', pass: Boolean(world.gamePrototypeReturnLater && savedCounts.returnLaterRows > 0 && world.gamePrototypeReturnLater.returnLedger.every(row => row.restored_old_state === false && row.direct_reset === false && row.continuity_preserved === true)), evidence: `${savedCounts.returnLaterRows} return-later row(s)` },
 		    { id: 'stochastic-physics-substrate', pass: Boolean(world.gamePrototype3DWorld && savedCounts.materialComponents > 0 && savedCounts.residentTerms > 0 && savedCounts.physicsSteps > 0 && savedCounts.supportRows > 0 && savedCounts.forceRows > 0 && savedCounts.fieldRows > 0 && savedCounts.energyRows > 0 && world.gamePrototype3DWorld.noFixedBuildingAssets === true && world.gamePrototype3DWorld.noEnglishResidentTechLabels === true), evidence: `${savedCounts.materialComponents} component(s), ${savedCounts.residentTerms} term(s), ${savedCounts.physicsSteps} physics step(s), ${savedCounts.fieldRows} field row(s), ${savedCounts.energyRows} energy row(s)` },
     { id: 'structural-stress-physics', pass: Boolean(world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && savedCounts.structuralLoadRows > 0 && savedCounts.structuralStressRows > 0 && savedCounts.structuralDeformationRows > 0 && world.gamePrototype3DWorld.physics.stressLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.structuralLoadRows} load row(s), ${savedCounts.structuralStressRows} stress row(s), ${savedCounts.structuralDeformationRows} deformation row(s), ${savedCounts.structuralCollapseRows} collapse row(s), ${savedCounts.structuralRepairRows} repair row(s)` },
+    { id: 'contact-constraint-physics', pass: Boolean(world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && savedCounts.contactConstraintRows > 0 && savedCounts.jointConstraintRows > 0 && savedCounts.frictionRows > 0 && savedCounts.impulseRows > 0 && world.gamePrototype3DWorld.physics.jointConstraintLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.contactConstraintRows} contact row(s), ${savedCounts.jointConstraintRows} joint row(s), ${savedCounts.frictionRows} friction row(s), ${savedCounts.impulseRows} impulse row(s), ${savedCounts.constraintRepairRows} repair row(s)` },
     { id: 'terrain-physics-substrate', pass: Boolean(world.gamePrototypeTerrain && savedCounts.terrainRows > 0 && savedCounts.terrainFlowRows > 0 && savedCounts.terrainSupportRows > 0 && world.gamePrototypeTerrain.terrainLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.terrainRows} terrain step(s), ${savedCounts.terrainFlowRows} flow row(s), ${savedCounts.terrainSupportRows} support row(s)` },
     { id: 'tool-work-physics', pass: Boolean(world.gamePrototypeTools && savedCounts.toolUseRows > 0 && savedCounts.toolWearRows > 0 && world.gamePrototypeTools.useLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.toolUseRows} use row(s), ${savedCounts.toolWearRows} wear row(s), ${savedCounts.toolFailureRows} failure row(s), ${savedCounts.toolRepairRows} repair row(s)` },
     { id: 'resource-stock-physics', pass: Boolean(world.gamePrototypeResourcePhysics && savedCounts.resourceStockRows > 0 && savedCounts.resourceTransformRows >= savedCounts.resourceStockRows && world.gamePrototypeResourcePhysics.stockLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.resourceStockRows} stock step(s), ${savedCounts.resourceTransformRows} transform row(s), ${savedCounts.resourceLossRows} loss row(s), ${savedCounts.resourceGainRows} gain row(s)` },
@@ -7599,7 +7900,8 @@ function runPrototypeAutoStep() {
   const waterResult = runWaterPhysicsStep('auto sim water').payload;
   const ecologyResult = runEcologyPhysicsStep('auto sim ecology').payload;
   const structuralResult = runStructuralPhysicsStep('auto sim structural stress').payload;
-		  let action = `resident tick + stochastic physics ${materialResult.physicsStepId || 'none'} + terrain ${terrainResult.terrainStepId || 'none'} + tool ${toolResult.toolUseId || 'none'} + resources ${resourceResult.stepId || 'none'} + thermal ${thermalResult.stepId || 'none'} + water ${waterResult.stepId || 'none'} + ecology ${ecologyResult.stepId || 'none'} + structure ${structuralResult.stepId || 'none'}`;
+  const constraintResult = runContactConstraintPhysicsStep('auto sim contact constraints').payload;
+		  let action = `resident tick + stochastic physics ${materialResult.physicsStepId || 'none'} + terrain ${terrainResult.terrainStepId || 'none'} + tool ${toolResult.toolUseId || 'none'} + resources ${resourceResult.stepId || 'none'} + thermal ${thermalResult.stepId || 'none'} + water ${waterResult.stepId || 'none'} + ecology ${ecologyResult.stepId || 'none'} + structure ${structuralResult.stepId || 'none'} + constraints ${constraintResult.stepId || 'none'}`;
 	  if (materialResult.physicsProposalId) action += ` + physics proposal ${materialResult.physicsProposalId}`;
   if (clock.step % 3 === 0) {
     const manipulation = runResidentMaterialManipulationStep().payload;
@@ -7691,6 +7993,11 @@ function saveSlotSummary(slot) {
     structural_deformation_rows: slot.structural_deformation_rows,
     structural_collapse_rows: slot.structural_collapse_rows,
     structural_repair_rows: slot.structural_repair_rows,
+    contact_constraint_rows: slot.contact_constraint_rows,
+    joint_constraint_rows: slot.joint_constraint_rows,
+    friction_rows: slot.friction_rows,
+    impulse_rows: slot.impulse_rows,
+    constraint_repair_rows: slot.constraint_repair_rows,
     terrain_steps: slot.terrain_steps,
     terrain_flow_rows: slot.terrain_flow_rows,
     terrain_support_rows: slot.terrain_support_rows,
@@ -7793,6 +8100,11 @@ function savePrototypeSlot(label = 'manual prototype save') {
 	    structural_deformation_rows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.deformationLedger ? world.gamePrototype3DWorld.physics.deformationLedger.length : 0,
 	    structural_collapse_rows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.collapseLedger ? world.gamePrototype3DWorld.physics.collapseLedger.length : 0,
 	    structural_repair_rows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.structuralRepairLedger ? world.gamePrototype3DWorld.physics.structuralRepairLedger.length : 0,
+	    contact_constraint_rows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.contactConstraintLedger ? world.gamePrototype3DWorld.physics.contactConstraintLedger.length : 0,
+	    joint_constraint_rows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.jointConstraintLedger ? world.gamePrototype3DWorld.physics.jointConstraintLedger.length : 0,
+	    friction_rows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.frictionLedger ? world.gamePrototype3DWorld.physics.frictionLedger.length : 0,
+	    impulse_rows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.impulseLedger ? world.gamePrototype3DWorld.physics.impulseLedger.length : 0,
+	    constraint_repair_rows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.constraintRepairLedger ? world.gamePrototype3DWorld.physics.constraintRepairLedger.length : 0,
     terrain_steps: world.gamePrototypeTerrain && world.gamePrototypeTerrain.terrainLedger ? world.gamePrototypeTerrain.terrainLedger.length : 0,
     terrain_flow_rows: world.gamePrototypeTerrain && world.gamePrototypeTerrain.flowLedger ? world.gamePrototypeTerrain.flowLedger.length : 0,
     terrain_support_rows: world.gamePrototypeTerrain && world.gamePrototypeTerrain.supportLedger ? world.gamePrototypeTerrain.supportLedger.length : 0,
@@ -7928,6 +8240,11 @@ function buildPrototypeAcceptanceReceipt() {
   const structuralDeformationRows = physics && physics.deformationLedger ? physics.deformationLedger.length : 0;
   const structuralCollapseRows = physics && physics.collapseLedger ? physics.collapseLedger.length : 0;
   const structuralRepairRows = physics && physics.structuralRepairLedger ? physics.structuralRepairLedger.length : 0;
+  const contactConstraintRows = physics && physics.contactConstraintLedger ? physics.contactConstraintLedger.length : 0;
+  const jointConstraintRows = physics && physics.jointConstraintLedger ? physics.jointConstraintLedger.length : 0;
+  const frictionRows = physics && physics.frictionLedger ? physics.frictionLedger.length : 0;
+  const impulseRows = physics && physics.impulseLedger ? physics.impulseLedger.length : 0;
+  const constraintRepairRows = physics && physics.constraintRepairLedger ? physics.constraintRepairLedger.length : 0;
   const terrainRows = terrain && terrain.terrainLedger ? terrain.terrainLedger.length : 0;
   const terrainFlowRows = terrain && terrain.flowLedger ? terrain.flowLedger.length : 0;
   const terrainSupportRows = terrain && terrain.supportLedger ? terrain.supportLedger.length : 0;
@@ -7985,6 +8302,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'return_later_forward_persistence', pass: Boolean(returnLater && returnLater.returnLedger.length > 0 && returnLater.returnLedger.every(row => row.restored_old_state === false && row.direct_reset === false && row.continuity_preserved === true)), evidence: returnLater ? `${returnLater.returnLedger.length} return(s), latest=${returnLater.latestReceipt ? returnLater.latestReceipt.return_id : 'none'}` : 'not used' },
     { id: 'physics_first_3d_material_world', pass: Boolean(materialWorld && physics && materialWorld.components.length > 0 && materialWorld.structures.length > 0 && materialWorld.language.terms.length > 0 && physics.latestStep && physics.supportLedger.length > 0 && physics.forceLedger.length > 0 && fieldRows > 0 && energyRows > 0 && materialWorld.noFixedBuildingAssets === true && materialWorld.noEnglishResidentTechLabels === true), evidence: materialWorld && physics ? `${materialWorld.components.length} component(s), ${materialWorld.language.terms.length} term(s), physics step=${physics.latestStep ? physics.latestStep.step_id : 'none'}, fields=${fieldRows}, energy=${energyRows}` : 'not initialized' },
     { id: 'structural_stress_physics', pass: Boolean(materialWorld && physics && structuralLoadRows > 0 && structuralStressRows > 0 && structuralDeformationRows > 0 && physics.stressLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${structuralLoadRows} load row(s), ${structuralStressRows} stress row(s), ${structuralDeformationRows} deformation row(s), ${structuralCollapseRows} collapse row(s), ${structuralRepairRows} repair row(s)` },
+    { id: 'contact_constraint_physics', pass: Boolean(materialWorld && physics && contactConstraintRows > 0 && jointConstraintRows > 0 && frictionRows > 0 && impulseRows > 0 && physics.jointConstraintLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${contactConstraintRows} contact row(s), ${jointConstraintRows} joint row(s), ${frictionRows} friction row(s), ${impulseRows} impulse row(s), ${constraintRepairRows} repair row(s)` },
     { id: 'terrain_physics_substrate', pass: Boolean(terrain && terrainRows > 0 && terrainFlowRows > 0 && terrainSupportRows > 0 && terrain.terrainLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${terrainRows} terrain step(s), ${terrainFlowRows} flow row(s), ${terrainSupportRows} support row(s)` },
 	    { id: 'tool_work_physics', pass: Boolean(tools && toolUseRows > 0 && toolWearRows > 0 && tools.useLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${toolUseRows} use row(s), ${toolWearRows} wear row(s), ${toolFailureRows} failure row(s), ${toolRepairRows} repair row(s)` },
 	    { id: 'resource_stock_physics', pass: Boolean(resourcePhysics && resourceStockRows > 0 && resourceTransformRows >= resourceStockRows && resourcePhysics.stockLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${resourceStockRows} stock step(s), ${resourceTransformRows} transform row(s), ${resourceLossRows} loss row(s), ${resourceGainRows} gain row(s)` },
@@ -8069,7 +8387,7 @@ function formatPrototypeClock() {
 
 function formatPrototypeSaves() {
   const saves = world.gamePrototypeSaves || ensurePrototypeSaves();
-  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals/${slot.physical_field_rows || 0} fields/${slot.physical_energy_rows || 0} energy; structural=${slot.structural_stress_rows || 0} stress/${slot.structural_deformation_rows || 0} deform/${slot.structural_repair_rows || 0} repair; terrain=${slot.terrain_steps || 0} steps/${slot.terrain_flow_rows || 0} flow/${slot.terrain_support_rows || 0} support; tools=${slot.tool_use_rows || 0} uses/${slot.tool_failure_rows || 0} failures/${slot.tool_repair_rows || 0} repairs; resources=${slot.resource_stock_rows || 0} steps/${slot.resource_loss_rows || 0} losses/${slot.resource_gain_rows || 0} gains; thermal=${slot.thermal_heat_rows || 0} heat/${slot.thermal_smoke_rows || 0} smoke/${slot.thermal_safety_rows || 0} safety; water=${slot.water_flow_rows || 0} flows/${slot.water_leak_rows || 0} leaks/${slot.water_safety_rows || 0} safety; ecology=${slot.ecology_growth_rows || 0} growth/${slot.ecology_harvest_rows || 0} harvest/${slot.ecology_hunger_rows || 0} hunger; manipulation=${slot.material_manipulation_rows || 0}/${slot.material_manipulation_practice_links || 0} practice links; bodies=${slot.resident_body_steps || 0} steps/${slot.resident_body_contacts || 0} contacts/${slot.resident_body_recoveries || 0} recoveries; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; deepPhysics=${slot.deep_time_physics_epochs || 0} epochs/${slot.deep_time_material_flux_rows || 0} flux/${slot.deep_time_physical_effects || 0} effects/${slot.physical_heritage_rows || 0} heritage; survival=${slot.survival_status}`);
+  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals/${slot.physical_field_rows || 0} fields/${slot.physical_energy_rows || 0} energy; structural=${slot.structural_stress_rows || 0} stress/${slot.structural_deformation_rows || 0} deform/${slot.structural_repair_rows || 0} repair; constraints=${slot.contact_constraint_rows || 0} contact/${slot.joint_constraint_rows || 0} joints/${slot.constraint_repair_rows || 0} repair; terrain=${slot.terrain_steps || 0} steps/${slot.terrain_flow_rows || 0} flow/${slot.terrain_support_rows || 0} support; tools=${slot.tool_use_rows || 0} uses/${slot.tool_failure_rows || 0} failures/${slot.tool_repair_rows || 0} repairs; resources=${slot.resource_stock_rows || 0} steps/${slot.resource_loss_rows || 0} losses/${slot.resource_gain_rows || 0} gains; thermal=${slot.thermal_heat_rows || 0} heat/${slot.thermal_smoke_rows || 0} smoke/${slot.thermal_safety_rows || 0} safety; water=${slot.water_flow_rows || 0} flows/${slot.water_leak_rows || 0} leaks/${slot.water_safety_rows || 0} safety; ecology=${slot.ecology_growth_rows || 0} growth/${slot.ecology_harvest_rows || 0} harvest/${slot.ecology_hunger_rows || 0} hunger; manipulation=${slot.material_manipulation_rows || 0}/${slot.material_manipulation_practice_links || 0} practice links; bodies=${slot.resident_body_steps || 0} steps/${slot.resident_body_contacts || 0} contacts/${slot.resident_body_recoveries || 0} recoveries; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; deepPhysics=${slot.deep_time_physics_epochs || 0} epochs/${slot.deep_time_material_flux_rows || 0} flux/${slot.deep_time_physical_effects || 0} effects/${slot.physical_heritage_rows || 0} heritage; survival=${slot.survival_status}`);
   const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, from replay=${row.returned_from_replay_rows}`);
   return [
     `Active slot: ${saves.activeSlotId || 'none'}`,
@@ -8135,6 +8453,7 @@ function renderGamePrototypeSurface() {
   const terrainNode = document.getElementById('gamePrototypeTerrainOut');
   const materialWorldNode = document.getElementById('gamePrototypeMaterialWorldOut');
   const structuralPhysicsNode = document.getElementById('gamePrototypeStructuralPhysicsOut');
+  const contactConstraintPhysicsNode = document.getElementById('gamePrototypeContactConstraintPhysicsOut');
   const materialManipulationNode = document.getElementById('gamePrototypeMaterialManipulationOut');
   const toolNode = document.getElementById('gamePrototypeToolsOut');
   const resourcePhysicsNode = document.getElementById('gamePrototypeResourcePhysicsOut');
@@ -8165,6 +8484,7 @@ function renderGamePrototypeSurface() {
   if (terrainNode) terrainNode.textContent = formatPrototypeTerrain();
   if (materialWorldNode) materialWorldNode.textContent = formatPrototypeMaterialWorld();
   if (structuralPhysicsNode) structuralPhysicsNode.textContent = formatPrototypeStructuralPhysics();
+  if (contactConstraintPhysicsNode) contactConstraintPhysicsNode.textContent = formatPrototypeContactConstraintPhysics();
   if (materialManipulationNode) materialManipulationNode.textContent = formatPrototypeMaterialManipulation();
   if (toolNode) toolNode.textContent = formatPrototypeTools();
   if (resourcePhysicsNode) resourcePhysicsNode.textContent = formatPrototypeResourcePhysics();
@@ -8820,7 +9140,7 @@ function describeReplayRow(row) {
     runPrototypeGuidedStep: `guided step ${payload.fromPhase}->${payload.nextPhase} via ${payload.action}`,
     runPrototypePracticeChain: `prototype practice chain practices=${payload.practiceCount} proposals=${payload.proposalCount} projectRows=${payload.projectRows || 0}`,
     runPrototypeReturnProof: `prototype return proof branches=${payload.branchRows} revivals=${payload.revivalRows}`,
-    runFirstPlayablePrototypeLoop: `first playable prototype milestones=${payload.milestones} branches=${payload.branchContinuity} structural=${payload.structuralStress || 0}`,
+    runFirstPlayablePrototypeLoop: `first playable prototype milestones=${payload.milestones} branches=${payload.branchContinuity} structural=${payload.structuralStress || 0} constraints=${payload.contactConstraints || 0}`,
     comparePrototypeDivergenceSeeds: `seed comparison diverged=${payload.diverged === true} branches=${payload.branches} baseLaw=${payload.baseLawSeed}`,
     auditPrototypeCommons: `commons audit ${payload.pass ? 'PASS' : 'WATCH'} pressure=${payload.pressureLevel} resources=${payload.resources} ledger=${payload.ledgerRows}`,
 	    advanceVillageProject: `advanced village project ${payload.proposalId || ''} status=${payload.status || payload.reason} progress=${payload.progress ?? 'n/a'} completed=${payload.completed === true} construction=${payload.constructionId || 'none'} added=${payload.componentsAdded || 0} repaired=${payload.componentsRepaired || 0} practice=${payload.practiceId || 'none'}`,
@@ -8832,6 +9152,8 @@ function describeReplayRow(row) {
     runPrototypePhysicsStep: `physics step ${payload.stepId} support=${payload.supportChecks} collisions=${payload.collisions} failures=${payload.failures} proposal=${payload.proposalId || 'none'}`,
     runStructuralPhysicsStep: `structural stress ${payload.stepId || 'none'} stress=${payload.maxStress} deflect=${payload.maxDeflection} collapse=${payload.collapses || 0} repair=${payload.repairRows || 0}`,
     runStructuralPhysicsLoop: `structural stress loop steps=${payload.stepsAdded || 0} load=${payload.loadRows || 0} stress=${payload.stressRows || 0} collapse=${payload.collapseRows || 0}`,
+    runContactConstraintPhysicsStep: `contact constraints ${payload.stepId || 'none'} contacts=${payload.contactRows || 0} joints=${payload.jointRows || 0} failed=${payload.failedJoints || 0} repair=${payload.repairRows || 0}`,
+    runContactConstraintPhysicsLoop: `contact constraint loop steps=${payload.stepsAdded || 0} contact=${payload.contactRows || 0} joints=${payload.jointRows || 0}`,
     runTerrainPhysicsStep: `terrain physics ${payload.terrainStepId} weak=${payload.weakCells} moisture=${payload.averageMoisture} walk=${payload.averageWalkability}`,
     runTerrainPhysicsLoop: `terrain loop steps=${payload.stepsAdded} flow=${payload.flowRows} support=${payload.supportRows}`,
     runResidentBodyPhysicsStep: `resident body physics ${payload.resident} ${payload.action} fatigue=${payload.fatigue} footing=${payload.footing} contacts=${payload.contacts} slip=${payload.slip === true}`,
@@ -10921,6 +11243,6 @@ function renderHintBranchPersistence() {
   ].join('\n');
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, advanceVillageProject, supportResourceCommons, performNearbyAction, endVillageDay, leaveAndReturnLater, runPrototypeMaterialWorldStep, runPrototypePhysicsStep, runStructuralPhysicsStep, runStructuralPhysicsLoop, runTerrainPhysicsStep, runTerrainPhysicsLoop, runToolPhysicsStep, runToolPhysicsLoop, runResourcePhysicsStep, runResourcePhysicsLoop, runThermalPhysicsStep, runThermalPhysicsLoop, runWaterPhysicsStep, runWaterPhysicsLoop, runEcologyPhysicsStep, runEcologyPhysicsLoop, runResidentMaterialManipulationStep, runResidentMaterialManipulationLoop, runResidentBodyPhysicsStep, runResidentBodyPhysicsLoop, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypeGuidedStep, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, comparePrototypeDivergenceSeeds, auditPrototypeCommons, runCivilizationDeepTimeEpoch, runDeepTimePhysicsEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, savePrototypeSlot, returnPrototypeSlot, exportPrototypeSaveReceipt, exportPrototypeAcceptanceReceipt, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, advanceVillageProject, supportResourceCommons, performNearbyAction, endVillageDay, leaveAndReturnLater, runPrototypeMaterialWorldStep, runPrototypePhysicsStep, runStructuralPhysicsStep, runStructuralPhysicsLoop, runContactConstraintPhysicsStep, runContactConstraintPhysicsLoop, runTerrainPhysicsStep, runTerrainPhysicsLoop, runToolPhysicsStep, runToolPhysicsLoop, runResourcePhysicsStep, runResourcePhysicsLoop, runThermalPhysicsStep, runThermalPhysicsLoop, runWaterPhysicsStep, runWaterPhysicsLoop, runEcologyPhysicsStep, runEcologyPhysicsLoop, runResidentMaterialManipulationStep, runResidentMaterialManipulationLoop, runResidentBodyPhysicsStep, runResidentBodyPhysicsLoop, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypeGuidedStep, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, comparePrototypeDivergenceSeeds, auditPrototypeCommons, runCivilizationDeepTimeEpoch, runDeepTimePhysicsEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, savePrototypeSlot, returnPrototypeSlot, exportPrototypeSaveReceipt, exportPrototypeAcceptanceReceipt, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

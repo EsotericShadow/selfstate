@@ -277,3 +277,9 @@ Boundary: this is not a farming tech tree or population-growth system. It is a s
 The game prototype shell now treats resident-built structures as stress-bearing component assemblies. The browser-local physics kernel tracks load paths, support margin, bending stress, anchor slip, deformation/sag, partial collapse rows, and repair pressure for the existing raised storage structure and future resident-built components.
 
 This remains a bounded prototype solver, not certified engineering physics. It strengthens the game direction: structures are not fixed assets, materials are not free labels, and stress consequences become resident-facing repair pressure through the village board and reality ledger.
+
+## Prototype v0 contact/joint constraint physics update
+
+The prototype shell now models touching and bound components with a bounded stochastic contact-constraint layer. Structures can accumulate contact rows, joint rows, friction rows, impulse transfer rows, failed-joint rows, and constraint repair pressure.
+
+This keeps the simulation direction physical without claiming production-grade rigid-body accuracy: components are conserved, resident-visible effects stay local and imperfect, and hidden friction/joint calculations remain audit-only.

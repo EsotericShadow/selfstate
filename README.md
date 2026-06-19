@@ -2212,3 +2212,7 @@ Material-state physics now gives components bounded saturation, drying, rot, cha
 ## Game prototype v0 update
 
 The browser shell now includes a `Physics-to-practice playable slice` action/card. It connects 3D physics evidence, a resident proposal, resident material testing, emergent practice mutation, and prototype save/return persistence into one game-build milestone. This is part of the prototype implementation path, not a new research-report chain.
+
+## Game prototype v0 update: Playable Village Day 0-3
+
+The browser shell now includes `Village Day 0-3` and `Day 0-3 loop` actions/cards. This milestone connects arrival, observation, physics, resident proposal/testing, resident work/recovery, return-session continuity, and prototype save evidence into one finite playable loop.

@@ -252,3 +252,9 @@ The row must preserve:
 - explicit `avatar_direct_command: false`
 
 This ledger row exists to prevent a fake unlock path. The player may support conditions, but the practice must remain grounded in resident action, material constraints, and observed consequences.
+
+## Playable Village Day 0-3 ledger event
+
+The Day 0-3 loop records `playable_village_day_0_3` as a causal ledger event.
+
+The event must show that the loop consumed time/work, preserved material/source causality through child systems, kept hidden law audit-only, and left open resident-mediated consequences such as delay, burden, practice drift, refusal, or maintenance.

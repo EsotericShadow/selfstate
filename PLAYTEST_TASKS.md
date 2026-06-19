@@ -191,3 +191,12 @@
 - Export acceptance and confirm `physics_to_practice_playable_slice` appears as a passing requirement after the slice runs.
 - Save the prototype after the slice and confirm the save receipt contains playable slice counts.
 - Return from the saved slot and confirm linked proposal/practice state remains in the browser-local world.
+
+## Playable Village Day 0-3 playtests
+
+- Run `Village Day 0-3` repeatedly until the card reports `Acceptance ready: yes`.
+- Confirm Day 0 shows arrival/inspection rather than a hidden unlock.
+- Confirm Day 1 links to a resident proposal or practice path.
+- Confirm Day 2 advances resident work, resource support, body cost, or recovery evidence.
+- Confirm Day 3 creates return-session and save evidence.
+- Export acceptance and confirm `playable_village_day_0_3` appears as a passing requirement after the loop runs.

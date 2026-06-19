@@ -117,3 +117,9 @@ The playable slice is browser-local prototype evidence. It does not claim real s
 It also does not add a hidden technology tree. The engine may use `physics_to_practice_playable_slice` as an internal acceptance concept, but residents only receive local observations, local terms, proposal history, and imperfect glosses.
 
 The correct player role remains: influence conditions, offer support, ask, wait, and observe. The avatar cannot directly install the right explanation or force resident adoption.
+
+## Boundary: Playable Village Day 0-3
+
+The Day 0-3 loop is a finite browser-local prototype milestone. It is not a claim that the full game exists yet.
+
+It must preserve the same boundary as the rest of the project: the player influences conditions, but residents mediate action through local state, proposals, schedules, memory, resources, and physical constraints. The loop must not become direct job assignment, a tech-tree unlock, or perfect-information management.

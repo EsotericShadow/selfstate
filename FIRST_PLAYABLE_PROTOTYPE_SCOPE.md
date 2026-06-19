@@ -150,3 +150,22 @@ Required evidence:
 - no installed correct modern concept
 
 This is the preferred next milestone for prototype work. Do not add new research reports to satisfy it; improve the playable shell.
+
+## Added scope gate: Playable Village Day 0-3
+
+`playable_village_day_0_3` is now part of the first playable prototype scope.
+
+The gate requires:
+
+- at least four Day 0-3 rows
+- player loop evidence without direct command
+- resident loop evidence with refusal/delay possibility preserved
+- world loop evidence with causal trace
+- linked physics evidence
+- linked proposal evidence
+- linked practice evidence
+- save evidence
+- return-session evidence
+- no fixed tech-tree unlock
+
+This is the current best next milestone for making the shell feel like a game rather than a collection of panels.

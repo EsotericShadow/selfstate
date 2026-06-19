@@ -389,3 +389,14 @@ Prototype v0 now includes a concrete loop for the next playable milestone:
 9. QA and acceptance receipts check the full path.
 
 This loop is deliberately small. It proves the game foundation can connect ordinary play, physics, resident interpretation, proposals, practice formation, and persistence before expanding the prototype.
+
+## Playable Village Day 0-3 loop
+
+The prototype has a concrete three-day loop:
+
+1. `Day 0 arrival/inspection`: the player enters, observes, uses a nearby action, and lets physics establish a grounded bottleneck.
+2. `Day 1 proposal/test`: residents interpret evidence through local concerns and produce/test a proposal without direct command.
+3. `Day 2 resident work/recovery`: material support, project work, autonomous resident choices, body physics, and day-cycle consequences advance together.
+4. `Day 3 return/save`: the player leaves, returns, sees continuity, and saves the linked state.
+
+The loop is accepted only when it has player rows, resident rows, world rows, physics links, proposal links, practice links, save links, and return links.

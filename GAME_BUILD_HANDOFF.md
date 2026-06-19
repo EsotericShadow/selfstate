@@ -305,3 +305,16 @@ The slice is not a new research report. It is a browser-shell game loop that con
 - QA and acceptance receipts now include `physics_to_practice_playable_slice` as a named gate.
 
 Player-facing target: enter the village, run `Playable slice`, inspect the new card, and confirm that physics evidence can become a resident-mediated practice without a tech-tree unlock.
+
+## Prototype v0 milestone: Playable Village Day 0-3
+
+The game shell now has a finite `Playable Village Day 0-3` loop. This is the next prototype milestone after the physics-to-practice slice.
+
+The loop demonstrates one cohesive path:
+
+- Day 0: enter the village, inspect ordinary place pressure, and advance stochastic 3D physics.
+- Day 1: let physics evidence become a resident-mediated proposal/test path.
+- Day 2: support commons, advance resident work, run autonomous residents, and include body/recovery cost.
+- Day 3: leave, return, inspect continuity, and save the resulting state.
+
+The acceptance gate is `playable_village_day_0_3`. It is deliberately finite: it proves a playable loop exists before expanding the world or adding new research branches.

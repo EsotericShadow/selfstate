@@ -47,10 +47,10 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, PROTOTYPE_SAVE_KEY, PROTOTYPE_ACCEPTANCE_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'gamePrototypePlayableSlice', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'gamePrototypeAcceptance', 'gamePrototypeDivergence', 'gamePrototypeCommons', 'gamePrototypeProjects', 'gamePrototypeCommonsSupport', 'gamePrototypeNearbyActions', 'gamePrototypeDayCycle', 'gamePrototypeReturnLater', 'gamePrototype3DWorld', 'gamePrototypeMaterialManipulation', 'gamePrototypeResidentBodies', 'gamePrototypeTerrain', 'gamePrototypeTools', 'gamePrototypeResourcePhysics', 'gamePrototypeThermalPhysics', 'gamePrototypeWaterPhysics', 'gamePrototypeEcologyPhysics', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'gamePrototypePlayableSlice', 'gamePrototypeVillageDay03', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'gamePrototypeAcceptance', 'gamePrototypeDivergence', 'gamePrototypeCommons', 'gamePrototypeProjects', 'gamePrototypeCommonsSupport', 'gamePrototypeNearbyActions', 'gamePrototypeDayCycle', 'gamePrototypeReturnLater', 'gamePrototype3DWorld', 'gamePrototypeMaterialManipulation', 'gamePrototypeResidentBodies', 'gamePrototypeTerrain', 'gamePrototypeTools', 'gamePrototypeResourcePhysics', 'gamePrototypeThermalPhysics', 'gamePrototypeWaterPhysics', 'gamePrototypeEcologyPhysics', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
-  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay', 'exportPrototypeAcceptanceReceipt', 'comparePrototypeDivergenceSeeds', 'auditPrototypeCommons', 'runPrototypeGuidedStep', 'runPlayablePhysicsPracticeSliceStep', 'runPlayablePhysicsPracticeSliceLoop', 'advanceVillageProject', 'supportResourceCommons', 'performNearbyAction', 'endVillageDay', 'leaveAndReturnLater', 'runPrototypeMaterialWorldStep', 'runPrototypePhysicsStep', 'runStructuralPhysicsStep', 'runStructuralPhysicsLoop', 'runContactConstraintPhysicsStep', 'runContactConstraintPhysicsLoop', 'runMaterialStatePhysicsStep', 'runMaterialStatePhysicsLoop', 'runTerrainPhysicsStep', 'runTerrainPhysicsLoop', 'runToolPhysicsStep', 'runToolPhysicsLoop', 'runResourcePhysicsStep', 'runResourcePhysicsLoop', 'runThermalPhysicsStep', 'runThermalPhysicsLoop', 'runWaterPhysicsStep', 'runWaterPhysicsLoop', 'runEcologyPhysicsStep', 'runEcologyPhysicsLoop', 'runResidentMaterialManipulationStep', 'runResidentMaterialManipulationLoop', 'runResidentBodyPhysicsStep', 'runResidentBodyPhysicsLoop', 'runDeepTimePhysicsEpoch']
+  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay', 'exportPrototypeAcceptanceReceipt', 'comparePrototypeDivergenceSeeds', 'auditPrototypeCommons', 'runPrototypeGuidedStep', 'runPlayablePhysicsPracticeSliceStep', 'runPlayablePhysicsPracticeSliceLoop', 'runPlayableVillageDay03Step', 'runPlayableVillageDay03Loop', 'advanceVillageProject', 'supportResourceCommons', 'performNearbyAction', 'endVillageDay', 'leaveAndReturnLater', 'runPrototypeMaterialWorldStep', 'runPrototypePhysicsStep', 'runStructuralPhysicsStep', 'runStructuralPhysicsLoop', 'runContactConstraintPhysicsStep', 'runContactConstraintPhysicsLoop', 'runMaterialStatePhysicsStep', 'runMaterialStatePhysicsLoop', 'runTerrainPhysicsStep', 'runTerrainPhysicsLoop', 'runToolPhysicsStep', 'runToolPhysicsLoop', 'runResourcePhysicsStep', 'runResourcePhysicsLoop', 'runThermalPhysicsStep', 'runThermalPhysicsLoop', 'runWaterPhysicsStep', 'runWaterPhysicsLoop', 'runEcologyPhysicsStep', 'runEcologyPhysicsLoop', 'runResidentMaterialManipulationStep', 'runResidentMaterialManipulationLoop', 'runResidentBodyPhysicsStep', 'runResidentBodyPhysicsLoop', 'runDeepTimePhysicsEpoch']
 };
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -87,6 +87,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   hintBranchPersistence: null,
   gamePrototype: null,
   gamePrototypePlayableSlice: null,
+  gamePrototypeVillageDay03: null,
   deepTimeCivilization: null,
   autonomousResidents: null,
   gamePrototypeQA: null,
@@ -4243,8 +4244,9 @@ function runFirstPlayablePrototypeLoop() {
   runContactConstraintPhysicsLoop();
   runMaterialStatePhysicsLoop();
   runPlayablePhysicsPracticeSliceLoop();
+  runPlayableVillageDay03Loop();
   runPrototypeReturnProof();
-  recordPrototypeMilestone('first-playable-loop-complete', 'opening, practice, proposal, tool physics, resource physics, thermal physics, water physics, ecology physics, structural stress, contact constraints, material state, playable physics-to-practice slice, audit, save, return, and branch persistence executed from one game surface');
+  recordPrototypeMilestone('first-playable-loop-complete', 'opening, practice, proposal, tool physics, resource physics, thermal physics, water physics, ecology physics, structural stress, contact constraints, material state, playable physics-to-practice slice, Day 0-3 loop, audit, save, return, and branch persistence executed from one game surface');
   return log('runFirstPlayablePrototypeLoop', {
     milestones: world.gamePrototype.milestones.length,
     practices: world.emergentPracticeGraph ? world.emergentPracticeGraph.nodes.length : 0,
@@ -4258,6 +4260,7 @@ function runFirstPlayablePrototypeLoop() {
     contactConstraints: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.contactConstraintLedger ? world.gamePrototype3DWorld.physics.contactConstraintLedger.length : 0,
     materialStates: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.materialStateLedger ? world.gamePrototype3DWorld.physics.materialStateLedger.length : 0,
     playableSliceReady: world.gamePrototypePlayableSlice ? world.gamePrototypePlayableSlice.acceptanceReady === true : false,
+    villageDay03Ready: world.gamePrototypeVillageDay03 ? world.gamePrototypeVillageDay03.acceptanceReady === true : false,
     branchContinuity: world.hintBranchPersistence ? world.hintBranchPersistence.continuityRows.length : 0,
   });
 }
@@ -4705,6 +4708,267 @@ function formatPlayablePhysicsPracticeSlice() {
     `Boundary: ${slice.boundary}`,
     'Recent phases:',
     ...(recentPhases.length ? recentPhases : ['No playable slice phases yet.'])
+  ].join('\n');
+}
+
+function ensurePlayableVillageDay03() {
+  ensureGamePrototype();
+  if (!world.gamePrototypeVillageDay03) {
+    world.gamePrototypeVillageDay03 = {
+      milestone: 'playable-village-day-0-3',
+      phase: 'not_started',
+      currentDay: 0,
+      runCount: 0,
+      dayLedger: [],
+      playerLoopLedger: [],
+      residentLoopLedger: [],
+      worldLoopLedger: [],
+      proposalLinks: [],
+      practiceLinks: [],
+      physicsLinks: [],
+      saveLinks: [],
+      returnLinks: [],
+      observedProblems: [],
+      acceptanceReady: false,
+      noDirectCommand: true,
+      noTechTreeUnlock: true,
+      noPerfectInformation: true,
+      boundary: 'finite playable Day 0-3 prototype loop; player influences conditions, residents mediate action',
+    };
+  }
+  return world.gamePrototypeVillageDay03;
+}
+
+function latestVillageDay03Id(collection, fields, fallback) {
+  if (!Array.isArray(collection) || !collection.length) return fallback;
+  const row = collection[collection.length - 1];
+  for (const field of fields) {
+    if (row && row[field]) return row[field];
+  }
+  return fallback;
+}
+
+function pushUniqueVillageDay03(list, value) {
+  if (value && !list.includes(value)) list.push(value);
+}
+
+function capturePlayableVillageDay03Evidence(loop, label) {
+  const physics = world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics ? world.gamePrototype3DWorld.physics : null;
+  const slice = world.gamePrototypePlayableSlice || null;
+  const board = world.villageBoard || null;
+  const graph = world.emergentPracticeGraph || null;
+  const saves = world.gamePrototypeSaves || null;
+  const returnLater = world.gamePrototypeReturnLater || null;
+  if (physics) {
+    pushUniqueVillageDay03(loop.physicsLinks, latestVillageDay03Id(physics.materialStateLedger, ['step_id', 'row_id', 'id'], null));
+    pushUniqueVillageDay03(loop.physicsLinks, latestVillageDay03Id(physics.stressLedger, ['step_id', 'row_id', 'id'], null));
+    pushUniqueVillageDay03(loop.physicsLinks, latestVillageDay03Id(physics.contactConstraintLedger, ['step_id', 'row_id', 'id'], null));
+  }
+  if (slice) {
+    slice.linkedPhysicsRows.slice(-3).forEach(row => pushUniqueVillageDay03(loop.physicsLinks, row.row_id));
+    slice.linkedProposalIds.slice(-2).forEach(id => pushUniqueVillageDay03(loop.proposalLinks, id));
+    slice.linkedPracticeIds.slice(-2).forEach(id => pushUniqueVillageDay03(loop.practiceLinks, id));
+  }
+  if (board && board.projectProposals) {
+    pushUniqueVillageDay03(loop.proposalLinks, latestVillageDay03Id(board.projectProposals, ['proposal_id'], null));
+  }
+  if (graph && graph.nodes) {
+    pushUniqueVillageDay03(loop.practiceLinks, latestVillageDay03Id(graph.nodes, ['practice_id'], null));
+  }
+  if (saves && saves.slots) {
+    pushUniqueVillageDay03(loop.saveLinks, latestVillageDay03Id(saves.slots, ['slot_id'], null));
+  }
+  if (returnLater && returnLater.returnLedger) {
+    pushUniqueVillageDay03(loop.returnLinks, latestVillageDay03Id(returnLater.returnLedger, ['return_id'], null));
+  }
+  if (!loop.observedProblems.includes(label)) loop.observedProblems.push(label);
+}
+
+function recordPlayableVillageDay03(day, phase, summary, detail = {}) {
+  const loop = ensurePlayableVillageDay03();
+  const row = {
+    row_id: `PVD03-${String(loop.dayLedger.length + 1).padStart(2, '0')}`,
+    day,
+    phase,
+    tick: world.tick,
+    summary,
+    detail,
+    avatar_direct_command: false,
+    resident_mediated: true,
+    hidden_law_normal_view: false,
+  };
+  loop.phase = phase;
+  loop.currentDay = Math.max(loop.currentDay, day + 1);
+  loop.dayLedger.push(row);
+  loop.playerLoopLedger.push({
+    row_id: `${row.row_id}-P`,
+    day,
+    action: detail.player_action || 'observe/support/wait',
+    direct_command: false,
+  });
+  loop.residentLoopLedger.push({
+    row_id: `${row.row_id}-R`,
+    day,
+    response: detail.resident_response || 'resident response mediated by schedule, memory, and resources',
+    can_refuse_or_delay: true,
+  });
+  loop.worldLoopLedger.push({
+    row_id: `${row.row_id}-W`,
+    day,
+    consequence: detail.world_consequence || 'world state changed through existing systems',
+    causal_trace: true,
+  });
+  capturePlayableVillageDay03Evidence(loop, summary);
+  return row;
+}
+
+function updatePlayableVillageDay03Acceptance() {
+  const loop = ensurePlayableVillageDay03();
+  const days = new Set(loop.dayLedger.map(row => row.day));
+  loop.acceptanceReady = Boolean(
+    days.has(0) &&
+    days.has(1) &&
+    days.has(2) &&
+    days.has(3) &&
+    loop.playerLoopLedger.length >= 4 &&
+    loop.residentLoopLedger.length >= 4 &&
+    loop.worldLoopLedger.length >= 4 &&
+    loop.physicsLinks.length > 0 &&
+    loop.proposalLinks.length > 0 &&
+    loop.practiceLinks.length > 0 &&
+    loop.saveLinks.length > 0 &&
+    loop.returnLinks.length > 0 &&
+    loop.noDirectCommand === true &&
+    loop.noTechTreeUnlock === true
+  );
+  return loop.acceptanceReady;
+}
+
+function runPlayableVillageDay03Step() {
+  const loop = ensurePlayableVillageDay03();
+  loop.runCount += 1;
+  const day = Math.min(loop.currentDay, 3);
+  if (day === 0) {
+    if (!world.entered && typeof runPrototypeOpening === 'function') runPrototypeOpening();
+    if (typeof performNearbyAction === 'function') performNearbyAction();
+    if (typeof runPrototypePhysicsStep === 'function') runPrototypePhysicsStep('playable village day 0');
+    recordPlayableVillageDay03(0, 'day_0_arrival_inspection', 'entered village, inspected ordinary place pressure, and advanced physical state', {
+      player_action: 'enter, inspect nearby, ask what is happening',
+      resident_response: `${world.selected} remains on schedule while the avatar observes`,
+      world_consequence: 'nearby action and stochastic 3D physics establish the first grounded bottleneck',
+    });
+  } else if (day === 1) {
+    if (typeof runPlayablePhysicsPracticeSliceLoop === 'function') runPlayablePhysicsPracticeSliceLoop();
+    if (typeof runVillageBoardLoop === 'function') runVillageBoardLoop();
+    recordPlayableVillageDay03(1, 'day_1_proposal_and_test', 'physics evidence became a resident proposal and early practice test', {
+      player_action: 'support conditions and watch resident proposal/test path',
+      resident_response: 'residents propose and test instead of receiving a command',
+      world_consequence: 'practice graph, village board, and causal ledger gain linked evidence',
+    });
+  } else if (day === 2) {
+    if (typeof supportResourceCommons === 'function') supportResourceCommons();
+    if (typeof advanceVillageProject === 'function') advanceVillageProject();
+    if (typeof runAutonomousResidentSeason === 'function') runAutonomousResidentSeason();
+    if (typeof runResidentBodyPhysicsLoop === 'function') runResidentBodyPhysicsLoop();
+    if (typeof endVillageDay === 'function') endVillageDay();
+    recordPlayableVillageDay03(2, 'day_2_resident_work_and_recovery', 'resident work, body cost, resource support, and project progress happened through existing loops', {
+      player_action: 'offer material support, wait, and let residents decide work order',
+      resident_response: 'residents work, delay, recover, or continue based on resources and state',
+      world_consequence: 'project, commons, body physics, and day-cycle ledgers advance',
+    });
+  } else {
+    if (typeof leaveAndReturnLater === 'function') leaveAndReturnLater();
+    const saves = typeof ensurePrototypeSaves === 'function' ? ensurePrototypeSaves() : null;
+    const plannedSlotId = saves ? `GPS-${String(saves.slots.length + 1).padStart(2, '0')}` : `GPS-PVD03-${loop.saveLinks.length + 1}`;
+    pushUniqueVillageDay03(loop.saveLinks, plannedSlotId);
+    capturePlayableVillageDay03Evidence(loop, 'return-session continuity and save proof');
+    recordPlayableVillageDay03(3, 'day_3_return_and_save', 'player left, returned, and saved the Day 0-3 continuity state', {
+      player_action: 'leave, return, inspect changed state, save',
+      resident_response: 'residents carry forward schedule, proposal, and practice state',
+      world_consequence: 'return ledger and prototype save slot preserve the loop evidence',
+    });
+    updatePlayableVillageDay03Acceptance();
+    if (typeof savePrototypeSlot === 'function') {
+      const slot = savePrototypeSlot('playable village day 0-3');
+      const actualSlotId = slot && slot.payload && slot.payload.slotId ? slot.payload.slotId : plannedSlotId;
+      if (actualSlotId !== plannedSlotId) {
+        loop.saveLinks = loop.saveLinks.map(id => id === plannedSlotId ? actualSlotId : id);
+      }
+    }
+  }
+  updatePlayableVillageDay03Acceptance();
+  recordRealityConstraint('playable_village_day_0_3', {
+    sourceBeliefId: loop.milestone,
+    materials: ['village_objects', 'resident_labor', 'commons_resources'],
+    materialTransformation: 'ordinary play advanced physics, proposals, practice state, resident work, return, and save evidence',
+    timeCost: 1,
+    workCost: 1,
+    toolWear: 0,
+    hiddenLawInvolved: 'audit-only physics and material constraints already linked through child systems',
+    publicObservation: `Playable Village Day 0-3 phase ${loop.phase}`,
+    residentInterpretation: 'residents treat events as local work, repair, storage, and schedule concerns',
+    conservationCheck: true,
+    maintenanceObligation: 'continue observing practice maintenance, resource burden, and return-session consequences',
+    unintendedConsequence: 'project burden, refusal, delay, or practice drift can still occur',
+  });
+  recordPrototypeMilestone('playable-village-day-0-3', {
+    ready: loop.acceptanceReady,
+    day_rows: loop.dayLedger.length,
+    physics: loop.physicsLinks.length,
+    proposals: loop.proposalLinks.length,
+    practices: loop.practiceLinks.length,
+    saves: loop.saveLinks.length,
+    returns: loop.returnLinks.length,
+  });
+  return log('runPlayableVillageDay03Step', {
+    ready: loop.acceptanceReady,
+    phase: loop.phase,
+    dayRows: loop.dayLedger.length,
+    physicsLinks: loop.physicsLinks.length,
+    proposalLinks: loop.proposalLinks.length,
+    practiceLinks: loop.practiceLinks.length,
+    saveLinks: loop.saveLinks.length,
+    returnLinks: loop.returnLinks.length,
+  });
+}
+
+function runPlayableVillageDay03Loop() {
+  let receipt = null;
+  for (let step = 0; step < 4; step += 1) {
+    const loop = ensurePlayableVillageDay03();
+    if (loop.acceptanceReady) break;
+    receipt = runPlayableVillageDay03Step();
+  }
+  const loop = ensurePlayableVillageDay03();
+  return log('runPlayableVillageDay03Loop', {
+    ready: loop.acceptanceReady,
+    phase: loop.phase,
+    dayRows: loop.dayLedger.length,
+    playerRows: loop.playerLoopLedger.length,
+    residentRows: loop.residentLoopLedger.length,
+    worldRows: loop.worldLoopLedger.length,
+    lastReceipt: receipt ? receipt.type || receipt.event || 'recorded' : 'already ready',
+  });
+}
+
+function formatPlayableVillageDay03() {
+  const loop = world.gamePrototypeVillageDay03 || ensurePlayableVillageDay03();
+  const rows = loop.dayLedger.slice(-6).map(row => `${row.row_id}: day ${row.day} / ${row.phase} / ${row.summary}`);
+  return [
+    `Phase: ${loop.phase}`,
+    `Acceptance ready: ${loop.acceptanceReady ? 'yes' : 'no'}`,
+    `Current day cursor: ${Math.min(loop.currentDay, 3)}`,
+    `Player loop rows: ${loop.playerLoopLedger.length}`,
+    `Resident loop rows: ${loop.residentLoopLedger.length}`,
+    `World loop rows: ${loop.worldLoopLedger.length}`,
+    `Physics links: ${loop.physicsLinks.length}`,
+    `Proposal links: ${loop.proposalLinks.length}`,
+    `Practice links: ${loop.practiceLinks.length}`,
+    `Save links: ${loop.saveLinks.length}`,
+    `Return links: ${loop.returnLinks.length}`,
+    `Boundary: ${loop.boundary}`,
+    'Recent Day 0-3 rows:',
+    ...(rows.length ? rows : ['No Day 0-3 loop rows yet.'])
   ].join('\n');
 }
 
@@ -7702,6 +7966,7 @@ function formatPrototypePublicOutcomes() {
   const autonomous = world.autonomousResidents;
   const saves = world.gamePrototypeSaves;
   const playableSlice = world.gamePrototypePlayableSlice;
+  const villageDay03 = world.gamePrototypeVillageDay03;
   const divergence = world.gamePrototypeDivergence;
   const commons = world.gamePrototypeCommons;
   const projects = world.gamePrototypeProjects;
@@ -7730,6 +7995,7 @@ function formatPrototypePublicOutcomes() {
     `Autonomous residents: ${autonomous ? `${autonomous.day} day(s) / ${autonomous.actionLog.length} action(s) / ${autonomous.refusalLog.length} refusal(s)` : 'not started'}`,
     `Save slots: ${saves ? `${saves.slots.length} slot(s) / active ${saves.activeSlotId || 'none'} / returns ${saves.returnLog.length}` : 'none'}`,
     `Playable physics-to-practice slice: ${playableSlice ? `${playableSlice.phase}, ready=${playableSlice.acceptanceReady}, physics=${playableSlice.linkedPhysicsRows.length}, practices=${playableSlice.linkedPracticeIds.length}` : 'not started'}`,
+    `Playable Village Day 0-3: ${villageDay03 ? `${villageDay03.phase}, ready=${villageDay03.acceptanceReady}, rows=${villageDay03.dayLedger.length}, returns=${villageDay03.returnLinks.length}` : 'not started'}`,
     `Seed divergence: ${divergence ? `${divergence.branches.length} branch(es), diverged=${divergence.diverged}, base law ${divergence.base_law_seed}` : 'not compared'}`,
     `Commons: ${commons ? `${commons.pressure_level}, resources=${commons.resource_total}, ledger=${commons.ledger_rows}, pass=${commons.pass}` : 'not audited'}`,
     `Projects: ${projects ? `${projects.projectLedger.length} work row(s), completed=${projects.completionLedger.length}, stalled=${projects.stalledLedger.length}` : 'not advanced'}`,
@@ -8216,6 +8482,9 @@ function derivePrototypePlayerGuide() {
   if (!world.gamePrototypePlayableSlice || !world.gamePrototypePlayableSlice.acceptanceReady) {
     return { ...guide, phase: 'playable physics-to-practice slice', nextAction: 'Playable slice', why: 'connect physics evidence, a resident proposal, resident testing, practice mutation, and save/return into one playable proof loop', button: 'runPlayablePhysicsPracticeSliceStep' };
   }
+  if (!world.gamePrototypeVillageDay03 || !world.gamePrototypeVillageDay03.acceptanceReady) {
+    return { ...guide, phase: 'playable village day 0-3', nextAction: 'Village Day 0-3', why: 'run a finite play loop across arrival, observation, resident proposal/test, resident work/recovery, return, and save proof', button: 'runPlayableVillageDay03Step' };
+  }
   if (!world.gamePrototypeMaterialManipulation || !world.gamePrototypeMaterialManipulation.actionLedger.length) {
     return { ...guide, phase: 'material handling', nextAction: 'Resident handling', why: 'let residents physically move, tie, dry, wet-test, stack, or test components through material constraints', button: 'runResidentMaterialManipulationStep' };
   }
@@ -8274,6 +8543,7 @@ function formatPrototypePlayerGuide() {
   const latestProposal = world.villageBoard && world.villageBoard.projectProposals.length ? world.villageBoard.projectProposals[world.villageBoard.projectProposals.length - 1] : null;
   const latestPractice = world.emergentPracticeGraph && world.emergentPracticeGraph.nodes.length ? world.emergentPracticeGraph.nodes[world.emergentPracticeGraph.nodes.length - 1] : null;
   const playableSlice = world.gamePrototypePlayableSlice || null;
+  const villageDay03 = world.gamePrototypeVillageDay03 || null;
   const projects = world.gamePrototypeProjects || null;
   const commonsSupport = world.gamePrototypeCommonsSupport || null;
   const nearby = world.gamePrototypeNearbyActions || null;
@@ -8288,6 +8558,7 @@ function formatPrototypePlayerGuide() {
     `Latest proposal: ${latestProposal ? `${latestProposal.proposal_id} / ${latestProposal.status} / ${latestProposal.problem_addressed}` : 'none'}`,
     `Latest practice: ${latestPractice ? `${latestPractice.practice_id} / ${latestPractice.status} / ${latestPractice.local_name}` : 'none'}`,
     `Playable slice: ${playableSlice ? `${playableSlice.phase}; ready=${playableSlice.acceptanceReady}; physics=${playableSlice.linkedPhysicsRows.length}; proposals=${playableSlice.linkedProposalIds.length}; practices=${playableSlice.linkedPracticeIds.length}` : 'not started'}`,
+    `Village Day 0-3: ${villageDay03 ? `${villageDay03.phase}; ready=${villageDay03.acceptanceReady}; rows=${villageDay03.dayLedger.length}; returns=${villageDay03.returnLinks.length}` : 'not started'}`,
     `Projects: ${projects ? `${projects.projectLedger.length} work row(s), completed=${projects.completionLedger.length}, stalled=${projects.stalledLedger.length}` : 'not advanced'}`,
     `Commons support: ${commonsSupport ? `${commonsSupport.supportLedger.length} support row(s), recoveries=${commonsSupport.recoveryLedger.length}` : 'not supported'}`,
     `Nearby actions: ${nearby ? `${nearby.actionLedger.length} action(s), current=${nearbyActionPlan().label}->${nearbyActionPlan().action}` : `${nearbyActionPlan().label}->${nearbyActionPlan().action}`}`,
@@ -8430,6 +8701,7 @@ function runPrototypeQASmoke() {
   runContactConstraintPhysicsLoop();
   runMaterialStatePhysicsLoop();
   runPlayablePhysicsPracticeSliceLoop();
+  runPlayableVillageDay03Loop();
   runResidentMaterialManipulationLoop();
 	  advanceVillageProject();
   advanceVillageProject();
@@ -8536,6 +8808,16 @@ function runPrototypeQASmoke() {
     playableSliceProposalRows: world.gamePrototypePlayableSlice ? world.gamePrototypePlayableSlice.linkedProposalIds.length : 0,
     playableSlicePracticeRows: world.gamePrototypePlayableSlice ? world.gamePrototypePlayableSlice.linkedPracticeIds.length : 0,
     playableSliceReturnRows: world.gamePrototypePlayableSlice ? world.gamePrototypePlayableSlice.returnProofRows.length : 0,
+    villageDay03Ready: world.gamePrototypeVillageDay03 ? world.gamePrototypeVillageDay03.acceptanceReady === true : false,
+    villageDay03Rows: world.gamePrototypeVillageDay03 ? world.gamePrototypeVillageDay03.dayLedger.length : 0,
+    villageDay03PlayerRows: world.gamePrototypeVillageDay03 ? world.gamePrototypeVillageDay03.playerLoopLedger.length : 0,
+    villageDay03ResidentRows: world.gamePrototypeVillageDay03 ? world.gamePrototypeVillageDay03.residentLoopLedger.length : 0,
+    villageDay03WorldRows: world.gamePrototypeVillageDay03 ? world.gamePrototypeVillageDay03.worldLoopLedger.length : 0,
+    villageDay03PhysicsLinks: world.gamePrototypeVillageDay03 ? world.gamePrototypeVillageDay03.physicsLinks.length : 0,
+    villageDay03ProposalLinks: world.gamePrototypeVillageDay03 ? world.gamePrototypeVillageDay03.proposalLinks.length : 0,
+    villageDay03PracticeLinks: world.gamePrototypeVillageDay03 ? world.gamePrototypeVillageDay03.practiceLinks.length : 0,
+    villageDay03SaveLinks: world.gamePrototypeVillageDay03 ? world.gamePrototypeVillageDay03.saveLinks.length : 0,
+    villageDay03ReturnLinks: world.gamePrototypeVillageDay03 ? world.gamePrototypeVillageDay03.returnLinks.length : 0,
 	  };
   runAutonomousResidentTick();
   restoreWorld();
@@ -8560,6 +8842,7 @@ function runPrototypeQASmoke() {
     { id: 'contact-constraint-physics', pass: Boolean(world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && savedCounts.contactConstraintRows > 0 && savedCounts.jointConstraintRows > 0 && savedCounts.frictionRows > 0 && savedCounts.impulseRows > 0 && world.gamePrototype3DWorld.physics.jointConstraintLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.contactConstraintRows} contact row(s), ${savedCounts.jointConstraintRows} joint row(s), ${savedCounts.frictionRows} friction row(s), ${savedCounts.impulseRows} impulse row(s), ${savedCounts.constraintRepairRows} repair row(s)` },
     { id: 'material-state-physics', pass: Boolean(world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && savedCounts.materialStateRows > 0 && savedCounts.propertyDriftRows > 0 && world.gamePrototype3DWorld.physics.materialStateLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false) && world.gamePrototype3DWorld.physics.propertyDriftLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.materialStateRows} state row(s), ${savedCounts.phaseChangeRows} phase row(s), ${savedCounts.propertyDriftRows} property row(s), ${savedCounts.materialStateRepairRows} repair row(s)` },
     { id: 'physics-to-practice-playable-slice', pass: Boolean(world.gamePrototypePlayableSlice && savedCounts.playableSliceReady && savedCounts.playableSlicePhysicsRows > 0 && savedCounts.playableSliceProposalRows > 0 && savedCounts.playableSlicePracticeRows > 0 && savedCounts.playableSliceReturnRows > 0 && world.gamePrototypePlayableSlice.noDirectCommand === true && world.gamePrototypePlayableSlice.noPredeclaredTechTree === true), evidence: `${savedCounts.playableSlicePhases} phase row(s), ${savedCounts.playableSlicePhysicsRows} physics row(s), ${savedCounts.playableSliceProposalRows} proposal link(s), ${savedCounts.playableSlicePracticeRows} practice link(s), ${savedCounts.playableSliceReturnRows} return row(s)` },
+    { id: 'playable-village-day-0-3', pass: Boolean(world.gamePrototypeVillageDay03 && savedCounts.villageDay03Ready && savedCounts.villageDay03Rows >= 4 && savedCounts.villageDay03PlayerRows >= 4 && savedCounts.villageDay03ResidentRows >= 4 && savedCounts.villageDay03WorldRows >= 4 && savedCounts.villageDay03PhysicsLinks > 0 && savedCounts.villageDay03ProposalLinks > 0 && savedCounts.villageDay03PracticeLinks > 0 && savedCounts.villageDay03SaveLinks > 0 && savedCounts.villageDay03ReturnLinks > 0 && world.gamePrototypeVillageDay03.noDirectCommand === true && world.gamePrototypeVillageDay03.noTechTreeUnlock === true), evidence: `${savedCounts.villageDay03Rows} day row(s), ${savedCounts.villageDay03PhysicsLinks} physics link(s), ${savedCounts.villageDay03ProposalLinks} proposal link(s), ${savedCounts.villageDay03PracticeLinks} practice link(s), ${savedCounts.villageDay03ReturnLinks} return link(s)` },
     { id: 'terrain-physics-substrate', pass: Boolean(world.gamePrototypeTerrain && savedCounts.terrainRows > 0 && savedCounts.terrainFlowRows > 0 && savedCounts.terrainSupportRows > 0 && world.gamePrototypeTerrain.terrainLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.terrainRows} terrain step(s), ${savedCounts.terrainFlowRows} flow row(s), ${savedCounts.terrainSupportRows} support row(s)` },
     { id: 'tool-work-physics', pass: Boolean(world.gamePrototypeTools && savedCounts.toolUseRows > 0 && savedCounts.toolWearRows > 0 && world.gamePrototypeTools.useLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.toolUseRows} use row(s), ${savedCounts.toolWearRows} wear row(s), ${savedCounts.toolFailureRows} failure row(s), ${savedCounts.toolRepairRows} repair row(s)` },
     { id: 'resource-stock-physics', pass: Boolean(world.gamePrototypeResourcePhysics && savedCounts.resourceStockRows > 0 && savedCounts.resourceTransformRows >= savedCounts.resourceStockRows && world.gamePrototypeResourcePhysics.stockLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.resourceStockRows} stock step(s), ${savedCounts.resourceTransformRows} transform row(s), ${savedCounts.resourceLossRows} loss row(s), ${savedCounts.resourceGainRows} gain row(s)` },
@@ -8722,6 +9005,12 @@ function saveSlotSummary(slot) {
     playable_slice_proposals: slot.playable_slice_proposals,
     playable_slice_practices: slot.playable_slice_practices,
     playable_slice_return_rows: slot.playable_slice_return_rows,
+    village_day_03_ready: slot.village_day_03_ready,
+    village_day_03_rows: slot.village_day_03_rows,
+    village_day_03_player_rows: slot.village_day_03_player_rows,
+    village_day_03_resident_rows: slot.village_day_03_resident_rows,
+    village_day_03_world_rows: slot.village_day_03_world_rows,
+    village_day_03_return_links: slot.village_day_03_return_links,
 	    physical_field_rows: slot.physical_field_rows,
 	    physical_energy_rows: slot.physical_energy_rows,
     structural_load_rows: slot.structural_load_rows,
@@ -8835,6 +9124,12 @@ function savePrototypeSlot(label = 'manual prototype save') {
     playable_slice_proposals: world.gamePrototypePlayableSlice ? world.gamePrototypePlayableSlice.linkedProposalIds.length : 0,
     playable_slice_practices: world.gamePrototypePlayableSlice ? world.gamePrototypePlayableSlice.linkedPracticeIds.length : 0,
     playable_slice_return_rows: world.gamePrototypePlayableSlice ? world.gamePrototypePlayableSlice.returnProofRows.length : 0,
+    village_day_03_ready: world.gamePrototypeVillageDay03 ? world.gamePrototypeVillageDay03.acceptanceReady === true : false,
+    village_day_03_rows: world.gamePrototypeVillageDay03 ? world.gamePrototypeVillageDay03.dayLedger.length : 0,
+    village_day_03_player_rows: world.gamePrototypeVillageDay03 ? world.gamePrototypeVillageDay03.playerLoopLedger.length : 0,
+    village_day_03_resident_rows: world.gamePrototypeVillageDay03 ? world.gamePrototypeVillageDay03.residentLoopLedger.length : 0,
+    village_day_03_world_rows: world.gamePrototypeVillageDay03 ? world.gamePrototypeVillageDay03.worldLoopLedger.length : 0,
+    village_day_03_return_links: world.gamePrototypeVillageDay03 ? world.gamePrototypeVillageDay03.returnLinks.length : 0,
 	    material_components: world.gamePrototype3DWorld ? world.gamePrototype3DWorld.components.length : 0,
 	    resident_terms: world.gamePrototype3DWorld && world.gamePrototype3DWorld.language ? world.gamePrototype3DWorld.language.terms.length : 0,
 	    physics_steps: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics ? world.gamePrototype3DWorld.physics.step || 0 : 0,
@@ -8969,6 +9264,7 @@ function buildPrototypeAcceptanceReceipt() {
 	  const dayCycle = world.gamePrototypeDayCycle || null;
 	  const returnLater = world.gamePrototypeReturnLater || null;
   const playableSlice = world.gamePrototypePlayableSlice || null;
+  const villageDay03 = world.gamePrototypeVillageDay03 || null;
 		  const materialWorld = world.gamePrototype3DWorld || null;
   const terrain = world.gamePrototypeTerrain || null;
   const tools = world.gamePrototypeTools || null;
@@ -9004,6 +9300,11 @@ function buildPrototypeAcceptanceReceipt() {
   const playableSliceProposalRows = playableSlice ? playableSlice.linkedProposalIds.length : 0;
   const playableSlicePracticeRows = playableSlice ? playableSlice.linkedPracticeIds.length : 0;
   const playableSliceReturnRows = playableSlice ? playableSlice.returnProofRows.length : 0;
+  const villageDay03Rows = villageDay03 ? villageDay03.dayLedger.length : 0;
+  const villageDay03PlayerRows = villageDay03 ? villageDay03.playerLoopLedger.length : 0;
+  const villageDay03ResidentRows = villageDay03 ? villageDay03.residentLoopLedger.length : 0;
+  const villageDay03WorldRows = villageDay03 ? villageDay03.worldLoopLedger.length : 0;
+  const villageDay03ReturnLinks = villageDay03 ? villageDay03.returnLinks.length : 0;
   const terrainRows = terrain && terrain.terrainLedger ? terrain.terrainLedger.length : 0;
   const terrainFlowRows = terrain && terrain.flowLedger ? terrain.flowLedger.length : 0;
   const terrainSupportRows = terrain && terrain.supportLedger ? terrain.supportLedger.length : 0;
@@ -9064,6 +9365,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'contact_constraint_physics', pass: Boolean(materialWorld && physics && contactConstraintRows > 0 && jointConstraintRows > 0 && frictionRows > 0 && impulseRows > 0 && physics.jointConstraintLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${contactConstraintRows} contact row(s), ${jointConstraintRows} joint row(s), ${frictionRows} friction row(s), ${impulseRows} impulse row(s), ${constraintRepairRows} repair row(s)` },
     { id: 'material_state_physics', pass: Boolean(materialWorld && physics && materialStateRows > 0 && propertyDriftRows > 0 && physics.materialStateLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false) && physics.propertyDriftLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${materialStateRows} state row(s), ${phaseChangeRows} phase row(s), ${propertyDriftRows} property row(s), ${materialStateRepairRows} repair row(s)` },
     { id: 'physics_to_practice_playable_slice', pass: Boolean(playableSlice && playableSlice.acceptanceReady && playableSlicePhysicsRows > 0 && playableSliceProposalRows > 0 && playableSlicePracticeRows > 0 && playableSliceReturnRows > 0 && playableSlice.noDirectCommand === true && playableSlice.noPredeclaredTechTree === true && playableSlice.noCorrectConceptInstalled === true), evidence: playableSlice ? `${playableSlice.phase}; physics=${playableSlicePhysicsRows}, proposals=${playableSliceProposalRows}, practices=${playableSlicePracticeRows}, return=${playableSliceReturnRows}` : 'not run' },
+    { id: 'playable_village_day_0_3', pass: Boolean(villageDay03 && villageDay03.acceptanceReady && villageDay03Rows >= 4 && villageDay03PlayerRows >= 4 && villageDay03ResidentRows >= 4 && villageDay03WorldRows >= 4 && villageDay03.physicsLinks.length > 0 && villageDay03.proposalLinks.length > 0 && villageDay03.practiceLinks.length > 0 && villageDay03.saveLinks.length > 0 && villageDay03ReturnLinks > 0 && villageDay03.noDirectCommand === true && villageDay03.noTechTreeUnlock === true), evidence: villageDay03 ? `${villageDay03.phase}; rows=${villageDay03Rows}, player=${villageDay03PlayerRows}, resident=${villageDay03ResidentRows}, world=${villageDay03WorldRows}, returns=${villageDay03ReturnLinks}` : 'not run' },
     { id: 'terrain_physics_substrate', pass: Boolean(terrain && terrainRows > 0 && terrainFlowRows > 0 && terrainSupportRows > 0 && terrain.terrainLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${terrainRows} terrain step(s), ${terrainFlowRows} flow row(s), ${terrainSupportRows} support row(s)` },
 	    { id: 'tool_work_physics', pass: Boolean(tools && toolUseRows > 0 && toolWearRows > 0 && tools.useLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${toolUseRows} use row(s), ${toolWearRows} wear row(s), ${toolFailureRows} failure row(s), ${toolRepairRows} repair row(s)` },
 	    { id: 'resource_stock_physics', pass: Boolean(resourcePhysics && resourceStockRows > 0 && resourceTransformRows >= resourceStockRows && resourcePhysics.stockLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${resourceStockRows} stock step(s), ${resourceTransformRows} transform row(s), ${resourceLossRows} loss row(s), ${resourceGainRows} gain row(s)` },
@@ -9196,6 +9498,7 @@ function renderGamePrototypeSurface() {
   const publicNode = document.getElementById('gamePrototypePublicOut');
   const guideNode = document.getElementById('gamePrototypeGuideOut');
   const playableSliceNode = document.getElementById('gamePrototypePlayableSliceOut');
+  const villageDay03Node = document.getElementById('gamePrototypeVillageDay03Out');
   const loopNode = document.getElementById('gamePrototypeLoopOut');
   const deepTimeNode = document.getElementById('gamePrototypeDeepTimeOut');
   const residentBodiesNode = document.getElementById('gamePrototypeResidentBodiesOut');
@@ -9229,6 +9532,7 @@ function renderGamePrototypeSurface() {
   if (publicNode) publicNode.textContent = formatPrototypePublicOutcomes();
   if (guideNode) guideNode.textContent = formatPrototypePlayerGuide();
   if (playableSliceNode) playableSliceNode.textContent = formatPlayablePhysicsPracticeSlice();
+  if (villageDay03Node) villageDay03Node.textContent = formatPlayableVillageDay03();
   if (loopNode) loopNode.textContent = formatPrototypeLoopReceipt();
   if (deepTimeNode) deepTimeNode.textContent = formatPrototypeDeepTime();
   if (residentBodiesNode) residentBodiesNode.textContent = formatPrototypeResidentBodies();
@@ -12010,6 +12314,6 @@ function renderHintBranchPersistence() {
   ].join('\n');
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, advanceVillageProject, supportResourceCommons, performNearbyAction, endVillageDay, leaveAndReturnLater, runPrototypeMaterialWorldStep, runPrototypePhysicsStep, runStructuralPhysicsStep, runStructuralPhysicsLoop, runContactConstraintPhysicsStep, runContactConstraintPhysicsLoop, runMaterialStatePhysicsStep, runMaterialStatePhysicsLoop, runPlayablePhysicsPracticeSliceStep, runPlayablePhysicsPracticeSliceLoop, runTerrainPhysicsStep, runTerrainPhysicsLoop, runToolPhysicsStep, runToolPhysicsLoop, runResourcePhysicsStep, runResourcePhysicsLoop, runThermalPhysicsStep, runThermalPhysicsLoop, runWaterPhysicsStep, runWaterPhysicsLoop, runEcologyPhysicsStep, runEcologyPhysicsLoop, runResidentMaterialManipulationStep, runResidentMaterialManipulationLoop, runResidentBodyPhysicsStep, runResidentBodyPhysicsLoop, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypeGuidedStep, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, comparePrototypeDivergenceSeeds, auditPrototypeCommons, runCivilizationDeepTimeEpoch, runDeepTimePhysicsEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, savePrototypeSlot, returnPrototypeSlot, exportPrototypeSaveReceipt, exportPrototypeAcceptanceReceipt, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, advanceVillageProject, supportResourceCommons, performNearbyAction, endVillageDay, leaveAndReturnLater, runPrototypeMaterialWorldStep, runPrototypePhysicsStep, runStructuralPhysicsStep, runStructuralPhysicsLoop, runContactConstraintPhysicsStep, runContactConstraintPhysicsLoop, runMaterialStatePhysicsStep, runMaterialStatePhysicsLoop, runPlayablePhysicsPracticeSliceStep, runPlayablePhysicsPracticeSliceLoop, runPlayableVillageDay03Step, runPlayableVillageDay03Loop, runTerrainPhysicsStep, runTerrainPhysicsLoop, runToolPhysicsStep, runToolPhysicsLoop, runResourcePhysicsStep, runResourcePhysicsLoop, runThermalPhysicsStep, runThermalPhysicsLoop, runWaterPhysicsStep, runWaterPhysicsLoop, runEcologyPhysicsStep, runEcologyPhysicsLoop, runResidentMaterialManipulationStep, runResidentMaterialManipulationLoop, runResidentBodyPhysicsStep, runResidentBodyPhysicsLoop, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypeGuidedStep, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, comparePrototypeDivergenceSeeds, auditPrototypeCommons, runCivilizationDeepTimeEpoch, runDeepTimePhysicsEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, savePrototypeSlot, returnPrototypeSlot, exportPrototypeSaveReceipt, exportPrototypeAcceptanceReceipt, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

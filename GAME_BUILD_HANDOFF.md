@@ -127,3 +127,8 @@ The prototype now includes a `Compare seeds` action and `Seed divergence` card. 
 
 The prototype now includes an `Audit commons` action and `Commons / causality` card. It summarizes resources, low-resource pressure, work/time cost, tool wear, maintenance obligations, practice burden, accepted proposals, conservation flags, and hidden-law exposure flags from existing world state and the Reality Constraint Ledger. This makes causal health visible during play without adding a god-game resource spreadsheet or exposing hidden simulator law in normal view.
 
+
+## Prototype v0 guided-step update
+
+The prototype now includes a `Guide step` action. It reads the current Player guide phase and executes the matching existing prototype action, recording a guide history row with source phase, action, next phase, selected resident, and no direct resident command. This turns the advisory guide into a playable one-button path while preserving resident autonomy and avoiding scripted technology unlocks.
+

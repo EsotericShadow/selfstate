@@ -163,3 +163,11 @@ The first playable loop includes a direct save/return pass: enter the village, l
 3. The Player guide can point to commons audit when the rest of the first playable path is seeded.
 4. Prototype QA and acceptance receipts include commons causal health as a hardening check.
 
+
+## Guided-step loop
+
+1. The Player guide derives the current phase from existing world state.
+2. Guide step executes the suggested existing action, including the special repeated schedule ask used for ordinary-play practice seeding.
+3. The shell records guide history so the player can see how phases advanced.
+4. Guided steps do not directly command residents; they only operate the avatar/prototype controls already available to the player.
+

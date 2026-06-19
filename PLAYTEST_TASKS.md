@@ -30,3 +30,5 @@
 19. Use Compare seeds and confirm the Seed divergence card shows multiple branches sharing one hidden-law seed while producing different local practice histories, statuses, or material burdens.
 
 20. Use Audit commons after resident seasons, proposal support, or practice maintenance and confirm the Commons / causality card reports resources, work/time cost, tool wear, maintenance burden, conservation issues, and hidden-law exposure without revealing hidden simulator law.
+
+21. Use Guide step repeatedly from a fresh run and confirm the Player guide history advances phases while actions still preserve resident autonomy and existing causal/acceptance checks.

@@ -318,3 +318,20 @@ The loop demonstrates one cohesive path:
 - Day 3: leave, return, inspect continuity, and save the resulting state.
 
 The acceptance gate is `playable_village_day_0_3`. It is deliberately finite: it proves a playable loop exists before expanding the world or adding new research branches.
+
+## Prototype v0 milestone: Primary Play Surface
+
+The browser shell now has a `Primary play surface` milestone. The canvas is treated as the main game readout, while panels remain inspection and audit support.
+
+The surface summarizes, in one place:
+
+- current village problem
+- selected resident and schedule
+- next player action
+- active proposal
+- active practice
+- active physical component
+- latest physics row
+- resource pressure
+
+The acceptance gate is `primary_play_surface`. This does not make the visual layer final art; it makes the existing primitive 3D/canvas shell function as a playable interface instead of only a debug dashboard.

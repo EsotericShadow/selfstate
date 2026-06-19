@@ -123,3 +123,9 @@ The correct player role remains: influence conditions, offer support, ask, wait,
 The Day 0-3 loop is a finite browser-local prototype milestone. It is not a claim that the full game exists yet.
 
 It must preserve the same boundary as the rest of the project: the player influences conditions, but residents mediate action through local state, proposals, schedules, memory, resources, and physical constraints. The loop must not become direct job assignment, a tech-tree unlock, or perfect-information management.
+
+## Boundary: Primary Play Surface
+
+The primary play surface is a readability layer over existing browser-local state. It must not expose hidden simulator laws in normal view and must not convert resident proposals into player commands.
+
+The canvas may show audit-linked IDs only as normal-view summaries, not as resident knowledge. The player sees a practical gloss and next action, not omniscient truth.

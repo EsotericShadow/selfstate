@@ -258,3 +258,7 @@ This ledger row exists to prevent a fake unlock path. The player may support con
 The Day 0-3 loop records `playable_village_day_0_3` as a causal ledger event.
 
 The event must show that the loop consumed time/work, preserved material/source causality through child systems, kept hidden law audit-only, and left open resident-mediated consequences such as delay, burden, practice drift, refusal, or maintenance.
+
+## Primary play-surface ledger event
+
+The primary play surface records `primary_play_surface` as a ledger event. The event is non-material: it summarizes existing state without spawning resources, changing resident knowledge, or exposing hidden laws in normal view.

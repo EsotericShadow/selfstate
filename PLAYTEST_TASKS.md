@@ -200,3 +200,11 @@
 - Confirm Day 2 advances resident work, resource support, body cost, or recovery evidence.
 - Confirm Day 3 creates return-session and save evidence.
 - Export acceptance and confirm `playable_village_day_0_3` appears as a passing requirement after the loop runs.
+
+## Primary play-surface playtests
+
+- Run `World stage` until the `Primary play surface` card reports `Acceptance ready: yes`.
+- Confirm the canvas shows current problem, next action, resident, proposal, practice, component, physics, and resource pressure.
+- Confirm the highlighted object corresponds to an actual simulated component when one is available.
+- Confirm panels are still present but the canvas alone gives enough information to take the next action.
+- Export acceptance and confirm `primary_play_surface` appears as a passing requirement after the stage loop runs.

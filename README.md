@@ -2216,3 +2216,7 @@ The browser shell now includes a `Physics-to-practice playable slice` action/car
 ## Game prototype v0 update: Playable Village Day 0-3
 
 The browser shell now includes `Village Day 0-3` and `Day 0-3 loop` actions/cards. This milestone connects arrival, observation, physics, resident proposal/testing, resident work/recovery, return-session continuity, and prototype save evidence into one finite playable loop.
+
+## Game prototype v0 update: Primary Play Surface
+
+The browser shell now includes `World stage` and `Stage loop` actions plus a `Primary play surface` card. The canvas overlays the current village problem, selected resident, next action, active proposal, active practice, active physical component, physics row, and resource pressure so the prototype reads more like a game surface and less like disconnected panels.

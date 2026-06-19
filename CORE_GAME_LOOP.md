@@ -400,3 +400,14 @@ The prototype has a concrete three-day loop:
 4. `Day 3 return/save`: the player leaves, returns, sees continuity, and saves the linked state.
 
 The loop is accepted only when it has player rows, resident rows, world rows, physics links, proposal links, practice links, save links, and return links.
+
+## Primary play-surface loop
+
+The prototype now exposes a player-facing world stage loop:
+
+1. Gather the current guide action, resident, problem, proposal, practice, component, physics row, and resource pressure.
+2. Render that snapshot on the canvas as the main play surface.
+3. Store focus/cue/prompt rows for QA and acceptance.
+4. Keep panels available for inspection, but treat them as secondary to the canvas.
+
+This loop is accepted only when the surface has repeated focus rows, canvas cue rows, and action prompt rows that include proposal, practice, and physical component context without exposing hidden law in normal view.

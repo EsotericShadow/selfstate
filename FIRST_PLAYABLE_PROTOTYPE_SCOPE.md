@@ -169,3 +169,21 @@ The gate requires:
 - no fixed tech-tree unlock
 
 This is the current best next milestone for making the shell feel like a game rather than a collection of panels.
+
+## Added scope gate: Primary Play Surface
+
+`primary_play_surface` is now part of first playable prototype scope.
+
+Required evidence:
+
+- canvas-first milestone state
+- at least three focus rows
+- at least three canvas cue rows
+- at least three action prompt rows
+- active proposal appears in the surface history
+- active practice appears in the surface history
+- active physical component appears in the surface history
+- no hidden simulator law exposed in normal view
+- no direct resident command
+
+This is the bridge from proof shell to playable shell.

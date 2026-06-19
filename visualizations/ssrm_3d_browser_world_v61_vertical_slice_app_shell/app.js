@@ -48,10 +48,10 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, PROTOTYPE_SAVE_KEY, PROTOTYPE_ACCEPTANCE_KEY, WALKTHROUGH_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'gamePrototypePlayableSlice', 'gamePrototypeVillageDay03', 'gamePrototypeWorldStage', 'gamePrototypeWalkthrough', 'gamePrototypeActionRail', 'gamePrototypePlayerMode', 'gamePrototypeProposalDeck', 'gamePrototypeLivedPractice', 'gamePrototypeWorksite', 'gamePrototypeReturnJournal', 'gamePrototypePlaySession', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'gamePrototypeAcceptance', 'gamePrototypeDivergence', 'gamePrototypeCommons', 'gamePrototypeProjects', 'gamePrototypeCommonsSupport', 'gamePrototypeNearbyActions', 'gamePrototypeDayCycle', 'gamePrototypeReturnLater', 'gamePrototype3DWorld', 'gamePrototypeMaterialManipulation', 'gamePrototypeResidentBodies', 'gamePrototypeTerrain', 'gamePrototypeTools', 'gamePrototypeResourcePhysics', 'gamePrototypeThermalPhysics', 'gamePrototypeWaterPhysics', 'gamePrototypeEcologyPhysics', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'gamePrototypePlayableSlice', 'gamePrototypeVillageDay03', 'gamePrototypeWorldStage', 'gamePrototypeWalkthrough', 'gamePrototypeActionRail', 'gamePrototypePlayerMode', 'gamePrototypeObjectInteraction', 'gamePrototypeProposalDeck', 'gamePrototypeLivedPractice', 'gamePrototypeWorksite', 'gamePrototypeReturnJournal', 'gamePrototypePlaySession', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'gamePrototypeAcceptance', 'gamePrototypeDivergence', 'gamePrototypeCommons', 'gamePrototypeProjects', 'gamePrototypeCommonsSupport', 'gamePrototypeNearbyActions', 'gamePrototypeDayCycle', 'gamePrototypeReturnLater', 'gamePrototype3DWorld', 'gamePrototypeMaterialManipulation', 'gamePrototypeResidentBodies', 'gamePrototypeTerrain', 'gamePrototypeTools', 'gamePrototypeResourcePhysics', 'gamePrototypeThermalPhysics', 'gamePrototypeWaterPhysics', 'gamePrototypeEcologyPhysics', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
-  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay', 'exportPrototypeAcceptanceReceipt', 'comparePrototypeDivergenceSeeds', 'auditPrototypeCommons', 'runPrototypeGuidedStep', 'runPlayablePhysicsPracticeSliceStep', 'runPlayablePhysicsPracticeSliceLoop', 'runPlayableVillageDay03Step', 'runPlayableVillageDay03Loop', 'runPrimaryPlaySurfaceStep', 'runPrimaryPlaySurfaceLoop', 'runFirstPlayableWalkthrough', 'exportFirstPlayableWalkthrough', 'runNormalPlayLook', 'runNormalPlayAsk', 'runNormalPlaySupport', 'runNormalPlayWait', 'runNormalPlayReturn', 'runNormalPlaySave', 'runNormalPlayActionRailLoop', 'enterPlayerMode', 'exitPlayerMode', 'togglePlayerMode', 'runPlayerModeInterfaceLoop', 'runPlayerProposalDeckLoop', 'supportPlayerProposalDeck', 'askPlayerProposalDeck', 'waitPlayerProposalDeck', 'runLivedPracticeLoop', 'runResidentWorksiteLoop', 'runReturnJournalLoop', 'runFirstPlayableSessionLoop', 'advanceVillageProject', 'supportResourceCommons', 'performNearbyAction', 'endVillageDay', 'leaveAndReturnLater', 'runPrototypeMaterialWorldStep', 'runPrototypePhysicsStep', 'runStructuralPhysicsStep', 'runStructuralPhysicsLoop', 'runContactConstraintPhysicsStep', 'runContactConstraintPhysicsLoop', 'runMaterialStatePhysicsStep', 'runMaterialStatePhysicsLoop', 'runTerrainPhysicsStep', 'runTerrainPhysicsLoop', 'runToolPhysicsStep', 'runToolPhysicsLoop', 'runResourcePhysicsStep', 'runResourcePhysicsLoop', 'runThermalPhysicsStep', 'runThermalPhysicsLoop', 'runWaterPhysicsStep', 'runWaterPhysicsLoop', 'runEcologyPhysicsStep', 'runEcologyPhysicsLoop', 'runResidentMaterialManipulationStep', 'runResidentMaterialManipulationLoop', 'runResidentBodyPhysicsStep', 'runResidentBodyPhysicsLoop', 'runDeepTimePhysicsEpoch']
+  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay', 'exportPrototypeAcceptanceReceipt', 'comparePrototypeDivergenceSeeds', 'auditPrototypeCommons', 'runPrototypeGuidedStep', 'runPlayablePhysicsPracticeSliceStep', 'runPlayablePhysicsPracticeSliceLoop', 'runPlayableVillageDay03Step', 'runPlayableVillageDay03Loop', 'runPrimaryPlaySurfaceStep', 'runPrimaryPlaySurfaceLoop', 'runFirstPlayableWalkthrough', 'exportFirstPlayableWalkthrough', 'runNormalPlayLook', 'runNormalPlayAsk', 'runNormalPlayObjects', 'runNormalPlaySupport', 'runNormalPlayWait', 'runNormalPlayReturn', 'runNormalPlaySave', 'runNormalPlayActionRailLoop', 'enterPlayerMode', 'exitPlayerMode', 'togglePlayerMode', 'runPlayerModeInterfaceLoop', 'runPlayerObjectInteractionLoop', 'runPlayerProposalDeckLoop', 'supportPlayerProposalDeck', 'askPlayerProposalDeck', 'waitPlayerProposalDeck', 'runLivedPracticeLoop', 'runResidentWorksiteLoop', 'runReturnJournalLoop', 'runFirstPlayableSessionLoop', 'advanceVillageProject', 'supportResourceCommons', 'performNearbyAction', 'endVillageDay', 'leaveAndReturnLater', 'runPrototypeMaterialWorldStep', 'runPrototypePhysicsStep', 'runStructuralPhysicsStep', 'runStructuralPhysicsLoop', 'runContactConstraintPhysicsStep', 'runContactConstraintPhysicsLoop', 'runMaterialStatePhysicsStep', 'runMaterialStatePhysicsLoop', 'runTerrainPhysicsStep', 'runTerrainPhysicsLoop', 'runToolPhysicsStep', 'runToolPhysicsLoop', 'runResourcePhysicsStep', 'runResourcePhysicsLoop', 'runThermalPhysicsStep', 'runThermalPhysicsLoop', 'runWaterPhysicsStep', 'runWaterPhysicsLoop', 'runEcologyPhysicsStep', 'runEcologyPhysicsLoop', 'runResidentMaterialManipulationStep', 'runResidentMaterialManipulationLoop', 'runResidentBodyPhysicsStep', 'runResidentBodyPhysicsLoop', 'runDeepTimePhysicsEpoch']
 };
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -93,6 +93,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   gamePrototypeWalkthrough: null,
   gamePrototypeActionRail: null,
   gamePrototypePlayerMode: null,
+  gamePrototypeObjectInteraction: null,
   gamePrototypeProposalDeck: null,
   gamePrototypeLivedPractice: null,
   gamePrototypeWorksite: null,
@@ -4259,6 +4260,7 @@ function runFirstPlayablePrototypeLoop() {
   runFirstPlayableWalkthrough();
   runNormalPlayActionRailLoop();
   runPlayerModeInterfaceLoop();
+  runPlayerObjectInteractionLoop();
   runPlayerProposalDeckLoop();
   runLivedPracticeLoop();
   runResidentWorksiteLoop();
@@ -4284,6 +4286,7 @@ function runFirstPlayablePrototypeLoop() {
     walkthroughReady: world.gamePrototypeWalkthrough ? world.gamePrototypeWalkthrough.acceptanceReady === true : false,
     actionRailReady: world.gamePrototypeActionRail ? world.gamePrototypeActionRail.acceptanceReady === true : false,
     playerModeReady: world.gamePrototypePlayerMode ? world.gamePrototypePlayerMode.acceptanceReady === true : false,
+    objectInteractionReady: world.gamePrototypeObjectInteraction ? world.gamePrototypeObjectInteraction.acceptanceReady === true : false,
     proposalDeckReady: world.gamePrototypeProposalDeck ? world.gamePrototypeProposalDeck.acceptanceReady === true : false,
     livedPracticeReady: world.gamePrototypeLivedPractice ? world.gamePrototypeLivedPractice.acceptanceReady === true : false,
     worksiteReady: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.acceptanceReady === true : false,
@@ -5459,13 +5462,14 @@ function ensureNormalPlayActionRail() {
       optionLedger: [],
       receipt: null,
       acceptanceReady: false,
-      verbs: ['look', 'ask', 'support', 'wait', 'return', 'save'],
+      verbs: ['look', 'ask', 'objects', 'support', 'wait', 'return', 'save'],
       playerLanguageOnly: true,
       noDirectCommand: true,
       noTechTreeUnlock: true,
       boundary: 'normal player-facing action rail; maps simple verbs onto existing resident-mediated systems',
     };
   }
+  if (!world.gamePrototypeActionRail.verbs.includes('objects')) world.gamePrototypeActionRail.verbs.splice(2, 0, 'objects');
   return world.gamePrototypeActionRail;
 }
 
@@ -5476,6 +5480,7 @@ function normalPlayOptions() {
   return [
     { verb: 'look', label: 'Look', action: 'runPrimaryPlaySurfaceStep', intent: 'read the current world-stage problem and object context', recommended: guide.button === 'runPrimaryPlaySurfaceStep' || !stage || !stage.acceptanceReady },
     { verb: 'ask', label: 'Ask', action: 'askSchedule', intent: `ask ${world.selected} about schedule and current concern`, recommended: guide.button === 'askSchedule' },
+    { verb: 'objects', label: 'Objects', action: 'runPlayerObjectInteractionLoop', intent: 'inspect a real physical component and let residents choose a handling response', recommended: guide.button === 'runPlayerObjectInteractionLoop' },
     { verb: 'support', label: 'Support', action: 'supportResourceCommons', intent: 'offer material help without assigning a job', recommended: guide.button === 'supportResourceCommons' },
     { verb: 'wait', label: 'Wait', action: 'endVillageDay', intent: 'let residents and world systems advance one step', recommended: guide.button === 'endVillageDay' || guide.button === 'runPlayableVillageDay03Step' },
     { verb: 'return', label: 'Return', action: 'leaveAndReturnLater', intent: 'leave and come back to check continuity', recommended: guide.button === 'leaveAndReturnLater' },
@@ -5526,6 +5531,7 @@ function runNormalPlayAction(verb) {
   let receipt = null;
   if (verb === 'look') receipt = runPrimaryPlaySurfaceStep();
   else if (verb === 'ask') receipt = askSchedule();
+  else if (verb === 'objects') receipt = runPlayerObjectInteractionLoop();
   else if (verb === 'support') receipt = supportResourceCommons();
   else if (verb === 'wait') {
     if (world.gamePrototypeVillageDay03 && !world.gamePrototypeVillageDay03.acceptanceReady) receipt = runPlayableVillageDay03Step();
@@ -5582,6 +5588,7 @@ function runNormalPlayAction(verb) {
 
 function runNormalPlayLook() { return runNormalPlayAction('look'); }
 function runNormalPlayAsk() { return runNormalPlayAction('ask'); }
+function runNormalPlayObjects() { return runNormalPlayAction('objects'); }
 function runNormalPlaySupport() { return runNormalPlayAction('support'); }
 function runNormalPlayWait() { return runNormalPlayAction('wait'); }
 function runNormalPlayReturn() { return runNormalPlayAction('return'); }
@@ -5659,7 +5666,7 @@ function playerModeVisibleSurfaceSnapshot() {
     active_proposal: proposal ? `${proposal.proposal_id}: ${proposal.problem_addressed}` : 'none',
     active_practice: practice ? `${practice.practice_id}: ${practice.local_name}` : 'none',
     active_component: latest.active_component_id || 'none',
-    visible_cards: ['world canvas', 'normal action rail', 'player guide', 'primary play surface', 'first playable walkthrough', 'normal play action rail', 'player mode interface', 'resident proposal deck', 'lived practice loop', 'resident worksite', 'return journal', 'first playable session receipt', 'public outcomes'],
+    visible_cards: ['world canvas', 'normal action rail', 'player guide', 'primary play surface', 'first playable walkthrough', 'normal play action rail', 'player mode interface', 'physical object interaction', 'resident proposal deck', 'lived practice loop', 'resident worksite', 'return journal', 'first playable session receipt', 'public outcomes'],
     hidden_by_default: ['trace JSON', 'QA manifest', 'deep debug panels', 'prototype subsystem action grid', 'hidden simulator law detail'],
     audit_access: 'available after leaving player mode or through explicit audit/deep-panel controls',
     shows_public_state: true,
@@ -6533,6 +6540,177 @@ function formatReturnJournal() {
   ].join('\n');
 }
 
+function ensurePlayerObjectInteraction() {
+  ensureGamePrototype();
+  if (!world.gamePrototypeObjectInteraction) {
+    world.gamePrototypeObjectInteraction = {
+      milestone: 'player-object-interaction',
+      runCount: 0,
+      interactionLedger: [],
+      snapshotLedger: [],
+      receipt: null,
+      acceptanceReady: false,
+      playerFacing: true,
+      noDirectCommand: true,
+      residentChoosesHandling: true,
+      noHiddenLawNormalView: true,
+      noTechTreeUnlock: true,
+      boundary: 'player-facing object inspection; residents choose physical handling under material constraints',
+    };
+  }
+  ['interactionLedger', 'snapshotLedger'].forEach(key => {
+    if (!Array.isArray(world.gamePrototypeObjectInteraction[key])) world.gamePrototypeObjectInteraction[key] = [];
+  });
+  return world.gamePrototypeObjectInteraction;
+}
+
+function currentObjectInteractionTarget() {
+  const sim = ensurePrototype3DWorld();
+  const stage = world.gamePrototypeWorldStage || null;
+  const latest = stage && stage.latestSnapshot ? stage.latestSnapshot : currentPrimaryPlaySurfaceSnapshot();
+  const activeId = latest.active_component_id || latest.component_id || null;
+  const component = sim.components.find(row => row.component_id === activeId)
+    || sim.components.slice().sort((a, b) => (Number(a.stability || 1) - Number(b.stability || 1)) || (Number(b.damage || 0) - Number(a.damage || 0)) || (Number(b.moisture || 0) - Number(a.moisture || 0)))[0]
+    || sim.components[0];
+  const term = component ? sim.language.terms.find(row => row.term_id === component.resident_term_id) || sim.language.terms[0] : null;
+  const loop = world.gamePrototypeMaterialManipulation || null;
+  const latestManipulation = loop && loop.actionLedger.length ? loop.actionLedger[loop.actionLedger.length - 1] : null;
+  return { sim, component, term, latestManipulation };
+}
+
+function playerObjectInteractionSnapshot(label) {
+  const target = currentObjectInteractionTarget();
+  const component = target.component || {};
+  return {
+    label,
+    tick: world.tick,
+    selected_resident: world.selected,
+    room: world.avatar.room,
+    component_id: component.component_id || 'none',
+    material_id: component.material_id || 'none',
+    affordance: component.affordance || 'none',
+    resident_term: target.term ? target.term.resident_word : component.resident_term_id || 'none',
+    player_gloss: target.term ? target.term.player_gloss : component.material_id || 'none',
+    translation_confidence: target.term ? target.term.translation_confidence : 0,
+    mass: Number(component.mass || 0),
+    position3d: component.position3d ? { ...component.position3d } : null,
+    stability: Number(component.stability || 0),
+    moisture: Number(component.moisture || 0),
+    damage: Number(component.damage || 0),
+    field_stress: Number(component.field_stress || 0),
+    carried_by: component.carried_by || null,
+    latest_manipulation: target.latestManipulation ? target.latestManipulation.manipulation_id : 'none',
+    latest_action: target.latestManipulation ? target.latestManipulation.action : 'none',
+    latest_success: target.latestManipulation ? target.latestManipulation.success === true : false,
+    visible_player_action: 'inspect object and ask what residents can do',
+    avatar_direct_command: false,
+    resident_chosen: true,
+    hidden_law_normal_view: false,
+    tech_tree_unlock: false,
+  };
+}
+
+function updatePlayerObjectInteractionAcceptance() {
+  const interaction = ensurePlayerObjectInteraction();
+  interaction.acceptanceReady = Boolean(
+    interaction.interactionLedger.length > 0 &&
+    interaction.snapshotLedger.length > 0 &&
+    interaction.interactionLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.resident_chosen === true && row.hidden_law_normal_view === false && row.tech_tree_unlock === false && row.manipulation_id !== 'none') &&
+    interaction.noDirectCommand === true &&
+    interaction.residentChoosesHandling === true &&
+    interaction.noHiddenLawNormalView === true &&
+    interaction.noTechTreeUnlock === true
+  );
+  interaction.receipt = {
+    receipt_id: `POI-${String(interaction.runCount).padStart(2, '0')}`,
+    acceptance_ready: interaction.acceptanceReady,
+    interaction_rows: interaction.interactionLedger.length,
+    snapshots: interaction.snapshotLedger.length,
+    latest_component: interaction.interactionLedger.length ? interaction.interactionLedger[interaction.interactionLedger.length - 1].component_id : 'none',
+    latest_manipulation: interaction.interactionLedger.length ? interaction.interactionLedger[interaction.interactionLedger.length - 1].manipulation_id : 'none',
+    boundary: interaction.boundary,
+  };
+  return interaction.acceptanceReady;
+}
+
+function runPlayerObjectInteractionLoop() {
+  const interaction = ensurePlayerObjectInteraction();
+  interaction.runCount += 1;
+  if (!world.entered) runPrototypeOpening();
+  if (!world.gamePrototypeWorldStage || !world.gamePrototypeWorldStage.acceptanceReady) runPrimaryPlaySurfaceStep();
+  const before = playerObjectInteractionSnapshot('before-object-interaction');
+  const lookReceipt = runPrimaryPlaySurfaceStep();
+  const manipulationReceipt = runResidentMaterialManipulationStep('resident_choice');
+  const payload = manipulationReceipt && manipulationReceipt.payload ? manipulationReceipt.payload : {};
+  const after = playerObjectInteractionSnapshot('after-object-interaction');
+  const row = {
+    interaction_id: `POI-${String(interaction.interactionLedger.length + 1).padStart(2, '0')}`,
+    tick: world.tick,
+    component_id: payload.componentId || before.component_id,
+    resident_term: after.resident_term,
+    player_gloss: after.player_gloss,
+    player_intent: 'inspect a physical component and ask residents what they can do',
+    look_event: lookReceipt && lookReceipt.event ? lookReceipt.event : 'runPrimaryPlaySurfaceStep',
+    manipulation_id: payload.manipulationId || after.latest_manipulation || 'none',
+    resident: payload.resident || world.selected,
+    resident_action: payload.action || after.latest_action,
+    success: payload.success === true,
+    physics_step_id: payload.physicsStepId || 'none',
+    practice_id: payload.practiceId || 'none',
+    before,
+    after,
+    player_facing: true,
+    avatar_direct_command: false,
+    resident_chosen: true,
+    hidden_law_normal_view: false,
+    tech_tree_unlock: false,
+  };
+  interaction.interactionLedger.push(row);
+  if (interaction.interactionLedger.length > 40) interaction.interactionLedger.shift();
+  interaction.snapshotLedger.push({ snapshot_id: `POIS-${String(interaction.snapshotLedger.length + 1).padStart(2, '0')}`, tick: world.tick, before, after });
+  if (interaction.snapshotLedger.length > 40) interaction.snapshotLedger.shift();
+  updatePlayerObjectInteractionAcceptance();
+  recordRealityConstraint('player_object_interaction', {
+    resident: row.resident,
+    sourceBeliefId: row.interaction_id,
+    materials: [row.component_id, after.material_id].filter(Boolean),
+    publicObservation: `${row.resident} ${row.resident_action} ${row.resident_term}`,
+    residentInterpretation: row.success ? 'resident handling produced usable physical evidence' : 'resident handling preserved a warning',
+    materialTransformation: `object interaction changed or observed component ${row.component_id} through resident material manipulation`,
+    timeCost: 1,
+    workCost: 1,
+    toolWear: 0,
+    maintenanceObligation: row.practice_id !== 'none' ? row.practice_id : 'watch object handling evidence',
+    unintendedConsequence: 'object inspection can route into resident practice evidence without direct command',
+    hiddenLawInvolved: 'audit only',
+    conservationCheck: true
+  });
+  recordPrototypeMilestone('player-object-interaction', {
+    ready: interaction.acceptanceReady,
+    rows: interaction.interactionLedger.length,
+    component: row.component_id,
+    manipulation: row.manipulation_id,
+  });
+  return log('runPlayerObjectInteractionLoop', { ready: interaction.acceptanceReady, rows: interaction.interactionLedger.length, componentId: row.component_id, manipulationId: row.manipulation_id, residentAction: row.resident_action, success: row.success });
+}
+
+function formatPlayerObjectInteraction() {
+  const interaction = world.gamePrototypeObjectInteraction || ensurePlayerObjectInteraction();
+  const latest = interaction.snapshotLedger.length ? interaction.snapshotLedger[interaction.snapshotLedger.length - 1].after : playerObjectInteractionSnapshot('current');
+  const rows = interaction.interactionLedger.slice(-6).map(row => `${row.interaction_id}: ${row.resident} ${row.resident_action} ${row.resident_term}; component=${row.component_id}; manipulation=${row.manipulation_id}; success=${row.success}; practice=${row.practice_id}`);
+  return [
+    `Acceptance ready: ${interaction.acceptanceReady ? 'yes' : 'no'}`,
+    `Rows: ${interaction.interactionLedger.length} / snapshots=${interaction.snapshotLedger.length}`,
+    `Boundary: ${interaction.boundary}`,
+    `Current component: ${latest.component_id}; term=${latest.resident_term}; gloss=${latest.player_gloss}; affordance=${latest.affordance}`,
+    `State: stability=${latest.stability}; moisture=${latest.moisture}; damage=${latest.damage}; stress=${latest.field_stress}; carried=${latest.carried_by || 'no'}`,
+    `Latest handling: ${latest.latest_manipulation}; action=${latest.latest_action}; success=${latest.latest_success}`,
+    `No direct command: ${interaction.noDirectCommand ? 'yes' : 'no'} / resident chooses handling: ${interaction.residentChoosesHandling ? 'yes' : 'no'} / no hidden law normal view: ${interaction.noHiddenLawNormalView ? 'yes' : 'no'}`,
+    'Recent object interactions:',
+    ...(rows.length ? rows : ['No object interaction rows yet.'])
+  ].join('\n');
+}
+
 function ensureFirstPlayableSession() {
   ensureGamePrototype();
   if (!world.gamePrototypePlaySession) {
@@ -6543,7 +6721,7 @@ function ensureFirstPlayableSession() {
       snapshotLedger: [],
       receipt: null,
       acceptanceReady: false,
-      requiredSteps: ['enter_player_mode', 'look', 'proposal_deck', 'practice_loop', 'resident_worksite', 'return_journal', 'save', 'return'],
+      requiredSteps: ['enter_player_mode', 'look', 'objects', 'proposal_deck', 'practice_loop', 'resident_worksite', 'return_journal', 'save', 'return'],
       playerFacing: true,
       noDirectCommand: true,
       noHiddenLawNormalView: true,
@@ -6551,6 +6729,7 @@ function ensureFirstPlayableSession() {
       boundary: 'single player-facing session receipt; sequences normal play surfaces without adding world law',
     };
   }
+  if (!world.gamePrototypePlaySession.requiredSteps.includes('objects')) world.gamePrototypePlaySession.requiredSteps.splice(2, 0, 'objects');
   return world.gamePrototypePlaySession;
 }
 
@@ -6672,6 +6851,7 @@ function runFirstPlayableSessionLoop() {
     return runPlayerModeInterfaceLoop();
   });
   recordFirstPlayableSessionStep('look', 'Look', runNormalPlayLook);
+  recordFirstPlayableSessionStep('objects', 'Objects', runPlayerObjectInteractionLoop);
   recordFirstPlayableSessionStep('proposal_deck', 'Proposals', runPlayerProposalDeckLoop);
   recordFirstPlayableSessionStep('practice_loop', 'Practice', runLivedPracticeLoop);
   recordFirstPlayableSessionStep('resident_worksite', 'Worksite', runResidentWorksiteLoop);
@@ -10236,6 +10416,9 @@ function derivePrototypePlayerGuide() {
   if (!world.gamePrototypePlayerMode || !world.gamePrototypePlayerMode.acceptanceReady) {
     return { ...guide, phase: 'player mode interface', nextAction: 'Player mode loop', why: 'switch the shell into a normal player-facing view that foregrounds the canvas, resident cues, public problems, and player-language verbs while hiding debug-heavy panels', button: 'runPlayerModeInterfaceLoop' };
   }
+  if (!world.gamePrototypeObjectInteraction || !world.gamePrototypeObjectInteraction.acceptanceReady) {
+    return { ...guide, phase: 'physical object interaction', nextAction: 'Objects', why: 'inspect a physical component and let residents choose a handling response under material constraints', button: 'runPlayerObjectInteractionLoop' };
+  }
   if (!world.gamePrototypeProposalDeck || !world.gamePrototypeProposalDeck.acceptanceReady) {
     return { ...guide, phase: 'resident proposal deck', nextAction: 'Proposal deck', why: 'read resident-generated proposals as cards and use Ask, Support, or Wait without assigning jobs', button: 'runPlayerProposalDeckLoop' };
   }
@@ -10314,6 +10497,7 @@ function formatPrototypePlayerGuide() {
   const walkthrough = world.gamePrototypeWalkthrough || null;
   const actionRail = world.gamePrototypeActionRail || null;
   const playerMode = world.gamePrototypePlayerMode || null;
+  const objectInteraction = world.gamePrototypeObjectInteraction || null;
   const proposalDeck = world.gamePrototypeProposalDeck || null;
   const livedPractice = world.gamePrototypeLivedPractice || null;
   const worksite = world.gamePrototypeWorksite || null;
@@ -10338,6 +10522,7 @@ function formatPrototypePlayerGuide() {
     `First playable: ${walkthrough ? `${walkthrough.phase}; ready=${walkthrough.acceptanceReady}; steps=${walkthrough.stepLedger.length}/${walkthrough.requiredSteps.length}` : 'not started'}`,
     `Normal controls: ${actionRail ? `ready=${actionRail.acceptanceReady}; actions=${actionRail.actionLedger.length}; verbs=${actionRail.verbs.join('/')}` : 'not started'}`,
     `Player mode: ${playerMode ? `enabled=${playerMode.enabled}; ready=${playerMode.acceptanceReady}; sessions=${playerMode.sessionLedger.length}` : 'not started'}`,
+    `Objects: ${objectInteraction ? `ready=${objectInteraction.acceptanceReady}; rows=${objectInteraction.interactionLedger.length}; snapshots=${objectInteraction.snapshotLedger.length}` : 'not started'}`,
     `Proposal deck: ${proposalDeck ? `ready=${proposalDeck.acceptanceReady}; cards=${proposalDeck.cardLedger.length}; actions=${proposalDeck.actionLedger.length}` : 'not started'}`,
     `Lived practice: ${livedPractice ? `ready=${livedPractice.acceptanceReady}; actions=${livedPractice.actionLedger.length}; snapshots=${livedPractice.practiceSnapshots.length}` : 'not started'}`,
     `Resident worksite: ${worksite ? `ready=${worksite.acceptanceReady}; watches=${worksite.watchLedger.length}; snapshots=${worksite.snapshotLedger.length}` : 'not started'}`,
@@ -10490,6 +10675,7 @@ function runPrototypeQASmoke() {
   runFirstPlayableWalkthrough();
   runNormalPlayActionRailLoop();
   runPlayerModeInterfaceLoop();
+  runPlayerObjectInteractionLoop();
   runPlayerProposalDeckLoop();
   runLivedPracticeLoop();
   runResidentWorksiteLoop();
@@ -10624,6 +10810,9 @@ function runPrototypeQASmoke() {
     playerModeReady: world.gamePrototypePlayerMode ? world.gamePrototypePlayerMode.acceptanceReady === true : false,
     playerModeSessions: world.gamePrototypePlayerMode ? world.gamePrototypePlayerMode.sessionLedger.length : 0,
     playerModeVisibleCards: world.gamePrototypePlayerMode && world.gamePrototypePlayerMode.visibleSurface ? world.gamePrototypePlayerMode.visibleSurface.visible_cards.length : 0,
+    objectInteractionReady: world.gamePrototypeObjectInteraction ? world.gamePrototypeObjectInteraction.acceptanceReady === true : false,
+    objectInteractionRows: world.gamePrototypeObjectInteraction ? world.gamePrototypeObjectInteraction.interactionLedger.length : 0,
+    objectInteractionSnapshots: world.gamePrototypeObjectInteraction ? world.gamePrototypeObjectInteraction.snapshotLedger.length : 0,
     proposalDeckReady: world.gamePrototypeProposalDeck ? world.gamePrototypeProposalDeck.acceptanceReady === true : false,
     proposalDeckCards: world.gamePrototypeProposalDeck ? world.gamePrototypeProposalDeck.cardLedger.length : 0,
     proposalDeckActions: world.gamePrototypeProposalDeck ? world.gamePrototypeProposalDeck.actionLedger.length : 0,
@@ -10668,6 +10857,7 @@ function runPrototypeQASmoke() {
     { id: 'first-playable-walkthrough', pass: Boolean(world.gamePrototypeWalkthrough && savedCounts.walkthroughReady && savedCounts.walkthroughSteps >= world.gamePrototypeWalkthrough.requiredSteps.length && savedCounts.walkthroughLinks >= world.gamePrototypeWalkthrough.requiredSteps.length && world.gamePrototypeWalkthrough.noDirectCommand === true && world.gamePrototypeWalkthrough.noTechTreeUnlock === true && world.gamePrototypeWalkthrough.noHiddenLawNormalView === true), evidence: `${savedCounts.walkthroughSteps} step row(s), ${savedCounts.walkthroughLinks} evidence link(s)` },
     { id: 'normal-play-action-rail', pass: Boolean(world.gamePrototypeActionRail && savedCounts.actionRailReady && savedCounts.actionRailRows >= world.gamePrototypeActionRail.verbs.length && savedCounts.actionRailOptionRows > 0 && world.gamePrototypeActionRail.playerLanguageOnly === true && world.gamePrototypeActionRail.noDirectCommand === true && world.gamePrototypeActionRail.noTechTreeUnlock === true), evidence: `${savedCounts.actionRailRows} action row(s), ${savedCounts.actionRailOptionRows} option snapshot(s)` },
     { id: 'player-mode-interface', pass: Boolean(world.gamePrototypePlayerMode && savedCounts.playerModeReady && savedCounts.playerModeSessions > 0 && savedCounts.playerModeVisibleCards >= 6 && world.gamePrototypePlayerMode.normalViewOnly === true && world.gamePrototypePlayerMode.debugPanelsHidden === true && world.gamePrototypePlayerMode.noDirectCommand === true && world.gamePrototypePlayerMode.noHiddenLawNormalView === true), evidence: `${savedCounts.playerModeSessions} player-mode session(s), ${savedCounts.playerModeVisibleCards} visible card(s)` },
+    { id: 'player-object-interaction', pass: Boolean(world.gamePrototypeObjectInteraction && savedCounts.objectInteractionReady && savedCounts.objectInteractionRows > 0 && savedCounts.objectInteractionSnapshots > 0 && world.gamePrototypeObjectInteraction.interactionLedger.every(row => row.avatar_direct_command === false && row.resident_chosen === true && row.hidden_law_normal_view === false && row.tech_tree_unlock === false)), evidence: `${savedCounts.objectInteractionRows} object interaction row(s), ${savedCounts.objectInteractionSnapshots} snapshot(s)` },
     { id: 'resident-proposal-deck', pass: Boolean(world.gamePrototypeProposalDeck && savedCounts.proposalDeckReady && savedCounts.proposalDeckCards > 0 && savedCounts.proposalDeckActions >= 3 && world.gamePrototypeProposalDeck.avatarCannotForce === true && world.gamePrototypeProposalDeck.noDirectCommand === true && world.gamePrototypeProposalDeck.noHiddenLawNormalView === true), evidence: `${savedCounts.proposalDeckCards} card snapshot(s), ${savedCounts.proposalDeckActions} deck action(s)` },
     { id: 'lived-practice-loop', pass: Boolean(world.gamePrototypeLivedPractice && savedCounts.livedPracticeReady && savedCounts.livedPracticeRows >= 4 && savedCounts.livedPracticeSnapshots > 0 && world.gamePrototypeLivedPractice.noDirectCommand === true && world.gamePrototypeLivedPractice.noHiddenLawNormalView === true && world.gamePrototypeLivedPractice.noPredeclaredTechTree === true), evidence: `${savedCounts.livedPracticeRows} lived action row(s), ${savedCounts.livedPracticeSnapshots} practice snapshot(s)` },
     { id: 'resident-worksite', pass: Boolean(world.gamePrototypeWorksite && savedCounts.worksiteReady && savedCounts.worksiteRows >= 2 && savedCounts.worksiteSnapshots > 0 && world.gamePrototypeWorksite.avatarCannotAssignJobs === true && world.gamePrototypeWorksite.noDirectCommand === true && world.gamePrototypeWorksite.noHiddenLawNormalView === true && world.gamePrototypeWorksite.noResourceSpawning === true), evidence: `${savedCounts.worksiteRows} worksite watch row(s), ${savedCounts.worksiteSnapshots} snapshot(s)` },
@@ -11134,6 +11324,7 @@ function buildPrototypeAcceptanceReceipt() {
   const walkthrough = world.gamePrototypeWalkthrough || null;
   const actionRail = world.gamePrototypeActionRail || null;
   const playerMode = world.gamePrototypePlayerMode || null;
+  const objectInteraction = world.gamePrototypeObjectInteraction || null;
   const proposalDeck = world.gamePrototypeProposalDeck || null;
   const livedPractice = world.gamePrototypeLivedPractice || null;
   const worksite = world.gamePrototypeWorksite || null;
@@ -11188,6 +11379,8 @@ function buildPrototypeAcceptanceReceipt() {
   const actionRailOptions = actionRail ? actionRail.optionLedger.length : 0;
   const playerModeSessions = playerMode ? playerMode.sessionLedger.length : 0;
   const playerModeVisibleCards = playerMode && playerMode.visibleSurface ? playerMode.visibleSurface.visible_cards.length : 0;
+  const objectInteractionRows = objectInteraction ? objectInteraction.interactionLedger.length : 0;
+  const objectInteractionSnapshots = objectInteraction ? objectInteraction.snapshotLedger.length : 0;
   const proposalDeckCards = proposalDeck ? proposalDeck.cardLedger.length : 0;
   const proposalDeckActions = proposalDeck ? proposalDeck.actionLedger.length : 0;
   const livedPracticeRows = livedPractice ? livedPractice.actionLedger.length : 0;
@@ -11263,6 +11456,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'first_playable_walkthrough', pass: Boolean(walkthrough && walkthrough.acceptanceReady && walkthroughSteps >= walkthrough.requiredSteps.length && walkthroughLinks >= walkthrough.requiredSteps.length && walkthrough.noDirectCommand === true && walkthrough.noTechTreeUnlock === true && walkthrough.noHiddenLawNormalView === true), evidence: walkthrough ? `${walkthrough.phase}; steps=${walkthroughSteps}, links=${walkthroughLinks}` : 'not run' },
     { id: 'normal_play_action_rail', pass: Boolean(actionRail && actionRail.acceptanceReady && actionRailRows >= actionRail.verbs.length && actionRailOptions > 0 && actionRail.playerLanguageOnly === true && actionRail.noDirectCommand === true && actionRail.noTechTreeUnlock === true), evidence: actionRail ? `actions=${actionRailRows}, optionSnapshots=${actionRailOptions}, verbs=${actionRail.verbs.join('/')}` : 'not run' },
     { id: 'player_mode_interface', pass: Boolean(playerMode && playerMode.acceptanceReady && playerModeSessions > 0 && playerModeVisibleCards >= 6 && playerMode.normalViewOnly === true && playerMode.debugPanelsHidden === true && playerMode.noDirectCommand === true && playerMode.noHiddenLawNormalView === true && playerMode.playerGlossesOnly === true), evidence: playerMode ? `enabled=${playerMode.enabled}, sessions=${playerModeSessions}, visibleCards=${playerModeVisibleCards}` : 'not run' },
+    { id: 'player_object_interaction', pass: Boolean(objectInteraction && objectInteraction.acceptanceReady && objectInteractionRows > 0 && objectInteractionSnapshots > 0 && objectInteraction.interactionLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.resident_chosen === true && row.hidden_law_normal_view === false && row.tech_tree_unlock === false) && objectInteraction.noDirectCommand === true && objectInteraction.noHiddenLawNormalView === true), evidence: objectInteraction ? `rows=${objectInteractionRows}, snapshots=${objectInteractionSnapshots}` : 'not run' },
     { id: 'resident_proposal_deck', pass: Boolean(proposalDeck && proposalDeck.acceptanceReady && proposalDeckCards > 0 && proposalDeckActions >= 3 && proposalDeck.avatarCannotForce === true && proposalDeck.noDirectCommand === true && proposalDeck.noHiddenLawNormalView === true && proposalDeck.playerGlossesOnly === true), evidence: proposalDeck ? `cardSnapshots=${proposalDeckCards}, actions=${proposalDeckActions}` : 'not run' },
     { id: 'lived_practice_loop', pass: Boolean(livedPractice && livedPractice.acceptanceReady && livedPracticeRows >= 4 && livedPracticeSnapshots > 0 && livedPractice.noDirectCommand === true && livedPractice.noHiddenLawNormalView === true && livedPractice.noPredeclaredTechTree === true && livedPractice.noCorrectConceptInstalled === true), evidence: livedPractice ? `actions=${livedPracticeRows}, snapshots=${livedPracticeSnapshots}` : 'not run' },
     { id: 'resident_worksite', pass: Boolean(worksite && worksite.acceptanceReady && worksiteRows >= 2 && worksiteSnapshots > 0 && worksite.avatarCannotAssignJobs === true && worksite.noDirectCommand === true && worksite.noHiddenLawNormalView === true && worksite.noResourceSpawning === true), evidence: worksite ? `watchRows=${worksiteRows}, snapshots=${worksiteSnapshots}` : 'not run' },
@@ -11405,6 +11599,7 @@ function renderGamePrototypeSurface() {
   const walkthroughNode = document.getElementById('gamePrototypeWalkthroughOut');
   const actionRailNode = document.getElementById('gamePrototypeActionRailOut');
   const playerModeNode = document.getElementById('gamePrototypePlayerModeOut');
+  const objectInteractionNode = document.getElementById('gamePrototypeObjectInteractionOut');
   const proposalDeckNode = document.getElementById('gamePrototypeProposalDeckOut');
   const livedPracticeNode = document.getElementById('gamePrototypeLivedPracticeOut');
   const worksiteNode = document.getElementById('gamePrototypeWorksiteOut');
@@ -11448,6 +11643,7 @@ function renderGamePrototypeSurface() {
   if (walkthroughNode) walkthroughNode.textContent = formatFirstPlayableWalkthrough();
   if (actionRailNode) actionRailNode.textContent = formatNormalPlayActionRail();
   if (playerModeNode) playerModeNode.textContent = formatPlayerModeInterface();
+  if (objectInteractionNode) objectInteractionNode.textContent = formatPlayerObjectInteraction();
   if (proposalDeckNode) proposalDeckNode.textContent = formatPlayerProposalDeck();
   if (livedPracticeNode) livedPracticeNode.textContent = formatLivedPracticeLoop();
   if (worksiteNode) worksiteNode.textContent = formatResidentWorksite();
@@ -12169,6 +12365,7 @@ function describeReplayRow(row) {
     supportVillageProposal: `supported village proposal ${payload.proposalId} accepted=${payload.accepted}`,
     askVillageBoardQuestion: `asked village board question ${payload.proposalId}`,
     waitOnVillageBoard: `waited on village board proposals=${payload.proposals}`,
+    runPlayerObjectInteractionLoop: `object interaction ready=${payload.ready === true} rows=${payload.rows} component=${payload.componentId} handling=${payload.manipulationId}`,
     runPlayerProposalDeckLoop: `proposal deck ready=${payload.ready === true} cards=${payload.cards} actions=${payload.actions}`,
     supportPlayerProposalDeck: `proposal deck support ${payload.proposalId} ready=${payload.ready === true}`,
     askPlayerProposalDeck: `proposal deck ask ${payload.proposalId} ready=${payload.ready === true}`,
@@ -14270,6 +14467,6 @@ function renderHintBranchPersistence() {
   ].join('\n');
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, advanceVillageProject, supportResourceCommons, performNearbyAction, endVillageDay, leaveAndReturnLater, runPrototypeMaterialWorldStep, runPrototypePhysicsStep, runStructuralPhysicsStep, runStructuralPhysicsLoop, runContactConstraintPhysicsStep, runContactConstraintPhysicsLoop, runMaterialStatePhysicsStep, runMaterialStatePhysicsLoop, runPlayablePhysicsPracticeSliceStep, runPlayablePhysicsPracticeSliceLoop, runPlayableVillageDay03Step, runPlayableVillageDay03Loop, runPrimaryPlaySurfaceStep, runPrimaryPlaySurfaceLoop, runFirstPlayableWalkthrough, exportFirstPlayableWalkthrough, runNormalPlayLook, runNormalPlayAsk, runNormalPlaySupport, runNormalPlayWait, runNormalPlayReturn, runNormalPlaySave, runNormalPlayActionRailLoop, enterPlayerMode, exitPlayerMode, togglePlayerMode, runPlayerModeInterfaceLoop, runPlayerProposalDeckLoop, supportPlayerProposalDeck, askPlayerProposalDeck, waitPlayerProposalDeck, runLivedPracticeLoop, runResidentWorksiteLoop, runReturnJournalLoop, runFirstPlayableSessionLoop, runTerrainPhysicsStep, runTerrainPhysicsLoop, runToolPhysicsStep, runToolPhysicsLoop, runResourcePhysicsStep, runResourcePhysicsLoop, runThermalPhysicsStep, runThermalPhysicsLoop, runWaterPhysicsStep, runWaterPhysicsLoop, runEcologyPhysicsStep, runEcologyPhysicsLoop, runResidentMaterialManipulationStep, runResidentMaterialManipulationLoop, runResidentBodyPhysicsStep, runResidentBodyPhysicsLoop, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypeGuidedStep, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, comparePrototypeDivergenceSeeds, auditPrototypeCommons, runCivilizationDeepTimeEpoch, runDeepTimePhysicsEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, savePrototypeSlot, returnPrototypeSlot, exportPrototypeSaveReceipt, exportPrototypeAcceptanceReceipt, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, advanceVillageProject, supportResourceCommons, performNearbyAction, endVillageDay, leaveAndReturnLater, runPrototypeMaterialWorldStep, runPrototypePhysicsStep, runStructuralPhysicsStep, runStructuralPhysicsLoop, runContactConstraintPhysicsStep, runContactConstraintPhysicsLoop, runMaterialStatePhysicsStep, runMaterialStatePhysicsLoop, runPlayablePhysicsPracticeSliceStep, runPlayablePhysicsPracticeSliceLoop, runPlayableVillageDay03Step, runPlayableVillageDay03Loop, runPrimaryPlaySurfaceStep, runPrimaryPlaySurfaceLoop, runFirstPlayableWalkthrough, exportFirstPlayableWalkthrough, runNormalPlayLook, runNormalPlayAsk, runNormalPlayObjects, runNormalPlaySupport, runNormalPlayWait, runNormalPlayReturn, runNormalPlaySave, runNormalPlayActionRailLoop, enterPlayerMode, exitPlayerMode, togglePlayerMode, runPlayerModeInterfaceLoop, runPlayerObjectInteractionLoop, runPlayerProposalDeckLoop, supportPlayerProposalDeck, askPlayerProposalDeck, waitPlayerProposalDeck, runLivedPracticeLoop, runResidentWorksiteLoop, runReturnJournalLoop, runFirstPlayableSessionLoop, runTerrainPhysicsStep, runTerrainPhysicsLoop, runToolPhysicsStep, runToolPhysicsLoop, runResourcePhysicsStep, runResourcePhysicsLoop, runThermalPhysicsStep, runThermalPhysicsLoop, runWaterPhysicsStep, runWaterPhysicsLoop, runEcologyPhysicsStep, runEcologyPhysicsLoop, runResidentMaterialManipulationStep, runResidentMaterialManipulationLoop, runResidentBodyPhysicsStep, runResidentBodyPhysicsLoop, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypeGuidedStep, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, comparePrototypeDivergenceSeeds, auditPrototypeCommons, runCivilizationDeepTimeEpoch, runDeepTimePhysicsEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, savePrototypeSlot, returnPrototypeSlot, exportPrototypeSaveReceipt, exportPrototypeAcceptanceReceipt, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

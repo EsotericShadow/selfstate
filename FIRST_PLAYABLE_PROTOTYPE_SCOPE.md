@@ -318,3 +318,21 @@ Required evidence:
 - the receipt survives save-slot restoration boundaries without losing its existing step ledger
 
 This milestone is the first coherent game-session receipt. It does not add a new simulation system; it proves the existing systems can be driven from the player-facing surface.
+
+## Prototype v0 milestone: Physical Object Interaction
+
+`player_object_interaction` is now part of first playable prototype scope.
+
+Required evidence:
+
+- the normal rail exposes an Objects action
+- Player Mode includes a Physical object interaction card
+- the card shows an actual simulated component, resident term, imperfect player gloss, affordance, mass, moisture, stability, damage, stress, and carried state
+- the player action routes through resident-chosen material manipulation, not direct avatar object control
+- rows link component id, manipulation id, resident action, physics step, and practice id when available
+- every row records no direct resident command
+- hidden simulator law remains out of normal view
+- no step installs a tech-tree unlock or correct resident concept
+- component changes are caused by the existing material manipulation/physics system
+
+This milestone makes the physics substrate playable from ordinary UI. It does not create free-form construction or direct object placement by the player.

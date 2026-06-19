@@ -269,8 +269,17 @@
 ## First playable session playtests
 
 - Run `Session` from the normal rail and confirm the `Play session receipt` card appears in Player mode.
-- Confirm the receipt records Player mode, Look, Proposals, Practice, Worksite, Journal, Save, and Return steps.
+- Confirm the receipt records Player mode, Look, Objects, Proposals, Practice, Worksite, Journal, Save, and Return steps.
 - Confirm the receipt links proposal, practice, worksite, return journal, save, and return evidence from one player-facing sequence.
 - Confirm rows record no direct resident command, no hidden-law exposure in normal view, and no tech-tree unlock.
 - Confirm the session still has its earlier step rows after the Journal step performs save-slot restoration.
 - Export acceptance and confirm `first_playable_session` appears as a requirement after the session loop runs.
+
+## Physical object interaction playtests
+
+- Run `Objects` from the normal rail and confirm the `Physical object interaction` card appears in Player Mode.
+- Confirm the card shows a component id, resident term, player gloss, affordance, mass, moisture, stability, damage, stress, and carried state.
+- Confirm the action creates an object interaction row linked to a resident material manipulation row.
+- Confirm resident handling is recorded as resident-chosen, not a direct avatar object command.
+- Confirm the row links a physics step and, when available, a practice id.
+- Export acceptance and confirm `player_object_interaction` appears as a requirement after the object interaction loop runs.

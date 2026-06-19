@@ -513,11 +513,26 @@ The shell now has one player-facing session loop:
 
 1. Enter Player mode.
 2. Look at the village through the normal play surface.
-3. Open resident proposals.
-4. Run the lived practice loop.
-5. Watch resident worksite consequences.
-6. Open the return journal.
-7. Save the prototype state.
-8. Return after away time.
+3. Inspect physical objects through resident-local terms and imperfect glosses.
+4. Open resident proposals.
+5. Run the lived practice loop.
+6. Watch resident worksite consequences.
+7. Open the return journal.
+8. Save the prototype state.
+9. Return after away time.
 
 Each step records a session row and snapshot. The loop does not add world law; it sequences the existing systems into one playable proof that the player can move from observation to proposals, practice, work, continuity, save, and return without using debug-only subsystem panels.
+
+## Physical object interaction loop
+
+The normal player loop now includes object interaction:
+
+1. The player chooses `Objects`.
+2. The shell identifies the active or physically strained component.
+3. The normal view shows resident term, imperfect gloss, affordance, mass, moisture, stability, damage, stress, and carried state.
+4. A resident chooses a handling response through the material manipulation loop.
+5. The component changes or produces a preserved warning under physical constraints.
+6. Practice and reality-ledger evidence are updated if the handling produces repeated or useful evidence.
+7. Hidden simulator law remains audit-only.
+
+The player inspects and asks; residents handle. This keeps the 3D physics substrate playable without turning the avatar into a direct object controller.

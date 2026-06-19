@@ -300,3 +300,21 @@ Required evidence:
 - return evidence is player-facing instead of buried in debug panels
 
 This milestone makes save/return and away-time continuity readable during play.
+
+## Prototype v0 milestone: First Playable Session Receipt
+
+`first_playable_session` is now part of first playable prototype scope.
+
+Required evidence:
+
+- the normal rail exposes a Session action
+- the prototype action grid exposes Play session
+- the session runs Player mode, Look, Proposals, Practice, Worksite, Journal, Save, and Return as one sequence
+- each session step records a player-facing row and snapshot
+- proposal, practice, worksite, return journal, save, and return evidence are linked from the same receipt
+- every row records no direct resident command
+- hidden simulator law remains out of normal view
+- no step installs a tech-tree unlock or correct resident concept
+- the receipt survives save-slot restoration boundaries without losing its existing step ledger
+
+This milestone is the first coherent game-session receipt. It does not add a new simulation system; it proves the existing systems can be driven from the player-facing surface.

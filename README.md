@@ -2248,3 +2248,9 @@ The browser shell now includes a player-facing resident worksite loop. `Worksite
 ## Game prototype v0 update: Return Journal
 
 The browser shell now includes a player-facing return journal. `Journal` records before-save, after-away, and after-save-slot-return snapshots so Player mode can show what changed while the avatar was away and what a save-slot return restored. The journal keeps forward persistence separate from rollback restoration and preserves no-direct-reset and no-hidden-law-normal-view boundaries.
+
+## Game prototype v0 update: First Playable Session Receipt
+
+The browser shell now includes a `Session` normal rail action and `Play session` prototype action. This runs one coherent player-facing sequence across Player mode, Look, Proposals, Practice, Worksite, Journal, Save, and Return, then records a first playable session receipt.
+
+The receipt is intentionally a game-build bridge, not a new research report. It proves the ordinary player surface can drive the existing village systems as one sequence while preserving resident autonomy, no hidden-law normal view, no direct command, and no tech-tree unlock boundaries.

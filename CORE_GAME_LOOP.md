@@ -506,3 +506,18 @@ The first playable loop now has a player-facing return journal:
 7. Hidden law remains audit-only and the normal view preserves source history.
 
 This loop makes persistence understandable as gameplay, not just a storage receipt.
+
+## First playable session loop
+
+The shell now has one player-facing session loop:
+
+1. Enter Player mode.
+2. Look at the village through the normal play surface.
+3. Open resident proposals.
+4. Run the lived practice loop.
+5. Watch resident worksite consequences.
+6. Open the return journal.
+7. Save the prototype state.
+8. Return after away time.
+
+Each step records a session row and snapshot. The loop does not add world law; it sequences the existing systems into one playable proof that the player can move from observation to proposals, practice, work, continuity, save, and return without using debug-only subsystem panels.

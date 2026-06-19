@@ -48,10 +48,10 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, PROTOTYPE_SAVE_KEY, PROTOTYPE_ACCEPTANCE_KEY, WALKTHROUGH_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'gamePrototypePlayableSlice', 'gamePrototypeVillageDay03', 'gamePrototypeWorldStage', 'gamePrototypeWalkthrough', 'gamePrototypeActionRail', 'gamePrototypePlayerMode', 'gamePrototypeProposalDeck', 'gamePrototypeLivedPractice', 'gamePrototypeWorksite', 'gamePrototypeReturnJournal', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'gamePrototypeAcceptance', 'gamePrototypeDivergence', 'gamePrototypeCommons', 'gamePrototypeProjects', 'gamePrototypeCommonsSupport', 'gamePrototypeNearbyActions', 'gamePrototypeDayCycle', 'gamePrototypeReturnLater', 'gamePrototype3DWorld', 'gamePrototypeMaterialManipulation', 'gamePrototypeResidentBodies', 'gamePrototypeTerrain', 'gamePrototypeTools', 'gamePrototypeResourcePhysics', 'gamePrototypeThermalPhysics', 'gamePrototypeWaterPhysics', 'gamePrototypeEcologyPhysics', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'gamePrototypePlayableSlice', 'gamePrototypeVillageDay03', 'gamePrototypeWorldStage', 'gamePrototypeWalkthrough', 'gamePrototypeActionRail', 'gamePrototypePlayerMode', 'gamePrototypeProposalDeck', 'gamePrototypeLivedPractice', 'gamePrototypeWorksite', 'gamePrototypeReturnJournal', 'gamePrototypePlaySession', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'gamePrototypeAcceptance', 'gamePrototypeDivergence', 'gamePrototypeCommons', 'gamePrototypeProjects', 'gamePrototypeCommonsSupport', 'gamePrototypeNearbyActions', 'gamePrototypeDayCycle', 'gamePrototypeReturnLater', 'gamePrototype3DWorld', 'gamePrototypeMaterialManipulation', 'gamePrototypeResidentBodies', 'gamePrototypeTerrain', 'gamePrototypeTools', 'gamePrototypeResourcePhysics', 'gamePrototypeThermalPhysics', 'gamePrototypeWaterPhysics', 'gamePrototypeEcologyPhysics', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
-  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay', 'exportPrototypeAcceptanceReceipt', 'comparePrototypeDivergenceSeeds', 'auditPrototypeCommons', 'runPrototypeGuidedStep', 'runPlayablePhysicsPracticeSliceStep', 'runPlayablePhysicsPracticeSliceLoop', 'runPlayableVillageDay03Step', 'runPlayableVillageDay03Loop', 'runPrimaryPlaySurfaceStep', 'runPrimaryPlaySurfaceLoop', 'runFirstPlayableWalkthrough', 'exportFirstPlayableWalkthrough', 'runNormalPlayLook', 'runNormalPlayAsk', 'runNormalPlaySupport', 'runNormalPlayWait', 'runNormalPlayReturn', 'runNormalPlaySave', 'runNormalPlayActionRailLoop', 'enterPlayerMode', 'exitPlayerMode', 'togglePlayerMode', 'runPlayerModeInterfaceLoop', 'runPlayerProposalDeckLoop', 'supportPlayerProposalDeck', 'askPlayerProposalDeck', 'waitPlayerProposalDeck', 'runLivedPracticeLoop', 'runResidentWorksiteLoop', 'runReturnJournalLoop', 'advanceVillageProject', 'supportResourceCommons', 'performNearbyAction', 'endVillageDay', 'leaveAndReturnLater', 'runPrototypeMaterialWorldStep', 'runPrototypePhysicsStep', 'runStructuralPhysicsStep', 'runStructuralPhysicsLoop', 'runContactConstraintPhysicsStep', 'runContactConstraintPhysicsLoop', 'runMaterialStatePhysicsStep', 'runMaterialStatePhysicsLoop', 'runTerrainPhysicsStep', 'runTerrainPhysicsLoop', 'runToolPhysicsStep', 'runToolPhysicsLoop', 'runResourcePhysicsStep', 'runResourcePhysicsLoop', 'runThermalPhysicsStep', 'runThermalPhysicsLoop', 'runWaterPhysicsStep', 'runWaterPhysicsLoop', 'runEcologyPhysicsStep', 'runEcologyPhysicsLoop', 'runResidentMaterialManipulationStep', 'runResidentMaterialManipulationLoop', 'runResidentBodyPhysicsStep', 'runResidentBodyPhysicsLoop', 'runDeepTimePhysicsEpoch']
+  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay', 'exportPrototypeAcceptanceReceipt', 'comparePrototypeDivergenceSeeds', 'auditPrototypeCommons', 'runPrototypeGuidedStep', 'runPlayablePhysicsPracticeSliceStep', 'runPlayablePhysicsPracticeSliceLoop', 'runPlayableVillageDay03Step', 'runPlayableVillageDay03Loop', 'runPrimaryPlaySurfaceStep', 'runPrimaryPlaySurfaceLoop', 'runFirstPlayableWalkthrough', 'exportFirstPlayableWalkthrough', 'runNormalPlayLook', 'runNormalPlayAsk', 'runNormalPlaySupport', 'runNormalPlayWait', 'runNormalPlayReturn', 'runNormalPlaySave', 'runNormalPlayActionRailLoop', 'enterPlayerMode', 'exitPlayerMode', 'togglePlayerMode', 'runPlayerModeInterfaceLoop', 'runPlayerProposalDeckLoop', 'supportPlayerProposalDeck', 'askPlayerProposalDeck', 'waitPlayerProposalDeck', 'runLivedPracticeLoop', 'runResidentWorksiteLoop', 'runReturnJournalLoop', 'runFirstPlayableSessionLoop', 'advanceVillageProject', 'supportResourceCommons', 'performNearbyAction', 'endVillageDay', 'leaveAndReturnLater', 'runPrototypeMaterialWorldStep', 'runPrototypePhysicsStep', 'runStructuralPhysicsStep', 'runStructuralPhysicsLoop', 'runContactConstraintPhysicsStep', 'runContactConstraintPhysicsLoop', 'runMaterialStatePhysicsStep', 'runMaterialStatePhysicsLoop', 'runTerrainPhysicsStep', 'runTerrainPhysicsLoop', 'runToolPhysicsStep', 'runToolPhysicsLoop', 'runResourcePhysicsStep', 'runResourcePhysicsLoop', 'runThermalPhysicsStep', 'runThermalPhysicsLoop', 'runWaterPhysicsStep', 'runWaterPhysicsLoop', 'runEcologyPhysicsStep', 'runEcologyPhysicsLoop', 'runResidentMaterialManipulationStep', 'runResidentMaterialManipulationLoop', 'runResidentBodyPhysicsStep', 'runResidentBodyPhysicsLoop', 'runDeepTimePhysicsEpoch']
 };
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -97,6 +97,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   gamePrototypeLivedPractice: null,
   gamePrototypeWorksite: null,
   gamePrototypeReturnJournal: null,
+  gamePrototypePlaySession: null,
   deepTimeCivilization: null,
   autonomousResidents: null,
   gamePrototypeQA: null,
@@ -4262,8 +4263,9 @@ function runFirstPlayablePrototypeLoop() {
   runLivedPracticeLoop();
   runResidentWorksiteLoop();
   runReturnJournalLoop();
+  runFirstPlayableSessionLoop();
   runPrototypeReturnProof();
-  recordPrototypeMilestone('first-playable-loop-complete', 'opening, practice, proposal, tool physics, resource physics, thermal physics, water physics, ecology physics, structural stress, contact constraints, material state, playable physics-to-practice slice, Day 0-3 loop, primary play surface, first playable walkthrough, normal play action rail, player mode interface, resident proposal deck, lived practice loop, resident worksite, return journal, audit, save, return, and branch persistence executed from one game surface');
+  recordPrototypeMilestone('first-playable-loop-complete', 'opening, practice, proposal, tool physics, resource physics, thermal physics, water physics, ecology physics, structural stress, contact constraints, material state, playable physics-to-practice slice, Day 0-3 loop, primary play surface, first playable walkthrough, normal play action rail, player mode interface, resident proposal deck, lived practice loop, resident worksite, return journal, first playable session receipt, audit, save, return, and branch persistence executed from one game surface');
   return log('runFirstPlayablePrototypeLoop', {
     milestones: world.gamePrototype.milestones.length,
     practices: world.emergentPracticeGraph ? world.emergentPracticeGraph.nodes.length : 0,
@@ -4286,6 +4288,7 @@ function runFirstPlayablePrototypeLoop() {
     livedPracticeReady: world.gamePrototypeLivedPractice ? world.gamePrototypeLivedPractice.acceptanceReady === true : false,
     worksiteReady: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.acceptanceReady === true : false,
     returnJournalReady: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.acceptanceReady === true : false,
+    playSessionReady: world.gamePrototypePlaySession ? world.gamePrototypePlaySession.acceptanceReady === true : false,
     branchContinuity: world.hintBranchPersistence ? world.hintBranchPersistence.continuityRows.length : 0,
   });
 }
@@ -5656,7 +5659,7 @@ function playerModeVisibleSurfaceSnapshot() {
     active_proposal: proposal ? `${proposal.proposal_id}: ${proposal.problem_addressed}` : 'none',
     active_practice: practice ? `${practice.practice_id}: ${practice.local_name}` : 'none',
     active_component: latest.active_component_id || 'none',
-    visible_cards: ['world canvas', 'normal action rail', 'player guide', 'primary play surface', 'first playable walkthrough', 'normal play action rail', 'player mode interface', 'resident proposal deck', 'lived practice loop', 'resident worksite', 'return journal', 'public outcomes'],
+    visible_cards: ['world canvas', 'normal action rail', 'player guide', 'primary play surface', 'first playable walkthrough', 'normal play action rail', 'player mode interface', 'resident proposal deck', 'lived practice loop', 'resident worksite', 'return journal', 'first playable session receipt', 'public outcomes'],
     hidden_by_default: ['trace JSON', 'QA manifest', 'deep debug panels', 'prototype subsystem action grid', 'hidden simulator law detail'],
     audit_access: 'available after leaving player mode or through explicit audit/deep-panel controls',
     shows_public_state: true,
@@ -6432,6 +6435,22 @@ function pushReturnJournalSnapshot(label) {
   return snapshot;
 }
 
+function cloneReturnJournal(journal) {
+  return {
+    ...journal,
+    journalLedger: journal.journalLedger.slice(),
+    snapshotLedger: journal.snapshotLedger.slice(),
+    receipt: journal.receipt ? { ...journal.receipt } : null,
+  };
+}
+
+function restoreReturnJournalAfterWorldSwap(preserved) {
+  if (!world.gamePrototypeReturnJournal || world.gamePrototypeReturnJournal.journalLedger.length < preserved.journalLedger.length || world.gamePrototypeReturnJournal.snapshotLedger.length < preserved.snapshotLedger.length || world.gamePrototypeReturnJournal.runCount < preserved.runCount) {
+    world.gamePrototypeReturnJournal = preserved;
+  }
+  return ensureReturnJournal();
+}
+
 function runReturnJournalLoop() {
   const journal = ensureReturnJournal();
   journal.runCount += 1;
@@ -6442,10 +6461,12 @@ function runReturnJournalLoop() {
   const slotId = slotResult && slotResult.payload ? slotResult.payload.slotId : before.active_slot;
   const awayResult = leaveAndReturnLater(2);
   const afterAway = pushReturnJournalSnapshot('after-forward-return');
+  const preservedJournal = cloneReturnJournal(journal);
   const restoreResult = returnPrototypeSlot();
+  const activeJournal = restoreReturnJournalAfterWorldSwap(preservedJournal);
   const afterRestore = pushReturnJournalSnapshot('after-save-slot-return');
   const row = {
-    journal_id: `RTJ-${String(journal.journalLedger.length + 1).padStart(2, '0')}`,
+    journal_id: `RTJ-${String(activeJournal.journalLedger.length + 1).padStart(2, '0')}`,
     tick: world.tick,
     slot_id: slotId || 'none',
     forward_return_id: afterAway.latest_forward_return,
@@ -6466,8 +6487,8 @@ function runReturnJournalLoop() {
     direct_reset: false,
     hidden_law_normal_view: false,
   };
-  journal.journalLedger.push(row);
-  if (journal.journalLedger.length > 20) journal.journalLedger.shift();
+  activeJournal.journalLedger.push(row);
+  if (activeJournal.journalLedger.length > 20) activeJournal.journalLedger.shift();
   recordRealityConstraint('return_journal', {
     resident: world.selected,
     sourceBeliefId: row.journal_id,
@@ -6484,13 +6505,14 @@ function runReturnJournalLoop() {
     conservationCheck: true
   });
   updateReturnJournalAcceptance();
+  const updatedJournal = ensureReturnJournal();
   recordPrototypeMilestone('return-journal', {
-    ready: journal.acceptanceReady,
-    rows: journal.journalLedger.length,
+    ready: updatedJournal.acceptanceReady,
+    rows: updatedJournal.journalLedger.length,
     slot: row.slot_id,
     forward: row.forward_return_id,
   });
-  return log('runReturnJournalLoop', { ready: journal.acceptanceReady, rows: journal.journalLedger.length, forwardReturn: row.forward_return_id, slotId: row.slot_id, saveReturns: afterRestore.save_returns });
+  return log('runReturnJournalLoop', { ready: updatedJournal.acceptanceReady, rows: updatedJournal.journalLedger.length, forwardReturn: row.forward_return_id, slotId: row.slot_id, saveReturns: afterRestore.save_returns });
 }
 
 function formatReturnJournal() {
@@ -6508,6 +6530,178 @@ function formatReturnJournal() {
     `No direct reset in normal view: ${journal.noDirectReset ? 'yes' : 'no'}`,
     'Recent return journal rows:',
     ...(rows.length ? rows : ['No return journal rows yet.'])
+  ].join('\n');
+}
+
+function ensureFirstPlayableSession() {
+  ensureGamePrototype();
+  if (!world.gamePrototypePlaySession) {
+    world.gamePrototypePlaySession = {
+      milestone: 'first-playable-session',
+      runCount: 0,
+      stepLedger: [],
+      snapshotLedger: [],
+      receipt: null,
+      acceptanceReady: false,
+      requiredSteps: ['enter_player_mode', 'look', 'proposal_deck', 'practice_loop', 'resident_worksite', 'return_journal', 'save', 'return'],
+      playerFacing: true,
+      noDirectCommand: true,
+      noHiddenLawNormalView: true,
+      noTechTreeUnlock: true,
+      boundary: 'single player-facing session receipt; sequences normal play surfaces without adding world law',
+    };
+  }
+  return world.gamePrototypePlaySession;
+}
+
+function cloneFirstPlayableSession(session) {
+  return {
+    ...session,
+    stepLedger: session.stepLedger.slice(),
+    snapshotLedger: session.snapshotLedger.slice(),
+    receipt: session.receipt ? { ...session.receipt } : null,
+  };
+}
+
+function restoreFirstPlayableSessionAfterWorldSwap(preserved) {
+  if (!world.gamePrototypePlaySession || world.gamePrototypePlaySession.stepLedger.length < preserved.stepLedger.length || world.gamePrototypePlaySession.snapshotLedger.length < preserved.snapshotLedger.length || world.gamePrototypePlaySession.runCount < preserved.runCount) {
+    world.gamePrototypePlaySession = preserved;
+  }
+  return ensureFirstPlayableSession();
+}
+
+function firstPlayableSessionSnapshot(label) {
+  const guide = derivePrototypePlayerGuide();
+  const proposal = world.villageBoard && world.villageBoard.projectProposals.length ? world.villageBoard.projectProposals[world.villageBoard.projectProposals.length - 1] : null;
+  const practice = world.emergentPracticeGraph && world.emergentPracticeGraph.nodes.length ? world.emergentPracticeGraph.nodes[world.emergentPracticeGraph.nodes.length - 1] : null;
+  const saves = world.gamePrototypeSaves || null;
+  const returnLater = world.gamePrototypeReturnLater || null;
+  return {
+    label,
+    tick: world.tick,
+    entered: world.entered === true,
+    room: world.avatar.room,
+    selected_resident: world.selected,
+    guide_phase: guide.phase,
+    guide_action: guide.nextAction,
+    player_mode_enabled: world.gamePrototypePlayerMode ? world.gamePrototypePlayerMode.enabled === true : false,
+    action_rail_ready: world.gamePrototypeActionRail ? world.gamePrototypeActionRail.acceptanceReady === true : false,
+    proposal_deck_ready: world.gamePrototypeProposalDeck ? world.gamePrototypeProposalDeck.acceptanceReady === true : false,
+    lived_practice_ready: world.gamePrototypeLivedPractice ? world.gamePrototypeLivedPractice.acceptanceReady === true : false,
+    worksite_ready: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.acceptanceReady === true : false,
+    return_journal_ready: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.acceptanceReady === true : false,
+    save_slots: saves ? saves.slots.length : 0,
+    save_returns: saves ? saves.returnLog.length : 0,
+    forward_returns: returnLater ? returnLater.returnLedger.length : 0,
+    latest_practice: practice ? `${practice.practice_id}: ${practice.local_name}` : 'none',
+    latest_proposal: proposal ? `${proposal.proposal_id}: ${proposal.problem_addressed}` : 'none',
+    worksite_rows: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.watchLedger.length : 0,
+    return_journal_rows: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.journalLedger.length : 0,
+    replay_rows: world.replay.length,
+    player_facing: true,
+    avatar_direct_command: false,
+    hidden_law_normal_view: false,
+    tech_tree_unlock: false,
+  };
+}
+
+function updateFirstPlayableSessionAcceptance() {
+  const session = ensureFirstPlayableSession();
+  const completed = new Set(session.stepLedger.map(row => row.step_id));
+  session.acceptanceReady = Boolean(
+    session.requiredSteps.every(step => completed.has(step)) &&
+    session.stepLedger.length >= session.requiredSteps.length &&
+    session.stepLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false) &&
+    world.gamePrototypePlayerMode && world.gamePrototypePlayerMode.acceptanceReady === true &&
+    world.gamePrototypeProposalDeck && world.gamePrototypeProposalDeck.acceptanceReady === true &&
+    world.gamePrototypeLivedPractice && world.gamePrototypeLivedPractice.acceptanceReady === true &&
+    world.gamePrototypeWorksite && world.gamePrototypeWorksite.acceptanceReady === true &&
+    world.gamePrototypeReturnJournal && world.gamePrototypeReturnJournal.acceptanceReady === true &&
+    world.gamePrototypeSaves && world.gamePrototypeSaves.slots.length > 0 &&
+    session.noDirectCommand === true &&
+    session.noHiddenLawNormalView === true &&
+    session.noTechTreeUnlock === true
+  );
+  session.receipt = {
+    receipt_id: `FPS-${String(session.runCount).padStart(2, '0')}`,
+    acceptance_ready: session.acceptanceReady,
+    step_rows: session.stepLedger.length,
+    snapshots: session.snapshotLedger.length,
+    required_steps: session.requiredSteps.length,
+    completed_steps: Array.from(completed),
+    boundary: session.boundary,
+  };
+  return session.acceptanceReady;
+}
+
+function recordFirstPlayableSessionStep(stepId, actionLabel, actionFn) {
+  const preserved = cloneFirstPlayableSession(ensureFirstPlayableSession());
+  const before = firstPlayableSessionSnapshot(`before-${stepId}`);
+  const result = actionFn();
+  const session = restoreFirstPlayableSessionAfterWorldSwap(preserved);
+  const after = firstPlayableSessionSnapshot(`after-${stepId}`);
+  const row = {
+    step_id: stepId,
+    action_label: actionLabel,
+    result_event: result && result.event ? result.event : stepId,
+    tick: world.tick,
+    before,
+    after,
+    player_facing: true,
+    avatar_direct_command: false,
+    hidden_law_normal_view: false,
+    tech_tree_unlock: false,
+  };
+  session.stepLedger.push(row);
+  if (session.stepLedger.length > 40) session.stepLedger.shift();
+  session.snapshotLedger.push({
+    snapshot_id: `FPS-S-${String(session.snapshotLedger.length + 1).padStart(2, '0')}`,
+    tick: world.tick,
+    snapshot: after,
+  });
+  if (session.snapshotLedger.length > 40) session.snapshotLedger.shift();
+  updateFirstPlayableSessionAcceptance();
+  return row;
+}
+
+function runFirstPlayableSessionLoop() {
+  const session = ensureFirstPlayableSession();
+  session.runCount += 1;
+  recordFirstPlayableSessionStep('enter_player_mode', 'Enter player mode', () => {
+    if (!world.entered) runPrototypeOpening();
+    return runPlayerModeInterfaceLoop();
+  });
+  recordFirstPlayableSessionStep('look', 'Look', runNormalPlayLook);
+  recordFirstPlayableSessionStep('proposal_deck', 'Proposals', runPlayerProposalDeckLoop);
+  recordFirstPlayableSessionStep('practice_loop', 'Practice', runLivedPracticeLoop);
+  recordFirstPlayableSessionStep('resident_worksite', 'Worksite', runResidentWorksiteLoop);
+  recordFirstPlayableSessionStep('return_journal', 'Journal', runReturnJournalLoop);
+  recordFirstPlayableSessionStep('save', 'Save', runNormalPlaySave);
+  recordFirstPlayableSessionStep('return', 'Return', runNormalPlayReturn);
+  const updatedSession = ensureFirstPlayableSession();
+  updateFirstPlayableSessionAcceptance();
+  recordPrototypeMilestone('first-playable-session', {
+    ready: updatedSession.acceptanceReady,
+    steps: updatedSession.stepLedger.length,
+    snapshots: updatedSession.snapshotLedger.length,
+  });
+  return log('runFirstPlayableSessionLoop', { ready: updatedSession.acceptanceReady, steps: updatedSession.stepLedger.length, snapshots: updatedSession.snapshotLedger.length });
+}
+
+function formatFirstPlayableSession() {
+  const session = world.gamePrototypePlaySession || ensureFirstPlayableSession();
+  const latest = session.snapshotLedger.length ? session.snapshotLedger[session.snapshotLedger.length - 1].snapshot : firstPlayableSessionSnapshot('current');
+  const steps = session.stepLedger.slice(-8).map(row => `${row.step_id}: ${row.action_label}; event=${row.result_event}; room=${row.after.room}; proposal=${row.after.latest_proposal}; practice=${row.after.latest_practice}`);
+  return [
+    `Acceptance ready: ${session.acceptanceReady ? 'yes' : 'no'}`,
+    `Runs: ${session.runCount} / steps=${session.stepLedger.length}/${session.requiredSteps.length} / snapshots=${session.snapshotLedger.length}`,
+    `Boundary: ${session.boundary}`,
+    `Latest room: ${latest.room}; guide=${latest.guide_phase}->${latest.guide_action}`,
+    `Ready: proposal=${latest.proposal_deck_ready}; practice=${latest.lived_practice_ready}; worksite=${latest.worksite_ready}; journal=${latest.return_journal_ready}`,
+    `Save/return: slots=${latest.save_slots}; saveReturns=${latest.save_returns}; forwardReturns=${latest.forward_returns}`,
+    `No direct command: ${session.noDirectCommand ? 'yes' : 'no'} / no hidden law normal view: ${session.noHiddenLawNormalView ? 'yes' : 'no'} / no tech tree: ${session.noTechTreeUnlock ? 'yes' : 'no'}`,
+    'Recent session steps:',
+    ...(steps.length ? steps : ['No first playable session rows yet.'])
   ].join('\n');
 }
 
@@ -10054,6 +10248,9 @@ function derivePrototypePlayerGuide() {
   if (!world.gamePrototypeReturnJournal || !world.gamePrototypeReturnJournal.acceptanceReady) {
     return { ...guide, phase: 'return journal', nextAction: 'Return journal', why: 'show what changed while away and what a save-slot return restored from source history', button: 'runReturnJournalLoop' };
   }
+  if (!world.gamePrototypePlaySession || !world.gamePrototypePlaySession.acceptanceReady) {
+    return { ...guide, phase: 'first playable session', nextAction: 'Play session', why: 'prove the normal player-facing sequence from entry through proposal, practice, worksite, journal, save, and return as one receipt', button: 'runFirstPlayableSessionLoop' };
+  }
   if (!world.gamePrototypeMaterialManipulation || !world.gamePrototypeMaterialManipulation.actionLedger.length) {
     return { ...guide, phase: 'material handling', nextAction: 'Resident handling', why: 'let residents physically move, tie, dry, wet-test, stack, or test components through material constraints', button: 'runResidentMaterialManipulationStep' };
   }
@@ -10121,6 +10318,7 @@ function formatPrototypePlayerGuide() {
   const livedPractice = world.gamePrototypeLivedPractice || null;
   const worksite = world.gamePrototypeWorksite || null;
   const returnJournal = world.gamePrototypeReturnJournal || null;
+  const playSession = world.gamePrototypePlaySession || null;
   const projects = world.gamePrototypeProjects || null;
   const commonsSupport = world.gamePrototypeCommonsSupport || null;
   const nearby = world.gamePrototypeNearbyActions || null;
@@ -10144,6 +10342,7 @@ function formatPrototypePlayerGuide() {
     `Lived practice: ${livedPractice ? `ready=${livedPractice.acceptanceReady}; actions=${livedPractice.actionLedger.length}; snapshots=${livedPractice.practiceSnapshots.length}` : 'not started'}`,
     `Resident worksite: ${worksite ? `ready=${worksite.acceptanceReady}; watches=${worksite.watchLedger.length}; snapshots=${worksite.snapshotLedger.length}` : 'not started'}`,
     `Return journal: ${returnJournal ? `ready=${returnJournal.acceptanceReady}; rows=${returnJournal.journalLedger.length}; snapshots=${returnJournal.snapshotLedger.length}` : 'not started'}`,
+    `Play session: ${playSession ? `ready=${playSession.acceptanceReady}; steps=${playSession.stepLedger.length}/${playSession.requiredSteps.length}; snapshots=${playSession.snapshotLedger.length}` : 'not started'}`,
     `Projects: ${projects ? `${projects.projectLedger.length} work row(s), completed=${projects.completionLedger.length}, stalled=${projects.stalledLedger.length}` : 'not advanced'}`,
     `Commons support: ${commonsSupport ? `${commonsSupport.supportLedger.length} support row(s), recoveries=${commonsSupport.recoveryLedger.length}` : 'not supported'}`,
     `Nearby actions: ${nearby ? `${nearby.actionLedger.length} action(s), current=${nearbyActionPlan().label}->${nearbyActionPlan().action}` : `${nearbyActionPlan().label}->${nearbyActionPlan().action}`}`,
@@ -10295,6 +10494,7 @@ function runPrototypeQASmoke() {
   runLivedPracticeLoop();
   runResidentWorksiteLoop();
   runReturnJournalLoop();
+  runFirstPlayableSessionLoop();
   runResidentMaterialManipulationLoop();
 	  advanceVillageProject();
   advanceVillageProject();
@@ -10436,6 +10636,9 @@ function runPrototypeQASmoke() {
     returnJournalReady: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.acceptanceReady === true : false,
     returnJournalRows: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.journalLedger.length : 0,
     returnJournalSnapshots: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.snapshotLedger.length : 0,
+    playSessionReady: world.gamePrototypePlaySession ? world.gamePrototypePlaySession.acceptanceReady === true : false,
+    playSessionSteps: world.gamePrototypePlaySession ? world.gamePrototypePlaySession.stepLedger.length : 0,
+    playSessionSnapshots: world.gamePrototypePlaySession ? world.gamePrototypePlaySession.snapshotLedger.length : 0,
 	  };
   runAutonomousResidentTick();
   restoreWorld();
@@ -10469,6 +10672,7 @@ function runPrototypeQASmoke() {
     { id: 'lived-practice-loop', pass: Boolean(world.gamePrototypeLivedPractice && savedCounts.livedPracticeReady && savedCounts.livedPracticeRows >= 4 && savedCounts.livedPracticeSnapshots > 0 && world.gamePrototypeLivedPractice.noDirectCommand === true && world.gamePrototypeLivedPractice.noHiddenLawNormalView === true && world.gamePrototypeLivedPractice.noPredeclaredTechTree === true), evidence: `${savedCounts.livedPracticeRows} lived action row(s), ${savedCounts.livedPracticeSnapshots} practice snapshot(s)` },
     { id: 'resident-worksite', pass: Boolean(world.gamePrototypeWorksite && savedCounts.worksiteReady && savedCounts.worksiteRows >= 2 && savedCounts.worksiteSnapshots > 0 && world.gamePrototypeWorksite.avatarCannotAssignJobs === true && world.gamePrototypeWorksite.noDirectCommand === true && world.gamePrototypeWorksite.noHiddenLawNormalView === true && world.gamePrototypeWorksite.noResourceSpawning === true), evidence: `${savedCounts.worksiteRows} worksite watch row(s), ${savedCounts.worksiteSnapshots} snapshot(s)` },
     { id: 'return-journal', pass: Boolean(world.gamePrototypeReturnJournal && savedCounts.returnJournalReady && savedCounts.returnJournalRows > 0 && savedCounts.returnJournalSnapshots >= 3 && world.gamePrototypeReturnJournal.forwardReturnVisible === true && world.gamePrototypeReturnJournal.saveRestoreVisible === true && world.gamePrototypeReturnJournal.noDirectReset === true && world.gamePrototypeReturnJournal.noHiddenLawNormalView === true), evidence: `${savedCounts.returnJournalRows} journal row(s), ${savedCounts.returnJournalSnapshots} snapshot(s)` },
+    { id: 'first-playable-session', pass: Boolean(world.gamePrototypePlaySession && savedCounts.playSessionReady && savedCounts.playSessionSteps >= world.gamePrototypePlaySession.requiredSteps.length && savedCounts.playSessionSnapshots >= world.gamePrototypePlaySession.requiredSteps.length && world.gamePrototypePlaySession.stepLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false)), evidence: `${savedCounts.playSessionSteps} session step(s), ${savedCounts.playSessionSnapshots} snapshot(s)` },
     { id: 'terrain-physics-substrate', pass: Boolean(world.gamePrototypeTerrain && savedCounts.terrainRows > 0 && savedCounts.terrainFlowRows > 0 && savedCounts.terrainSupportRows > 0 && world.gamePrototypeTerrain.terrainLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.terrainRows} terrain step(s), ${savedCounts.terrainFlowRows} flow row(s), ${savedCounts.terrainSupportRows} support row(s)` },
     { id: 'tool-work-physics', pass: Boolean(world.gamePrototypeTools && savedCounts.toolUseRows > 0 && savedCounts.toolWearRows > 0 && world.gamePrototypeTools.useLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.toolUseRows} use row(s), ${savedCounts.toolWearRows} wear row(s), ${savedCounts.toolFailureRows} failure row(s), ${savedCounts.toolRepairRows} repair row(s)` },
     { id: 'resource-stock-physics', pass: Boolean(world.gamePrototypeResourcePhysics && savedCounts.resourceStockRows > 0 && savedCounts.resourceTransformRows >= savedCounts.resourceStockRows && world.gamePrototypeResourcePhysics.stockLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.resourceStockRows} stock step(s), ${savedCounts.resourceTransformRows} transform row(s), ${savedCounts.resourceLossRows} loss row(s), ${savedCounts.resourceGainRows} gain row(s)` },
@@ -10934,6 +11138,7 @@ function buildPrototypeAcceptanceReceipt() {
   const livedPractice = world.gamePrototypeLivedPractice || null;
   const worksite = world.gamePrototypeWorksite || null;
   const returnJournal = world.gamePrototypeReturnJournal || null;
+  const playSession = world.gamePrototypePlaySession || null;
 		  const materialWorld = world.gamePrototype3DWorld || null;
   const terrain = world.gamePrototypeTerrain || null;
   const tools = world.gamePrototypeTools || null;
@@ -10991,6 +11196,8 @@ function buildPrototypeAcceptanceReceipt() {
   const worksiteSnapshots = worksite ? worksite.snapshotLedger.length : 0;
   const returnJournalRows = returnJournal ? returnJournal.journalLedger.length : 0;
   const returnJournalSnapshots = returnJournal ? returnJournal.snapshotLedger.length : 0;
+  const playSessionSteps = playSession ? playSession.stepLedger.length : 0;
+  const playSessionSnapshots = playSession ? playSession.snapshotLedger.length : 0;
   const terrainRows = terrain && terrain.terrainLedger ? terrain.terrainLedger.length : 0;
   const terrainFlowRows = terrain && terrain.flowLedger ? terrain.flowLedger.length : 0;
   const terrainSupportRows = terrain && terrain.supportLedger ? terrain.supportLedger.length : 0;
@@ -11060,6 +11267,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'lived_practice_loop', pass: Boolean(livedPractice && livedPractice.acceptanceReady && livedPracticeRows >= 4 && livedPracticeSnapshots > 0 && livedPractice.noDirectCommand === true && livedPractice.noHiddenLawNormalView === true && livedPractice.noPredeclaredTechTree === true && livedPractice.noCorrectConceptInstalled === true), evidence: livedPractice ? `actions=${livedPracticeRows}, snapshots=${livedPracticeSnapshots}` : 'not run' },
     { id: 'resident_worksite', pass: Boolean(worksite && worksite.acceptanceReady && worksiteRows >= 2 && worksiteSnapshots > 0 && worksite.avatarCannotAssignJobs === true && worksite.noDirectCommand === true && worksite.noHiddenLawNormalView === true && worksite.noResourceSpawning === true), evidence: worksite ? `watchRows=${worksiteRows}, snapshots=${worksiteSnapshots}` : 'not run' },
     { id: 'return_journal', pass: Boolean(returnJournal && returnJournal.acceptanceReady && returnJournalRows > 0 && returnJournalSnapshots >= 3 && returnJournal.forwardReturnVisible === true && returnJournal.saveRestoreVisible === true && returnJournal.noDirectReset === true && returnJournal.noHiddenLawNormalView === true), evidence: returnJournal ? `rows=${returnJournalRows}, snapshots=${returnJournalSnapshots}` : 'not run' },
+    { id: 'first_playable_session', pass: Boolean(playSession && playSession.acceptanceReady && playSessionSteps >= playSession.requiredSteps.length && playSessionSnapshots >= playSession.requiredSteps.length && playSession.stepLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false) && playSession.noDirectCommand === true && playSession.noHiddenLawNormalView === true && playSession.noTechTreeUnlock === true), evidence: playSession ? `steps=${playSessionSteps}/${playSession.requiredSteps.length}, snapshots=${playSessionSnapshots}` : 'not run' },
     { id: 'terrain_physics_substrate', pass: Boolean(terrain && terrainRows > 0 && terrainFlowRows > 0 && terrainSupportRows > 0 && terrain.terrainLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${terrainRows} terrain step(s), ${terrainFlowRows} flow row(s), ${terrainSupportRows} support row(s)` },
 	    { id: 'tool_work_physics', pass: Boolean(tools && toolUseRows > 0 && toolWearRows > 0 && tools.useLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${toolUseRows} use row(s), ${toolWearRows} wear row(s), ${toolFailureRows} failure row(s), ${toolRepairRows} repair row(s)` },
 	    { id: 'resource_stock_physics', pass: Boolean(resourcePhysics && resourceStockRows > 0 && resourceTransformRows >= resourceStockRows && resourcePhysics.stockLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${resourceStockRows} stock step(s), ${resourceTransformRows} transform row(s), ${resourceLossRows} loss row(s), ${resourceGainRows} gain row(s)` },
@@ -11201,6 +11409,7 @@ function renderGamePrototypeSurface() {
   const livedPracticeNode = document.getElementById('gamePrototypeLivedPracticeOut');
   const worksiteNode = document.getElementById('gamePrototypeWorksiteOut');
   const returnJournalNode = document.getElementById('gamePrototypeReturnJournalOut');
+  const playSessionNode = document.getElementById('gamePrototypePlaySessionOut');
   const loopNode = document.getElementById('gamePrototypeLoopOut');
   const deepTimeNode = document.getElementById('gamePrototypeDeepTimeOut');
   const residentBodiesNode = document.getElementById('gamePrototypeResidentBodiesOut');
@@ -11243,6 +11452,7 @@ function renderGamePrototypeSurface() {
   if (livedPracticeNode) livedPracticeNode.textContent = formatLivedPracticeLoop();
   if (worksiteNode) worksiteNode.textContent = formatResidentWorksite();
   if (returnJournalNode) returnJournalNode.textContent = formatReturnJournal();
+  if (playSessionNode) playSessionNode.textContent = formatFirstPlayableSession();
   if (loopNode) loopNode.textContent = formatPrototypeLoopReceipt();
   if (deepTimeNode) deepTimeNode.textContent = formatPrototypeDeepTime();
   if (residentBodiesNode) residentBodiesNode.textContent = formatPrototypeResidentBodies();
@@ -11966,6 +12176,7 @@ function describeReplayRow(row) {
     runLivedPracticeLoop: `lived practice ready=${payload.ready === true} practice=${payload.practice} status=${payload.status}`,
     runResidentWorksiteLoop: `resident worksite ready=${payload.ready === true} rows=${payload.watchRows} construction=${payload.construction}`,
     runReturnJournalLoop: `return journal ready=${payload.ready === true} rows=${payload.rows} forward=${payload.forwardReturn} slot=${payload.slotId}`,
+    runFirstPlayableSessionLoop: `first playable session ready=${payload.ready === true} steps=${payload.steps} snapshots=${payload.snapshots}`,
     runRealityConstraintAudit: `reality constraint audit pass=${payload.pass === true} rows=${payload.rows}`
   };
   return `${prefix}: ${descriptions[row.event] || row.event}`;
@@ -14059,6 +14270,6 @@ function renderHintBranchPersistence() {
   ].join('\n');
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, advanceVillageProject, supportResourceCommons, performNearbyAction, endVillageDay, leaveAndReturnLater, runPrototypeMaterialWorldStep, runPrototypePhysicsStep, runStructuralPhysicsStep, runStructuralPhysicsLoop, runContactConstraintPhysicsStep, runContactConstraintPhysicsLoop, runMaterialStatePhysicsStep, runMaterialStatePhysicsLoop, runPlayablePhysicsPracticeSliceStep, runPlayablePhysicsPracticeSliceLoop, runPlayableVillageDay03Step, runPlayableVillageDay03Loop, runPrimaryPlaySurfaceStep, runPrimaryPlaySurfaceLoop, runFirstPlayableWalkthrough, exportFirstPlayableWalkthrough, runNormalPlayLook, runNormalPlayAsk, runNormalPlaySupport, runNormalPlayWait, runNormalPlayReturn, runNormalPlaySave, runNormalPlayActionRailLoop, enterPlayerMode, exitPlayerMode, togglePlayerMode, runPlayerModeInterfaceLoop, runPlayerProposalDeckLoop, supportPlayerProposalDeck, askPlayerProposalDeck, waitPlayerProposalDeck, runLivedPracticeLoop, runResidentWorksiteLoop, runReturnJournalLoop, runTerrainPhysicsStep, runTerrainPhysicsLoop, runToolPhysicsStep, runToolPhysicsLoop, runResourcePhysicsStep, runResourcePhysicsLoop, runThermalPhysicsStep, runThermalPhysicsLoop, runWaterPhysicsStep, runWaterPhysicsLoop, runEcologyPhysicsStep, runEcologyPhysicsLoop, runResidentMaterialManipulationStep, runResidentMaterialManipulationLoop, runResidentBodyPhysicsStep, runResidentBodyPhysicsLoop, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypeGuidedStep, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, comparePrototypeDivergenceSeeds, auditPrototypeCommons, runCivilizationDeepTimeEpoch, runDeepTimePhysicsEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, savePrototypeSlot, returnPrototypeSlot, exportPrototypeSaveReceipt, exportPrototypeAcceptanceReceipt, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, advanceVillageProject, supportResourceCommons, performNearbyAction, endVillageDay, leaveAndReturnLater, runPrototypeMaterialWorldStep, runPrototypePhysicsStep, runStructuralPhysicsStep, runStructuralPhysicsLoop, runContactConstraintPhysicsStep, runContactConstraintPhysicsLoop, runMaterialStatePhysicsStep, runMaterialStatePhysicsLoop, runPlayablePhysicsPracticeSliceStep, runPlayablePhysicsPracticeSliceLoop, runPlayableVillageDay03Step, runPlayableVillageDay03Loop, runPrimaryPlaySurfaceStep, runPrimaryPlaySurfaceLoop, runFirstPlayableWalkthrough, exportFirstPlayableWalkthrough, runNormalPlayLook, runNormalPlayAsk, runNormalPlaySupport, runNormalPlayWait, runNormalPlayReturn, runNormalPlaySave, runNormalPlayActionRailLoop, enterPlayerMode, exitPlayerMode, togglePlayerMode, runPlayerModeInterfaceLoop, runPlayerProposalDeckLoop, supportPlayerProposalDeck, askPlayerProposalDeck, waitPlayerProposalDeck, runLivedPracticeLoop, runResidentWorksiteLoop, runReturnJournalLoop, runFirstPlayableSessionLoop, runTerrainPhysicsStep, runTerrainPhysicsLoop, runToolPhysicsStep, runToolPhysicsLoop, runResourcePhysicsStep, runResourcePhysicsLoop, runThermalPhysicsStep, runThermalPhysicsLoop, runWaterPhysicsStep, runWaterPhysicsLoop, runEcologyPhysicsStep, runEcologyPhysicsLoop, runResidentMaterialManipulationStep, runResidentMaterialManipulationLoop, runResidentBodyPhysicsStep, runResidentBodyPhysicsLoop, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypeGuidedStep, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, comparePrototypeDivergenceSeeds, auditPrototypeCommons, runCivilizationDeepTimeEpoch, runDeepTimePhysicsEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, savePrototypeSlot, returnPrototypeSlot, exportPrototypeSaveReceipt, exportPrototypeAcceptanceReceipt, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

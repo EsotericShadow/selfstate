@@ -408,3 +408,11 @@ The browser shell now includes a `Journal` normal rail action, `Return journal` 
 Each run records a before-save snapshot, an after-away snapshot, and an after-save-slot-return snapshot. The card shows days away, remembered residents, resource totals before/after/restore, active save slot, restored year/day, forward return id, and source-history boundary flags. Acceptance evidence is recorded as `return_journal`.
 
 This closes a major player-facing continuity gap: the prototype can now show what happened while the avatar was gone and what a saved return restored without conflating away-time persistence with rollback.
+
+## Game prototype v0 update: First Playable Session Receipt
+
+The browser shell now includes a `Session` normal rail action, `Play session` prototype action, and `Play session receipt` player-mode card. The session receipt sequences the already-built player surfaces as one coherent playable pass: Player mode, Look, resident proposals, lived practice, resident worksite, return journal, Save, and Return.
+
+The acceptance gate is `first_playable_session`. It records step rows and snapshots while preserving no direct command, no hidden-law exposure in normal view, and no tech-tree unlock. This is the first receipt for the player-facing session itself rather than another subsystem panel.
+
+This should be treated as the handoff point for the next game-build increment: improve the actual feel of playing this sequence before adding new conceptual systems.

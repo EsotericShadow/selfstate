@@ -265,3 +265,12 @@
 - Confirm forward return sessions are distinct from save-slot restoration.
 - Confirm remembered residents, days away, save slot, restored year/day, and resource totals are visible.
 - Export acceptance and confirm `return_journal` appears as a requirement after the journal loop runs.
+
+## First playable session playtests
+
+- Run `Session` from the normal rail and confirm the `Play session receipt` card appears in Player mode.
+- Confirm the receipt records Player mode, Look, Proposals, Practice, Worksite, Journal, Save, and Return steps.
+- Confirm the receipt links proposal, practice, worksite, return journal, save, and return evidence from one player-facing sequence.
+- Confirm rows record no direct resident command, no hidden-law exposure in normal view, and no tech-tree unlock.
+- Confirm the session still has its earlier step rows after the Journal step performs save-slot restoration.
+- Export acceptance and confirm `first_playable_session` appears as a requirement after the session loop runs.

@@ -141,3 +141,8 @@ The prototype now includes a diegetic resident project progress loop. Accepted V
 ## Prototype v0 resource commons support update
 
 The prototype now includes a `Support commons` loop for recovering low resources or stalled projects without a god-game resource grant. Commons support picks a shortage or low reserve, ties it to a named source such as well carry, reed bundles, fallen branch salvage, or shared care work, spends resident time/labor, updates memory, and writes a Reality Constraint Ledger row. If a source is capped or a resident is too tired, the action records a blocked support row instead of spawning resources.
+
+
+## Prototype v0 location-sensitive play update
+
+The prototype now includes a `Nearby action` control tied to the avatar's current place. Moving or clicking in the canvas changes the available local action: shelter routes to bounded help, storage routes to commons support, the work yard routes to practical discovery or project work, the Village Board routes to resident proposals, and ordinary village space routes to schedule inquiry. Each nearby action records zone, room, selected resident, result event, and no direct command, then writes causal trace evidence.

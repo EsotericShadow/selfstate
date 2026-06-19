@@ -47,10 +47,10 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, PROTOTYPE_SAVE_KEY, PROTOTYPE_ACCEPTANCE_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'gamePrototypeAcceptance', 'gamePrototypeDivergence', 'gamePrototypeCommons', 'gamePrototypeProjects', 'gamePrototypeCommonsSupport', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'gamePrototypeAcceptance', 'gamePrototypeDivergence', 'gamePrototypeCommons', 'gamePrototypeProjects', 'gamePrototypeCommonsSupport', 'gamePrototypeNearbyActions', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
-  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay', 'exportPrototypeAcceptanceReceipt', 'comparePrototypeDivergenceSeeds', 'auditPrototypeCommons', 'runPrototypeGuidedStep', 'advanceVillageProject', 'supportResourceCommons']
+  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay', 'exportPrototypeAcceptanceReceipt', 'comparePrototypeDivergenceSeeds', 'auditPrototypeCommons', 'runPrototypeGuidedStep', 'advanceVillageProject', 'supportResourceCommons', 'performNearbyAction']
 };
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -96,6 +96,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   gamePrototypeCommons: null,
   gamePrototypeProjects: null,
   gamePrototypeCommonsSupport: null,
+  gamePrototypeNearbyActions: null,
   promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -628,29 +629,147 @@ function moveNorth() {
   const ordinaryInfluence = applyStochasticHistoryToOrdinaryAction('moveNorth', world.selected);
   const step = Math.max(8, Math.round(34 * ordinaryInfluence.movementScale));
   world.avatar.y = Math.max(52, world.avatar.y - step);
-  return log('moveNorth', { y: world.avatar.y, step, ordinaryInfluence });
+  updateRoom();
+  return log('moveNorth', { y: world.avatar.y, room: world.avatar.room, zone: locationZoneForAvatar().zone_id, step, ordinaryInfluence });
 }
 function moveSouth() {
   const ordinaryInfluence = applyStochasticHistoryToOrdinaryAction('moveSouth', world.selected);
   const step = Math.max(8, Math.round(34 * ordinaryInfluence.movementScale));
   world.avatar.y = Math.min(560, world.avatar.y + step);
-  return log('moveSouth', { y: world.avatar.y, step, ordinaryInfluence });
+  updateRoom();
+  return log('moveSouth', { y: world.avatar.y, room: world.avatar.room, zone: locationZoneForAvatar().zone_id, step, ordinaryInfluence });
 }
 function moveWest() {
   const ordinaryInfluence = applyStochasticHistoryToOrdinaryAction('moveWest', world.selected);
   const step = Math.max(8, Math.round(34 * ordinaryInfluence.movementScale));
   world.avatar.x = Math.max(52, world.avatar.x - step);
   updateRoom();
-  return log('moveWest', { x: world.avatar.x, room: world.avatar.room, step, ordinaryInfluence });
+  return log('moveWest', { x: world.avatar.x, room: world.avatar.room, zone: locationZoneForAvatar().zone_id, step, ordinaryInfluence });
 }
 function moveEast() {
   const ordinaryInfluence = applyStochasticHistoryToOrdinaryAction('moveEast', world.selected);
   const step = Math.max(8, Math.round(34 * ordinaryInfluence.movementScale));
   world.avatar.x = Math.min(970, world.avatar.x + step);
   updateRoom();
-  return log('moveEast', { x: world.avatar.x, room: world.avatar.room, step, ordinaryInfluence });
+  return log('moveEast', { x: world.avatar.x, room: world.avatar.room, zone: locationZoneForAvatar().zone_id, step, ordinaryInfluence });
 }
 function updateRoom() { world.avatar.room = ['arrival court', 'tool alcove', 'rain court', 'fiber loft'][Math.floor(world.avatar.x / 250) % 4]; }
+
+function locationZoneForAvatar() {
+  const zones = [
+    { zone_id: 'shelter', label: 'Shelter', x: 70, y: 72, w: 210, h: 118, defaultAction: 'offerHelp', reason: 'near rest mats and care obligations' },
+    { zone_id: 'storage', label: 'Storage', x: 315, y: 72, w: 210, h: 118, defaultAction: 'supportResourceCommons', reason: 'near shared material stores' },
+    { zone_id: 'work_yard', label: 'Work yard', x: 560, y: 72, w: 210, h: 118, defaultAction: 'advanceVillageProject', reason: 'near project work and practical tests' },
+    { zone_id: 'village_board', label: 'Village board', x: 805, y: 72, w: 170, h: 118, defaultAction: 'runVillageBoardLoop', reason: 'near posted concerns and proposals' },
+  ];
+  const hit = zones.find(zone => world.avatar.x >= zone.x && world.avatar.x <= zone.x + zone.w && world.avatar.y >= zone.y && world.avatar.y <= zone.y + zone.h);
+  if (hit) return hit;
+  return {
+    zone_id: world.avatar.room.replace(/\s+/g, '_'),
+    label: world.avatar.room,
+    x: world.avatar.x,
+    y: world.avatar.y,
+    w: 1,
+    h: 1,
+    defaultAction: 'askSchedule',
+    reason: 'near the selected resident in ordinary village space',
+  };
+}
+
+function ensurePrototypeNearbyActions() {
+  if (!world.gamePrototypeNearbyActions) {
+    world.gamePrototypeNearbyActions = {
+      runCount: 0,
+      actionLedger: [],
+      lastPlan: null,
+      boundary: 'location-sensitive normal play only; nearby action routes to existing systems and does not directly command residents',
+    };
+  }
+  return world.gamePrototypeNearbyActions;
+}
+
+function nearbyActionPlan() {
+  const zone = locationZoneForAvatar();
+  let action = zone.defaultAction;
+  let why = zone.reason;
+  if (zone.zone_id === 'work_yard') {
+    const incompleteProject = world.villageBoard && world.villageBoard.projectProposals && world.villageBoard.projectProposals.some(row => !row.project_completed);
+    action = incompleteProject ? 'advanceVillageProject' : 'runPracticalDiscoveryStep';
+    why = incompleteProject ? 'project work is physically nearby' : 'work yard tests can turn lived pressure into practical discovery';
+  }
+  if (zone.zone_id === 'village_board') {
+    const board = world.villageBoard;
+    action = !board || !board.projectProposals.length ? 'runVillageBoardLoop' : 'supportVillageProposal';
+    why = !board || !board.projectProposals.length ? 'residents need to post concerns first' : 'a visible proposal can be supported without command';
+  }
+  if (zone.zone_id === 'storage') {
+    action = 'supportResourceCommons';
+    why = 'storage action can recover commons through named material sources';
+  }
+  if (zone.zone_id === 'shelter') {
+    action = world.resources.care > 0 ? 'offerHelp' : 'supportResourceCommons';
+    why = world.resources.care > 0 ? 'shelter action offers bounded care to the selected resident' : 'care is low, so shelter redirects to commons support';
+  }
+  return {
+    zone_id: zone.zone_id,
+    label: zone.label,
+    room: world.avatar.room,
+    action,
+    why,
+    selected: world.selected,
+    x: world.avatar.x,
+    y: world.avatar.y,
+  };
+}
+
+function performNearbyAction() {
+  ensureGamePrototype();
+  const nearby = ensurePrototypeNearbyActions();
+  const plan = nearbyActionPlan();
+  nearby.runCount += 1;
+  nearby.lastPlan = plan;
+  let result = null;
+  if (plan.action === 'offerHelp') result = offerHelp();
+  if (plan.action === 'supportResourceCommons') result = supportResourceCommons();
+  if (plan.action === 'advanceVillageProject') result = advanceVillageProject();
+  if (plan.action === 'runPracticalDiscoveryStep') result = runPracticalDiscoveryStep();
+  if (plan.action === 'runVillageBoardLoop') result = runVillageBoardLoop();
+  if (plan.action === 'supportVillageProposal') result = supportVillageProposal();
+  if (plan.action === 'askSchedule') result = askSchedule();
+  const row = {
+    nearby_id: `GPNA-${String(nearby.actionLedger.length + 1).padStart(3, '0')}`,
+    tick: world.tick,
+    zone_id: plan.zone_id,
+    label: plan.label,
+    room: plan.room,
+    action: plan.action,
+    why: plan.why,
+    resident: plan.selected,
+    result_event: result && result.event ? result.event : 'none',
+    avatar_direct_command: false,
+    x: plan.x,
+    y: plan.y,
+  };
+  nearby.actionLedger.push(row);
+  if (nearby.actionLedger.length > 40) nearby.actionLedger.shift();
+  recordRealityConstraint('nearby_play_action', {
+    resident: plan.selected,
+    sourceBeliefId: row.nearby_id,
+    materials: plan.action === 'offerHelp' ? ['care'] : [],
+    publicObservation: `${plan.label} nearby action routed to ${plan.action}`,
+    residentInterpretation: plan.why,
+    materialTransformation: plan.action === 'offerHelp' ? 'care/time offered through existing help action' : 'no direct material transformation by nearby router',
+    timeCost: 1,
+    workCost: plan.action === 'askSchedule' ? 0 : 1,
+    toolWear: 0,
+    maintenanceObligation: 'preserve location-action trace',
+    unintendedConsequence: 'ordinary movement now changes available action context',
+    hiddenLawInvolved: 'none in normal view',
+    conservationCheck: true
+  });
+  recordPrototypeMilestone('nearby-action', `${plan.label} -> ${plan.action}; result ${row.result_event}`);
+  return log('performNearbyAction', { zone: plan.zone_id, label: plan.label, action: plan.action, resultEvent: row.result_event, directCommand: false });
+}
 function buildBoundedEchoConversation(phrase) {
   const echo = world.accountabilitySocialEcho;
   if (!echo || world.selected !== echo.echoResident) return null;
@@ -2960,6 +3079,8 @@ function runAutonomousResidentSeason() {
 }
 
 function formatPrototypeVillageState() {
+  const zone = locationZoneForAvatar();
+  const plan = nearbyActionPlan();
   const residentLines = Object.entries(world.residents)
     .slice(0, 6)
     .map(([name, row]) => {
@@ -2968,7 +3089,8 @@ function formatPrototypeVillageState() {
     });
   const resources = Object.entries(world.resources).map(([key, value]) => `${key}=${value}`).join(', ');
   return [
-    `Entered: ${world.entered ? 'yes' : 'no'} / room: ${world.avatar.room} / selected: ${world.selected}`,
+    `Entered: ${world.entered ? 'yes' : 'no'} / room: ${world.avatar.room} / zone: ${zone.label} / selected: ${world.selected}`,
+    `Nearby action: ${plan.action} because ${plan.why}`,
     `Resources: ${resources}`,
     'Residents:',
     ...residentLines,
@@ -2992,6 +3114,7 @@ function formatPrototypePublicOutcomes() {
   const commons = world.gamePrototypeCommons;
   const projects = world.gamePrototypeProjects;
   const commonsSupport = world.gamePrototypeCommonsSupport;
+  const nearby = world.gamePrototypeNearbyActions;
   return [
     `Practice graph: ${practiceCount} node(s)${latestPractice ? ` / latest ${latestPractice.local_name || latestPractice.practice_id}` : ''}`,
     `Village board: ${boardCount} proposal(s)${latestProposal ? ` / latest ${latestProposal.problem_addressed || latestProposal.proposal_id}` : ''}`,
@@ -3004,6 +3127,7 @@ function formatPrototypePublicOutcomes() {
     `Commons: ${commons ? `${commons.pressure_level}, resources=${commons.resource_total}, ledger=${commons.ledger_rows}, pass=${commons.pass}` : 'not audited'}`,
     `Projects: ${projects ? `${projects.projectLedger.length} work row(s), completed=${projects.completionLedger.length}, stalled=${projects.stalledLedger.length}` : 'not advanced'}`,
     `Commons support: ${commonsSupport ? `${commonsSupport.supportLedger.length} support row(s), recoveries=${commonsSupport.recoveryLedger.length}` : 'not supported'}`,
+    `Nearby actions: ${nearby ? `${nearby.actionLedger.length} location action(s), last=${nearby.lastPlan ? nearby.lastPlan.label + ' -> ' + nearby.lastPlan.action : 'none'}` : 'not used'}`,
     `Audit mode: ${world.audit ? 'on' : 'off'} / hidden law normal view: no`,
   ].join('\n');
 }
@@ -3090,6 +3214,20 @@ function formatPrototypeCommonsSupport() {
   ].join('\n');
 }
 
+function formatPrototypeNearbyActions() {
+  const nearby = world.gamePrototypeNearbyActions || ensurePrototypeNearbyActions();
+  const plan = nearbyActionPlan();
+  const rows = nearby.actionLedger.slice(-8).map(row => `${row.nearby_id}: ${row.label} (${row.room}) -> ${row.action}; result=${row.result_event}; directCommand=${row.avatar_direct_command}`);
+  return [
+    `Current zone: ${plan.label} / room=${plan.room} / suggested=${plan.action}`,
+    `Why: ${plan.why}`,
+    `Runs: ${nearby.runCount} / ledger rows=${nearby.actionLedger.length}`,
+    `Boundary: ${nearby.boundary}`,
+    'Recent nearby actions:',
+    ...(rows.length ? rows : ['none']),
+  ].join('\n');
+}
+
 function formatPrototypeProjects() {
   const projects = world.gamePrototypeProjects || ensurePrototypeProjects();
   const board = world.villageBoard || null;
@@ -3124,6 +3262,10 @@ function derivePrototypePlayerGuide() {
   };
   if (!world.entered) {
     return { ...guide, phase: 'arrival', nextAction: 'Opening loop', why: 'enter the village and meet the current selected resident', button: 'runPrototypeOpening' };
+  }
+  if (!world.gamePrototypeNearbyActions || !world.gamePrototypeNearbyActions.actionLedger.length) {
+    const plan = nearbyActionPlan();
+    return { ...guide, phase: 'nearby play', nextAction: 'Nearby action', why: `use current place ${plan.label} to do ${plan.action} through normal play`, button: 'performNearbyAction' };
   }
   if (!world.anomalyDiscovery || !world.civilizationPressure) {
     return { ...guide, phase: 'world pressure', nextAction: 'Practice + proposal', why: 'create public observations, pressure, resident tests, and the first proposal without a tech-tree unlock', button: 'runPrototypePracticeChain' };
@@ -3181,6 +3323,7 @@ function formatPrototypePlayerGuide() {
   const latestPractice = world.emergentPracticeGraph && world.emergentPracticeGraph.nodes.length ? world.emergentPracticeGraph.nodes[world.emergentPracticeGraph.nodes.length - 1] : null;
   const projects = world.gamePrototypeProjects || null;
   const commonsSupport = world.gamePrototypeCommonsSupport || null;
+  const nearby = world.gamePrototypeNearbyActions || null;
   const history = prototype.guideHistory.slice(-5).map(row => `${row.id}: ${row.from_phase}->${row.next_phase} via ${row.action}`);
   return [
     `Phase: ${guide.phase}`,
@@ -3191,6 +3334,7 @@ function formatPrototypePlayerGuide() {
     `Latest practice: ${latestPractice ? `${latestPractice.practice_id} / ${latestPractice.status} / ${latestPractice.local_name}` : 'none'}`,
     `Projects: ${projects ? `${projects.projectLedger.length} work row(s), completed=${projects.completionLedger.length}, stalled=${projects.stalledLedger.length}` : 'not advanced'}`,
     `Commons support: ${commonsSupport ? `${commonsSupport.supportLedger.length} support row(s), recoveries=${commonsSupport.recoveryLedger.length}` : 'not supported'}`,
+    `Nearby actions: ${nearby ? `${nearby.actionLedger.length} action(s), current=${nearbyActionPlan().label}->${nearbyActionPlan().action}` : `${nearbyActionPlan().label}->${nearbyActionPlan().action}`}`,
     `Seed divergence: ${world.gamePrototypeDivergence ? `${world.gamePrototypeDivergence.branches.length} branch(es), diverged=${world.gamePrototypeDivergence.diverged}` : 'not compared'}`,
     `Commons: ${world.gamePrototypeCommons ? `${world.gamePrototypeCommons.pressure_level}, resources=${world.gamePrototypeCommons.resource_total}, pass=${world.gamePrototypeCommons.pass}` : 'not audited'}`,
     `Caution: ${guide.caution}`,
@@ -3277,6 +3421,7 @@ function formatPrototypeReadableBehavior() {
 
 function runPrototypeQASmoke() {
   runFirstPlayablePrototypeLoop();
+  performNearbyAction();
   advanceVillageProject();
   advanceVillageProject();
   advanceVillageProject();
@@ -3306,6 +3451,7 @@ function runPrototypeQASmoke() {
     projectStalls: world.gamePrototypeProjects ? world.gamePrototypeProjects.stalledLedger.length : 0,
     commonsSupportRows: world.gamePrototypeCommonsSupport ? world.gamePrototypeCommonsSupport.supportLedger.length : 0,
     commonsRecoveries: world.gamePrototypeCommonsSupport ? world.gamePrototypeCommonsSupport.recoveryLedger.length : 0,
+    nearbyActions: world.gamePrototypeNearbyActions ? world.gamePrototypeNearbyActions.actionLedger.length : 0,
   };
   runAutonomousResidentTick();
   restoreWorld();
@@ -3322,6 +3468,7 @@ function runPrototypeQASmoke() {
     { id: 'commons-causal-health', pass: Boolean(world.gamePrototypeCommons && world.gamePrototypeCommons.pass && world.gamePrototypeCommons.hidden_law_exposure_issues === 0), evidence: world.gamePrototypeCommons ? `${world.gamePrototypeCommons.pressure_level}, resources=${world.gamePrototypeCommons.resource_total}, ledger=${world.gamePrototypeCommons.ledger_rows}` : 'not audited' },
     { id: 'resident-project-progress', pass: Boolean(world.gamePrototypeProjects && savedCounts.projectRows > 0 && savedCounts.projectCompletions > 0 && world.gamePrototypeProjects.projectLedger.length >= savedCounts.projectRows), evidence: `${savedCounts.projectRows} work row(s), ${savedCounts.projectCompletions} completion(s), ${savedCounts.projectStalls} stall(s)` },
     { id: 'resource-commons-support', pass: Boolean(world.gamePrototypeCommonsSupport && savedCounts.commonsSupportRows > 0 && world.gamePrototypeCommonsSupport.supportLedger.every(row => row.avatar_direct_command === false)), evidence: `${savedCounts.commonsSupportRows} support row(s), ${savedCounts.commonsRecoveries} recovery row(s)` },
+    { id: 'location-sensitive-play', pass: Boolean(world.gamePrototypeNearbyActions && savedCounts.nearbyActions > 0 && world.gamePrototypeNearbyActions.actionLedger.every(row => row.avatar_direct_command === false)), evidence: `${savedCounts.nearbyActions} nearby action row(s)` },
     { id: 'village-proposals', pass: Boolean(world.villageBoard && world.villageBoard.projectProposals.length > 0), evidence: `${world.villageBoard ? world.villageBoard.projectProposals.length : 0} proposal(s)` },
     { id: 'deep-time-million-year', pass: Boolean(world.deepTimeCivilization && world.deepTimeCivilization.year >= 1000000), evidence: `${world.deepTimeCivilization ? world.deepTimeCivilization.year : 0} years` },
     { id: 'survival-audited', pass: Boolean(world.deepTimeCivilization && world.deepTimeCivilization.survivalLedger && world.deepTimeCivilization.survivalLedger.length > 0), evidence: world.deepTimeCivilization && world.deepTimeCivilization.civilizationState ? world.deepTimeCivilization.civilizationState.status : 'none' },
@@ -3443,6 +3590,7 @@ function saveSlotSummary(slot) {
     proposals: slot.proposals,
     project_completions: slot.project_completions,
     commons_support_rows: slot.commons_support_rows,
+    nearby_action_rows: slot.nearby_action_rows,
   };
 }
 
@@ -3497,6 +3645,7 @@ function savePrototypeSlot(label = 'manual prototype save') {
     proposals: world.villageBoard ? world.villageBoard.projectProposals.length : 0,
     project_completions: world.gamePrototypeProjects ? world.gamePrototypeProjects.completionLedger.length : 0,
     commons_support_rows: world.gamePrototypeCommonsSupport ? world.gamePrototypeCommonsSupport.supportLedger.length : 0,
+    nearby_action_rows: world.gamePrototypeNearbyActions ? world.gamePrototypeNearbyActions.actionLedger.length : 0,
     snapshot: null,
   };
   slot.snapshot = snapshotWorldForPrototypeSlot(saves);
@@ -3570,6 +3719,7 @@ function buildPrototypeAcceptanceReceipt() {
   const commons = world.gamePrototypeCommons || null;
   const projects = world.gamePrototypeProjects || null;
   const commonsSupport = world.gamePrototypeCommonsSupport || null;
+  const nearby = world.gamePrototypeNearbyActions || null;
   const requirements = [
     { id: 'basic_visual_surface', pass: Boolean(world.entered && Object.keys(world.residents).length <= 6), evidence: `${Object.keys(world.residents).length} resident(s), room=${world.avatar.room}` },
     { id: 'persistent_save_return', pass: Boolean(saves && saves.slots && saves.slots.length > 0 && saves.returnLog && saves.returnLog.length > 0), evidence: saves ? `${saves.slots.length} slot(s), ${saves.returnLog.length} return(s)` : 'no prototype saves' },
@@ -3586,6 +3736,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'commons_causal_health', pass: Boolean(commons && commons.pass && commons.hidden_law_exposure_issues === 0), evidence: commons ? `${commons.pressure_level}, resources=${commons.resource_total}, ledger=${commons.ledger_rows}` : 'not audited' },
     { id: 'resident_project_progress', pass: Boolean(projects && projects.projectLedger.length > 0 && projects.completionLedger.length > 0 && projects.projectLedger.every(row => row.avatar_direct_command === false)), evidence: projects ? `${projects.projectLedger.length} work row(s), ${projects.completionLedger.length} completion(s), ${projects.stalledLedger.length} stall(s)` : 'not advanced' },
     { id: 'resource_commons_support', pass: Boolean(commonsSupport && commonsSupport.supportLedger.length > 0 && commonsSupport.supportLedger.every(row => row.avatar_direct_command === false)), evidence: commonsSupport ? `${commonsSupport.supportLedger.length} support row(s), ${commonsSupport.recoveryLedger.length} recovery row(s)` : 'not supported' },
+    { id: 'location_sensitive_play', pass: Boolean(nearby && nearby.actionLedger.length > 0 && nearby.actionLedger.every(row => row.avatar_direct_command === false)), evidence: nearby ? `${nearby.actionLedger.length} nearby action row(s), last=${nearby.lastPlan ? nearby.lastPlan.label + '->' + nearby.lastPlan.action : 'none'}` : 'not used' },
     { id: 'prototype_qa_passes', pass: Boolean(qa && qa.pass === true), evidence: qa ? `${qa.passed}/${qa.total} QA checks` : 'QA not run' },
     { id: 'research_arc_closed_mode', pass: Boolean(prototype.noMoreResearchReportsByDefault && prototype.mode === 'game-prototype-v0'), evidence: `${prototype.mode}, reports default=${prototype.noMoreResearchReportsByDefault ? 'off' : 'on'}` },
   ];
@@ -3657,7 +3808,7 @@ function formatPrototypeClock() {
 
 function formatPrototypeSaves() {
   const saves = world.gamePrototypeSaves || ensurePrototypeSaves();
-  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; commonsSupport=${slot.commons_support_rows || 0}; survival=${slot.survival_status}`);
+  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; survival=${slot.survival_status}`);
   const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, from replay=${row.returned_from_replay_rows}`);
   return [
     `Active slot: ${saves.activeSlotId || 'none'}`,
@@ -3716,6 +3867,7 @@ function renderGamePrototypeSurface() {
   const commonsNode = document.getElementById('gamePrototypeCommonsOut');
   const projectsNode = document.getElementById('gamePrototypeProjectsOut');
   const commonsSupportNode = document.getElementById('gamePrototypeCommonsSupportOut');
+  const nearbyNode = document.getElementById('gamePrototypeNearbyOut');
   const prototype = world.gamePrototype || ensureGamePrototype();
   if (objectiveNode) objectiveNode.textContent = prototype.objective;
   if (villageNode) villageNode.textContent = formatPrototypeVillageState();
@@ -3733,6 +3885,7 @@ function renderGamePrototypeSurface() {
   if (commonsNode) commonsNode.textContent = formatPrototypeCommons();
   if (projectsNode) projectsNode.textContent = formatPrototypeProjects();
   if (commonsSupportNode) commonsSupportNode.textContent = formatPrototypeCommonsSupport();
+  if (nearbyNode) nearbyNode.textContent = formatPrototypeNearbyActions();
 }
 
 function bindControls() {
@@ -3768,7 +3921,7 @@ function bindControls() {
     world.avatar.x = Math.round((event.clientX - rect.left) * canvas.width / rect.width);
     world.avatar.y = Math.round((event.clientY - rect.top) * canvas.height / rect.height);
     updateRoom();
-    log('canvasMove', { x: world.avatar.x, y: world.avatar.y, room: world.avatar.room });
+    log('canvasMove', { x: world.avatar.x, y: world.avatar.y, room: world.avatar.room, zone: locationZoneForAvatar().zone_id, nearbyAction: nearbyActionPlan().action });
   });
   renderReturnContinuity();
   renderReturnGreetingContinuity();
@@ -4377,6 +4530,7 @@ function describeReplayRow(row) {
     auditPrototypeCommons: `commons audit ${payload.pass ? 'PASS' : 'WATCH'} pressure=${payload.pressureLevel} resources=${payload.resources} ledger=${payload.ledgerRows}`,
     advanceVillageProject: `advanced village project ${payload.proposalId || ''} status=${payload.status || payload.reason} progress=${payload.progress ?? 'n/a'} completed=${payload.completed === true}`,
     supportResourceCommons: `supported commons ${payload.resource || ''} amount=${payload.amount ?? 0} source=${payload.source || payload.reason || ''} reopened=${payload.reopened || 0}`,
+    performNearbyAction: `nearby action ${payload.label || payload.zone} -> ${payload.action} result=${payload.resultEvent} direct=${payload.directCommand === true}`,
     runCivilizationDeepTimeEpoch: `deep-time epoch +${payload.yearsAdvanced} years pressure=${payload.pressure} lineages=${payload.lineages}`,
     applyLatestDeepTimeEffectToVillage: `deep-time effect applied resident=${payload.resident} proposal=${payload.proposalId}`,
     runCivilizationMillionYearSim: `million-year sim year=${payload.year} epochs=${payload.epochs} effects=${payload.effects}`,
@@ -4504,6 +4658,10 @@ function draw() {
 
   ctx.fillStyle = '#d5a13a'; ctx.beginPath(); ctx.arc(world.avatar.x, world.avatar.y, 24, 0, Math.PI * 2); ctx.fill();
   ctx.fillStyle = '#111816'; ctx.fillText('You', world.avatar.x - 11, world.avatar.y + 4);
+  const nearbyPlan = nearbyActionPlan();
+  ctx.fillStyle = '#f9ebc9';
+  ctx.font = '13px Optima, sans-serif';
+  ctx.fillText(`Nearby: ${nearbyPlan.label} -> ${nearbyPlan.action}`.slice(0, 54), Math.max(34, world.avatar.x - 92), Math.max(88, world.avatar.y - 34));
   Object.entries(world.residents).forEach(([name, resident], index) => {
     const needs = world.autonomousResidents && world.autonomousResidents.needState ? world.autonomousResidents.needState[name] : null;
     const expression = latestVisibleExpressionFor(name);
@@ -6099,6 +6257,6 @@ function renderHintBranchPersistence() {
   ].join('\n');
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, advanceVillageProject, supportResourceCommons, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypeGuidedStep, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, comparePrototypeDivergenceSeeds, auditPrototypeCommons, runCivilizationDeepTimeEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, savePrototypeSlot, returnPrototypeSlot, exportPrototypeSaveReceipt, exportPrototypeAcceptanceReceipt, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, advanceVillageProject, supportResourceCommons, performNearbyAction, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypeGuidedStep, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, comparePrototypeDivergenceSeeds, auditPrototypeCommons, runCivilizationDeepTimeEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, savePrototypeSlot, returnPrototypeSlot, exportPrototypeSaveReceipt, exportPrototypeAcceptanceReceipt, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

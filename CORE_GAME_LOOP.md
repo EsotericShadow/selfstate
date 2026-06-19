@@ -190,3 +190,13 @@ The first playable loop includes a direct save/return pass: enter the village, l
 4. If the source is capped or the resident is too tired, the support row is blocked rather than creating free resources.
 5. Resolved shortages can reopen stalled proposals, and every support or block writes Reality Constraint Ledger evidence.
 6. Save/return, QA, acceptance, and replay preserve commons support rows as part of the playable foundation.
+
+
+## Location-sensitive play loop
+
+1. The avatar moves or clicks into a village place.
+2. The shell derives a nearby action from the current zone, not from a hidden mission flag.
+3. Shelter routes to bounded help, storage to commons support, work yard to project work or practical discovery, Village Board to proposal support, and ordinary village space to schedule inquiry.
+4. The action reuses existing systems and records no direct resident command.
+5. The nearby ledger preserves zone, room, selected resident, result event, and causal trace.
+6. Save/return, QA, acceptance, replay, and the canvas surface all expose the location-sensitive action path.

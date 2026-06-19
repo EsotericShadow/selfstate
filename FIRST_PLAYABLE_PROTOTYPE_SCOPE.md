@@ -86,3 +86,16 @@ Prototype v0 includes a minimal thermal/fire subsystem:
 - save/return and acceptance counters for heat, fuel, smoke, ignition, and safety rows
 
 This is bounded utility physics, not disaster spectacle.
+
+## Included prototype physics layer: water/fluid
+
+Prototype v0 includes a minimal water/fluid subsystem:
+
+- contained jar water, low wet patch, and small runoff channel
+- volume, capacity, contamination, leakage, evaporation, slope, resistance, and route pressure
+- terrain moisture/walkability/erosion coupling
+- vessel damage and stored water resource sync
+- resident footing/safety pressure and recoverable water proposals
+- save/return and acceptance counters for flow, leak, vessel, quality, route, and safety rows
+
+This is bounded causal fluid gameplay, not a full CFD simulation.

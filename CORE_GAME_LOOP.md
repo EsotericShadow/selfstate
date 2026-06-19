@@ -333,3 +333,11 @@ Thermal changes now follow:
 fuel/heat source -> ventilation and moisture check -> heat transfer to nearby components -> drying or damage -> smoke/ignition risk -> resident comfort or safety pressure -> safety proposal if needed -> causal ledger row.
 
 The loop supports useful warmth and drying while preserving the rule that fire requires fuel, heat, air-like exposure, material properties, time, and recovery paths.
+
+## Water/fluid physics loop
+
+Water movement now follows:
+
+weather/resource stock -> vessel/container sync -> terrain slope and moisture -> evaporation/leakage/flow -> route pressure and walkability -> resident safety or project proposal -> causal ledger row.
+
+This keeps water as a physical substance with volume, containment, quality, and consequences rather than a pure counter.

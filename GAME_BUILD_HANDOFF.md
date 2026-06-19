@@ -255,3 +255,11 @@ The prototype now has bounded thermal/fire physics. Watched heat sources track f
 Game-build consequence: warmth, drying, smoke, and bounded hazard are causal simulation state. Fire does not appear without fuel, heat, and air-like exposure; smoke creates care and safety work rather than spectacle.
 
 Boundary: this is not a disaster/combat branch. Hazards must remain bounded, recoverable, inspectable, and tied to fuel, material, resident, and safety ledgers.
+
+## Prototype v0 water/fluid physics update
+
+The prototype now models bounded water/fluid physics. Stored jar water, low wet patches, and small hand-cut runoff lines track volume, capacity, containment, leakage, evaporation, slope, flow resistance, contamination, route pressure, vessel damage, and recoverable safety proposals.
+
+Game-build consequence: water is no longer only a resource number or terrain moisture color. It can leak from damaged vessels, evaporate, pool on low routes, flow through a channel, affect walkability, sync back into stored water, and create resident proposals without direct player command.
+
+Boundary: this is not full fluid dynamics. It is a causal gameplay layer that preserves volume, containment, slope, resistance, route pressure, and auditability.

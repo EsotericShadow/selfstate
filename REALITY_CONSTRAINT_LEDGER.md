@@ -173,3 +173,15 @@ Thermal work must satisfy:
 - no hidden-law exposure in normal player view
 
 Ledger rows now include `thermal_fire_physics`, with fuel use, heat transfer, smoke rows, ignition risk, resident comfort/safety effects, safety proposal links, conservation flags, and resident-facing interpretation.
+
+## Water/fluid physics ledger rows
+
+Water movement must satisfy:
+
+- no water movement without volume, slope, containment, evaporation, leakage, or weather terms
+- no leak without vessel damage, over-capacity pressure, or ground loss
+- no route effect without terrain moisture, walkability, or body-pressure consequences
+- no safety proposal without a recoverable route or containment problem
+- no hidden-law exposure in normal player view
+
+Ledger rows now include `water_fluid_physics`, with flow rows, leak rows, vessel state, quality rows, route pressure, safety proposal links, conservation flags, and resident-facing interpretation.

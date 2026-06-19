@@ -89,3 +89,7 @@ Care is not material. It is an embodied/social capacity proxy and must remain bo
 ## Thermal/fire physics boundary
 
 Thermal simulation should support warmth, drying, smoke, bounded ignition risk, resident comfort, and safety work. It must not become spectacle, combat, or unrecoverable disaster. Every heat or smoke effect needs fuel, material, air-like exposure, moisture, distance, time, and a causal ledger row.
+
+## Water/fluid physics boundary
+
+Water should behave like a bounded physical substance. It can be stored, leak, evaporate, pool, flow through a simple channel, contaminate, and alter routes. It should not teleport, spawn, vanish without a cause, or create unrecoverable punishment loops.

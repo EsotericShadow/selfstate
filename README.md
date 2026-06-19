@@ -2198,3 +2198,5 @@ The active game-prototype branch is physics-first. The browser shell now models 
 The prototype also now includes resource-stock physics: water, fiber, wood, and care/attention have stock ledgers, storage pressure, stochastic loss/gain rows, and save/acceptance evidence.
 
 Thermal/fire physics is now part of Prototype v0: watched heat sources consume fuel, transfer heat, dry or damage materials, produce smoke rows, affect resident safety/comfort, and create bounded safety proposals when needed.
+
+Water/fluid physics is now part of Prototype v0: contained jar water, puddles, and small runoff channels track volume, leaks, evaporation, route pressure, quality, resident footing effects, and recoverable safety proposals.

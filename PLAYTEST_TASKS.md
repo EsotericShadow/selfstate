@@ -141,3 +141,11 @@
 77. Use `End day` and confirm the day-cycle row includes a thermal step alongside weather, terrain, and resources.
 78. Save and return after thermal physics, then confirm saved slot summaries preserve heat, smoke, and safety counts.
 79. Export acceptance and confirm `thermal_fire_physics` is part of the prototype acceptance requirements.
+
+## Water/fluid physics playtests
+
+80. Use `Water physics` and confirm water bodies show volume, containment, contamination, route, and hidden-law boundary evidence.
+81. Use `Water loop` and confirm repeated flow rows create route, quality, leak, or safety rows without resource spawning.
+82. Use `End day` and confirm the day-cycle row includes a water step alongside weather, terrain, resources, and thermal physics.
+83. Save and return after water physics, then confirm saved slot summaries preserve flow, leak, and safety counts.
+84. Export acceptance and confirm `water_fluid_physics` is part of the prototype acceptance requirements.

@@ -332,7 +332,10 @@ The surface summarizes, in one place:
 - active practice
 - active physical component
 - latest physics row
+- latest lived-action physics row
 - resource pressure
+
+The canvas now draws recent lived-action physics on actual component positions. Rings, small state bars, and latest physics IDs show whether ordinary play affected moisture, damage, stability, or field stress. This keeps practice formation visible as material change rather than only as ledger text.
 
 The acceptance gate is `primary_play_surface`. This does not make the visual layer final art; it makes the existing primitive 3D/canvas shell function as a playable interface instead of only a debug dashboard.
 

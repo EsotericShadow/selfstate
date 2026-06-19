@@ -2221,6 +2221,8 @@ The browser shell now includes `Village Day 0-3` and `Day 0-3 loop` actions/card
 
 The browser shell now includes `World stage` and `Stage loop` actions plus a `Primary play surface` card. The canvas overlays the current village problem, selected resident, next action, active proposal, active practice, active physical component, physics row, and resource pressure so the prototype reads more like a game surface and less like disconnected panels.
 
+The canvas now also overlays lived-action physics cues on affected physical components. Recent lived-practice rows draw rings, moisture/damage/stability/stress bars, and latest physics IDs at component positions so ordinary-action consequences are visible in the play surface, not only in receipts.
+
 ## Game prototype v0 update: First Playable Walkthrough
 
 The browser shell now includes `First playable` and `Export walkthrough`. This creates a receipt for the coherent path from entering the village through world-stage inspection, physical bottleneck observation, resident proposal/testing, condition support, resident work/recovery, return continuity, save state, and acceptance snapshot.

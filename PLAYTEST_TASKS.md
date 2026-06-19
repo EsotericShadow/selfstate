@@ -249,6 +249,7 @@
 - Confirm lived-practice rows show ordinary feed, component, movement, or object-interaction evidence rather than an isolated report-only receipt.
 - Confirm lived-practice rows include physics row IDs with component moisture/damage/stability/stress deltas.
 - Confirm the Reality Constraint Ledger includes `lived_action_physics_causality` rows with no resource spawning and conservation checks.
+- Inspect the canvas and confirm affected components show lived-physics rings, state bars, and the latest physics ID.
 - Save and return after the practice loop, then confirm the Save / return card preserves lived-action physics counts and latest physics ID.
 - Confirm the card shows a local practice name, status, materials, supporting observations, failed ancestors, adoption count, and maintenance cost.
 - Confirm rows record no direct command, no hidden-law exposure, no tech-tree unlock, and no correct concept installation.

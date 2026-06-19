@@ -5038,6 +5038,9 @@ function currentPrimaryPlaySurfaceSnapshot() {
   const graph = world.emergentPracticeGraph || null;
   const materialWorld = world.gamePrototype3DWorld || null;
   const physics = materialWorld && materialWorld.physics ? materialWorld.physics : null;
+  const livedPractice = world.gamePrototypeLivedPractice || null;
+  const livedPhysicsRows = livedPractice && livedPractice.physicsLedger ? livedPractice.physicsLedger : [];
+  const latestLivedPhysics = livedPhysicsRows.length ? livedPhysicsRows[livedPhysicsRows.length - 1] : null;
   const selected = world.residents[world.selected] || currentResident();
   const latestProposal = board && board.projectProposals && board.projectProposals.length ? board.projectProposals[board.projectProposals.length - 1] : null;
   const latestPractice = graph && graph.nodes && graph.nodes.length ? graph.nodes[graph.nodes.length - 1] : null;
@@ -5071,12 +5074,17 @@ function currentPrimaryPlaySurfaceSnapshot() {
     active_component_id: latestComponent ? latestComponent.component_id : 'none',
     active_component_gloss: latestComponent ? (latestComponent.player_gloss || latestComponent.material_id || latestComponent.component_id) : 'none',
     latest_physics_id: latestPhysics ? (latestPhysics.step_id || latestPhysics.event_id || 'physics-row') : 'none',
+    latest_lived_physics_id: latestLivedPhysics ? latestLivedPhysics.physics_id : 'none',
+    latest_lived_physics_component_id: latestLivedPhysics ? latestLivedPhysics.component_id : 'none',
+    latest_lived_physics_deltas: latestLivedPhysics ? latestLivedPhysics.deltas : null,
+    lived_physics_rows: livedPhysicsRows.length,
     resource_pressure: resourcePressure,
     canvas_cues: [
       'look at the highlighted village problem band',
       latestProposal ? `proposal ${latestProposal.proposal_id}` : 'village board has no current proposal',
       latestPractice ? `practice ${latestPractice.local_name || latestPractice.practice_id}` : 'practice graph not yet visible',
       latestComponent ? `component ${latestComponent.component_id}` : 'physical components not initialized',
+      latestLivedPhysics ? `lived physics ${latestLivedPhysics.physics_id} on ${latestLivedPhysics.component_id}` : 'lived-action physics not visible yet',
     ],
     hidden_law_normal_view: false,
     avatar_direct_command: false,
@@ -5200,6 +5208,7 @@ function formatPrimaryPlaySurface() {
     `Active practice: ${snapshot.active_practice_id} / ${snapshot.active_practice_name}`,
     `Active component: ${snapshot.active_component_id} / ${snapshot.active_component_gloss}`,
     `Latest physics: ${snapshot.latest_physics_id}`,
+    `Latest lived physics: ${snapshot.latest_lived_physics_id} / component=${snapshot.latest_lived_physics_component_id} / rows=${snapshot.lived_physics_rows}`,
     `Resource pressure: ${snapshot.resource_pressure.length ? snapshot.resource_pressure.join(', ') : 'none'}`,
     `Rows: focus=${surface.focusLedger.length}, cues=${surface.canvasCueLedger.length}, prompts=${surface.actionPromptLedger.length}`,
     `Boundary: ${surface.boundary}`,
@@ -6358,6 +6367,7 @@ function runLivedPracticeLoop() {
   ];
   livedNormalActions.forEach(([verb, discoveryAction]) => runLivedPracticeAction(verb, discoveryAction));
   updateLivedPracticeAcceptance();
+  if (loop.physicsLedger.length) recordPrimaryPlaySurfaceSnapshot('lived practice physics visible on canvas');
   return log('runLivedPracticeLoop', { ready: loop.acceptanceReady, actions: loop.actionLedger.length, practice: loop.receipt ? loop.receipt.practice_id : 'none', status: loop.receipt ? loop.receipt.status : 'none' });
 }
 
@@ -11426,6 +11436,7 @@ function runPrototypeQASmoke() {
     livedPracticeSnapshots: world.gamePrototypeLivedPractice ? world.gamePrototypeLivedPractice.practiceSnapshots.length : 0,
     livedPracticePhysicsRows: world.gamePrototypeLivedPractice && world.gamePrototypeLivedPractice.physicsLedger ? world.gamePrototypeLivedPractice.physicsLedger.length : 0,
     livedPracticePhysicalCausalityReady: world.gamePrototypeLivedPractice ? world.gamePrototypeLivedPractice.physicalCausalityReady === true : false,
+    livedPracticeCanvasCueRows: world.gamePrototypeWorldStage ? world.gamePrototypeWorldStage.canvasCueLedger.filter(row => (row.cues || []).some(cue => /lived physics/.test(cue))).length : 0,
     worksiteReady: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.acceptanceReady === true : false,
     worksiteRows: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.watchLedger.length : 0,
     worksiteSnapshots: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.snapshotLedger.length : 0,
@@ -11468,7 +11479,7 @@ function runPrototypeQASmoke() {
     { id: 'player-resident-encounter', pass: Boolean(world.gamePrototypeResidentEncounter && savedCounts.residentEncounterReady && savedCounts.residentEncounterRows > 0 && savedCounts.residentEncounterSnapshots > 0 && world.gamePrototypeResidentEncounter.encounterLedger.every(row => row.no_llm === true && row.phrasebook_only === true && row.open_ended_language === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.source_history_preserved === true)), evidence: `${savedCounts.residentEncounterRows} resident encounter row(s), ${savedCounts.residentEncounterSnapshots} snapshot(s)` },
     { id: 'player-object-interaction', pass: Boolean(world.gamePrototypeObjectInteraction && savedCounts.objectInteractionReady && savedCounts.objectInteractionRows > 0 && savedCounts.objectInteractionSnapshots > 0 && world.gamePrototypeObjectInteraction.interactionLedger.every(row => row.avatar_direct_command === false && row.resident_chosen === true && row.hidden_law_normal_view === false && row.tech_tree_unlock === false)), evidence: `${savedCounts.objectInteractionRows} object interaction row(s), ${savedCounts.objectInteractionSnapshots} snapshot(s)` },
     { id: 'resident-proposal-deck', pass: Boolean(world.gamePrototypeProposalDeck && savedCounts.proposalDeckReady && savedCounts.proposalDeckCards > 0 && savedCounts.proposalDeckActions >= 3 && world.gamePrototypeProposalDeck.avatarCannotForce === true && world.gamePrototypeProposalDeck.noDirectCommand === true && world.gamePrototypeProposalDeck.noHiddenLawNormalView === true), evidence: `${savedCounts.proposalDeckCards} card snapshot(s), ${savedCounts.proposalDeckActions} deck action(s)` },
-    { id: 'lived-practice-loop', pass: Boolean(world.gamePrototypeLivedPractice && savedCounts.livedPracticeReady && savedCounts.livedPracticeRows >= 4 && savedCounts.livedPracticeSnapshots > 0 && savedCounts.livedPracticePhysicsRows >= 4 && savedCounts.livedPracticePhysicalCausalityReady && world.gamePrototypeLivedPractice.noDirectCommand === true && world.gamePrototypeLivedPractice.noHiddenLawNormalView === true && world.gamePrototypeLivedPractice.noPredeclaredTechTree === true), evidence: `${savedCounts.livedPracticeRows} lived action row(s), ${savedCounts.livedPracticeSnapshots} practice snapshot(s), ${savedCounts.livedPracticePhysicsRows} lived physics row(s)` },
+    { id: 'lived-practice-loop', pass: Boolean(world.gamePrototypeLivedPractice && savedCounts.livedPracticeReady && savedCounts.livedPracticeRows >= 4 && savedCounts.livedPracticeSnapshots > 0 && savedCounts.livedPracticePhysicsRows >= 4 && savedCounts.livedPracticeCanvasCueRows > 0 && savedCounts.livedPracticePhysicalCausalityReady && world.gamePrototypeLivedPractice.noDirectCommand === true && world.gamePrototypeLivedPractice.noHiddenLawNormalView === true && world.gamePrototypeLivedPractice.noPredeclaredTechTree === true), evidence: `${savedCounts.livedPracticeRows} lived action row(s), ${savedCounts.livedPracticeSnapshots} practice snapshot(s), ${savedCounts.livedPracticePhysicsRows} lived physics row(s), ${savedCounts.livedPracticeCanvasCueRows} canvas cue row(s)` },
     { id: 'resident-worksite', pass: Boolean(world.gamePrototypeWorksite && savedCounts.worksiteReady && savedCounts.worksiteRows >= 2 && savedCounts.worksiteSnapshots > 0 && world.gamePrototypeWorksite.avatarCannotAssignJobs === true && world.gamePrototypeWorksite.noDirectCommand === true && world.gamePrototypeWorksite.noHiddenLawNormalView === true && world.gamePrototypeWorksite.noResourceSpawning === true), evidence: `${savedCounts.worksiteRows} worksite watch row(s), ${savedCounts.worksiteSnapshots} snapshot(s)` },
     { id: 'return-journal', pass: Boolean(world.gamePrototypeReturnJournal && savedCounts.returnJournalReady && savedCounts.returnJournalRows > 0 && savedCounts.returnJournalSnapshots >= 3 && world.gamePrototypeReturnJournal.forwardReturnVisible === true && world.gamePrototypeReturnJournal.saveRestoreVisible === true && world.gamePrototypeReturnJournal.noDirectReset === true && world.gamePrototypeReturnJournal.noHiddenLawNormalView === true), evidence: `${savedCounts.returnJournalRows} journal row(s), ${savedCounts.returnJournalSnapshots} snapshot(s)` },
     { id: 'first-playable-session', pass: Boolean(world.gamePrototypePlaySession && savedCounts.playSessionReady && savedCounts.playSessionSteps >= world.gamePrototypePlaySession.requiredSteps.length && savedCounts.playSessionSnapshots >= world.gamePrototypePlaySession.requiredSteps.length && world.gamePrototypePlaySession.stepLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false)), evidence: `${savedCounts.playSessionSteps} session step(s), ${savedCounts.playSessionSnapshots} snapshot(s)` },
@@ -12009,6 +12020,7 @@ function buildPrototypeAcceptanceReceipt() {
   const livedPracticeRows = livedPractice ? livedPractice.actionLedger.length : 0;
   const livedPracticeSnapshots = livedPractice ? livedPractice.practiceSnapshots.length : 0;
   const livedPracticePhysicsRows = livedPractice && livedPractice.physicsLedger ? livedPractice.physicsLedger.length : 0;
+  const livedPracticeCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => (row.cues || []).some(cue => /lived physics/.test(cue))).length : 0;
   const worksiteRows = worksite ? worksite.watchLedger.length : 0;
   const worksiteSnapshots = worksite ? worksite.snapshotLedger.length : 0;
   const returnJournalRows = returnJournal ? returnJournal.journalLedger.length : 0;
@@ -12084,7 +12096,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'player_resident_encounter', pass: Boolean(residentEncounter && residentEncounter.acceptanceReady && residentEncounterRows > 0 && residentEncounterSnapshots > 0 && residentEncounter.encounterLedger.every(row => row.player_facing === true && row.no_llm === true && row.phrasebook_only === true && row.open_ended_language === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.source_history_preserved === true) && residentEncounter.noOpenEndedLanguage === true && residentEncounter.noDirectCommand === true), evidence: residentEncounter ? `rows=${residentEncounterRows}, snapshots=${residentEncounterSnapshots}` : 'not run' },
     { id: 'player_object_interaction', pass: Boolean(objectInteraction && objectInteraction.acceptanceReady && objectInteractionRows > 0 && objectInteractionSnapshots > 0 && objectInteraction.interactionLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.resident_chosen === true && row.hidden_law_normal_view === false && row.tech_tree_unlock === false) && objectInteraction.noDirectCommand === true && objectInteraction.noHiddenLawNormalView === true), evidence: objectInteraction ? `rows=${objectInteractionRows}, snapshots=${objectInteractionSnapshots}` : 'not run' },
     { id: 'resident_proposal_deck', pass: Boolean(proposalDeck && proposalDeck.acceptanceReady && proposalDeckCards > 0 && proposalDeckActions >= 3 && proposalDeck.avatarCannotForce === true && proposalDeck.noDirectCommand === true && proposalDeck.noHiddenLawNormalView === true && proposalDeck.playerGlossesOnly === true), evidence: proposalDeck ? `cardSnapshots=${proposalDeckCards}, actions=${proposalDeckActions}` : 'not run' },
-    { id: 'lived_practice_loop', pass: Boolean(livedPractice && livedPractice.acceptanceReady && livedPracticeRows >= 4 && livedPracticeSnapshots > 0 && livedPracticePhysicsRows >= 4 && livedPractice.physicalCausalityReady === true && livedPractice.noDirectCommand === true && livedPractice.noHiddenLawNormalView === true && livedPractice.noPredeclaredTechTree === true && livedPractice.noCorrectConceptInstalled === true), evidence: livedPractice ? `actions=${livedPracticeRows}, snapshots=${livedPracticeSnapshots}, livedPhysics=${livedPracticePhysicsRows}` : 'not run' },
+    { id: 'lived_practice_loop', pass: Boolean(livedPractice && livedPractice.acceptanceReady && livedPracticeRows >= 4 && livedPracticeSnapshots > 0 && livedPracticePhysicsRows >= 4 && livedPracticeCanvasCueRows > 0 && livedPractice.physicalCausalityReady === true && livedPractice.noDirectCommand === true && livedPractice.noHiddenLawNormalView === true && livedPractice.noPredeclaredTechTree === true && livedPractice.noCorrectConceptInstalled === true), evidence: livedPractice ? `actions=${livedPracticeRows}, snapshots=${livedPracticeSnapshots}, livedPhysics=${livedPracticePhysicsRows}, canvasCues=${livedPracticeCanvasCueRows}` : 'not run' },
     { id: 'resident_worksite', pass: Boolean(worksite && worksite.acceptanceReady && worksiteRows >= 2 && worksiteSnapshots > 0 && worksite.avatarCannotAssignJobs === true && worksite.noDirectCommand === true && worksite.noHiddenLawNormalView === true && worksite.noResourceSpawning === true), evidence: worksite ? `watchRows=${worksiteRows}, snapshots=${worksiteSnapshots}` : 'not run' },
     { id: 'return_journal', pass: Boolean(returnJournal && returnJournal.acceptanceReady && returnJournalRows > 0 && returnJournalSnapshots >= 3 && returnJournal.forwardReturnVisible === true && returnJournal.saveRestoreVisible === true && returnJournal.noDirectReset === true && returnJournal.noHiddenLawNormalView === true), evidence: returnJournal ? `rows=${returnJournalRows}, snapshots=${returnJournalSnapshots}` : 'not run' },
     { id: 'first_playable_session', pass: Boolean(playSession && playSession.acceptanceReady && playSessionSteps >= playSession.requiredSteps.length && playSessionSnapshots >= playSession.requiredSteps.length && livedPracticePhysicsRows > 0 && playSession.stepLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false) && playSession.noDirectCommand === true && playSession.noHiddenLawNormalView === true && playSession.noTechTreeUnlock === true), evidence: playSession ? `steps=${playSessionSteps}/${playSession.requiredSteps.length}, snapshots=${playSessionSnapshots}, livedPhysics=${livedPracticePhysicsRows}` : 'not run' },
@@ -13150,8 +13162,8 @@ function draw() {
   ctx.fillText(`Problem: ${stageSnapshot.current_problem}`.slice(0, 118), 44, 112);
   ctx.fillText(`Next: ${stageSnapshot.player_next_action} (${stageSnapshot.player_next_button})`.slice(0, 86), 44, 132);
   ctx.fillText(`Resident ${stageSnapshot.selected_resident} | proposal ${stageSnapshot.active_proposal_id} | practice ${stageSnapshot.active_practice_name} | component ${stageSnapshot.active_component_id}`.slice(0, 104), 470, 90);
-  ctx.fillText(`Physics ${stageSnapshot.latest_physics_id} | resources ${stageSnapshot.resource_pressure.length ? stageSnapshot.resource_pressure.join(', ') : 'stable'}`.slice(0, 74), 470, 112);
-  ctx.fillText('Canvas is the play surface; panels are inspection/audit support.'.slice(0, 74), 470, 132);
+  ctx.fillText(`Physics ${stageSnapshot.latest_physics_id} | lived ${stageSnapshot.latest_lived_physics_id} | resources ${stageSnapshot.resource_pressure.length ? stageSnapshot.resource_pressure.join(', ') : 'stable'}`.slice(0, 82), 470, 112);
+  ctx.fillText(`Lived component ${stageSnapshot.latest_lived_physics_component_id} | Canvas is the play surface`.slice(0, 78), 470, 132);
 
   const materialWorld = world.gamePrototype3DWorld;
   if (materialWorld && materialWorld.components) {
@@ -13167,6 +13179,14 @@ function draw() {
       reed_cover: '#9fca77',
       resin_smear: '#f0c35b'
     };
+    const livedPractice = world.gamePrototypeLivedPractice || null;
+    const livedPhysicsRows = livedPractice && livedPractice.physicsLedger ? livedPractice.physicsLedger.slice(-6) : [];
+    const livedPhysicsByComponent = livedPhysicsRows.reduce((memo, row) => {
+      if (!memo[row.component_id]) memo[row.component_id] = [];
+      memo[row.component_id].push(row);
+      return memo;
+    }, {});
+    const latestLivedPhysics = livedPhysicsRows.length ? livedPhysicsRows[livedPhysicsRows.length - 1] : null;
     const sortedComponents = materialWorld.components.slice().sort((a, b) => Number(a.position3d.z || 0) - Number(b.position3d.z || 0));
     sortedComponents.forEach(component => {
       const point = project3D(component.position3d || {});
@@ -13204,6 +13224,52 @@ function draw() {
         ctx.strokeRect(point.x - 18, point.y - 7, 36, 14);
 	      }
 	      ctx.globalAlpha = 1;
+      const componentLivedRows = livedPhysicsByComponent[component.component_id] || [];
+      if (componentLivedRows.length) {
+        const latest = componentLivedRows[componentLivedRows.length - 1];
+        const deltas = latest.deltas || {};
+        const damageDelta = Number(deltas.damage || 0);
+        const stabilityDelta = Number(deltas.stability || 0);
+        const moistureDelta = Number(deltas.moisture || 0);
+        const stressDelta = Number(deltas.field_stress || 0);
+        const cueColor = damageDelta > 0.004 || stressDelta > 0.008
+          ? '#b75d39'
+          : stabilityDelta > 0.004
+            ? '#9fca77'
+            : moistureDelta > 0.004
+              ? '#2f717b'
+              : '#f0c35b';
+        ctx.save();
+        ctx.strokeStyle = cueColor;
+        ctx.lineWidth = 3;
+        ctx.setLineDash([7, 4]);
+        ctx.beginPath();
+        ctx.arc(point.x, point.y, 24 + componentLivedRows.length * 3, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        const barX = point.x - 28;
+        const barY = point.y + 18;
+        const bars = [
+          ['m', moistureDelta, '#2f717b'],
+          ['d', damageDelta, '#b75d39'],
+          ['s', stabilityDelta, '#9fca77'],
+          ['p', stressDelta, '#d5a13a'],
+        ];
+        bars.forEach(([label, value, barColor], barIndex) => {
+          const width = Math.max(2, Math.min(28, Math.abs(Number(value || 0)) * 800));
+          ctx.fillStyle = 'rgba(17,24,22,0.76)';
+          ctx.fillRect(barX, barY + barIndex * 7, 34, 5);
+          ctx.fillStyle = barColor;
+          ctx.fillRect(barX, barY + barIndex * 7, width, 5);
+          ctx.fillStyle = '#f9ebc9';
+          ctx.font = '8px Optima, sans-serif';
+          ctx.fillText(label, barX + 36, barY + 5 + barIndex * 7);
+        });
+        ctx.fillStyle = '#f9ebc9';
+        ctx.font = '10px Optima, sans-serif';
+        ctx.fillText(latest.physics_id, point.x + 22, point.y + 28);
+        ctx.restore();
+      }
 	    });
     const activeComponent = materialWorld.components.find(component => component.component_id === stageSnapshot.active_component_id);
     if (activeComponent) {
@@ -13235,11 +13301,12 @@ function draw() {
 	    const term = materialWorld.language && materialWorld.language.terms ? materialWorld.language.terms[0] : null;
     const latestPhysics = materialWorld.physics ? materialWorld.physics.latestStep : null;
     ctx.fillStyle = 'rgba(17,24,22,0.78)';
-    ctx.fillRect(294, 210, 300, 58);
+    ctx.fillRect(294, 210, 382, 78);
     ctx.fillStyle = '#f9ebc9';
     ctx.font = '13px Optima, sans-serif';
     ctx.fillText(term ? `${term.resident_word} ~ ${term.player_gloss}` : 'component-built storage practice', 310, 234);
     ctx.fillText(latestPhysics ? `physics ${latestPhysics.step_id}: support ${latestPhysics.support_checks}, failures ${latestPhysics.failures}` : 'physics: not stepped yet', 310, 254);
+    ctx.fillText(latestLivedPhysics ? `lived ${latestLivedPhysics.physics_id}: ${latestLivedPhysics.component_id} ${JSON.stringify(latestLivedPhysics.deltas)}`.slice(0, 58) : 'lived physics: not visible yet', 310, 274);
   }
 
   ctx.fillStyle = '#d5a13a'; ctx.beginPath(); ctx.arc(world.avatar.x, world.avatar.y, 24, 0, Math.PI * 2); ctx.fill();

@@ -406,7 +406,7 @@ The loop is accepted only when it has player rows, resident rows, world rows, ph
 
 The prototype now exposes a player-facing world stage loop:
 
-1. Gather the current guide action, resident, problem, proposal, practice, component, physics row, and resource pressure.
+1. Gather the current guide action, resident, problem, proposal, practice, component, physics row, lived-action physics cue, and resource pressure.
 2. Render that snapshot on the canvas as the main play surface.
 3. Store focus/cue/prompt rows for QA and acceptance.
 4. Keep panels available for inspection, but treat them as secondary to the canvas.
@@ -476,10 +476,11 @@ The first playable loop now has a player-facing practice path:
 2. Movement, object handling, support, and waiting create resident-observed bottlenecks through the practical discovery system.
 3. Each lived-practice row traces back to the ordinary pressure feed, movement route, or object interaction evidence that created it.
 4. Each lived action applies bounded physics to one real component: moisture, damage, stability, field stress, time/work cost, and tool burden.
-5. Residents generate local tests from those bottlenecks.
-6. Repeated evidence can create or strengthen an emergent practice node.
-7. The Lived practice card shows the local name, status, materials, supporting observations, failed ancestors, adoption, maintenance burden, and physics rows.
-8. Hidden law remains audit-only, and the avatar does not install the correct explanation.
+5. The canvas draws that lived-action physics on the affected component as primitive rings, state bars, and a latest physics ID.
+6. Residents generate local tests from those bottlenecks.
+7. Repeated evidence can create or strengthen an emergent practice node.
+8. The Lived practice card shows the local name, status, materials, supporting observations, failed ancestors, adoption, maintenance burden, and physics rows.
+9. Hidden law remains audit-only, and the avatar does not install the correct explanation.
 
 This is the bridge from ordinary play into invented practice history.
 

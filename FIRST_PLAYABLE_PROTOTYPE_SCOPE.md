@@ -113,3 +113,9 @@ Prototype v0 includes a minimal ecology/food subsystem:
 - save/return and acceptance counters for growth, harvest, spoilage, hunger, and safety rows
 
 This is bounded survival ecology, not an agriculture tech tree.
+
+## Included prototype physics layer: structural stress
+
+Prototype v0 now includes bounded structural stress for component-built structures. The included scope is support margin, bending/load stress, anchor slip, deformation, partial collapse markers, and repair proposals.
+
+Out of scope for v0: production-grade rigid-body simulation, finite-element accuracy, full fracture mechanics, polished construction art, and direct player building placement.

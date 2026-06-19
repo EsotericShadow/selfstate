@@ -349,3 +349,11 @@ Food now follows:
 terrain/water/heat state -> patch growth or rot -> cautious harvest -> spoilable stored food -> resident hunger relief -> overharvest/spoilage proposal if needed -> causal ledger row.
 
 The forage action can reduce hunger only through stored food or a successful ecology/harvest path.
+
+## Structural-stress physics loop
+
+The playable loop now includes a structural pass:
+
+world/weather/material state -> base stochastic physics -> load path solve -> structural stress/deformation -> possible partial collapse row -> resident repair pressure -> proposal/social consequence -> save/return persistence.
+
+The player can inspect the stress panel, but normal play should feel like living near residents whose structures sag, slip, overload, and need repair over time. The avatar still influences conditions; it does not directly command repairs or install hidden physics knowledge.

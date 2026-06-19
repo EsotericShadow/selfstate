@@ -197,3 +197,15 @@ Food work must satisfy:
 - no hidden-law exposure in normal player view
 
 Ledger rows now include `ecology_food_physics`, with patch growth rows, harvest rows, spoilage rows, hunger rows, proposal links, conservation flags, and resident-facing interpretation.
+
+## Structural-stress ledger rows
+
+Structural physics must preserve causal discipline:
+
+- no component stress without mass, support, weather, material strength, damage, or stochastic field pressure
+- no partial collapse without load path and probability evidence
+- no repair pressure without material/time/labor implications
+- no resource spawning when a structure sags or slips
+- no hidden load-path truth in normal resident view
+
+The current shell records `structural_stress_physics` rows with load paths, support margin, stress, deformation, collapse probability, repair pressure, and conservation checks.

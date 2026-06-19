@@ -271,3 +271,9 @@ The prototype now has bounded ecology and food physics. Nearby food patches trac
 Game-build consequence: hunger is no longer relieved by a magic forage action. Food must grow, be gathered, survive storage, and be consumed. Weather, terrain moisture, water route pressure, heat, spoilage, and resident hunger now affect ordinary survival and scheduling.
 
 Boundary: this is not a farming tech tree or population-growth system. It is a small causal ecology loop for the first village prototype.
+
+## Prototype v0 structural-stress physics update
+
+The game prototype shell now treats resident-built structures as stress-bearing component assemblies. The browser-local physics kernel tracks load paths, support margin, bending stress, anchor slip, deformation/sag, partial collapse rows, and repair pressure for the existing raised storage structure and future resident-built components.
+
+This remains a bounded prototype solver, not certified engineering physics. It strengthens the game direction: structures are not fixed assets, materials are not free labels, and stress consequences become resident-facing repair pressure through the village board and reality ledger.

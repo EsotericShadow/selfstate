@@ -158,3 +158,11 @@
 88. Force or wait for hunger pressure, then confirm resident foraging consumes stored food or records continued pressure instead of magically clearing hunger.
 89. Save and return after ecology physics, then confirm saved slot summaries preserve growth, harvest, and hunger counts.
 90. Export acceptance and confirm `ecology_food_physics` is part of the prototype acceptance requirements.
+
+## Structural-stress physics playtests
+
+91. Run `Structural stress` and inspect whether load paths, stress rows, deformation rows, and repair pressure appear without fixed building assets.
+92. End several village days and confirm structure stress changes through ordinary weather/time progression.
+93. Use `Stress loop`, then inspect the Reality Constraint Ledger for a `structural_stress_physics` row with conservation and hidden-law separation.
+94. Confirm resident proposals can mention physical strain without letting the avatar directly command a repair.
+95. Save and return after structural stress accumulates; confirm stress counters persist in the save panel.

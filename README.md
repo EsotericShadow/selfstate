@@ -2202,3 +2202,5 @@ Thermal/fire physics is now part of Prototype v0: watched heat sources consume f
 Water/fluid physics is now part of Prototype v0: contained jar water, puddles, and small runoff channels track volume, leaks, evaporation, route pressure, quality, resident footing effects, and recoverable safety proposals.
 
 Ecology/food physics is now part of Prototype v0: edible patches grow or rot from terrain/water/heat pressure, harvest creates stored food, food can spoil, hunger relief consumes food, and food pressure can create recoverable resident proposals.
+
+Structural-stress physics now extends the game prototype shell with load paths, support margin, bending stress, anchor slip, deformation/sag, partial collapse rows, and resident repair pressure for component-built structures.

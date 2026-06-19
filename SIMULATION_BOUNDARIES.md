@@ -45,3 +45,7 @@ Deep-time effects must still follow the existing boundaries: no predeclared tech
 ## Survivability boundary
 
 Long-run survival is a compressed game-state metric, not proof of real civilization modeling. A civilization may flourish, fragment, survive as trace memory, or collapse into trace memory. These outcomes are generated from stochastic pressure and lineage state; they are not authored endings or moral claims.
+
+## Autonomous resident boundary
+
+Autonomous resident actions are stochastic game mechanics. They are not autonomous language, consciousness, or moral patienthood. They must remain bounded, inspectable, and causally grounded: no direct player command, no free work, no hidden-law knowledge in normal view, and no resource changes without ledger explanation.

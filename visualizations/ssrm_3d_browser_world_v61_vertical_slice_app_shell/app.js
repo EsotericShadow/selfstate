@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'deepTimeCivilization', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'deepTimeCivilization', 'autonomousResidents', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -85,6 +85,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   hintBranchPersistence: null,
   gamePrototype: null,
   deepTimeCivilization: null,
+  autonomousResidents: null,
   promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -2479,6 +2480,198 @@ function runCivilizationTenMillionYearSim() {
   return log('runCivilizationTenMillionYearSim', { year: sim.year, epochs: sim.epoch, effects: sim.emergentEffects.length, extinctions: sim.extinctions.length, survivalStatus: survival.status, continuityScore: survival.continuity_score });
 }
 
+function ensureAutonomousResidents() {
+  if (!world.autonomousResidents) {
+    const needState = {};
+    Object.keys(world.residents).forEach((name, index) => {
+      needState[name] = {
+        energy: 0.68 - index * 0.03,
+        hunger: 0.18 + index * 0.02,
+        attention: 0.62,
+        safety: 0.74,
+        autonomy: 0.58,
+      };
+    });
+    world.autonomousResidents = {
+      day: 0,
+      season: 0,
+      needState,
+      actionLog: [],
+      refusalLog: [],
+      careLedger: [],
+      entropyLedger: [],
+      boundary: {
+        noDirectPlayerCommand: true,
+        residentsCanRefuse: true,
+        actionsCostTimeAndNeed: true,
+        stochasticButAudited: true,
+      },
+    };
+  }
+  return world.autonomousResidents;
+}
+
+function clampNeed(value) {
+  return Math.max(0, Math.min(1, Number(value || 0)));
+}
+
+function driftResidentNeeds(needs, entropy, action) {
+  const effort = ['proposal_work', 'practice_maintenance', 'experiment', 'forage'].includes(action) ? 0.12 : 0.04;
+  const stress = entropy % 7 === 0 ? 0.08 : 0.02;
+  needs.energy = clampNeed(needs.energy - effort + (action === 'rest' ? 0.22 : 0));
+  needs.hunger = clampNeed(needs.hunger + effort * 0.6 - (action === 'forage' ? 0.12 : 0));
+  needs.attention = clampNeed(needs.attention - effort * 0.8 + (action === 'teach' ? 0.04 : 0));
+  needs.safety = clampNeed(needs.safety - stress + (action === 'repair_safety' ? 0.14 : 0));
+  needs.autonomy = clampNeed(needs.autonomy + (action === 'refuse' ? 0.08 : -0.015));
+  return needs;
+}
+
+function chooseAutonomousResidentAction(residentName, entropy) {
+  const sim = ensureAutonomousResidents();
+  const needs = sim.needState[residentName];
+  const board = world.villageBoard;
+  const hasProposal = Boolean(board && board.projectProposals && board.projectProposals.length);
+  const hasPractice = Boolean(world.emergentPracticeGraph && world.emergentPracticeGraph.nodes && world.emergentPracticeGraph.nodes.length);
+  const lowResource = (world.resources.water || 0) < 5 || (world.resources.fiber || 0) < 5 || (world.resources.care || 0) < 3;
+  if (needs.energy < 0.22 || needs.hunger > 0.78) return 'rest';
+  if (needs.autonomy > 0.74 && entropy % 5 === 0) return 'refuse';
+  if (needs.safety < 0.42) return 'repair_safety';
+  if (lowResource) return 'forage';
+  if (hasProposal && entropy % 3 !== 0) return 'proposal_work';
+  if (hasPractice && entropy % 4 === 0) return 'practice_maintenance';
+  if (hasPractice && entropy % 4 === 1) return 'teach';
+  return entropy % 2 === 0 ? 'experiment' : 'observe';
+}
+
+function applyAutonomousResidentAction(residentName, action, entropy) {
+  const sim = ensureAutonomousResidents();
+  const needs = driftResidentNeeds(sim.needState[residentName], entropy, action);
+  const resident = world.residents[residentName];
+  const board = ensureVillageBoard();
+  const proposal = board.projectProposals[board.projectProposals.length - 1] || null;
+  const practice = world.emergentPracticeGraph && world.emergentPracticeGraph.nodes.length ? world.emergentPracticeGraph.nodes[world.emergentPracticeGraph.nodes.length - 1] : null;
+  let schedule = resident.schedule;
+  let memory = resident.memory;
+  let materialCost = [];
+  let progressDelta = 0.004;
+  let trustDelta = 0;
+  let careDelta = 0;
+  if (action === 'rest') {
+    schedule = 'rests near familiar work';
+    memory = 'rested before deciding what to carry next';
+    progressDelta = 0.001;
+  } else if (action === 'refuse') {
+    schedule = 'keeps boundary before helping';
+    memory = 'refused an implied priority and kept autonomy';
+    trustDelta = -0.003;
+    sim.refusalLog.push({ day: sim.day, resident: residentName, reason: 'autonomy need exceeded threshold', entropy });
+  } else if (action === 'repair_safety') {
+    schedule = 'repairs a safety marker';
+    memory = 'raised safety after pressure';
+    materialCost = ['wood'];
+    world.resources.wood = Math.max(0, world.resources.wood - 1);
+    progressDelta = 0.008;
+  } else if (action === 'forage') {
+    schedule = 'forages for strained commons';
+    memory = 'brought back small supplies under pressure';
+    world.resources.water = Math.min(99, world.resources.water + 1);
+    world.resources.fiber = Math.min(99, world.resources.fiber + 1);
+    progressDelta = 0.006;
+  } else if (action === 'proposal_work' && proposal) {
+    schedule = `works on ${proposal.problem_addressed}`;
+    memory = `worked on resident proposal ${proposal.proposal_id}`;
+    materialCost = proposal.materials_needed.slice(0, 2);
+    world.resources.fiber = Math.max(0, world.resources.fiber - (materialCost.includes('fiber') ? 1 : 0));
+    world.resources.care = Math.max(0, world.resources.care - (materialCost.includes('care') ? 1 : 0));
+    proposal.current_support_level = Number(Math.min(1, proposal.current_support_level + 0.08).toFixed(3));
+    progressDelta = 0.012;
+    trustDelta = 0.003;
+  } else if (action === 'practice_maintenance' && practice) {
+    schedule = `maintains ${practice.local_name || practice.practice_id}`;
+    memory = `kept practice ${practice.practice_id || practice.local_name} from decaying`;
+    materialCost = ['fiber'];
+    world.resources.fiber = Math.max(0, world.resources.fiber - 1);
+    progressDelta = 0.009;
+  } else if (action === 'teach' && practice) {
+    schedule = `teaches ${practice.local_name || practice.practice_id}`;
+    memory = `taught a local variant without naming hidden law`;
+    progressDelta = 0.01;
+    trustDelta = 0.002;
+  } else if (action === 'experiment') {
+    schedule = 'tries a small resident-chosen test';
+    memory = 'made a small observation from ordinary bottleneck';
+    materialCost = ['fiber'];
+    world.resources.fiber = Math.max(0, world.resources.fiber - 1);
+    runPracticalDiscoveryStep('autonomous_experiment');
+    progressDelta = 0.007;
+  } else {
+    schedule = 'observes village pressure';
+    memory = 'noticed pressure without acting yet';
+  }
+  mutateResident(residentName, {
+    trust: trustDelta,
+    progress: progressDelta,
+    schedule,
+    memory,
+    historyEvent: 'autonomous resident action',
+    historyDetail: `${action}; entropy ${entropy}; no direct player command`
+  });
+  const row = {
+    action_id: `ARA-${String(sim.actionLog.length + 1).padStart(3, '0')}`,
+    day: sim.day,
+    season: sim.season,
+    resident: residentName,
+    action,
+    entropy,
+    needs: { ...needs },
+    material_cost: materialCost,
+    schedule,
+    memory,
+    no_direct_player_command: true,
+  };
+  sim.actionLog.push(row);
+  sim.careLedger.push({ action_id: row.action_id, resident: residentName, energy: needs.energy, hunger: needs.hunger, safety: needs.safety, autonomy: needs.autonomy });
+  recordRealityConstraint('autonomous_resident_action', {
+    resident: residentName,
+    sourceBeliefId: row.action_id,
+    materials: materialCost,
+    publicObservation: schedule,
+    residentInterpretation: memory,
+    materialTransformation: materialCost.length ? 'resident consumed or moved material through autonomous action' : 'attention/time spent without material transformation',
+    timeCost: 1,
+    workCost: ['rest', 'observe', 'refuse'].includes(action) ? 0 : 1,
+    toolWear: ['proposal_work', 'practice_maintenance', 'repair_safety'].includes(action) ? 1 : 0,
+    maintenanceObligation: action === 'proposal_work' && proposal ? proposal.proposal_id : 'none',
+    unintendedConsequence: action === 'refuse' ? 'resident autonomy preserved' : 'ordinary world state changed without player command',
+    hiddenLawInvolved: 'none in normal view',
+    conservationCheck: true
+  });
+  return row;
+}
+
+function runAutonomousResidentTick() {
+  const sim = ensureAutonomousResidents();
+  const entropy = deepTimeEntropyByte();
+  const residentNames = Object.keys(world.residents);
+  const residentName = residentNames[(entropy + sim.day + sim.actionLog.length) % residentNames.length];
+  const action = chooseAutonomousResidentAction(residentName, entropy);
+  sim.day += 1;
+  sim.entropyLedger.push({ day: sim.day, entropy, source: window.crypto && window.crypto.getRandomValues ? 'crypto.getRandomValues' : 'Math.random fallback' });
+  const row = applyAutonomousResidentAction(residentName, action, entropy);
+  recordPrototypeMilestone('autonomous-resident-tick', `${residentName} chose ${action} without direct player command`);
+  return log('runAutonomousResidentTick', { resident: residentName, action, day: sim.day, entropy, needs: row.needs });
+}
+
+function runAutonomousResidentSeason() {
+  const sim = ensureAutonomousResidents();
+  const before = sim.actionLog.length;
+  sim.season += 1;
+  for (let i = 0; i < 18; i += 1) runAutonomousResidentTick();
+  if (sim.season % 2 === 0) runCivilizationDeepTimeEpoch(250);
+  recordPrototypeMilestone('autonomous-resident-season', `${sim.actionLog.length - before} autonomous action(s); season ${sim.season}`);
+  return log('runAutonomousResidentSeason', { season: sim.season, actionsAdded: sim.actionLog.length - before, totalActions: sim.actionLog.length });
+}
+
 function formatPrototypeVillageState() {
   const residentLines = Object.entries(world.residents)
     .slice(0, 6)
@@ -2503,12 +2696,14 @@ function formatPrototypePublicOutcomes() {
   const deepTime = world.deepTimeCivilization;
   const consequenceCount = deepTime && deepTime.villageConsequences ? deepTime.villageConsequences.length : 0;
   const survivalStatus = deepTime && deepTime.civilizationState ? deepTime.civilizationState.status : 'not audited';
+  const autonomous = world.autonomousResidents;
   return [
     `Practice graph: ${practiceCount} node(s)${latestPractice ? ` / latest ${latestPractice.local_name || latestPractice.practice_id}` : ''}`,
     `Village board: ${boardCount} proposal(s)${latestProposal ? ` / latest ${latestProposal.problem_addressed || latestProposal.proposal_id}` : ''}`,
     `Reality ledger: ${ledgerRows} causal row(s)`,
     `Return branches: ${branchRows} continuity row(s)${latestBranch ? ` / latest ${latestBranch.return_status}` : ''}`,
     `Deep time: ${deepTime ? `${deepTime.year} years / ${deepTime.emergentEffects.length} emergent effect(s) / ${consequenceCount} village consequence(s) / ${survivalStatus}` : 'not started'}`,
+    `Autonomous residents: ${autonomous ? `${autonomous.day} day(s) / ${autonomous.actionLog.length} action(s) / ${autonomous.refusalLog.length} refusal(s)` : 'not started'}`,
     `Audit mode: ${world.audit ? 'on' : 'off'} / hidden law normal view: no`,
   ].join('\n');
 }
@@ -2553,18 +2748,38 @@ function formatPrototypeDeepTime() {
   ].join('\n');
 }
 
+function formatPrototypeAutonomousResidents() {
+  const sim = world.autonomousResidents;
+  if (!sim) return 'No autonomous resident ticks yet. Run Resident tick or Resident season.';
+  const actions = sim.actionLog.slice(-8).map(row => `${row.action_id}: day ${row.day}, ${row.resident} chose ${row.action}; energy=${row.needs.energy.toFixed(2)} hunger=${row.needs.hunger.toFixed(2)} safety=${row.needs.safety.toFixed(2)}`);
+  const refusals = sim.refusalLog.slice(-4).map(row => `day ${row.day}: ${row.resident} refused because ${row.reason}`);
+  const care = sim.careLedger.slice(-6).map(row => `${row.action_id}: ${row.resident} energy=${row.energy.toFixed(2)} hunger=${row.hunger.toFixed(2)} autonomy=${row.autonomy.toFixed(2)}`);
+  return [
+    `Day: ${sim.day} / season: ${sim.season}`,
+    `Boundary: stochastic autonomous actions; no direct player command; actions cost time/needs/materials.`,
+    'Recent actions:',
+    ...(actions.length ? actions : ['none']),
+    'Refusals:',
+    ...(refusals.length ? refusals : ['none']),
+    'Care ledger:',
+    ...(care.length ? care : ['none']),
+  ].join('\n');
+}
+
 function renderGamePrototypeSurface() {
   const objectiveNode = document.getElementById('gamePrototypeObjectiveOut');
   const villageNode = document.getElementById('gamePrototypeVillageOut');
   const publicNode = document.getElementById('gamePrototypePublicOut');
   const loopNode = document.getElementById('gamePrototypeLoopOut');
   const deepTimeNode = document.getElementById('gamePrototypeDeepTimeOut');
+  const autonomousNode = document.getElementById('gamePrototypeAutonomousOut');
   const prototype = world.gamePrototype || ensureGamePrototype();
   if (objectiveNode) objectiveNode.textContent = prototype.objective;
   if (villageNode) villageNode.textContent = formatPrototypeVillageState();
   if (publicNode) publicNode.textContent = formatPrototypePublicOutcomes();
   if (loopNode) loopNode.textContent = formatPrototypeLoopReceipt();
   if (deepTimeNode) deepTimeNode.textContent = formatPrototypeDeepTime();
+  if (autonomousNode) autonomousNode.textContent = formatPrototypeAutonomousResidents();
 }
 
 function bindControls() {
@@ -3209,6 +3424,8 @@ function describeReplayRow(row) {
     runCivilizationMillionYearSim: `million-year sim year=${payload.year} epochs=${payload.epochs} effects=${payload.effects}`,
     runCivilizationTenMillionYearSim: `ten-million-year sim year=${payload.year} status=${payload.survivalStatus}`,
     runCivilizationSurvivalAudit: `survival audit ${payload.status} score=${payload.continuityScore}`,
+    runAutonomousResidentTick: `autonomous resident ${payload.resident} chose ${payload.action} day=${payload.day}`,
+    runAutonomousResidentSeason: `autonomous season ${payload.season} actions=${payload.actionsAdded}`,
     supportVillageProposal: `supported village proposal ${payload.proposalId} accepted=${payload.accepted}`,
     askVillageBoardQuestion: `asked village board question ${payload.proposalId}`,
     waitOnVillageBoard: `waited on village board proposals=${payload.proposals}`,
@@ -4389,6 +4606,6 @@ function renderHintBranchPersistence() {
   ].join('\n');
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, runCivilizationDeepTimeEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, runCivilizationDeepTimeEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

@@ -84,3 +84,12 @@
 3. Audit survival from active lineages, trace lineages, memory, resources, burden, and recovery potential.
 4. Classify the civilization as flourishing, strained continuity, fragmented survival, trace-memory survival, or collapsed into trace memory.
 5. Keep collapsed or trace states inspectable rather than treating them as failure to simulate.
+
+## Autonomous resident loop
+
+1. Runtime entropy selects a resident and pressure context.
+2. The resident chooses an action from needs, resources, autonomy, safety, proposals, and practices.
+3. The action changes needs, schedule, memory, resources, proposal support, or practice maintenance.
+4. Residents may refuse implied priorities when autonomy pressure is high.
+5. Each action writes a causal ledger row so stochastic autonomy remains inspectable.
+6. Seasonal autonomous activity can trigger compressed deep-time evolution.

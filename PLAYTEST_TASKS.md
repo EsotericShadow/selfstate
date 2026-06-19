@@ -241,3 +241,11 @@
 - Confirm Ask, Support, and Wait create deck action rows with no direct command and no hidden-law exposure.
 - Confirm Support can consume scarce resources only through the resident proposal system.
 - Export acceptance and confirm `resident_proposal_deck` appears as a requirement after the proposal deck loop runs.
+
+## Lived practice loop playtests
+
+- Run `Practice` from the normal rail and confirm the `Lived practice loop` card appears in Player mode.
+- Confirm repeated ordinary actions create lived-practice action rows and practice snapshots.
+- Confirm the card shows a local practice name, status, materials, supporting observations, failed ancestors, adoption count, and maintenance cost.
+- Confirm rows record no direct command, no hidden-law exposure, no tech-tree unlock, and no correct concept installation.
+- Export acceptance and confirm `lived_practice_loop` appears as a requirement after the practice loop runs.

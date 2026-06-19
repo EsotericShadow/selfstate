@@ -25,7 +25,7 @@ body {
 .world-panel, .side-panel, .panel { background: var(--panel); border: 1px solid rgba(17, 24, 22, 0.2); border-radius: 20px; padding: 14px; }
 canvas { width: 100%; min-height: 600px; border: 5px solid var(--ink); background: #12231d; box-shadow: 0 24px 80px rgba(17, 24, 22, 0.34); }
 .quickbar, .qa-buttons { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-top: 10px; }
-.normal-play-rail { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 8px; margin-top: 10px; }
+.normal-play-rail { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 8px; margin-top: 10px; }
 .normal-play-rail button { background: #111816; border: 1px solid rgba(249, 235, 201, 0.28); }
 .normal-play-rail button:last-child { background: var(--gold); color: var(--ink); }
 button { border: 0; border-radius: 999px; padding: 9px 10px; color: #fff6de; background: var(--moss); cursor: pointer; font-weight: 700; }

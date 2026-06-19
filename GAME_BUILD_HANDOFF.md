@@ -384,3 +384,11 @@ The browser shell now includes a `Proposals` rail action, `Proposal deck` protot
 Player deck actions are limited to Ask, Support, and Wait. They route through the existing Village Board functions, preserve resident autonomy, record causal ledger rows, and can still produce delay, refusal, resource cost, or stalled work. The acceptance gate is `resident_proposal_deck`.
 
 This moves the prototype closer to a real village-management loop while preserving the rule that the avatar influences conditions rather than commanding people.
+
+## Game prototype v0 update: Lived Practice Loop
+
+The browser shell now includes a `Practice` normal rail action, `Practice loop` prototype action, and `Lived practice loop` player-mode card. The loop repeats ordinary player-language actions, routes them through practical discovery, and surfaces the resulting emergent practice as a normal gameplay object.
+
+The card shows local practice name, status, materials, supporting observations, failed ancestors, adoption count, and maintenance cost. Acceptance evidence is recorded as `lived_practice_loop`. The loop preserves the no-command, no-hidden-law-normal-view, no-correct-concept-installed, and no-predeclared-tech-tree boundaries.
+
+This is a key game-foundation step: practice formation is now visible from normal play instead of existing only as a debug panel or research receipt.

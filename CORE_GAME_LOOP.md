@@ -466,3 +466,16 @@ The normal player loop now includes a proposal deck:
 7. Every deck action records no direct command, no tech-tree unlock, and no hidden-law exposure in normal view.
 
 This is the diegetic management bridge: the player supports village conditions without assigning jobs.
+
+## Lived practice loop
+
+The first playable loop now has a player-facing practice path:
+
+1. The player uses ordinary actions from the normal rail.
+2. Repeated actions create resident-observed bottlenecks through the practical discovery system.
+3. Residents generate local tests from those bottlenecks.
+4. Repeated evidence can create or strengthen an emergent practice node.
+5. The Lived practice card shows the local name, status, materials, supporting observations, failed ancestors, adoption, and maintenance burden.
+6. Hidden law remains audit-only, and the avatar does not install the correct explanation.
+
+This is the bridge from ordinary play into invented practice history.

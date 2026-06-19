@@ -254,3 +254,19 @@ Required evidence:
 - no proposal card installs a technology concept or unlocks a tech tree
 
 This milestone turns resident proposals into a playable surface. It does not create a god-game task assignment panel.
+
+## Prototype v0 milestone: Lived Practice Loop
+
+`lived_practice_loop` is now part of first playable prototype scope.
+
+Required evidence:
+
+- repeated normal player actions can drive practical discovery
+- the loop creates practical test rows and emergent practice snapshots
+- the visible card shows local practice name, status, materials, observations, failed ancestors, adoption count, and maintenance burden
+- actions remain player-language actions, not subsystem-only buttons
+- the avatar does not directly command residents
+- hidden simulator law remains out of normal view
+- no predeclared technology or correct concept is installed
+
+This milestone makes practice formation visible as gameplay: residents stabilize a practice from repeated lived actions and bottlenecks, not from a fixed tech tree or report-only artifact.

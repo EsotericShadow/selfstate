@@ -2236,3 +2236,7 @@ The browser shell now includes a `Player mode` toggle and `Player mode loop`. Pl
 ## Game prototype v0 update: Resident Proposal Deck
 
 The browser shell now includes a player-facing resident proposal deck. `Proposals` presents resident-generated Village Board proposals as cards and lets the player Ask, Support, or Wait without assigning jobs. Deck actions write acceptance and causal evidence while preserving resident autonomy, resource constraints, hidden-law separation, and the no-tech-tree boundary.
+
+## Game prototype v0 update: Lived Practice Loop
+
+The browser shell now includes a player-facing lived practice loop. `Practice` repeats ordinary player-language actions, routes them through resident practical discovery, and displays the resulting emergent practice node in Player mode with local name, status, materials, supporting observations, failed ancestors, adoption count, and maintenance burden. This makes practice formation part of gameplay rather than a report-only artifact.

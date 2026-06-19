@@ -2240,3 +2240,7 @@ The browser shell now includes a player-facing resident proposal deck. `Proposal
 ## Game prototype v0 update: Lived Practice Loop
 
 The browser shell now includes a player-facing lived practice loop. `Practice` repeats ordinary player-language actions, routes them through resident practical discovery, and displays the resulting emergent practice node in Player mode with local name, status, materials, supporting observations, failed ancestors, adoption count, and maintenance burden. This makes practice formation part of gameplay rather than a report-only artifact.
+
+## Game prototype v0 update: Resident Worksite
+
+The browser shell now includes a player-facing resident worksite loop. `Worksite` advances and watches resident project work through the existing project system, showing progress, stalls, material consequences, component repairs/additions, construction ids, resident terms, practice links, and maintenance burden while preserving no-direct-command, no-resource-spawning, and audit-only hidden-law boundaries.

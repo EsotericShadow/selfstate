@@ -249,3 +249,11 @@
 - Confirm the card shows a local practice name, status, materials, supporting observations, failed ancestors, adoption count, and maintenance cost.
 - Confirm rows record no direct command, no hidden-law exposure, no tech-tree unlock, and no correct concept installation.
 - Export acceptance and confirm `lived_practice_loop` appears as a requirement after the practice loop runs.
+
+## Resident worksite playtests
+
+- Run `Worksite` from the normal rail and confirm the `Resident worksite` card appears in Player mode.
+- Confirm worksite rows come from resident proposal/project work and not direct job assignment.
+- Confirm the card shows proposal, resident, status, progress, construction id, resident term, linked practice, components added/repaired, stalls, and maintenance cost.
+- Confirm rows record no direct command, no hidden-law exposure, and no resource spawning.
+- Export acceptance and confirm `resident_worksite` appears as a requirement after the worksite loop runs.

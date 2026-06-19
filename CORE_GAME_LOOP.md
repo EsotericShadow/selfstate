@@ -479,3 +479,16 @@ The first playable loop now has a player-facing practice path:
 6. Hidden law remains audit-only, and the avatar does not install the correct explanation.
 
 This is the bridge from ordinary play into invented practice history.
+
+## Resident worksite loop
+
+The first playable loop now has a player-facing worksite path:
+
+1. Residents generate proposals through the Village Board and proposal deck.
+2. The player opens Worksite from the normal rail.
+3. Resident project work advances through the existing project system.
+4. Work can stall on readiness or resources, consume materials, use tools, repair components, add components, complete, or create future maintenance burden.
+5. The Worksite card shows progress, construction id, resident term, practice link, components added/repaired, stalls, and maintenance cost.
+6. The avatar watches and supports conditions but does not assign jobs or spawn resources.
+
+This is the practical management bridge from proposals into visible physical world change.

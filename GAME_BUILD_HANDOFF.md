@@ -392,3 +392,11 @@ The browser shell now includes a `Practice` normal rail action, `Practice loop` 
 The card shows local practice name, status, materials, supporting observations, failed ancestors, adoption count, and maintenance cost. Acceptance evidence is recorded as `lived_practice_loop`. The loop preserves the no-command, no-hidden-law-normal-view, no-correct-concept-installed, and no-predeclared-tech-tree boundaries.
 
 This is a key game-foundation step: practice formation is now visible from normal play instead of existing only as a debug panel or research receipt.
+
+## Game prototype v0 update: Resident Worksite
+
+The browser shell now includes a `Worksite` normal rail action, `Worksite loop` prototype action, and `Resident worksite` player-mode card. The worksite wraps the existing resident project system and displays consequences as gameplay: active proposal, resident, status, progress, construction id, resident term, linked practice, components added/repaired, stalls, and maintenance burden.
+
+The loop preserves project autonomy. Work can stall on resident readiness or resource scarcity, consume materials, wear tools, repair simulated components, add component-built structure pieces, complete, or create future maintenance obligations. Acceptance evidence is recorded as `resident_worksite`.
+
+This moves the prototype toward a playable village-management loop without turning it into job assignment or a fixed building-placement game.

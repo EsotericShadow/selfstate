@@ -270,3 +270,18 @@ Required evidence:
 - no predeclared technology or correct concept is installed
 
 This milestone makes practice formation visible as gameplay: residents stabilize a practice from repeated lived actions and bottlenecks, not from a fixed tech tree or report-only artifact.
+
+## Prototype v0 milestone: Resident Worksite
+
+`resident_worksite` is now part of first playable prototype scope.
+
+Required evidence:
+
+- the normal rail exposes a Worksite action
+- worksite rows come from resident proposal/project work, not player job assignment
+- project work can consume materials, stall, repair components, add components, complete, or create maintenance burden
+- the visible card shows proposal, resident, status, progress, construction id, resident term, related practice, components added/repaired, stalls, and maintenance cost
+- every row records no direct command, no hidden-law exposure in normal view, and no resource spawning
+- construction remains component-based, not fixed building assets
+
+This milestone makes project consequences visible as gameplay. The player watches and supports conditions; residents still perform the work.

@@ -1344,3 +1344,11 @@ Report 370 implements the first explicit practice-graph layer. Practice nodes ar
 The village board keeps management diegetic: residents post concerns and project proposal cards, while the avatar can support, ask, suggest, or wait but cannot force obedience. The reality ledger adds causal discipline: material sources, transformations, time/work costs, tool wear, resident effort, maintenance obligations, conservation checks, hidden-law audit rows, and public resident interpretations.
 
 Next gate: let successful local practices alter resident roles, reputation, and multi-household diffusion over return sessions without becoming a fixed technology tree.
+
+## Report 371: SSRM-3D Avatar Hint Divergence Bridge
+
+Report 371 prevents the avatar from becoming a knowledge-installation shortcut. Starting from Report 370 practice nodes and village-board concerns, avatar hints now become ambiguous inputs: a question, warning, demonstration, material offer, or wait-and-return gesture. Different households reinterpret the same hidden law through local trust, fear, material constraints, maintenance burden, and existing practice memory.
+
+The result is divergent history rather than a deterministic unlock. The same hint can become a useful local habit, a ritual, a taboo, a dispute, or a rejection. The boundary remains explicit: browser-local scaffolding, no LLM calls, no subjective-consciousness claim, no moral-patienthood claim, no real science/civilization claim, and no fixed technology tree.
+
+Next gate: make hint-divergent branches persist across return sessions and compete through household reputation, upkeep burden, forgetting, and revived practice memory.

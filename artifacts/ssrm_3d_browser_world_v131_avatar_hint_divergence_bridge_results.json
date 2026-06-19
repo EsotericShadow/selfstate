@@ -1,0 +1,39 @@
+{
+  "boundary": "Browser-local avatar-hint divergence bridge only. The avatar can ask, warn, demonstrate, wait, or offer material, but residents must interpret through household memory, trust, fear, materials, and prior practice. No LLM call, no autonomous language claim, no subjective-consciousness claim, no moral-patienthood claim, no real science claim, no finished civilization simulator, and no fixed technology tree.",
+  "counts": {
+    "divergence_branches": 48,
+    "hint_events": 16,
+    "household_interpretations": 48,
+    "practice_mutations": 29,
+    "reality_ledger": 48,
+    "resident_negotiations": 48,
+    "seed_outcomes": 8,
+    "source_links": 64,
+    "village_couplings": 16
+  },
+  "metrics": {
+    "audit_hidden_law_belief_split": 1.0,
+    "avatar_hint_not_direct_install": 1.0,
+    "browser_surface_static_smoke": 1.0,
+    "browser_surface_wired": 1.0,
+    "hint_requires_material_or_time_cost": 1.0,
+    "household_interpretation_divergence": 1.0,
+    "multi_seed_hint_divergence": 1.0,
+    "normal_view_no_modern_terms": 1.0,
+    "practice_mutation_from_existing_node": 1.0,
+    "reality_causal_ledger_integrity": 1.0,
+    "resident_refusal_and_delay_present": 1.0,
+    "same_hidden_law_different_histories": 1.0,
+    "shell_hint_divergence_wired": 1.0,
+    "source_trace_integrity": 1.0,
+    "taboo_or_ritual_branch_present": 1.0,
+    "village_board_proposal_coupling": 1.0,
+    "wrong_interpretation_can_be_useful": 1.0
+  },
+  "next_gate": "post-371: let hint-divergent branches compete across return sessions through household reputation, maintenance burden, and forgotten-or-revived practice memory without collapsing to a uniform unlock",
+  "readiness": 1.0,
+  "report": 371,
+  "slug": "ssrm_3d_browser_world_v131_avatar_hint_divergence_bridge",
+  "verdict": "pass",
+  "weakest_channel_score": 1.0
+}

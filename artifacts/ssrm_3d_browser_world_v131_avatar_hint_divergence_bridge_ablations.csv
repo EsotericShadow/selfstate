@@ -1,0 +1,9 @@
+ablation,expected_failed_metric,failed_as_expected,weakest_channel_score
+direct_correct_answer,avatar_hint_not_direct_install,True,0.0
+no_household_difference,household_interpretation_divergence,True,0.0
+no_trust_gate,resident_refusal_and_delay_present,True,0.0
+no_material_cost,hint_requires_material_or_time_cost,True,0.0
+no_practice_memory,practice_mutation_from_existing_node,True,0.0
+no_wait_and_refusal,resident_refusal_and_delay_present,True,0.0
+forced_uniform_history,multi_seed_hint_divergence,True,0.0
+no_audit_split,audit_hidden_law_belief_split,True,0.0

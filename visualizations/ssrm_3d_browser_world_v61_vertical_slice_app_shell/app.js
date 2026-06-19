@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -81,6 +81,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   emergentPracticeGraph: null,
   villageBoard: null,
   realityConstraintLedger: null,
+  avatarHintDivergence: null,
   promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -1993,6 +1994,7 @@ function runStateBoundaryAudit() {
     emergentPracticeGraph: world.emergentPracticeGraph,
     villageBoard: world.villageBoard,
     realityConstraintLedger: world.realityConstraintLedger,
+    avatarHintDivergence: world.avatarHintDivergence,
     promiseFollowUp: world.promiseFollowUp,
     obligationLedger: world.obligationLedger,
     scheduleQueue: world.scheduleQueue,
@@ -2687,6 +2689,9 @@ function describeReplayRow(row) {
     runPracticalDiscoveryStep: `practical discovery ${payload.action} bottleneck=${payload.bottleneckType} candidate=${payload.practiceCandidate}`,
     runPracticalDiscoveryLoop: `practical discovery loop actions=${payload.livedActions} candidates=${payload.practiceCandidates} adopted=${payload.practiceAdoptions}`,
     runVillageBoardLoop: `village board concerns=${payload.concerns} proposals=${payload.proposals} support=${payload.supportEvents}`,
+    introduceAvatarHint: `avatar hint ${payload.hintId} type=${payload.hintType} direct=${payload.directInstall === true}`,
+    runHintDivergenceInterpretation: `hint interpretations=${payload.interpretations} branches=${payload.branches} uniform=${payload.uniform === true}`,
+    runAvatarHintDivergenceLoop: `hint divergence hints=${payload.hints} branches=${payload.branches} mutations=${payload.mutations}`,
     supportVillageProposal: `supported village proposal ${payload.proposalId} accepted=${payload.accepted}`,
     askVillageBoardQuestion: `asked village board question ${payload.proposalId}`,
     waitOnVillageBoard: `waited on village board proposals=${payload.proposals}`,
@@ -2752,6 +2757,7 @@ function render() {
   renderEmergentPracticeGraph();
   renderVillageBoard();
   renderRealityConstraintLedger();
+  renderAvatarHintDivergence();
   draw();
 }
 function draw() {
@@ -3376,6 +3382,223 @@ function renderRealityConstraintLedger() {
   detailNode.textContent = [`Boundary: ${ledger.boundary}`, `Invariants: ${ledger.invariants.join('; ')}`, 'Recent causal rows:', ...(rows.length ? rows : ['none'])].join('\n');
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, runRealityConstraintAudit, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+function ensureAvatarHintDivergence() {
+  if (!world.avatarHintDivergence) {
+    world.avatarHintDivergence = {
+      hints: [],
+      householdInterpretations: [],
+      branches: [],
+      practiceMutations: [],
+      negotiations: [],
+      sourceLinks: [],
+      boundary: {
+        avatarCanInfluenceInquiry: true,
+        avatarCanInstallCorrectConcept: false,
+        hiddenLawNormalView: false,
+        uniformUnlocksAllowed: false,
+      },
+    };
+  }
+  return world.avatarHintDivergence;
+}
+
+function hintResidentFor(offset) {
+  const records = Array.isArray(world.residents) ? world.residents : Object.values(world.residents || {});
+  const names = records.map((row) => row.name || row.id || row.resident).filter(Boolean);
+  const fallback = ['Ari', 'Fay', 'Milo', 'Sera', 'Tovan', 'Nia'];
+  const pool = names.length ? names : fallback;
+  return pool[offset % pool.length];
+}
+
+function latestPracticeForHint() {
+  if (!world.emergentPracticeGraph || !world.emergentPracticeGraph.nodes.length) runPracticalDiscoveryLoop();
+  const graph = ensureEmergentPracticeGraph();
+  return graph.nodes[graph.nodes.length - 1] || {
+    practice_id: 'local-observation-only',
+    local_name: 'quiet sign practice',
+    materials_used: ['reed_fiber', 'dry_resin'],
+    status: 'emerging',
+    origin_event: 'avatar-nearby-observation',
+  };
+}
+
+function introduceAvatarHint(kind = 'question') {
+  const hints = ensureAvatarHintDivergence();
+  if (!world.villageBoard || !world.villageBoard.projectProposals.length) runVillageBoardLoop();
+  const source = latestPracticeForHint();
+  const hintIndex = hints.hints.length;
+  const hintKinds = ['question', 'warning', 'material_offer', 'demonstration', 'wait_and_return'];
+  const hintType = hintKinds[hintIndex % hintKinds.length] || kind;
+  const resident = hintResidentFor(hintIndex);
+  const sourceMaterials = Array.isArray(source.materials_used) ? source.materials_used : String(source.materials_used || 'local material').split('+');
+  const material = hintType === 'material_offer' ? ['dry_reed_scrap'] : sourceMaterials;
+  const hint = {
+    hint_id: `AHD-${String(hints.hints.length + 1).padStart(2, '0')}`,
+    tick: world.tick || world.replay.length,
+    hint_type: hintType,
+    resident_target: resident,
+    household: `house_${hintIndex % 4}`,
+    source_practice_id: source.practice_id,
+    source_local_name: source.local_name,
+    avatar_action: hintType === 'question' ? 'asked what changed, without naming the cause' : `offered ${hintType.replace('_', ' ')}`,
+    material_used: material,
+    visible_demonstration: hintType === 'demonstration' ? `showed ${source.local_name} once` : 'no final answer given',
+    correct_explanation_given: false,
+    direct_install: false,
+    future_use_named: false,
+    resident_must_interpret: true,
+    time_cost: 1,
+    material_cost: hintType === 'material_offer' || hintType === 'demonstration' ? 1 : 0,
+  };
+  hints.hints.push(hint);
+  hints.sourceLinks.push({ source_practice_id: source.practice_id, hint_id: hint.hint_id, avatar_role: 'influenced inquiry, did not command adoption', hidden_law_exposed: false });
+  recordRealityConstraint('avatar_hint_divergence', {
+    materialSources: material,
+    materialTransformation: hint.material_cost ? 'one sample handled during hint' : 'no material transformed',
+    timeCost: hint.time_cost,
+    laborCost: 1,
+    toolWear: 0,
+    residentEffort: 1,
+    hiddenLawInvolved: 'audit-only material law',
+    publicObservation: hint.visible_demonstration,
+    residentInterpretation: 'open question, warning, or offer',
+    resourcesBefore: 10,
+    resourcesAfter: 10 - hint.material_cost,
+    conservationCheck: true,
+    maintenanceObligationCreated: 'none',
+    unintendedConsequence: 'households may disagree',
+  });
+  return log('introduceAvatarHint', { hintId: hint.hint_id, hintType, directInstall: false, resident });
+}
+
+function runHintDivergenceInterpretation() {
+  const hints = ensureAvatarHintDivergence();
+  if (!hints.hints.length) introduceAvatarHint();
+  const hint = hints.hints[hints.hints.length - 1];
+  const interpretationsBefore = hints.householdInterpretations.length;
+  const branchesBefore = hints.branches.length;
+  const branchPlans = [
+    { status: 'useful_practice', label: 'dry keeping habit', stance: 'tries a small repeat', willingness: 0.72 },
+    { status: 'ritualized', label: 'quiet sign waiting', stance: 'keeps a caution ritual', willingness: 0.48 },
+    { status: 'taboo', label: 'storm-thread avoidance', stance: 'warns children away', willingness: 0.26 },
+    { status: 'disputed', label: 'wet counterexample note', stance: 'asks for another test', willingness: 0.55 },
+  ];
+  for (let i = 0; i < 3; i += 1) {
+    const plan = branchPlans[(hints.branches.length + i) % branchPlans.length];
+    const resident = hintResidentFor(hints.householdInterpretations.length + i + 1);
+    const interpretation = {
+      interpretation_id: `AHI-${String(hints.householdInterpretations.length + 1).padStart(2, '0')}`,
+      hint_id: hint.hint_id,
+      resident,
+      household: `house_${(hints.householdInterpretations.length + i) % 4}`,
+      local_interpretation: `${plan.label} from ${hint.source_local_name}`,
+      stance: plan.stance,
+      trust_gate: plan.willingness,
+      hidden_law_known: false,
+      correct_concept_received: false,
+      modern_name_used: false,
+    };
+    hints.householdInterpretations.push(interpretation);
+    const branch = {
+      branch_id: `AHB-${String(hints.branches.length + 1).padStart(2, '0')}`,
+      hint_id: hint.hint_id,
+      interpretation_id: interpretation.interpretation_id,
+      resident,
+      household: interpretation.household,
+      branch_status: plan.status,
+      branch_reason: `${resident} interprets the hint through ${plan.stance}`,
+      accepts_avatar_priority: plan.willingness > 0.5,
+      can_refuse_or_delay: plan.willingness <= 0.55,
+      source_practice_id: hint.source_practice_id,
+      social_echo: `${resident}->${hintResidentFor(hints.branches.length + 2)}`,
+      avatar_commanded: false,
+    };
+    hints.branches.push(branch);
+    hints.negotiations.push({
+      negotiation_id: `AHN-${String(hints.negotiations.length + 1).padStart(2, '0')}`,
+      branch_id: branch.branch_id,
+      resident,
+      response: branch.accepts_avatar_priority ? 'accepts a limited trial' : 'delays, refuses, or asks council first',
+      remembered_boundary: 'avatar suggested; resident decided',
+    });
+    if (plan.status === 'useful_practice' || plan.status === 'ritualized' || plan.status === 'taboo') {
+      hints.practiceMutations.push({
+        mutation_id: `AHM-${String(hints.practiceMutations.length + 1).padStart(2, '0')}`,
+        parent_practice_id: hint.source_practice_id,
+        local_name: interpretation.local_interpretation,
+        status: plan.status === 'useful_practice' ? 'practical' : plan.status,
+        originating_household: interpretation.household,
+        evidence_source: interpretation.interpretation_id,
+        adoption_count: plan.status === 'taboo' ? 0 : 1,
+        not_predefined_unlock: true,
+      });
+    }
+    recordRealityConstraint('household_hint_interpretation', {
+      materialSources: hint.material_used,
+      materialTransformation: 'no new material unless household repeats it later',
+      timeCost: 1,
+      laborCost: 1,
+      toolWear: 0,
+      residentEffort: 1,
+      hiddenLawInvolved: 'audit-only material law',
+      publicObservation: hint.visible_demonstration,
+      residentInterpretation: interpretation.local_interpretation,
+      resourcesBefore: 10,
+      resourcesAfter: 10,
+      conservationCheck: true,
+      maintenanceObligationCreated: plan.status === 'useful_practice' ? interpretation.local_interpretation : 'none',
+      unintendedConsequence: branch.branch_status,
+    });
+  }
+  return log('runHintDivergenceInterpretation', {
+    interpretations: hints.householdInterpretations.length,
+    branches: hints.branches.length,
+    addedInterpretations: hints.householdInterpretations.length - interpretationsBefore,
+    addedBranches: hints.branches.length - branchesBefore,
+    uniform: new Set(hints.branches.map((row) => row.branch_status)).size <= 1,
+  });
+}
+
+function runAvatarHintDivergenceLoop() {
+  const hints = ensureAvatarHintDivergence();
+  runVillageBoardLoop();
+  introduceAvatarHint('question');
+  runHintDivergenceInterpretation();
+  introduceAvatarHint('warning');
+  runHintDivergenceInterpretation();
+  return log('runAvatarHintDivergenceLoop', {
+    hints: hints.hints.length,
+    interpretations: hints.householdInterpretations.length,
+    branches: hints.branches.length,
+    mutations: hints.practiceMutations.length,
+    directInstall: hints.hints.some((row) => row.direct_install),
+  });
+}
+
+function renderAvatarHintDivergence() {
+  const summaryNode = document.getElementById('avatarHintDivergenceSummaryOut');
+  const detailNode = document.getElementById('avatarHintDivergenceOut');
+  const hints = world.avatarHintDivergence;
+  if (summaryNode) summaryNode.textContent = hints ? `${hints.hints.length} hints / ${hints.branches.length} branches / ${hints.practiceMutations.length} mutations` : 'No hints yet.';
+  if (!detailNode) return;
+  if (!hints) {
+    detailNode.textContent = 'No avatar hint divergence yet. The avatar can ask, warn, demonstrate, or offer material, but residents must interpret it.';
+    return;
+  }
+  const recentHints = hints.hints.slice(-4).map(row => `${row.hint_id}: ${row.hint_type} to ${row.resident_target}, direct=${row.direct_install}`);
+  const branches = hints.branches.slice(-8).map(row => `${row.branch_id}: ${row.resident} ${row.branch_status}, force=${row.avatar_commanded}`);
+  const mutations = hints.practiceMutations.slice(-6).map(row => `${row.mutation_id}: ${row.local_name} status=${row.status} parent=${row.parent_practice_id}`);
+  detailNode.textContent = [
+    `Boundary: avatar influences inquiry, residents interpret; hidden laws remain audit-only; no uniform unlock.`,
+    'Hints:',
+    ...(recentHints.length ? recentHints : ['none']),
+    'Branches:',
+    ...(branches.length ? branches : ['none']),
+    'Practice mutations:',
+    ...(mutations.length ? mutations : ['none']),
+  ].join('\n');
+}
+
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

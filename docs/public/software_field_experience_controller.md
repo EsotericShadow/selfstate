@@ -593,3 +593,7 @@ Report 369 moves belief lineage out of report-only history and into ordinary bro
 ## Report 370 public note: emergent practices, village board, and causal ledger
 
 Report 370 adds a first emergent practice graph generated after resident actions, bottlenecks, repeated tests, failed ancestors, social mutation, and remembered evidence. It also adds a diegetic Village Board where residents post concerns and proposals without direct avatar control, plus a Reality Constraint Ledger for material sources, transformations, time/work costs, maintenance, conservation checks, and hidden-law/public-belief separation. Boundary remains deterministic local scaffolding: no LLM calls, no subjective-consciousness claim, no moral-patienthood claim, no real science/civilization claim, and no pre-authored tech tree.
+
+## Report 371 public note: avatar hints diverge through households
+
+Report 371 keeps the emergent-practice line from collapsing into avatar-authored teaching. The avatar can ask, warn, demonstrate, offer material, or wait, but households must interpret the hint through their own trust, fear, material limits, maintenance burden, and practice memory. The same hidden-law situation can become a useful habit, ritual, taboo, dispute, or rejection without naming a modern concept or creating a uniform unlock. Boundary remains browser-local deterministic scaffolding: no LLM calls, no subjective-consciousness claim, no moral-patienthood claim, no real science/civilization claim, and no fixed technology tree.

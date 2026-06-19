@@ -1,0 +1,49 @@
+seed,negotiation_id,branch_id,resident,response,resident_willingness,avatar_cannot_force,relationship_memory_note
+36217,36217-AHN-001-1,36217-AHB-001-1,Milo,refuses until an elder watches,0.22,True,avatar suggested; household decided
+36217,36217-AHN-001-2,36217-AHB-001-2,Sera,puts the hint aside for later,0.31,True,avatar suggested; household decided
+36217,36217-AHN-001-3,36217-AHB-001-3,Tovan,delays and asks the campfire first,0.46,True,avatar suggested; household decided
+36217,36217-AHN-002-1,36217-AHB-002-1,Sera,asks for another small test,0.55,True,avatar suggested; household decided
+36217,36217-AHN-002-2,36217-AHB-002-2,Tovan,accepts a limited household trial,0.72,True,avatar suggested; household decided
+36217,36217-AHN-002-3,36217-AHB-002-3,Nia,refuses until an elder watches,0.22,True,avatar suggested; household decided
+36231,36231-AHN-003-1,36231-AHB-003-1,Ari,asks for another small test,0.55,True,avatar suggested; household decided
+36231,36231-AHN-003-2,36231-AHB-003-2,Fay,accepts a limited household trial,0.72,True,avatar suggested; household decided
+36231,36231-AHN-003-3,36231-AHB-003-3,Milo,refuses until an elder watches,0.22,True,avatar suggested; household decided
+36231,36231-AHN-004-1,36231-AHB-004-1,Fay,puts the hint aside for later,0.31,True,avatar suggested; household decided
+36231,36231-AHN-004-2,36231-AHB-004-2,Milo,delays and asks the campfire first,0.46,True,avatar suggested; household decided
+36231,36231-AHN-004-3,36231-AHB-004-3,Sera,asks for another small test,0.55,True,avatar suggested; household decided
+36247,36247-AHN-005-1,36247-AHB-005-1,Ari,delays and asks the campfire first,0.46,True,avatar suggested; household decided
+36247,36247-AHN-005-2,36247-AHB-005-2,Fay,asks for another small test,0.55,True,avatar suggested; household decided
+36247,36247-AHN-005-3,36247-AHB-005-3,Milo,accepts a limited household trial,0.72,True,avatar suggested; household decided
+36247,36247-AHN-006-1,36247-AHB-006-1,Fay,refuses until an elder watches,0.22,True,avatar suggested; household decided
+36247,36247-AHN-006-2,36247-AHB-006-2,Milo,puts the hint aside for later,0.31,True,avatar suggested; household decided
+36247,36247-AHN-006-3,36247-AHB-006-3,Sera,delays and asks the campfire first,0.46,True,avatar suggested; household decided
+36263,36263-AHN-007-1,36263-AHB-007-1,Ari,puts the hint aside for later,0.31,True,avatar suggested; household decided
+36263,36263-AHN-007-2,36263-AHB-007-2,Fay,delays and asks the campfire first,0.46,True,avatar suggested; household decided
+36263,36263-AHN-007-3,36263-AHB-007-3,Milo,asks for another small test,0.55,True,avatar suggested; household decided
+36263,36263-AHN-008-1,36263-AHB-008-1,Fay,accepts a limited household trial,0.72,True,avatar suggested; household decided
+36263,36263-AHN-008-2,36263-AHB-008-2,Milo,refuses until an elder watches,0.22,True,avatar suggested; household decided
+36263,36263-AHN-008-3,36263-AHB-008-3,Sera,puts the hint aside for later,0.31,True,avatar suggested; household decided
+36281,36281-AHN-009-1,36281-AHB-009-1,Milo,puts the hint aside for later,0.31,True,avatar suggested; household decided
+36281,36281-AHN-009-2,36281-AHB-009-2,Sera,delays and asks the campfire first,0.46,True,avatar suggested; household decided
+36281,36281-AHN-009-3,36281-AHB-009-3,Tovan,asks for another small test,0.55,True,avatar suggested; household decided
+36281,36281-AHN-010-1,36281-AHB-010-1,Sera,accepts a limited household trial,0.72,True,avatar suggested; household decided
+36281,36281-AHN-010-2,36281-AHB-010-2,Tovan,refuses until an elder watches,0.22,True,avatar suggested; household decided
+36281,36281-AHN-010-3,36281-AHB-010-3,Nia,puts the hint aside for later,0.31,True,avatar suggested; household decided
+36307,36307-AHN-011-1,36307-AHB-011-1,Ari,refuses until an elder watches,0.22,True,avatar suggested; household decided
+36307,36307-AHN-011-2,36307-AHB-011-2,Fay,puts the hint aside for later,0.31,True,avatar suggested; household decided
+36307,36307-AHN-011-3,36307-AHB-011-3,Milo,delays and asks the campfire first,0.46,True,avatar suggested; household decided
+36307,36307-AHN-012-1,36307-AHB-012-1,Fay,asks for another small test,0.55,True,avatar suggested; household decided
+36307,36307-AHN-012-2,36307-AHB-012-2,Milo,accepts a limited household trial,0.72,True,avatar suggested; household decided
+36307,36307-AHN-012-3,36307-AHB-012-3,Sera,refuses until an elder watches,0.22,True,avatar suggested; household decided
+36319,36319-AHN-013-1,36319-AHB-013-1,Milo,delays and asks the campfire first,0.46,True,avatar suggested; household decided
+36319,36319-AHN-013-2,36319-AHB-013-2,Sera,asks for another small test,0.55,True,avatar suggested; household decided
+36319,36319-AHN-013-3,36319-AHB-013-3,Tovan,accepts a limited household trial,0.72,True,avatar suggested; household decided
+36319,36319-AHN-014-1,36319-AHB-014-1,Sera,refuses until an elder watches,0.22,True,avatar suggested; household decided
+36319,36319-AHN-014-2,36319-AHB-014-2,Tovan,puts the hint aside for later,0.31,True,avatar suggested; household decided
+36319,36319-AHN-014-3,36319-AHB-014-3,Nia,delays and asks the campfire first,0.46,True,avatar suggested; household decided
+36343,36343-AHN-015-1,36343-AHB-015-1,Tovan,refuses until an elder watches,0.22,True,avatar suggested; household decided
+36343,36343-AHN-015-2,36343-AHB-015-2,Nia,puts the hint aside for later,0.31,True,avatar suggested; household decided
+36343,36343-AHN-015-3,36343-AHB-015-3,Ari,delays and asks the campfire first,0.46,True,avatar suggested; household decided
+36343,36343-AHN-016-1,36343-AHB-016-1,Nia,asks for another small test,0.55,True,avatar suggested; household decided
+36343,36343-AHN-016-2,36343-AHB-016-2,Ari,accepts a limited household trial,0.72,True,avatar suggested; household decided
+36343,36343-AHN-016-3,36343-AHB-016-3,Fay,refuses until an elder watches,0.22,True,avatar suggested; household decided

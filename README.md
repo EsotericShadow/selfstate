@@ -2174,3 +2174,7 @@ Report 369 makes long-horizon belief lineage affect ordinary civilization surfac
 ### Report 370: SSRM-3D Emergent Practice Graph and Reality Constraint Bridge
 
 Report 370 adds the first explicit emergent practice graph, diegetic village board, and reality constraint ledger. Practice nodes are generated after repeated resident actions, bottlenecks, evidence, failed tests, social mutation, and remembered use; the village board exposes resident concerns and proposal cards without direct avatar control; the reality ledger records material sources, transformations, time/work costs, tool wear, maintenance obligations, conservation checks, and the hidden-law/resident-belief split. No pre-authored tech tree or instant unlock path is introduced.
+
+### Report 371: SSRM-3D Avatar Hint Divergence Bridge
+
+Report 371 adds ambiguous avatar hints that can influence inquiry without directly installing a correct concept or a uniform unlock. Households reinterpret questions, warnings, demonstrations, material offers, and waiting through trust, fear, material cost, existing practice memory, and village-board concerns, producing divergent branches such as useful local habits, rituals, taboos, disputes, or rejection. This keeps technology/practice history resident-owned rather than avatar-authored.

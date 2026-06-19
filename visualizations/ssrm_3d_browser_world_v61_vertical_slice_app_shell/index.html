@@ -42,6 +42,7 @@
           <button data-action="runCivilizationPressureLoop">Civilization pressure</button>
           <button data-action="runPracticalDiscoveryLoop">Practical discovery</button>
           <button data-action="runVillageBoardLoop">Village board</button>
+          <button data-action="runAvatarHintDivergenceLoop">Avatar hint</button>
           <button data-action="repairTrust">Repair trust</button>
           <button data-action="advancePromiseFollowUp">Advance follow-up</button>
           <button data-action="toggleAudit">Audit</button>
@@ -80,6 +81,7 @@
           <article><strong>Emergent practices</strong><span id="emergentPracticeGraphSummaryOut"></span></article>
           <article><strong>Village board</strong><span id="villageBoardSummaryOut"></span></article>
           <article><strong>Reality ledger</strong><span id="realityConstraintLedgerSummaryOut"></span></article>
+          <article><strong>Hint divergence</strong><span id="avatarHintDivergenceSummaryOut"></span></article>
           <article><strong>Follow-up</strong><span id="promiseFollowUpOut"></span></article>
           <article><strong>Absent time</strong><span id="absentTimeSummaryOut"></span></article>
           <article><strong>Absent choice</strong><span id="absentTimeChoiceOut"></span></article>
@@ -134,6 +136,7 @@
       <article class="panel"><h2>Emergent Practices</h2><div class="emergent-practice-actions"><button data-action="runPracticalDiscoveryLoop">Grow practice graph</button></div><pre id="emergentPracticeGraphOut"></pre></article>
       <article class="panel"><h2>Village Board</h2><div class="village-board-actions"><button data-action="runVillageBoardLoop">Run board loop</button><button data-action="supportVillageProposal">Support proposal</button><button data-action="askVillageBoardQuestion">Ask question</button><button data-action="waitOnVillageBoard">Wait</button></div><pre id="villageBoardOut"></pre></article>
       <article class="panel deep-panel"><h2>Reality Constraint Ledger</h2><div class="reality-ledger-actions"><button data-action="runRealityConstraintAudit">Audit causal ledger</button></div><pre id="realityConstraintLedgerOut"></pre></article>
+      <article class="panel"><h2>Avatar Hint Divergence</h2><div class="avatar-hint-actions"><button data-action="introduceAvatarHint">Introduce ambiguous hint</button><button data-action="runHintDivergenceInterpretation">Run household interpretations</button><button data-action="runAvatarHintDivergenceLoop">Run hint divergence loop</button></div><pre id="avatarHintDivergenceOut"></pre></article>
       <article class="panel"><h2>Integrated scenario receipt</h2><div class="receipt-actions"><button data-action="generateScenarioReceipt">Generate receipt</button></div><pre id="scenarioReceiptOut"></pre></article>
       <article class="panel deep-panel"><h2>Receipt observations</h2><div class="observation-actions"><select id="receiptFieldSelect" aria-label="Receipt field"></select><select id="receiptSeveritySelect" aria-label="Observation severity"><option value="watch">watch</option><option value="minor">minor</option><option value="blocking">blocking</option></select><button data-action="logReceiptObservation">Log observation</button><button data-action="resolveLatestObservation">Resolve latest</button></div><pre id="receiptObservationOut"></pre></article>
       <article class="panel"><h2>Observation triage</h2><div class="triage-actions"><button data-action="setObservationFilterAll">All</button><button data-action="setObservationFilterOpen">Open</button><button data-action="setObservationFilterWatch">Watch</button><button data-action="setObservationFilterResolved">Resolved</button><button data-action="setObservationFilterBlocking">Blocking</button></div><pre id="observationTriageOut"></pre></article>

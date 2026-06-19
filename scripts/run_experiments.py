@@ -4080,6 +4080,7 @@ COMMANDS: List[List[str]] = [
         "experiments.ssrm_3d_browser_world_v128_long_horizon_belief_lineage_bridge",
         "experiments.ssrm_3d_browser_world_v129_civilization_pressure_integration_bridge",
         "experiments.ssrm_3d_browser_world_v130_lived_practical_discovery_bridge",
+        "experiments.ssrm_3d_browser_world_v131_avatar_hint_divergence_bridge",
         "--seed",
         "20270732",
     ],

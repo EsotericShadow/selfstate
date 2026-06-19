@@ -2186,3 +2186,5 @@ Report 372 completes the return-session persistence gap for avatar-hint divergen
 ### Report 373: SSRM-3D Game Foundation Handoff / Research Arc Closure
 
 Report 373 closes the current emergent-civilization research/report arc and hands the project to game development. The repository now includes `GAME_BUILD_HANDOFF.md`, `CORE_GAME_LOOP.md`, `SIMULATION_BOUNDARIES.md`, `EMERGENT_PRACTICE_GRAPH.md`, `REALITY_CONSTRAINT_LEDGER.md`, `FIRST_PLAYABLE_PROTOTYPE_SCOPE.md`, and `PLAYTEST_TASKS.md`. No more research reports should be added by default unless explicitly requested; future work should be concrete game build, interface, QA, playtest, and prototype tasks.
+
+Game Prototype v0 now treats stochastic physics as the simulation substrate. The maintained shell tracks component-built 3D structures, material properties, gravity/support/contact/friction, stochastic physical fields for moisture/heat/wind/decay/stress, field and energy ledgers, resident effort/safety coupling, construction-linked practice language, and deep-time physical heritage. This remains browser-local prototype work, not a new research-report chain or a production-certified physics claim.

@@ -72,3 +72,19 @@ Construction-derived practice nodes should link:
 - Maintenance burden created.
 
 This is still not a tech tree. A useful repair/build habit becomes a node because residents performed it, saw it work or fail, remembered it, and kept using or teaching it.
+
+## Physical heritage and deep time
+
+Practice nodes that originate from construction should remain tied to component IDs, field pressure, repair history, and material stability. When the compressed deep-time loop carries a practice forward, it should inherit physical evidence rather than becoming abstract lore.
+
+Physical heritage rows should link:
+
+- Practice ID and lineage ID.
+- Construction rows that created or repaired the practice site.
+- Component IDs and affordances involved.
+- Resident term and player gloss.
+- Stability or damage memory.
+- Deep-time physical component effects.
+- Whether the practice survived as practical work, costly maintenance, trace memory, taboo, or forgotten evidence.
+
+This keeps invention historical and material. Residents do not discover a tech node; they inherit, damage, repair, rename, forget, or preserve a physical practice under stochastic pressure.

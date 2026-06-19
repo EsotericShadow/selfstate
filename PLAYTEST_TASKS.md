@@ -64,3 +64,13 @@
 36. After project construction, inspect Public outcomes and Emergent Practices to confirm a construction-linked practice node exists without a modern English technology name.
 
 37. Inspect the 3D stochastic physics card after construction and confirm the resident term shows meaning drift or variants tied to repair/build work.
+
+38. Use Material step or Auto burst and confirm the 3D stochastic physics card reports field rows and energy rows, not only support/collision/failure counts.
+
+39. After field pressure exists, inspect resident behavior and confirm at least one resident shows fatigue, guardedness, repair, or schedule pressure that traces back to physical stress rather than a scripted mood toggle.
+
+40. Run Million-year sim after project-built components exist and confirm Deep time shows physical heritage rows plus deep-time component effects tied to construction-linked lineages.
+
+41. Save after field rows and deep-time physical effects exist, mutate the world, return the slot, and confirm Save / return preserves physics field, energy, physical heritage, and deep-time physical effect counts.
+
+42. Export acceptance and confirm physics-first checks include component-built structures, field rows, energy rows, construction components, construction-practice language, and deep-time physical heritage.

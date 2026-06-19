@@ -51,11 +51,15 @@ When physics changes the world, the ledger should preserve:
 - Contact/collision pair and impulse where relevant.
 - Friction or resistance where relevant.
 - Moisture, decay, heat, or fatigue pressure where relevant.
+- Stochastic field state: moisture, heat, wind, decay pressure, and structural stress where modeled.
+- Energy/work proxy rows where gravity, stress, or decay changes the world.
 - Stochastic entropy or failure probability when randomness influences outcome.
 - Resulting damage, stability, position, or maintenance obligation.
 - Project construction rows linking consumed resources to repaired or added components.
 
 This keeps the game from faking life through dramatic text. Residents may misunderstand the event, but the simulation still needs a physical cause.
+
+The ledger should treat physical field updates as first-class causal rows. A practice, proposal, refusal, repair, or deep-time survival change should not appear from narrative intent alone; it should point back to field pressure, material properties, resident effort, social transmission, or another inspectable causal source.
 
 ## Project construction ledger rows
 

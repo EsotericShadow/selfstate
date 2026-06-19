@@ -189,3 +189,12 @@ Save slots, Prototype QA, acceptance receipts, project cards, material-world car
 ## Prototype v0 construction-practice language update
 
 Resident-built components now feed culture. Construction rows create or refine Emergent Practice Graph nodes when repeated repair/build work becomes useful evidence. The linked resident term gains adoption, meaning drift, variants, and stronger practical weight, while sound roots record repair/build associations. This keeps technology as a historical practice emerging from physical work, not as an asset unlock or English concept label.
+
+
+## Prototype v0 stochastic physics substrate update
+
+Physics is now the simulation substrate rather than a side panel. The maintained shell tracks stochastic physical fields for moisture, heat, wind, decay pressure, and structural stress. Each physics step writes field rows, energy/work proxy rows, force/support/contact/failure rows, and component transformations.
+
+Resident state now reacts to physical pressure: heat, moisture, weak supports, and structural stress increase effort or safety pressure, while `physics_repair` consumes fiber and repairs actual component damage/stability. Deep-time survival also depends on physical continuity: construction-linked lineages, physical heritage rows, component effect rows, average stability, average damage, and physical burden feed the continuity score.
+
+This is still a browser-local prototype and not production-certified physical accuracy. The design direction is nevertheless strict: world change should route through stochastic physics, materials, resident labor, component state, and causal ledgers before it becomes culture, language, practice, or long-run survival.

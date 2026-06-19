@@ -996,11 +996,14 @@ function ensurePrototype3DWorld() {
         integrator: 'bounded semi-implicit discrete timestep',
         timestep: 1,
         gravity: 9.8,
-        solver_layers: ['mass', 'weight', 'support', 'collision/contact', 'friction', 'moisture', 'decay', 'tool wear', 'labor/work', 'stochastic failure'],
+        solver_layers: ['mass', 'weight', 'support', 'collision/contact', 'friction', 'moisture', 'heat', 'decay', 'tool wear', 'labor/work', 'stochastic field pressure', 'stochastic failure'],
+        environment: { moisture: 0.31, heat: 0.46, wind: 0.18, decayPressure: 0.22, stress: 0.16 },
         forceLedger: [],
         supportLedger: [],
         collisionLedger: [],
         failureLedger: [],
+        fieldLedger: [],
+        energyLedger: [],
         transformationLedger: [],
         latestStep: null
       },
@@ -1107,19 +1110,26 @@ function ensurePrototype3DWorld() {
       integrator: 'bounded semi-implicit discrete timestep',
       timestep: 1,
       gravity: 9.8,
-      solver_layers: ['mass', 'weight', 'support', 'collision/contact', 'friction', 'moisture', 'decay', 'tool wear', 'labor/work', 'stochastic failure'],
-      forceLedger: [],
-      supportLedger: [],
-      collisionLedger: [],
-      failureLedger: [],
-      transformationLedger: [],
-      latestStep: null
-    };
-  }
-  ['forceLedger', 'supportLedger', 'collisionLedger', 'failureLedger', 'transformationLedger'].forEach(key => {
+	      solver_layers: ['mass', 'weight', 'support', 'collision/contact', 'friction', 'moisture', 'heat', 'decay', 'tool wear', 'labor/work', 'stochastic field pressure', 'stochastic failure'],
+	      environment: { moisture: 0.31, heat: 0.46, wind: 0.18, decayPressure: 0.22, stress: 0.16 },
+	      forceLedger: [],
+	      supportLedger: [],
+	      collisionLedger: [],
+	      failureLedger: [],
+	      fieldLedger: [],
+	      energyLedger: [],
+	      transformationLedger: [],
+	      latestStep: null
+	    };
+	  }
+  if (!world.gamePrototype3DWorld.physics.environment) world.gamePrototype3DWorld.physics.environment = { moisture: 0.31, heat: 0.46, wind: 0.18, decayPressure: 0.22, stress: 0.16 };
+  ['forceLedger', 'supportLedger', 'collisionLedger', 'failureLedger', 'fieldLedger', 'energyLedger', 'transformationLedger'].forEach(key => {
     if (!Array.isArray(world.gamePrototype3DWorld.physics[key])) world.gamePrototype3DWorld.physics[key] = [];
   });
-  if (!Array.isArray(world.gamePrototype3DWorld.physics.solver_layers)) world.gamePrototype3DWorld.physics.solver_layers = ['mass', 'weight', 'support', 'collision/contact', 'friction', 'moisture', 'decay', 'tool wear', 'labor/work', 'stochastic failure'];
+  if (!Array.isArray(world.gamePrototype3DWorld.physics.solver_layers)) world.gamePrototype3DWorld.physics.solver_layers = ['mass', 'weight', 'support', 'collision/contact', 'friction', 'moisture', 'heat', 'decay', 'tool wear', 'labor/work', 'stochastic field pressure', 'stochastic failure'];
+  ['heat', 'stochastic field pressure'].forEach(layer => {
+    if (!world.gamePrototype3DWorld.physics.solver_layers.includes(layer)) world.gamePrototype3DWorld.physics.solver_layers.push(layer);
+  });
   return world.gamePrototype3DWorld;
 }
 
@@ -1155,12 +1165,97 @@ function footprintsOverlapXY(a, b) {
   return a.minX <= b.maxX && a.maxX >= b.minX && a.minY <= b.maxY && a.maxY >= b.minY;
 }
 
+function applyPrototypePhysicsField(sim, stepId, entropy, source = 'physics') {
+  const physics = sim.physics;
+  const field = physics.environment || { moisture: 0.31, heat: 0.46, wind: 0.18, decayPressure: 0.22, stress: 0.16 };
+  const cycle = world.gamePrototypeDayCycle || null;
+  const latestWeather = cycle && cycle.weatherLedger && cycle.weatherLedger.length ? cycle.weatherLedger[cycle.weatherLedger.length - 1].weather : 'settled dry air';
+  const wetWeather = /drizzle|damp|rain|wet|flood/.test(latestWeather) || /wet|flood/.test(source);
+  const dryWeather = /dry|wind|sun|drought/.test(latestWeather) || /dry|drought/.test(source);
+  const heatNudge = dryWeather ? 0.024 : (wetWeather ? -0.012 : ((entropy % 7) - 3) / 1000);
+  const moistureNudge = wetWeather ? 0.045 : (dryWeather ? -0.038 : ((entropy % 9) - 4) / 1000);
+  field.moisture = Number(clamp(Number(field.moisture || 0.31) + moistureNudge).toFixed(3));
+  field.heat = Number(clamp(Number(field.heat || 0.46) + heatNudge).toFixed(3));
+  field.wind = Number(clamp(Number(field.wind || 0.18) + ((entropy % 13) - 6) / 1000 + (dryWeather ? 0.012 : 0)).toFixed(3));
+  field.decayPressure = Number(clamp(Number(field.decayPressure || 0.22) + field.moisture * 0.012 - field.heat * 0.006).toFixed(3));
+  field.stress = Number(clamp(Number(field.stress || 0.16) + field.wind * 0.01 + field.decayPressure * 0.012).toFixed(3));
+  physics.environment = field;
+  const componentRows = (sim.components || []).map((component, index) => {
+    const material = sim.materialCatalog[component.material_id] || {};
+    const before = {
+      moisture: Number(component.moisture || 0),
+      damage: Number(component.damage || 0),
+      stability: Number(component.stability || 0),
+      temperature: Number(component.temperature || field.heat),
+      field_stress: Number(component.field_stress || 0),
+    };
+    const waterFlux = (field.moisture - before.moisture) * (1 - Number(material.water_resistance || 0.5)) * 0.18;
+    const heatFlux = (field.heat - before.temperature) * (1 - Number(material.heat_resistance || 0.4)) * 0.12;
+    const stressFlux = field.stress * (Number(component.mass || material.mass || 1) / 6) + field.wind * (1 - Number(material.flexibility || 0.4)) * 0.035;
+    const decayFlux = Number(material.decay_rate || 0.02) * (0.25 + field.decayPressure + Math.max(0, before.moisture - Number(material.water_resistance || 0.5)) * 0.4);
+    const stochasticHit = ((entropy + index * 23 + stepId.length) % 100) / 100 < clamp(field.stress * 0.14 + field.moisture * 0.04) ? 0.012 : 0;
+    component.moisture = Number(clamp(before.moisture + waterFlux).toFixed(3));
+    component.temperature = Number(clamp(before.temperature + heatFlux).toFixed(3));
+    component.field_stress = Number(clamp(before.field_stress * 0.45 + stressFlux).toFixed(3));
+    component.damage = Number(clamp(before.damage + decayFlux + stochasticHit).toFixed(3));
+    component.stability = Number(clamp(before.stability - component.field_stress * 0.01 - decayFlux * 0.08 + (dryWeather ? 0.004 : 0)).toFixed(3));
+    return {
+      step_id: stepId,
+      component_id: component.component_id,
+      material_id: component.material_id,
+      water_flux: Number(waterFlux.toFixed(4)),
+      heat_flux: Number(heatFlux.toFixed(4)),
+      stress_flux: Number(stressFlux.toFixed(4)),
+      decay_flux: Number(decayFlux.toFixed(4)),
+      stochastic_hit: stochasticHit > 0,
+      after_moisture: component.moisture,
+      after_temperature: component.temperature,
+      after_stability: component.stability,
+    };
+  });
+  const fieldRow = {
+    field_id: `G3F-${String((physics.fieldLedger || []).length + 1).padStart(3, '0')}`,
+    step_id: stepId,
+    source,
+    entropy,
+    weather: latestWeather,
+    moisture: field.moisture,
+    heat: field.heat,
+    wind: field.wind,
+    decay_pressure: field.decayPressure,
+    stress: field.stress,
+    component_count: componentRows.length,
+    hidden_law_normal_view: false,
+  };
+  const energyRow = {
+    energy_id: `G3E-${String((physics.energyLedger || []).length + 1).padStart(3, '0')}`,
+    step_id: stepId,
+    source,
+    gravity_work_proxy: Number((sim.components || []).reduce((sum, component) => sum + Number(component.mass || 1) * Number(physics.gravity || 9.8) * Math.max(0, Number(component.position3d && component.position3d.z || 0)), 0).toFixed(3)),
+    field_stress_total: Number((sim.components || []).reduce((sum, component) => sum + Number(component.field_stress || 0), 0).toFixed(3)),
+    decay_work_proxy: Number(componentRows.reduce((sum, row) => sum + row.decay_flux, 0).toFixed(3)),
+    resident_free_energy: false,
+    resource_spawning: false,
+  };
+  physics.fieldLedger.push(fieldRow);
+  physics.energyLedger.push(energyRow);
+  physics.fieldLedger = physics.fieldLedger.slice(-120);
+  physics.energyLedger = physics.energyLedger.slice(-120);
+  return {
+    fieldRow,
+    energyRow,
+    componentRows,
+    failure_bias: clamp(field.stress * 0.08 + field.moisture * 0.04 + field.decayPressure * 0.05),
+  };
+}
+
 function applyPrototypePhysicsStep(source = 'manual') {
   const sim = ensurePrototype3DWorld();
   const physics = sim.physics;
   const entropy = typeof deepTimeEntropyByte === 'function' ? deepTimeEntropyByte() : ((world.tick * 73) % 256);
   physics.step = (physics.step || 0) + 1;
   const stepId = `G3P-${String(physics.step).padStart(3, '0')}`;
+  const fieldResult = applyPrototypePhysicsField(sim, stepId, entropy, source);
   const gravity = Number(physics.gravity || 9.8);
   const supportRows = [];
   const collisionRows = [];
@@ -1209,7 +1304,7 @@ function applyPrototypePhysicsStep(source = 'manual') {
     } else {
       phys.velocity.z = Number((Number(phys.velocity.z || 0) * 0.35).toFixed(3));
     }
-    const entropyPressure = (entropy % 17) / 100;
+    const entropyPressure = (entropy % 17) / 100 + Number(fieldResult.failure_bias || 0);
     const moisture = Number(component.moisture || 0);
     const brittleness = Number(material.brittleness || 0.3);
     const failureProbability = clamp((unsupported ? 0.28 : 0.02) + moisture * 0.12 + brittleness * 0.08 + entropyPressure - Number(component.stability || 0.6) * 0.1);
@@ -1221,7 +1316,7 @@ function applyPrototypePhysicsStep(source = 'manual') {
       failureRows.push({ step_id: stepId, component_id: component.component_id, reason: unsupported ? 'unsupported weight under gravity' : 'stochastic material fatigue', probability: Number(failureProbability.toFixed(3)), threshold: Number(failureThreshold.toFixed(3)), new_damage: component.damage, new_stability: component.stability });
     }
     supportRows.push({ step_id: stepId, component_id: component.component_id, supported_by: phys.supported_by, weight, normal_force: phys.forces.normal, support_capacity: supportCapacity === Infinity ? 'ground' : Number(supportCapacity.toFixed(3)), unsupported });
-    forceRows.push({ step_id: stepId, component_id: component.component_id, mass, gravity_force: weight, normal_force: phys.forces.normal, friction_force: phys.forces.friction, velocity_z: phys.velocity.z });
+    forceRows.push({ step_id: stepId, component_id: component.component_id, mass, gravity_force: weight, normal_force: phys.forces.normal, friction_force: phys.forces.friction, velocity_z: phys.velocity.z, field_stress: component.field_stress || 0, temperature: component.temperature || null });
   });
   for (let i = 0; i < components.length; i += 1) {
     for (let j = i + 1; j < components.length; j += 1) {
@@ -1271,11 +1366,17 @@ function applyPrototypePhysicsStep(source = 'manual') {
     failures: failureRows.length,
 	    force_rows: forceRows.length,
 	    transformations: transformRows.length,
-    min_stability: Number(minStability.toFixed(3)),
-    max_damage: Number(maxDamage.toFixed(3)),
-    structure_stability: structure ? Number(structure.stability || 0) : null,
-    moisture_risk: structure ? Number(structure.moisture_risk || 0) : null,
-    maintenance_pressure: maintenancePressure,
+	    field_id: fieldResult.fieldRow.field_id,
+	    energy_id: fieldResult.energyRow.energy_id,
+	    min_stability: Number(minStability.toFixed(3)),
+	    max_damage: Number(maxDamage.toFixed(3)),
+	    structure_stability: structure ? Number(structure.stability || 0) : null,
+	    moisture_risk: structure ? Number(structure.moisture_risk || 0) : null,
+	    field_moisture: fieldResult.fieldRow.moisture,
+	    field_heat: fieldResult.fieldRow.heat,
+	    field_stress: fieldResult.fieldRow.stress,
+	    field_decay_pressure: fieldResult.fieldRow.decay_pressure,
+	    maintenance_pressure: maintenancePressure,
 	    gravity_applied: true,
     stochastic_physics: true,
     resource_spawning: false,
@@ -1308,10 +1409,13 @@ function applyPhysicsConsequencesToVillage(step, source = 'physics') {
       failures: step.failures,
       collisions: step.collisions,
       min_stability: step.min_stability,
-      max_damage: step.max_damage,
-      moisture_risk: step.moisture_risk,
-    }
-  };
+	      max_damage: step.max_damage,
+	      moisture_risk: step.moisture_risk,
+	      field_stress: step.field_stress,
+	      field_heat: step.field_heat,
+	      field_moisture: step.field_moisture,
+	    }
+	  };
   const proposal = {
     proposal_id: `VBP-PHY-${String(board.projectProposals.filter(row => /^VBP-PHY/.test(row.proposal_id || '')).length + 1).padStart(2, '0')}`,
     proposer: resident,
@@ -1352,7 +1456,7 @@ function applyPhysicsConsequencesToVillage(step, source = 'physics') {
     toolWear: step.failures,
     maintenanceObligation: proposal.proposal_id,
     unintendedConsequence: 'physical instability entered social planning',
-    hiddenLawInvolved: world.audit ? 'support, collision, fatigue, moisture' : 'audit only',
+	    hiddenLawInvolved: world.audit ? 'support, collision, fatigue, moisture, heat, stochastic field pressure' : 'audit only',
     conservationCheck: true
   });
   recordPrototypeMilestone('physics-to-village-board', `${step.step_id} created ${proposal.proposal_id} for ${resident}`);
@@ -1391,15 +1495,20 @@ function runPrototypeMaterialWorldStep() {
   const latestWeather = cycle.weatherLedger.length ? cycle.weatherLedger[cycle.weatherLedger.length - 1].weather : 'settled dry air';
   const wetPressure = /drizzle|damp|rain|wet/.test(latestWeather);
   const dryPressure = /dry|wind|sun/.test(latestWeather);
-  const moistureDelta = wetPressure ? 0.045 : (dryPressure ? -0.04 : -0.012);
+  const fieldMoisture = Number(physicsStep.field_moisture || 0.31);
+  const fieldHeat = Number(physicsStep.field_heat || 0.46);
+  const fieldStress = Number(physicsStep.field_stress || 0.16);
+  const moistureDelta = wetPressure ? 0.045 + fieldMoisture * 0.015 : (dryPressure ? -0.04 + fieldMoisture * 0.006 : -0.012 + fieldMoisture * 0.004);
   let repairCost = 0;
   sim.components.forEach(component => {
     const material = sim.materialCatalog[component.material_id] || { decay_rate: 0.02, water_resistance: 0.5 };
     const waterPenalty = Math.max(0, 1 - Number(material.water_resistance || 0.5));
     component.moisture = Number(clamp(Number(component.moisture || 0) + moistureDelta * waterPenalty).toFixed(3));
     const decay = Number(material.decay_rate || 0.02) * (wetPressure ? 1.4 : 0.7);
-    component.damage = Number(clamp(Number(component.damage || 0) + decay * (0.4 + component.moisture)).toFixed(3));
-    component.stability = Number(clamp(Number(component.stability || 0.7) - component.damage * 0.035 + (dryPressure ? 0.01 : 0)).toFixed(3));
+    const heatWear = Math.max(0, fieldHeat - Number(material.heat_resistance || 0.4)) * 0.012;
+    const stressWear = fieldStress * (1 - Number(material.flexibility || 0.4)) * 0.008;
+    component.damage = Number(clamp(Number(component.damage || 0) + decay * (0.4 + component.moisture) + heatWear + stressWear).toFixed(3));
+    component.stability = Number(clamp(Number(component.stability || 0.7) - component.damage * 0.035 - fieldStress * 0.006 + (dryPressure ? 0.01 : 0)).toFixed(3));
   });
   const structure = sim.structures[0];
   const linkedComponents = sim.components.filter(component => structure.component_ids.includes(component.component_id));
@@ -1459,10 +1568,13 @@ function runPrototypeMaterialWorldStep() {
 	    support_checks: physicsStep.support_checks,
 	    collisions: physicsStep.collisions,
 	    failures: physicsStep.failures,
-    min_stability: physicsStep.min_stability,
-    max_damage: physicsStep.max_damage,
-    maintenance_pressure: Boolean(physicsStep.maintenance_pressure || structure.stability < 0.74 || structure.moisture_risk > 0.32),
-	  };
+	    min_stability: physicsStep.min_stability,
+	    max_damage: physicsStep.max_damage,
+	    field_moisture: physicsStep.field_moisture,
+	    field_heat: physicsStep.field_heat,
+	    field_stress: physicsStep.field_stress,
+	    maintenance_pressure: Boolean(physicsStep.maintenance_pressure || structure.stability < 0.74 || structure.moisture_risk > 0.32),
+		  };
 	  sim.stepLedger.push(step);
 	  sim.latestStep = step;
   const consequence = applyPhysicsConsequencesToVillage(step, 'material world coupled physics');
@@ -1472,13 +1584,13 @@ function runPrototypeMaterialWorldStep() {
     materials: ['rough_branch', 'fiber', 'clay_vessel', 'reed_cover'],
     publicObservation: observation.public_observation,
     residentInterpretation: observation.resident_interpretation,
-    materialTransformation: repairCost ? 'fiber consumed to retie damp raised storage supports' : 'moisture and decay updated existing components without spawning resources',
+	    materialTransformation: repairCost ? 'fiber consumed to retie damp raised storage supports' : 'stochastic moisture, heat, decay, and support fields updated existing components without spawning resources',
     timeCost: 1,
     workCost: 1,
     toolWear: repairCost ? 1 : 0,
     maintenanceObligation: 'inspect and retie fiber bindings on raised storage surface',
     unintendedConsequence: wetPressure ? 'damp bindings raise maintenance burden' : 'dry period strengthens confidence in local practice term',
-    hiddenLawInvolved: world.audit ? 'moisture resistance, decay rate, support stability' : 'audit only',
+	    hiddenLawInvolved: world.audit ? 'moisture resistance, heat resistance, decay rate, support stability, stochastic field stress' : 'audit only',
     conservationCheck: true
 	  });
 	  recordPrototypeMilestone('3d-material-language', `${structure.engine_concept} rendered from ${sim.components.length} components as ${term ? term.resident_word : 'local term'}`);
@@ -3190,9 +3302,11 @@ function ensureDeepTimeCivilization() {
         resourceTotal: Object.values(world.resources || {}).reduce((sum, value) => sum + Number(value || 0), 0),
         millionYearCapable: false,
       },
-      pressureLedger: [],
-      entropyLedger: [],
-      boundary: {
+	      pressureLedger: [],
+	      entropyLedger: [],
+      physicalHeritageLedger: [],
+      componentEffectLedger: [],
+	      boundary: {
         compressedDeepTime: true,
         activeResidentsRemainSix: true,
         noIntentionalTechTree: true,
@@ -3200,13 +3314,69 @@ function ensureDeepTimeCivilization() {
         hiddenLawsRemainAuditOnly: true,
       },
     };
-  }
-  return world.deepTimeCivilization;
+	  }
+  if (!Array.isArray(world.deepTimeCivilization.physicalHeritageLedger)) world.deepTimeCivilization.physicalHeritageLedger = [];
+  if (!Array.isArray(world.deepTimeCivilization.componentEffectLedger)) world.deepTimeCivilization.componentEffectLedger = [];
+	  return world.deepTimeCivilization;
+	}
+
+function syncDeepTimeLineagesWithConstruction() {
+  const sim = ensureDeepTimeCivilization();
+  const graph = world.emergentPracticeGraph || null;
+  const materialWorld = world.gamePrototype3DWorld || null;
+  if (!graph || !graph.nodes || !graph.nodes.length || !materialWorld) return sim.lineages;
+  graph.nodes
+    .filter(node => node.source_construction_rows && node.source_construction_rows.length)
+    .forEach(node => {
+      const existing = sim.lineages.find(row => row.source_practice_id === node.practice_id);
+      const componentIds = node.construction_component_ids || [];
+      const linkedComponents = (materialWorld.components || []).filter(component => componentIds.includes(component.component_id));
+      const averageStability = linkedComponents.length
+        ? linkedComponents.reduce((sum, component) => sum + Number(component.stability || 0), 0) / linkedComponents.length
+        : 0.5;
+      const lineage = existing || {
+        lineage_id: `DTL-${String(sim.lineages.length + 1).padStart(2, '0')}`,
+        source_practice_id: node.practice_id,
+        local_name: node.local_name || node.practice_id,
+        status: node.status || 'emerging',
+        age_years: 0,
+        adaptations: 0,
+        memory_strength: 0.62,
+        usefulness: Number(node.practical_score || 0.42),
+        maintenance_burden: Number(node.maintenance_cost || 1),
+        risk_flags: node.risk_flags || [],
+        origin_household: node.origin_household || `${node.origin_resident || 'resident'}-household`,
+      };
+      lineage.construction_source_rows = Array.from(new Set([...(lineage.construction_source_rows || []), ...(node.source_construction_rows || [])]));
+      lineage.component_ids = Array.from(new Set([...(lineage.component_ids || []), ...componentIds]));
+      lineage.component_affordances = Array.from(new Set([...(lineage.component_affordances || []), ...(node.component_affordances || [])]));
+      lineage.resident_term = node.resident_term || lineage.resident_term || node.local_name;
+      lineage.player_gloss = node.player_gloss || lineage.player_gloss || 'construction-linked practice';
+      lineage.physical_stability_memory = Number(averageStability.toFixed(3));
+      lineage.language_variants = Array.from(new Set([...(lineage.language_variants || []), ...((materialWorld.language && materialWorld.language.terms || []).flatMap(term => term.variants || []))])).slice(-8);
+      lineage.status = node.status || lineage.status;
+      lineage.usefulness = Number(clamp(Math.max(Number(lineage.usefulness || 0), Number(node.practical_score || 0)) + averageStability * 0.015).toFixed(3));
+      if (!existing) sim.lineages.push(lineage);
+      sim.physicalHeritageLedger.push({
+        heritage_id: `DTH-${String(sim.physicalHeritageLedger.length + 1).padStart(3, '0')}`,
+        epoch: sim.epoch,
+        year: sim.year,
+        lineage_id: lineage.lineage_id,
+        source_practice_id: node.practice_id,
+        construction_rows: node.source_construction_rows || [],
+        component_ids: lineage.component_ids,
+        resident_term: lineage.resident_term,
+        physical_stability_memory: lineage.physical_stability_memory,
+        no_tech_tree: true,
+      });
+    });
+  sim.physicalHeritageLedger = sim.physicalHeritageLedger.slice(-120);
+  return sim.lineages;
 }
 
 function seedDeepTimeLineages() {
   const sim = ensureDeepTimeCivilization();
-  if (sim.lineages.length) return sim.lineages;
+  if (sim.lineages.length) return syncDeepTimeLineagesWithConstruction();
   if (!world.emergentPracticeGraph || !world.emergentPracticeGraph.nodes.length) runPrototypePracticeChain();
   const practiceNodes = world.emergentPracticeGraph && world.emergentPracticeGraph.nodes.length ? world.emergentPracticeGraph.nodes : [
     { practice_id: 'proto-practice-1', local_name: 'dry keeping habit', status: 'emerging', maintenance_cost: 1, risk_flags: 'none' },
@@ -3223,9 +3393,9 @@ function seedDeepTimeLineages() {
     maintenance_burden: Number(node.maintenance_cost || 1),
     risk_flags: node.risk_flags || 'none',
     origin_household: node.origin_household || `house_${index % 4}`,
-  }));
-  return sim.lineages;
-}
+	  }));
+  return syncDeepTimeLineagesWithConstruction();
+	}
 
 function chooseDeepTimePressure(entropy) {
   const pressures = [
@@ -3274,7 +3444,93 @@ function mutateDeepTimeLineage(lineage, pressure, entropy, years) {
     lineage.status = lineage.status === 'forgotten' ? 'forgotten' : 'burdened';
     lineage.maintenance_burden += 1;
   }
-  return lineage;
+	  return lineage;
+	}
+
+function applyDeepTimePhysicalPressure(effect, pressure, years, entropy) {
+  const sim = ensureDeepTimeCivilization();
+  const materialWorld = world.gamePrototype3DWorld || null;
+  if (!materialWorld || !materialWorld.components || !materialWorld.components.length) return null;
+  const lineage = sim.lineages.find(row => row.lineage_id === effect.source_lineage_id) || null;
+  const targetIds = lineage && lineage.component_ids && lineage.component_ids.length
+    ? lineage.component_ids
+    : materialWorld.components.filter(component => component.project_built === true).map(component => component.component_id);
+  const targets = materialWorld.components.filter(component => targetIds.includes(component.component_id)).slice(0, 8);
+  if (!targets.length) return null;
+  const wet = pressure.includes('wet') || pressure.includes('flood');
+  const dry = pressure.includes('drought');
+  const wear = pressure.includes('wear') || pressure.includes('decay') || pressure.includes('exhaustion');
+  const abundance = pressure.includes('abundance');
+  const componentDeltas = targets.map((component, index) => {
+    const material = materialWorld.materialCatalog[component.material_id] || {};
+    const old = {
+      moisture: Number(component.moisture || 0),
+      damage: Number(component.damage || 0),
+      stability: Number(component.stability || 0),
+    };
+    const waterResistance = Number(material.water_resistance || 0.5);
+    const decayRate = Number(material.decay_rate || 0.02);
+    const entropyNudge = ((entropy + index * 19) % 11) / 1000;
+    if (wet) component.moisture = Number(clamp(old.moisture + (1 - waterResistance) * 0.08 + entropyNudge).toFixed(3));
+    if (dry) component.moisture = Number(clamp(old.moisture - 0.07).toFixed(3));
+    if (wear) component.damage = Number(clamp(Number(component.damage || old.damage) + decayRate * 2.2 + entropyNudge).toFixed(3));
+    if (abundance) {
+      component.damage = Number(clamp(Number(component.damage || old.damage) - 0.045).toFixed(3));
+      component.stability = Number(clamp(old.stability + 0.035).toFixed(3));
+    } else {
+      component.stability = Number(clamp(Number(component.stability || old.stability) - Number(component.damage || old.damage) * 0.018 - (wet ? 0.012 : 0)).toFixed(3));
+    }
+    component.deep_time_touched = effect.effect_id;
+    return {
+      component_id: component.component_id,
+      material_id: component.material_id,
+      before: old,
+      after: {
+        moisture: component.moisture,
+        damage: component.damage,
+        stability: component.stability,
+      }
+    };
+  });
+  if (materialWorld.structures && materialWorld.structures[0]) {
+    const structure = materialWorld.structures[0];
+    const linked = materialWorld.components.filter(component => structure.component_ids.includes(component.component_id));
+    structure.stability = Number(clamp(linked.reduce((sum, component) => sum + Number(component.stability || 0), 0) / Math.max(1, linked.length)).toFixed(3));
+    structure.moisture_risk = Number(clamp(linked.reduce((sum, component) => sum + Number(component.moisture || 0), 0) / Math.max(1, linked.length)).toFixed(3));
+    structure.risk_flags = Array.from(new Set([...(structure.risk_flags || []), `deep-time ${pressure}`]));
+  }
+  const row = {
+    effect_id: effect.effect_id,
+    physical_effect_id: `DTPE-${String(sim.componentEffectLedger.length + 1).padStart(3, '0')}`,
+    epoch: sim.epoch,
+    year: sim.year,
+    years,
+    pressure,
+    source_lineage_id: effect.source_lineage_id,
+    target_component_count: targets.length,
+    component_deltas: componentDeltas,
+    structure_stability_after: materialWorld.structures && materialWorld.structures[0] ? materialWorld.structures[0].stability : null,
+    hidden_law_normal_view: false,
+    no_resource_spawning: true,
+  };
+  sim.componentEffectLedger.push(row);
+  sim.componentEffectLedger = sim.componentEffectLedger.slice(-120);
+  recordRealityConstraint('deep_time_physical_pressure', {
+    resident: world.selected,
+    sourceBeliefId: effect.effect_id,
+    materials: Array.from(new Set(targets.map(component => component.material_id))),
+    publicObservation: `${pressure} touched ${targets.length} inherited component(s)`,
+    residentInterpretation: `${effect.local_name} left physical maintenance pressure`,
+    materialTransformation: `deep-time pressure changed component moisture/damage/stability for ${targets.length} component(s)`,
+    timeCost: Math.max(1, Math.floor(years / 1000)),
+    workCost: 0,
+    toolWear: wear ? 1 : 0,
+    maintenanceObligation: row.structure_stability_after !== null && row.structure_stability_after < 0.72 ? 'future residents may need repair practice' : 'watch inherited structure',
+    unintendedConsequence: effect.outcome,
+    hiddenLawInvolved: world.audit ? 'long-horizon material decay and stability pressure' : 'audit only',
+    conservationCheck: true
+  });
+  return row;
 }
 
 function runCivilizationDeepTimeEpoch(yearOverride) {
@@ -3299,7 +3555,7 @@ function runCivilizationDeepTimeEpoch(yearOverride) {
     }
   });
   const effectSource = lineages[(entropy + sim.epoch) % lineages.length];
-  const effect = {
+	  const effect = {
     effect_id: `DTE-${String(sim.emergentEffects.length + 1).padStart(3, '0')}`,
     epoch: sim.epoch,
     year: sim.year,
@@ -3309,18 +3565,21 @@ function runCivilizationDeepTimeEpoch(yearOverride) {
     emerged_without_intent: true,
     hidden_law_named_to_residents: false,
     outcome: effectSource.status === 'forgotten' ? 'trace fossil only' : (effectSource.status === 'burdened' ? 'costly survival habit' : 'living cultural technique'),
-  };
-  sim.emergentEffects.push(effect);
-  applyDeepTimeEffectToVillage(effect, delta);
+	  };
+	  sim.emergentEffects.push(effect);
+  const physicalEffect = applyDeepTimePhysicalPressure(effect, pressure, years, entropy);
+  if (physicalEffect) effect.physical_effect_id = physicalEffect.physical_effect_id;
+	  applyDeepTimeEffectToVillage(effect, delta);
   sim.timeline.push({
     epoch: sim.epoch,
     year: sim.year,
     years_advanced: years,
     pressure,
     resources: { ...world.resources },
-    lineage_statuses: lineages.map(row => `${row.lineage_id}:${row.status}`).join(';'),
-    effect_id: effect.effect_id,
-  });
+	    lineage_statuses: lineages.map(row => `${row.lineage_id}:${row.status}`).join(';'),
+	    effect_id: effect.effect_id,
+    physical_effect_id: physicalEffect ? physicalEffect.physical_effect_id : null,
+	  });
   evaluateCivilizationSurvival(pressure);
   recordPrototypeMilestone('deep-time-epoch', `+${years} years; ${pressure}; effect ${effect.effect_id}`);
   return log('runCivilizationDeepTimeEpoch', { yearsAdvanced: years, year: sim.year, pressure, lineages: lineages.length, effects: sim.emergentEffects.length, entropy });
@@ -3334,8 +3593,17 @@ function evaluateCivilizationSurvival(pressure = 'manual audit') {
   const resourceTotal = Object.values(world.resources || {}).reduce((sum, value) => sum + Number(value || 0), 0);
   const averageMemory = lineages.length ? lineages.reduce((sum, row) => sum + Number(row.memory_strength || 0), 0) / lineages.length : 0;
   const totalBurden = lineages.reduce((sum, row) => sum + Number(row.maintenance_burden || 0), 0);
+  const materialWorld = world.gamePrototype3DWorld || null;
+  const physicalComponents = materialWorld && materialWorld.components ? materialWorld.components : [];
+  const componentEffectRows = sim.componentEffectLedger ? sim.componentEffectLedger.length : 0;
+  const physicalHeritageRows = sim.physicalHeritageLedger ? sim.physicalHeritageLedger.length : 0;
+  const constructionLinkedLineages = lineages.filter(row => row.component_ids && row.component_ids.length).length;
+  const averagePhysicalStability = physicalComponents.length ? physicalComponents.reduce((sum, component) => sum + Number(component.stability || 0), 0) / physicalComponents.length : 0.5;
+  const averagePhysicalDamage = physicalComponents.length ? physicalComponents.reduce((sum, component) => sum + Number(component.damage || 0), 0) / physicalComponents.length : 0;
+  const physicalContinuity = clamp(averagePhysicalStability * 0.6 + (1 - averagePhysicalDamage) * 0.18 + Math.min(1, constructionLinkedLineages / Math.max(1, lineages.length)) * 0.16 + Math.min(1, componentEffectRows / 6) * 0.06);
+  const physicalBurden = Math.min(0.22, averagePhysicalDamage * 0.16 + Math.max(0, 0.68 - averagePhysicalStability) * 0.22);
   const recoveryPotential = Number(((world.resources.care || 0) + activeLineages + sim.villageConsequences.length * 0.08).toFixed(3));
-  const continuityScore = clamp((activeLineages / Math.max(1, lineages.length)) * 0.42 + averageMemory * 0.28 + Math.min(1, resourceTotal / 36) * 0.18 + Math.min(1, recoveryPotential / 12) * 0.12 - Math.min(0.3, totalBurden / 80));
+  const continuityScore = clamp((activeLineages / Math.max(1, lineages.length)) * 0.34 + averageMemory * 0.22 + Math.min(1, resourceTotal / 36) * 0.16 + Math.min(1, recoveryPotential / 12) * 0.1 + physicalContinuity * 0.18 - Math.min(0.3, totalBurden / 80) - physicalBurden);
   let status = 'flourishing';
   if (continuityScore < 0.18 || activeLineages === 0) status = 'collapsed into trace memory';
   else if (continuityScore < 0.34) status = 'trace-memory survival';
@@ -3351,9 +3619,16 @@ function evaluateCivilizationSurvival(pressure = 'manual audit') {
     active_lineages: activeLineages,
     trace_lineages: traceLineages,
     resource_total: resourceTotal,
-    average_memory: Number(averageMemory.toFixed(3)),
-    total_burden: totalBurden,
-    recovery_potential: recoveryPotential,
+	    average_memory: Number(averageMemory.toFixed(3)),
+	    total_burden: totalBurden,
+	    physical_heritage_rows: physicalHeritageRows,
+	    component_effect_rows: componentEffectRows,
+	    construction_linked_lineages: constructionLinkedLineages,
+	    average_physical_stability: Number(averagePhysicalStability.toFixed(3)),
+	    average_physical_damage: Number(averagePhysicalDamage.toFixed(3)),
+	    physical_continuity: Number(physicalContinuity.toFixed(3)),
+	    physical_burden: Number(physicalBurden.toFixed(3)),
+	    recovery_potential: recoveryPotential,
     million_year_capable: sim.year >= 1000000 && activeLineages > 0 && continuityScore >= 0.18,
     emerged_without_intent: true,
   };
@@ -3363,9 +3638,16 @@ function evaluateCivilizationSurvival(pressure = 'manual audit') {
     activeLineages,
     traceLineages,
     resourceTotal,
-    averageMemory: survivalRow.average_memory,
-    totalBurden,
-    recoveryPotential,
+	    averageMemory: survivalRow.average_memory,
+	    totalBurden,
+	    physicalHeritageRows,
+	    componentEffectRows,
+	    constructionLinkedLineages,
+	    averagePhysicalStability: survivalRow.average_physical_stability,
+	    averagePhysicalDamage: survivalRow.average_physical_damage,
+	    physicalContinuity: survivalRow.physical_continuity,
+	    physicalBurden: survivalRow.physical_burden,
+	    recoveryPotential,
     millionYearCapable: survivalRow.million_year_capable,
   };
   sim.survivalLedger.push(survivalRow);
@@ -3535,12 +3817,15 @@ function currentPhysicsPressure() {
     latestStepId: latest ? latest.step_id : 'none',
     failures: latest ? Number(latest.failures || 0) : 0,
     collisions: latest ? Number(latest.collisions || 0) : 0,
-    structureStability: structure ? Number(structure.stability || 0) : 1,
-    moistureRisk: structure ? Number(structure.moisture_risk || 0) : 0,
-    weakComponents: weakComponents.length,
-    residentTerm: structure ? structure.resident_term_id : 'none',
-  };
-  pressure.active = pressure.failures > 0 || pressure.collisions > 0 || pressure.structureStability < 0.74 || pressure.moistureRisk > 0.32 || pressure.weakComponents > 0;
+	    structureStability: structure ? Number(structure.stability || 0) : 1,
+	    moistureRisk: structure ? Number(structure.moisture_risk || 0) : 0,
+	    fieldStress: latest ? Number(latest.field_stress || 0) : Number(sim.physics.environment && sim.physics.environment.stress || 0),
+	    fieldHeat: latest ? Number(latest.field_heat || 0) : Number(sim.physics.environment && sim.physics.environment.heat || 0),
+	    fieldMoisture: latest ? Number(latest.field_moisture || 0) : Number(sim.physics.environment && sim.physics.environment.moisture || 0),
+	    weakComponents: weakComponents.length,
+	    residentTerm: structure ? structure.resident_term_id : 'none',
+	  };
+  pressure.active = pressure.failures > 0 || pressure.collisions > 0 || pressure.structureStability < 0.74 || pressure.moistureRisk > 0.32 || pressure.fieldStress > 0.24 || pressure.weakComponents > 0;
   return pressure;
 }
 
@@ -3549,12 +3834,17 @@ function clampNeed(value) {
 }
 
 function driftResidentNeeds(needs, entropy, action) {
-  const effort = ['proposal_work', 'practice_maintenance', 'experiment', 'forage'].includes(action) ? 0.12 : 0.04;
-  const stress = entropy % 7 === 0 ? 0.08 : 0.02;
+  const physicsPressure = currentPhysicsPressure();
+  const physicsEffort = physicsPressure && physicsPressure.active ? 0.035 : 0;
+  const fieldHeat = physicsPressure ? Number(physicsPressure.fieldHeat || 0) : 0;
+  const fieldMoisture = physicsPressure ? Number(physicsPressure.fieldMoisture || 0) : 0;
+  const fieldStress = physicsPressure ? Number(physicsPressure.fieldStress || 0) : 0;
+  const effort = (['proposal_work', 'practice_maintenance', 'experiment', 'forage', 'physics_repair'].includes(action) ? 0.12 : 0.04) + physicsEffort + Math.max(0, fieldHeat - 0.55) * 0.05;
+  const stress = (entropy % 7 === 0 ? 0.08 : 0.02) + fieldStress * 0.08 + Math.max(0, fieldMoisture - 0.5) * 0.04;
   needs.energy = clampNeed(needs.energy - effort + (action === 'rest' ? 0.22 : 0));
   needs.hunger = clampNeed(needs.hunger + effort * 0.6 - (action === 'forage' ? 0.12 : 0));
   needs.attention = clampNeed(needs.attention - effort * 0.8 + (action === 'teach' ? 0.04 : 0));
-  needs.safety = clampNeed(needs.safety - stress + (action === 'repair_safety' ? 0.14 : 0));
+  needs.safety = clampNeed(needs.safety - stress + (action === 'repair_safety' ? 0.14 : 0) + (action === 'physics_repair' ? 0.05 : 0));
   needs.autonomy = clampNeed(needs.autonomy + (action === 'refuse' ? 0.08 : -0.015));
   return needs;
 }
@@ -3896,7 +4186,7 @@ function formatPrototypePublicOutcomes() {
     `Village board: ${boardCount} proposal(s)${latestProposal ? ` / latest ${latestProposal.problem_addressed || latestProposal.proposal_id}` : ''}`,
     `Reality ledger: ${ledgerRows} causal row(s)`,
     `Return branches: ${branchRows} continuity row(s)${latestBranch ? ` / latest ${latestBranch.return_status}` : ''}`,
-    `Deep time: ${deepTime ? `${deepTime.year} years / ${deepTime.emergentEffects.length} emergent effect(s) / ${consequenceCount} village consequence(s) / ${survivalStatus}` : 'not started'}`,
+    `Deep time: ${deepTime ? `${deepTime.year} years / ${deepTime.emergentEffects.length} emergent effect(s) / ${consequenceCount} village consequence(s) / ${survivalStatus} / physical effects=${deepTime.componentEffectLedger ? deepTime.componentEffectLedger.length : 0}` : 'not started'}`,
     `Autonomous residents: ${autonomous ? `${autonomous.day} day(s) / ${autonomous.actionLog.length} action(s) / ${autonomous.refusalLog.length} refusal(s)` : 'not started'}`,
     `Save slots: ${saves ? `${saves.slots.length} slot(s) / active ${saves.activeSlotId || 'none'} / returns ${saves.returnLog.length}` : 'none'}`,
     `Seed divergence: ${divergence ? `${divergence.branches.length} branch(es), diverged=${divergence.diverged}, base law ${divergence.base_law_seed}` : 'not compared'}`,
@@ -3906,7 +4196,7 @@ function formatPrototypePublicOutcomes() {
     `Nearby actions: ${nearby ? `${nearby.actionLedger.length} location action(s), last=${nearby.lastPlan ? nearby.lastPlan.label + ' -> ' + nearby.lastPlan.action : 'none'}` : 'not used'}`,
     `Village days: ${dayCycle ? `${dayCycle.day} day(s), weather rows=${dayCycle.weatherLedger.length}, recaps=${dayCycle.recapLedger.length}` : 'not advanced'}`,
 	    `Return later: ${returnLater ? `${returnLater.returnLedger.length} return(s), latest=${returnLater.latestReceipt ? returnLater.latestReceipt.return_id : 'none'}` : 'not used'}`,
-	    `3D material physics: ${materialWorld ? `${materialWorld.components.length} component(s), ${materialWorld.structures.length} structure(s), term=${latestTerm ? latestTerm.resident_word + ' / ' + latestTerm.player_gloss : 'none'}, physics=${materialPhysics ? materialPhysics.step_id : 'not stepped'}` : 'not initialized'}`,
+	    `3D material physics: ${materialWorld ? `${materialWorld.components.length} component(s), ${materialWorld.structures.length} structure(s), term=${latestTerm ? latestTerm.resident_word + ' / ' + latestTerm.player_gloss : 'none'}, physics=${materialPhysics ? `${materialPhysics.step_id} field=${materialPhysics.field_id || 'none'} stress=${materialPhysics.field_stress || 'n/a'}` : 'not stepped'}` : 'not initialized'}`,
     `Construction practices: ${constructionPracticeCount} construction row(s) linked to practice graph`,
 	    `Audit mode: ${world.audit ? 'on' : 'off'} / hidden law normal view: no`,
   ].join('\n');
@@ -4043,9 +4333,9 @@ function formatPrototypeReturnLater() {
 
 function formatPrototypeMaterialWorld() {
   const sim = world.gamePrototype3DWorld || ensurePrototype3DWorld();
-  const physics = sim.physics || { mode: 'stochastic physics first', gravity: 9.8, solver_layers: ['mass', 'support', 'collision/contact', 'friction', 'stochastic failure'], forceLedger: [], supportLedger: [], collisionLedger: [], failureLedger: [], transformationLedger: [] };
+  const physics = sim.physics || { mode: 'stochastic physics first', gravity: 9.8, solver_layers: ['mass', 'support', 'collision/contact', 'friction', 'stochastic failure'], forceLedger: [], supportLedger: [], collisionLedger: [], failureLedger: [], fieldLedger: [], energyLedger: [], transformationLedger: [] };
   const structures = sim.structures.slice(-3).map(row => `${row.structure_id}: ${row.resident_term_id} / ${row.player_gloss}; stability=${row.stability}; moisture=${row.moisture_risk}; fixedAsset=${row.no_fixed_asset === false}`);
-  const components = sim.components.slice(0, 8).map(row => `${row.component_id}: ${row.shape} ${row.material_id} ${row.affordance}; pos=(${row.position3d.x},${row.position3d.y},${row.position3d.z}); stability=${row.stability}; damage=${row.damage}; term=${row.resident_term_id}`);
+  const components = sim.components.slice(0, 8).map(row => `${row.component_id}: ${row.shape} ${row.material_id} ${row.affordance}; pos=(${row.position3d.x},${row.position3d.y},${row.position3d.z}); stability=${row.stability}; damage=${row.damage}; stress=${row.field_stress || 0}; temp=${row.temperature || 'n/a'}; term=${row.resident_term_id}`);
 	  const terms = sim.language.terms.map(row => `${row.resident_word} ~ ${row.player_gloss}; engine=${world.audit ? row.engine_concept : 'audit only'}; roots=${row.root_glosses.join('+')}; variants=${row.variants.join(', ')}; confidence=${row.translation_confidence}`);
 	  const roots = sim.language.soundRoots.map(row => `${row.sound_form}: ${row.player_gloss}; grounded=${row.grounded_event}; adoption=${row.adoption_count}`);
 	  const latestPhysics = physics.latestStep;
@@ -4065,9 +4355,9 @@ function formatPrototypeMaterialWorld() {
     ...(terms.length ? terms : ['none']),
     'Grounded sound roots:',
     ...(roots.length ? roots : ['none']),
-	    'Physics:',
-	    latestPhysics ? `${latestPhysics.step_id}: support=${latestPhysics.support_checks}, collisions=${latestPhysics.collisions}, failures=${latestPhysics.failures}, entropy=${latestPhysics.entropy}` : 'none',
-	    `Force rows=${physics.forceLedger.length} / support rows=${physics.supportLedger.length} / collision rows=${physics.collisionLedger.length} / failure rows=${physics.failureLedger.length}`,
+		    'Physics:',
+		    latestPhysics ? `${latestPhysics.step_id}: support=${latestPhysics.support_checks}, collisions=${latestPhysics.collisions}, failures=${latestPhysics.failures}, field=${latestPhysics.field_id || 'none'}, heat=${latestPhysics.field_heat || 'n/a'}, moisture=${latestPhysics.field_moisture || 'n/a'}, stress=${latestPhysics.field_stress || 'n/a'}, entropy=${latestPhysics.entropy}` : 'none',
+		    `Force rows=${physics.forceLedger.length} / support rows=${physics.supportLedger.length} / collision rows=${physics.collisionLedger.length} / failure rows=${physics.failureLedger.length} / field rows=${physics.fieldLedger ? physics.fieldLedger.length : 0} / energy rows=${physics.energyLedger ? physics.energyLedger.length : 0}`,
 	    'Physics consequences:',
 	    ...(physicsProposals.length ? physicsProposals : ['none']),
     'Resident construction:',
@@ -4196,7 +4486,7 @@ function formatPrototypePlayerGuide() {
     `Nearby actions: ${nearby ? `${nearby.actionLedger.length} action(s), current=${nearbyActionPlan().label}->${nearbyActionPlan().action}` : `${nearbyActionPlan().label}->${nearbyActionPlan().action}`}`,
     `Village day: ${dayCycle ? `${dayCycle.day} day(s), weather=${dayCycle.weatherLedger.length}, recaps=${dayCycle.recapLedger.length}` : 'not advanced'}`,
     `Return later: ${returnLater ? `${returnLater.returnLedger.length} return(s), latest=${returnLater.latestReceipt ? returnLater.latestReceipt.return_id : 'none'}` : 'not used'}`,
-    `Physics: ${world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.latestStep ? `${world.gamePrototype3DWorld.physics.latestStep.step_id}; support=${world.gamePrototype3DWorld.physics.latestStep.support_checks}; failures=${world.gamePrototype3DWorld.physics.latestStep.failures}` : 'not stepped'} / residents use local terms and imperfect glosses, not engine truth`,
+    `Physics: ${world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.latestStep ? `${world.gamePrototype3DWorld.physics.latestStep.step_id}; support=${world.gamePrototype3DWorld.physics.latestStep.support_checks}; failures=${world.gamePrototype3DWorld.physics.latestStep.failures}; field=${world.gamePrototype3DWorld.physics.latestStep.field_id || 'none'}; stress=${world.gamePrototype3DWorld.physics.latestStep.field_stress || 'n/a'}` : 'not stepped'} / residents use local terms and imperfect glosses, not engine truth`,
     `Seed divergence: ${world.gamePrototypeDivergence ? `${world.gamePrototypeDivergence.branches.length} branch(es), diverged=${world.gamePrototypeDivergence.diverged}` : 'not compared'}`,
     `Commons: ${world.gamePrototypeCommons ? `${world.gamePrototypeCommons.pressure_level}, resources=${world.gamePrototypeCommons.resource_total}, pass=${world.gamePrototypeCommons.pass}` : 'not audited'}`,
     `Caution: ${guide.caution}`,
@@ -4220,25 +4510,31 @@ function formatPrototypeLoopReceipt() {
 function formatPrototypeDeepTime() {
   const sim = world.deepTimeCivilization;
   if (!sim) return 'No deep-time epochs yet. Run Deep-time epoch or Million-year sim.';
-  const latestTimeline = sim.timeline.slice(-6).map(row => `epoch ${row.epoch}: year ${row.year}, ${row.pressure}, effect=${row.effect_id}`);
+  const latestTimeline = sim.timeline.slice(-6).map(row => `epoch ${row.epoch}: year ${row.year}, ${row.pressure}, effect=${row.effect_id}, physical=${row.physical_effect_id || 'none'}`);
   const latestEffects = sim.emergentEffects.slice(-6).map(row => `${row.effect_id}: ${row.local_name} -> ${row.outcome}`);
   const latestConsequences = (sim.villageConsequences || []).slice(-6).map(row => `${row.consequence_id}: ${row.effect_id} changed ${row.resident} schedule via ${row.proposal_id}`);
-  const latestSurvival = (sim.survivalLedger || []).slice(-6).map(row => `${row.audit_id}: year ${row.year}, ${row.status}, score=${row.continuity_score}, active=${row.active_lineages}`);
-  const lineageRows = sim.lineages.slice(0, 6).map(row => `${row.lineage_id}: ${row.local_name}; status=${row.status}; age=${row.age_years}; memory=${row.memory_strength.toFixed(2)}; burden=${row.maintenance_burden}`);
+  const latestSurvival = (sim.survivalLedger || []).slice(-6).map(row => `${row.audit_id}: year ${row.year}, ${row.status}, score=${row.continuity_score}, active=${row.active_lineages}, physical=${row.physical_continuity || 'n/a'}, burden=${row.physical_burden || 'n/a'}`);
+  const lineageRows = sim.lineages.slice(0, 6).map(row => `${row.lineage_id}: ${row.local_name}; status=${row.status}; age=${row.age_years}; memory=${row.memory_strength.toFixed(2)}; burden=${row.maintenance_burden}; components=${row.component_ids ? row.component_ids.length : 0}; stabilityMemory=${row.physical_stability_memory || 'n/a'}`);
+  const heritageRows = (sim.physicalHeritageLedger || []).slice(-5).map(row => `${row.heritage_id}: ${row.lineage_id} inherited ${row.component_ids.length} component(s) from ${row.source_practice_id}; stability=${row.physical_stability_memory}`);
+  const physicalRows = (sim.componentEffectLedger || []).slice(-5).map(row => `${row.physical_effect_id}: ${row.pressure} touched ${row.target_component_count} component(s); structureStability=${row.structure_stability_after || 'n/a'}`);
   const state = sim.civilizationState || {};
   return [
     `Compressed year: ${sim.year}`,
     `Epochs: ${sim.epoch}`,
     `Extinctions: ${sim.extinctions.length}`,
-    `Civilization status: ${state.status || 'unknown'} / continuity=${state.continuityScore ?? 'n/a'} / million-year capable=${state.millionYearCapable ? 'yes' : 'not yet'}`,
-    `Boundary: no intentional tech tree; hidden laws audit-only; effects emerge from pressure.`,
+    `Civilization status: ${state.status || 'unknown'} / continuity=${state.continuityScore ?? 'n/a'} / physical=${state.physicalContinuity ?? 'n/a'} / million-year capable=${state.millionYearCapable ? 'yes' : 'not yet'}`,
+    `Boundary: no intentional tech tree; hidden laws audit-only; effects emerge from stochastic physical pressure.`,
     'Lineages:',
     ...(lineageRows.length ? lineageRows : ['none']),
     'Recent epochs:',
     ...(latestTimeline.length ? latestTimeline : ['none']),
-    'Emergent effects:',
-    ...(latestEffects.length ? latestEffects : ['none']),
-    'Village consequences:',
+	    'Emergent effects:',
+	    ...(latestEffects.length ? latestEffects : ['none']),
+	    'Physical heritage:',
+	    ...(heritageRows.length ? heritageRows : ['none']),
+	    'Deep-time physical component effects:',
+	    ...(physicalRows.length ? physicalRows : ['none']),
+	    'Village consequences:',
     ...(latestConsequences.length ? latestConsequences : ['none']),
     'Survival ledger:',
     ...(latestSurvival.length ? latestSurvival : ['none']),
@@ -4323,14 +4619,19 @@ function runPrototypeQASmoke() {
     returnLaterRows: world.gamePrototypeReturnLater ? world.gamePrototypeReturnLater.returnLedger.length : 0,
 	    materialComponents: world.gamePrototype3DWorld ? world.gamePrototype3DWorld.components.length : 0,
 	    residentTerms: world.gamePrototype3DWorld && world.gamePrototype3DWorld.language ? world.gamePrototype3DWorld.language.terms.length : 0,
-    physicsSteps: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics ? world.gamePrototype3DWorld.physics.step || 0 : 0,
-    supportRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics ? world.gamePrototype3DWorld.physics.supportLedger.length : 0,
-    forceRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics ? world.gamePrototype3DWorld.physics.forceLedger.length : 0,
-    constructionRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.length : 0,
-    projectBuiltComponents: world.gamePrototype3DWorld && world.gamePrototype3DWorld.components ? world.gamePrototype3DWorld.components.filter(component => component.project_built === true).length : 0,
-    constructionPracticeLinks: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.filter(row => row.practice_id).length : 0,
-    constructionPracticeNodes: world.emergentPracticeGraph && world.emergentPracticeGraph.nodes ? world.emergentPracticeGraph.nodes.filter(row => row.source_construction_rows && row.source_construction_rows.length).length : 0,
-    physicsProposals: world.villageBoard && world.villageBoard.projectProposals ? world.villageBoard.projectProposals.filter(row => row.related_physics_step).length : 0,
+	    physicsSteps: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics ? world.gamePrototype3DWorld.physics.step || 0 : 0,
+	    supportRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics ? world.gamePrototype3DWorld.physics.supportLedger.length : 0,
+	    forceRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics ? world.gamePrototype3DWorld.physics.forceLedger.length : 0,
+	    fieldRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.fieldLedger ? world.gamePrototype3DWorld.physics.fieldLedger.length : 0,
+	    energyRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.energyLedger ? world.gamePrototype3DWorld.physics.energyLedger.length : 0,
+	    constructionRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.length : 0,
+	    projectBuiltComponents: world.gamePrototype3DWorld && world.gamePrototype3DWorld.components ? world.gamePrototype3DWorld.components.filter(component => component.project_built === true).length : 0,
+	    constructionPracticeLinks: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.filter(row => row.practice_id).length : 0,
+	    constructionPracticeNodes: world.emergentPracticeGraph && world.emergentPracticeGraph.nodes ? world.emergentPracticeGraph.nodes.filter(row => row.source_construction_rows && row.source_construction_rows.length).length : 0,
+	    physicalHeritageRows: world.deepTimeCivilization && world.deepTimeCivilization.physicalHeritageLedger ? world.deepTimeCivilization.physicalHeritageLedger.length : 0,
+	    componentEffectRows: world.deepTimeCivilization && world.deepTimeCivilization.componentEffectLedger ? world.deepTimeCivilization.componentEffectLedger.length : 0,
+	    constructionLineages: world.deepTimeCivilization && world.deepTimeCivilization.lineages ? world.deepTimeCivilization.lineages.filter(row => row.component_ids && row.component_ids.length).length : 0,
+	    physicsProposals: world.villageBoard && world.villageBoard.projectProposals ? world.villageBoard.projectProposals.filter(row => row.related_physics_step).length : 0,
     physicsRepairActions: world.autonomousResidents && world.autonomousResidents.actionLog ? world.autonomousResidents.actionLog.filter(row => row.action === 'physics_repair').length : 0,
 	  };
   runAutonomousResidentTick();
@@ -4351,11 +4652,12 @@ function runPrototypeQASmoke() {
     { id: 'location-sensitive-play', pass: Boolean(world.gamePrototypeNearbyActions && savedCounts.nearbyActions > 0 && world.gamePrototypeNearbyActions.actionLedger.every(row => row.avatar_direct_command === false)), evidence: `${savedCounts.nearbyActions} nearby action row(s)` },
 	    { id: 'village-day-cycle', pass: Boolean(world.gamePrototypeDayCycle && savedCounts.villageDays > 0 && savedCounts.weatherRows > 0 && world.gamePrototypeDayCycle.dayLedger.every(row => row.direct_player_command === false)), evidence: `${savedCounts.villageDays} day row(s), ${savedCounts.weatherRows} weather row(s)` },
 	    { id: 'return-later-forward-persistence', pass: Boolean(world.gamePrototypeReturnLater && savedCounts.returnLaterRows > 0 && world.gamePrototypeReturnLater.returnLedger.every(row => row.restored_old_state === false && row.direct_reset === false && row.continuity_preserved === true)), evidence: `${savedCounts.returnLaterRows} return-later row(s)` },
-	    { id: 'stochastic-physics-substrate', pass: Boolean(world.gamePrototype3DWorld && savedCounts.materialComponents > 0 && savedCounts.residentTerms > 0 && savedCounts.physicsSteps > 0 && savedCounts.supportRows > 0 && savedCounts.forceRows > 0 && world.gamePrototype3DWorld.noFixedBuildingAssets === true && world.gamePrototype3DWorld.noEnglishResidentTechLabels === true), evidence: `${savedCounts.materialComponents} component(s), ${savedCounts.residentTerms} term(s), ${savedCounts.physicsSteps} physics step(s)` },
+		    { id: 'stochastic-physics-substrate', pass: Boolean(world.gamePrototype3DWorld && savedCounts.materialComponents > 0 && savedCounts.residentTerms > 0 && savedCounts.physicsSteps > 0 && savedCounts.supportRows > 0 && savedCounts.forceRows > 0 && savedCounts.fieldRows > 0 && savedCounts.energyRows > 0 && world.gamePrototype3DWorld.noFixedBuildingAssets === true && world.gamePrototype3DWorld.noEnglishResidentTechLabels === true), evidence: `${savedCounts.materialComponents} component(s), ${savedCounts.residentTerms} term(s), ${savedCounts.physicsSteps} physics step(s), ${savedCounts.fieldRows} field row(s), ${savedCounts.energyRows} energy row(s)` },
     { id: 'physics-influences-village', pass: Boolean(savedCounts.physicsProposals > 0 && world.villageBoard.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${savedCounts.physicsProposals} physics proposal(s), ${savedCounts.physicsRepairActions} repair action(s)` },
     { id: 'projects-change-physical-world', pass: Boolean(savedCounts.constructionRows > 0 && savedCounts.projectBuiltComponents > 0 && world.gamePrototype3DWorld.constructionLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true)), evidence: `${savedCounts.constructionRows} construction row(s), ${savedCounts.projectBuiltComponents} project-built component(s)` },
-    { id: 'construction-feeds-practice-language', pass: Boolean(savedCounts.constructionPracticeLinks > 0 && savedCounts.constructionPracticeNodes > 0 && world.gamePrototype3DWorld.language.terms.some(row => (row.meaning_drift || []).some(text => /repair|reinforced|retie/.test(text)))), evidence: `${savedCounts.constructionPracticeLinks} construction-practice link(s), ${savedCounts.constructionPracticeNodes} construction practice node(s)` },
-	    { id: 'village-proposals', pass: Boolean(world.villageBoard && world.villageBoard.projectProposals.length > 0), evidence: `${world.villageBoard ? world.villageBoard.projectProposals.length : 0} proposal(s)` },
+	    { id: 'construction-feeds-practice-language', pass: Boolean(savedCounts.constructionPracticeLinks > 0 && savedCounts.constructionPracticeNodes > 0 && world.gamePrototype3DWorld.language.terms.some(row => (row.meaning_drift || []).some(text => /repair|reinforced|retie/.test(text)))), evidence: `${savedCounts.constructionPracticeLinks} construction-practice link(s), ${savedCounts.constructionPracticeNodes} construction practice node(s)` },
+	    { id: 'deep-time-uses-physical-heritage', pass: Boolean(savedCounts.physicalHeritageRows > 0 && savedCounts.componentEffectRows > 0 && savedCounts.constructionLineages > 0 && world.deepTimeCivilization && world.deepTimeCivilization.civilizationState && Number(world.deepTimeCivilization.civilizationState.physicalContinuity || 0) > 0), evidence: `${savedCounts.physicalHeritageRows} heritage row(s), ${savedCounts.componentEffectRows} deep physical effect(s), ${savedCounts.constructionLineages} construction lineage(s)` },
+		    { id: 'village-proposals', pass: Boolean(world.villageBoard && world.villageBoard.projectProposals.length > 0), evidence: `${world.villageBoard ? world.villageBoard.projectProposals.length : 0} proposal(s)` },
     { id: 'deep-time-million-year', pass: Boolean(world.deepTimeCivilization && world.deepTimeCivilization.year >= 1000000), evidence: `${world.deepTimeCivilization ? world.deepTimeCivilization.year : 0} years` },
     { id: 'survival-audited', pass: Boolean(world.deepTimeCivilization && world.deepTimeCivilization.survivalLedger && world.deepTimeCivilization.survivalLedger.length > 0), evidence: world.deepTimeCivilization && world.deepTimeCivilization.civilizationState ? world.deepTimeCivilization.civilizationState.status : 'none' },
     { id: 'causal-ledger', pass: Boolean(world.realityConstraintLedger && world.realityConstraintLedger.rows.length > 0), evidence: `${world.realityConstraintLedger ? world.realityConstraintLedger.rows.length : 0} row(s)` },
@@ -4484,8 +4786,12 @@ function saveSlotSummary(slot) {
     commons_support_rows: slot.commons_support_rows,
     nearby_action_rows: slot.nearby_action_rows,
     village_day_rows: slot.village_day_rows,
-    return_later_rows: slot.return_later_rows,
-  };
+	    return_later_rows: slot.return_later_rows,
+	    physical_field_rows: slot.physical_field_rows,
+	    physical_energy_rows: slot.physical_energy_rows,
+	    deep_time_physical_effects: slot.deep_time_physical_effects,
+	    physical_heritage_rows: slot.physical_heritage_rows,
+	  };
 }
 
 function ensurePrototypeSaves() {
@@ -4545,11 +4851,15 @@ function savePrototypeSlot(label = 'manual prototype save') {
 	    material_components: world.gamePrototype3DWorld ? world.gamePrototype3DWorld.components.length : 0,
 	    resident_terms: world.gamePrototype3DWorld && world.gamePrototype3DWorld.language ? world.gamePrototype3DWorld.language.terms.length : 0,
 	    physics_steps: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics ? world.gamePrototype3DWorld.physics.step || 0 : 0,
-	    physics_linked_proposals: world.villageBoard && world.villageBoard.projectProposals ? world.villageBoard.projectProposals.filter(row => row.related_physics_step).length : 0,
-    construction_rows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.length : 0,
-    project_built_components: world.gamePrototype3DWorld && world.gamePrototype3DWorld.components ? world.gamePrototype3DWorld.components.filter(component => component.project_built === true).length : 0,
-    construction_practice_links: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.filter(row => row.practice_id).length : 0,
-	    snapshot: null,
+		    physics_linked_proposals: world.villageBoard && world.villageBoard.projectProposals ? world.villageBoard.projectProposals.filter(row => row.related_physics_step).length : 0,
+	    physical_field_rows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.fieldLedger ? world.gamePrototype3DWorld.physics.fieldLedger.length : 0,
+	    physical_energy_rows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.energyLedger ? world.gamePrototype3DWorld.physics.energyLedger.length : 0,
+	    construction_rows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.length : 0,
+	    project_built_components: world.gamePrototype3DWorld && world.gamePrototype3DWorld.components ? world.gamePrototype3DWorld.components.filter(component => component.project_built === true).length : 0,
+	    construction_practice_links: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.filter(row => row.practice_id).length : 0,
+	    deep_time_physical_effects: world.deepTimeCivilization && world.deepTimeCivilization.componentEffectLedger ? world.deepTimeCivilization.componentEffectLedger.length : 0,
+	    physical_heritage_rows: world.deepTimeCivilization && world.deepTimeCivilization.physicalHeritageLedger ? world.deepTimeCivilization.physicalHeritageLedger.length : 0,
+		    snapshot: null,
   };
   slot.snapshot = snapshotWorldForPrototypeSlot(saves);
   saves.slots.push(slot);
@@ -4628,10 +4938,15 @@ function buildPrototypeAcceptanceReceipt() {
 	  const materialWorld = world.gamePrototype3DWorld || null;
 	  const physics = materialWorld && materialWorld.physics ? materialWorld.physics : null;
   const physicsProposalCount = board && board.projectProposals ? board.projectProposals.filter(row => row.related_physics_step).length : 0;
-  const constructionCount = materialWorld && materialWorld.constructionLedger ? materialWorld.constructionLedger.length : 0;
-  const projectBuiltComponentCount = materialWorld && materialWorld.components ? materialWorld.components.filter(component => component.project_built === true).length : 0;
-  const constructionPracticeLinks = materialWorld && materialWorld.constructionLedger ? materialWorld.constructionLedger.filter(row => row.practice_id).length : 0;
-  const constructionPracticeNodes = practiceGraph && practiceGraph.nodes ? practiceGraph.nodes.filter(row => row.source_construction_rows && row.source_construction_rows.length).length : 0;
+	  const constructionCount = materialWorld && materialWorld.constructionLedger ? materialWorld.constructionLedger.length : 0;
+	  const projectBuiltComponentCount = materialWorld && materialWorld.components ? materialWorld.components.filter(component => component.project_built === true).length : 0;
+	  const constructionPracticeLinks = materialWorld && materialWorld.constructionLedger ? materialWorld.constructionLedger.filter(row => row.practice_id).length : 0;
+	  const constructionPracticeNodes = practiceGraph && practiceGraph.nodes ? practiceGraph.nodes.filter(row => row.source_construction_rows && row.source_construction_rows.length).length : 0;
+	  const fieldRows = physics && physics.fieldLedger ? physics.fieldLedger.length : 0;
+	  const energyRows = physics && physics.energyLedger ? physics.energyLedger.length : 0;
+	  const physicalHeritageRows = deepTime && deepTime.physicalHeritageLedger ? deepTime.physicalHeritageLedger.length : 0;
+	  const deepPhysicalEffectRows = deepTime && deepTime.componentEffectLedger ? deepTime.componentEffectLedger.length : 0;
+	  const constructionLineageCount = deepTime && deepTime.lineages ? deepTime.lineages.filter(row => row.component_ids && row.component_ids.length).length : 0;
 	  const requirements = [
     { id: 'basic_visual_surface', pass: Boolean(world.entered && Object.keys(world.residents).length <= 6), evidence: `${Object.keys(world.residents).length} resident(s), room=${world.avatar.room}` },
     { id: 'persistent_save_return', pass: Boolean(saves && saves.slots && saves.slots.length > 0 && saves.returnLog && saves.returnLog.length > 0), evidence: saves ? `${saves.slots.length} slot(s), ${saves.returnLog.length} return(s)` : 'no prototype saves' },
@@ -4651,11 +4966,12 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'location_sensitive_play', pass: Boolean(nearby && nearby.actionLedger.length > 0 && nearby.actionLedger.every(row => row.avatar_direct_command === false)), evidence: nearby ? `${nearby.actionLedger.length} nearby action row(s), last=${nearby.lastPlan ? nearby.lastPlan.label + '->' + nearby.lastPlan.action : 'none'}` : 'not used' },
     { id: 'village_day_cycle', pass: Boolean(dayCycle && dayCycle.dayLedger.length > 0 && dayCycle.weatherLedger.length > 0 && dayCycle.dayLedger.every(row => row.direct_player_command === false)), evidence: dayCycle ? `${dayCycle.dayLedger.length} day row(s), ${dayCycle.weatherLedger.length} weather row(s), day=${dayCycle.day}` : 'not advanced' },
 	    { id: 'return_later_forward_persistence', pass: Boolean(returnLater && returnLater.returnLedger.length > 0 && returnLater.returnLedger.every(row => row.restored_old_state === false && row.direct_reset === false && row.continuity_preserved === true)), evidence: returnLater ? `${returnLater.returnLedger.length} return(s), latest=${returnLater.latestReceipt ? returnLater.latestReceipt.return_id : 'none'}` : 'not used' },
-	    { id: 'physics_first_3d_material_world', pass: Boolean(materialWorld && physics && materialWorld.components.length > 0 && materialWorld.structures.length > 0 && materialWorld.language.terms.length > 0 && physics.latestStep && physics.supportLedger.length > 0 && physics.forceLedger.length > 0 && materialWorld.noFixedBuildingAssets === true && materialWorld.noEnglishResidentTechLabels === true), evidence: materialWorld && physics ? `${materialWorld.components.length} component(s), ${materialWorld.language.terms.length} term(s), physics step=${physics.latestStep ? physics.latestStep.step_id : 'none'}` : 'not initialized' },
+		    { id: 'physics_first_3d_material_world', pass: Boolean(materialWorld && physics && materialWorld.components.length > 0 && materialWorld.structures.length > 0 && materialWorld.language.terms.length > 0 && physics.latestStep && physics.supportLedger.length > 0 && physics.forceLedger.length > 0 && fieldRows > 0 && energyRows > 0 && materialWorld.noFixedBuildingAssets === true && materialWorld.noEnglishResidentTechLabels === true), evidence: materialWorld && physics ? `${materialWorld.components.length} component(s), ${materialWorld.language.terms.length} term(s), physics step=${physics.latestStep ? physics.latestStep.step_id : 'none'}, fields=${fieldRows}, energy=${energyRows}` : 'not initialized' },
 	    { id: 'physics_consequences_reach_residents', pass: Boolean(physicsProposalCount > 0 && board.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${physicsProposalCount} physics-linked proposal(s)` },
-	    { id: 'projects_construct_physical_components', pass: Boolean(constructionCount > 0 && projectBuiltComponentCount > 0 && materialWorld.constructionLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true)), evidence: `${constructionCount} construction row(s), ${projectBuiltComponentCount} project-built component(s)` },
-    { id: 'construction_evolves_practice_language', pass: Boolean(constructionPracticeLinks > 0 && constructionPracticeNodes > 0 && materialWorld.language.terms.some(row => (row.meaning_drift || []).some(text => /repair|reinforced|retie/.test(text)))), evidence: `${constructionPracticeLinks} construction-practice link(s), ${constructionPracticeNodes} construction practice node(s)` },
-	    { id: 'prototype_qa_passes', pass: Boolean(qa && qa.pass === true), evidence: qa ? `${qa.passed}/${qa.total} QA checks` : 'QA not run' },
+		    { id: 'projects_construct_physical_components', pass: Boolean(constructionCount > 0 && projectBuiltComponentCount > 0 && materialWorld.constructionLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true)), evidence: `${constructionCount} construction row(s), ${projectBuiltComponentCount} project-built component(s)` },
+	    { id: 'construction_evolves_practice_language', pass: Boolean(constructionPracticeLinks > 0 && constructionPracticeNodes > 0 && materialWorld.language.terms.some(row => (row.meaning_drift || []).some(text => /repair|reinforced|retie/.test(text)))), evidence: `${constructionPracticeLinks} construction-practice link(s), ${constructionPracticeNodes} construction practice node(s)` },
+	    { id: 'deep_time_uses_physical_heritage', pass: Boolean(physicalHeritageRows > 0 && deepPhysicalEffectRows > 0 && constructionLineageCount > 0 && deepTime && deepTime.civilizationState && Number(deepTime.civilizationState.physicalContinuity || 0) > 0), evidence: `${physicalHeritageRows} heritage row(s), ${deepPhysicalEffectRows} deep physical effect(s), ${constructionLineageCount} construction lineage(s)` },
+		    { id: 'prototype_qa_passes', pass: Boolean(qa && qa.pass === true), evidence: qa ? `${qa.passed}/${qa.total} QA checks` : 'QA not run' },
     { id: 'research_arc_closed_mode', pass: Boolean(prototype.noMoreResearchReportsByDefault && prototype.mode === 'game-prototype-v0'), evidence: `${prototype.mode}, reports default=${prototype.noMoreResearchReportsByDefault ? 'off' : 'on'}` },
   ];
   const passed = requirements.filter(row => row.pass).length;
@@ -4726,7 +5042,7 @@ function formatPrototypeClock() {
 
 function formatPrototypeSaves() {
   const saves = world.gamePrototypeSaves || ensurePrototypeSaves();
-  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; survival=${slot.survival_status}`);
+  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals/${slot.physical_field_rows || 0} fields/${slot.physical_energy_rows || 0} energy; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; deepPhysics=${slot.deep_time_physical_effects || 0}/${slot.physical_heritage_rows || 0}; survival=${slot.survival_status}`);
   const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, from replay=${row.returned_from_replay_rows}`);
   return [
     `Active slot: ${saves.activeSlotId || 'none'}`,

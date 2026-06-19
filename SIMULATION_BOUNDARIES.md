@@ -38,6 +38,8 @@ Physics is the intended substrate of the game simulation. World changes should b
 
 The current prototype can use bounded discrete approximations instead of a production-grade solver, but it should not fall back to a fantasy state machine where effects happen only because a script says so.
 
+The corrected game-build direction is stronger than "basic physics as flavor." The whole simulation should route through stochastic physics where possible: resident effort, structure failure, repair opportunity, resource strain, practice formation, language drift, project work, and deep-time survival should be consequences of material state, physical fields, labor, memory, and social transmission.
+
 Minimum physics separation:
 
 - Hidden physical state: material properties, forces, support, failure probabilities, and engine concepts.
@@ -58,7 +60,7 @@ Resident local vocabulary is a bounded simulation mechanic, not an open-ended la
 
 The prototype may compress thousands or millions of years into inspectable epoch records. This is a game abstraction for long-horizon lineage evolution. It is not a full civilization simulator, population model, geology model, production-certified physical-history model, or historical claim.
 
-Deep-time effects must still follow the existing boundaries: no predeclared tech tree, no avatar-installed concepts, no resource changes without pressure or ledger explanation, and no hidden law exposed to residents in normal view.
+Deep-time effects must still follow the existing boundaries: no predeclared tech tree, no avatar-installed concepts, no resource changes without pressure or ledger explanation, no physical inheritance without components or material history, and no hidden law exposed to residents in normal view.
 
 ## Survivability boundary
 

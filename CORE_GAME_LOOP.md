@@ -246,6 +246,18 @@ The first playable loop includes a direct save/return pass: enter the village, l
 7. Save/return, QA, acceptance, replay, and the canvas top bar preserve day-cycle history.
 
 
+## Stochastic physics substrate loop
+
+1. Every material step updates stochastic physical fields: moisture, heat, wind, decay pressure, and structural stress.
+2. Fields transform component moisture, temperature, stress, damage, and stability according to material properties.
+3. Gravity, support, contact/collision, friction, and stochastic fatigue then update forces, failures, and maintenance pressure.
+4. Resident needs and visible behavior read that pressure as effort, safety loss, repair cues, or refusal/recovery pressure.
+5. Village Board concerns and proposals can emerge from physical strain, but the avatar cannot command a repair.
+6. Resident project work consumes material/labor to repair or add components; those components later inherit field pressure.
+7. Deep time carries physical heritage forward so lineages survive or fail partly through component stability and damage.
+8. QA, acceptance, save/return, material-world view, deep-time view, and the Reality Constraint Ledger all preserve the physical trace.
+
+
 ## Return-later loop
 
 1. The avatar leaves the village for several offscreen days.

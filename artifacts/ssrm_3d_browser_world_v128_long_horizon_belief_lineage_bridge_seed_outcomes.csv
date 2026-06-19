@@ -1,0 +1,9 @@
+seed,law_hash,settlement_bias,outcome,history_signature,final_label,final_abstraction_level,successful_experiments,failed_experiments,safety_events,practice_discovered,taboo_emerged,institutions,trade_shifts,predeclared_ending
+36217,8b870bbf2174e222,craft,stalled_rival_theories,ccbf932964f435c5,bench-tool-anger/route-fiber-rise,4,3,4,2,False,True,craft_bench,more_ash_glass;avoid_wet_wood;more_clay_jar;avoid_ash_glass;more_reed_fiber,False
+36231,8b870bbf2174e222,caution,stalled_rival_theories,c2a07b02f31415c6,roof-tool-anger/route-quiet-doubt,1,2,5,1,False,False,none,more_dry_resin;more_wet_wood;avoid_clay_jar,False
+36247,8b870bbf2174e222,ritual,safety_taboo_lineage,9d1b5b7844f062d2,jar-rub-sign/school-rub-sign,2,2,5,2,False,True,safety_custom,avoid_dry_resin;avoid_reed_fiber;more_dry_resin;more_dry_resin,False
+36263,8b870bbf2174e222,trade,material_route_shift,d5d7e494a48fd791,jar-quiet-doubt/roof-quiet-doubt,1,2,5,1,False,False,none,more_red_scrap;more_ash_glass;avoid_reed_fiber,False
+36281,8b870bbf2174e222,archive,archive_school_lineage,1d0f64aaf543ada2,school-dark-crawl/school-dark-crawl,3,5,2,1,True,False,memory_school,more_iron_sand;more_dry_resin;avoid_ash_glass;more_dry_resin;more_wet_wood;more_red_scrap,False
+36307,8b870bbf2174e222,skeptic,useful_wrong_custom,75e7e5acdb5e98e3,jar-rub-sign/route-red-call,2,4,3,0,False,False,none,more_reed_fiber;more_ash_glass;more_dry_resin;more_iron_sand,False
+36319,8b870bbf2174e222,teacher,stalled_rival_theories,6dee92394683c60e,route-half-sign/roof-ash-fear,1,3,4,2,False,True,none,more_ash_glass;more_dry_resin;more_red_scrap;avoid_clay_jar;avoid_dry_resin,False
+36343,8b870bbf2174e222,wanderer,useful_wrong_custom,84138bbaba8f448f,bench-fiber-rise/roof-red-call,2,4,3,3,False,True,none,more_clay_jar;more_iron_sand;avoid_reed_fiber;avoid_clay_jar;avoid_dry_resin;more_dry_resin;more_wet_wood,False

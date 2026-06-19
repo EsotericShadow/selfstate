@@ -579,3 +579,8 @@ The maintained shell now carries stochastic recovery history into later resident
 
 Report 367 keeps the non-scripted discovery line moving by making stochastic history influence ordinary browser actions instead of only a dedicated review panel. The public boundary remains unchanged: browser-local, deterministic per seed, inspectable, no LLM calls, no subjective-consciousness claim, no moral-patienthood claim, and no finished game-engine claim.
 
+
+## Report 368 public note: belief lineage survives time
+
+Report 368 moves the browser-world research line toward a small civilization history rather than another scripted unlock. The same hidden material law is held fixed across seeds while residents inherit and mutate labels, propose tests, preserve failures, compete over theories, create safety customs or institutions, and diverge into different histories over weeks, years, and generations. Boundary remains narrow: deterministic local simulation, inspectable artifacts, no LLM calls, no subjective-consciousness claim, no moral-patienthood claim, and no finished civilization engine.
+

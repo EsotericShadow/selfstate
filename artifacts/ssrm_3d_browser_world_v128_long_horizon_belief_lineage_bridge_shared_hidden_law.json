@@ -1,0 +1,116 @@
+{
+  "hidden_law": {
+    "auditOnly": true,
+    "hiddenFromResidents": true,
+    "materials": {
+      "ash_glass": {
+        "chargeRetention": 0.596,
+        "combustionRisk": 0.062,
+        "conductivityLike": 0.141,
+        "fragility": 0.829,
+        "frictionResponse": 0.612,
+        "heatTolerance": 0.866,
+        "insulationBlocking": 0.666,
+        "magneticAttraction": 0.0,
+        "moistureSensitivity": 0.318,
+        "storagePotential": 0.723,
+        "toxicity": 0.023
+      },
+      "clay_jar": {
+        "chargeRetention": 0.48,
+        "combustionRisk": 0.04,
+        "conductivityLike": 0.124,
+        "fragility": 0.777,
+        "frictionResponse": 0.454,
+        "heatTolerance": 0.593,
+        "insulationBlocking": 0.601,
+        "magneticAttraction": 0.0,
+        "moistureSensitivity": 0.483,
+        "storagePotential": 0.606,
+        "toxicity": 0.0
+      },
+      "dry_resin": {
+        "chargeRetention": 0.698,
+        "combustionRisk": 0.468,
+        "conductivityLike": 0.161,
+        "fragility": 0.317,
+        "frictionResponse": 0.857,
+        "heatTolerance": 0.481,
+        "insulationBlocking": 0.558,
+        "magneticAttraction": 0.108,
+        "moistureSensitivity": 0.643,
+        "storagePotential": 0.604,
+        "toxicity": 0.145
+      },
+      "iron_sand": {
+        "chargeRetention": 0.109,
+        "combustionRisk": 0.125,
+        "conductivityLike": 0.608,
+        "fragility": 0.153,
+        "frictionResponse": 0.291,
+        "heatTolerance": 0.746,
+        "insulationBlocking": 0.071,
+        "magneticAttraction": 0.824,
+        "moistureSensitivity": 0.287,
+        "storagePotential": 0.284,
+        "toxicity": 0.152
+      },
+      "red_scrap": {
+        "chargeRetention": 0.157,
+        "combustionRisk": 0.052,
+        "conductivityLike": 0.727,
+        "fragility": 0.325,
+        "frictionResponse": 0.344,
+        "heatTolerance": 0.785,
+        "insulationBlocking": 0.045,
+        "magneticAttraction": 0.585,
+        "moistureSensitivity": 0.181,
+        "storagePotential": 0.316,
+        "toxicity": 0.125
+      },
+      "reed_fiber": {
+        "chargeRetention": 0.403,
+        "combustionRisk": 0.679,
+        "conductivityLike": 0.096,
+        "fragility": 0.628,
+        "frictionResponse": 0.712,
+        "heatTolerance": 0.224,
+        "insulationBlocking": 0.516,
+        "magneticAttraction": 0.064,
+        "moistureSensitivity": 0.624,
+        "storagePotential": 0.441,
+        "toxicity": 0.125
+      },
+      "wet_wood": {
+        "chargeRetention": 0.03,
+        "combustionRisk": 0.493,
+        "conductivityLike": 0.389,
+        "fragility": 0.257,
+        "frictionResponse": 0.134,
+        "heatTolerance": 0.414,
+        "insulationBlocking": 0.317,
+        "magneticAttraction": 0.093,
+        "moistureSensitivity": 0.859,
+        "storagePotential": 0.161,
+        "toxicity": 0.065
+      }
+    },
+    "propertyNames": [
+      "conductivityLike",
+      "chargeRetention",
+      "frictionResponse",
+      "moistureSensitivity",
+      "heatTolerance",
+      "fragility",
+      "toxicity",
+      "combustionRisk",
+      "insulationBlocking",
+      "storagePotential",
+      "magneticAttraction"
+    ],
+    "seed": 36217,
+    "sharedAcrossSeeds": true
+  },
+  "law_hash": "8b870bbf2174e222",
+  "resident_visible": false
+}

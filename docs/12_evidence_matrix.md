@@ -1592,3 +1592,12 @@ Report 302 records a direct browser QA pass over the maintained v61 app shell. E
 | Normal play is not panel-only. | `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js` calls `applyStochasticHistoryToOrdinaryAction` from existing ordinary actions. | Influence is bounded and traceable rather than open-ended agency. |
 | Suspicious or pending histories do not create permanent punishment. | Generated criteria check source links, recovery paths, and `permanent_penalty=False`. | This is welfare-style bounded recovery scaffolding, not subjective distress. |
 
+
+## Report 368: SSRM-3D Long-Horizon Belief Lineage Bridge
+
+| Claim | Evidence | Boundary |
+| --- | --- | --- |
+| One hidden-law world can produce divergent seeded histories. | `artifacts/ssrm_3d_browser_world_v128_long_horizon_belief_lineage_bridge_seed_outcomes.csv` records one law hash with distinct history signatures and multiple outcomes. | Deterministic per seed; not open-ended anthropology or a finished simulation. |
+| Beliefs now have ancestry across long horizons. | `artifacts/ssrm_3d_browser_world_v128_long_horizon_belief_lineage_bridge_belief_lineages.csv` records parent belief IDs, generations, evidence, contradictions, abstraction levels, and resident carriers. | Local labels remain functional scaffolding, not autonomous language. |
+| Resident proposals, failures, rivalry, institutions, and material bottlenecks shape culture. | Proposal, experiment, competition, material-chain, cultural-memory, and audit artifacts record the path from inherited belief to later custom. | No LLM calls, no subjective-consciousness claim, no moral-patienthood claim, and no predeclared device tree. |
+

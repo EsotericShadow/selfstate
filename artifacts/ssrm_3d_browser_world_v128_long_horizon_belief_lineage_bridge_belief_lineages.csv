@@ -1,0 +1,65 @@
+seed,belief_id,parent_belief_id,era,era_day,generation,resident,household,label,kind,confidence,evidence_count,contradiction_count,witness_count,abstraction_level,source,source_effect,source_effect_kind,law_hash,true_law_exposed,avatar_answer
+36217,36217-BEL-000,root_observation,week_00,0,0,Fay,house_1,herb-jump,practical,0.419,1,0,1,0,public_anomaly_observation,smoke appeared and the test was stopped,risk,8b870bbf2174e222,False,False
+36217,36217-BEL-001,36217-BEL-000,week_01,7,1,Ari,house_1,herb-jump/half-sign,useful_wrong,0.319,2,1,2,0,36217-PROP-00-4047,nothing repeated clearly,unclear,8b870bbf2174e222,False,False
+36217,36217-BEL-002,36217-BEL-001,moon_02,42,2,Milo,house_2,handspan bite/dry-jump,useful_wrong,0.467,3,1,3,0,36217-PROP-01-1026,loose fiber jumped after rubbing,jump,8b870bbf2174e222,False,False
+36217,36217-BEL-003,36217-BEL-002,season_01,120,3,Sera,house_3,dry-jump/smoke-bound,ritualized,0.367,4,2,4,0,36217-PROP-02-6830,smoke appeared and the test was stopped,risk,8b870bbf2174e222,False,False
+36217,36217-BEL-004,36217-BEL-003,year_01,365,4,Sera,house_0,smoke-bound/quiet-doubt,skeptical,0.267,5,3,5,0,36217-PROP-03-4805,nothing repeated clearly,unclear,8b870bbf2174e222,False,False
+36217,36217-BEL-005,36217-BEL-004,year_03,1095,5,Milo,house_1,quiet-doubt/fiber-rise,craft_rule,0.415,6,3,6,2,36217-PROP-04-8057,loose fiber jumped after rubbing,jump,8b870bbf2174e222,False,False
+36217,36217-BEL-006,36217-BEL-005,generation_02,9125,6,Sera,house_2,fiber-rise/bench-tool-anger,ritualized,0.315,7,4,7,2,36217-PROP-05-8391,a tool edge cracked before the sign returned,breakage,8b870bbf2174e222,False,False
+36217,36217-BEL-007,36217-BEL-006,generation_04,18250,7,Milo,house_3,bench-tool-anger/route-fiber-rise,craft_rule,0.463,8,4,8,4,36217-PROP-06-3679,loose fiber jumped after rubbing,jump,8b870bbf2174e222,False,False
+36231,36231-BEL-000,root_observation,week_00,0,0,Sera,house_3,cold spark,useful_wrong,0.481,1,0,1,0,public_anomaly_observation,smoke appeared and the test was stopped,risk,8b870bbf2174e222,False,False
+36231,36231-BEL-001,36231-BEL-000,week_01,7,1,Nia,house_3,cold spark/fiber-rise,skeptical,0.589,2,0,2,0,36231-PROP-00-5854,loose fiber jumped after rubbing,jump,8b870bbf2174e222,False,False
+36231,36231-BEL-002,36231-BEL-001,moon_02,42,2,Fay,house_0,quiet sting/quiet-doubt,ritualized,0.489,3,1,3,0,36231-PROP-01-6822,nothing repeated clearly,unclear,8b870bbf2174e222,False,False
+36231,36231-BEL-003,36231-BEL-002,season_01,120,3,Fay,house_1,jar omen/missing-repeat,skeptical,0.389,4,2,4,0,36231-PROP-02-5029,nothing repeated clearly,unclear,8b870bbf2174e222,False,False
+36231,36231-BEL-004,36231-BEL-003,year_01,365,4,Tovan,house_2,missing-repeat/quiet-doubt,skeptical,0.289,5,3,5,0,36231-PROP-03-4762,nothing repeated clearly,unclear,8b870bbf2174e222,False,False
+36231,36231-BEL-005,36231-BEL-004,year_03,1095,5,Fay,house_3,quiet-doubt/red-call,craft_rule,0.397,6,3,6,1,36231-PROP-04-2573,dark grains crawled toward the red scrap,motion,8b870bbf2174e222,False,False
+36231,36231-BEL-006,36231-BEL-005,generation_02,9125,6,Fay,house_0,red-call/roof-tool-anger,safety_rule,0.297,7,4,7,1,36231-PROP-05-7822,a tool edge cracked before the sign returned,breakage,8b870bbf2174e222,False,False
+36231,36231-BEL-007,36231-BEL-006,generation_04,18250,7,Nia,house_1,roof-tool-anger/route-quiet-doubt,skeptical,0.197,8,5,8,1,36231-PROP-06-7859,nothing repeated clearly,unclear,8b870bbf2174e222,False,False
+36247,36247-BEL-000,root_observation,week_00,0,0,Fay,house_3,jar omen,ritualized,0.346,1,0,1,0,public_anomaly_observation,smoke appeared and the test was stopped,risk,8b870bbf2174e222,False,False
+36247,36247-BEL-001,36247-BEL-000,week_01,7,1,Ari,house_3,jar omen/half-sign,skeptical,0.246,2,1,2,0,36247-PROP-00-8056,nothing repeated clearly,unclear,8b870bbf2174e222,False,False
+36247,36247-BEL-002,36247-BEL-001,moon_02,42,2,Tovan,house_0,half-sign/ash-fear,ritualized,0.146,3,2,3,0,36247-PROP-01-9591,smoke appeared and the test was stopped,risk,8b870bbf2174e222,False,False
+36247,36247-BEL-003,36247-BEL-002,season_01,120,3,Tovan,house_1,safe-gap/ash-fear,ritualized,0.046,4,3,4,0,36247-PROP-02-5063,smoke appeared and the test was stopped,risk,8b870bbf2174e222,False,False
+36247,36247-BEL-004,36247-BEL-003,year_01,365,4,Nia,house_2,grain pull/water-hush,useful_wrong,0.02,5,4,5,0,36247-PROP-03-4828,wet pieces dulled the effect and left only a sting,dulling,8b870bbf2174e222,False,False
+36247,36247-BEL-005,36247-BEL-004,year_03,1095,5,Milo,house_3,water-hush/rain-fail,ritualized,0.02,6,5,6,0,36247-PROP-04-5167,wet pieces dulled the effect and left only a sting,dulling,8b870bbf2174e222,False,False
+36247,36247-BEL-006,36247-BEL-005,generation_02,9125,6,Milo,house_0,rain-fail/jar-rub-sign,craft_rule,0.128,7,5,7,1,36247-PROP-05-2108,loose fiber jumped after rubbing,jump,8b870bbf2174e222,False,False
+36247,36247-BEL-007,36247-BEL-006,generation_04,18250,7,Tovan,house_1,jar-rub-sign/school-rub-sign,craft_rule,0.236,8,5,8,2,36247-PROP-06-9223,loose fiber jumped after rubbing,jump,8b870bbf2174e222,False,False
+36263,36263-BEL-000,root_observation,week_00,0,0,Nia,house_3,glass sleep,ritualized,0.413,1,0,1,0,public_anomaly_observation,smoke appeared and the test was stopped,risk,8b870bbf2174e222,False,False
+36263,36263-BEL-001,36263-BEL-000,week_01,7,1,Nia,house_3,glass sleep/missing-repeat,skeptical,0.313,2,1,3,0,36263-PROP-00-8046,nothing repeated clearly,unclear,8b870bbf2174e222,False,False
+36263,36263-BEL-002,36263-BEL-001,moon_02,42,2,Nia,house_0,grain pull/dry-jump,useful_wrong,0.421,3,1,5,0,36263-PROP-01-6303,loose fiber jumped after rubbing,jump,8b870bbf2174e222,False,False
+36263,36263-BEL-003,36263-BEL-002,season_01,120,3,Nia,house_1,dry-jump/fiber-rise,craft_rule,0.529,4,1,7,1,36263-PROP-02-8528,loose fiber jumped after rubbing,jump,8b870bbf2174e222,False,False
+36263,36263-BEL-004,36263-BEL-003,year_01,365,4,Fay,house_2,quiet sting/quiet-doubt,skeptical,0.429,5,2,9,1,36263-PROP-03-1650,nothing repeated clearly,unclear,8b870bbf2174e222,False,False
+36263,36263-BEL-005,36263-BEL-004,year_03,1095,5,Milo,house_3,quiet-doubt/ash-fear,ritualized,0.329,6,3,11,1,36263-PROP-04-6374,smoke appeared and the test was stopped,risk,8b870bbf2174e222,False,False
+36263,36263-BEL-006,36263-BEL-005,generation_02,9125,6,Nia,house_0,ash-fear/jar-quiet-doubt,ritualized,0.229,7,4,13,1,36263-PROP-05-4657,nothing repeated clearly,unclear,8b870bbf2174e222,False,False
+36263,36263-BEL-007,36263-BEL-006,generation_04,18250,7,Ari,house_1,jar-quiet-doubt/roof-quiet-doubt,useful_wrong,0.129,8,5,15,1,36263-PROP-06-1515,nothing repeated clearly,unclear,8b870bbf2174e222,False,False
+36281,36281-BEL-000,root_observation,week_00,0,0,Nia,house_1,glass sleep,skeptical,0.499,1,0,1,0,public_anomaly_observation,smoke appeared and the test was stopped,risk,8b870bbf2174e222,False,False
+36281,36281-BEL-001,36281-BEL-000,week_01,7,1,Tovan,house_1,glass sleep/red-call,ritualized,0.607,2,0,2,0,36281-PROP-00-5591,dark grains crawled toward the red scrap,motion,8b870bbf2174e222,False,False
+36281,36281-BEL-002,36281-BEL-001,moon_02,42,2,Fay,house_2,red-call/dry-jump,practical,0.715,3,0,3,0,36281-PROP-01-7588,loose fiber jumped after rubbing,jump,8b870bbf2174e222,False,False
+36281,36281-BEL-003,36281-BEL-002,season_01,120,3,Tovan,house_3,storm crumb/edge-shame,ritualized,0.615,4,1,4,0,36281-PROP-02-6260,a tool edge cracked before the sign returned,breakage,8b870bbf2174e222,False,False
+36281,36281-BEL-004,36281-BEL-003,year_01,365,4,Ari,house_0,edge-shame/quiet-doubt,useful_wrong,0.515,5,2,5,0,36281-PROP-03-9288,nothing repeated clearly,unclear,8b870bbf2174e222,False,False
+36281,36281-BEL-005,36281-BEL-004,year_03,1095,5,Nia,house_1,quiet-doubt/dry-jump,craft_rule,0.623,6,2,6,1,36281-PROP-04-1067,loose fiber jumped after rubbing,jump,8b870bbf2174e222,False,False
+36281,36281-BEL-006,36281-BEL-005,generation_02,9125,6,Fay,house_2,dry-jump/school-dark-crawl,craft_rule,0.731,7,2,7,2,36281-PROP-05-9290,dark grains crawled toward the red scrap,motion,8b870bbf2174e222,False,False
+36281,36281-BEL-007,36281-BEL-006,generation_04,18250,7,Sera,house_3,school-dark-crawl/school-dark-crawl,craft_rule,0.839,8,2,8,3,36281-PROP-06-8509,dark grains crawled toward the red scrap,motion,8b870bbf2174e222,False,False
+36307,36307-BEL-000,root_observation,week_00,0,0,Fay,house_3,jar omen,skeptical,0.493,1,0,1,0,public_anomaly_observation,smoke appeared and the test was stopped,risk,8b870bbf2174e222,False,False
+36307,36307-BEL-001,36307-BEL-000,week_01,7,1,Sera,house_3,cloak ghost/fiber-rise,useful_wrong,0.601,2,0,2,0,36307-PROP-00-3577,loose fiber jumped after rubbing,jump,8b870bbf2174e222,False,False
+36307,36307-BEL-002,36307-BEL-001,moon_02,42,2,Sera,house_0,smoke warning/fiber-rise,practical,0.709,3,0,3,0,36307-PROP-01-5399,loose fiber jumped after rubbing,jump,8b870bbf2174e222,False,False
+36307,36307-BEL-003,36307-BEL-002,season_01,120,3,Milo,house_1,handspan bite/missing-repeat,skeptical,0.609,4,1,4,0,36307-PROP-02-6388,nothing repeated clearly,unclear,8b870bbf2174e222,False,False
+36307,36307-BEL-004,36307-BEL-003,year_01,365,4,Tovan,house_2,safe-gap/half-sign,ritualized,0.509,5,2,5,0,36307-PROP-03-3593,nothing repeated clearly,unclear,8b870bbf2174e222,False,False
+36307,36307-BEL-005,36307-BEL-004,year_03,1095,5,Tovan,house_3,half-sign/half-sign,ritualized,0.409,6,3,6,0,36307-PROP-04-2402,nothing repeated clearly,unclear,8b870bbf2174e222,False,False
+36307,36307-BEL-006,36307-BEL-005,generation_02,9125,6,Nia,house_0,half-sign/jar-rub-sign,craft_rule,0.517,7,3,7,1,36307-PROP-05-3745,loose fiber jumped after rubbing,jump,8b870bbf2174e222,False,False
+36307,36307-BEL-007,36307-BEL-006,generation_04,18250,7,Tovan,house_1,jar-rub-sign/route-red-call,craft_rule,0.625,8,3,8,2,36307-PROP-06-1839,dark grains crawled toward the red scrap,motion,8b870bbf2174e222,False,False
+36319,36319-BEL-000,root_observation,week_00,0,0,Fay,house_3,herb-jump,ritualized,0.385,1,0,1,0,public_anomaly_observation,smoke appeared and the test was stopped,risk,8b870bbf2174e222,False,False
+36319,36319-BEL-001,36319-BEL-000,week_01,7,1,Ari,house_3,awl-bite/rub-sign,practical,0.533,2,0,3,0,36319-PROP-00-1296,loose fiber jumped after rubbing,jump,8b870bbf2174e222,False,False
+36319,36319-BEL-002,36319-BEL-001,moon_02,42,2,Nia,house_0,rub-sign/dry-jump,useful_wrong,0.681,3,0,5,0,36319-PROP-01-9304,loose fiber jumped after rubbing,jump,8b870bbf2174e222,False,False
+36319,36319-BEL-003,36319-BEL-002,season_01,120,3,Fay,house_1,quiet sting/fiber-rise,craft_rule,0.829,4,0,7,1,36319-PROP-02-4549,loose fiber jumped after rubbing,jump,8b870bbf2174e222,False,False
+36319,36319-BEL-004,36319-BEL-003,year_01,365,4,Nia,house_2,fiber-rise/edge-shame,safety_rule,0.729,5,1,9,1,36319-PROP-03-1154,a tool edge cracked before the sign returned,breakage,8b870bbf2174e222,False,False
+36319,36319-BEL-005,36319-BEL-004,year_03,1095,5,Milo,house_3,edge-shame/missing-repeat,skeptical,0.629,6,2,11,1,36319-PROP-04-3550,nothing repeated clearly,unclear,8b870bbf2174e222,False,False
+36319,36319-BEL-006,36319-BEL-005,generation_02,9125,6,Milo,house_0,missing-repeat/route-half-sign,ritualized,0.529,7,3,13,1,36319-PROP-05-9289,nothing repeated clearly,unclear,8b870bbf2174e222,False,False
+36319,36319-BEL-007,36319-BEL-006,generation_04,18250,7,Milo,house_1,route-half-sign/roof-ash-fear,safety_rule,0.429,8,4,15,1,36319-PROP-06-9521,smoke appeared and the test was stopped,risk,8b870bbf2174e222,False,False
+36343,36343-BEL-000,root_observation,week_00,0,0,Fay,house_3,jar omen,useful_wrong,0.406,1,0,1,0,public_anomaly_observation,smoke appeared and the test was stopped,risk,8b870bbf2174e222,False,False
+36343,36343-BEL-001,36343-BEL-000,week_01,7,1,Nia,house_3,jar omen/dry-jump,ritualized,0.514,2,0,2,0,36343-PROP-00-7224,loose fiber jumped after rubbing,jump,8b870bbf2174e222,False,False
+36343,36343-BEL-002,36343-BEL-001,moon_02,42,2,Ari,house_0,dry-path/grain-follow,practical,0.622,3,0,3,0,36343-PROP-01-4457,dark grains crawled toward the red scrap,motion,8b870bbf2174e222,False,False
+36343,36343-BEL-003,36343-BEL-002,season_01,120,3,Nia,house_1,grain-follow/smoke-bound,ritualized,0.522,4,1,4,0,36343-PROP-02-4325,smoke appeared and the test was stopped,risk,8b870bbf2174e222,False,False
+36343,36343-BEL-004,36343-BEL-003,year_01,365,4,Ari,house_2,smoke-bound/tool-anger,ritualized,0.422,5,2,5,0,36343-PROP-03-4251,a tool edge cracked before the sign returned,breakage,8b870bbf2174e222,False,False
+36343,36343-BEL-005,36343-BEL-004,year_03,1095,5,Fay,house_3,tool-anger/ash-fear,ritualized,0.322,6,3,6,0,36343-PROP-04-5757,smoke appeared and the test was stopped,risk,8b870bbf2174e222,False,False
+36343,36343-BEL-006,36343-BEL-005,generation_02,9125,6,Sera,house_0,ash-fear/bench-fiber-rise,craft_rule,0.43,7,3,7,1,36343-PROP-05-8809,loose fiber jumped after rubbing,jump,8b870bbf2174e222,False,False
+36343,36343-BEL-007,36343-BEL-006,generation_04,18250,7,Fay,house_1,bench-fiber-rise/roof-red-call,craft_rule,0.538,8,3,8,2,36343-PROP-06-3292,dark grains crawled toward the red scrap,motion,8b870bbf2174e222,False,False

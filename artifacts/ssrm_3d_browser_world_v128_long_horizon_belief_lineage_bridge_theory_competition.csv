@@ -1,0 +1,57 @@
+seed,era,era_day,belief_id,label,rival_count,competition_score,status,institution,safety_norm,archived_not_erased
+36217,week_01,7,36217-BEL-001,herb-jump/half-sign,2,0.19,mocked,none,False,True
+36217,moon_02,42,36217-BEL-002,handspan bite/dry-jump,2,0.447,rival,none,False,False
+36217,season_01,120,36217-BEL-003,dry-jump/smoke-bound,2,0.232,archived,none,False,True
+36217,year_01,365,36217-BEL-004,smoke-bound/quiet-doubt,3,0.167,set-aside,none,False,True
+36217,year_03,1095,36217-BEL-005,quiet-doubt/fiber-rise,3,0.423,minority,none,False,False
+36217,generation_02,9125,36217-BEL-006,fiber-rise/bench-tool-anger,3,0.208,archived,none,False,True
+36217,generation_04,18250,36217-BEL-007,bench-tool-anger/route-fiber-rise,2,0.465,rival,craft_bench,False,False
+36231,week_01,7,36231-BEL-001,cold spark/fiber-rise,2,0.524,minority,none,False,False
+36231,moon_02,42,36231-BEL-002,quiet sting/quiet-doubt,3,0.309,argued,none,False,True
+36231,season_01,120,36231-BEL-003,jar omen/missing-repeat,2,0.244,archived,none,False,True
+36231,year_01,365,36231-BEL-004,missing-repeat/quiet-doubt,2,0.179,set-aside,none,False,True
+36231,year_03,1095,36231-BEL-005,quiet-doubt/red-call,2,0.413,minority,none,False,False
+36231,generation_02,9125,36231-BEL-006,red-call/roof-tool-anger,3,0.198,set-aside,none,True,True
+36231,generation_04,18250,36231-BEL-007,roof-tool-anger/route-quiet-doubt,3,0.133,set-aside,none,False,True
+36247,week_01,7,36247-BEL-001,jar omen/half-sign,2,0.15,mocked,none,False,True
+36247,moon_02,42,36247-BEL-002,half-sign/ash-fear,2,0.085,mocked,none,False,True
+36247,season_01,120,36247-BEL-003,safe-gap/ash-fear,2,0.02,tabooed,safety_custom,True,True
+36247,year_01,365,36247-BEL-004,grain pull/water-hush,2,0.02,tabooed,safety_custom,True,True
+36247,year_03,1095,36247-BEL-005,water-hush/rain-fail,2,0.02,tabooed,safety_custom,True,True
+36247,generation_02,9125,36247-BEL-006,rain-fail/jar-rub-sign,3,0.22,tabooed,safety_custom,True,False
+36247,generation_04,18250,36247-BEL-007,jar-rub-sign/school-rub-sign,2,0.305,tabooed,safety_custom,True,False
+36263,week_01,7,36263-BEL-001,glass sleep/missing-repeat,2,0.212,set-aside,none,False,True
+36263,moon_02,42,36263-BEL-002,grain pull/dry-jump,3,0.472,rival,none,False,False
+36263,season_01,120,36263-BEL-003,dry-jump/fiber-rise,3,0.581,taught,none,False,False
+36263,year_01,365,36263-BEL-004,quiet sting/quiet-doubt,3,0.366,argued,none,False,True
+36263,year_03,1095,36263-BEL-005,quiet-doubt/ash-fear,3,0.276,archived,none,False,True
+36263,generation_02,9125,36263-BEL-006,ash-fear/jar-quiet-doubt,2,0.186,mocked,none,False,True
+36263,generation_04,18250,36263-BEL-007,jar-quiet-doubt/roof-quiet-doubt,2,0.096,set-aside,none,False,True
+36281,week_01,7,36281-BEL-001,glass sleep/red-call,2,0.534,argued,none,False,False
+36281,moon_02,42,36281-BEL-002,red-call/dry-jump,3,0.618,bench-tested,none,False,False
+36281,season_01,120,36281-BEL-003,storm crumb/edge-shame,2,0.403,argued,none,False,True
+36281,year_01,365,36281-BEL-004,edge-shame/quiet-doubt,3,0.338,argued,none,False,True
+36281,year_03,1095,36281-BEL-005,quiet-doubt/dry-jump,3,0.573,taught,none,False,False
+36281,generation_02,9125,36281-BEL-006,dry-jump/school-dark-crawl,2,0.657,bench-tested,memory_school,False,False
+36281,generation_04,18250,36281-BEL-007,school-dark-crawl/school-dark-crawl,1,0.741,dominant,memory_school,False,False
+36307,week_01,7,36307-BEL-001,cloak ghost/fiber-rise,2,0.531,minority,none,False,False
+36307,moon_02,42,36307-BEL-002,smoke warning/fiber-rise,3,0.615,taught,none,False,False
+36307,season_01,120,36307-BEL-003,handspan bite/missing-repeat,3,0.4,argued,none,False,True
+36307,year_01,365,36307-BEL-004,safe-gap/half-sign,3,0.335,rival,none,False,True
+36307,year_03,1095,36307-BEL-005,half-sign/half-sign,2,0.27,set-aside,none,False,True
+36307,generation_02,9125,36307-BEL-006,half-sign/jar-rub-sign,2,0.504,rival,none,False,False
+36307,generation_04,18250,36307-BEL-007,jar-rub-sign/route-red-call,2,0.589,bench-tested,none,False,False
+36319,week_01,7,36319-BEL-001,awl-bite/rub-sign,2,0.518,minority,none,False,False
+36319,moon_02,42,36319-BEL-002,rub-sign/dry-jump,3,0.65,bench-tested,none,False,False
+36319,season_01,120,36319-BEL-003,quiet sting/fiber-rise,3,0.781,dominant,none,False,False
+36319,year_01,365,36319-BEL-004,fiber-rise/edge-shame,3,0.566,bench-tested,none,True,True
+36319,year_03,1095,36319-BEL-005,edge-shame/missing-repeat,3,0.476,argued,none,False,True
+36319,generation_02,9125,36319-BEL-006,missing-repeat/route-half-sign,3,0.386,rival,none,False,True
+36319,generation_04,18250,36319-BEL-007,route-half-sign/roof-ash-fear,3,0.296,mocked,none,True,True
+36343,week_01,7,36343-BEL-001,jar omen/dry-jump,2,0.483,argued,none,False,False
+36343,moon_02,42,36343-BEL-002,dry-path/grain-follow,3,0.567,taught,none,False,False
+36343,season_01,120,36343-BEL-003,grain-follow/smoke-bound,2,0.352,argued,none,False,True
+36343,year_01,365,36343-BEL-004,smoke-bound/tool-anger,2,0.287,mocked,none,False,True
+36343,year_03,1095,36343-BEL-005,tool-anger/ash-fear,1,0.222,mocked,none,False,True
+36343,generation_02,9125,36343-BEL-006,ash-fear/bench-fiber-rise,2,0.457,minority,none,False,False
+36343,generation_04,18250,36343-BEL-007,bench-fiber-rise/roof-red-call,2,0.541,minority,none,False,False

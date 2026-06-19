@@ -2160,3 +2160,8 @@ Report 307 upgrades the primary-demo recorder from raw defect notes into a small
 
 Report 367 moves stochastic history influence out of a dedicated panel-only loop and into ordinary browser actions: `Offer help`, `Talk`, `Ask schedule`, and movement now consult recovered, pending, or stabilized stochastic recovery history before changing resident state. The bridge keeps source choice IDs, recovery paths, no-permanent-penalty flags, and the browser-local/no-consciousness/no-LLM boundary visible.
 
+
+### Report 368: SSRM-3D Long-Horizon Belief Lineage Bridge
+
+Report 368 shifts the non-scripted anomaly line toward one world, many seeds, and different histories. It keeps one shared hidden-law layer fixed across deterministic seeds, then tracks resident-generated experiment proposals, belief descendants, rival theory status, preserved failures, material bottlenecks, institutions, safety customs, trade shifts, and cultural memory across weeks, months, years, and generations. The point is not another panel or a pre-authored unlock; it is inspectable divergence from the same world law.
+

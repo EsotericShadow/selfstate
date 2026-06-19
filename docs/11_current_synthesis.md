@@ -1318,3 +1318,12 @@ Report 367 tests whether stochastic history influence can affect ordinary player
 
 Next gate: persist ordinary-affordance influence through save/restore and returning sessions, then express the influence through readable resident body language instead of only text panels.
 
+
+## Report 368: SSRM-3D Long-Horizon Belief Lineage Bridge
+
+Report 368 responds to the depth problem directly: the anomaly system now has belief ancestry that survives time. A shared hidden-law world is held constant while different deterministic seeds create different inherited labels, resident-generated proposals, failures, rival-theory statuses, material bottlenecks, safety customs, institutions, trade shifts, and cultural memories over weeks, months, years, and generations.
+
+This is still an algorithmic scaffold, not an autonomous civilization. The improvement is that the same law can now yield divergent history signatures without installing the correct concept or predeclaring a device tree.
+
+Next gate: move lineage pressure into everyday browser behavior: scheduling, apprenticeship, trade routes, safety customs, and ordinary resident choices.
+

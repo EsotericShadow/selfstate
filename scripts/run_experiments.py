@@ -4077,6 +4077,7 @@ COMMANDS: List[List[str]] = [
         "experiments.ssrm_3d_browser_world_v125_stochastic_recovery_loop_bridge",
         "experiments.ssrm_3d_browser_world_v126_stochastic_history_influence_bridge",
         "experiments.ssrm_3d_browser_world_v127_stochastic_ordinary_affordance_bridge",
+        "experiments.ssrm_3d_browser_world_v128_long_horizon_belief_lineage_bridge",
         "--seed",
         "20270732",
     ],

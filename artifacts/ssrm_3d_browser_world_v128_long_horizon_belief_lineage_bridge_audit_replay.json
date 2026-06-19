@@ -1,0 +1,2243 @@
+[
+  {
+    "audit_only": true,
+    "era": "audit_start",
+    "law_hash": "8b870bbf2174e222",
+    "seed": 36217,
+    "summary": "shared material law attached to this seed without resident access",
+    "type": "shared_hidden_law"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36217,
+    "summary": "Ari proposed clay_jar+iron_sand from herb-jump",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36217,
+    "summary": "nothing repeated clearly",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36217,
+    "summary": "36217-BEL-000 -> 36217-BEL-001 as herb-jump/half-sign",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36217,
+    "summary": "herb-jump/half-sign became mocked",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36217,
+    "summary": "clay_jar+iron_sand stock shift none",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36217,
+    "summary": "nothing repeated clearly",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36217,
+    "summary": "Milo proposed ash_glass+reed_fiber from herb-jump/half-sign",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36217,
+    "summary": "loose fiber jumped after rubbing",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36217,
+    "summary": "36217-BEL-001 -> 36217-BEL-002 as handspan bite/dry-jump",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36217,
+    "summary": "handspan bite/dry-jump became rival",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36217,
+    "summary": "ash_glass+reed_fiber stock shift more_ash_glass",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36217,
+    "summary": "Sera proposed reed_fiber+wet_wood from handspan bite/dry-jump",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36217,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36217,
+    "summary": "36217-BEL-002 -> 36217-BEL-003 as dry-jump/smoke-bound",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36217,
+    "summary": "dry-jump/smoke-bound became archived",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36217,
+    "summary": "reed_fiber+wet_wood stock shift avoid_wet_wood",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36217,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36217,
+    "summary": "Sera proposed reed_fiber+red_scrap from dry-jump/smoke-bound",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36217,
+    "summary": "nothing repeated clearly",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36217,
+    "summary": "36217-BEL-003 -> 36217-BEL-004 as smoke-bound/quiet-doubt",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36217,
+    "summary": "smoke-bound/quiet-doubt became set-aside",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36217,
+    "summary": "reed_fiber+red_scrap stock shift none",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36217,
+    "summary": "nothing repeated clearly",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36217,
+    "summary": "Milo proposed clay_jar+dry_resin from smoke-bound/quiet-doubt",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36217,
+    "summary": "loose fiber jumped after rubbing",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36217,
+    "summary": "36217-BEL-004 -> 36217-BEL-005 as quiet-doubt/fiber-rise",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36217,
+    "summary": "quiet-doubt/fiber-rise became minority",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36217,
+    "summary": "clay_jar+dry_resin stock shift more_clay_jar",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36217,
+    "summary": "Sera proposed clay_jar+ash_glass from quiet-doubt/fiber-rise",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36217,
+    "summary": "a tool edge cracked before the sign returned",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36217,
+    "summary": "36217-BEL-005 -> 36217-BEL-006 as fiber-rise/bench-tool-anger",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36217,
+    "summary": "fiber-rise/bench-tool-anger became archived",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36217,
+    "summary": "clay_jar+ash_glass stock shift avoid_ash_glass",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36217,
+    "summary": "a tool edge cracked before the sign returned",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36217,
+    "summary": "Milo proposed reed_fiber+ash_glass from fiber-rise/bench-tool-anger",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36217,
+    "summary": "loose fiber jumped after rubbing",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36217,
+    "summary": "36217-BEL-006 -> 36217-BEL-007 as bench-tool-anger/route-fiber-rise",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36217,
+    "summary": "bench-tool-anger/route-fiber-rise became rival",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36217,
+    "summary": "reed_fiber+ash_glass stock shift more_reed_fiber",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": true,
+    "era": "audit_start",
+    "law_hash": "8b870bbf2174e222",
+    "seed": 36231,
+    "summary": "shared material law attached to this seed without resident access",
+    "type": "shared_hidden_law"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36231,
+    "summary": "Nia proposed dry_resin+clay_jar from cold spark",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36231,
+    "summary": "loose fiber jumped after rubbing",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36231,
+    "summary": "36231-BEL-000 -> 36231-BEL-001 as cold spark/fiber-rise",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36231,
+    "summary": "cold spark/fiber-rise became minority",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36231,
+    "summary": "dry_resin+clay_jar stock shift more_dry_resin",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36231,
+    "summary": "Fay proposed wet_wood+red_scrap from cold spark/fiber-rise",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36231,
+    "summary": "nothing repeated clearly",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36231,
+    "summary": "36231-BEL-001 -> 36231-BEL-002 as quiet sting/quiet-doubt",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36231,
+    "summary": "quiet sting/quiet-doubt became argued",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36231,
+    "summary": "wet_wood+red_scrap stock shift none",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36231,
+    "summary": "nothing repeated clearly",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36231,
+    "summary": "Fay proposed red_scrap+ash_glass from quiet sting/quiet-doubt",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36231,
+    "summary": "nothing repeated clearly",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36231,
+    "summary": "36231-BEL-002 -> 36231-BEL-003 as jar omen/missing-repeat",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36231,
+    "summary": "jar omen/missing-repeat became archived",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36231,
+    "summary": "red_scrap+ash_glass stock shift none",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36231,
+    "summary": "nothing repeated clearly",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36231,
+    "summary": "Tovan proposed clay_jar+iron_sand from jar omen/missing-repeat",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36231,
+    "summary": "nothing repeated clearly",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36231,
+    "summary": "36231-BEL-003 -> 36231-BEL-004 as missing-repeat/quiet-doubt",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36231,
+    "summary": "missing-repeat/quiet-doubt became set-aside",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36231,
+    "summary": "clay_jar+iron_sand stock shift none",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36231,
+    "summary": "nothing repeated clearly",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36231,
+    "summary": "Fay proposed wet_wood+iron_sand from missing-repeat/quiet-doubt",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36231,
+    "summary": "dark grains crawled toward the red scrap",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36231,
+    "summary": "36231-BEL-004 -> 36231-BEL-005 as quiet-doubt/red-call",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36231,
+    "summary": "quiet-doubt/red-call became minority",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36231,
+    "summary": "wet_wood+iron_sand stock shift more_wet_wood",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36231,
+    "summary": "Fay proposed ash_glass+clay_jar from quiet-doubt/red-call",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36231,
+    "summary": "a tool edge cracked before the sign returned",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36231,
+    "summary": "36231-BEL-005 -> 36231-BEL-006 as red-call/roof-tool-anger",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36231,
+    "summary": "red-call/roof-tool-anger became set-aside",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36231,
+    "summary": "ash_glass+clay_jar stock shift avoid_clay_jar",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36231,
+    "summary": "a tool edge cracked before the sign returned",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36231,
+    "summary": "Nia proposed reed_fiber+red_scrap from red-call/roof-tool-anger",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36231,
+    "summary": "nothing repeated clearly",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36231,
+    "summary": "36231-BEL-006 -> 36231-BEL-007 as roof-tool-anger/route-quiet-doubt",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36231,
+    "summary": "roof-tool-anger/route-quiet-doubt became set-aside",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36231,
+    "summary": "reed_fiber+red_scrap stock shift none",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36231,
+    "summary": "nothing repeated clearly",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": true,
+    "era": "audit_start",
+    "law_hash": "8b870bbf2174e222",
+    "seed": 36247,
+    "summary": "shared material law attached to this seed without resident access",
+    "type": "shared_hidden_law"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36247,
+    "summary": "Ari proposed ash_glass+red_scrap from jar omen",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36247,
+    "summary": "nothing repeated clearly",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36247,
+    "summary": "36247-BEL-000 -> 36247-BEL-001 as jar omen/half-sign",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36247,
+    "summary": "jar omen/half-sign became mocked",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36247,
+    "summary": "ash_glass+red_scrap stock shift none",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36247,
+    "summary": "nothing repeated clearly",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36247,
+    "summary": "Tovan proposed wet_wood+dry_resin from jar omen/half-sign",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36247,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36247,
+    "summary": "36247-BEL-001 -> 36247-BEL-002 as half-sign/ash-fear",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36247,
+    "summary": "half-sign/ash-fear became mocked",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36247,
+    "summary": "wet_wood+dry_resin stock shift avoid_dry_resin",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36247,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36247,
+    "summary": "Tovan proposed dry_resin+reed_fiber from half-sign/ash-fear",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36247,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36247,
+    "summary": "36247-BEL-002 -> 36247-BEL-003 as safe-gap/ash-fear",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36247,
+    "summary": "safe-gap/ash-fear became tabooed",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36247,
+    "summary": "dry_resin+reed_fiber stock shift avoid_reed_fiber",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36247,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36247,
+    "summary": "Nia proposed clay_jar+wet_wood from safe-gap/ash-fear",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36247,
+    "summary": "wet pieces dulled the effect and left only a sting",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36247,
+    "summary": "36247-BEL-003 -> 36247-BEL-004 as grain pull/water-hush",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36247,
+    "summary": "grain pull/water-hush became tabooed",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36247,
+    "summary": "clay_jar+wet_wood stock shift none",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36247,
+    "summary": "wet pieces dulled the effect and left only a sting",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36247,
+    "summary": "Milo proposed wet_wood+clay_jar from grain pull/water-hush",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36247,
+    "summary": "wet pieces dulled the effect and left only a sting",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36247,
+    "summary": "36247-BEL-004 -> 36247-BEL-005 as water-hush/rain-fail",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36247,
+    "summary": "water-hush/rain-fail became tabooed",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36247,
+    "summary": "wet_wood+clay_jar stock shift none",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36247,
+    "summary": "wet pieces dulled the effect and left only a sting",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36247,
+    "summary": "Milo proposed dry_resin+ash_glass from water-hush/rain-fail",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36247,
+    "summary": "loose fiber jumped after rubbing",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36247,
+    "summary": "36247-BEL-005 -> 36247-BEL-006 as rain-fail/jar-rub-sign",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36247,
+    "summary": "rain-fail/jar-rub-sign became tabooed",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36247,
+    "summary": "dry_resin+ash_glass stock shift more_dry_resin",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36247,
+    "summary": "Tovan proposed dry_resin+ash_glass from rain-fail/jar-rub-sign",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36247,
+    "summary": "loose fiber jumped after rubbing",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36247,
+    "summary": "36247-BEL-006 -> 36247-BEL-007 as jar-rub-sign/school-rub-sign",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36247,
+    "summary": "jar-rub-sign/school-rub-sign became tabooed",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36247,
+    "summary": "dry_resin+ash_glass stock shift more_dry_resin",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": true,
+    "era": "audit_start",
+    "law_hash": "8b870bbf2174e222",
+    "seed": 36263,
+    "summary": "shared material law attached to this seed without resident access",
+    "type": "shared_hidden_law"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36263,
+    "summary": "Nia proposed clay_jar+red_scrap from glass sleep",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36263,
+    "summary": "nothing repeated clearly",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36263,
+    "summary": "36263-BEL-000 -> 36263-BEL-001 as glass sleep/missing-repeat",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36263,
+    "summary": "glass sleep/missing-repeat became set-aside",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36263,
+    "summary": "clay_jar+red_scrap stock shift none",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36263,
+    "summary": "nothing repeated clearly",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36263,
+    "summary": "Nia proposed red_scrap+dry_resin from glass sleep/missing-repeat",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36263,
+    "summary": "loose fiber jumped after rubbing",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36263,
+    "summary": "36263-BEL-001 -> 36263-BEL-002 as grain pull/dry-jump",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36263,
+    "summary": "grain pull/dry-jump became rival",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36263,
+    "summary": "red_scrap+dry_resin stock shift more_red_scrap",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36263,
+    "summary": "Nia proposed ash_glass+reed_fiber from grain pull/dry-jump",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36263,
+    "summary": "loose fiber jumped after rubbing",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36263,
+    "summary": "36263-BEL-002 -> 36263-BEL-003 as dry-jump/fiber-rise",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36263,
+    "summary": "dry-jump/fiber-rise became taught",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36263,
+    "summary": "ash_glass+reed_fiber stock shift more_ash_glass",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36263,
+    "summary": "Fay proposed clay_jar+red_scrap from dry-jump/fiber-rise",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36263,
+    "summary": "nothing repeated clearly",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36263,
+    "summary": "36263-BEL-003 -> 36263-BEL-004 as quiet sting/quiet-doubt",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36263,
+    "summary": "quiet sting/quiet-doubt became argued",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36263,
+    "summary": "clay_jar+red_scrap stock shift none",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36263,
+    "summary": "nothing repeated clearly",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36263,
+    "summary": "Milo proposed dry_resin+reed_fiber from quiet sting/quiet-doubt",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36263,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36263,
+    "summary": "36263-BEL-004 -> 36263-BEL-005 as quiet-doubt/ash-fear",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36263,
+    "summary": "quiet-doubt/ash-fear became archived",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36263,
+    "summary": "dry_resin+reed_fiber stock shift avoid_reed_fiber",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36263,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36263,
+    "summary": "Nia proposed clay_jar+iron_sand from quiet-doubt/ash-fear",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36263,
+    "summary": "nothing repeated clearly",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36263,
+    "summary": "36263-BEL-005 -> 36263-BEL-006 as ash-fear/jar-quiet-doubt",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36263,
+    "summary": "ash-fear/jar-quiet-doubt became mocked",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36263,
+    "summary": "clay_jar+iron_sand stock shift none",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36263,
+    "summary": "nothing repeated clearly",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36263,
+    "summary": "Ari proposed ash_glass+wet_wood from ash-fear/jar-quiet-doubt",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36263,
+    "summary": "nothing repeated clearly",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36263,
+    "summary": "36263-BEL-006 -> 36263-BEL-007 as jar-quiet-doubt/roof-quiet-doubt",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36263,
+    "summary": "jar-quiet-doubt/roof-quiet-doubt became set-aside",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36263,
+    "summary": "ash_glass+wet_wood stock shift none",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36263,
+    "summary": "nothing repeated clearly",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": true,
+    "era": "audit_start",
+    "law_hash": "8b870bbf2174e222",
+    "seed": 36281,
+    "summary": "shared material law attached to this seed without resident access",
+    "type": "shared_hidden_law"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36281,
+    "summary": "Tovan proposed iron_sand+dry_resin from glass sleep",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36281,
+    "summary": "dark grains crawled toward the red scrap",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36281,
+    "summary": "36281-BEL-000 -> 36281-BEL-001 as glass sleep/red-call",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36281,
+    "summary": "glass sleep/red-call became argued",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36281,
+    "summary": "iron_sand+dry_resin stock shift more_iron_sand",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36281,
+    "summary": "Fay proposed dry_resin+clay_jar from glass sleep/red-call",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36281,
+    "summary": "loose fiber jumped after rubbing",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36281,
+    "summary": "36281-BEL-001 -> 36281-BEL-002 as red-call/dry-jump",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36281,
+    "summary": "red-call/dry-jump became bench-tested",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36281,
+    "summary": "dry_resin+clay_jar stock shift more_dry_resin",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36281,
+    "summary": "Tovan proposed clay_jar+ash_glass from red-call/dry-jump",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36281,
+    "summary": "a tool edge cracked before the sign returned",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36281,
+    "summary": "36281-BEL-002 -> 36281-BEL-003 as storm crumb/edge-shame",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36281,
+    "summary": "storm crumb/edge-shame became argued",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36281,
+    "summary": "clay_jar+ash_glass stock shift avoid_ash_glass",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36281,
+    "summary": "a tool edge cracked before the sign returned",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36281,
+    "summary": "Ari proposed wet_wood+red_scrap from storm crumb/edge-shame",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36281,
+    "summary": "nothing repeated clearly",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36281,
+    "summary": "36281-BEL-003 -> 36281-BEL-004 as edge-shame/quiet-doubt",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36281,
+    "summary": "edge-shame/quiet-doubt became argued",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36281,
+    "summary": "wet_wood+red_scrap stock shift none",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36281,
+    "summary": "nothing repeated clearly",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36281,
+    "summary": "Nia proposed dry_resin+ash_glass from edge-shame/quiet-doubt",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36281,
+    "summary": "loose fiber jumped after rubbing",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36281,
+    "summary": "36281-BEL-004 -> 36281-BEL-005 as quiet-doubt/dry-jump",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36281,
+    "summary": "quiet-doubt/dry-jump became taught",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36281,
+    "summary": "dry_resin+ash_glass stock shift more_dry_resin",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36281,
+    "summary": "Fay proposed wet_wood+iron_sand from quiet-doubt/dry-jump",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36281,
+    "summary": "dark grains crawled toward the red scrap",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36281,
+    "summary": "36281-BEL-005 -> 36281-BEL-006 as dry-jump/school-dark-crawl",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36281,
+    "summary": "dry-jump/school-dark-crawl became bench-tested",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36281,
+    "summary": "wet_wood+iron_sand stock shift more_wet_wood",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36281,
+    "summary": "Sera proposed red_scrap+iron_sand from dry-jump/school-dark-crawl",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36281,
+    "summary": "dark grains crawled toward the red scrap",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36281,
+    "summary": "36281-BEL-006 -> 36281-BEL-007 as school-dark-crawl/school-dark-crawl",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36281,
+    "summary": "school-dark-crawl/school-dark-crawl became dominant",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36281,
+    "summary": "red_scrap+iron_sand stock shift more_red_scrap",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": true,
+    "era": "audit_start",
+    "law_hash": "8b870bbf2174e222",
+    "seed": 36307,
+    "summary": "shared material law attached to this seed without resident access",
+    "type": "shared_hidden_law"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36307,
+    "summary": "Sera proposed reed_fiber+clay_jar from jar omen",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36307,
+    "summary": "loose fiber jumped after rubbing",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36307,
+    "summary": "36307-BEL-000 -> 36307-BEL-001 as cloak ghost/fiber-rise",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36307,
+    "summary": "cloak ghost/fiber-rise became minority",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36307,
+    "summary": "reed_fiber+clay_jar stock shift more_reed_fiber",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36307,
+    "summary": "Sera proposed ash_glass+dry_resin from cloak ghost/fiber-rise",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36307,
+    "summary": "loose fiber jumped after rubbing",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36307,
+    "summary": "36307-BEL-001 -> 36307-BEL-002 as smoke warning/fiber-rise",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36307,
+    "summary": "smoke warning/fiber-rise became taught",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36307,
+    "summary": "ash_glass+dry_resin stock shift more_ash_glass",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36307,
+    "summary": "Milo proposed red_scrap+reed_fiber from smoke warning/fiber-rise",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36307,
+    "summary": "nothing repeated clearly",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36307,
+    "summary": "36307-BEL-002 -> 36307-BEL-003 as handspan bite/missing-repeat",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36307,
+    "summary": "handspan bite/missing-repeat became argued",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36307,
+    "summary": "red_scrap+reed_fiber stock shift none",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36307,
+    "summary": "nothing repeated clearly",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36307,
+    "summary": "Tovan proposed iron_sand+reed_fiber from handspan bite/missing-repeat",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36307,
+    "summary": "nothing repeated clearly",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36307,
+    "summary": "36307-BEL-003 -> 36307-BEL-004 as safe-gap/half-sign",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36307,
+    "summary": "safe-gap/half-sign became rival",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36307,
+    "summary": "iron_sand+reed_fiber stock shift none",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36307,
+    "summary": "nothing repeated clearly",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36307,
+    "summary": "Tovan proposed iron_sand+clay_jar from safe-gap/half-sign",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36307,
+    "summary": "nothing repeated clearly",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36307,
+    "summary": "36307-BEL-004 -> 36307-BEL-005 as half-sign/half-sign",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36307,
+    "summary": "half-sign/half-sign became set-aside",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36307,
+    "summary": "iron_sand+clay_jar stock shift none",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36307,
+    "summary": "nothing repeated clearly",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36307,
+    "summary": "Nia proposed dry_resin+ash_glass from half-sign/half-sign",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36307,
+    "summary": "loose fiber jumped after rubbing",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36307,
+    "summary": "36307-BEL-005 -> 36307-BEL-006 as half-sign/jar-rub-sign",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36307,
+    "summary": "half-sign/jar-rub-sign became rival",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36307,
+    "summary": "dry_resin+ash_glass stock shift more_dry_resin",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36307,
+    "summary": "Tovan proposed iron_sand+dry_resin from half-sign/jar-rub-sign",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36307,
+    "summary": "dark grains crawled toward the red scrap",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36307,
+    "summary": "36307-BEL-006 -> 36307-BEL-007 as jar-rub-sign/route-red-call",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36307,
+    "summary": "jar-rub-sign/route-red-call became bench-tested",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36307,
+    "summary": "iron_sand+dry_resin stock shift more_iron_sand",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": true,
+    "era": "audit_start",
+    "law_hash": "8b870bbf2174e222",
+    "seed": 36319,
+    "summary": "shared material law attached to this seed without resident access",
+    "type": "shared_hidden_law"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36319,
+    "summary": "Ari proposed ash_glass+dry_resin from herb-jump",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36319,
+    "summary": "loose fiber jumped after rubbing",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36319,
+    "summary": "36319-BEL-000 -> 36319-BEL-001 as awl-bite/rub-sign",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36319,
+    "summary": "awl-bite/rub-sign became minority",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36319,
+    "summary": "ash_glass+dry_resin stock shift more_ash_glass",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36319,
+    "summary": "Nia proposed dry_resin+ash_glass from awl-bite/rub-sign",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36319,
+    "summary": "loose fiber jumped after rubbing",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36319,
+    "summary": "36319-BEL-001 -> 36319-BEL-002 as rub-sign/dry-jump",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36319,
+    "summary": "rub-sign/dry-jump became bench-tested",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36319,
+    "summary": "dry_resin+ash_glass stock shift more_dry_resin",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36319,
+    "summary": "Fay proposed red_scrap+dry_resin from rub-sign/dry-jump",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36319,
+    "summary": "loose fiber jumped after rubbing",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36319,
+    "summary": "36319-BEL-002 -> 36319-BEL-003 as quiet sting/fiber-rise",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36319,
+    "summary": "quiet sting/fiber-rise became dominant",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36319,
+    "summary": "red_scrap+dry_resin stock shift more_red_scrap",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36319,
+    "summary": "Nia proposed ash_glass+clay_jar from quiet sting/fiber-rise",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36319,
+    "summary": "a tool edge cracked before the sign returned",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36319,
+    "summary": "36319-BEL-003 -> 36319-BEL-004 as fiber-rise/edge-shame",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36319,
+    "summary": "fiber-rise/edge-shame became bench-tested",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36319,
+    "summary": "ash_glass+clay_jar stock shift avoid_clay_jar",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36319,
+    "summary": "a tool edge cracked before the sign returned",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36319,
+    "summary": "Milo proposed iron_sand+clay_jar from fiber-rise/edge-shame",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36319,
+    "summary": "nothing repeated clearly",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36319,
+    "summary": "36319-BEL-004 -> 36319-BEL-005 as edge-shame/missing-repeat",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36319,
+    "summary": "edge-shame/missing-repeat became argued",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36319,
+    "summary": "iron_sand+clay_jar stock shift none",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36319,
+    "summary": "nothing repeated clearly",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36319,
+    "summary": "Milo proposed ash_glass+iron_sand from edge-shame/missing-repeat",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36319,
+    "summary": "nothing repeated clearly",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36319,
+    "summary": "36319-BEL-005 -> 36319-BEL-006 as missing-repeat/route-half-sign",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36319,
+    "summary": "missing-repeat/route-half-sign became rival",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36319,
+    "summary": "ash_glass+iron_sand stock shift none",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36319,
+    "summary": "nothing repeated clearly",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36319,
+    "summary": "Milo proposed wet_wood+dry_resin from missing-repeat/route-half-sign",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36319,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36319,
+    "summary": "36319-BEL-006 -> 36319-BEL-007 as route-half-sign/roof-ash-fear",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36319,
+    "summary": "route-half-sign/roof-ash-fear became mocked",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36319,
+    "summary": "wet_wood+dry_resin stock shift avoid_dry_resin",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36319,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": true,
+    "era": "audit_start",
+    "law_hash": "8b870bbf2174e222",
+    "seed": 36343,
+    "summary": "shared material law attached to this seed without resident access",
+    "type": "shared_hidden_law"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36343,
+    "summary": "Nia proposed clay_jar+reed_fiber from jar omen",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36343,
+    "summary": "loose fiber jumped after rubbing",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36343,
+    "summary": "36343-BEL-000 -> 36343-BEL-001 as jar omen/dry-jump",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36343,
+    "summary": "jar omen/dry-jump became argued",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "week_01",
+    "seed": 36343,
+    "summary": "clay_jar+reed_fiber stock shift more_clay_jar",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36343,
+    "summary": "Ari proposed iron_sand+red_scrap from jar omen/dry-jump",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36343,
+    "summary": "dark grains crawled toward the red scrap",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36343,
+    "summary": "36343-BEL-001 -> 36343-BEL-002 as dry-path/grain-follow",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36343,
+    "summary": "dry-path/grain-follow became taught",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "moon_02",
+    "seed": 36343,
+    "summary": "iron_sand+red_scrap stock shift more_iron_sand",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36343,
+    "summary": "Nia proposed dry_resin+reed_fiber from dry-path/grain-follow",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36343,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36343,
+    "summary": "36343-BEL-002 -> 36343-BEL-003 as grain-follow/smoke-bound",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36343,
+    "summary": "grain-follow/smoke-bound became argued",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36343,
+    "summary": "dry_resin+reed_fiber stock shift avoid_reed_fiber",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "season_01",
+    "seed": 36343,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36343,
+    "summary": "Ari proposed ash_glass+clay_jar from grain-follow/smoke-bound",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36343,
+    "summary": "a tool edge cracked before the sign returned",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36343,
+    "summary": "36343-BEL-003 -> 36343-BEL-004 as smoke-bound/tool-anger",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36343,
+    "summary": "smoke-bound/tool-anger became mocked",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36343,
+    "summary": "ash_glass+clay_jar stock shift avoid_clay_jar",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "year_01",
+    "seed": 36343,
+    "summary": "a tool edge cracked before the sign returned",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36343,
+    "summary": "Fay proposed wet_wood+dry_resin from smoke-bound/tool-anger",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36343,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36343,
+    "summary": "36343-BEL-004 -> 36343-BEL-005 as tool-anger/ash-fear",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36343,
+    "summary": "tool-anger/ash-fear became mocked",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36343,
+    "summary": "wet_wood+dry_resin stock shift avoid_dry_resin",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "year_03",
+    "seed": 36343,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "preserved_failure"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36343,
+    "summary": "Sera proposed dry_resin+ash_glass from tool-anger/ash-fear",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36343,
+    "summary": "loose fiber jumped after rubbing",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36343,
+    "summary": "36343-BEL-005 -> 36343-BEL-006 as ash-fear/bench-fiber-rise",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36343,
+    "summary": "ash-fear/bench-fiber-rise became minority",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_02",
+    "seed": 36343,
+    "summary": "dry_resin+ash_glass stock shift more_dry_resin",
+    "type": "material_chain"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36343,
+    "summary": "Fay proposed wet_wood+iron_sand from ash-fear/bench-fiber-rise",
+    "type": "proposal"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36343,
+    "summary": "dark grains crawled toward the red scrap",
+    "type": "public_effect"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36343,
+    "summary": "36343-BEL-006 -> 36343-BEL-007 as bench-fiber-rise/roof-red-call",
+    "type": "belief_descendant"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36343,
+    "summary": "bench-fiber-rise/roof-red-call became minority",
+    "type": "theory_competition"
+  },
+  {
+    "audit_only": false,
+    "era": "generation_04",
+    "seed": 36343,
+    "summary": "wet_wood+iron_sand stock shift more_wet_wood",
+    "type": "material_chain"
+  }
+]

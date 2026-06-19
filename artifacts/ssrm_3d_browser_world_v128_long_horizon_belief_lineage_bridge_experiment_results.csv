@@ -1,0 +1,57 @@
+seed,experiment_id,proposal_id,era,era_day,resident,source_belief_id,materials,effect,effect_kind,failure,safety_event,utility_score,preserved_failure,true_law_exposed,predeclared_device
+36217,36217-EXP-001,36217-PROP-00-4047,week_01,7,Ari,36217-BEL-000,clay_jar+iron_sand,nothing repeated clearly,unclear,True,False,0.0,True,False,False
+36217,36217-EXP-002,36217-PROP-01-1026,moon_02,42,Milo,36217-BEL-001,ash_glass+reed_fiber,loose fiber jumped after rubbing,jump,False,False,0.6,False,False,False
+36217,36217-EXP-003,36217-PROP-02-6830,season_01,120,Sera,36217-BEL-002,reed_fiber+wet_wood,smoke appeared and the test was stopped,risk,True,True,0.0,True,False,False
+36217,36217-EXP-004,36217-PROP-03-4805,year_01,365,Sera,36217-BEL-003,reed_fiber+red_scrap,nothing repeated clearly,unclear,True,False,0.0,True,False,False
+36217,36217-EXP-005,36217-PROP-04-8057,year_03,1095,Milo,36217-BEL-004,clay_jar+dry_resin,loose fiber jumped after rubbing,jump,False,False,0.6,False,False,False
+36217,36217-EXP-006,36217-PROP-05-8391,generation_02,9125,Sera,36217-BEL-005,clay_jar+ash_glass,a tool edge cracked before the sign returned,breakage,True,True,0.0,True,False,False
+36217,36217-EXP-007,36217-PROP-06-3679,generation_04,18250,Milo,36217-BEL-006,reed_fiber+ash_glass,loose fiber jumped after rubbing,jump,False,False,0.6,False,False,False
+36231,36231-EXP-001,36231-PROP-00-5854,week_01,7,Nia,36231-BEL-000,dry_resin+clay_jar,loose fiber jumped after rubbing,jump,False,False,0.6,False,False,False
+36231,36231-EXP-002,36231-PROP-01-6822,moon_02,42,Fay,36231-BEL-001,wet_wood+red_scrap,nothing repeated clearly,unclear,True,False,0.0,True,False,False
+36231,36231-EXP-003,36231-PROP-02-5029,season_01,120,Fay,36231-BEL-002,red_scrap+ash_glass,nothing repeated clearly,unclear,True,False,0.0,True,False,False
+36231,36231-EXP-004,36231-PROP-03-4762,year_01,365,Tovan,36231-BEL-003,clay_jar+iron_sand,nothing repeated clearly,unclear,True,False,0.0,True,False,False
+36231,36231-EXP-005,36231-PROP-04-2573,year_03,1095,Fay,36231-BEL-004,wet_wood+iron_sand,dark grains crawled toward the red scrap,motion,False,False,0.6,False,False,False
+36231,36231-EXP-006,36231-PROP-05-7822,generation_02,9125,Fay,36231-BEL-005,ash_glass+clay_jar,a tool edge cracked before the sign returned,breakage,True,True,0.0,True,False,False
+36231,36231-EXP-007,36231-PROP-06-7859,generation_04,18250,Nia,36231-BEL-006,reed_fiber+red_scrap,nothing repeated clearly,unclear,True,False,0.0,True,False,False
+36247,36247-EXP-001,36247-PROP-00-8056,week_01,7,Ari,36247-BEL-000,ash_glass+red_scrap,nothing repeated clearly,unclear,True,False,0.0,True,False,False
+36247,36247-EXP-002,36247-PROP-01-9591,moon_02,42,Tovan,36247-BEL-001,wet_wood+dry_resin,smoke appeared and the test was stopped,risk,True,True,0.0,True,False,False
+36247,36247-EXP-003,36247-PROP-02-5063,season_01,120,Tovan,36247-BEL-002,dry_resin+reed_fiber,smoke appeared and the test was stopped,risk,True,True,0.0,True,False,False
+36247,36247-EXP-004,36247-PROP-03-4828,year_01,365,Nia,36247-BEL-003,clay_jar+wet_wood,wet pieces dulled the effect and left only a sting,dulling,True,False,0.0,True,False,False
+36247,36247-EXP-005,36247-PROP-04-5167,year_03,1095,Milo,36247-BEL-004,wet_wood+clay_jar,wet pieces dulled the effect and left only a sting,dulling,True,False,0.0,True,False,False
+36247,36247-EXP-006,36247-PROP-05-2108,generation_02,9125,Milo,36247-BEL-005,dry_resin+ash_glass,loose fiber jumped after rubbing,jump,False,False,0.6,False,False,False
+36247,36247-EXP-007,36247-PROP-06-9223,generation_04,18250,Tovan,36247-BEL-006,dry_resin+ash_glass,loose fiber jumped after rubbing,jump,False,False,0.6,False,False,False
+36263,36263-EXP-001,36263-PROP-00-8046,week_01,7,Nia,36263-BEL-000,clay_jar+red_scrap,nothing repeated clearly,unclear,True,False,0.0,True,False,False
+36263,36263-EXP-002,36263-PROP-01-6303,moon_02,42,Nia,36263-BEL-001,red_scrap+dry_resin,loose fiber jumped after rubbing,jump,False,False,0.6,False,False,False
+36263,36263-EXP-003,36263-PROP-02-8528,season_01,120,Nia,36263-BEL-002,ash_glass+reed_fiber,loose fiber jumped after rubbing,jump,False,False,0.6,False,False,False
+36263,36263-EXP-004,36263-PROP-03-1650,year_01,365,Fay,36263-BEL-003,clay_jar+red_scrap,nothing repeated clearly,unclear,True,False,0.0,True,False,False
+36263,36263-EXP-005,36263-PROP-04-6374,year_03,1095,Milo,36263-BEL-004,dry_resin+reed_fiber,smoke appeared and the test was stopped,risk,True,True,0.0,True,False,False
+36263,36263-EXP-006,36263-PROP-05-4657,generation_02,9125,Nia,36263-BEL-005,clay_jar+iron_sand,nothing repeated clearly,unclear,True,False,0.0,True,False,False
+36263,36263-EXP-007,36263-PROP-06-1515,generation_04,18250,Ari,36263-BEL-006,ash_glass+wet_wood,nothing repeated clearly,unclear,True,False,0.0,True,False,False
+36281,36281-EXP-001,36281-PROP-00-5591,week_01,7,Tovan,36281-BEL-000,iron_sand+dry_resin,dark grains crawled toward the red scrap,motion,False,False,0.6,False,False,False
+36281,36281-EXP-002,36281-PROP-01-7588,moon_02,42,Fay,36281-BEL-001,dry_resin+clay_jar,loose fiber jumped after rubbing,jump,False,False,0.6,False,False,False
+36281,36281-EXP-003,36281-PROP-02-6260,season_01,120,Tovan,36281-BEL-002,clay_jar+ash_glass,a tool edge cracked before the sign returned,breakage,True,True,0.0,True,False,False
+36281,36281-EXP-004,36281-PROP-03-9288,year_01,365,Ari,36281-BEL-003,wet_wood+red_scrap,nothing repeated clearly,unclear,True,False,0.0,True,False,False
+36281,36281-EXP-005,36281-PROP-04-1067,year_03,1095,Nia,36281-BEL-004,dry_resin+ash_glass,loose fiber jumped after rubbing,jump,False,False,0.6,False,False,False
+36281,36281-EXP-006,36281-PROP-05-9290,generation_02,9125,Fay,36281-BEL-005,wet_wood+iron_sand,dark grains crawled toward the red scrap,motion,False,False,0.6,False,False,False
+36281,36281-EXP-007,36281-PROP-06-8509,generation_04,18250,Sera,36281-BEL-006,red_scrap+iron_sand,dark grains crawled toward the red scrap,motion,False,False,0.6,False,False,False
+36307,36307-EXP-001,36307-PROP-00-3577,week_01,7,Sera,36307-BEL-000,reed_fiber+clay_jar,loose fiber jumped after rubbing,jump,False,False,0.6,False,False,False
+36307,36307-EXP-002,36307-PROP-01-5399,moon_02,42,Sera,36307-BEL-001,ash_glass+dry_resin,loose fiber jumped after rubbing,jump,False,False,0.6,False,False,False
+36307,36307-EXP-003,36307-PROP-02-6388,season_01,120,Milo,36307-BEL-002,red_scrap+reed_fiber,nothing repeated clearly,unclear,True,False,0.0,True,False,False
+36307,36307-EXP-004,36307-PROP-03-3593,year_01,365,Tovan,36307-BEL-003,iron_sand+reed_fiber,nothing repeated clearly,unclear,True,False,0.0,True,False,False
+36307,36307-EXP-005,36307-PROP-04-2402,year_03,1095,Tovan,36307-BEL-004,iron_sand+clay_jar,nothing repeated clearly,unclear,True,False,0.0,True,False,False
+36307,36307-EXP-006,36307-PROP-05-3745,generation_02,9125,Nia,36307-BEL-005,dry_resin+ash_glass,loose fiber jumped after rubbing,jump,False,False,0.6,False,False,False
+36307,36307-EXP-007,36307-PROP-06-1839,generation_04,18250,Tovan,36307-BEL-006,iron_sand+dry_resin,dark grains crawled toward the red scrap,motion,False,False,0.6,False,False,False
+36319,36319-EXP-001,36319-PROP-00-1296,week_01,7,Ari,36319-BEL-000,ash_glass+dry_resin,loose fiber jumped after rubbing,jump,False,False,0.6,False,False,False
+36319,36319-EXP-002,36319-PROP-01-9304,moon_02,42,Nia,36319-BEL-001,dry_resin+ash_glass,loose fiber jumped after rubbing,jump,False,False,0.6,False,False,False
+36319,36319-EXP-003,36319-PROP-02-4549,season_01,120,Fay,36319-BEL-002,red_scrap+dry_resin,loose fiber jumped after rubbing,jump,False,False,0.6,False,False,False
+36319,36319-EXP-004,36319-PROP-03-1154,year_01,365,Nia,36319-BEL-003,ash_glass+clay_jar,a tool edge cracked before the sign returned,breakage,True,True,0.0,True,False,False
+36319,36319-EXP-005,36319-PROP-04-3550,year_03,1095,Milo,36319-BEL-004,iron_sand+clay_jar,nothing repeated clearly,unclear,True,False,0.0,True,False,False
+36319,36319-EXP-006,36319-PROP-05-9289,generation_02,9125,Milo,36319-BEL-005,ash_glass+iron_sand,nothing repeated clearly,unclear,True,False,0.0,True,False,False
+36319,36319-EXP-007,36319-PROP-06-9521,generation_04,18250,Milo,36319-BEL-006,wet_wood+dry_resin,smoke appeared and the test was stopped,risk,True,True,0.0,True,False,False
+36343,36343-EXP-001,36343-PROP-00-7224,week_01,7,Nia,36343-BEL-000,clay_jar+reed_fiber,loose fiber jumped after rubbing,jump,False,False,0.6,False,False,False
+36343,36343-EXP-002,36343-PROP-01-4457,moon_02,42,Ari,36343-BEL-001,iron_sand+red_scrap,dark grains crawled toward the red scrap,motion,False,False,0.6,False,False,False
+36343,36343-EXP-003,36343-PROP-02-4325,season_01,120,Nia,36343-BEL-002,dry_resin+reed_fiber,smoke appeared and the test was stopped,risk,True,True,0.0,True,False,False
+36343,36343-EXP-004,36343-PROP-03-4251,year_01,365,Ari,36343-BEL-003,ash_glass+clay_jar,a tool edge cracked before the sign returned,breakage,True,True,0.0,True,False,False
+36343,36343-EXP-005,36343-PROP-04-5757,year_03,1095,Fay,36343-BEL-004,wet_wood+dry_resin,smoke appeared and the test was stopped,risk,True,True,0.0,True,False,False
+36343,36343-EXP-006,36343-PROP-05-8809,generation_02,9125,Sera,36343-BEL-005,dry_resin+ash_glass,loose fiber jumped after rubbing,jump,False,False,0.6,False,False,False
+36343,36343-EXP-007,36343-PROP-06-3292,generation_04,18250,Fay,36343-BEL-006,wet_wood+iron_sand,dark grains crawled toward the red scrap,motion,False,False,0.6,False,False,False

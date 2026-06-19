@@ -1,0 +1,57 @@
+seed,proposal_id,era,era_day,generation,resident,source_belief_id,source_label,question,materials,proposal_source,predeclared_device,avatar_answer
+36217,36217-PROP-00-4047,week_01,7,0,Ari,36217-BEL-000,herb-jump,turn a repeated sign into a usable bench rule,clay_jar+iron_sand,resident_generated_from_belief_state,False,False
+36217,36217-PROP-01-1026,moon_02,42,1,Milo,36217-BEL-001,herb-jump/half-sign,turn a repeated sign into a usable bench rule,ash_glass+reed_fiber,resident_generated_from_belief_state,False,False
+36217,36217-PROP-02-6830,season_01,120,2,Sera,36217-BEL-002,handspan bite/dry-jump,turn a repeated sign into a usable bench rule,reed_fiber+wet_wood,resident_generated_from_belief_state,False,False
+36217,36217-PROP-03-4805,year_01,365,3,Sera,36217-BEL-003,dry-jump/smoke-bound,find a safer boundary before repeating the sign,reed_fiber+red_scrap,resident_generated_from_belief_state,False,False
+36217,36217-PROP-04-8057,year_03,1095,4,Milo,36217-BEL-004,smoke-bound/quiet-doubt,find a safer boundary before repeating the sign,clay_jar+dry_resin,resident_generated_from_belief_state,False,False
+36217,36217-PROP-05-8391,generation_02,9125,5,Sera,36217-BEL-005,quiet-doubt/fiber-rise,find a safer boundary before repeating the sign,clay_jar+ash_glass,resident_generated_from_belief_state,False,False
+36217,36217-PROP-06-3679,generation_04,18250,6,Milo,36217-BEL-006,fiber-rise/bench-tool-anger,find a safer boundary before repeating the sign,reed_fiber+ash_glass,resident_generated_from_belief_state,False,False
+36231,36231-PROP-00-5854,week_01,7,0,Nia,36231-BEL-000,cold spark,find a safer boundary before repeating the sign,dry_resin+clay_jar,resident_generated_from_belief_state,False,False
+36231,36231-PROP-01-6822,moon_02,42,1,Fay,36231-BEL-001,cold spark/fiber-rise,find a safer boundary before repeating the sign,wet_wood+red_scrap,resident_generated_from_belief_state,False,False
+36231,36231-PROP-02-5029,season_01,120,2,Fay,36231-BEL-002,quiet sting/quiet-doubt,find a safer boundary before repeating the sign,red_scrap+ash_glass,resident_generated_from_belief_state,False,False
+36231,36231-PROP-03-4762,year_01,365,3,Tovan,36231-BEL-003,jar omen/missing-repeat,find a safer boundary before repeating the sign,clay_jar+iron_sand,resident_generated_from_belief_state,False,False
+36231,36231-PROP-04-2573,year_03,1095,4,Fay,36231-BEL-004,missing-repeat/quiet-doubt,find a safer boundary before repeating the sign,wet_wood+iron_sand,resident_generated_from_belief_state,False,False
+36231,36231-PROP-05-7822,generation_02,9125,5,Fay,36231-BEL-005,quiet-doubt/red-call,find a safer boundary before repeating the sign,ash_glass+clay_jar,resident_generated_from_belief_state,False,False
+36231,36231-PROP-06-7859,generation_04,18250,6,Nia,36231-BEL-006,red-call/roof-tool-anger,find a safer boundary before repeating the sign,reed_fiber+red_scrap,resident_generated_from_belief_state,False,False
+36247,36247-PROP-00-8056,week_01,7,0,Ari,36247-BEL-000,jar omen,test whether the rite repeats outside the old place,ash_glass+red_scrap,resident_generated_from_belief_state,False,False
+36247,36247-PROP-01-9591,moon_02,42,1,Tovan,36247-BEL-001,jar omen/half-sign,test whether the rite repeats outside the old place,wet_wood+dry_resin,resident_generated_from_belief_state,False,False
+36247,36247-PROP-02-5063,season_01,120,2,Tovan,36247-BEL-002,half-sign/ash-fear,find a safer boundary before repeating the sign,dry_resin+reed_fiber,resident_generated_from_belief_state,False,False
+36247,36247-PROP-03-4828,year_01,365,3,Nia,36247-BEL-003,safe-gap/ash-fear,find a safer boundary before repeating the sign,clay_jar+wet_wood,resident_generated_from_belief_state,False,False
+36247,36247-PROP-04-5167,year_03,1095,4,Milo,36247-BEL-004,grain pull/water-hush,find a safer boundary before repeating the sign,wet_wood+clay_jar,resident_generated_from_belief_state,False,False
+36247,36247-PROP-05-2108,generation_02,9125,5,Milo,36247-BEL-005,water-hush/rain-fail,find a safer boundary before repeating the sign,dry_resin+ash_glass,resident_generated_from_belief_state,False,False
+36247,36247-PROP-06-9223,generation_04,18250,6,Tovan,36247-BEL-006,rain-fail/jar-rub-sign,find a safer boundary before repeating the sign,dry_resin+ash_glass,resident_generated_from_belief_state,False,False
+36263,36263-PROP-00-8046,week_01,7,0,Nia,36263-BEL-000,glass sleep,learn whether scarce material is worth carrying farther,clay_jar+red_scrap,resident_generated_from_belief_state,False,False
+36263,36263-PROP-01-6303,moon_02,42,1,Nia,36263-BEL-001,glass sleep/missing-repeat,learn whether scarce material is worth carrying farther,red_scrap+dry_resin,resident_generated_from_belief_state,False,False
+36263,36263-PROP-02-8528,season_01,120,2,Nia,36263-BEL-002,grain pull/dry-jump,learn whether scarce material is worth carrying farther,ash_glass+reed_fiber,resident_generated_from_belief_state,False,False
+36263,36263-PROP-03-1650,year_01,365,3,Fay,36263-BEL-003,dry-jump/fiber-rise,learn whether scarce material is worth carrying farther,clay_jar+red_scrap,resident_generated_from_belief_state,False,False
+36263,36263-PROP-04-6374,year_03,1095,4,Milo,36263-BEL-004,quiet sting/quiet-doubt,find a safer boundary before repeating the sign,dry_resin+reed_fiber,resident_generated_from_belief_state,False,False
+36263,36263-PROP-05-4657,generation_02,9125,5,Nia,36263-BEL-005,quiet-doubt/ash-fear,find a safer boundary before repeating the sign,clay_jar+iron_sand,resident_generated_from_belief_state,False,False
+36263,36263-PROP-06-1515,generation_04,18250,6,Ari,36263-BEL-006,ash-fear/jar-quiet-doubt,find a safer boundary before repeating the sign,ash_glass+wet_wood,resident_generated_from_belief_state,False,False
+36281,36281-PROP-00-5591,week_01,7,0,Tovan,36281-BEL-000,glass sleep,compare inherited label against available material,iron_sand+dry_resin,resident_generated_from_belief_state,False,False
+36281,36281-PROP-01-7588,moon_02,42,1,Fay,36281-BEL-001,glass sleep/red-call,compare inherited label against available material,dry_resin+clay_jar,resident_generated_from_belief_state,False,False
+36281,36281-PROP-02-6260,season_01,120,2,Tovan,36281-BEL-002,red-call/dry-jump,compare inherited label against available material,clay_jar+ash_glass,resident_generated_from_belief_state,False,False
+36281,36281-PROP-03-9288,year_01,365,3,Ari,36281-BEL-003,storm crumb/edge-shame,compare inherited label against available material,wet_wood+red_scrap,resident_generated_from_belief_state,False,False
+36281,36281-PROP-04-1067,year_03,1095,4,Nia,36281-BEL-004,edge-shame/quiet-doubt,find a safer boundary before repeating the sign,dry_resin+ash_glass,resident_generated_from_belief_state,False,False
+36281,36281-PROP-05-9290,generation_02,9125,5,Fay,36281-BEL-005,quiet-doubt/dry-jump,find a safer boundary before repeating the sign,wet_wood+iron_sand,resident_generated_from_belief_state,False,False
+36281,36281-PROP-06-8509,generation_04,18250,6,Sera,36281-BEL-006,dry-jump/school-dark-crawl,find a safer boundary before repeating the sign,red_scrap+iron_sand,resident_generated_from_belief_state,False,False
+36307,36307-PROP-00-3577,week_01,7,0,Sera,36307-BEL-000,jar omen,compare inherited label against available material,reed_fiber+clay_jar,resident_generated_from_belief_state,False,False
+36307,36307-PROP-01-5399,moon_02,42,1,Sera,36307-BEL-001,cloak ghost/fiber-rise,compare inherited label against available material,ash_glass+dry_resin,resident_generated_from_belief_state,False,False
+36307,36307-PROP-02-6388,season_01,120,2,Milo,36307-BEL-002,smoke warning/fiber-rise,compare inherited label against available material,red_scrap+reed_fiber,resident_generated_from_belief_state,False,False
+36307,36307-PROP-03-3593,year_01,365,3,Tovan,36307-BEL-003,handspan bite/missing-repeat,compare inherited label against available material,iron_sand+reed_fiber,resident_generated_from_belief_state,False,False
+36307,36307-PROP-04-2402,year_03,1095,4,Tovan,36307-BEL-004,safe-gap/half-sign,find a safer boundary before repeating the sign,iron_sand+clay_jar,resident_generated_from_belief_state,False,False
+36307,36307-PROP-05-3745,generation_02,9125,5,Nia,36307-BEL-005,half-sign/half-sign,find a safer boundary before repeating the sign,dry_resin+ash_glass,resident_generated_from_belief_state,False,False
+36307,36307-PROP-06-1839,generation_04,18250,6,Tovan,36307-BEL-006,half-sign/jar-rub-sign,find a safer boundary before repeating the sign,iron_sand+dry_resin,resident_generated_from_belief_state,False,False
+36319,36319-PROP-00-1296,week_01,7,0,Ari,36319-BEL-000,herb-jump,compare inherited label against available material,ash_glass+dry_resin,resident_generated_from_belief_state,False,False
+36319,36319-PROP-01-9304,moon_02,42,1,Nia,36319-BEL-001,awl-bite/rub-sign,compare inherited label against available material,dry_resin+ash_glass,resident_generated_from_belief_state,False,False
+36319,36319-PROP-02-4549,season_01,120,2,Fay,36319-BEL-002,rub-sign/dry-jump,compare inherited label against available material,red_scrap+dry_resin,resident_generated_from_belief_state,False,False
+36319,36319-PROP-03-1154,year_01,365,3,Nia,36319-BEL-003,quiet sting/fiber-rise,compare inherited label against available material,ash_glass+clay_jar,resident_generated_from_belief_state,False,False
+36319,36319-PROP-04-3550,year_03,1095,4,Milo,36319-BEL-004,fiber-rise/edge-shame,compare inherited label against available material,iron_sand+clay_jar,resident_generated_from_belief_state,False,False
+36319,36319-PROP-05-9289,generation_02,9125,5,Milo,36319-BEL-005,edge-shame/missing-repeat,find a safer boundary before repeating the sign,ash_glass+iron_sand,resident_generated_from_belief_state,False,False
+36319,36319-PROP-06-9521,generation_04,18250,6,Milo,36319-BEL-006,missing-repeat/route-half-sign,find a safer boundary before repeating the sign,wet_wood+dry_resin,resident_generated_from_belief_state,False,False
+36343,36343-PROP-00-7224,week_01,7,0,Nia,36343-BEL-000,jar omen,compare inherited label against available material,clay_jar+reed_fiber,resident_generated_from_belief_state,False,False
+36343,36343-PROP-01-4457,moon_02,42,1,Ari,36343-BEL-001,jar omen/dry-jump,compare inherited label against available material,iron_sand+red_scrap,resident_generated_from_belief_state,False,False
+36343,36343-PROP-02-4325,season_01,120,2,Nia,36343-BEL-002,dry-path/grain-follow,compare inherited label against available material,dry_resin+reed_fiber,resident_generated_from_belief_state,False,False
+36343,36343-PROP-03-4251,year_01,365,3,Ari,36343-BEL-003,grain-follow/smoke-bound,compare inherited label against available material,ash_glass+clay_jar,resident_generated_from_belief_state,False,False
+36343,36343-PROP-04-5757,year_03,1095,4,Fay,36343-BEL-004,smoke-bound/tool-anger,find a safer boundary before repeating the sign,wet_wood+dry_resin,resident_generated_from_belief_state,False,False
+36343,36343-PROP-05-8809,generation_02,9125,5,Sera,36343-BEL-005,tool-anger/ash-fear,find a safer boundary before repeating the sign,dry_resin+ash_glass,resident_generated_from_belief_state,False,False
+36343,36343-PROP-06-3292,generation_04,18250,6,Fay,36343-BEL-006,ash-fear/bench-fiber-rise,find a safer boundary before repeating the sign,wet_wood+iron_sand,resident_generated_from_belief_state,False,False

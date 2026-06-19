@@ -2277,6 +2277,12 @@ The browser shell now includes an `Objects` normal rail action and `Physical obj
 
 This moves physics out of debug-only panels and into ordinary play. The interaction records component state, resident handling, manipulation evidence, physics links, practice links, and boundary flags for no direct command, no hidden-law normal view, and no tech-tree unlock.
 
+## Game prototype v0 update: Normal Material Handling
+
+The browser shell now includes a `Handling` normal rail action and keeps `Resident material handling` visible in Player Mode. Handling routes through resident-chosen physical manipulation: carry, dry, tie, wet-test, stack, or test a component under mass, tool, resource, moisture, support, and hidden-law boundaries.
+
+First-playable session receipts now include material-handling row deltas and latest manipulation IDs, so resident physical work is visible as part of the playable path instead of buried in debug physics panels.
+
 ## Game prototype v0 update: Bounded Resident Encounter
 
 The browser shell now includes a `Talk` normal rail action and `Resident encounter` Player Mode card. The encounter creates a deterministic, phrasebook-bounded resident response from current memory, schedule, visible cue, proposal context, practice context, and object context.

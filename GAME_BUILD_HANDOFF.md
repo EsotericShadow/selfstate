@@ -104,6 +104,12 @@ The prototype now includes a browser-local auto-simulation clock. `Start auto si
 
 The canvas now shows a basic playable state view instead of only a backdrop: village zones, avatar position, resident need/state markers, recent proposals, recent practices, deep-time emergent effects, resources, auto-sim state, and survival continuity. This keeps visuals intentionally simple while making the stochastic civilization legible during play.
 
+## Prototype v0 normal material-handling update
+
+The maintained shell now exposes resident material handling as a normal player-facing verb. `Handling` routes to resident-chosen physical manipulation under carry capacity, tool, resource, moisture, support, and hidden-law constraints, while the avatar only influences conditions.
+
+The first-playable session receipt records material-handling deltas and latest manipulation IDs. The Player Mode surface keeps the resident material-handling card visible so physical work is readable during ordinary play rather than isolated in debug controls.
+
 ## Prototype v0 save-slot update
 
 The game prototype shell now includes browser-local prototype save slots. The player can save a slot, advance the autonomous simulation, return to the saved slot, and export a save receipt. This is intentionally scoped as prototype persistence evidence: it preserves meaningful village state, practice/proposal summaries, deep-time year, autonomous day, return log, and replay row counts without claiming production persistence.

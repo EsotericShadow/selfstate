@@ -8,8 +8,9 @@ only adding generated bridge reports.
 Boundary: Deterministic browser-local hardened vertical-slice app shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.
 
 Open `index.html` in a browser. Use the built-in controls to enter the world,
-move, talk through bounded phrases, alter debt/trust, wait offscreen, save/restore,
-run QA hooks, inspect browser QA readiness, and export replay JSON.
+move, talk through bounded phrases, inspect objects, watch resident material
+handling, alter debt/trust, wait offscreen, save/restore, run QA hooks, inspect
+browser QA readiness, and export replay JSON.
 
 `QA readiness` is a non-running preflight. It checks whether the current browser
 state has a normal player surface, canvas cues, a first-playable session,

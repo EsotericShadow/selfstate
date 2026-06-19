@@ -51,6 +51,8 @@
 
 30. Use QA readiness before running Prototype QA and confirm it reports normal player surface, canvas cues, first-playable session evidence, lived-action physics visibility, save/return continuity, causal-ledger boundaries, and that QA was not executed.
 
+31. Use Handling from the normal rail and confirm a resident-chosen material manipulation changes or fails against a real component, appears in Player Mode, and is recorded in the first-playable session as handling evidence rather than a direct command.
+
 30. Use End day and confirm the Day cycle recap includes a physics step, and the Village Board can receive a physics-linked concern/proposal without the avatar commanding it.
 
 31. Run Auto burst after physics pressure exists and confirm at least one resident can choose a repairing cue/action tied to component support or damage, consuming fiber when available.

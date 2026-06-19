@@ -343,6 +343,21 @@ Required evidence:
 
 This milestone keeps the handoff honest: readiness is not completion, and validation is not claimed before it is run.
 
+## Prototype v0 milestone: Normal Material Handling
+
+`normal_material_handling` is now part of first playable prototype scope.
+
+Required evidence:
+
+- the normal rail exposes a Handling action
+- Handling routes through resident-chosen manipulation, not direct avatar object control
+- resident handling can carry, dry, tie, wet-test, stack, or test real simulated components
+- handling respects carry capacity, tools, resource cost, moisture, support, stress, and hidden-law boundaries
+- first-playable session steps record material-handling row deltas and latest manipulation IDs
+- Player Mode keeps resident material handling visible as ordinary play evidence
+
+This milestone makes physical work part of the player-facing game loop.
+
 ## Prototype v0 milestone: Physical Object Interaction
 
 `player_object_interaction` is now part of first playable prototype scope.

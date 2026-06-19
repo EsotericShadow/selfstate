@@ -136,6 +136,15 @@
 5. Save, mutate, restore, and confirm core prototype state still exists.
 6. Show pass/fail checks in the player-facing prototype QA card.
 
+## Normal material handling loop
+
+1. The player uses `Handling` from the normal action rail.
+2. The resident chooses a material manipulation action rather than receiving a direct object command.
+3. The shell applies carry capacity, tool use, resource cost, moisture, support, stress, and hidden-law boundaries.
+4. The 3D component state changes through position, moisture, damage, stability, field stress, or preserved failure evidence.
+5. The result can update resident memory, visible expression, Reality Constraint Ledger rows, and emergent practice links.
+6. First-playable session rows record handling deltas so the physical work is part of ordinary play evidence.
+
 ## Browser QA readiness loop
 
 1. Inspect the current browser state without running Prototype QA.

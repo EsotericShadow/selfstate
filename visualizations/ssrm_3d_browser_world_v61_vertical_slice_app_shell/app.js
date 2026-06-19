@@ -6076,9 +6076,16 @@ function updateLivedPracticeAcceptance() {
   return loop.acceptanceReady;
 }
 
-function recordLivedPracticeAction(playerVerb, discoveryAction, result, beforeTests, beforeNodes) {
+function recordLivedPracticeAction(playerVerb, discoveryAction, result, beforeTests, beforeNodes, context = {}) {
   const loop = ensureLivedPracticeLoop();
   const snapshot = livedPracticeSnapshot();
+  const rail = world.gamePrototypeActionRail || null;
+  const latestRailRow = rail && rail.actionLedger.length ? rail.actionLedger[rail.actionLedger.length - 1] : null;
+  const movement = world.gamePrototypeMovementRoute || null;
+  const latestMovementRow = movement && movement.routeLedger.length ? movement.routeLedger[movement.routeLedger.length - 1] : null;
+  const objectInteraction = world.gamePrototypeObjectInteraction || null;
+  const latestObjectRow = objectInteraction && objectInteraction.interactionLedger.length ? objectInteraction.interactionLedger[objectInteraction.interactionLedger.length - 1] : null;
+  const pressureResult = context.pressureResult || {};
   const row = {
     action_id: `LPA-${String(loop.actionLedger.length + 1).padStart(2, '0')}`,
     tick: world.tick,
@@ -6088,6 +6095,17 @@ function recordLivedPracticeAction(playerVerb, discoveryAction, result, beforeTe
     result_event: result && result.event ? result.event : 'recorded',
     tests_added: Math.max(0, snapshot.practical_tests - beforeTests),
     practice_nodes_added: Math.max(0, (world.emergentPracticeGraph ? world.emergentPracticeGraph.nodes.length : 0) - beforeNodes),
+    ordinary_feed_added: Math.max(0, snapshot.ordinary_feed - Number(context.beforeFeed || 0)),
+    source_feed_id: pressureResult.sourceFeedId || pressureResult.feedId || 'none',
+    ordinary_repetition: pressureResult.repeatedOrdinaryActions || 0,
+    ordinary_triggered_test: pressureResult.triggeredResidentTest === true,
+    normal_action_id: latestRailRow ? latestRailRow.action_id : 'none',
+    movement_route_id: playerVerb === 'Move' && latestMovementRow ? latestMovementRow.route_id : 'none',
+    movement_zone: playerVerb === 'Move' && latestMovementRow ? latestMovementRow.after_zone : 'none',
+    object_interaction_id: playerVerb === 'Objects' && latestObjectRow ? latestObjectRow.interaction_id : 'none',
+    component_id: latestObjectRow ? latestObjectRow.component_id : (latestRailRow ? latestRailRow.component_id : 'none'),
+    material_id: latestObjectRow && latestObjectRow.after ? latestObjectRow.after.material_id : 'none',
+    resident_term: latestObjectRow ? latestObjectRow.resident_term : 'none',
     practice_id: snapshot.practice_id,
     local_name: snapshot.local_name,
     status: snapshot.status,
@@ -6130,16 +6148,35 @@ function recordLivedPracticeAction(playerVerb, discoveryAction, result, beforeTe
   return row;
 }
 
+function latestOrdinaryFeedResult(beforeFeed) {
+  const discovery = world.practicalDiscovery || null;
+  const latestFeed = discovery && discovery.ordinaryPlayFeed && discovery.ordinaryPlayFeed.length ? discovery.ordinaryPlayFeed[discovery.ordinaryPlayFeed.length - 1] : null;
+  if (!latestFeed || discovery.ordinaryPlayFeed.length <= beforeFeed) return null;
+  return {
+    recorded: true,
+    sourceFeedId: latestFeed.id,
+    repeatedOrdinaryActions: latestFeed.repeatedOrdinaryActions,
+    triggeredResidentTest: latestFeed.triggeredResidentTest === true,
+  };
+}
+
 function runLivedPracticeAction(playerVerb, discoveryAction) {
   const beforeTests = world.practicalDiscovery ? world.practicalDiscovery.practicalTests.length : 0;
   const beforeNodes = world.emergentPracticeGraph ? world.emergentPracticeGraph.nodes.length : 0;
+  const beforeFeed = world.practicalDiscovery && world.practicalDiscovery.ordinaryPlayFeed ? world.practicalDiscovery.ordinaryPlayFeed.length : 0;
   let result = null;
-  if (playerVerb === 'Ask') result = runNormalPlayAsk();
+  if (playerVerb === 'Move') result = runNormalPlayMove();
+  else if (playerVerb === 'Objects') result = runNormalPlayObjects();
+  else if (playerVerb === 'Ask') result = runNormalPlayAsk();
+  else if (playerVerb === 'Talk') result = runNormalPlayTalk();
   else if (playerVerb === 'Support') result = runNormalPlaySupport();
   else if (playerVerb === 'Wait') result = runNormalPlayWait();
   else result = runNormalPlayLook();
-  runPracticalDiscoveryStep(discoveryAction);
-  return recordLivedPracticeAction(playerVerb, discoveryAction, result, beforeTests, beforeNodes);
+  let pressureResult = latestOrdinaryFeedResult(beforeFeed);
+  if (!pressureResult) pressureResult = recordOrdinaryPlayPressure(discoveryAction, world.selected);
+  const testsAfterPressure = world.practicalDiscovery ? world.practicalDiscovery.practicalTests.length : 0;
+  if (testsAfterPressure === beforeTests) runPracticalDiscoveryStep(discoveryAction);
+  return recordLivedPracticeAction(playerVerb, discoveryAction, result, beforeTests, beforeNodes, { beforeFeed, pressureResult });
 }
 
 function runLivedPracticeLoop() {
@@ -6147,13 +6184,15 @@ function runLivedPracticeLoop() {
   loop.runCount += 1;
   if (!world.gamePrototypeProposalDeck || !world.gamePrototypeProposalDeck.acceptanceReady) runPlayerProposalDeckLoop();
   if (!world.gamePrototypePlayerMode || !world.gamePrototypePlayerMode.enabled) enterPlayerMode();
-  const scriptedNormalActions = [
-    ['Ask', 'askSchedule'],
-    ['Ask', 'askSchedule'],
-    ['Ask', 'askSchedule'],
-    ['Ask', 'askSchedule']
+  const livedNormalActions = [
+    ['Move', 'borrowTool'],
+    ['Objects', 'borrowTool'],
+    ['Objects', 'borrowTool'],
+    ['Support', 'offerHelp'],
+    ['Wait', 'lived_pressure'],
+    ['Move', 'borrowTool']
   ];
-  scriptedNormalActions.forEach(([verb, discoveryAction]) => runLivedPracticeAction(verb, discoveryAction));
+  livedNormalActions.forEach(([verb, discoveryAction]) => runLivedPracticeAction(verb, discoveryAction));
   updateLivedPracticeAcceptance();
   return log('runLivedPracticeLoop', { ready: loop.acceptanceReady, actions: loop.actionLedger.length, practice: loop.receipt ? loop.receipt.practice_id : 'none', status: loop.receipt ? loop.receipt.status : 'none' });
 }
@@ -6161,7 +6200,7 @@ function runLivedPracticeLoop() {
 function formatLivedPracticeLoop() {
   const loop = world.gamePrototypeLivedPractice || ensureLivedPracticeLoop();
   const snapshot = loop.practiceSnapshots.length ? loop.practiceSnapshots[loop.practiceSnapshots.length - 1].snapshot : livedPracticeSnapshot();
-  const actionRows = loop.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.player_verb}->${row.discovery_action}; tests+${row.tests_added}; practice=${row.practice_id}; status=${row.status}; direct=${row.avatar_direct_command}`);
+  const actionRows = loop.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.player_verb}->${row.discovery_action}; feed+${row.ordinary_feed_added || 0}; tests+${row.tests_added}; component=${row.component_id || 'none'}; practice=${row.practice_id}; status=${row.status}; direct=${row.avatar_direct_command}`);
   return [
     `Acceptance ready: ${loop.acceptanceReady ? 'yes' : 'no'}`,
     `Actions: ${loop.actionLedger.length} / snapshots=${loop.practiceSnapshots.length}`,
@@ -6171,6 +6210,7 @@ function formatLivedPracticeLoop() {
     `Supporting observations: ${snapshot.observations_supporting.length}`,
     `Failed ancestors: ${snapshot.failed_ancestor_tests.join(', ') || 'none'}`,
     `Adoption count: ${snapshot.adoption_count}; maintenance=${snapshot.maintenance_cost}`,
+    `Ordinary feed: ${snapshot.ordinary_feed}; lived tests=${snapshot.practical_tests}`,
     `No hidden law in normal view: ${loop.noHiddenLawNormalView ? 'yes' : 'no'}`,
     'Recent lived practice actions:',
     ...(actionRows.length ? actionRows : ['No lived practice actions yet.'])
@@ -13338,9 +13378,9 @@ function recordOrdinaryPlayPressure(action, resident) {
   };
   discovery.ordinaryPlayFeed.push(row);
   if (discovery.ordinaryPlayFeed.length > 80) discovery.ordinaryPlayFeed.shift();
-  if (!pressureReady) return { recorded: true, pressureReady: false, repeatedOrdinaryActions: row.repeatedOrdinaryActions, reason: 'waiting for public pressure or resident belief source' };
+  if (!pressureReady) return { recorded: true, pressureReady: false, sourceFeedId: row.id, repeatedOrdinaryActions: row.repeatedOrdinaryActions, reason: 'waiting for public pressure or resident belief source' };
   if (row.repeatedOrdinaryActions < 2 || row.repeatedOrdinaryActions % 2 !== 0) {
-    return { recorded: true, pressureReady: true, repeatedOrdinaryActions: row.repeatedOrdinaryActions, triggeredResidentTest: false };
+    return { recorded: true, pressureReady: true, sourceFeedId: row.id, repeatedOrdinaryActions: row.repeatedOrdinaryActions, triggeredResidentTest: false };
   }
   livedActionAutoIntegrationPaused = true;
   try {
@@ -13362,7 +13402,7 @@ function recordOrdinaryPlayPressure(action, resident) {
   };
   discovery.autoGeneratedTests.push(autoTest);
   if (discovery.autoGeneratedTests.length > 40) discovery.autoGeneratedTests.shift();
-  return { recorded: true, pressureReady: true, repeatedOrdinaryActions: row.repeatedOrdinaryActions, triggeredResidentTest: row.triggeredResidentTest, testId: autoTest.testId };
+  return { recorded: true, pressureReady: true, sourceFeedId: row.id, repeatedOrdinaryActions: row.repeatedOrdinaryActions, triggeredResidentTest: row.triggeredResidentTest, testId: autoTest.testId };
 }
 
 function runPracticalDiscoveryStep(action = 'lived_pressure') {

@@ -472,11 +472,12 @@ This is the diegetic management bridge: the player supports village conditions w
 The first playable loop now has a player-facing practice path:
 
 1. The player uses ordinary actions from the normal rail.
-2. Repeated actions create resident-observed bottlenecks through the practical discovery system.
-3. Residents generate local tests from those bottlenecks.
-4. Repeated evidence can create or strengthen an emergent practice node.
-5. The Lived practice card shows the local name, status, materials, supporting observations, failed ancestors, adoption, and maintenance burden.
-6. Hidden law remains audit-only, and the avatar does not install the correct explanation.
+2. Movement, object handling, support, and waiting create resident-observed bottlenecks through the practical discovery system.
+3. Each lived-practice row traces back to the ordinary pressure feed, movement route, or object interaction evidence that created it.
+4. Residents generate local tests from those bottlenecks.
+5. Repeated evidence can create or strengthen an emergent practice node.
+6. The Lived practice card shows the local name, status, materials, supporting observations, failed ancestors, adoption, and maintenance burden.
+7. Hidden law remains audit-only, and the avatar does not install the correct explanation.
 
 This is the bridge from ordinary play into invented practice history.
 

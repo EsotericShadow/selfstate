@@ -261,8 +261,9 @@ This milestone turns resident proposals into a playable surface. It does not cre
 
 Required evidence:
 
-- repeated normal player actions can drive practical discovery
+- repeated normal player actions can drive practical discovery, including Move, Objects, Support, and Wait
 - the loop creates practical test rows and emergent practice snapshots
+- lived-practice rows trace back to ordinary pressure feed, movement, or object-interaction evidence
 - the visible card shows local practice name, status, materials, observations, failed ancestors, adoption count, and maintenance burden
 - actions remain player-language actions, not subsystem-only buttons
 - the avatar does not directly command residents

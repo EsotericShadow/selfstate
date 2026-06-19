@@ -171,3 +171,12 @@ The first playable loop includes a direct save/return pass: enter the village, l
 3. The shell records guide history so the player can see how phases advanced.
 4. Guided steps do not directly command residents; they only operate the avatar/prototype controls already available to the player.
 
+
+## Resident project progress loop
+
+1. Residents post concerns and proposals through the Village Board.
+2. The avatar may support conditions, ask, wait, or offer material help, but cannot assign labor directly.
+3. Accepted proposals advance through project work only when materials, time, and resident willingness are available.
+4. Work consumes commons resources, writes a causal ledger row, updates resident memory, and can refine related practice nodes.
+5. Scarcity or unreadiness creates a stalled project row instead of spawning resources or forcing obedience.
+6. Completed projects create maintenance obligations and become part of save/return, QA, acceptance, and replay evidence.

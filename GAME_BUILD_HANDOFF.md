@@ -132,3 +132,7 @@ The prototype now includes an `Audit commons` action and `Commons / causality` c
 
 The prototype now includes a `Guide step` action. It reads the current Player guide phase and executes the matching existing prototype action, recording a guide history row with source phase, action, next phase, selected resident, and no direct resident command. This turns the advisory guide into a playable one-button path while preserving resident autonomy and avoiding scripted technology unlocks.
 
+
+## Prototype v0 resident project update
+
+The prototype now includes a diegetic resident project progress loop. Accepted Village Board proposals can advance into material-consuming work, stall under scarcity or resident unreadiness, complete with a new maintenance burden, update resident memory, and write Reality Constraint Ledger rows. The avatar still supports conditions rather than assigning jobs: project rows explicitly record no direct command, consumed materials, time/work cost, stalls, completion, and who felt the consequence.

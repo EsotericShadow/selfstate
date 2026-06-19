@@ -32,3 +32,5 @@
 20. Use Audit commons after resident seasons, proposal support, or practice maintenance and confirm the Commons / causality card reports resources, work/time cost, tool wear, maintenance burden, conservation issues, and hidden-law exposure without revealing hidden simulator law.
 
 21. Use Guide step repeatedly from a fresh run and confirm the Player guide history advances phases while actions still preserve resident autonomy and existing causal/acceptance checks.
+
+22. Support a Village Board proposal, advance the project until it completes or stalls, and confirm Projects plus Reality Constraint Ledger show materials consumed or shortages preserved without direct resident command.

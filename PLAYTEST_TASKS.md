@@ -10,3 +10,5 @@
 8. Compare two seeds and confirm different practice histories emerge from the same hidden law.
 9. See a practice emerge through repeated lived browser actions, not only a report artifact.
 10. Return after hint divergence and confirm a branch persisted, burdened someone, was forgotten, or revived.
+
+11. Run Prototype QA and confirm the visible receipt passes core checks for entry, residents, autonomy, practice, proposals, deep time, survival audit, causal ledger, save/return, and game-build mode.

@@ -80,3 +80,7 @@ Deep time now tracks civilization survivability, not just effects. The prototype
 ## Prototype v0 autonomous resident update
 
 Residents now have an autonomous stochastic tick loop. `Resident tick` advances one resident action from runtime entropy; `Resident season` runs repeated autonomous actions and periodically advances deep time. Residents can rest, refuse, repair safety, forage, work on proposals, maintain practices, teach, experiment, or observe based on needs, resources, proposals, practices, and stochastic pressure. These actions update schedules, memories, resources, proposal support, care ledgers, and Reality Constraint Ledger rows without direct player command.
+
+## Prototype v0 QA smoke update
+
+The maintained shell now includes a player-facing `Prototype QA` control. It executes the current playable loop, autonomous resident season, million-year deep-time run, survival audit, causal audit, and save/restore preservation check, then writes a visible `gamePrototypeQA` receipt. This is not production certification; it is an in-shell hardening gate for the playable prototype branch.

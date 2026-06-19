@@ -93,3 +93,12 @@
 4. Residents may refuse implied priorities when autonomy pressure is high.
 5. Each action writes a causal ledger row so stochastic autonomy remains inspectable.
 6. Seasonal autonomous activity can trigger compressed deep-time evolution.
+
+## Prototype QA loop
+
+1. Run the first playable loop.
+2. Run autonomous resident season behavior.
+3. Advance compressed deep time to at least one million years.
+4. Audit survival and causal ledger state.
+5. Save, mutate, restore, and confirm core prototype state still exists.
+6. Show pass/fail checks in the player-facing prototype QA card.

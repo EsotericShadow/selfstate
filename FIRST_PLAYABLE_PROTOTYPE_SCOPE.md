@@ -163,10 +163,25 @@ Required evidence:
 - routine context can suggest repair, proposal work, practice maintenance, or observation
 - resident needs and autonomy can still override the suggestion
 - normal village state exposes only public worksite/component/practice context
+- the primary canvas draws a resident-to-worksite routine cue
 - hidden simulator law remains out of normal view
 - no direct resident command is introduced
 
 This gate prevents schedules from becoming abstract NPC text disconnected from the physical village.
+
+## Added scope gate: Routine context visible on canvas
+
+`routine_context_visible_on_canvas` is part of the first playable prototype scope.
+
+Required evidence:
+
+- primary play-surface cue rows include a routine-context ID
+- the latest primary snapshot contains a non-empty routine-context source
+- resident routine cues draw against physical components, project visuals, or practice anchors
+- normal view shows resident, suggested action, and source without hidden-law exposure
+- acceptance can prove the cue after save/return and autonomous resident activity
+
+This gate keeps routine context visible in the player's world, not hidden in debug ledgers.
 
 ## Added scope gate: Playable Village Day 0-3
 

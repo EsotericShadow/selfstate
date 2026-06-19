@@ -134,8 +134,9 @@
 2. The context suggests repair, proposal work, practice maintenance, or observation without forcing the resident.
 3. Needs and autonomy can override the suggestion.
 4. The chosen action records the worksite/component/practice link.
-5. Normal village state shows the public routine link while hidden laws remain audit-only.
-6. Acceptance requires routine rows to stay no-direct-command and normal-view safe.
+5. The primary canvas draws the public resident-to-worksite link using simple dashed cues.
+6. Normal village state shows the public routine link while hidden laws remain audit-only.
+7. Acceptance requires routine rows and canvas cues to stay no-direct-command and normal-view safe.
 
 ## Prototype QA loop
 

@@ -244,6 +244,12 @@ Autonomous resident routines now read the physical village before choosing work.
 
 Each tick writes a `routineContextLedger` row and links the action row back to the physical context. The normal village state and autonomous resident card show the latest worksite/component/practice link, while acceptance now checks that resident routines use physical context without direct player command or hidden-law exposure.
 
+## Prototype v0 visual routine-context update
+
+Routine context is now visible on the primary player canvas. The stage header shows the latest routine-context ID, resident, suggested action, and source. The canvas draws dashed resident-to-worksite links from resident body positions to physical components, project visuals, or practice anchors, and resident markers show the routine target in normal view.
+
+This is intentionally simple placeholder rendering, but it moves the prototype closer to the game target: residents appear to orbit, repair, maintain, or watch actual physical places rather than only carrying abstract schedule text.
+
 ## Prototype v0 deep-time stochastic physics update
 
 Compressed civilization history now starts with stochastic physics, not only lineage mutation. Each deep-time epoch writes a physics epoch row and material flux rows before cultural consequences are interpreted. The epoch pass advances physical substeps, then applies long-horizon moisture, heat, decay, settlement, mass loss, stability drift, and ruined-trace state to actual components.

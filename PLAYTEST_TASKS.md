@@ -200,6 +200,10 @@
 108. Inspect Village state and confirm at least one resident line shows routine context from a project visual, physical component, or practice node.
 109. Confirm a resident can choose repair, proposal work, or practice maintenance from physical context without direct player command.
 110. Export acceptance and confirm `resident_routines_use_physical_context` appears as a prototype requirement.
+111. Run `World stage` after a routine-context row exists and confirm the stage header shows the latest routine context ID, resident, suggested action, and source.
+112. Inspect the canvas and confirm a dashed line links the resident body marker to a physical component, project visual, or practice anchor.
+113. Confirm resident labels show the routine target in normal view without exposing hidden simulator law.
+114. Export acceptance and confirm `routine_context_visible_on_canvas` appears as a prototype requirement.
 
 ## Physics-to-practice slice playtests
 

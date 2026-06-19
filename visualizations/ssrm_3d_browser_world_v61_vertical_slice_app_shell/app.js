@@ -5055,10 +5055,16 @@ function currentPrimaryPlaySurfaceSnapshot() {
   const livedPractice = world.gamePrototypeLivedPractice || null;
   const livedPhysicsRows = livedPractice && livedPractice.physicsLedger ? livedPractice.physicsLedger : [];
   const latestLivedPhysics = livedPhysicsRows.length ? livedPhysicsRows[livedPhysicsRows.length - 1] : null;
+  const autonomous = world.autonomousResidents || null;
+  const routineRows = autonomous && autonomous.routineContextLedger ? autonomous.routineContextLedger : [];
+  const latestRoutine = routineRows.length ? routineRows[routineRows.length - 1] : null;
   const selected = world.residents[world.selected] || currentResident();
   const latestProposal = board && board.projectProposals && board.projectProposals.length ? board.projectProposals[board.projectProposals.length - 1] : null;
   const latestPractice = graph && graph.nodes && graph.nodes.length ? graph.nodes[graph.nodes.length - 1] : null;
-  const latestComponent = materialWorld && materialWorld.components && materialWorld.components.length ? materialWorld.components[materialWorld.components.length - 1] : null;
+  const routineComponent = latestRoutine && materialWorld && materialWorld.components
+    ? materialWorld.components.find(component => component.component_id === latestRoutine.latest_component_id)
+    : null;
+  const latestComponent = routineComponent || (materialWorld && materialWorld.components && materialWorld.components.length ? materialWorld.components[materialWorld.components.length - 1] : null);
   const latestPhysics = physics && physics.latestMaterialStateStep ? physics.latestMaterialStateStep : (physics && physics.latestStructuralStep ? physics.latestStructuralStep : (physics && physics.latestConstraintStep ? physics.latestConstraintStep : (physics ? physics.latestStep : null)));
   const resourcePressure = Object.entries(world.resources)
     .filter(([, value]) => Number(value || 0) <= 3)
@@ -5092,6 +5098,13 @@ function currentPrimaryPlaySurfaceSnapshot() {
     latest_lived_physics_component_id: latestLivedPhysics ? latestLivedPhysics.component_id : 'none',
     latest_lived_physics_deltas: latestLivedPhysics ? latestLivedPhysics.deltas : null,
     lived_physics_rows: livedPhysicsRows.length,
+    routine_context_id: latestRoutine ? latestRoutine.context_id : 'none',
+    routine_context_resident: latestRoutine ? latestRoutine.resident : 'none',
+    routine_context_action: latestRoutine ? latestRoutine.action : 'none',
+    routine_context_suggested_action: latestRoutine ? latestRoutine.suggested_action || 'none' : 'none',
+    routine_context_source: latestRoutine ? (latestRoutine.latest_project_visual_id !== 'none' ? latestRoutine.latest_project_visual_id : latestRoutine.latest_component_id !== 'none' ? latestRoutine.latest_component_id : latestRoutine.practice_id) : 'none',
+    routine_context_hint: latestRoutine ? latestRoutine.schedule_hint : 'none',
+    routine_context_rows: routineRows.length,
     resource_pressure: resourcePressure,
     canvas_cues: [
       'look at the highlighted village problem band',
@@ -5099,6 +5112,7 @@ function currentPrimaryPlaySurfaceSnapshot() {
       latestPractice ? `practice ${latestPractice.local_name || latestPractice.practice_id}` : 'practice graph not yet visible',
       latestComponent ? `component ${latestComponent.component_id}` : 'physical components not initialized',
       latestLivedPhysics ? `lived physics ${latestLivedPhysics.physics_id} on ${latestLivedPhysics.component_id}` : 'lived-action physics not visible yet',
+      latestRoutine ? `routine context ${latestRoutine.context_id} ${latestRoutine.resident} -> ${latestRoutine.suggested_action || latestRoutine.action} near ${latestRoutine.latest_project_visual_id !== 'none' ? latestRoutine.latest_project_visual_id : latestRoutine.latest_component_id !== 'none' ? latestRoutine.latest_component_id : latestRoutine.practice_id}` : 'routine context not visible yet',
     ],
     hidden_law_normal_view: false,
     avatar_direct_command: false,
@@ -5120,6 +5134,8 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     proposal_id: snapshot.active_proposal_id,
     practice_id: snapshot.active_practice_id,
     component_id: snapshot.active_component_id,
+    routine_context_id: snapshot.routine_context_id,
+    routine_context_source: snapshot.routine_context_source,
     reason,
     canvas_first: true,
   });
@@ -5127,6 +5143,7 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     cue_id: `PPSURF-C-${String(surface.canvasCueLedger.length + 1).padStart(2, '0')}`,
     snapshot_id: snapshot.snapshot_id,
     cues: snapshot.canvas_cues,
+    routine_context_id: snapshot.routine_context_id,
     normal_view_hidden_law_exposed: false,
   });
   surface.actionPromptLedger.push({
@@ -5223,6 +5240,7 @@ function formatPrimaryPlaySurface() {
     `Active component: ${snapshot.active_component_id} / ${snapshot.active_component_gloss}`,
     `Latest physics: ${snapshot.latest_physics_id}`,
     `Latest lived physics: ${snapshot.latest_lived_physics_id} / component=${snapshot.latest_lived_physics_component_id} / rows=${snapshot.lived_physics_rows}`,
+    `Routine context: ${snapshot.routine_context_id} / ${snapshot.routine_context_resident} -> ${snapshot.routine_context_suggested_action} / source=${snapshot.routine_context_source}`,
     `Resource pressure: ${snapshot.resource_pressure.length ? snapshot.resource_pressure.join(', ') : 'none'}`,
     `Rows: focus=${surface.focusLedger.length}, cues=${surface.canvasCueLedger.length}, prompts=${surface.actionPromptLedger.length}`,
     `Boundary: ${surface.boundary}`,
@@ -12436,6 +12454,7 @@ function buildPrototypeAcceptanceReceipt() {
     ? autonomous.routineContextLedger.filter(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false && (row.latest_project_visual_id !== 'none' || row.latest_construction_id !== 'none' || row.latest_component_id !== 'none' || row.practice_id !== 'none' || Number(row.weak_component_count || 0) > 0)).length
     : 0;
   const routineActionLinks = autonomous && autonomous.actionLog ? autonomous.actionLog.filter(row => row.routine_context_id && row.physical_context).length : 0;
+  const routineCanvasCueRows = worldStage && worldStage.canvasCueLedger ? worldStage.canvasCueLedger.filter(row => row.routine_context_id && row.routine_context_id !== 'none' && (row.cues || []).some(cue => /routine context/.test(cue))).length : 0;
 	  const requirements = [
     { id: 'basic_visual_surface', pass: Boolean(world.entered && Object.keys(world.residents).length <= 6), evidence: `${Object.keys(world.residents).length} resident(s), room=${world.avatar.room}` },
     { id: 'persistent_save_return', pass: Boolean(saves && saves.slots && saves.slots.length > 0 && saves.returnLog && saves.returnLog.length > 0), evidence: saves ? `${saves.slots.length} slot(s), ${saves.returnLog.length} return(s)` : 'no prototype saves' },
@@ -12482,6 +12501,7 @@ function buildPrototypeAcceptanceReceipt() {
 	    { id: 'resident_material_manipulation', pass: Boolean(manipulation && manipulationRows > 0 && manipulationPracticeLinks > 0 && embodiedManipulationRows > 0 && manipulation.actionLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false)), evidence: `${manipulationRows} handling row(s), ${manipulationPracticeLinks} practice link(s), ${embodiedManipulationRows} body-linked row(s)` },
 	    { id: 'resident_body_physics', pass: Boolean(residentBodies && residentBodyRows > 0 && residentBodyFatigueRows > 0 && residentBodies.bodyLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false && row.fatigue_delta >= 0)), evidence: `${residentBodyRows} body step(s), ${residentBodyContactRows} contact row(s), ${residentBodyRecoveryRows} recovery row(s)` },
 	    { id: 'resident_routines_use_physical_context', pass: Boolean(autonomous && routineContextRows > 0 && routinePhysicalRows > 0 && routineActionLinks > 0 && autonomous.routineContextLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false)), evidence: `${routineContextRows} routine context row(s), ${routinePhysicalRows} physical context row(s), ${routineActionLinks} action link(s)` },
+	    { id: 'routine_context_visible_on_canvas', pass: Boolean(worldStage && routineCanvasCueRows > 0 && worldStage.latestSnapshot && worldStage.latestSnapshot.routine_context_id !== 'none' && worldStage.noHiddenLawInNormalView === true && worldStage.noDirectCommand === true), evidence: `${routineCanvasCueRows} routine canvas cue row(s), latest=${worldStage && worldStage.latestSnapshot ? worldStage.latestSnapshot.routine_context_id : 'none'}` },
 		    { id: 'physics_consequences_reach_residents', pass: Boolean(physicsProposalCount > 0 && board.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${physicsProposalCount} physics-linked proposal(s)` },
 		    { id: 'projects_construct_physical_components', pass: Boolean(constructionCount > 0 && projectVisualRows > 0 && projectBuiltComponentCount > 0 && materialWorld.constructionLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true) && projects.visualLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${constructionCount} construction row(s), ${projectVisualRows} visual row(s), ${projectBuiltComponentCount} project-built component(s)` },
 	    { id: 'construction_evolves_practice_language', pass: Boolean(constructionPracticeLinks > 0 && constructionPracticeNodes > 0 && materialWorld.language.terms.some(row => (row.meaning_drift || []).some(text => /repair|reinforced|retie/.test(text)))), evidence: `${constructionPracticeLinks} construction-practice link(s), ${constructionPracticeNodes} construction practice node(s)` },
@@ -12511,6 +12531,8 @@ function exportPrototypeAcceptanceReceipt() {
   savePrototypeSlot('acceptance receipt save');
   runAutonomousResidentTick();
   returnPrototypeSlot();
+  runAutonomousResidentTick();
+  recordPrimaryPlaySurfaceSnapshot('acceptance routine context canvas cue');
   const receipt = buildPrototypeAcceptanceReceipt();
   world.gamePrototypeAcceptance = receipt;
   localStorage.setItem(PROTOTYPE_ACCEPTANCE_KEY, JSON.stringify(receipt, null, 2));
@@ -13554,7 +13576,7 @@ function draw() {
   ctx.fillText(`Next: ${stageSnapshot.player_next_action} (${stageSnapshot.player_next_button})`.slice(0, 86), 44, 132);
   ctx.fillText(`Resident ${stageSnapshot.selected_resident} | proposal ${stageSnapshot.active_proposal_id} | practice ${stageSnapshot.active_practice_name} | component ${stageSnapshot.active_component_id}`.slice(0, 104), 470, 90);
   ctx.fillText(`Physics ${stageSnapshot.latest_physics_id} | lived ${stageSnapshot.latest_lived_physics_id} | resources ${stageSnapshot.resource_pressure.length ? stageSnapshot.resource_pressure.join(', ') : 'stable'}`.slice(0, 82), 470, 112);
-  ctx.fillText(`Lived component ${stageSnapshot.latest_lived_physics_component_id} | Canvas is the play surface`.slice(0, 78), 470, 132);
+  ctx.fillText(`Routine ${stageSnapshot.routine_context_id}: ${stageSnapshot.routine_context_resident} -> ${stageSnapshot.routine_context_suggested_action} near ${stageSnapshot.routine_context_source}`.slice(0, 82), 470, 132);
 
   const materialWorld = world.gamePrototype3DWorld;
   if (materialWorld && materialWorld.components) {
@@ -13750,6 +13772,53 @@ function draw() {
       });
       ctx.restore();
     });
+    const routineRows = world.autonomousResidents && world.autonomousResidents.routineContextLedger ? world.autonomousResidents.routineContextLedger.slice(-6) : [];
+    routineRows.forEach((row, index) => {
+      let component = row.latest_component_id && row.latest_component_id !== 'none'
+        ? materialWorld.components.find(item => item.component_id === row.latest_component_id)
+        : null;
+      if (!component && row.latest_project_visual_id && row.latest_project_visual_id !== 'none') {
+        const visual = projectVisualRows.find(item => item.visual_id === row.latest_project_visual_id) || ((world.gamePrototypeProjects && world.gamePrototypeProjects.visualLedger) || []).find(item => item.visual_id === row.latest_project_visual_id);
+        const componentId = visual && visual.affected_component_ids && visual.affected_component_ids.length ? visual.affected_component_ids[0] : null;
+        component = componentId ? materialWorld.components.find(item => item.component_id === componentId) : null;
+      }
+      if (!component && row.practice_id && row.practice_id !== 'none') {
+        component = materialWorld.components.find(item => item.project_built === true) || materialWorld.components[0];
+      }
+      if (!component) return;
+      const point = project3D(component.position3d || {});
+      const body = world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.bodies ? world.gamePrototypeResidentBodies.bodies[row.resident] : null;
+      const residentNames = Object.keys(world.residents);
+      const residentIndex = Math.max(0, residentNames.indexOf(row.resident));
+      const bodyX = body ? Math.max(58, Math.min(982, 86 + Number(body.position3d.x || 0) * 7.4)) : 130 + (residentIndex % 3) * 275;
+      const bodyY = body ? Math.max(230, Math.min(520, 220 + Number(body.position3d.y || 0) * 3.2 - Number(body.position3d.z || 0) * 5)) : 275 + Math.floor(residentIndex / 3) * 150;
+      const cueColor = row.suggested_action === 'physics_repair'
+        ? '#b75d39'
+        : row.suggested_action === 'proposal_work'
+          ? '#9fca77'
+          : row.suggested_action === 'practice_maintenance'
+            ? '#2f717b'
+            : '#f0c35b';
+      ctx.save();
+      ctx.strokeStyle = cueColor;
+      ctx.lineWidth = 3;
+      ctx.setLineDash([9, 5]);
+      ctx.beginPath();
+      ctx.moveTo(bodyX, bodyY);
+      ctx.lineTo(point.x, point.y);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.beginPath();
+      ctx.arc(point.x, point.y, 30 + index * 2, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.fillStyle = 'rgba(17,24,22,0.78)';
+      ctx.fillRect(point.x + 24, point.y - 30 - index * 4, 148, 28);
+      ctx.fillStyle = '#f9ebc9';
+      ctx.font = '10px Optima, sans-serif';
+      ctx.fillText(`${row.context_id} ${row.resident}`.slice(0, 20), point.x + 32, point.y - 18 - index * 4);
+      ctx.fillText(`${row.suggested_action || row.action}`.slice(0, 20), point.x + 32, point.y - 6 - index * 4);
+      ctx.restore();
+    });
 	    const term = materialWorld.language && materialWorld.language.terms ? materialWorld.language.terms[0] : null;
     const latestPhysics = materialWorld.physics ? materialWorld.physics.latestStep : null;
     ctx.fillStyle = 'rgba(17,24,22,0.78)';
@@ -13803,6 +13872,7 @@ function draw() {
     ctx.fillText(schedule, x - 62, y + 45);
     ctx.fillStyle = expression.marker === 'boundary' || expression.marker === 'guarded' ? '#f0c35b' : '#aad0c3';
     ctx.fillText(`${expression.marker}: ${expression.movementCue}`.slice(0, 36), x - 62, y + 62);
+    const routine = latestRoutineContextFor(name);
     if (body) {
       const materialWorldForResidents = world.gamePrototype3DWorld || null;
       const carriedComponents = materialWorldForResidents && materialWorldForResidents.components ? materialWorldForResidents.components.filter(component => component.carried_by === name) : [];
@@ -13818,9 +13888,14 @@ function draw() {
       ctx.fillStyle = body.slip_risk > 0.24 ? '#f0c35b' : '#9fca77';
       ctx.fillText(`body f${body.fatigue} foot${body.footing}`.slice(0, 34), x - 62, y + 78);
     }
+    if (routine) {
+      const routineSource = routine.latest_project_visual_id !== 'none' ? routine.latest_project_visual_id : routine.latest_component_id !== 'none' ? routine.latest_component_id : routine.practice_id;
+      ctx.fillStyle = '#f0c35b';
+      ctx.fillText(`routine ${routine.suggested_action || routine.action} -> ${routineSource}`.slice(0, 38), x - 62, y + (body ? 94 : 78));
+    }
     if (needs && needs.autonomy > 0.7) {
       ctx.fillStyle = '#b75d39';
-      ctx.fillText('autonomy high', x - 30, y + (body ? 94 : 78));
+      ctx.fillText('autonomy high', x - 30, y + (body || routine ? 110 : 78));
     }
   });
 

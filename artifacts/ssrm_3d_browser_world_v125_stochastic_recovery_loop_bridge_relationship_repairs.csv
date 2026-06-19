@@ -1,0 +1,49 @@
+seed,recovery_id,pulse_id,actor,trust_before,trust_after,relationship_note,schedule_repair
+36217,36217-SR-01,36217-SP-01,Milo,0.562,0.568,gratitude keeps help socially sticky,schedule consequence acknowledged
+36217,36217-SR-02,36217-SP-02,Sera,0.662,0.668,gratitude keeps help socially sticky,schedule consequence acknowledged
+36217,36217-SR-03,36217-SP-03,Milo,0.568,0.574,gratitude keeps help socially sticky,schedule consequence acknowledged
+36217,36217-SR-04,36217-SP-04,Tovan,0.575,0.581,gratitude keeps help socially sticky,schedule consequence acknowledged
+36217,36217-SR-05,36217-SP-05,Ari,0.509,0.514,benefit distributed instead of hoarded,schedule consequence acknowledged
+36217,36217-SR-06,36217-SP-06,Ari,0.514,0.526,help after environmental stress,schedule consequence acknowledged
+36217,36217-SR-07,36217-SP-07,Fay,0.616,0.63,argument repaired without erasing disagreement,schedule consequence acknowledged
+36217,36217-SR-08,36217-SP-08,Milo,0.574,0.58,gratitude keeps help socially sticky,schedule consequence acknowledged
+36231,36231-SR-01,36231-SP-01,Tovan,0.52,0.524,rest respected as recovery,
+36231,36231-SR-02,36231-SP-02,Fay,0.572,0.577,benefit distributed instead of hoarded,schedule consequence acknowledged
+36231,36231-SR-03,36231-SP-03,Milo,0.496,0.502,gratitude keeps help socially sticky,schedule consequence acknowledged
+36231,36231-SR-04,36231-SP-04,Milo,0.502,0.506,practical repair after blocked work,schedule consequence acknowledged
+36231,36231-SR-05,36231-SP-05,Ari,0.648,0.652,practical repair after blocked work,schedule consequence acknowledged
+36231,36231-SR-06,36231-SP-06,Tovan,0.524,0.528,practical repair after blocked work,schedule consequence acknowledged
+36231,36231-SR-07,36231-SP-07,Sera,0.597,0.601,practical repair after blocked work,schedule consequence acknowledged
+36231,36231-SR-08,36231-SP-08,Fay,0.577,0.581,practical repair after blocked work,
+36247,36247-SR-01,36247-SP-01,Milo,0.64,0.654,argument repaired without erasing disagreement,schedule consequence acknowledged
+36247,36247-SR-02,36247-SP-02,Fay,0.543,0.549,gratitude keeps help socially sticky,schedule consequence acknowledged
+36247,36247-SR-03,36247-SP-03,Fay,0.549,0.557,practical repair after blocked work,schedule consequence acknowledged
+36247,36247-SR-04,36247-SP-04,Ari,0.613,0.625,help after environmental stress,schedule consequence acknowledged
+36247,36247-SR-05,36247-SP-05,Fay,0.557,0.569,help after environmental stress,
+36247,36247-SR-06,36247-SP-06,Ari,0.625,0.629,practical repair after blocked work,
+36247,36247-SR-07,36247-SP-07,Tovan,0.489,0.503,argument repaired without erasing disagreement,schedule consequence acknowledged
+36247,36247-SR-08,36247-SP-08,Tovan,0.503,0.509,gratitude keeps help socially sticky,
+36263,36263-SR-01,36263-SP-01,Fay,0.497,0.509,help after environmental stress,schedule consequence acknowledged
+36263,36263-SR-02,36263-SP-02,Milo,0.619,0.623,rest respected as recovery,
+36263,36263-SR-03,36263-SP-03,Fay,0.509,0.517,practical repair after blocked work,schedule consequence acknowledged
+36263,36263-SR-04,36263-SP-04,Fay,0.517,0.531,argument repaired without erasing disagreement,
+36263,36263-SR-05,36263-SP-05,Milo,0.623,0.635,help after environmental stress,schedule consequence acknowledged
+36263,36263-SR-06,36263-SP-06,Ari,0.585,0.591,help after environmental stress,schedule consequence acknowledged
+36263,36263-SR-07,36263-SP-07,Sera,0.545,0.549,practical repair after blocked work,
+36263,36263-SR-08,36263-SP-08,Sera,0.549,0.555,gratitude keeps help socially sticky,
+36281,36281-SR-01,36281-SP-01,Fay,0.505,0.513,practical repair after blocked work,schedule consequence acknowledged
+36281,36281-SR-02,36281-SP-02,Tovan,0.639,0.644,benefit distributed instead of hoarded,schedule consequence acknowledged
+36281,36281-SR-03,36281-SP-03,Fay,0.513,0.519,gratitude keeps help socially sticky,schedule consequence acknowledged
+36281,36281-SR-04,36281-SP-04,Milo,0.617,0.623,gratitude keeps help socially sticky,schedule consequence acknowledged
+36281,36281-SR-05,36281-SP-05,Fay,0.519,0.531,help after environmental stress,schedule consequence acknowledged
+36281,36281-SR-06,36281-SP-06,Tovan,0.644,0.652,practical repair after blocked work,schedule consequence acknowledged
+36281,36281-SR-07,36281-SP-07,Sera,0.533,0.537,rest respected as recovery,
+36281,36281-SR-08,36281-SP-08,Tovan,0.652,0.666,argument repaired without erasing disagreement,schedule consequence acknowledged
+36307,36307-SR-01,36307-SP-01,Fay,0.563,0.575,help after environmental stress,schedule consequence acknowledged
+36307,36307-SR-02,36307-SP-02,Sera,0.586,0.592,help after environmental stress,schedule consequence acknowledged
+36307,36307-SR-03,36307-SP-03,Fay,0.575,0.579,practical repair after blocked work,
+36307,36307-SR-04,36307-SP-04,Milo,0.486,0.49,rest respected as recovery,
+36307,36307-SR-05,36307-SP-05,Sera,0.592,0.606,argument repaired without erasing disagreement,schedule consequence acknowledged
+36307,36307-SR-06,36307-SP-06,Tovan,0.516,0.52,practical repair after blocked work,schedule consequence acknowledged
+36307,36307-SR-07,36307-SP-07,Milo,0.49,0.504,argument repaired without erasing disagreement,schedule consequence acknowledged
+36307,36307-SR-08,36307-SP-08,Tovan,0.52,0.524,practical repair after blocked work,

@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,next_gate
+365,pass,1.0,1.0,"post-365: make recovered and unrecovered stochastic histories affect later resident choices, refusals, and social memory without collapsing into permanent punishment or random behavior"

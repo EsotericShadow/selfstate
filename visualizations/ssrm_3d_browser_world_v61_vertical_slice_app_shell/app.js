@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -73,6 +73,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   anomalyDiscovery: null,
   anomalyInvestigationSchedule: null,
   stochasticConsequencePulse: null,
+  stochasticRecoveryLoop: null,
   promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -296,6 +297,47 @@ function renderStochasticConsequencePulse() {
     '',
     'Schedule couplings:',
     ...(couplings.length ? couplings : ['No schedule coupling yet.'])
+  ].join('\n');
+}
+function renderStochasticRecoveryLoop() {
+  const summaryNode = document.getElementById('stochasticRecoveryLoopSummaryOut');
+  const detailNode = document.getElementById('stochasticRecoveryLoopOut');
+  const loop = world.stochasticRecoveryLoop;
+  if (summaryNode) {
+    summaryNode.textContent = loop
+      ? `${loop.recoveryQueue.length} recoveries / ${loop.resolvedCount} resolved / ${loop.relationshipRepairs.length} relationship repairs`
+      : 'No stochastic recovery loop yet.';
+  }
+  if (!detailNode) return;
+  if (!loop) {
+    detailNode.textContent = 'No stochastic recovery loop yet. Plan recovery after stochastic pulses to turn surprise into bounded repair, not permanent damage.';
+    return;
+  }
+  const queueLines = loop.recoveryQueue.slice(-10).map(row => [
+    `${row.id} ${row.actor}: ${row.status}`,
+    `pulse=${row.pulseId}`,
+    `harm=${row.harmType}`,
+    `action=${row.repairAction}`,
+    `cost=${Object.entries(row.resourceCost).map(([key, value]) => `${key}:${value}`).join(',')}`,
+    `need=${row.needBefore}->${row.needAfter}`,
+    `schedule=${row.scheduleRepair || 'none'}`
+  ].join(' / '));
+  const repairLines = loop.relationshipRepairs.slice(-8).map(row => `${row.recoveryId} ${row.actor}: trust ${row.trustBefore}->${row.trustAfter} / ${row.note}`);
+  const ledgerLines = loop.repairLedger.slice(-8).map(row => `${row.recoveryId}: ${row.outcome}`);
+  detailNode.textContent = [
+    `Boundary: ${loop.boundary}`,
+    `Source pulses observed: ${loop.sourcePulseCount}`,
+    `No permanent damage policy: ${loop.noPermanentDamagePolicy}`,
+    `Pending: ${loop.pendingCount} / Resolved: ${loop.resolvedCount} / Stabilized without materials: ${loop.stabilizedWithoutMaterials}`,
+    '',
+    'Recovery queue:',
+    ...(queueLines.length ? queueLines : ['No recovery rows planned yet.']),
+    '',
+    'Relationship repairs:',
+    ...(repairLines.length ? repairLines : ['No relationship repairs recorded yet.']),
+    '',
+    'Repair ledger:',
+    ...(ledgerLines.length ? ledgerLines : ['No repair ledger rows yet.'])
   ].join('\n');
 }
 function renderPromiseFollowUp() {
@@ -1034,6 +1076,148 @@ function runStochasticConsequenceBurst() {
   const after = ensureStochasticConsequencePulse().pulses.length;
   return log('runStochasticConsequenceBurst', { pulsesAdded: after - before, totalPulses: after, replayableEntropy: true });
 }
+function ensureStochasticRecoveryLoop() {
+  if (!world.stochasticRecoveryLoop) {
+    world.stochasticRecoveryLoop = {
+      reportIntroduced: 365,
+      sourcePulseCount: 0,
+      recoveryQueue: [],
+      repairLedger: [],
+      relationshipRepairs: [],
+      pendingCount: 0,
+      resolvedCount: 0,
+      stabilizedWithoutMaterials: 0,
+      noPermanentDamagePolicy: 'every stochastic harm must have a bounded recovery or stabilization path',
+      boundary: 'browser-local-stochastic-recovery-loop-only; no LLM call, no subjective consciousness, no moral patienthood'
+    };
+  }
+  return world.stochasticRecoveryLoop;
+}
+function recoveryTemplateForPulse(pulse) {
+  const templates = {
+    roof_leak: { harmType: 'shelter stress', repairAction: 'patch leak and rest near dry place', resourceCost: { water: 0, fiber: 1, wood: 1, care: 0 }, trustDelta: 0.012, progressDelta: 0.014, debtDelta: -1, relationshipNote: 'help after environmental stress' },
+    tool_snag: { harmType: 'tool frustration', repairAction: 're-tie tool lashing and return focus', resourceCost: { water: 0, fiber: 1, wood: 0, care: 0 }, trustDelta: 0.008, progressDelta: 0.018, debtDelta: 0, relationshipNote: 'practical repair after blocked work' },
+    neighbor_help: { harmType: 'received help', repairAction: 'acknowledge help and share credit', resourceCost: { water: 0, fiber: 0, wood: 0, care: 0 }, trustDelta: 0.006, progressDelta: 0.012, debtDelta: -1, relationshipNote: 'gratitude keeps help socially sticky' },
+    argument_echo: { harmType: 'social disagreement', repairAction: 'mediate disagreement and name source boundary', resourceCost: { water: 0, fiber: 0, wood: 0, care: 1 }, trustDelta: 0.014, progressDelta: 0.008, debtDelta: 0, relationshipNote: 'argument repaired without erasing disagreement' },
+    found_material: { harmType: 'opportunity allocation', repairAction: 'share found material with pending work', resourceCost: { water: 0, fiber: 0, wood: 0, care: 0 }, trustDelta: 0.005, progressDelta: 0.016, debtDelta: -1, relationshipNote: 'benefit distributed instead of hoarded' },
+    quiet_recovery: { harmType: 'fatigue recovery', repairAction: 'protect quiet rest and resume slowly', resourceCost: { water: 0, fiber: 0, wood: 0, care: 0 }, trustDelta: 0.004, progressDelta: 0.01, debtDelta: -1, relationshipNote: 'rest respected as recovery' }
+  };
+  return templates[pulse.event] || templates.quiet_recovery;
+}
+function planStochasticRecoveryLoop() {
+  const pulse = ensureStochasticConsequencePulse();
+  if (!pulse.pulses.length) runStochasticConsequenceBurst();
+  const refreshedPulse = ensureStochasticConsequencePulse();
+  const loop = ensureStochasticRecoveryLoop();
+  const existingPulseIds = new Set(loop.recoveryQueue.map(row => row.pulseId));
+  const planned = [];
+  refreshedPulse.pulses.slice(-10).forEach(source => {
+    if (existingPulseIds.has(source.id)) return;
+    const template = recoveryTemplateForPulse(source);
+    const row = {
+      id: `SR-${String(loop.recoveryQueue.length + planned.length + 1).padStart(2, '0')}`,
+      pulseId: source.id,
+      actor: source.actor,
+      event: source.event,
+      harmType: template.harmType,
+      repairAction: template.repairAction,
+      resourceCost: { ...template.resourceCost },
+      trustDelta: template.trustDelta,
+      progressDelta: template.progressDelta,
+      debtDelta: template.debtDelta,
+      relationshipNote: template.relationshipNote,
+      needBefore: source.needAfter ? source.needAfter.dominant : 'unknown',
+      needAfter: 'unrecovered',
+      scheduleCoupling: source.scheduleCoupling || '',
+      scheduleRepair: '',
+      status: 'pending'
+    };
+    loop.recoveryQueue.push(row);
+    planned.push(row);
+  });
+  loop.sourcePulseCount = refreshedPulse.pulses.length;
+  loop.pendingCount = loop.recoveryQueue.filter(row => row.status === 'pending').length;
+  recordCheckpoint('stochastic recovery planned');
+  return log('planStochasticRecoveryLoop', { planned: planned.length, pending: loop.pendingCount, sourcePulseCount: loop.sourcePulseCount, noPermanentDamagePolicy: loop.noPermanentDamagePolicy });
+}
+function resolveStochasticRecoveryStep() {
+  if (!world.stochasticRecoveryLoop || !world.stochasticRecoveryLoop.recoveryQueue.some(row => row.status === 'pending')) planStochasticRecoveryLoop();
+  const loop = ensureStochasticRecoveryLoop();
+  const row = loop.recoveryQueue.find(item => item.status === 'pending');
+  if (!row) return log('resolveStochasticRecoveryStep', { complete: true, resolvedCount: loop.resolvedCount, pendingCount: loop.pendingCount });
+  const resident = world.residents[row.actor];
+  const trustBefore = Number(resident.trust.toFixed(3));
+  const resourcesBefore = { ...world.resources };
+  let outcome = '';
+  if (hasResourcesFor(row.resourceCost)) {
+    applyResourceCost(row.resourceCost);
+    row.status = 'resolved';
+    row.needAfter = row.harmType === 'social disagreement' ? 'social-safety' : 'recovering';
+    outcome = `${row.actor} used ${row.repairAction} after ${row.event}`;
+    loop.resolvedCount += 1;
+  } else {
+    row.status = 'stabilized without materials';
+    row.needAfter = 'stabilized';
+    row.resourceCost = { water: 0, fiber: 0, wood: 0, care: 0 };
+    row.trustDelta = Number((row.trustDelta * 0.5).toFixed(3));
+    row.progressDelta = Number((row.progressDelta * 0.5).toFixed(3));
+    outcome = `${row.actor} could not spend materials, so recovery stabilized through rest and attention`;
+    loop.stabilizedWithoutMaterials += 1;
+  }
+  if (row.scheduleCoupling && world.anomalyInvestigationSchedule) {
+    const slot = world.anomalyInvestigationSchedule.slots.find(item => item.resident === row.actor && /stochastically/.test(item.status));
+    if (slot) {
+      slot.recoveryNoted = true;
+      slot.recoveryNote = row.repairAction;
+      row.scheduleRepair = `${slot.id} recovery noted`;
+    } else {
+      row.scheduleRepair = 'schedule consequence acknowledged';
+    }
+  }
+  mutateResident(row.actor, {
+    trust: row.trustDelta,
+    progress: row.progressDelta,
+    debt: row.debtDelta,
+    memory: `recovered from stochastic pulse: ${row.event}`,
+    historyEvent: 'stochastic recovery',
+    historyDetail: outcome
+  });
+  const trustAfter = Number(world.residents[row.actor].trust.toFixed(3));
+  const repair = {
+    recoveryId: row.id,
+    pulseId: row.pulseId,
+    actor: row.actor,
+    trustBefore,
+    trustAfter,
+    note: row.relationshipNote,
+    scheduleRepair: row.scheduleRepair
+  };
+  loop.relationshipRepairs.push(repair);
+  if (loop.relationshipRepairs.length > 24) loop.relationshipRepairs.shift();
+  loop.repairLedger.push({
+    recoveryId: row.id,
+    pulseId: row.pulseId,
+    outcome,
+    resourcesBefore,
+    resourcesAfter: { ...world.resources },
+    status: row.status
+  });
+  if (loop.repairLedger.length > 24) loop.repairLedger.shift();
+  loop.pendingCount = loop.recoveryQueue.filter(item => item.status === 'pending').length;
+  recordCheckpoint('stochastic recovery step');
+  return log('resolveStochasticRecoveryStep', { recovery: row, relationshipRepair: repair, outcome, pendingCount: loop.pendingCount });
+}
+function runStochasticRecoveryLoop() {
+  if (!world.stochasticRecoveryLoop || !world.stochasticRecoveryLoop.recoveryQueue.some(row => row.status === 'pending')) planStochasticRecoveryLoop();
+  const before = ensureStochasticRecoveryLoop().resolvedCount + ensureStochasticRecoveryLoop().stabilizedWithoutMaterials;
+  for (let index = 0; index < 3; index += 1) {
+    if (!ensureStochasticRecoveryLoop().recoveryQueue.some(row => row.status === 'pending')) break;
+    resolveStochasticRecoveryStep();
+  }
+  const loop = ensureStochasticRecoveryLoop();
+  const after = loop.resolvedCount + loop.stabilizedWithoutMaterials;
+  return log('runStochasticRecoveryLoop', { recoveredThisRun: after - before, pendingCount: loop.pendingCount, relationshipRepairs: loop.relationshipRepairs.length, noPermanentDamagePolicy: loop.noPermanentDamagePolicy });
+}
 function waitOffscreen() {
   Object.keys(world.residents).forEach((name, index) => mutateResident(name, { progress: 0.018 + index * 0.003, trust: index % 2 ? 0.002 : -0.001 }));
   const offscreenObligation = runOffscreenResidentObligationPulse();
@@ -1445,6 +1629,7 @@ function runStateBoundaryAudit() {
     anomalyDiscovery: world.anomalyDiscovery,
     anomalyInvestigationSchedule: world.anomalyInvestigationSchedule,
     stochasticConsequencePulse: world.stochasticConsequencePulse,
+    stochasticRecoveryLoop: world.stochasticRecoveryLoop,
     promiseFollowUp: world.promiseFollowUp,
     obligationLedger: world.obligationLedger,
     scheduleQueue: world.scheduleQueue,
@@ -2126,7 +2311,10 @@ function describeReplayRow(row) {
     planAnomalyInvestigationSchedule: `planned anomaly investigation slots=${payload.slots ? payload.slots.length : 0}`,
     runScheduledAnomalyInvestigation: `scheduled anomaly investigation executed=${payload.executedTest === true} tradeoff=${payload.scheduleTradeoff === true}`,
     runStochasticConsequencePulse: `stochastic pulse ${payload.pulse ? payload.pulse.event : ''} actor=${payload.pulse ? payload.pulse.actor : ''} entropy=${payload.replayableEntropy === true}`,
-    runStochasticConsequenceBurst: `stochastic burst pulses=${payload.pulsesAdded} entropy=${payload.replayableEntropy === true}`
+    runStochasticConsequenceBurst: `stochastic burst pulses=${payload.pulsesAdded} entropy=${payload.replayableEntropy === true}`,
+    planStochasticRecoveryLoop: `planned stochastic recoveries=${payload.planned} pending=${payload.pending}`,
+    resolveStochasticRecoveryStep: `resolved stochastic recovery pending=${payload.pendingCount}`,
+    runStochasticRecoveryLoop: `ran stochastic recovery loop recovered=${payload.recoveredThisRun} pending=${payload.pendingCount}`
   };
   return `${prefix}: ${descriptions[row.event] || row.event}`;
 }
@@ -2180,6 +2368,7 @@ function render() {
   document.getElementById('taskList').innerHTML = playtestTasks.map(task => `<li><strong>${task.id}</strong>: ${task.title}<br><span>${task.expected}</span></li>`).join('');
   document.getElementById('qaManifestOut').textContent = JSON.stringify(qaManifest, null, 2);
   renderStochasticConsequencePulse();
+  renderStochasticRecoveryLoop();
   draw();
 }
 function draw() {
@@ -2208,6 +2397,6 @@ function draw() {
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

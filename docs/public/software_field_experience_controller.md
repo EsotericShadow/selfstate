@@ -566,3 +566,7 @@ Report 363 moves the non-scripted anomaly loop into resident scheduling and reso
 ## Report 364 Public Note: Stochastic Resident Consequences
 
 The maintained browser-world shell now has a bounded stochastic pulse that can alter resident memory, trust/progress/debt, resources, and pending anomaly schedule slots through runtime entropy. The important guardrail is traceability: every pulse records its entropy bytes and public consequence path, while the evaluator uses seeded entropy streams for reproducible artifacts. This is nondeterministic browser-local behavior, not a consciousness claim, autonomous language system, production system, or finished game.
+
+## Report 365 Public Note: Recoverable Stochastic Consequences
+
+The browser-world shell now requires stochastic shocks to feed a bounded recovery path. Pulses can still create damage, delay, or social disagreement, but recovery rows can be planned and resolved with visible resource costs, resident memory updates, relationship repairs, and schedule repair notes. This keeps nondeterminism useful without making the simulation a permanent punishment loop or a suffering claim.

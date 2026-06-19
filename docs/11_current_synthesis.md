@@ -1299,3 +1299,9 @@ This remains deterministic browser-local scaffolding. The integration gain is th
 Report 364 makes the maintained shell less scripted by adding browser-runtime stochastic resident consequence pulses. Each pulse records its entropy bytes, selected resident, branch, need snapshot, resource delta, schedule coupling, and replay row, so two browser runs can diverge while still leaving an inspectable audit trail.
 
 The evaluator uses seeded entropy streams for reproducible evidence. Boundary remains browser-local scaffolding only: no LLM call, autonomous natural language, subjective consciousness, moral patienthood, production persistence, complete 3D engine, finished gameplay, or hidden subjective state.
+
+### Report 365: SSRM-3D Stochastic Recovery Loop Bridge
+
+Report 365 adds the recovery layer that Report 364 deliberately left open. Stochastic pulses now create recovery rows with harm type, repair action, resource cost, relationship note, and schedule coupling. The maintained shell can plan recovery, resolve one step, or run a bounded recovery loop that mutates resident memory/trust/progress/debt and records relationship repairs.
+
+The key integration move is that nondeterminism is no longer just a one-shot perturbation. It becomes a recoverable consequence path: surprise can hurt or delay, but every stochastic harm has a bounded recovery or stabilization route. This remains browser-local scaffolding, not a suffering model, consciousness claim, autonomous language system, or finished game.

@@ -34,8 +34,10 @@
 2. Each physics step applies gravity, support checks, normal force, friction, contact/collision checks, and stochastic material fatigue.
 3. Unsupported or overloaded components shift, fall, accumulate damage, or create maintenance burden.
 4. Structures are derived from components and affordances, not fixed building assets.
-5. The renderer projects the physical state with simple primitives while audit records the hidden physical cause.
-6. Resident observations and language update from what happened, not from engine concept labels.
+5. Physics maintenance pressure can create resident-facing concerns and project proposals.
+6. Residents can respond with physical inspection or repair actions that consume material and change component state.
+7. The renderer projects the physical state with simple primitives while audit records the hidden physical cause.
+8. Resident observations and language update from what happened, not from engine concept labels.
 
 ## Emergent practice loop
 
@@ -225,16 +227,17 @@ The first playable loop includes a direct save/return pass: enter the village, l
 
 1. The player ends the day instead of manually pressing every subsystem.
 2. Weather/resource pressure applies through bounded material deltas.
-3. Residents take several autonomous actions without direct player command.
-4. Accepted project work may advance, and low or stalled commons may receive source-traced support.
-5. The day recap records weather, resident actions, resources after, project result, commons result, and causal ledger evidence.
-6. Save/return, QA, acceptance, replay, and the canvas top bar preserve day-cycle history.
+3. Material physics advances after weather pressure so damp, support, collision, damage, and stochastic failure can affect the day.
+4. Residents take several autonomous actions without direct player command, including physics repair when physical pressure exists.
+5. Accepted project work may advance, and low or stalled commons may receive source-traced support.
+6. The day recap records weather, physics step, resident actions, resources after, project result, commons result, and causal ledger evidence.
+7. Save/return, QA, acceptance, replay, and the canvas top bar preserve day-cycle history.
 
 
 ## Return-later loop
 
 1. The avatar leaves the village for several offscreen days.
-2. The world advances forward through day-cycle pressure, resident autonomy, projects, commons, resources, and physics where available.
+2. The world advances forward through day-cycle pressure, resident autonomy, projects, commons, resources, and stochastic physics.
 3. The avatar returns to the arrival court without restoring an old state.
 4. Residents remember the absence, resource deltas remain, and replay records absence/return receipts.
 5. QA and acceptance treat this as forward persistence, separate from explicit save-slot rollback.

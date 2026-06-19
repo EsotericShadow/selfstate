@@ -48,3 +48,9 @@
 28. Inspect the canvas after a physics step and confirm the raised storage practice is drawn from physical components such as rough branch supports, fiber bindings, reed cover, and clay vessels rather than a storage-building sprite.
 
 29. Toggle audit and confirm engine concepts and hidden material/physics laws are audit-only while resident-facing language remains local terms plus imperfect player glosses.
+
+30. Use End day and confirm the Day cycle recap includes a physics step, and the Village Board can receive a physics-linked concern/proposal without the avatar commanding it.
+
+31. Run Auto burst after physics pressure exists and confirm at least one resident can choose a repairing cue/action tied to component support or damage, consuming fiber when available.
+
+32. Save after a physics-linked proposal exists, mutate the world, return the slot, and confirm the Save / return card preserves physics step and physics-linked proposal counts.

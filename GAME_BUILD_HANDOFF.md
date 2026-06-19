@@ -170,3 +170,10 @@ The prototype direction is now physics-first 3D simulation with basic visual pre
 The physics step applies gravity, support checks, contact/collision checks, friction, stochastic fatigue/failure probability, material transformation, and causal ledger rows. This is the intended substrate for the game. It is not a claim of production-certified physical accuracy.
 
 Residents do not receive English technology labels. The shell now tracks grounded sound roots and resident terms such as `ta`, `ku`, `ren`, and `taku-ren`, with origin events, adoption, drift, variants, and imperfect player glosses. Engine concepts remain audit/internal terms.
+
+
+## Prototype v0 physics-to-village consequence update
+
+Physics is now part of ordinary play flow instead of a standalone inspection panel. `End day` advances the material/physics substrate after weather pressure, records the physics step in the day recap, and can create resident-facing Village Board concerns when support, collision, moisture, damage, or stochastic failure creates maintenance pressure. Auto simulation also advances material physics every step.
+
+Residents can now react to physical risk through a `physics_repair` autonomous action. That action consumes fiber when available, repairs actual component damage/stability, updates memory, and shows a public repairing cue. Physics-linked proposals are saved and shown in prototype save summaries, keeping physical consequences persistent across return sessions.

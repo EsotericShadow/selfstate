@@ -56,7 +56,7 @@ Resident local vocabulary is a bounded simulation mechanic, not an open-ended la
 
 ## Deep-time boundary
 
-The prototype may compress thousands or millions of years into inspectable epoch records. This is a game abstraction for long-horizon lineage evolution. It is not a full civilization simulator, population model, geology model, physics engine, or historical claim.
+The prototype may compress thousands or millions of years into inspectable epoch records. This is a game abstraction for long-horizon lineage evolution. It is not a full civilization simulator, population model, geology model, production-certified physical-history model, or historical claim.
 
 Deep-time effects must still follow the existing boundaries: no predeclared tech tree, no avatar-installed concepts, no resource changes without pressure or ledger explanation, and no hidden law exposed to residents in normal view.
 

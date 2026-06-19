@@ -198,9 +198,19 @@ The first playable loop includes a direct save/return pass: enter the village, l
 1. Residents post concerns and proposals through the Village Board.
 2. The avatar may support conditions, ask, wait, or offer material help, but cannot assign labor directly.
 3. Accepted proposals advance through project work only when materials, time, and resident willingness are available.
-4. Work consumes commons resources, writes a causal ledger row, updates resident memory, and can refine related practice nodes.
-5. Scarcity or unreadiness creates a stalled project row instead of spawning resources or forcing obedience.
-6. Completed projects create maintenance obligations and become part of save/return, QA, acceptance, and replay evidence.
+4. Work consumes commons resources, writes a causal ledger row, updates resident memory, and repairs physical components when relevant.
+5. Completed projects can add new resident-built components into an existing structure through affordances such as support, span, binding, cover, or container.
+6. Scarcity or unreadiness creates a stalled project row instead of spawning resources or forcing obedience.
+7. Completed projects create maintenance obligations and become part of save/return, QA, acceptance, and replay evidence.
+
+## Project-to-component construction loop
+
+1. A resident proposal identifies a problem, material list, helpers, risk, and willingness.
+2. The avatar may support conditions, but the resident project still consumes actual resources and time.
+3. Each project work tick repairs weak physical components if there is a related structure or physics pressure.
+4. Completion can add new primitive components to the 3D material world.
+5. Added components carry material properties, 3D position, support role, damage, stability, resident term, and future maintenance cost.
+6. The renderer draws the new parts from component state, not from a building sprite.
 
 
 ## Resource commons support loop

@@ -177,3 +177,10 @@ Residents do not receive English technology labels. The shell now tracks grounde
 Physics is now part of ordinary play flow instead of a standalone inspection panel. `End day` advances the material/physics substrate after weather pressure, records the physics step in the day recap, and can create resident-facing Village Board concerns when support, collision, moisture, damage, or stochastic failure creates maintenance pressure. Auto simulation also advances material physics every step.
 
 Residents can now react to physical risk through a `physics_repair` autonomous action. That action consumes fiber when available, repairs actual component damage/stability, updates memory, and shows a public repairing cue. Physics-linked proposals are saved and shown in prototype save summaries, keeping physical consequences persistent across return sessions.
+
+
+## Prototype v0 project-to-component construction update
+
+Resident project work now changes the physical world. Every project work tick writes a construction row that can repair strained components, and completed projects can add new resident-built reinforcement components such as rough branch supports, rough branch spans, fiber lashings, or simple containers. These components are inserted into the existing 3D structure, carry material/physics state, increase future maintenance burden, and are rendered as primitives rather than fixed building assets.
+
+Save slots, Prototype QA, acceptance receipts, project cards, material-world cards, and replay rows now include construction counts and project-built component evidence. This keeps village management tied to physical causality: support conditions lead to resident labor, consumed materials, component repair or construction, and later maintenance pressure.

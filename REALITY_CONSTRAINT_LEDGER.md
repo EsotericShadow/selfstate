@@ -53,5 +53,20 @@ When physics changes the world, the ledger should preserve:
 - Moisture, decay, heat, or fatigue pressure where relevant.
 - Stochastic entropy or failure probability when randomness influences outcome.
 - Resulting damage, stability, position, or maintenance obligation.
+- Project construction rows linking consumed resources to repaired or added components.
 
 This keeps the game from faking life through dramatic text. Residents may misunderstand the event, but the simulation still needs a physical cause.
+
+## Project construction ledger rows
+
+When a resident project changes a structure, the ledger should preserve:
+
+- Proposal ID and project work row.
+- Resident proposer and who felt the work.
+- Materials consumed from the commons.
+- Components repaired.
+- Components added.
+- Structure ID affected.
+- Resident term and player gloss.
+- Maintenance obligation created.
+- Confirmation that no fixed building asset or resource spawning occurred.

@@ -54,3 +54,9 @@
 31. Run Auto burst after physics pressure exists and confirm at least one resident can choose a repairing cue/action tied to component support or damage, consuming fiber when available.
 
 32. Save after a physics-linked proposal exists, mutate the world, return the slot, and confirm the Save / return card preserves physics step and physics-linked proposal counts.
+
+33. Advance a resident project to completion and confirm the Projects card reports a construction ID with components added or repaired.
+
+34. After project completion, inspect the 3D stochastic physics card and canvas to confirm project-built components were inserted into the physical structure rather than unlocking a building asset.
+
+35. Save after project-built components exist, mutate the world, return the slot, and confirm construction row and project-built component counts persist.

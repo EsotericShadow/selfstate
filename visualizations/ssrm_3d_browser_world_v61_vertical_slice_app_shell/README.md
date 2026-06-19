@@ -20,6 +20,11 @@ Resident project work has visible construction cues. Project rows create progres
 bars and highlight repaired or newly added component IDs on the canvas without
 spawning fixed building assets.
 
+Prototype save/return surfaces preserve those construction cues. Save slots,
+forward return-later receipts, restore logs, and the return journal display
+project visual counts and latest cue IDs so physical construction continuity is
+readable after leaving and returning.
+
 `QA readiness` is a non-running preflight. It checks whether the current browser
 state has a normal player surface, canvas cues, a first-playable session,
 lived-action physics visibility, save/return continuity, and causal-ledger

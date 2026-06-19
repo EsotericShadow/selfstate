@@ -944,6 +944,7 @@ function leaveAndReturnLater(daysAway = 3) {
   const dayCycle = ensurePrototypeDayCycle();
   const days = Math.max(1, Math.min(7, Number(daysAway) || 3));
   const beforeResources = { ...world.resources };
+  const beforeVisualRows = world.gamePrototypeProjects && world.gamePrototypeProjects.visualLedger ? world.gamePrototypeProjects.visualLedger.length : 0;
   const beforeDay = dayCycle.day;
   const replayBefore = world.replay.length;
   const selectedBefore = world.selected;
@@ -967,6 +968,8 @@ function leaveAndReturnLater(daysAway = 3) {
   world.avatar.y = 260;
   updateRoom();
   const afterResources = { ...world.resources };
+  const afterVisualRows = world.gamePrototypeProjects && world.gamePrototypeProjects.visualLedger ? world.gamePrototypeProjects.visualLedger.length : 0;
+  const latestProjectVisual = world.gamePrototypeProjects && world.gamePrototypeProjects.visualLedger && world.gamePrototypeProjects.visualLedger.length ? world.gamePrototypeProjects.visualLedger[world.gamePrototypeProjects.visualLedger.length - 1] : null;
   const afterDay = ensurePrototypeDayCycle().day;
   const resourceDelta = Object.fromEntries(Object.keys(afterResources).map(key => [key, Number(afterResources[key] || 0) - Number(beforeResources[key] || 0)]));
   const residentNames = Object.keys(world.residents);
@@ -991,6 +994,11 @@ function leaveAndReturnLater(daysAway = 3) {
     resources_before: beforeResources,
     resources_after: afterResources,
     resource_delta: resourceDelta,
+    project_visual_rows_before: beforeVisualRows,
+    project_visual_rows_after: afterVisualRows,
+    project_visual_rows_added: Math.max(0, afterVisualRows - beforeVisualRows),
+    latest_project_visual_id: latestProjectVisual ? latestProjectVisual.visual_id : 'none',
+    latest_project_visual_cue: latestProjectVisual ? latestProjectVisual.canvas_cue : 'none',
     replay_before: replayBefore,
     replay_after: world.replay.length,
     residents_who_remembered: rememberedResidents,
@@ -1017,7 +1025,7 @@ function leaveAndReturnLater(daysAway = 3) {
     conservationCheck: true
   });
   recordPrototypeMilestone('return-later', `${days} day(s) away; day ${beforeDay}->${afterDay}; remembered by ${rememberedResidents.join(', ')}`);
-  return log('leaveAndReturnLater', { daysAway: days, dayBefore: beforeDay, dayAfter: afterDay, remembered: rememberedResidents.length, restoredOldState: false, directReset: false });
+  return log('leaveAndReturnLater', { daysAway: days, dayBefore: beforeDay, dayAfter: afterDay, remembered: rememberedResidents.length, projectVisualRowsAdded: Math.max(0, afterVisualRows - beforeVisualRows), latestProjectVisualId: latestProjectVisual ? latestProjectVisual.visual_id : 'none', restoredOldState: false, directReset: false });
 }
 
 function ensurePrototype3DWorld() {
@@ -6623,6 +6631,8 @@ function returnJournalSnapshot(label) {
   const latestForward = returnLater && returnLater.returnLedger.length ? returnLater.returnLedger[returnLater.returnLedger.length - 1] : null;
   const latestRestore = saves.returnLog.length ? saves.returnLog[saves.returnLog.length - 1] : null;
   const latestSlot = saves.slots.length ? saves.slots[saves.slots.length - 1] : null;
+  const projects = world.gamePrototypeProjects || null;
+  const latestProjectVisual = projects && projects.visualLedger && projects.visualLedger.length ? projects.visualLedger[projects.visualLedger.length - 1] : null;
   return {
     label,
     tick: world.tick,
@@ -6632,6 +6642,9 @@ function returnJournalSnapshot(label) {
     practice_nodes: world.emergentPracticeGraph ? world.emergentPracticeGraph.nodes.length : 0,
     proposals: world.villageBoard ? world.villageBoard.projectProposals.length : 0,
     worksite_rows: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.watchLedger.length : 0,
+    project_visual_rows: projects && projects.visualLedger ? projects.visualLedger.length : 0,
+    latest_project_visual_id: latestProjectVisual ? latestProjectVisual.visual_id : 'none',
+    latest_project_visual_cue: latestProjectVisual ? latestProjectVisual.canvas_cue : 'none',
     lived_practice_physics_rows: world.gamePrototypeLivedPractice && world.gamePrototypeLivedPractice.physicsLedger ? world.gamePrototypeLivedPractice.physicsLedger.length : 0,
     latest_lived_practice_physics_id: world.gamePrototypeLivedPractice && world.gamePrototypeLivedPractice.physicsLedger && world.gamePrototypeLivedPractice.physicsLedger.length ? world.gamePrototypeLivedPractice.physicsLedger[world.gamePrototypeLivedPractice.physicsLedger.length - 1].physics_id : 'none',
     save_slots: saves.slots.length,
@@ -6643,10 +6656,16 @@ function returnJournalSnapshot(label) {
     latest_forward_days: latestForward ? latestForward.days_away : 0,
     latest_forward_remembered: latestForward ? latestForward.residents_who_remembered : [],
     latest_forward_restored_old_state: latestForward ? latestForward.restored_old_state === true : false,
+    latest_forward_project_visual_rows_added: latestForward ? Number(latestForward.project_visual_rows_added || 0) : 0,
+    latest_forward_project_visual_id: latestForward ? latestForward.latest_project_visual_id || 'none' : 'none',
     latest_restore_slot: latestRestore ? latestRestore.slot_id : 'none',
     latest_restore_year: latestRestore ? latestRestore.restored_year : 'none',
     latest_restore_day: latestRestore ? latestRestore.restored_autonomous_day : 'none',
+    latest_restore_project_visual_rows: latestRestore ? Number(latestRestore.restored_project_visual_rows || 0) : 0,
+    latest_restore_project_visual_id: latestRestore ? latestRestore.restored_latest_project_visual_id || 'none' : 'none',
     latest_slot_lived_practice_physics_rows: latestSlot ? Number(latestSlot.lived_practice_physics_rows || 0) : 0,
+    latest_slot_project_visual_rows: latestSlot ? Number(latestSlot.project_visual_rows || 0) : 0,
+    latest_slot_project_visual_id: latestSlot ? latestSlot.latest_project_visual_id || 'none' : 'none',
     no_direct_reset: true,
     hidden_law_normal_view: false,
   };
@@ -6661,6 +6680,7 @@ function updateReturnJournalAcceptance() {
     latest.forward_returns > 0 &&
     latest.save_slots > 0 &&
     latest.save_returns > 0 &&
+    latest.project_visual_rows > 0 &&
     journal.journalLedger.every(row => row.forward_return_visible === true && row.save_restore_visible === true && row.direct_reset === false && row.hidden_law_normal_view === false) &&
     journal.forwardReturnVisible === true &&
     journal.saveRestoreVisible === true &&
@@ -6675,6 +6695,8 @@ function updateReturnJournalAcceptance() {
     forward_returns: latest.forward_returns,
     save_slots: latest.save_slots,
     save_returns: latest.save_returns,
+    project_visual_rows: latest.project_visual_rows,
+    latest_project_visual_id: latest.latest_project_visual_id,
     active_slot: latest.active_slot,
     boundary: journal.boundary,
   };
@@ -6741,6 +6763,14 @@ function runReturnJournalLoop() {
     latest_lived_practice_physics_id: afterRestore.latest_lived_practice_physics_id,
     worksite_rows_before: before.worksite_rows,
     worksite_rows_after_away: afterAway.worksite_rows,
+    project_visual_rows_before: before.project_visual_rows,
+    project_visual_rows_after_away: afterAway.project_visual_rows,
+    project_visual_rows_after_restore: afterRestore.project_visual_rows,
+    project_visual_rows_added_away: Math.max(0, afterAway.project_visual_rows - before.project_visual_rows),
+    latest_project_visual_after_away: afterAway.latest_project_visual_id,
+    latest_project_visual_after_restore: afterRestore.latest_project_visual_id,
+    latest_slot_project_visual_rows: afterRestore.latest_slot_project_visual_rows,
+    latest_slot_project_visual_id: afterRestore.latest_slot_project_visual_id,
     restore_slot: afterRestore.latest_restore_slot,
     restore_year: afterRestore.latest_restore_year,
     restore_day: afterRestore.latest_restore_day,
@@ -6754,10 +6784,10 @@ function runReturnJournalLoop() {
   recordRealityConstraint('return_journal', {
     resident: world.selected,
     sourceBeliefId: row.journal_id,
-    materials: ['saved_state', 'away_time', 'resident_memory', 'lived_practice_physics'],
+    materials: ['saved_state', 'away_time', 'resident_memory', 'lived_practice_physics', 'project_visual_construction'],
     publicObservation: `away ${row.days_away} day(s), restored ${row.restore_slot}`,
-    residentInterpretation: `${row.remembered_residents.length} resident(s) remembered the absence; lived physics rows ${row.lived_practice_physics_before}->${row.lived_practice_physics_after_restore}`,
-    materialTransformation: 'return journal recorded continuity and lived-action physics evidence only; no material resource spawned',
+    residentInterpretation: `${row.remembered_residents.length} resident(s) remembered the absence; lived physics rows ${row.lived_practice_physics_before}->${row.lived_practice_physics_after_restore}; project visuals ${row.project_visual_rows_before}->${row.project_visual_rows_after_restore}`,
+    materialTransformation: 'return journal recorded continuity, lived-action physics, and project construction visual evidence only; no material resource spawned',
     timeCost: row.days_away,
     workCost: 0,
     toolWear: 0,
@@ -6774,13 +6804,13 @@ function runReturnJournalLoop() {
     slot: row.slot_id,
     forward: row.forward_return_id,
   });
-  return log('runReturnJournalLoop', { ready: updatedJournal.acceptanceReady, rows: updatedJournal.journalLedger.length, forwardReturn: row.forward_return_id, slotId: row.slot_id, saveReturns: afterRestore.save_returns });
+  return log('runReturnJournalLoop', { ready: updatedJournal.acceptanceReady, rows: updatedJournal.journalLedger.length, forwardReturn: row.forward_return_id, slotId: row.slot_id, saveReturns: afterRestore.save_returns, projectVisualRows: afterRestore.project_visual_rows, latestProjectVisualId: afterRestore.latest_project_visual_id });
 }
 
 function formatReturnJournal() {
   const journal = world.gamePrototypeReturnJournal || ensureReturnJournal();
   const latest = journal.snapshotLedger.length ? journal.snapshotLedger[journal.snapshotLedger.length - 1].snapshot : returnJournalSnapshot('current');
-  const rows = journal.journalLedger.slice(-6).map(row => `${row.journal_id}: forward=${row.forward_return_id} away=${row.days_away}d remembered=${row.remembered_residents.join('+') || 'none'} restored=${row.restore_slot}; resources ${row.resource_total_before}->${row.resource_total_after_away}->${row.resource_total_after_restore}; livedPhysics ${row.lived_practice_physics_before || 0}->${row.lived_practice_physics_after_restore || 0}`);
+  const rows = journal.journalLedger.slice(-6).map(row => `${row.journal_id}: forward=${row.forward_return_id} away=${row.days_away}d remembered=${row.remembered_residents.join('+') || 'none'} restored=${row.restore_slot}; resources ${row.resource_total_before}->${row.resource_total_after_away}->${row.resource_total_after_restore}; livedPhysics ${row.lived_practice_physics_before || 0}->${row.lived_practice_physics_after_restore || 0}; projectVisuals ${row.project_visual_rows_before || 0}->${row.project_visual_rows_after_restore || 0}/${row.latest_project_visual_after_restore || 'none'}`);
   return [
     `Acceptance ready: ${journal.acceptanceReady ? 'yes' : 'no'}`,
     `Rows: ${journal.journalLedger.length} / snapshots=${journal.snapshotLedger.length}`,
@@ -6789,6 +6819,7 @@ function formatReturnJournal() {
     `Save slots: ${latest.save_slots}; active=${latest.active_slot}; save returns=${latest.save_returns}`,
     `Latest restore: slot=${latest.latest_restore_slot}; year=${latest.latest_restore_year}; day=${latest.latest_restore_day}`,
     `Lived physics rows: current=${latest.lived_practice_physics_rows || 0}; slot=${latest.latest_slot_lived_practice_physics_rows || 0}; latest=${latest.latest_lived_practice_physics_id || 'none'}`,
+    `Project visuals: current=${latest.project_visual_rows || 0}; slot=${latest.latest_slot_project_visual_rows || 0}/${latest.latest_slot_project_visual_id || 'none'}; forwardAdded=${latest.latest_forward_project_visual_rows_added || 0}/${latest.latest_forward_project_visual_id || 'none'}; latest=${latest.latest_project_visual_id || 'none'}`,
     `Remembered residents: ${latest.latest_forward_remembered.join(', ') || 'none'}`,
     `No direct reset in normal view: ${journal.noDirectReset ? 'yes' : 'no'}`,
     'Recent return journal rows:',
@@ -11840,6 +11871,9 @@ function saveSlotSummary(slot) {
     practices: slot.practices,
     proposals: slot.proposals,
     project_completions: slot.project_completions,
+    project_visual_rows: slot.project_visual_rows,
+    latest_project_visual_id: slot.latest_project_visual_id,
+    latest_project_visual_cue: slot.latest_project_visual_cue,
     commons_support_rows: slot.commons_support_rows,
     nearby_action_rows: slot.nearby_action_rows,
     village_day_rows: slot.village_day_rows,
@@ -11959,6 +11993,7 @@ function savePrototypeSlot(label = 'manual prototype save') {
   const saves = ensurePrototypeSaves();
   const deepTime = world.deepTimeCivilization;
   const autonomous = world.autonomousResidents;
+  const latestProjectVisual = world.gamePrototypeProjects && world.gamePrototypeProjects.visualLedger && world.gamePrototypeProjects.visualLedger.length ? world.gamePrototypeProjects.visualLedger[world.gamePrototypeProjects.visualLedger.length - 1] : null;
   const slotNumber = saves.slots.length + 1;
   const slot = {
     slot_id: `GPS-${String(slotNumber).padStart(2, '0')}`,
@@ -11972,6 +12007,9 @@ function savePrototypeSlot(label = 'manual prototype save') {
     practices: world.emergentPracticeGraph ? world.emergentPracticeGraph.nodes.length : 0,
     proposals: world.villageBoard ? world.villageBoard.projectProposals.length : 0,
     project_completions: world.gamePrototypeProjects ? world.gamePrototypeProjects.completionLedger.length : 0,
+    project_visual_rows: world.gamePrototypeProjects && world.gamePrototypeProjects.visualLedger ? world.gamePrototypeProjects.visualLedger.length : 0,
+    latest_project_visual_id: latestProjectVisual ? latestProjectVisual.visual_id : 'none',
+    latest_project_visual_cue: latestProjectVisual ? latestProjectVisual.canvas_cue : 'none',
     commons_support_rows: world.gamePrototypeCommonsSupport ? world.gamePrototypeCommonsSupport.supportLedger.length : 0,
     nearby_action_rows: world.gamePrototypeNearbyActions ? world.gamePrototypeNearbyActions.actionLedger.length : 0,
     village_day_rows: world.gamePrototypeDayCycle ? world.gamePrototypeDayCycle.dayLedger.length : 0,
@@ -12083,7 +12121,7 @@ function savePrototypeSlot(label = 'manual prototype save') {
   persistPrototypeSaves();
   recordPrototypeMilestone('prototype-save-slot', `${slot.slot_id} saved year ${slot.year}, day ${slot.autonomous_day}`);
   recordCheckpoint(`prototype save ${slot.slot_id}`);
-  return log('savePrototypeSlot', { slotId: slot.slot_id, year: slot.year, autonomousDay: slot.autonomous_day, practices: slot.practices, proposals: slot.proposals, livedPhysicsRows: slot.lived_practice_physics_rows });
+  return log('savePrototypeSlot', { slotId: slot.slot_id, year: slot.year, autonomousDay: slot.autonomous_day, practices: slot.practices, proposals: slot.proposals, livedPhysicsRows: slot.lived_practice_physics_rows, projectVisualRows: slot.project_visual_rows, latestProjectVisualId: slot.latest_project_visual_id });
 }
 
 function returnPrototypeSlot() {
@@ -12098,6 +12136,9 @@ function returnPrototypeSlot() {
     restored_autonomous_day: slot.autonomous_day,
     restored_lived_practice_physics_rows: slot.lived_practice_physics_rows || 0,
     restored_lived_practice_latest_physics_id: slot.lived_practice_latest_physics_id || 'none',
+    restored_project_visual_rows: slot.project_visual_rows || 0,
+    restored_latest_project_visual_id: slot.latest_project_visual_id || 'none',
+    restored_latest_project_visual_cue: slot.latest_project_visual_cue || 'none',
   };
   const nextWorld = JSON.parse(slot.snapshot);
   saves.returnLog.push(returnEntry);
@@ -12106,7 +12147,7 @@ function returnPrototypeSlot() {
   persistPrototypeSaves();
   recordPrototypeMilestone('prototype-return-slot', `${slot.slot_id} restored year ${slot.year}, day ${slot.autonomous_day}`);
   recordCheckpoint(`prototype return ${slot.slot_id}`);
-  return log('returnPrototypeSlot', { restored: true, slotId: slot.slot_id, year: slot.year, autonomousDay: slot.autonomous_day });
+  return log('returnPrototypeSlot', { restored: true, slotId: slot.slot_id, year: slot.year, autonomousDay: slot.autonomous_day, projectVisualRows: slot.project_visual_rows || 0, latestProjectVisualId: slot.latest_project_visual_id || 'none' });
 }
 
 function exportPrototypeSaveReceipt() {
@@ -12404,8 +12445,8 @@ function formatPrototypeClock() {
 
 function formatPrototypeSaves() {
   const saves = world.gamePrototypeSaves || ensurePrototypeSaves();
-  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; livedPhysics=${slot.lived_practice_physics_rows || 0}/${slot.lived_practice_latest_physics_id || 'none'}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals/${slot.physical_field_rows || 0} fields/${slot.physical_energy_rows || 0} energy; structural=${slot.structural_stress_rows || 0} stress/${slot.structural_deformation_rows || 0} deform/${slot.structural_repair_rows || 0} repair; constraints=${slot.contact_constraint_rows || 0} contact/${slot.joint_constraint_rows || 0} joints/${slot.constraint_repair_rows || 0} repair; materialState=${slot.material_state_rows || 0} state/${slot.phase_change_rows || 0} phase/${slot.property_drift_rows || 0} props; terrain=${slot.terrain_steps || 0} steps/${slot.terrain_flow_rows || 0} flow/${slot.terrain_support_rows || 0} support; tools=${slot.tool_use_rows || 0} uses/${slot.tool_failure_rows || 0} failures/${slot.tool_repair_rows || 0} repairs; resources=${slot.resource_stock_rows || 0} steps/${slot.resource_loss_rows || 0} losses/${slot.resource_gain_rows || 0} gains; thermal=${slot.thermal_heat_rows || 0} heat/${slot.thermal_smoke_rows || 0} smoke/${slot.thermal_safety_rows || 0} safety; water=${slot.water_flow_rows || 0} flows/${slot.water_leak_rows || 0} leaks/${slot.water_safety_rows || 0} safety; ecology=${slot.ecology_growth_rows || 0} growth/${slot.ecology_harvest_rows || 0} harvest/${slot.ecology_hunger_rows || 0} hunger; manipulation=${slot.material_manipulation_rows || 0}/${slot.material_manipulation_practice_links || 0} practice links; bodies=${slot.resident_body_steps || 0} steps/${slot.resident_body_contacts || 0} contacts/${slot.resident_body_recoveries || 0} recoveries; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; deepPhysics=${slot.deep_time_physics_epochs || 0} epochs/${slot.deep_time_material_flux_rows || 0} flux/${slot.deep_time_physical_effects || 0} effects/${slot.physical_heritage_rows || 0} heritage; survival=${slot.survival_status}`);
-  const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, livedPhysics=${row.restored_lived_practice_physics_rows || 0}/${row.restored_lived_practice_latest_physics_id || 'none'}, from replay=${row.returned_from_replay_rows}`);
+  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; projectVisuals=${slot.project_visual_rows || 0}/${slot.latest_project_visual_id || 'none'}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; livedPhysics=${slot.lived_practice_physics_rows || 0}/${slot.lived_practice_latest_physics_id || 'none'}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals/${slot.physical_field_rows || 0} fields/${slot.physical_energy_rows || 0} energy; structural=${slot.structural_stress_rows || 0} stress/${slot.structural_deformation_rows || 0} deform/${slot.structural_repair_rows || 0} repair; constraints=${slot.contact_constraint_rows || 0} contact/${slot.joint_constraint_rows || 0} joints/${slot.constraint_repair_rows || 0} repair; materialState=${slot.material_state_rows || 0} state/${slot.phase_change_rows || 0} phase/${slot.property_drift_rows || 0} props; terrain=${slot.terrain_steps || 0} steps/${slot.terrain_flow_rows || 0} flow/${slot.terrain_support_rows || 0} support; tools=${slot.tool_use_rows || 0} uses/${slot.tool_failure_rows || 0} failures/${slot.tool_repair_rows || 0} repairs; resources=${slot.resource_stock_rows || 0} steps/${slot.resource_loss_rows || 0} losses/${slot.resource_gain_rows || 0} gains; thermal=${slot.thermal_heat_rows || 0} heat/${slot.thermal_smoke_rows || 0} smoke/${slot.thermal_safety_rows || 0} safety; water=${slot.water_flow_rows || 0} flows/${slot.water_leak_rows || 0} leaks/${slot.water_safety_rows || 0} safety; ecology=${slot.ecology_growth_rows || 0} growth/${slot.ecology_harvest_rows || 0} harvest/${slot.ecology_hunger_rows || 0} hunger; manipulation=${slot.material_manipulation_rows || 0}/${slot.material_manipulation_practice_links || 0} practice links; bodies=${slot.resident_body_steps || 0} steps/${slot.resident_body_contacts || 0} contacts/${slot.resident_body_recoveries || 0} recoveries; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; deepPhysics=${slot.deep_time_physics_epochs || 0} epochs/${slot.deep_time_material_flux_rows || 0} flux/${slot.deep_time_physical_effects || 0} effects/${slot.physical_heritage_rows || 0} heritage; survival=${slot.survival_status}`);
+  const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, livedPhysics=${row.restored_lived_practice_physics_rows || 0}/${row.restored_lived_practice_latest_physics_id || 'none'}, projectVisuals=${row.restored_project_visual_rows || 0}/${row.restored_latest_project_visual_id || 'none'}, from replay=${row.returned_from_replay_rows}`);
   return [
     `Active slot: ${saves.activeSlotId || 'none'}`,
     `Boundary: ${saves.boundary}`,
@@ -13223,8 +13264,8 @@ function describeReplayRow(row) {
     startPrototypeAutoSim: `auto sim started step=${payload.step}`,
     pausePrototypeAutoSim: `auto sim paused step=${payload.step}`,
     runPrototypeAutoBurst: `auto sim burst +${payload.stepsAdded} step=${payload.step}`,
-    savePrototypeSlot: `prototype save ${payload.slotId} year=${payload.year} day=${payload.autonomousDay}`,
-    returnPrototypeSlot: `prototype return restored=${payload.restored === true} ${payload.slotId || payload.reason || ''}`,
+    savePrototypeSlot: `prototype save ${payload.slotId} year=${payload.year} day=${payload.autonomousDay} projectVisuals=${payload.projectVisualRows || 0}/${payload.latestProjectVisualId || 'none'}`,
+    returnPrototypeSlot: `prototype return restored=${payload.restored === true} ${payload.slotId || payload.reason || ''} projectVisuals=${payload.projectVisualRows || 0}/${payload.latestProjectVisualId || 'none'}`,
     exportPrototypeSaveReceipt: `prototype save export slots=${payload.slots} active=${payload.activeSlotId || 'none'}`,
     exportPrototypeAcceptanceReceipt: `prototype acceptance ${payload.pass ? 'PASS' : 'FAIL'} ${payload.passed}/${payload.total} guide=${payload.guidePhase || 'unknown'}`,
     supportVillageProposal: `supported village proposal ${payload.proposalId} accepted=${payload.accepted}`,

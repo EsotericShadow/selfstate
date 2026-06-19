@@ -122,6 +122,12 @@ Resident project work now has a visual construction ledger. Each project advance
 
 The canvas draws project progress bars and highlights repaired or newly added components. The visual result remains component-based: proposals change simulated posts, beams, lashings, vessels, and repair patches rather than spawning a building asset.
 
+## Prototype v0 construction return-continuity update
+
+Visible construction cues now participate in persistence evidence. Prototype save slots store project visual row counts, latest project visual IDs, and cue text. Save-slot restores report the restored visual construction state, and forward return-later receipts record visual construction rows added while the avatar was away.
+
+The return journal surfaces these fields beside lived-action physics so later-session continuity includes physical project changes, not just abstract project completion counts.
+
 ## Prototype v0 save-slot update
 
 The game prototype shell now includes browser-local prototype save slots. The player can save a slot, advance the autonomous simulation, return to the saved slot, and export a save receipt. This is intentionally scoped as prototype persistence evidence: it preserves meaningful village state, practice/proposal summaries, deep-time year, autonomous day, return log, and replay row counts without claiming production persistence.

@@ -2295,6 +2295,12 @@ Resident project work now records visible construction cues. Each successful pro
 
 The play canvas draws project progress bars plus rings around repaired or newly added physical components. Project-built parts are still normal simulated components, not building sprites, so resident proposals visibly assemble or repair structures over time.
 
+## Game prototype v0 update: Construction Return Continuity
+
+Prototype save slots, restore logs, forward return-later receipts, and the return journal now preserve and display visible construction cues. Slots record project visual row counts, latest visual IDs, and cue text; return logs show the restored construction visual state; forward returns show project visual rows added while the avatar was away.
+
+This keeps physical village change readable across sessions: returning should show not just resources and memories, but which resident-built component changes survived or happened offscreen.
+
 ## Game prototype v0 update: Bounded Resident Encounter
 
 The browser shell now includes a `Talk` normal rail action and `Resident encounter` Player Mode card. The encounter creates a deterministic, phrasebook-bounded resident response from current memory, schedule, visible cue, proposal context, practice context, and object context.

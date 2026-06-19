@@ -57,6 +57,8 @@
 
 33. Support or watch a resident project until construction advances, then confirm the canvas shows a project progress bar plus rings around repaired or newly added physical components rather than a fixed building asset.
 
+34. Save after visible construction appears, use Return later, then return the save slot and confirm the Return journal distinguishes project visual rows added while away from the restored saved project visual ID.
+
 30. Use End day and confirm the Day cycle recap includes a physics step, and the Village Board can receive a physics-linked concern/proposal without the avatar commanding it.
 
 31. Run Auto burst after physics pressure exists and confirm at least one resident can choose a repairing cue/action tied to component support or damage, consuming fiber when available.

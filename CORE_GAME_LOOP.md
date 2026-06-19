@@ -157,6 +157,15 @@
 6. The canvas draws project progress bars and rings around repaired or newly added components.
 7. The resulting structure remains a set of simulated physical components, not a fixed building asset.
 
+## Construction return continuity loop
+
+1. Project work creates visual construction rows tied to physical components.
+2. Save slots store project visual counts, latest visual IDs, and cue text.
+3. Returning to a save slot restores the world snapshot and reports the restored project visual state.
+4. Forward return-later sessions advance the village while the avatar is away and report any new construction visual rows.
+5. The return journal shows before, after-away, and after-restore construction visual counts beside lived-action physics.
+6. The player can distinguish offscreen physical change from save-slot restoration.
+
 ## Browser QA readiness loop
 
 1. Inspect the current browser state without running Prototype QA.

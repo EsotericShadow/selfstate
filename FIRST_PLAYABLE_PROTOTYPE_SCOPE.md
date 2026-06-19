@@ -388,6 +388,21 @@ Required evidence:
 
 This milestone makes resident proposals visibly assemble or repair the world over time.
 
+## Prototype v0 milestone: Construction Return Continuity
+
+`construction_return_continuity` is now part of first playable prototype scope.
+
+Required evidence:
+
+- save slots record project visual row counts, latest visual IDs, and cue text
+- save-slot return logs report restored project visual row counts and latest visual IDs
+- forward return-later receipts report project visual rows added while away
+- the return journal shows project visual rows before save, after away-time, and after restore
+- the player can distinguish offscreen construction changes from restored saved construction state
+- no hidden simulator law appears in normal return-journal view
+
+This milestone keeps visible physical construction history persistent across return sessions.
+
 ## Prototype v0 milestone: Physical Object Interaction
 
 `player_object_interaction` is now part of first playable prototype scope.

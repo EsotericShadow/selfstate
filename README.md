@@ -2143,3 +2143,7 @@ Report 307 upgrades the primary-demo recorder from raw defect notes into a small
 ### Report 363: SSRM-3D Scheduled Anomaly Investigation Bridge
 
 [Scheduled anomaly investigation report](docs/363_ssrm_3d_scheduled_anomaly_investigation_bridge_report.md): moves anomaly testing into resident schedule/resource tradeoffs so investigation can delay ordinary work, consume scarce materials, preserve failures, or be refused/deferred under fear, trust, and social disagreement.
+
+### Report 364: SSRM-3D Stochastic Resident Consequence Bridge
+
+[Stochastic resident consequence report](docs/364_ssrm_3d_stochastic_resident_consequence_bridge_report.md): adds runtime stochastic consequence pulses to the maintained shell, with entropy bytes, resident need snapshots, resource deltas, schedule couplings, and replay rows recorded so nondeterministic surprise remains inspectable instead of hidden.

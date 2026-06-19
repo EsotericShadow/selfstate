@@ -1293,3 +1293,9 @@ The report also adds a deterministic multi-seed evaluator. Different seeds can l
 Report 363 moves anomaly discovery out of a panel-only loop and into resident scheduling. The maintained shell now lets residents plan anomaly investigation slots around ordinary work, material costs, fear, trust, and social disagreement. Running scheduled slots can execute a resident-owned test, consume scarce materials, delay ordinary work, preserve a failed test, or record a refusal/deferment.
 
 This remains deterministic browser-local scaffolding. The integration gain is that discovery no longer advances simply because the reviewer presses the next anomaly button; anomaly work now competes with the same visible resource/schedule pressures that make the browser world feel less like a scripted diorama.
+
+### Report 364: SSRM-3D Stochastic Resident Consequence Bridge
+
+Report 364 makes the maintained shell less scripted by adding browser-runtime stochastic resident consequence pulses. Each pulse records its entropy bytes, selected resident, branch, need snapshot, resource delta, schedule coupling, and replay row, so two browser runs can diverge while still leaving an inspectable audit trail.
+
+The evaluator uses seeded entropy streams for reproducible evidence. Boundary remains browser-local scaffolding only: no LLM call, autonomous natural language, subjective consciousness, moral patienthood, production persistence, complete 3D engine, finished gameplay, or hidden subjective state.

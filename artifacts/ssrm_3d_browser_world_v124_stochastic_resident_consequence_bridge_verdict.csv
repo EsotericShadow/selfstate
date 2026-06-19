@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,next_gate
+364,pass,1.0,1.0,"post-364: use recorded stochastic pulses to create multi-step resident recovery and relationship repair loops, so surprise changes future behavior without turning into chaos or permanent damage"

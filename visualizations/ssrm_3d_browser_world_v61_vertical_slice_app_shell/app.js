@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -72,6 +72,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   echoInfluencedChoiceReceipt: null,
   anomalyDiscovery: null,
   anomalyInvestigationSchedule: null,
+  stochasticConsequencePulse: null,
   promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -258,6 +259,43 @@ function renderAnomalyInvestigationSchedule() {
     '',
     'Execution log:',
     ...(executionLines.length ? executionLines : ['No scheduled slots executed yet.'])
+  ].join('\n');
+}
+function renderStochasticConsequencePulse() {
+  const summaryNode = document.getElementById('stochasticConsequencePulseSummaryOut');
+  const detailNode = document.getElementById('stochasticConsequencePulseOut');
+  const pulse = world.stochasticConsequencePulse;
+  if (summaryNode) {
+    summaryNode.textContent = pulse
+      ? `${pulse.pulses.length} pulses / ${pulse.entropyLedger.length} entropy bytes / ${pulse.scheduleCouplings.length} schedule couplings`
+      : 'No stochastic consequence pulse yet.';
+  }
+  if (!detailNode) return;
+  if (!pulse) {
+    detailNode.textContent = 'No stochastic consequence pulse yet. Run a pulse to record runtime entropy, branch choice, resource deltas, resident consequence, and replay evidence.';
+    return;
+  }
+  const recent = pulse.pulses.slice(-8).map(row => [
+    `${row.id} ${row.actor}: ${row.event}`,
+    `entropy=${row.entropy.map(item => `${item.label}:${item.value}`).join(',')}`,
+    `need=${row.needBefore.dominant}->${row.needAfter.dominant}`,
+    `resources=${JSON.stringify(row.resourcesBefore)} -> ${JSON.stringify(row.resourcesAfter)}`,
+    `schedule=${row.scheduleCoupling || 'none'}`,
+    `consequence=${row.consequence}`
+  ].join(' / '));
+  const couplings = pulse.scheduleCouplings.slice(-6).map(row => `${row.pulseId}: ${row.summary}`);
+  detailNode.textContent = [
+    `Mode: ${pulse.mode}`,
+    `Boundary: ${pulse.boundary}`,
+    `Replayable entropy: ${pulse.replayableEntropy ? 'yes' : 'no'}`,
+    `Non-deterministic runtime source: ${pulse.runtimeEntropySource}`,
+    `Resident need snapshots: ${Object.keys(pulse.needs).length}`,
+    '',
+    'Recent stochastic pulses:',
+    ...(recent.length ? recent : ['No pulses recorded yet.']),
+    '',
+    'Schedule couplings:',
+    ...(couplings.length ? couplings : ['No schedule coupling yet.'])
   ].join('\n');
 }
 function renderPromiseFollowUp() {
@@ -866,6 +904,136 @@ function runScheduledAnomalyInvestigation() {
   world.anomalyDiscovery.auditReplay.push({ type: 'schedule_tradeoff', summary: outcome, auditOnly: false });
   return log('runScheduledAnomalyInvestigation', { slot, executedTest: true, experiment, resources: world.resources, ordinaryWorkDelayed: schedule.ordinaryWorkDelayed });
 }
+function ensureStochasticConsequencePulse() {
+  if (!world.stochasticConsequencePulse) {
+    world.stochasticConsequencePulse = {
+      reportIntroduced: 364,
+      mode: 'runtime entropy recorded for inspectable replay',
+      runtimeEntropySource: window.crypto && window.crypto.getRandomValues ? 'crypto.getRandomValues' : 'Math.random fallback',
+      replayableEntropy: true,
+      pulses: [],
+      entropyLedger: [],
+      scheduleCouplings: [],
+      needs: {},
+      boundary: 'browser-local-stochastic-consequence-pulse-only; no LLM call, no subjective consciousness, no moral patienthood'
+    };
+  }
+  return world.stochasticConsequencePulse;
+}
+function entropyByte(label) {
+  const pulse = ensureStochasticConsequencePulse();
+  const bytes = new Uint8Array(1);
+  if (window.crypto && window.crypto.getRandomValues) {
+    window.crypto.getRandomValues(bytes);
+  } else {
+    bytes[0] = Math.floor(Math.random() * 256);
+  }
+  const row = { label, value: bytes[0], tick: world.tick, source: pulse.runtimeEntropySource };
+  pulse.entropyLedger.push(row);
+  if (pulse.entropyLedger.length > 80) pulse.entropyLedger.shift();
+  return row;
+}
+function weightedEntropyPick(options, entropy) {
+  const total = options.reduce((sum, option) => sum + option.weight, 0);
+  let cursor = (entropy.value / 256) * total;
+  for (const option of options) {
+    cursor -= option.weight;
+    if (cursor <= 0) return option;
+  }
+  return options[options.length - 1];
+}
+function residentNeedSnapshot(name) {
+  const resident = world.residents[name];
+  const resourcePressure = Math.max(0, 8 - world.resources.water - world.resources.care);
+  const schedulePressure = world.anomalyInvestigationSchedule ? world.anomalyInvestigationSchedule.refusals + world.anomalyInvestigationSchedule.ordinaryWorkDelayed : 0;
+  const energy = Number(Math.max(0.12, Math.min(0.95, 0.72 - resident.debt * 0.08 - resourcePressure * 0.03)).toFixed(3));
+  const comfort = Number(Math.max(0.08, Math.min(0.96, 0.58 + resident.trust * 0.28 - schedulePressure * 0.025)).toFixed(3));
+  const focus = Number(Math.max(0.1, Math.min(0.92, resident.progress + resident.trust * 0.18 - schedulePressure * 0.018)).toFixed(3));
+  const dominant = energy < 0.35 ? 'rest' : comfort < 0.42 ? 'safety' : focus < 0.5 ? 'finish-work' : 'explore';
+  return { energy, comfort, focus, dominant };
+}
+function applyResourceDelta(delta) {
+  Object.keys(delta).forEach(key => {
+    world.resources[key] = Math.max(0, (world.resources[key] || 0) + delta[key]);
+  });
+}
+function runStochasticConsequencePulse() {
+  if (!world.anomalyInvestigationSchedule) planAnomalyInvestigationSchedule();
+  const pulse = ensureStochasticConsequencePulse();
+  const names = Object.keys(world.residents);
+  const actorEntropy = entropyByte('actor');
+  const eventEntropy = entropyByte('event');
+  const intensityEntropy = entropyByte('intensity');
+  const actor = names[actorEntropy.value % names.length];
+  const needBefore = residentNeedSnapshot(actor);
+  const schedule = world.anomalyInvestigationSchedule;
+  const pendingSlot = schedule && schedule.slots.find(slot => slot.status === 'planned' && (slot.resident === actor || eventEntropy.value % 3 === 0));
+  const options = [
+    { id: 'roof_leak', weight: 3 + (world.resources.wood < 2 ? 3 : 0), delta: { water: -1, fiber: 0, wood: -1, care: 0 }, trust: -0.004, progress: -0.006, debt: 1 },
+    { id: 'tool_snag', weight: 3 + (pendingSlot ? 2 : 0), delta: { water: 0, fiber: -1, wood: 0, care: 0 }, trust: -0.002, progress: -0.01, debt: 0 },
+    { id: 'neighbor_help', weight: 2 + Math.round(world.residents[actor].trust * 3), delta: { water: 0, fiber: 0, wood: 0, care: 1 }, trust: 0.008, progress: 0.014, debt: -1 },
+    { id: 'argument_echo', weight: 2 + (schedule ? schedule.refusals : 0), delta: { water: 0, fiber: 0, wood: 0, care: 0 }, trust: -0.007, progress: -0.002, debt: 0 },
+    { id: 'found_material', weight: 2 + (world.resources.fiber < 3 ? 3 : 0), delta: { water: 0, fiber: 1, wood: 1, care: 0 }, trust: 0.004, progress: 0.008, debt: 0 },
+    { id: 'quiet_recovery', weight: 2 + (needBefore.energy < 0.42 ? 4 : 0), delta: { water: 0, fiber: 0, wood: 0, care: 0 }, trust: 0.003, progress: 0.006, debt: -1 }
+  ];
+  const event = weightedEntropyPick(options, eventEntropy);
+  const intensity = Number((0.5 + intensityEntropy.value / 255).toFixed(3));
+  const resourcesBefore = { ...world.resources };
+  const scaledDelta = {};
+  Object.keys(event.delta).forEach(key => {
+    const value = event.delta[key];
+    scaledDelta[key] = value < 0 && intensity > 1.1 ? value - 1 : value;
+  });
+  applyResourceDelta(scaledDelta);
+  let scheduleCoupling = '';
+  if (pendingSlot && ['roof_leak', 'tool_snag', 'argument_echo'].includes(event.id)) {
+    pendingSlot.status = event.id === 'argument_echo' ? 'stochastically disputed' : 'stochastically delayed';
+    schedule.refusals += 1;
+    const summary = `${actor} ${pendingSlot.status} ${pendingSlot.id} while ${pendingSlot.ordinaryWork} competed with ${event.id}`;
+    schedule.executionLog.push({ slotId: pendingSlot.id, resident: actor, outcome: summary, decision: event.id });
+    scheduleCoupling = summary;
+  } else if (pendingSlot && ['neighbor_help', 'found_material'].includes(event.id)) {
+    pendingSlot.trust = Number(Math.min(0.99, pendingSlot.trust + 0.018).toFixed(3));
+    scheduleCoupling = `${actor} made ${pendingSlot.id} easier to attempt after ${event.id}`;
+  }
+  const consequence = `${actor} encountered ${event.id} with intensity ${intensity}`;
+  mutateResident(actor, {
+    trust: Number((event.trust * intensity).toFixed(3)),
+    progress: Number((event.progress * intensity).toFixed(3)),
+    debt: event.debt,
+    memory: `stochastic pulse: ${event.id}`,
+    historyEvent: 'stochastic consequence',
+    historyDetail: consequence
+  });
+  const needAfter = residentNeedSnapshot(actor);
+  const row = {
+    id: `SP-${String(pulse.pulses.length + 1).padStart(2, '0')}`,
+    actor,
+    event: event.id,
+    entropy: [actorEntropy, eventEntropy, intensityEntropy],
+    intensity,
+    resourcesBefore,
+    resourcesAfter: { ...world.resources },
+    resourceDelta: scaledDelta,
+    needBefore,
+    needAfter,
+    scheduleCoupling,
+    consequence
+  };
+  pulse.needs[actor] = needAfter;
+  pulse.pulses.push(row);
+  if (pulse.pulses.length > 30) pulse.pulses.shift();
+  if (scheduleCoupling) pulse.scheduleCouplings.push({ pulseId: row.id, summary: scheduleCoupling });
+  if (pulse.scheduleCouplings.length > 20) pulse.scheduleCouplings.shift();
+  recordCheckpoint('stochastic consequence pulse');
+  return log('runStochasticConsequencePulse', { pulse: row, replayableEntropy: true, scheduleCoupled: Boolean(scheduleCoupling) });
+}
+function runStochasticConsequenceBurst() {
+  const before = ensureStochasticConsequencePulse().pulses.length;
+  for (let index = 0; index < 4; index += 1) runStochasticConsequencePulse();
+  const after = ensureStochasticConsequencePulse().pulses.length;
+  return log('runStochasticConsequenceBurst', { pulsesAdded: after - before, totalPulses: after, replayableEntropy: true });
+}
 function waitOffscreen() {
   Object.keys(world.residents).forEach((name, index) => mutateResident(name, { progress: 0.018 + index * 0.003, trust: index % 2 ? 0.002 : -0.001 }));
   const offscreenObligation = runOffscreenResidentObligationPulse();
@@ -1276,6 +1444,7 @@ function runStateBoundaryAudit() {
     echoInfluencedChoiceReceipt: world.echoInfluencedChoiceReceipt,
     anomalyDiscovery: world.anomalyDiscovery,
     anomalyInvestigationSchedule: world.anomalyInvestigationSchedule,
+    stochasticConsequencePulse: world.stochasticConsequencePulse,
     promiseFollowUp: world.promiseFollowUp,
     obligationLedger: world.obligationLedger,
     scheduleQueue: world.scheduleQueue,
@@ -1955,7 +2124,9 @@ function describeReplayRow(row) {
     runAnomalyExperiment: `anomaly experiment ${payload.experiment ? payload.experiment.id : ''} failed=${payload.failedExperimentPreserved === true}`,
     spreadAnomalyBelief: `spread anomaly belief mutation=${payload.socialTransmissionMutation === true}`,
     planAnomalyInvestigationSchedule: `planned anomaly investigation slots=${payload.slots ? payload.slots.length : 0}`,
-    runScheduledAnomalyInvestigation: `scheduled anomaly investigation executed=${payload.executedTest === true} tradeoff=${payload.scheduleTradeoff === true}`
+    runScheduledAnomalyInvestigation: `scheduled anomaly investigation executed=${payload.executedTest === true} tradeoff=${payload.scheduleTradeoff === true}`,
+    runStochasticConsequencePulse: `stochastic pulse ${payload.pulse ? payload.pulse.event : ''} actor=${payload.pulse ? payload.pulse.actor : ''} entropy=${payload.replayableEntropy === true}`,
+    runStochasticConsequenceBurst: `stochastic burst pulses=${payload.pulsesAdded} entropy=${payload.replayableEntropy === true}`
   };
   return `${prefix}: ${descriptions[row.event] || row.event}`;
 }
@@ -2008,6 +2179,7 @@ function render() {
   document.getElementById('observationTriageOut').textContent = formatObservationTriage();
   document.getElementById('taskList').innerHTML = playtestTasks.map(task => `<li><strong>${task.id}</strong>: ${task.title}<br><span>${task.expected}</span></li>`).join('');
   document.getElementById('qaManifestOut').textContent = JSON.stringify(qaManifest, null, 2);
+  renderStochasticConsequencePulse();
   draw();
 }
 function draw() {
@@ -2036,6 +2208,6 @@ function draw() {
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

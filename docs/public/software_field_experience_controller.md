@@ -562,3 +562,7 @@ Report 362 pivots the maintained browser-world shell away from scripted outcome 
 ## Report 363: SSRM-3D Scheduled Anomaly Investigation Bridge
 
 Report 363 moves the non-scripted anomaly loop into resident scheduling and resource tradeoffs. The maintained shell now plans anomaly investigation slots around ordinary work, material costs, fear, trust, and social disagreement; execution can consume resources, delay work, preserve failed tests, or record refusals/deferments. Deterministic artifacts cover schedule plans, schedule execution, and resource tradeoffs. Boundary remains browser-local deterministic scaffolding only: no LLM call, autonomous natural language, subjective consciousness, real science, real consent, moral patienthood, complete 3D engine, finished gameplay, or hard-coded technology tree.
+
+## Report 364 Public Note: Stochastic Resident Consequences
+
+The maintained browser-world shell now has a bounded stochastic pulse that can alter resident memory, trust/progress/debt, resources, and pending anomaly schedule slots through runtime entropy. The important guardrail is traceability: every pulse records its entropy bytes and public consequence path, while the evaluator uses seeded entropy streams for reproducible artifacts. This is nondeterministic browser-local behavior, not a consciousness claim, autonomous language system, production system, or finished game.

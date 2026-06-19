@@ -4,6 +4,7 @@ const REPLAY_KEY = 'ssrm_v61_app_shell_replay';
 const QA_KEY = 'ssrm_v61_app_shell_qa_results';
 const EXPORT_KEY = 'ssrm_v61_app_shell_export';
 const SAVE_SNAPSHOT_KEY = 'ssrm_v61_app_shell_saved_snapshot';
+const PROTOTYPE_SAVE_KEY = 'ssrm_v61_game_prototype_saves';
 const CHECKPOINT_KEY = 'ssrm_v61_app_shell_checkpoints';
 const HISTORY_KEY = 'ssrm_v61_app_shell_resident_history';
 const RELATION_KEY = 'ssrm_v61_app_shell_resident_relationships';
@@ -44,8 +45,8 @@ const playtestTasks = [
 const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_consequence', 'offscreen_life', 'recoverable_trust_repair', 'resident_social_memory', 'public_history_sync', 'replay_export_ready', 'resume_ready_snapshot'];
 
 const qaManifest = {
-  stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, PROTOTYPE_SAVE_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -53,7 +54,7 @@ const qaManifest = {
 
 const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.get('reset') === '1') {
-  [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY].forEach(key => localStorage.removeItem(key));
+  [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, PROTOTYPE_SAVE_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY].forEach(key => localStorage.removeItem(key));
 }
 
 let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
@@ -88,6 +89,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   autonomousResidents: null,
   gamePrototypeQA: null,
   prototypeClock: null,
+  gamePrototypeSaves: null,
   promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -2700,6 +2702,7 @@ function formatPrototypePublicOutcomes() {
   const consequenceCount = deepTime && deepTime.villageConsequences ? deepTime.villageConsequences.length : 0;
   const survivalStatus = deepTime && deepTime.civilizationState ? deepTime.civilizationState.status : 'not audited';
   const autonomous = world.autonomousResidents;
+  const saves = world.gamePrototypeSaves;
   return [
     `Practice graph: ${practiceCount} node(s)${latestPractice ? ` / latest ${latestPractice.local_name || latestPractice.practice_id}` : ''}`,
     `Village board: ${boardCount} proposal(s)${latestProposal ? ` / latest ${latestProposal.problem_addressed || latestProposal.proposal_id}` : ''}`,
@@ -2707,6 +2710,7 @@ function formatPrototypePublicOutcomes() {
     `Return branches: ${branchRows} continuity row(s)${latestBranch ? ` / latest ${latestBranch.return_status}` : ''}`,
     `Deep time: ${deepTime ? `${deepTime.year} years / ${deepTime.emergentEffects.length} emergent effect(s) / ${consequenceCount} village consequence(s) / ${survivalStatus}` : 'not started'}`,
     `Autonomous residents: ${autonomous ? `${autonomous.day} day(s) / ${autonomous.actionLog.length} action(s) / ${autonomous.refusalLog.length} refusal(s)` : 'not started'}`,
+    `Save slots: ${saves ? `${saves.slots.length} slot(s) / active ${saves.activeSlotId || 'none'} / returns ${saves.returnLog.length}` : 'none'}`,
     `Audit mode: ${world.audit ? 'on' : 'off'} / hidden law normal view: no`,
   ].join('\n');
 }
@@ -2888,6 +2892,129 @@ function runPrototypeAutoBurst() {
   return log('runPrototypeAutoBurst', { stepsAdded: clock.step - before, step: clock.step, running: clock.running });
 }
 
+function saveSlotSummary(slot) {
+  return {
+    slot_id: slot.slot_id,
+    label: slot.label,
+    saved_tick: slot.saved_tick,
+    replay_rows: slot.replay_rows,
+    year: slot.year,
+    autonomous_day: slot.autonomous_day,
+    survival_status: slot.survival_status,
+    residents: slot.residents,
+    practices: slot.practices,
+    proposals: slot.proposals,
+  };
+}
+
+function ensurePrototypeSaves() {
+  if (!world.gamePrototypeSaves) {
+    let stored = null;
+    try {
+      stored = JSON.parse(localStorage.getItem(PROTOTYPE_SAVE_KEY) || 'null');
+    } catch (_error) {
+      stored = null;
+    }
+    world.gamePrototypeSaves = stored || {
+      slots: [],
+      activeSlotId: null,
+      returnLog: [],
+      exportReceipt: null,
+      boundary: 'browser-local prototype save slots; not production persistence',
+    };
+  }
+  return world.gamePrototypeSaves;
+}
+
+function persistPrototypeSaves() {
+  const saves = ensurePrototypeSaves();
+  localStorage.setItem(PROTOTYPE_SAVE_KEY, JSON.stringify(saves));
+}
+
+function snapshotWorldForPrototypeSlot(saves) {
+  const shallowSaves = {
+    ...saves,
+    slots: saves.slots.map(slot => ({ ...slot, snapshot: null })),
+  };
+  return JSON.stringify({ ...world, gamePrototypeSaves: shallowSaves });
+}
+
+function savePrototypeSlot(label = 'manual prototype save') {
+  ensureGamePrototype();
+  const saves = ensurePrototypeSaves();
+  const deepTime = world.deepTimeCivilization;
+  const autonomous = world.autonomousResidents;
+  const slotNumber = saves.slots.length + 1;
+  const slot = {
+    slot_id: `GPS-${String(slotNumber).padStart(2, '0')}`,
+    label,
+    saved_tick: world.tick,
+    replay_rows: world.replay.length,
+    year: deepTime ? deepTime.year : 0,
+    autonomous_day: autonomous ? autonomous.day : 0,
+    survival_status: deepTime && deepTime.civilizationState ? deepTime.civilizationState.status : 'not audited',
+    residents: Object.keys(world.residents).length,
+    practices: world.emergentPracticeGraph ? world.emergentPracticeGraph.nodes.length : 0,
+    proposals: world.villageBoard ? world.villageBoard.projectProposals.length : 0,
+    snapshot: null,
+  };
+  slot.snapshot = snapshotWorldForPrototypeSlot(saves);
+  saves.slots.push(slot);
+  if (saves.slots.length > 4) saves.slots.shift();
+  saves.activeSlotId = slot.slot_id;
+  persistPrototypeSaves();
+  recordPrototypeMilestone('prototype-save-slot', `${slot.slot_id} saved year ${slot.year}, day ${slot.autonomous_day}`);
+  recordCheckpoint(`prototype save ${slot.slot_id}`);
+  return log('savePrototypeSlot', { slotId: slot.slot_id, year: slot.year, autonomousDay: slot.autonomous_day, practices: slot.practices, proposals: slot.proposals });
+}
+
+function returnPrototypeSlot() {
+  const saves = ensurePrototypeSaves();
+  const slot = saves.slots.find(row => row.slot_id === saves.activeSlotId) || saves.slots[saves.slots.length - 1];
+  if (!slot || !slot.snapshot) return log('returnPrototypeSlot', { restored: false, reason: 'no prototype save slot' });
+  const returnEntry = {
+    slot_id: slot.slot_id,
+    returned_from_tick: world.tick,
+    returned_from_replay_rows: world.replay.length,
+    restored_year: slot.year,
+    restored_autonomous_day: slot.autonomous_day,
+  };
+  const nextWorld = JSON.parse(slot.snapshot);
+  saves.returnLog.push(returnEntry);
+  nextWorld.gamePrototypeSaves = saves;
+  world = nextWorld;
+  persistPrototypeSaves();
+  recordPrototypeMilestone('prototype-return-slot', `${slot.slot_id} restored year ${slot.year}, day ${slot.autonomous_day}`);
+  recordCheckpoint(`prototype return ${slot.slot_id}`);
+  return log('returnPrototypeSlot', { restored: true, slotId: slot.slot_id, year: slot.year, autonomousDay: slot.autonomous_day });
+}
+
+function exportPrototypeSaveReceipt() {
+  const saves = ensurePrototypeSaves();
+  const receipt = {
+    exported_at_tick: world.tick,
+    active_slot_id: saves.activeSlotId,
+    slots: saves.slots.map(saveSlotSummary),
+    return_log: saves.returnLog.slice(-8),
+    boundary: saves.boundary,
+  };
+  saves.exportReceipt = receipt;
+  localStorage.setItem(EXPORT_KEY, JSON.stringify(receipt, null, 2));
+  persistPrototypeSaves();
+  let link = document.getElementById('preparedPrototypeSaveDownload');
+  if (!link) {
+    link = document.createElement('a');
+    link.id = 'preparedPrototypeSaveDownload';
+    link.textContent = 'Prepared prototype save receipt';
+    link.download = 'ssrm_game_prototype_save_receipt.json';
+    link.style.display = 'block';
+    link.style.marginTop = '10px';
+    document.querySelector('.side-panel').appendChild(link);
+  }
+  link.href = URL.createObjectURL(new Blob([JSON.stringify(receipt, null, 2)], { type: 'application/json' }));
+  return log('exportPrototypeSaveReceipt', { slots: receipt.slots.length, activeSlotId: receipt.active_slot_id });
+}
+
 function formatPrototypeQA() {
   const qa = world.gamePrototypeQA;
   if (!qa) return 'No prototype QA run yet. Run Prototype QA.';
@@ -2914,6 +3041,21 @@ function formatPrototypeClock() {
   ].join('\n');
 }
 
+function formatPrototypeSaves() {
+  const saves = world.gamePrototypeSaves || ensurePrototypeSaves();
+  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; survival=${slot.survival_status}`);
+  const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, from replay=${row.returned_from_replay_rows}`);
+  return [
+    `Active slot: ${saves.activeSlotId || 'none'}`,
+    `Boundary: ${saves.boundary}`,
+    'Slots:',
+    ...(slots.length ? slots : ['none']),
+    'Returns:',
+    ...(returns.length ? returns : ['none']),
+    `Export receipt: ${saves.exportReceipt ? `${saves.exportReceipt.slots.length} slot(s) prepared` : 'not prepared'}`,
+  ].join('\n');
+}
+
 function renderGamePrototypeSurface() {
   const objectiveNode = document.getElementById('gamePrototypeObjectiveOut');
   const villageNode = document.getElementById('gamePrototypeVillageOut');
@@ -2923,6 +3065,7 @@ function renderGamePrototypeSurface() {
   const autonomousNode = document.getElementById('gamePrototypeAutonomousOut');
   const qaNode = document.getElementById('gamePrototypeQAOut');
   const clockNode = document.getElementById('gamePrototypeClockOut');
+  const saveNode = document.getElementById('gamePrototypeSaveOut');
   const prototype = world.gamePrototype || ensureGamePrototype();
   if (objectiveNode) objectiveNode.textContent = prototype.objective;
   if (villageNode) villageNode.textContent = formatPrototypeVillageState();
@@ -2932,6 +3075,7 @@ function renderGamePrototypeSurface() {
   if (autonomousNode) autonomousNode.textContent = formatPrototypeAutonomousResidents();
   if (qaNode) qaNode.textContent = formatPrototypeQA();
   if (clockNode) clockNode.textContent = formatPrototypeClock();
+  if (saveNode) saveNode.textContent = formatPrototypeSaves();
 }
 
 function bindControls() {
@@ -3583,6 +3727,9 @@ function describeReplayRow(row) {
     startPrototypeAutoSim: `auto sim started step=${payload.step}`,
     pausePrototypeAutoSim: `auto sim paused step=${payload.step}`,
     runPrototypeAutoBurst: `auto sim burst +${payload.stepsAdded} step=${payload.step}`,
+    savePrototypeSlot: `prototype save ${payload.slotId} year=${payload.year} day=${payload.autonomousDay}`,
+    returnPrototypeSlot: `prototype return restored=${payload.restored === true} ${payload.slotId || payload.reason || ''}`,
+    exportPrototypeSaveReceipt: `prototype save export slots=${payload.slots} active=${payload.activeSlotId || 'none'}`,
     supportVillageProposal: `supported village proposal ${payload.proposalId} accepted=${payload.accepted}`,
     askVillageBoardQuestion: `asked village board question ${payload.proposalId}`,
     waitOnVillageBoard: `waited on village board proposals=${payload.proposals}`,
@@ -4845,6 +4992,6 @@ function renderHintBranchPersistence() {
   ].join('\n');
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, runCivilizationDeepTimeEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, runCivilizationDeepTimeEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, savePrototypeSlot, returnPrototypeSlot, exportPrototypeSaveReceipt, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

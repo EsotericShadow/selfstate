@@ -110,3 +110,8 @@
 3. Periodic steps support proposals, advance deep-time epochs, audit survival, and save the world.
 4. The player can pause at any time and inspect residents, practices, proposals, causality, survival, and replay.
 5. The clock is browser-local and does not run as a hidden server process.
+
+## Prototype save/return slot loop
+
+The first playable loop includes a direct save/return pass: enter the village, let residents and pressures move, save a prototype slot, continue simulation, then return to the slot. The return path restores the saved world snapshot while preserving a return log so later sessions can audit what was restored and from which replay depth.
+

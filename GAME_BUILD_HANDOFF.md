@@ -92,3 +92,8 @@ The prototype now includes a browser-local auto-simulation clock. `Start auto si
 ## Prototype v0 basic visual-state update
 
 The canvas now shows a basic playable state view instead of only a backdrop: village zones, avatar position, resident need/state markers, recent proposals, recent practices, deep-time emergent effects, resources, auto-sim state, and survival continuity. This keeps visuals intentionally simple while making the stochastic civilization legible during play.
+
+## Prototype v0 save-slot update
+
+The game prototype shell now includes browser-local prototype save slots. The player can save a slot, advance the autonomous simulation, return to the saved slot, and export a save receipt. This is intentionally scoped as prototype persistence evidence: it preserves meaningful village state, practice/proposal summaries, deep-time year, autonomous day, return log, and replay row counts without claiming production persistence.
+

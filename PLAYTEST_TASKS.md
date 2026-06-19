@@ -16,3 +16,5 @@
 12. Start auto sim, watch several resident/deep-time steps occur, pause it, and confirm residents, proposals, survival status, and save state changed visibly.
 
 13. Run Auto burst and confirm the canvas visibly changes: resident schedules/markers, proposal squares, practice markers, deep-time effect dots, resource row, and survival bar should reflect the simulation state.
+
+14. Save a prototype slot, run Auto burst, return the slot, and confirm the Save / return card restores year/day/practice/proposal summaries and can export a receipt.

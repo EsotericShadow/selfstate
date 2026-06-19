@@ -184,3 +184,8 @@ Residents can now react to physical risk through a `physics_repair` autonomous a
 Resident project work now changes the physical world. Every project work tick writes a construction row that can repair strained components, and completed projects can add new resident-built reinforcement components such as rough branch supports, rough branch spans, fiber lashings, or simple containers. These components are inserted into the existing 3D structure, carry material/physics state, increase future maintenance burden, and are rendered as primitives rather than fixed building assets.
 
 Save slots, Prototype QA, acceptance receipts, project cards, material-world cards, and replay rows now include construction counts and project-built component evidence. This keeps village management tied to physical causality: support conditions lead to resident labor, consumed materials, component repair or construction, and later maintenance pressure.
+
+
+## Prototype v0 construction-practice language update
+
+Resident-built components now feed culture. Construction rows create or refine Emergent Practice Graph nodes when repeated repair/build work becomes useful evidence. The linked resident term gains adoption, meaning drift, variants, and stronger practical weight, while sound roots record repair/build associations. This keeps technology as a historical practice emerging from physical work, not as an asset unlock or English concept label.

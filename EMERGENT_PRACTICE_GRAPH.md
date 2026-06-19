@@ -55,3 +55,20 @@ Practice nodes should keep three language layers separate:
 A practice should not become "storage," "electricity," "agriculture," "plank," or another English technology label just because the engine can classify it. If residents have not discovered and transmitted a matching concept, the visible term should remain local, partial, and historically grounded.
 
 Component structures should likewise emerge from affordances and material physics. A raised dry vessel practice is a history of supports, bindings, vessels, moisture, repeated failures, resident language, and maintenance, not a fixed storage-building asset.
+
+## Construction evidence
+
+Resident construction can become practice evidence when it is repeated, useful, remembered, and socially carried.
+
+Construction-derived practice nodes should link:
+
+- Construction row IDs.
+- Proposal IDs.
+- Components added or repaired.
+- Materials consumed.
+- Affordances satisfied.
+- Resident term and player gloss.
+- Meaning drift and household variants.
+- Maintenance burden created.
+
+This is still not a tech tree. A useful repair/build habit becomes a node because residents performed it, saw it work or fail, remembered it, and kept using or teaching it.

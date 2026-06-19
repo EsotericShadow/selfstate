@@ -210,7 +210,9 @@ The first playable loop includes a direct save/return pass: enter the village, l
 3. Each project work tick repairs weak physical components if there is a related structure or physics pressure.
 4. Completion can add new primitive components to the 3D material world.
 5. Added components carry material properties, 3D position, support role, damage, stability, resident term, and future maintenance cost.
-6. The renderer draws the new parts from component state, not from a building sprite.
+6. Construction evidence updates or creates a practice node when the repair/build behavior becomes useful and repeatable.
+7. Resident terms and sound roots drift from the construction history.
+8. The renderer draws the new parts from component state, not from a building sprite.
 
 
 ## Resource commons support loop

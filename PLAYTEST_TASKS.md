@@ -60,3 +60,7 @@
 34. After project completion, inspect the 3D stochastic physics card and canvas to confirm project-built components were inserted into the physical structure rather than unlocking a building asset.
 
 35. Save after project-built components exist, mutate the world, return the slot, and confirm construction row and project-built component counts persist.
+
+36. After project construction, inspect Public outcomes and Emergent Practices to confirm a construction-linked practice node exists without a modern English technology name.
+
+37. Inspect the 3D stochastic physics card after construction and confirm the resident term shows meaning drift or variants tied to repair/build work.

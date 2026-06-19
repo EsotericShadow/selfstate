@@ -3887,9 +3887,10 @@ function formatPrototypePublicOutcomes() {
   const nearby = world.gamePrototypeNearbyActions;
   const dayCycle = world.gamePrototypeDayCycle;
   const returnLater = world.gamePrototypeReturnLater;
-  const materialWorld = world.gamePrototype3DWorld;
-  const materialPhysics = materialWorld && materialWorld.physics ? materialWorld.physics.latestStep : null;
-  const latestTerm = materialWorld && materialWorld.language && materialWorld.language.terms.length ? materialWorld.language.terms[0] : null;
+	  const materialWorld = world.gamePrototype3DWorld;
+	  const materialPhysics = materialWorld && materialWorld.physics ? materialWorld.physics.latestStep : null;
+	  const latestTerm = materialWorld && materialWorld.language && materialWorld.language.terms.length ? materialWorld.language.terms[0] : null;
+  const constructionPracticeCount = materialWorld && materialWorld.constructionLedger ? materialWorld.constructionLedger.filter(row => row.practice_id).length : 0;
   return [
     `Practice graph: ${practiceCount} node(s)${latestPractice ? ` / latest ${latestPractice.local_name || latestPractice.practice_id}` : ''}`,
     `Village board: ${boardCount} proposal(s)${latestProposal ? ` / latest ${latestProposal.problem_addressed || latestProposal.proposal_id}` : ''}`,
@@ -3904,9 +3905,10 @@ function formatPrototypePublicOutcomes() {
     `Commons support: ${commonsSupport ? `${commonsSupport.supportLedger.length} support row(s), recoveries=${commonsSupport.recoveryLedger.length}` : 'not supported'}`,
     `Nearby actions: ${nearby ? `${nearby.actionLedger.length} location action(s), last=${nearby.lastPlan ? nearby.lastPlan.label + ' -> ' + nearby.lastPlan.action : 'none'}` : 'not used'}`,
     `Village days: ${dayCycle ? `${dayCycle.day} day(s), weather rows=${dayCycle.weatherLedger.length}, recaps=${dayCycle.recapLedger.length}` : 'not advanced'}`,
-    `Return later: ${returnLater ? `${returnLater.returnLedger.length} return(s), latest=${returnLater.latestReceipt ? returnLater.latestReceipt.return_id : 'none'}` : 'not used'}`,
-    `3D material physics: ${materialWorld ? `${materialWorld.components.length} component(s), ${materialWorld.structures.length} structure(s), term=${latestTerm ? latestTerm.resident_word + ' / ' + latestTerm.player_gloss : 'none'}, physics=${materialPhysics ? materialPhysics.step_id : 'not stepped'}` : 'not initialized'}`,
-    `Audit mode: ${world.audit ? 'on' : 'off'} / hidden law normal view: no`,
+	    `Return later: ${returnLater ? `${returnLater.returnLedger.length} return(s), latest=${returnLater.latestReceipt ? returnLater.latestReceipt.return_id : 'none'}` : 'not used'}`,
+	    `3D material physics: ${materialWorld ? `${materialWorld.components.length} component(s), ${materialWorld.structures.length} structure(s), term=${latestTerm ? latestTerm.resident_word + ' / ' + latestTerm.player_gloss : 'none'}, physics=${materialPhysics ? materialPhysics.step_id : 'not stepped'}` : 'not initialized'}`,
+    `Construction practices: ${constructionPracticeCount} construction row(s) linked to practice graph`,
+	    `Audit mode: ${world.audit ? 'on' : 'off'} / hidden law normal view: no`,
   ].join('\n');
 }
 
@@ -4049,7 +4051,7 @@ function formatPrototypeMaterialWorld() {
 	  const latestPhysics = physics.latestStep;
 	  const board = world.villageBoard || null;
 	  const physicsProposals = board && board.projectProposals ? board.projectProposals.filter(row => row.related_physics_step).slice(-4).map(row => `${row.proposal_id}: ${row.problem_addressed}; status=${row.status}; materials=${(row.materials_needed || []).join('+')}`) : [];
-  const constructionRows = (sim.constructionLedger || []).slice(-5).map(row => `${row.construction_id}: ${row.proposal_id}; added=${row.components_added.length}; repaired=${row.components_repaired.length}; term=${row.resident_term}; stability=${row.structure_stability_after}`);
+  const constructionRows = (sim.constructionLedger || []).slice(-5).map(row => `${row.construction_id}: ${row.proposal_id}; added=${row.components_added.length}; repaired=${row.components_repaired.length}; term=${row.resident_term}; practice=${row.practice_id || 'none'}/${row.practice_status_after || 'none'}; stability=${row.structure_stability_after}`);
 		  return [
     `Runs: material=${sim.runCount} / physics=${physics.step || 0}`,
     `Boundary: ${sim.boundary}`,
@@ -4326,6 +4328,8 @@ function runPrototypeQASmoke() {
     forceRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics ? world.gamePrototype3DWorld.physics.forceLedger.length : 0,
     constructionRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.length : 0,
     projectBuiltComponents: world.gamePrototype3DWorld && world.gamePrototype3DWorld.components ? world.gamePrototype3DWorld.components.filter(component => component.project_built === true).length : 0,
+    constructionPracticeLinks: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.filter(row => row.practice_id).length : 0,
+    constructionPracticeNodes: world.emergentPracticeGraph && world.emergentPracticeGraph.nodes ? world.emergentPracticeGraph.nodes.filter(row => row.source_construction_rows && row.source_construction_rows.length).length : 0,
     physicsProposals: world.villageBoard && world.villageBoard.projectProposals ? world.villageBoard.projectProposals.filter(row => row.related_physics_step).length : 0,
     physicsRepairActions: world.autonomousResidents && world.autonomousResidents.actionLog ? world.autonomousResidents.actionLog.filter(row => row.action === 'physics_repair').length : 0,
 	  };
@@ -4350,6 +4354,7 @@ function runPrototypeQASmoke() {
 	    { id: 'stochastic-physics-substrate', pass: Boolean(world.gamePrototype3DWorld && savedCounts.materialComponents > 0 && savedCounts.residentTerms > 0 && savedCounts.physicsSteps > 0 && savedCounts.supportRows > 0 && savedCounts.forceRows > 0 && world.gamePrototype3DWorld.noFixedBuildingAssets === true && world.gamePrototype3DWorld.noEnglishResidentTechLabels === true), evidence: `${savedCounts.materialComponents} component(s), ${savedCounts.residentTerms} term(s), ${savedCounts.physicsSteps} physics step(s)` },
     { id: 'physics-influences-village', pass: Boolean(savedCounts.physicsProposals > 0 && world.villageBoard.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${savedCounts.physicsProposals} physics proposal(s), ${savedCounts.physicsRepairActions} repair action(s)` },
     { id: 'projects-change-physical-world', pass: Boolean(savedCounts.constructionRows > 0 && savedCounts.projectBuiltComponents > 0 && world.gamePrototype3DWorld.constructionLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true)), evidence: `${savedCounts.constructionRows} construction row(s), ${savedCounts.projectBuiltComponents} project-built component(s)` },
+    { id: 'construction-feeds-practice-language', pass: Boolean(savedCounts.constructionPracticeLinks > 0 && savedCounts.constructionPracticeNodes > 0 && world.gamePrototype3DWorld.language.terms.some(row => (row.meaning_drift || []).some(text => /repair|reinforced|retie/.test(text)))), evidence: `${savedCounts.constructionPracticeLinks} construction-practice link(s), ${savedCounts.constructionPracticeNodes} construction practice node(s)` },
 	    { id: 'village-proposals', pass: Boolean(world.villageBoard && world.villageBoard.projectProposals.length > 0), evidence: `${world.villageBoard ? world.villageBoard.projectProposals.length : 0} proposal(s)` },
     { id: 'deep-time-million-year', pass: Boolean(world.deepTimeCivilization && world.deepTimeCivilization.year >= 1000000), evidence: `${world.deepTimeCivilization ? world.deepTimeCivilization.year : 0} years` },
     { id: 'survival-audited', pass: Boolean(world.deepTimeCivilization && world.deepTimeCivilization.survivalLedger && world.deepTimeCivilization.survivalLedger.length > 0), evidence: world.deepTimeCivilization && world.deepTimeCivilization.civilizationState ? world.deepTimeCivilization.civilizationState.status : 'none' },
@@ -4543,6 +4548,7 @@ function savePrototypeSlot(label = 'manual prototype save') {
 	    physics_linked_proposals: world.villageBoard && world.villageBoard.projectProposals ? world.villageBoard.projectProposals.filter(row => row.related_physics_step).length : 0,
     construction_rows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.length : 0,
     project_built_components: world.gamePrototype3DWorld && world.gamePrototype3DWorld.components ? world.gamePrototype3DWorld.components.filter(component => component.project_built === true).length : 0,
+    construction_practice_links: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.filter(row => row.practice_id).length : 0,
 	    snapshot: null,
   };
   slot.snapshot = snapshotWorldForPrototypeSlot(saves);
@@ -4624,6 +4630,8 @@ function buildPrototypeAcceptanceReceipt() {
   const physicsProposalCount = board && board.projectProposals ? board.projectProposals.filter(row => row.related_physics_step).length : 0;
   const constructionCount = materialWorld && materialWorld.constructionLedger ? materialWorld.constructionLedger.length : 0;
   const projectBuiltComponentCount = materialWorld && materialWorld.components ? materialWorld.components.filter(component => component.project_built === true).length : 0;
+  const constructionPracticeLinks = materialWorld && materialWorld.constructionLedger ? materialWorld.constructionLedger.filter(row => row.practice_id).length : 0;
+  const constructionPracticeNodes = practiceGraph && practiceGraph.nodes ? practiceGraph.nodes.filter(row => row.source_construction_rows && row.source_construction_rows.length).length : 0;
 	  const requirements = [
     { id: 'basic_visual_surface', pass: Boolean(world.entered && Object.keys(world.residents).length <= 6), evidence: `${Object.keys(world.residents).length} resident(s), room=${world.avatar.room}` },
     { id: 'persistent_save_return', pass: Boolean(saves && saves.slots && saves.slots.length > 0 && saves.returnLog && saves.returnLog.length > 0), evidence: saves ? `${saves.slots.length} slot(s), ${saves.returnLog.length} return(s)` : 'no prototype saves' },
@@ -4644,8 +4652,9 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'village_day_cycle', pass: Boolean(dayCycle && dayCycle.dayLedger.length > 0 && dayCycle.weatherLedger.length > 0 && dayCycle.dayLedger.every(row => row.direct_player_command === false)), evidence: dayCycle ? `${dayCycle.dayLedger.length} day row(s), ${dayCycle.weatherLedger.length} weather row(s), day=${dayCycle.day}` : 'not advanced' },
 	    { id: 'return_later_forward_persistence', pass: Boolean(returnLater && returnLater.returnLedger.length > 0 && returnLater.returnLedger.every(row => row.restored_old_state === false && row.direct_reset === false && row.continuity_preserved === true)), evidence: returnLater ? `${returnLater.returnLedger.length} return(s), latest=${returnLater.latestReceipt ? returnLater.latestReceipt.return_id : 'none'}` : 'not used' },
 	    { id: 'physics_first_3d_material_world', pass: Boolean(materialWorld && physics && materialWorld.components.length > 0 && materialWorld.structures.length > 0 && materialWorld.language.terms.length > 0 && physics.latestStep && physics.supportLedger.length > 0 && physics.forceLedger.length > 0 && materialWorld.noFixedBuildingAssets === true && materialWorld.noEnglishResidentTechLabels === true), evidence: materialWorld && physics ? `${materialWorld.components.length} component(s), ${materialWorld.language.terms.length} term(s), physics step=${physics.latestStep ? physics.latestStep.step_id : 'none'}` : 'not initialized' },
-    { id: 'physics_consequences_reach_residents', pass: Boolean(physicsProposalCount > 0 && board.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${physicsProposalCount} physics-linked proposal(s)` },
-    { id: 'projects_construct_physical_components', pass: Boolean(constructionCount > 0 && projectBuiltComponentCount > 0 && materialWorld.constructionLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true)), evidence: `${constructionCount} construction row(s), ${projectBuiltComponentCount} project-built component(s)` },
+	    { id: 'physics_consequences_reach_residents', pass: Boolean(physicsProposalCount > 0 && board.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${physicsProposalCount} physics-linked proposal(s)` },
+	    { id: 'projects_construct_physical_components', pass: Boolean(constructionCount > 0 && projectBuiltComponentCount > 0 && materialWorld.constructionLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true)), evidence: `${constructionCount} construction row(s), ${projectBuiltComponentCount} project-built component(s)` },
+    { id: 'construction_evolves_practice_language', pass: Boolean(constructionPracticeLinks > 0 && constructionPracticeNodes > 0 && materialWorld.language.terms.some(row => (row.meaning_drift || []).some(text => /repair|reinforced|retie/.test(text)))), evidence: `${constructionPracticeLinks} construction-practice link(s), ${constructionPracticeNodes} construction practice node(s)` },
 	    { id: 'prototype_qa_passes', pass: Boolean(qa && qa.pass === true), evidence: qa ? `${qa.passed}/${qa.total} QA checks` : 'QA not run' },
     { id: 'research_arc_closed_mode', pass: Boolean(prototype.noMoreResearchReportsByDefault && prototype.mode === 'game-prototype-v0'), evidence: `${prototype.mode}, reports default=${prototype.noMoreResearchReportsByDefault ? 'off' : 'on'}` },
   ];
@@ -4717,7 +4726,7 @@ function formatPrototypeClock() {
 
 function formatPrototypeSaves() {
   const saves = world.gamePrototypeSaves || ensurePrototypeSaves();
-  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components; survival=${slot.survival_status}`);
+  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; survival=${slot.survival_status}`);
   const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, from replay=${row.returned_from_replay_rows}`);
   return [
     `Active slot: ${saves.activeSlotId || 'none'}`,
@@ -5443,7 +5452,7 @@ function describeReplayRow(row) {
     runFirstPlayablePrototypeLoop: `first playable prototype milestones=${payload.milestones} branches=${payload.branchContinuity}`,
     comparePrototypeDivergenceSeeds: `seed comparison diverged=${payload.diverged === true} branches=${payload.branches} baseLaw=${payload.baseLawSeed}`,
     auditPrototypeCommons: `commons audit ${payload.pass ? 'PASS' : 'WATCH'} pressure=${payload.pressureLevel} resources=${payload.resources} ledger=${payload.ledgerRows}`,
-	    advanceVillageProject: `advanced village project ${payload.proposalId || ''} status=${payload.status || payload.reason} progress=${payload.progress ?? 'n/a'} completed=${payload.completed === true} construction=${payload.constructionId || 'none'} added=${payload.componentsAdded || 0} repaired=${payload.componentsRepaired || 0}`,
+	    advanceVillageProject: `advanced village project ${payload.proposalId || ''} status=${payload.status || payload.reason} progress=${payload.progress ?? 'n/a'} completed=${payload.completed === true} construction=${payload.constructionId || 'none'} added=${payload.componentsAdded || 0} repaired=${payload.componentsRepaired || 0} practice=${payload.practiceId || 'none'}`,
     supportResourceCommons: `supported commons ${payload.resource || ''} amount=${payload.amount ?? 0} source=${payload.source || payload.reason || ''} reopened=${payload.reopened || 0}`,
     performNearbyAction: `nearby action ${payload.label || payload.zone} -> ${payload.action} result=${payload.resultEvent} direct=${payload.directCommand === true}`,
     endVillageDay: `ended village day ${payload.day} weather=${payload.weather} actions=${payload.actionsAdded} project=${payload.projectStatus}`,
@@ -6185,6 +6194,94 @@ function updateEmergentPracticeGraphFromTest(test, proposal, bottleneck, source)
   return node;
 }
 
+function updatePracticeAndLanguageFromConstruction(construction, proposal, structure, term) {
+  const graph = ensureEmergentPracticeGraph();
+  const localName = `${construction.resident_term} repair-building practice`;
+  const existing = graph.nodes.find(row => row.local_name === localName || (row.source_construction_rows || []).includes(construction.construction_id));
+  const materials = Object.keys(construction.materials_consumed || {});
+  const node = existing || {
+    practice_id: `EPG-${String(graph.nodes.length + 1).padStart(2, '0')}`,
+    local_name: localName,
+    resident_term: construction.resident_term,
+    player_gloss: `${construction.player_gloss} repair/build habit`,
+    engine_concept: structure ? structure.engine_concept : 'component_repair_construction_practice',
+    origin_tick: world.tick,
+    origin_resident: construction.proposer,
+    origin_household: `${construction.proposer}-household`,
+    origin_event: construction.construction_id,
+    problem_pressure: construction.problem_addressed,
+    materials_used: materials,
+    observations_supporting: [],
+    failed_ancestor_tests: [],
+    beliefs_involved: [],
+    social_transmission_path: [],
+    mutation_variants: [],
+    adoption_count: 0,
+    adoption_households: [],
+    practical_score: 0,
+    ritual_score: 0,
+    taboo_score: 0,
+    dispute_score: 0,
+    maintenance_cost: construction.maintenance_cost_after || 1,
+    risk_flags: [],
+    generations_survived: 0,
+    status: 'emerging',
+    avatar_role: 'supported_conditions_only',
+    hidden_properties_audit_only: true,
+    source_construction_rows: [],
+    component_affordances: [],
+    construction_component_ids: [],
+    language_term_id: term ? term.term_id : null,
+    translation_confidence: term ? term.translation_confidence : 0.5,
+  };
+  node.materials_used = Array.from(new Set((node.materials_used || []).concat(materials)));
+  node.observations_supporting = Array.from(new Set((node.observations_supporting || []).concat([
+    construction.completed ? 'completed project changed the physical structure' : 'project work repaired strained components',
+    `${construction.components_added.length} added / ${construction.components_repaired.length} repaired`
+  ])));
+  node.beliefs_involved = Array.from(new Set((node.beliefs_involved || []).concat([proposal.proposal_id, construction.structure_id])));
+  node.social_transmission_path = Array.from(new Set((node.social_transmission_path || []).concat([`${construction.proposer}->${construction.resident_term}`])));
+  node.mutation_variants = Array.from(new Set((node.mutation_variants || []).concat([construction.resident_term, construction.player_gloss, proposal.problem_addressed])));
+  node.source_construction_rows = Array.from(new Set((node.source_construction_rows || []).concat([construction.construction_id])));
+  node.construction_component_ids = Array.from(new Set((node.construction_component_ids || []).concat(construction.components_added, construction.components_repaired)));
+  node.component_affordances = Array.from(new Set((node.component_affordances || []).concat(
+    (world.gamePrototype3DWorld && world.gamePrototype3DWorld.components ? world.gamePrototype3DWorld.components : [])
+      .filter(component => node.construction_component_ids.includes(component.component_id))
+      .map(component => component.affordance)
+  )));
+  node.adoption_count += construction.completed ? 2 : 1;
+  node.adoption_households = Array.from(new Set((node.adoption_households || []).concat([`${construction.proposer}-household`])));
+  node.practical_score = Number(clamp(Number(node.practical_score || 0) + (construction.completed ? 0.22 : 0.11)).toFixed(3));
+  node.ritual_score = Number(clamp(Number(node.ritual_score || 0) + (construction.components_repaired.length > 1 ? 0.04 : 0.015)).toFixed(3));
+  node.dispute_score = Number(clamp(Number(node.dispute_score || 0) + (construction.completed ? 0.02 : 0.08)).toFixed(3));
+  node.maintenance_cost = Math.max(Number(node.maintenance_cost || 1), construction.maintenance_cost_after || 1);
+  node.risk_flags = Array.from(new Set((node.risk_flags || []).concat(construction.completed ? ['new component maintenance burden'] : ['partial repair evidence'])));
+  node.generations_survived = Math.max(Number(node.generations_survived || 0), Math.floor(node.adoption_count / 2));
+  node.status = node.adoption_count >= 4 && node.practical_score > 0.55 ? 'practical' : construction.completed ? 'refined' : 'emerging';
+  if (!existing) graph.nodes.push(node);
+  graph.edges.push({ from: construction.construction_id, to: node.practice_id, event: proposal.proposal_id, relation: construction.completed ? 'construction_into_practice' : 'repair_into_practice_evidence', hiddenLawExposed: false });
+  if (term) {
+    term.adoption_count += construction.completed ? 2 : 1;
+    term.practical_score = Number(clamp(Number(term.practical_score || 0) + (construction.completed ? 0.035 : 0.016)).toFixed(3));
+    term.translation_confidence = Number(clamp(Number(term.translation_confidence || 0.5) + 0.008).toFixed(3));
+    term.meaning_drift = term.meaning_drift || [];
+    const drift = construction.completed ? `${term.resident_word} also means a repaired/reinforced work habit` : `${term.resident_word} can mean retie and watch the support`;
+    if (!term.meaning_drift.includes(drift)) term.meaning_drift.push(drift);
+    if (term.adoption_count >= 7 && !term.variants.includes(`${term.resident_word}-ha`)) term.variants.push(`${term.resident_word}-ha`);
+  }
+  const sim = ensurePrototype3DWorld();
+  (sim.language.soundRoots || []).forEach(root => {
+    if (term && (term.roots || []).includes(root.sound_id)) {
+      root.adoption_count += 1;
+      root.practical_weight = Number(clamp(Number(root.practical_weight || 0) + 0.01).toFixed(3));
+      root.drift_history = root.drift_history || [];
+      const drift = construction.completed ? 'repair/build work' : 'repair warning';
+      if (!root.drift_history.includes(drift)) root.drift_history.push(drift);
+    }
+  });
+  return node;
+}
+
 function ensureVillageBoard() {
   if (!world.villageBoard) {
     world.villageBoard = {
@@ -6462,7 +6559,7 @@ function applyProjectConstructionToMaterialWorld(proposal, projectRow, consumed)
     no_resource_spawning: true,
   };
   sim.constructionLedger.push(construction);
-  sim.observationLedger.push({
+	  sim.observationLedger.push({
     observation_id: `G3O-${String(sim.observationLedger.length + 1).padStart(3, '0')}`,
     tick: world.tick,
     public_observation: projectRow.completed ? `${construction.resident_term} got new reinforcement after project work` : `${construction.resident_term} was partly repaired during project work`,
@@ -6470,19 +6567,22 @@ function applyProjectConstructionToMaterialWorld(proposal, projectRow, consumed)
     linked_structure: construction.structure_id,
     linked_project: proposal.proposal_id,
     hidden_law_visible_normal_view: false,
-    engine_concept_audit_only: 'project construction updated physical components',
-  });
-  recordRealityConstraint(projectRow.completed ? 'project_constructed_components' : 'project_repaired_components', {
+	    engine_concept_audit_only: 'project construction updated physical components',
+	  });
+  const practiceNode = updatePracticeAndLanguageFromConstruction(construction, proposal, structure, term);
+  construction.practice_id = practiceNode ? practiceNode.practice_id : null;
+  construction.practice_status_after = practiceNode ? practiceNode.status : null;
+	  recordRealityConstraint(projectRow.completed ? 'project_constructed_components' : 'project_repaired_components', {
     resident: proposal.proposer,
     sourceBeliefId: proposal.proposal_id,
     materials: Object.keys(consumed || {}),
     publicObservation: construction.problem_addressed,
-    residentInterpretation: projectRow.completed ? 'resident work changed the physical structure' : 'resident work repaired physical strain',
+	    residentInterpretation: projectRow.completed ? `resident work changed the physical structure and shaped ${practiceNode ? practiceNode.local_name : 'a local practice'}` : `resident work repaired physical strain and added evidence to ${practiceNode ? practiceNode.local_name : 'a local practice'}`,
     materialTransformation: `${added.length} component(s) added, ${repaired.length} component(s) repaired from consumed project materials`,
     timeCost: 1,
     workCost: Object.values(consumed || {}).reduce((sum, count) => sum + Number(count || 0), 0) + repaired.length,
     toolWear: added.length + repaired.length ? 1 : 0,
-    maintenanceObligation: structure ? `maintain ${structure.structure_id} after ${proposal.proposal_id}` : proposal.proposal_id,
+	    maintenanceObligation: structure ? `maintain ${structure.structure_id} and ${practiceNode ? practiceNode.practice_id : proposal.proposal_id}` : proposal.proposal_id,
     unintendedConsequence: added.length ? 'new structure parts increase future maintenance burden' : 'repair may not fully remove physical risk',
     hiddenLawInvolved: world.audit ? 'component support, mass, stability, material workability' : 'audit only',
     conservationCheck: true
@@ -6658,7 +6758,7 @@ function advanceVillageProject() {
 	    conservationCheck: true
 	  });
 	  recordPrototypeMilestone('village-project-progress', `${proposal.proposal_id} ${proposal.status} at ${proposal.project_progress}; construction ${construction.construction_id}`);
-	  return log('advanceVillageProject', { proposalId: proposal.proposal_id, status: proposal.status, stalled: false, completed, progress: proposal.project_progress, materials: Object.keys(consumed).join(','), constructionId: construction.construction_id, componentsAdded: construction.components_added.length, componentsRepaired: construction.components_repaired.length });
+	  return log('advanceVillageProject', { proposalId: proposal.proposal_id, status: proposal.status, stalled: false, completed, progress: proposal.project_progress, materials: Object.keys(consumed).join(','), constructionId: construction.construction_id, componentsAdded: construction.components_added.length, componentsRepaired: construction.components_repaired.length, practiceId: construction.practice_id || null, practiceStatus: construction.practice_status_after || null });
 	}
 
 function ensurePrototypeCommonsSupport() {

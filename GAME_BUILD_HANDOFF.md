@@ -663,3 +663,11 @@ Normal `Handling` now records the emergent practice link created or refined by t
 The primary play surface also shows the latest handling-derived practice cue. This closes the gap between component manipulation and lived invention: a player-facing handling action can now be traced into the Emergent Practice Graph without a predeclared technology unlock.
 
 The acceptance gate is `normal_handling_practice_emergence`. It requires at least one normal `Handling` action that links a resident-mediated manipulation row to an emergent practice while preserving no-direct-command and no-hidden-law boundaries.
+
+## Prototype v0 normal-action resident test generation update
+
+Normal player actions can now generate resident-authored practical tests from ordinary bottlenecks. `Handling`, `Objects`, `Move`, `Support`, `Wait`, and `Ask` record bottleneck feed rows; when the bottleneck is strong enough, residents create a proposal/test pair with source links back to the normal action, manipulated component, feed row, and local material evidence.
+
+The action rail now shows the generated resident test ID as `residentTest=...`, and the primary play surface shows the latest normal-action resident test. The practical discovery panel lists auto-generated tests from normal play with normal action, feed, test, and bottleneck IDs.
+
+The acceptance gate is `normal_action_resident_generated_test`. It requires a normal action row to own a resident-generated test and a matching auto-test row with no predeclared invention and no correct concept installed.

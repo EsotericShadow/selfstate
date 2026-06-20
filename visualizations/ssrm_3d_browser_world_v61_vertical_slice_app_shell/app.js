@@ -5479,6 +5479,10 @@ function currentPrimaryPlaySurfaceSnapshot() {
   const manipulationLoop = world.gamePrototypeMaterialManipulation || null;
   const latestHandlingPracticeLink = manipulationLoop && manipulationLoop.practiceLinks && manipulationLoop.practiceLinks.length ? manipulationLoop.practiceLinks[manipulationLoop.practiceLinks.length - 1] : null;
   const latestHandlingPractice = latestHandlingPracticeLink && graph && graph.nodes ? graph.nodes.find(node => node.practice_id === latestHandlingPracticeLink.practice_id) : null;
+  const actionRail = world.gamePrototypeActionRail || null;
+  const latestNormalResidentTestAction = actionRail && actionRail.actionLedger
+    ? actionRail.actionLedger.slice().reverse().find(row => row.ordinary_bottleneck_test_id && row.ordinary_bottleneck_test_id !== 'none')
+    : null;
   const canvasSelection = world.gamePrototypeCanvasSelection || null;
   const latestCanvasSelection = canvasSelection && canvasSelection.selectionLedger && canvasSelection.selectionLedger.length ? canvasSelection.selectionLedger[canvasSelection.selectionLedger.length - 1] : null;
   const selectedComponent = canvasSelection && canvasSelection.selected_component_id && canvasSelection.selected_component_id !== 'none' && materialWorld && materialWorld.components
@@ -5522,6 +5526,11 @@ function currentPrimaryPlaySurfaceSnapshot() {
     handling_practice_manipulation_id: latestHandlingPracticeLink ? latestHandlingPracticeLink.manipulation_id : 'none',
     handling_practice_name: latestHandlingPractice ? latestHandlingPractice.local_name || latestHandlingPractice.practice_id : 'none',
     handling_practice_status: latestHandlingPractice ? latestHandlingPractice.status : 'none',
+    normal_resident_test_action_id: latestNormalResidentTestAction ? latestNormalResidentTestAction.action_id : 'none',
+    normal_resident_test_id: latestNormalResidentTestAction ? latestNormalResidentTestAction.ordinary_bottleneck_test_id : 'none',
+    normal_resident_test_proposal_id: latestNormalResidentTestAction ? latestNormalResidentTestAction.ordinary_bottleneck_proposal_id : 'none',
+    normal_resident_test_type: latestNormalResidentTestAction ? latestNormalResidentTestAction.ordinary_bottleneck_type : 'none',
+    normal_resident_test_source: latestNormalResidentTestAction ? latestNormalResidentTestAction.ordinary_bottleneck_source : 'none',
     active_component_id: latestComponent ? latestComponent.component_id : 'none',
     active_component_gloss: latestComponent ? (latestComponent.player_gloss || latestComponent.material_id || latestComponent.component_id) : 'none',
     active_component_material_id: latestComponent ? latestComponent.material_id || 'none' : 'none',
@@ -5585,6 +5594,7 @@ function currentPrimaryPlaySurfaceSnapshot() {
       latestProposal ? `proposal ${latestProposal.proposal_id}` : 'village board has no current proposal',
       latestPractice ? `practice ${latestPractice.local_name || latestPractice.practice_id}` : 'practice graph not yet visible',
       latestHandlingPracticeLink ? `handling practice ${latestHandlingPracticeLink.practice_id} from ${latestHandlingPracticeLink.manipulation_id} relation=${latestHandlingPracticeLink.relation}` : 'normal handling has not seeded a practice yet',
+      latestNormalResidentTestAction ? `resident test ${latestNormalResidentTestAction.ordinary_bottleneck_test_id} from ${latestNormalResidentTestAction.action_id} bottleneck=${latestNormalResidentTestAction.ordinary_bottleneck_type}` : 'normal play has not generated a resident test yet',
       latestComponent ? `component ${latestComponent.component_id}` : 'physical components not initialized',
       latestCanvasSelection ? `canvas selection ${latestCanvasSelection.selection_id} ${latestCanvasSelection.component_id} ${latestCanvasSelection.resident_term}` : 'canvas object not selected yet',
       latestComponent ? `material state ${latestComponent.component_id} ${latestComponent.material_id} m=${Number(latestComponent.moisture || 0).toFixed(2)} d=${Number(latestComponent.damage || 0).toFixed(2)} s=${Number(latestComponent.stability || 0).toFixed(2)} carried=${latestComponent.carried_by || 'none'}` : 'material state not visible yet',
@@ -5754,6 +5764,7 @@ function formatPrimaryPlaySurface() {
     `Active proposal: ${snapshot.active_proposal_id} / ${snapshot.active_proposal_status}`,
     `Active practice: ${snapshot.active_practice_id} / ${snapshot.active_practice_name}`,
     `Handling practice: ${snapshot.handling_practice_id} / ${snapshot.handling_practice_name} / relation=${snapshot.handling_practice_relation} / status=${snapshot.handling_practice_status}`,
+    `Normal resident test: ${snapshot.normal_resident_test_id} / proposal=${snapshot.normal_resident_test_proposal_id} / type=${snapshot.normal_resident_test_type} / source=${snapshot.normal_resident_test_source}`,
     `Active component: ${snapshot.active_component_id} / ${snapshot.active_component_gloss}; source=${snapshot.active_component_source || 'none'}; selection=${snapshot.canvas_selection_id || 'none'}`,
     `Latest physics: ${snapshot.latest_physics_id}`,
     `Latest lived physics: ${snapshot.latest_lived_physics_id} / component=${snapshot.latest_lived_physics_component_id} / rows=${snapshot.lived_physics_rows}`,
@@ -6396,6 +6407,244 @@ function updateNormalPlayActionRailAcceptance() {
   return rail.acceptanceReady;
 }
 
+function normalPlayDiscoveryActionFor(verb, latestManipulation) {
+  if (verb === 'handling') return latestManipulation && latestManipulation.success === false ? 'handlingFailure' : 'materialHandling';
+  if (verb === 'objects') return 'inspectObject';
+  if (verb === 'support') return 'offerHelp';
+  if (verb === 'move') return 'routeMove';
+  if (verb === 'wait') return 'lived_pressure';
+  if (verb === 'ask') return 'scheduleQuestion';
+  return null;
+}
+
+function normalActionBottleneckFor(payload) {
+  const manipulation = payload.latestManipulation || null;
+  const verb = payload.verb;
+  if (verb === 'handling' && manipulation) {
+    const failed = manipulation.success === false;
+    return {
+      type: failed ? 'handling_failure' : 'material_handling_question',
+      detail: failed
+        ? `${manipulation.resident} could not ${manipulation.action} ${manipulation.component_id}: ${manipulation.failure_reason || 'constraint blocked the work'}`
+        : `${manipulation.resident} ${manipulation.action} ${manipulation.component_id} and left a repeatable material question`,
+      sourceBeliefId: `${manipulation.manipulation_id}:${manipulation.component_id}`,
+      sourceBeliefLabel: `${manipulation.resident_term || manipulation.component_id} ${manipulation.action} handling`,
+      materials: Array.from(new Set([manipulation.material_id || payload.component_id || 'local_material'].concat(Object.keys(manipulation.resource_cost || {})))),
+      forceTest: failed || manipulation.selected_component_bound === true,
+      sourceManipulationId: manipulation.manipulation_id,
+    };
+  }
+  if (verb === 'objects') {
+    return {
+      type: 'object_inspection_question',
+      detail: `resident object inspection raised a question around ${payload.component_id || 'the active component'}`,
+      sourceBeliefId: `${payload.normalActionId}:object-inspection`,
+      sourceBeliefLabel: `${payload.component_id || 'active component'} inspection`,
+      materials: [payload.component_id || 'active_component'],
+      forceTest: true,
+      sourceManipulationId: 'none',
+    };
+  }
+  if (verb === 'support') {
+    return {
+      type: 'support_tradeoff',
+      detail: 'material support changed what residents can try without assigning work',
+      sourceBeliefId: `${payload.normalActionId}:support`,
+      sourceBeliefLabel: 'supported village material concern',
+      materials: ['shared_support', payload.component_id || 'resident_attention'],
+      forceTest: false,
+      sourceManipulationId: 'none',
+    };
+  }
+  if (verb === 'move') {
+    return {
+      type: 'route_bottleneck',
+      detail: 'movement exposed distance, route, or access pressure',
+      sourceBeliefId: `${payload.normalActionId}:route`,
+      sourceBeliefLabel: 'ordinary route pressure',
+      materials: ['path_marker', payload.component_id || 'village_route'],
+      forceTest: false,
+      sourceManipulationId: 'none',
+    };
+  }
+  if (verb === 'wait') {
+    return {
+      type: 'delayed_weather_or_decay',
+      detail: 'waiting exposed time, weather, decay, or schedule pressure',
+      sourceBeliefId: `${payload.normalActionId}:wait`,
+      sourceBeliefLabel: 'ordinary waiting pressure',
+      materials: ['time', payload.component_id || 'watched_component'],
+      forceTest: false,
+      sourceManipulationId: 'none',
+    };
+  }
+  if (verb === 'ask') {
+    return {
+      type: 'schedule_question',
+      detail: 'asking revealed a resident schedule or work bottleneck',
+      sourceBeliefId: `${payload.normalActionId}:schedule`,
+      sourceBeliefLabel: 'resident schedule concern',
+      materials: ['resident_memory', payload.component_id || 'current_concern'],
+      forceTest: false,
+      sourceManipulationId: 'none',
+    };
+  }
+  return null;
+}
+
+function recordNormalActionResidentGeneratedTest(payload) {
+  const discoveryAction = normalPlayDiscoveryActionFor(payload.verb, payload.latestManipulation);
+  if (!discoveryAction) return { recorded: false, reason: 'verb not test-bearing' };
+  const bottleneck = normalActionBottleneckFor({ ...payload, discoveryAction });
+  if (!bottleneck) return { recorded: false, reason: 'no ordinary bottleneck' };
+  const discovery = ensurePracticalDiscovery(false);
+  const similarBefore = discovery.ordinaryPlayFeed.filter(row => row.action === discoveryAction && row.resident === payload.resident && row.bottleneckType === bottleneck.type && row.sourceBeliefId === bottleneck.sourceBeliefId).length;
+  const repeatedOrdinaryActions = similarBefore + 1;
+  const feed = {
+    id: `OPF-${String(discovery.ordinaryPlayFeed.length + 1).padStart(2, '0')}`,
+    tick: world.tick,
+    action: discoveryAction,
+    normalActionId: payload.normalActionId,
+    normalActionVerb: payload.verb,
+    resident: payload.resident,
+    bottleneckType: bottleneck.type,
+    detail: bottleneck.detail,
+    sourceBeliefId: bottleneck.sourceBeliefId,
+    sourceBeliefLabel: bottleneck.sourceBeliefLabel,
+    sourceManipulationId: bottleneck.sourceManipulationId || 'none',
+    pressureReady: true,
+    physicalBottleneck: true,
+    repeatedOrdinaryActions,
+    triggeredResidentTest: false,
+    panelOnly: false,
+    avatarDirectCommand: false
+  };
+  discovery.ordinaryPlayFeed.push(feed);
+  if (discovery.ordinaryPlayFeed.length > 80) discovery.ordinaryPlayFeed.shift();
+  const shouldTest = bottleneck.forceTest === true || repeatedOrdinaryActions >= 2;
+  if (!shouldTest) {
+    return {
+      recorded: true,
+      feedId: feed.id,
+      bottleneckType: bottleneck.type,
+      repeatedOrdinaryActions,
+      triggeredResidentTest: false,
+      sourceBeliefId: bottleneck.sourceBeliefId,
+      sourceManipulationId: bottleneck.sourceManipulationId || 'none',
+    };
+  }
+  const sequence = discovery.practicalTests.length + 1;
+  const repeatedEvidence = discovery.practicalTests.filter(row => row.sourceBeliefId === bottleneck.sourceBeliefId && row.bottleneckType === bottleneck.type).length + 1;
+  const failure = bottleneck.type === 'handling_failure';
+  const candidateLabel = `${bottleneck.sourceBeliefLabel} ${bottleneck.type.replace(/_/g, ' ')} practice`;
+  const actionRow = {
+    id: `LIV-${String(discovery.livedActions.length + 1).padStart(2, '0')}`,
+    action: discoveryAction,
+    resident: payload.resident,
+    schedule: world.residents[payload.resident] ? world.residents[payload.resident].schedule : 'unknown',
+    resources: { ...world.resources },
+    ordinaryAction: true,
+    sourceNormalActionId: payload.normalActionId,
+    sourceFeedId: feed.id,
+    physicalBottleneck: true,
+  };
+  const bottleneckRow = {
+    id: `BOT-${String(discovery.bottlenecks.length + 1).padStart(2, '0')}`,
+    actionId: actionRow.id,
+    resident: payload.resident,
+    bottleneckType: bottleneck.type,
+    detail: bottleneck.detail,
+    sourceBeliefId: bottleneck.sourceBeliefId,
+    sourceBeliefLabel: bottleneck.sourceBeliefLabel,
+    sourceNormalActionId: payload.normalActionId,
+    sourceManipulationId: bottleneck.sourceManipulationId || 'none',
+  };
+  const proposal = {
+    id: `PDP-${String(discovery.residentProposals.length + 1).padStart(2, '0')}`,
+    resident: payload.resident,
+    sourceBottleneckId: bottleneckRow.id,
+    sourceBeliefId: bottleneck.sourceBeliefId,
+    sourceNormalActionId: payload.normalActionId,
+    materials: bottleneck.materials,
+    question: `try a resident check for ${bottleneck.type.replace(/_/g, ' ')}`,
+    residentGenerated: true,
+    avatarAnswer: false,
+    predeclaredInvention: false,
+  };
+  const test = {
+    id: `PDT-${String(sequence).padStart(2, '0')}`,
+    proposalId: proposal.id,
+    resident: payload.resident,
+    materials: bottleneck.materials,
+    outcome: failure ? `test preserved as warning: ${bottleneck.detail}` : `resident proposed a repeatable check for ${bottleneck.detail}`,
+    failure,
+    preservedFailure: failure,
+    repeatedEvidence,
+    candidateLabel,
+    sourceBeliefId: bottleneck.sourceBeliefId,
+    sourceFeedId: feed.id,
+    sourceNormalActionId: payload.normalActionId,
+    sourceManipulationId: bottleneck.sourceManipulationId || 'none',
+    bottleneckType: bottleneck.type,
+    noCorrectConceptInstalled: true,
+  };
+  discovery.livedActions.push(actionRow);
+  discovery.bottlenecks.push(bottleneckRow);
+  discovery.residentProposals.push(proposal);
+  discovery.practicalTests.push(test);
+  if (failure) discovery.preservedFailures.push(test);
+  discovery.sourceLedger.push({ id: test.id, sourceBeliefId: bottleneck.sourceBeliefId, sourceBottleneckId: bottleneckRow.id, ordinaryAction: discoveryAction, sourceNormalActionId: payload.normalActionId, hiddenLawExposed: false, avatarAnswer: false });
+  updateEmergentPracticeGraphFromTest(test, proposal, bottleneckRow, {
+    sourceBeliefId: bottleneck.sourceBeliefId,
+    sourceBeliefLabel: bottleneck.sourceBeliefLabel,
+  });
+  feed.triggeredResidentTest = true;
+  const autoTest = {
+    id: `PAT-${String(discovery.autoGeneratedTests.length + 1).padStart(2, '0')}`,
+    sourceFeedId: feed.id,
+    sourceNormalActionId: payload.normalActionId,
+    sourceManipulationId: bottleneck.sourceManipulationId || 'none',
+    action: discoveryAction,
+    resident: payload.resident,
+    testId: test.id,
+    proposalId: proposal.id,
+    bottleneckType: bottleneck.type,
+    repeatedOrdinaryActions,
+    sourceBeliefId: bottleneck.sourceBeliefId,
+    noPredeclaredInvention: true,
+    noCorrectConceptInstalled: true,
+  };
+  discovery.autoGeneratedTests.push(autoTest);
+  if (discovery.autoGeneratedTests.length > 40) discovery.autoGeneratedTests.shift();
+  recordRealityConstraint('normal_action_resident_generated_test', {
+    resident: payload.resident,
+    sourceBeliefId: payload.normalActionId,
+    materials: bottleneck.materials,
+    publicObservation: test.outcome,
+    residentInterpretation: candidateLabel,
+    materialTransformation: 'normal player action exposed a bottleneck; resident generated a bounded practical test',
+    timeCost: 1,
+    workCost: failure ? 1 : 2,
+    toolWear: payload.latestManipulation ? Number(payload.latestManipulation.tool_wear || 0) : 0,
+    maintenanceObligation: proposal.id,
+    unintendedConsequence: failure ? 'failed handling can become a safety warning' : 'ordinary handling can become practice evidence',
+    hiddenLawInvolved: 'none in normal view',
+    conservationCheck: true
+  });
+  return {
+    recorded: true,
+    feedId: feed.id,
+    proposalId: proposal.id,
+    testId: test.id,
+    autoTestId: autoTest.id,
+    bottleneckType: bottleneck.type,
+    repeatedOrdinaryActions,
+    triggeredResidentTest: true,
+    sourceBeliefId: bottleneck.sourceBeliefId,
+    sourceManipulationId: bottleneck.sourceManipulationId || 'none',
+  };
+}
+
 function runNormalPlayAction(verb) {
   const rail = ensureNormalPlayActionRail();
   rail.runCount += 1;
@@ -6407,6 +6656,7 @@ function runNormalPlayAction(verb) {
     selected: verb,
   });
   const option = options.find(row => row.verb === verb) || options[0];
+  const normalActionId = `NPAR-${String(rail.actionLedger.length + 1).padStart(2, '0')}`;
   const handlingPracticeLinksBefore = world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.practiceLinks ? world.gamePrototypeMaterialManipulation.practiceLinks.length : 0;
   let receipt = null;
   if (verb === 'look') receipt = runPrimaryPlaySurfaceStep();
@@ -6438,8 +6688,16 @@ function runNormalPlayAction(verb) {
   const latestFollowChain = rail.followChainLedger.length ? rail.followChainLedger[rail.followChainLedger.length - 1] : null;
   const latestFollowRecovery = rail.followRecoveryLedger.length ? rail.followRecoveryLedger[rail.followRecoveryLedger.length - 1] : null;
   const objectChain = latestObjectObjectionChainState();
+  const residentTestResult = recordNormalActionResidentGeneratedTest({
+    normalActionId,
+    verb: option.verb,
+    label: option.label,
+    resident: world.selected,
+    component_id: evidence.component_id,
+    latestManipulation,
+  });
   const row = {
-    action_id: `NPAR-${String(rail.actionLedger.length + 1).padStart(2, '0')}`,
+    action_id: normalActionId,
     verb: option.verb,
     label: option.label,
     underlying_action: option.action,
@@ -6470,6 +6728,15 @@ function runNormalPlayAction(verb) {
     object_chain_resolution_id: objectChain.resolution_id,
     object_chain_recheck_response_id: objectChain.recheck_response_id,
     object_chain_recheck_result: objectChain.recheck_result,
+    ordinary_bottleneck_feed_id: residentTestResult.feedId || 'none',
+    ordinary_bottleneck_test_id: residentTestResult.testId || 'none',
+    ordinary_bottleneck_auto_test_id: residentTestResult.autoTestId || 'none',
+    ordinary_bottleneck_proposal_id: residentTestResult.proposalId || 'none',
+    ordinary_bottleneck_type: residentTestResult.bottleneckType || 'none',
+    ordinary_bottleneck_repetition: residentTestResult.repeatedOrdinaryActions || 0,
+    ordinary_bottleneck_triggered_test: residentTestResult.triggeredResidentTest === true,
+    ordinary_bottleneck_source: residentTestResult.sourceBeliefId || 'none',
+    ordinary_bottleneck_manipulation_id: residentTestResult.sourceManipulationId || 'none',
     material_handling_rows: manipulationLoop && manipulationLoop.actionLedger ? manipulationLoop.actionLedger.length : 0,
     material_handling_practice_links: manipulationLoop && manipulationLoop.practiceLinks ? manipulationLoop.practiceLinks.length : 0,
     save_slot_id: evidence.save_slot_id,
@@ -6530,7 +6797,7 @@ function formatNormalPlayActionRail() {
   const rail = world.gamePrototypeActionRail || ensureNormalPlayActionRail();
   const options = normalPlayOptions();
   const optionRows = options.map(option => `${option.label}: ${option.intent}; recommended=${option.recommended ? 'yes' : 'no'}`);
-  const actionRows = rail.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.label} -> ${row.underlying_action}; proposal=${row.proposal_id}; practice=${row.practice_id}; handling=${row.manipulation_id || 'none'}; handlingPractice=${row.handling_practice_id || 'none'}; follow=${row.follow_chain_id || 'none'}/${row.follow_chain_after || 'none'}; object=${row.object_chain_phase || 'none'}/${row.object_chain_resolution_id || 'none'}; recovery=${row.follow_recovery_id || 'none'}; save=${row.save_slot_id}`);
+  const actionRows = rail.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.label} -> ${row.underlying_action}; proposal=${row.proposal_id}; practice=${row.practice_id}; handling=${row.manipulation_id || 'none'}; handlingPractice=${row.handling_practice_id || 'none'}; residentTest=${row.ordinary_bottleneck_test_id || 'none'}; follow=${row.follow_chain_id || 'none'}/${row.follow_chain_after || 'none'}; object=${row.object_chain_phase || 'none'}/${row.object_chain_resolution_id || 'none'}; recovery=${row.follow_recovery_id || 'none'}; save=${row.save_slot_id}`);
   const followRows = (rail.followChainLedger || []).slice(-5).map(row => `${row.follow_id}: ${row.chosen_label}; outcome=${row.response_outcome || 'none'}; allowed=${row.resident_allowed_follow !== false}; chain=${row.chain_before}->${row.chain_after}; object=${row.object_chain_phase || 'none'}/${row.object_chain_resolution_id || 'none'} result=${row.object_chain_recheck_result || 'none'}; complete=${row.chain_complete_after}; response=${row.resident_response_expression_id || 'none'}/${row.resident_response_marker || 'none'}; proposal=${row.proposal_id}; practice=${row.practice_id}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
   const recoveryRows = (rail.followRecoveryLedger || []).slice(-5).map(row => `${row.recovery_id}: ${row.recovery_outcome}; source=${row.source_follow_id}/${row.source_outcome}; chain=${row.chain_id}; response=${row.resident_response_expression_id || 'none'}/${row.resident_response_marker || 'none'}; advanced=${row.chain_advanced}`);
   return [
@@ -14375,6 +14642,8 @@ function buildPrototypeAcceptanceReceipt() {
   const actionRailFollowExpressionRows = actionRail && actionRail.followChainLedger ? actionRail.followChainLedger.filter(row => row.resident_response_expression_id && row.resident_response_expression_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const actionRailFollowCalibratedRows = actionRail && actionRail.followChainLedger ? actionRail.followChainLedger.filter(row => row.response_outcome && typeof row.resident_allowed_follow === 'boolean' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const normalHandlingPracticeRows = actionRail && actionRail.actionLedger ? actionRail.actionLedger.filter(row => row.verb === 'handling' && row.manipulation_id && row.manipulation_id !== 'none' && row.handling_practice_id && row.handling_practice_id !== 'none' && Number(row.handling_practice_links_after || 0) >= Number(row.handling_practice_links_before || 0) && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
+  const normalActionResidentTestRows = actionRail && actionRail.actionLedger ? actionRail.actionLedger.filter(row => row.ordinary_bottleneck_feed_id && row.ordinary_bottleneck_feed_id !== 'none' && row.ordinary_bottleneck_test_id && row.ordinary_bottleneck_test_id !== 'none' && row.ordinary_bottleneck_triggered_test === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
+  const normalActionAutoTestRows = world.practicalDiscovery && world.practicalDiscovery.autoGeneratedTests ? world.practicalDiscovery.autoGeneratedTests.filter(row => row.sourceNormalActionId && row.sourceNormalActionId !== 'none' && row.testId && row.testId !== 'none' && row.noPredeclaredInvention === true && row.noCorrectConceptInstalled === true).length : 0;
   const actionRailFollowRecoveryRows = actionRail && actionRail.followRecoveryLedger ? actionRail.followRecoveryLedger.length : 0;
   const actionRailFollowRecoveryExpressionRows = actionRail && actionRail.followRecoveryLedger ? actionRail.followRecoveryLedger.filter(row => row.resident_response_expression_id && row.resident_response_expression_id !== 'none' && row.chain_advanced === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const objectGuidedOptionRows = actionRail && actionRail.optionLedger ? actionRail.optionLedger.filter(snapshot => (snapshot.options || []).some(option => option.object_chain_phase && option.object_chain_phase !== 'none' && option.object_chain_next_action && option.object_chain_next_action !== 'none' && option.recommended === true)).length : 0;
@@ -14514,6 +14783,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'first_playable_walkthrough', pass: Boolean(walkthrough && walkthrough.acceptanceReady && walkthroughSteps >= walkthrough.requiredSteps.length && walkthroughLinks >= walkthrough.requiredSteps.length && walkthrough.noDirectCommand === true && walkthrough.noTechTreeUnlock === true && walkthrough.noHiddenLawNormalView === true), evidence: walkthrough ? `${walkthrough.phase}; steps=${walkthroughSteps}, links=${walkthroughLinks}` : 'not run' },
     { id: 'normal_play_action_rail', pass: Boolean(actionRail && actionRail.acceptanceReady && actionRailRows >= actionRail.verbs.length && actionRailOptions > 0 && actionRailFollowRows > 0 && actionRailFollowExpressionRows > 0 && actionRailFollowCalibratedRows > 0 && actionRailFollowRecoveryRows > 0 && actionRailFollowRecoveryExpressionRows > 0 && actionRail.playerLanguageOnly === true && actionRail.noDirectCommand === true && actionRail.noTechTreeUnlock === true), evidence: actionRail ? `actions=${actionRailRows}, optionSnapshots=${actionRailOptions}, follow=${actionRailFollowRows}, followExpression=${actionRailFollowExpressionRows}, calibrated=${actionRailFollowCalibratedRows}, followRecovery=${actionRailFollowRecoveryRows}, followRecoveryExpression=${actionRailFollowRecoveryExpressionRows}, verbs=${actionRail.verbs.join('/')}` : 'not run' },
     { id: 'normal_handling_practice_emergence', pass: Boolean(actionRail && normalHandlingPracticeRows > 0), evidence: actionRail ? `handlingPracticeRows=${normalHandlingPracticeRows}` : 'not run' },
+    { id: 'normal_action_resident_generated_test', pass: Boolean(actionRail && normalActionResidentTestRows > 0 && normalActionAutoTestRows > 0), evidence: actionRail ? `normalActionTests=${normalActionResidentTestRows}, autoTests=${normalActionAutoTestRows}` : 'not run' },
     { id: 'object_objection_guided_next_step', pass: Boolean(actionRail && (objectGuidedOptionRows > 0 || objectGuidedFollowRows > 0)), evidence: actionRail ? `guidedOptions=${objectGuidedOptionRows}, guidedFollow=${objectGuidedFollowRows}` : 'not run' },
     { id: 'object_objection_canvas_cue', pass: Boolean(worldStage && objectChainCanvasCueRows > 0), evidence: worldStage ? `objectChainCues=${objectChainCanvasCueRows}` : 'not run' },
     { id: 'player_mode_interface', pass: Boolean(playerMode && playerMode.acceptanceReady && playerModeSessions > 0 && playerModeVisibleCards >= 6 && playerMode.normalViewOnly === true && playerMode.debugPanelsHidden === true && playerMode.noDirectCommand === true && playerMode.noHiddenLawNormalView === true && playerMode.playerGlossesOnly === true), evidence: playerMode ? `enabled=${playerMode.enabled}, sessions=${playerModeSessions}, visibleCards=${playerModeVisibleCards}` : 'not run' },
@@ -16442,6 +16712,7 @@ function renderPracticalDiscovery() {
   const bottlenecks = discovery.bottlenecks.slice(-6).map(row => `${row.id}: ${row.resident} ${row.bottleneckType} from ${row.sourceBeliefLabel}`);
   const proposals = discovery.residentProposals.slice(-6).map(row => `${row.id}: ${row.resident} tries ${row.materials.join(' + ')} / ${row.question}`);
   const tests = discovery.practicalTests.slice(-6).map(row => `${row.id}: repeated=${row.repeatedEvidence} failure=${row.failure} candidate=${row.candidateLabel}`);
+  const autoTests = (discovery.autoGeneratedTests || []).slice(-6).map(row => `${row.id}: normal=${row.sourceNormalActionId || 'none'} feed=${row.sourceFeedId || 'none'} test=${row.testId || 'none'} bottleneck=${row.bottleneckType || 'none'}`);
   const adoptions = discovery.practiceAdoptions.slice(-4).map(row => `${row.id}: ${row.resident} adopted ${row.label}`);
   detailNode.textContent = [
     `Boundary: ${discovery.boundary}`,
@@ -16455,6 +16726,8 @@ function renderPracticalDiscovery() {
     ...(proposals.length ? proposals : ['none']),
     'Practical tests:',
     ...(tests.length ? tests : ['none']),
+    'Auto-generated tests from normal play:',
+    ...(autoTests.length ? autoTests : ['none']),
     'Practice adoptions:',
     ...(adoptions.length ? adoptions : ['none'])
   ].join('\n');

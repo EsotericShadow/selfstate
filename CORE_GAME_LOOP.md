@@ -756,3 +756,12 @@ The goal is readable continuity: the resident response should reflect what happe
 4. The normal action row records the handling ID, practice ID, relation, local name, status, and before/after practice-link counts.
 5. The primary play surface shows the latest handling-derived practice cue.
 6. The loop remains resident-mediated: no direct command, no hidden-law exposure, no fixed tech unlock.
+
+## Normal-action resident test generation loop
+
+1. The player performs an ordinary action such as Handling, Objects, Move, Support, Wait, or Ask.
+2. The shell records the ordinary bottleneck exposed by that action.
+3. If the bottleneck is strong enough, a resident generates a bounded proposal/test pair.
+4. The normal action row keeps the feed ID, proposal ID, test ID, bottleneck type, source, and linked manipulation where available.
+5. The primary surface and practical-discovery panel show the generated resident test without exposing hidden law.
+6. The test remains local and provisional; it is not a deterministic technology unlock.

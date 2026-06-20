@@ -789,3 +789,14 @@ Evidence required:
 - practice evidence comes from resident-mediated manipulation, not a predeclared tech tree
 - primary surface carries the latest handling-derived practice cue
 - normal view preserves no direct command and no hidden-law exposure
+
+## Added scope gate: Normal-action resident-generated test
+
+The first playable scope now requires ordinary player actions to be able to generate resident-authored tests from lived bottlenecks.
+
+Evidence required:
+- at least one `normal_action_resident_generated_test` acceptance row
+- a normal action rail row with ordinary bottleneck feed, proposal, and test IDs
+- a matching auto-generated test row linked to the normal action
+- no predeclared invention and no correct concept installed
+- normal view preserves resident interpretation and hidden-law separation

@@ -458,3 +458,11 @@
 - Inspect the primary play surface and confirm it shows the latest handling-derived practice cue.
 - Export or inspect acceptance and confirm `normal_handling_practice_emergence` reports at least one handling-practice row.
 - Confirm the practice is not named as a modern technology unlock and remains tied to resident-local handling evidence.
+
+## Normal-action resident-generated test playtests
+
+- Use `Objects` or repeat `Handling` through the normal action rail after a physical component is visible.
+- Confirm the normal action rail row shows `residentTest=...`.
+- Inspect the primary play surface and confirm `Normal resident test` lists the generated test, proposal, bottleneck type, and source.
+- Inspect Practical Discovery and confirm `Auto-generated tests from normal play` includes the normal action, feed, test, and bottleneck IDs.
+- Export or inspect acceptance and confirm `normal_action_resident_generated_test` passes without a predeclared invention or hidden-law leak.

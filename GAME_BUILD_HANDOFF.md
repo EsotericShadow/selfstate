@@ -671,3 +671,11 @@ Normal player actions can now generate resident-authored practical tests from or
 The action rail now shows the generated resident test ID as `residentTest=...`, and the primary play surface shows the latest normal-action resident test. The practical discovery panel lists auto-generated tests from normal play with normal action, feed, test, and bottleneck IDs.
 
 The acceptance gate is `normal_action_resident_generated_test`. It requires a normal action row to own a resident-generated test and a matching auto-test row with no predeclared invention and no correct concept installed.
+
+## Prototype v0 normal-test village-board proposal update
+
+Resident tests generated from normal player actions now post diegetic village-board proposals. When an ordinary bottleneck creates a resident proposal/test pair, the shell also creates a `VBP-NAT-...` board proposal linked to the normal action, ordinary feed row, resident test, auto-test row, source manipulation where available, and resident-local material evidence.
+
+The proposal deck carries these links as normal player-facing cards. The avatar may ask, support, or wait, but cannot force the project or install the correct explanation.
+
+The acceptance gate is `normal_test_reaches_village_board`. It requires at least one normal-action resident test to reach the village board as a no-force, no-hidden-law, no-tech-unlock proposal.

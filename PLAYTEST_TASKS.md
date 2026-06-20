@@ -466,3 +466,11 @@
 - Inspect the primary play surface and confirm `Normal resident test` lists the generated test, proposal, bottleneck type, and source.
 - Inspect Practical Discovery and confirm `Auto-generated tests from normal play` includes the normal action, feed, test, and bottleneck IDs.
 - Export or inspect acceptance and confirm `normal_action_resident_generated_test` passes without a predeclared invention or hidden-law leak.
+
+## Normal-test village-board proposal playtests
+
+- Use a normal action such as `Handling` or `Objects` until it creates a resident test.
+- Confirm the primary play surface shows a board proposal ID for the normal resident test.
+- Open the proposal deck and confirm a `VBP-NAT-...` card appears with the resident-test source.
+- Use Ask, Support, or Wait and confirm the card remains resident-mediated and no-force.
+- Export or inspect acceptance and confirm `normal_test_reaches_village_board` passes without hidden-law exposure or a tech-tree unlock.

@@ -765,3 +765,12 @@ The goal is readable continuity: the resident response should reflect what happe
 4. The normal action row keeps the feed ID, proposal ID, test ID, bottleneck type, source, and linked manipulation where available.
 5. The primary surface and practical-discovery panel show the generated resident test without exposing hidden law.
 6. The test remains local and provisional; it is not a deterministic technology unlock.
+
+## Normal-test village-board proposal loop
+
+1. A normal player action exposes an ordinary bottleneck.
+2. A resident generates a practical test from that bottleneck.
+3. The test posts a `VBP-NAT-...` village-board proposal with links back to the normal action, feed, test, and source manipulation.
+4. The proposal deck shows the proposal as a normal card with Ask, Support, and Wait actions.
+5. Support remains conditional on resident willingness and materials.
+6. No proposal directly unlocks a technology or exposes hidden simulator law.

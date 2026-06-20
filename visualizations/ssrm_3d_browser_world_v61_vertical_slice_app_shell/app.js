@@ -5529,6 +5529,7 @@ function currentPrimaryPlaySurfaceSnapshot() {
     normal_resident_test_action_id: latestNormalResidentTestAction ? latestNormalResidentTestAction.action_id : 'none',
     normal_resident_test_id: latestNormalResidentTestAction ? latestNormalResidentTestAction.ordinary_bottleneck_test_id : 'none',
     normal_resident_test_proposal_id: latestNormalResidentTestAction ? latestNormalResidentTestAction.ordinary_bottleneck_proposal_id : 'none',
+    normal_resident_test_board_proposal_id: latestNormalResidentTestAction ? latestNormalResidentTestAction.ordinary_bottleneck_board_proposal_id || 'none' : 'none',
     normal_resident_test_type: latestNormalResidentTestAction ? latestNormalResidentTestAction.ordinary_bottleneck_type : 'none',
     normal_resident_test_source: latestNormalResidentTestAction ? latestNormalResidentTestAction.ordinary_bottleneck_source : 'none',
     active_component_id: latestComponent ? latestComponent.component_id : 'none',
@@ -5594,7 +5595,7 @@ function currentPrimaryPlaySurfaceSnapshot() {
       latestProposal ? `proposal ${latestProposal.proposal_id}` : 'village board has no current proposal',
       latestPractice ? `practice ${latestPractice.local_name || latestPractice.practice_id}` : 'practice graph not yet visible',
       latestHandlingPracticeLink ? `handling practice ${latestHandlingPracticeLink.practice_id} from ${latestHandlingPracticeLink.manipulation_id} relation=${latestHandlingPracticeLink.relation}` : 'normal handling has not seeded a practice yet',
-      latestNormalResidentTestAction ? `resident test ${latestNormalResidentTestAction.ordinary_bottleneck_test_id} from ${latestNormalResidentTestAction.action_id} bottleneck=${latestNormalResidentTestAction.ordinary_bottleneck_type}` : 'normal play has not generated a resident test yet',
+      latestNormalResidentTestAction ? `resident test ${latestNormalResidentTestAction.ordinary_bottleneck_test_id} from ${latestNormalResidentTestAction.action_id} board=${latestNormalResidentTestAction.ordinary_bottleneck_board_proposal_id || 'none'} bottleneck=${latestNormalResidentTestAction.ordinary_bottleneck_type}` : 'normal play has not generated a resident test yet',
       latestComponent ? `component ${latestComponent.component_id}` : 'physical components not initialized',
       latestCanvasSelection ? `canvas selection ${latestCanvasSelection.selection_id} ${latestCanvasSelection.component_id} ${latestCanvasSelection.resident_term}` : 'canvas object not selected yet',
       latestComponent ? `material state ${latestComponent.component_id} ${latestComponent.material_id} m=${Number(latestComponent.moisture || 0).toFixed(2)} d=${Number(latestComponent.damage || 0).toFixed(2)} s=${Number(latestComponent.stability || 0).toFixed(2)} carried=${latestComponent.carried_by || 'none'}` : 'material state not visible yet',
@@ -5764,7 +5765,7 @@ function formatPrimaryPlaySurface() {
     `Active proposal: ${snapshot.active_proposal_id} / ${snapshot.active_proposal_status}`,
     `Active practice: ${snapshot.active_practice_id} / ${snapshot.active_practice_name}`,
     `Handling practice: ${snapshot.handling_practice_id} / ${snapshot.handling_practice_name} / relation=${snapshot.handling_practice_relation} / status=${snapshot.handling_practice_status}`,
-    `Normal resident test: ${snapshot.normal_resident_test_id} / proposal=${snapshot.normal_resident_test_proposal_id} / type=${snapshot.normal_resident_test_type} / source=${snapshot.normal_resident_test_source}`,
+    `Normal resident test: ${snapshot.normal_resident_test_id} / proposal=${snapshot.normal_resident_test_proposal_id} / board=${snapshot.normal_resident_test_board_proposal_id} / type=${snapshot.normal_resident_test_type} / source=${snapshot.normal_resident_test_source}`,
     `Active component: ${snapshot.active_component_id} / ${snapshot.active_component_gloss}; source=${snapshot.active_component_source || 'none'}; selection=${snapshot.canvas_selection_id || 'none'}`,
     `Latest physics: ${snapshot.latest_physics_id}`,
     `Latest lived physics: ${snapshot.latest_lived_physics_id} / component=${snapshot.latest_lived_physics_component_id} / rows=${snapshot.lived_physics_rows}`,
@@ -6492,6 +6493,88 @@ function normalActionBottleneckFor(payload) {
   return null;
 }
 
+function supportMaterialsForNormalTest(materials) {
+  const mapped = (materials || []).map(material => {
+    if (/fiber|reed/.test(material)) return 'fiber';
+    if (/wood|branch|path/.test(material)) return 'wood';
+    if (/water|wet/.test(material)) return 'water';
+    if (/care|memory|attention|support/.test(material)) return 'care';
+    return 'care';
+  });
+  return Array.from(new Set(mapped.concat(['care']))).slice(0, 3);
+}
+
+function createVillageBoardProposalFromNormalResidentTest(payload) {
+  const board = ensureVillageBoard();
+  const existing = board.projectProposals.find(proposal => proposal.related_resident_test_id === payload.test.id && proposal.related_normal_action_id === payload.normalActionId);
+  if (existing) return existing;
+  const resident = world.residents[payload.resident] || currentResident();
+  const concern = {
+    concern_id: `VBC-NAT-${String(board.concerns.filter(row => /^VBC-NAT/.test(row.concern_id || '')).length + 1).padStart(2, '0')}`,
+    resident: payload.resident,
+    problem: `resident test needs support: ${payload.bottleneck.type.replace(/_/g, ' ')}`,
+    source: payload.test.id,
+    urgency: payload.test.failure ? 'high' : payload.bottleneck.forceTest ? 'medium' : 'low',
+    who_felt_this: payload.resident,
+    related_normal_action_id: payload.normalActionId,
+    related_bottleneck_feed_id: payload.feed.id,
+    related_resident_test_id: payload.test.id,
+    avatar_direct_control: false,
+  };
+  const proposal = {
+    proposal_id: `VBP-NAT-${String(board.projectProposals.filter(row => /^VBP-NAT/.test(row.proposal_id || '')).length + 1).padStart(2, '0')}`,
+    proposer: payload.resident,
+    problem_addressed: `support ${payload.test.candidateLabel}`,
+    materials_needed: supportMaterialsForNormalTest(payload.test.materials),
+    test_materials: payload.test.materials,
+    likely_helpers: Object.keys(world.residents).filter(name => name !== payload.resident).slice(0, 2),
+    resident_willingness: Number(Math.max(0.16, Math.min(0.9, Number(resident.trust || 0.5) + (payload.test.failure ? -0.08 : 0.04))).toFixed(3)),
+    known_objections: payload.test.failure ? ['test already failed once', 'risk of repeating damage'] : ['ordinary work delay', 'materials may be needed elsewhere'],
+    risk: payload.test.failure ? 'high' : payload.bottleneck.type,
+    maintenance_cost: payload.test.failure ? 2 : 1,
+    related_memories: [resident.memory, payload.bottleneck.detail].filter(Boolean),
+    related_practice_nodes: world.emergentPracticeGraph ? world.emergentPracticeGraph.nodes.slice(-2).map(row => row.practice_id) : [],
+    possible_failure_modes: payload.test.failure ? ['resident refuses repeat test', 'material breaks again', 'warning becomes taboo'] : ['materials run short', 'test remains ambiguous', 'weather interrupts'],
+    current_support_level: 0,
+    avatar_can_force: false,
+    status: 'resident proposed',
+    related_normal_action_id: payload.normalActionId,
+    related_bottleneck_feed_id: payload.feed.id,
+    related_resident_test_id: payload.test.id,
+    related_auto_test_id: payload.autoTest.id,
+    related_practical_proposal_id: payload.practicalProposal.id,
+    related_source_manipulation_id: payload.test.sourceManipulationId || 'none',
+    normal_action_test_path: true,
+    hidden_law_normal_view: false,
+    tech_tree_unlock: false,
+  };
+  board.concerns.push(concern);
+  board.projectProposals.push(proposal);
+  mutateResident(payload.resident, {
+    trust: payload.test.failure ? -0.001 : 0.003,
+    progress: 0.004,
+    memory: `${payload.test.id} became board proposal ${proposal.proposal_id}`,
+    historyEvent: 'normal action test proposal',
+    historyDetail: `${payload.normalActionId} -> ${proposal.proposal_id}`
+  });
+  recordRealityConstraint('normal_test_village_board_proposal', {
+    resident: payload.resident,
+    sourceBeliefId: payload.test.id,
+    materials: proposal.materials_needed,
+    publicObservation: proposal.problem_addressed,
+    residentInterpretation: `resident posted ${proposal.proposal_id} after ${payload.normalActionId}`,
+    materialTransformation: 'proposal only; no construction or resource consumption until resident accepts support',
+    timeCost: 1,
+    workCost: 1,
+    toolWear: 0,
+    maintenanceObligation: proposal.proposal_id,
+    unintendedConsequence: payload.test.failure ? 'failed test may become safety custom if unsupported' : 'ordinary work may be delayed by proposal negotiation',
+    hiddenLawInvolved: 'none in normal view',
+    conservationCheck: true
+  });
+  return proposal;
+}
+
 function recordNormalActionResidentGeneratedTest(payload) {
   const discoveryAction = normalPlayDiscoveryActionFor(payload.verb, payload.latestManipulation);
   if (!discoveryAction) return { recorded: false, reason: 'verb not test-bearing' };
@@ -6616,6 +6699,16 @@ function recordNormalActionResidentGeneratedTest(payload) {
   };
   discovery.autoGeneratedTests.push(autoTest);
   if (discovery.autoGeneratedTests.length > 40) discovery.autoGeneratedTests.shift();
+  const boardProposal = createVillageBoardProposalFromNormalResidentTest({
+    normalActionId: payload.normalActionId,
+    resident: payload.resident,
+    bottleneck,
+    feed,
+    practicalProposal: proposal,
+    test,
+    autoTest,
+  });
+  autoTest.boardProposalId = boardProposal.proposal_id;
   recordRealityConstraint('normal_action_resident_generated_test', {
     resident: payload.resident,
     sourceBeliefId: payload.normalActionId,
@@ -6637,6 +6730,7 @@ function recordNormalActionResidentGeneratedTest(payload) {
     proposalId: proposal.id,
     testId: test.id,
     autoTestId: autoTest.id,
+    boardProposalId: boardProposal.proposal_id,
     bottleneckType: bottleneck.type,
     repeatedOrdinaryActions,
     triggeredResidentTest: true,
@@ -6732,6 +6826,7 @@ function runNormalPlayAction(verb) {
     ordinary_bottleneck_test_id: residentTestResult.testId || 'none',
     ordinary_bottleneck_auto_test_id: residentTestResult.autoTestId || 'none',
     ordinary_bottleneck_proposal_id: residentTestResult.proposalId || 'none',
+    ordinary_bottleneck_board_proposal_id: residentTestResult.boardProposalId || 'none',
     ordinary_bottleneck_type: residentTestResult.bottleneckType || 'none',
     ordinary_bottleneck_repetition: residentTestResult.repeatedOrdinaryActions || 0,
     ordinary_bottleneck_triggered_test: residentTestResult.triggeredResidentTest === true,
@@ -7047,7 +7142,9 @@ function proposalDeckCards(seedIfEmpty = false) {
       const bLatest = latestObjectProposalId && b.proposal_id === latestObjectProposalId ? 1 : 0;
       const aObject = a.related_object_response_id && a.related_object_response_id !== 'none' ? 1 : 0;
       const bObject = b.related_object_response_id && b.related_object_response_id !== 'none' ? 1 : 0;
-      return (bLatest - aLatest) || (bObject - aObject);
+      const aNormalTest = a.normal_action_test_path === true ? 1 : 0;
+      const bNormalTest = b.normal_action_test_path === true ? 1 : 0;
+      return (bLatest - aLatest) || (bObject - aObject) || (bNormalTest - aNormalTest);
     })
     .slice(0, 6)
     .map((proposal, index) => ({
@@ -7061,6 +7158,10 @@ function proposalDeckCards(seedIfEmpty = false) {
       object_response_resolution_id: proposal.object_response_resolution_id || 'none',
       object_response_resolution_status: proposal.object_response_resolution_status || 'none',
       object_objection_path: Boolean(proposal.related_object_response_id && proposal.related_object_response_id !== 'none'),
+      source_normal_action_id: proposal.related_normal_action_id || 'none',
+      source_resident_test_id: proposal.related_resident_test_id || 'none',
+      source_auto_test_id: proposal.related_auto_test_id || 'none',
+      normal_action_test_path: proposal.normal_action_test_path === true,
       materials_needed: proposal.materials_needed || [],
       likely_helpers: proposal.likely_helpers || [],
       willingness: Number(proposal.resident_willingness || 0),
@@ -7074,6 +7175,8 @@ function proposalDeckCards(seedIfEmpty = false) {
       player_actions: ['Ask', 'Support', 'Wait'],
       player_gloss: proposal.related_object_response_id && proposal.related_object_response_id !== 'none'
         ? `${proposal.proposer} wants ${proposal.problem_addressed} after ${proposal.related_object_response_id}`
+        : proposal.normal_action_test_path === true
+          ? `${proposal.proposer} wants support for ${proposal.related_resident_test_id} after ${proposal.related_normal_action_id}`
         : `${proposal.proposer} is concerned about ${proposal.problem_addressed}`,
       avatar_can_force: proposal.avatar_can_force === true ? true : false,
       hidden_law_normal_view: false,
@@ -7119,9 +7222,13 @@ function recordProposalDeckAction(playerAction, result) {
     proposer: active ? active.proposer : world.selected,
     problem: active ? active.problem : 'none',
     source_object_response_id: active ? active.source_object_response_id : 'none',
+    source_normal_action_id: active ? active.source_normal_action_id : 'none',
+    source_resident_test_id: active ? active.source_resident_test_id : 'none',
+    source_auto_test_id: active ? active.source_auto_test_id : 'none',
     object_response_kind: active ? active.object_response_kind : 'none',
     object_response_effect: active ? active.object_response_effect : 'none',
     object_objection_path: active ? active.object_objection_path : false,
+    normal_action_test_path: active ? active.normal_action_test_path === true : false,
     result_event: result && result.event ? result.event : 'recorded',
     player_language: true,
     avatar_direct_command: false,
@@ -7206,8 +7313,8 @@ function runPlayerProposalDeckLoop() {
 function formatPlayerProposalDeck() {
   const deck = world.gamePrototypeProposalDeck || ensurePlayerProposalDeck();
   const cards = proposalDeckCards();
-  const cardRows = cards.map(card => `${card.proposal_id}: ${card.player_gloss}; status=${card.status}; support=${card.support_level}; objectSource=${card.source_object_response_id}; materials=${card.materials_needed.join('+') || 'none'}; force=${card.avatar_can_force}`);
-  const actionRows = deck.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.player_action} ${row.proposal_id}; objectSource=${row.source_object_response_id || 'none'}; direct=${row.avatar_direct_command}; hidden-law=${row.hidden_law_normal_view}`);
+  const cardRows = cards.map(card => `${card.proposal_id}: ${card.player_gloss}; status=${card.status}; support=${card.support_level}; objectSource=${card.source_object_response_id}; normalTest=${card.source_resident_test_id}; materials=${card.materials_needed.join('+') || 'none'}; force=${card.avatar_can_force}`);
+  const actionRows = deck.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.player_action} ${row.proposal_id}; objectSource=${row.source_object_response_id || 'none'}; normalTest=${row.source_resident_test_id || 'none'}; direct=${row.avatar_direct_command}; hidden-law=${row.hidden_law_normal_view}`);
   return [
     `Acceptance ready: ${deck.acceptanceReady ? 'yes' : 'no'}`,
     `Cards: ${cards.length} / action rows=${deck.actionLedger.length}`,
@@ -14644,6 +14751,7 @@ function buildPrototypeAcceptanceReceipt() {
   const normalHandlingPracticeRows = actionRail && actionRail.actionLedger ? actionRail.actionLedger.filter(row => row.verb === 'handling' && row.manipulation_id && row.manipulation_id !== 'none' && row.handling_practice_id && row.handling_practice_id !== 'none' && Number(row.handling_practice_links_after || 0) >= Number(row.handling_practice_links_before || 0) && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const normalActionResidentTestRows = actionRail && actionRail.actionLedger ? actionRail.actionLedger.filter(row => row.ordinary_bottleneck_feed_id && row.ordinary_bottleneck_feed_id !== 'none' && row.ordinary_bottleneck_test_id && row.ordinary_bottleneck_test_id !== 'none' && row.ordinary_bottleneck_triggered_test === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const normalActionAutoTestRows = world.practicalDiscovery && world.practicalDiscovery.autoGeneratedTests ? world.practicalDiscovery.autoGeneratedTests.filter(row => row.sourceNormalActionId && row.sourceNormalActionId !== 'none' && row.testId && row.testId !== 'none' && row.noPredeclaredInvention === true && row.noCorrectConceptInstalled === true).length : 0;
+  const normalActionBoardProposalRows = board && board.projectProposals ? board.projectProposals.filter(row => row.normal_action_test_path === true && row.related_normal_action_id && row.related_normal_action_id !== 'none' && row.related_resident_test_id && row.related_resident_test_id !== 'none' && row.avatar_can_force === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
   const actionRailFollowRecoveryRows = actionRail && actionRail.followRecoveryLedger ? actionRail.followRecoveryLedger.length : 0;
   const actionRailFollowRecoveryExpressionRows = actionRail && actionRail.followRecoveryLedger ? actionRail.followRecoveryLedger.filter(row => row.resident_response_expression_id && row.resident_response_expression_id !== 'none' && row.chain_advanced === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const objectGuidedOptionRows = actionRail && actionRail.optionLedger ? actionRail.optionLedger.filter(snapshot => (snapshot.options || []).some(option => option.object_chain_phase && option.object_chain_phase !== 'none' && option.object_chain_next_action && option.object_chain_next_action !== 'none' && option.recommended === true)).length : 0;
@@ -14784,6 +14892,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'normal_play_action_rail', pass: Boolean(actionRail && actionRail.acceptanceReady && actionRailRows >= actionRail.verbs.length && actionRailOptions > 0 && actionRailFollowRows > 0 && actionRailFollowExpressionRows > 0 && actionRailFollowCalibratedRows > 0 && actionRailFollowRecoveryRows > 0 && actionRailFollowRecoveryExpressionRows > 0 && actionRail.playerLanguageOnly === true && actionRail.noDirectCommand === true && actionRail.noTechTreeUnlock === true), evidence: actionRail ? `actions=${actionRailRows}, optionSnapshots=${actionRailOptions}, follow=${actionRailFollowRows}, followExpression=${actionRailFollowExpressionRows}, calibrated=${actionRailFollowCalibratedRows}, followRecovery=${actionRailFollowRecoveryRows}, followRecoveryExpression=${actionRailFollowRecoveryExpressionRows}, verbs=${actionRail.verbs.join('/')}` : 'not run' },
     { id: 'normal_handling_practice_emergence', pass: Boolean(actionRail && normalHandlingPracticeRows > 0), evidence: actionRail ? `handlingPracticeRows=${normalHandlingPracticeRows}` : 'not run' },
     { id: 'normal_action_resident_generated_test', pass: Boolean(actionRail && normalActionResidentTestRows > 0 && normalActionAutoTestRows > 0), evidence: actionRail ? `normalActionTests=${normalActionResidentTestRows}, autoTests=${normalActionAutoTestRows}` : 'not run' },
+    { id: 'normal_test_reaches_village_board', pass: Boolean(board && normalActionBoardProposalRows > 0), evidence: board ? `normalTestBoardProposals=${normalActionBoardProposalRows}` : 'not run' },
     { id: 'object_objection_guided_next_step', pass: Boolean(actionRail && (objectGuidedOptionRows > 0 || objectGuidedFollowRows > 0)), evidence: actionRail ? `guidedOptions=${objectGuidedOptionRows}, guidedFollow=${objectGuidedFollowRows}` : 'not run' },
     { id: 'object_objection_canvas_cue', pass: Boolean(worldStage && objectChainCanvasCueRows > 0), evidence: worldStage ? `objectChainCues=${objectChainCanvasCueRows}` : 'not run' },
     { id: 'player_mode_interface', pass: Boolean(playerMode && playerMode.acceptanceReady && playerModeSessions > 0 && playerModeVisibleCards >= 6 && playerMode.normalViewOnly === true && playerMode.debugPanelsHidden === true && playerMode.noDirectCommand === true && playerMode.noHiddenLawNormalView === true && playerMode.playerGlossesOnly === true), evidence: playerMode ? `enabled=${playerMode.enabled}, sessions=${playerModeSessions}, visibleCards=${playerModeVisibleCards}` : 'not run' },

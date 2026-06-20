@@ -800,3 +800,14 @@ Evidence required:
 - a matching auto-generated test row linked to the normal action
 - no predeclared invention and no correct concept installed
 - normal view preserves resident interpretation and hidden-law separation
+
+## Added scope gate: Normal test reaches village board
+
+The first playable scope now requires resident-generated tests from ordinary play to enter diegetic village management.
+
+Evidence required:
+- at least one `normal_test_reaches_village_board` acceptance row
+- a `VBP-NAT-...` proposal linked to a normal action and resident test
+- proposal card fields include source normal action, resident test, and auto-test IDs
+- avatar can ask/support/wait but cannot force the resident project
+- no hidden-law exposure and no tech-tree unlock

@@ -494,8 +494,9 @@ Required evidence:
 
 - the normal rail exposes a Session action
 - the prototype action grid exposes Play session
-- the session runs Player mode, Look, Move, Talk, Objects, Proposals, Practice, Worksite, Journal, Save, and Return as one sequence
+- the session runs Player mode, Look, Move, Talk, Objects, Handling, Proposals, Practice, Worksite, Journal, Visible Follow, Physics path, Save, and Return as one sequence
 - lived-action physics rows remain visible through Journal, Save, and Return steps
+- visible Physics Follow continuity remains visible through Player Mode, Return Journal, save/return evidence, and body-language expression
 
 ## Prototype v0 milestone: Player Movement Route
 

@@ -543,7 +543,7 @@ This closes a major player-facing continuity gap: the prototype can now show wha
 
 ## Game prototype v0 update: First Playable Session Receipt
 
-The browser shell now includes a `Session` normal rail action, `Play session` prototype action, and `Play session receipt` player-mode card. The session receipt sequences the already-built player surfaces as one coherent playable pass: Player mode, Look, Move, Talk, Objects, resident proposals, lived practice, resident worksite, return journal, Save, and Return. It also records lived-action physics continuity for the session steps.
+The browser shell now includes a `Session` normal rail action, `Play session` prototype action, and `Play session receipt` player-mode card. The session receipt sequences the already-built player surfaces as one coherent playable pass: Player mode, Look, Move, Talk, Objects, Handling, resident proposals, lived practice, resident worksite, return journal, Visible Follow, Physics path, Save, and Return. It also records lived-action physics continuity and visible Physics Follow continuity for the session steps.
 
 ## Game prototype v0 update: Player Movement Route
 
@@ -865,6 +865,8 @@ The session receipt now exposes ambient physics happy-path readiness, normal phy
 The exported acceptance and browser readiness layers now treat first-playable Physics path continuity as part of the `first_playable_session` proof. A passing session must contain a `physics_path` session step, a ready ambient happy-path row, a normal action-rail Physics path row, matching save/return evidence, and the restored body-language expression.
 
 Browser QA readiness now includes a separate `first-playable-session-physics-path` preflight row. This row is inspection-only: it reports whether the current browser-local state already proves the session Physics path chain without running Prototype QA or acceptance export.
+
+The same receipt now requires a `visible_physics_follow` session step. A passing session must show the normal Follow action creating visible physics continuity, the Player Mode card exposing it, the Return Journal preserving it, save/return rows matching it, and a public body-language expression tied to the chain.
 ## Prototype v0 normal-view Physics path proof update
 
 The normal primary play surface now carries the first-playable Physics path proof as player-facing state. The surface snapshot, focus ledger, canvas cue ledger, Player Mode card, and canvas HUD expose the latest `physics_path` session step, happy-path id, proposal/word, save slot, restore slot, and public body-language expression.

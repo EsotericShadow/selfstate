@@ -10093,7 +10093,7 @@ function ensureFirstPlayableSession() {
       receipt: null,
       acceptanceReady: false,
       tenMinuteAcceptanceReady: false,
-      requiredSteps: ['enter_player_mode', 'look', 'move', 'talk', 'objects', 'material_handling', 'proposal_deck', 'practice_loop', 'resident_worksite', 'return_journal', 'physics_path', 'save', 'return', 'integrated_loop'],
+      requiredSteps: ['enter_player_mode', 'look', 'move', 'talk', 'objects', 'material_handling', 'proposal_deck', 'practice_loop', 'resident_worksite', 'return_journal', 'visible_physics_follow', 'physics_path', 'save', 'return', 'integrated_loop'],
       playerFacing: true,
       noDirectCommand: true,
       noHiddenLawNormalView: true,
@@ -10105,7 +10105,7 @@ function ensureFirstPlayableSession() {
   if (!Array.isArray(world.gamePrototypePlaySession.tenMinuteLedger)) world.gamePrototypePlaySession.tenMinuteLedger = [];
   if (!Array.isArray(world.gamePrototypePlaySession.ambientPhysicsHappyPathLedger)) world.gamePrototypePlaySession.ambientPhysicsHappyPathLedger = [];
   if (typeof world.gamePrototypePlaySession.tenMinuteAcceptanceReady !== 'boolean') world.gamePrototypePlaySession.tenMinuteAcceptanceReady = false;
-  const preferredSessionSteps = ['enter_player_mode', 'look', 'move', 'talk', 'objects', 'material_handling', 'proposal_deck', 'practice_loop', 'resident_worksite', 'return_journal', 'physics_path', 'save', 'return', 'integrated_loop'];
+  const preferredSessionSteps = ['enter_player_mode', 'look', 'move', 'talk', 'objects', 'material_handling', 'proposal_deck', 'practice_loop', 'resident_worksite', 'return_journal', 'visible_physics_follow', 'physics_path', 'save', 'return', 'integrated_loop'];
   const existingRequiredSteps = Array.isArray(world.gamePrototypePlaySession.requiredSteps) ? world.gamePrototypePlaySession.requiredSteps : [];
   world.gamePrototypePlaySession.requiredSteps = preferredSessionSteps.concat(existingRequiredSteps.filter(step => !preferredSessionSteps.includes(step)));
   return world.gamePrototypePlaySession;
@@ -10245,6 +10245,11 @@ function firstPlayableSessionSnapshot(label) {
   const latestTenMinuteLoop = playSession && playSession.tenMinuteLedger && playSession.tenMinuteLedger.length ? playSession.tenMinuteLedger[playSession.tenMinuteLedger.length - 1] : null;
   const latestAmbientHappyPath = playSession && playSession.ambientPhysicsHappyPathLedger && playSession.ambientPhysicsHappyPathLedger.length ? playSession.ambientPhysicsHappyPathLedger[playSession.ambientPhysicsHappyPathLedger.length - 1] : null;
   const actionRail = world.gamePrototypeActionRail || null;
+  const visibleFollowContinuity = playerModeVisiblePhysicsFollowContinuitySnapshot(world);
+  const returnJournal = world.gamePrototypeReturnJournal || null;
+  const returnJournalVisibleFollowRows = returnJournal && returnJournal.journalLedger
+    ? returnJournal.journalLedger.filter(row => row.latest_restore_player_mode_visible_physics_follow_matches_saved === true && row.latest_restore_player_mode_visible_physics_follow_id && row.latest_restore_player_mode_visible_physics_follow_id !== 'none').length
+    : 0;
   const normalPhysicsPathRows = actionRail && actionRail.actionLedger
     ? actionRail.actionLedger.filter(row => row && (row.verb === 'physics_path' || row.action === 'physics_path' || row.action_label === 'Physics path'))
     : [];
@@ -10321,6 +10326,17 @@ function firstPlayableSessionSnapshot(label) {
     latest_normal_physics_path_save_slot_id: latestNormalPhysicsPath ? latestNormalPhysicsPath.physics_path_save_slot_id || latestNormalPhysicsPath.save_slot_id || 'none' : 'none',
     latest_normal_physics_path_restore_slot_id: latestNormalPhysicsPath ? latestNormalPhysicsPath.physics_path_restore_slot_id || latestNormalPhysicsPath.restore_slot_id || 'none' : 'none',
     latest_normal_physics_path_body_expression_id: latestNormalPhysicsPath ? latestNormalPhysicsPath.physics_path_body_expression_id || latestNormalPhysicsPath.body_expression_id || 'none' : 'none',
+    visible_physics_follow_ready: visibleFollowContinuity.ready === true,
+    visible_physics_follow_rows: visibleFollowContinuity.follow_rows,
+    visible_physics_follow_id: visibleFollowContinuity.follow_id,
+    visible_physics_follow_action_id: visibleFollowContinuity.action_id,
+    visible_physics_follow_happy_path_id: visibleFollowContinuity.happy_path_id,
+    visible_physics_follow_saved_rows: visibleFollowContinuity.saved_rows,
+    visible_physics_follow_restored_rows: visibleFollowContinuity.restored_rows,
+    visible_physics_follow_body_expression_id: visibleFollowContinuity.body_expression_id,
+    visible_physics_follow_match: visibleFollowContinuity.match === true,
+    visible_physics_follow_fingerprint: visibleFollowContinuity.fingerprint,
+    return_journal_visible_physics_follow_rows: returnJournalVisibleFollowRows,
     movement_rows: world.gamePrototypeMovementRoute ? world.gamePrototypeMovementRoute.routeLedger.length : 0,
     resident_encounter_rows: world.gamePrototypeResidentEncounter ? world.gamePrototypeResidentEncounter.encounterLedger.length : 0,
     worksite_rows: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.watchLedger.length : 0,
@@ -10342,6 +10358,10 @@ function updateFirstPlayableSessionAcceptance() {
     : [];
   const hasReadyNormalPhysicsPath = normalPhysicsPathRows.some(row => row.physics_path_ready === true || row.acceptance_ready === true || row.restore_match === true || row.physics_path_restore_match === true);
   const hasReadyAmbientPhysicsPath = session.ambientPhysicsHappyPathLedger && session.ambientPhysicsHappyPathLedger.some(row => row.acceptance_ready === true);
+  const visibleFollowContinuity = playerModeVisiblePhysicsFollowContinuitySnapshot(world);
+  const returnJournalVisibleFollowRows = world.gamePrototypeReturnJournal && world.gamePrototypeReturnJournal.journalLedger
+    ? world.gamePrototypeReturnJournal.journalLedger.filter(row => row.latest_restore_player_mode_visible_physics_follow_matches_saved === true && row.latest_restore_player_mode_visible_physics_follow_id && row.latest_restore_player_mode_visible_physics_follow_id !== 'none' && row.latest_restore_player_mode_visible_physics_follow_body_expression_id && row.latest_restore_player_mode_visible_physics_follow_body_expression_id !== 'none').length
+    : 0;
   session.acceptanceReady = Boolean(
     session.requiredSteps.every(step => completed.has(step)) &&
     session.stepLedger.length >= session.requiredSteps.length &&
@@ -10354,8 +10374,14 @@ function updateFirstPlayableSessionAcceptance() {
     world.gamePrototypeLivedPractice.physicalCausalityReady === true &&
     world.gamePrototypeLivedPractice.physicsLedger && world.gamePrototypeLivedPractice.physicsLedger.length > 0 &&
     completed.has('physics_path') &&
+    completed.has('visible_physics_follow') &&
     hasReadyAmbientPhysicsPath &&
     hasReadyNormalPhysicsPath &&
+    visibleFollowContinuity.ready === true &&
+    visibleFollowContinuity.follow_id !== 'none' &&
+    visibleFollowContinuity.body_expression_id !== 'none' &&
+    visibleFollowContinuity.fingerprint !== 'none' &&
+    returnJournalVisibleFollowRows > 0 &&
     world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.actionLedger && world.gamePrototypeMaterialManipulation.actionLedger.length > 0 &&
     world.gamePrototypeMaterialManipulation.actionLedger.some(row => row.body_step_id) &&
     world.gamePrototypeWorksite && world.gamePrototypeWorksite.acceptanceReady === true &&
@@ -10391,6 +10417,13 @@ function updateFirstPlayableSessionAcceptance() {
     normal_physics_path_rows: normalPhysicsPathRows.length,
     normal_physics_path_ready_rows: normalPhysicsPathRows.filter(row => row.physics_path_ready === true || row.acceptance_ready === true || row.restore_match === true || row.physics_path_restore_match === true).length,
     latest_normal_physics_path_action_id: normalPhysicsPathRows.length ? normalPhysicsPathRows[normalPhysicsPathRows.length - 1].action_id || normalPhysicsPathRows[normalPhysicsPathRows.length - 1].id || 'none' : 'none',
+    visible_physics_follow_ready: visibleFollowContinuity.ready === true,
+    visible_physics_follow_rows: visibleFollowContinuity.follow_rows,
+    visible_physics_follow_id: visibleFollowContinuity.follow_id,
+    visible_physics_follow_action_id: visibleFollowContinuity.action_id,
+    visible_physics_follow_body_expression_id: visibleFollowContinuity.body_expression_id,
+    visible_physics_follow_fingerprint: visibleFollowContinuity.fingerprint,
+    return_journal_visible_physics_follow_rows: returnJournalVisibleFollowRows,
     boundary: session.boundary,
   };
   return session.acceptanceReady;
@@ -10437,6 +10470,17 @@ function recordFirstPlayableSessionStep(stepId, actionLabel, actionFn) {
     latest_normal_physics_path_save_slot_id: after.latest_normal_physics_path_save_slot_id || 'none',
     latest_normal_physics_path_restore_slot_id: after.latest_normal_physics_path_restore_slot_id || 'none',
     latest_normal_physics_path_body_expression_id: after.latest_normal_physics_path_body_expression_id || 'none',
+    visible_physics_follow_before: before.visible_physics_follow_rows || 0,
+    visible_physics_follow_after: after.visible_physics_follow_rows || 0,
+    visible_physics_follow_ready: after.visible_physics_follow_ready === true,
+    visible_physics_follow_id: after.visible_physics_follow_id || 'none',
+    visible_physics_follow_action_id: after.visible_physics_follow_action_id || 'none',
+    visible_physics_follow_happy_path_id: after.visible_physics_follow_happy_path_id || 'none',
+    visible_physics_follow_saved_rows: after.visible_physics_follow_saved_rows || 0,
+    visible_physics_follow_restored_rows: after.visible_physics_follow_restored_rows || 0,
+    visible_physics_follow_body_expression_id: after.visible_physics_follow_body_expression_id || 'none',
+    visible_physics_follow_match: after.visible_physics_follow_match === true,
+    return_journal_visible_physics_follow_rows: after.return_journal_visible_physics_follow_rows || 0,
     object_resolution_before: before.object_resolution_rows || 0,
     object_resolution_after: after.object_resolution_rows || 0,
     object_recheck_response_before: before.object_recheck_response_rows || 0,
@@ -10780,6 +10824,12 @@ function runFirstPlayableSessionLoop() {
   recordFirstPlayableSessionStep('practice_loop', 'Practice', runLivedPracticeLoop);
   recordFirstPlayableSessionStep('resident_worksite', 'Worksite', runResidentWorksiteLoop);
   recordFirstPlayableSessionStep('return_journal', 'Journal', runReturnJournalLoop);
+  recordFirstPlayableSessionStep('visible_physics_follow', 'Visible Follow', () => {
+    runNormalPlayFollow();
+    runPlayerModeInterfaceLoop();
+    runReturnJournalLoop();
+    return { event: 'visiblePhysicsFollowSessionContinuity' };
+  });
   recordFirstPlayableSessionStep('physics_path', 'Physics path', runNormalPlayPhysicsPath);
   recordFirstPlayableSessionStep('save', 'Save', runNormalPlaySave);
   recordFirstPlayableSessionStep('return', 'Return', runNormalPlayReturn);
@@ -10799,7 +10849,7 @@ function runFirstPlayableSessionLoop() {
 function formatFirstPlayableSession() {
   const session = world.gamePrototypePlaySession || ensureFirstPlayableSession();
   const latest = session.snapshotLedger.length ? session.snapshotLedger[session.snapshotLedger.length - 1].snapshot : firstPlayableSessionSnapshot('current');
-  const steps = session.stepLedger.slice(-8).map(row => `${row.step_id}: ${row.action_label}; event=${row.result_event}; room=${row.after.room}; proposal=${row.after.latest_proposal}; practice=${row.after.latest_practice}; livedPhysics=${row.lived_practice_physics_before || 0}->${row.lived_practice_physics_after || 0}; ambient=${row.ambient_physics_happy_path_before || 0}->${row.ambient_physics_happy_path_after || 0}/${row.latest_ambient_happy_path_id || 'none'}; physicsPath=${row.normal_physics_path_before || 0}->${row.normal_physics_path_after || 0}/${row.latest_normal_physics_path_action_id || 'none'}; handling=${row.material_handling_before || 0}->${row.material_handling_after || 0}/${row.latest_material_handling_id || 'none'} body=${row.latest_resident_body_step_id || 'none'} integrated=${row.integrated_loop_before || 0}->${row.integrated_loop_after || 0}/${row.latest_integrated_loop_id || 'none'}`);
+  const steps = session.stepLedger.slice(-8).map(row => `${row.step_id}: ${row.action_label}; event=${row.result_event}; room=${row.after.room}; proposal=${row.after.latest_proposal}; practice=${row.after.latest_practice}; livedPhysics=${row.lived_practice_physics_before || 0}->${row.lived_practice_physics_after || 0}; ambient=${row.ambient_physics_happy_path_before || 0}->${row.ambient_physics_happy_path_after || 0}/${row.latest_ambient_happy_path_id || 'none'}; physicsPath=${row.normal_physics_path_before || 0}->${row.normal_physics_path_after || 0}/${row.latest_normal_physics_path_action_id || 'none'}; visibleFollow=${row.visible_physics_follow_before || 0}->${row.visible_physics_follow_after || 0}/${row.visible_physics_follow_id || 'none'} body=${row.visible_physics_follow_body_expression_id || 'none'} journal=${row.return_journal_visible_physics_follow_rows || 0}; handling=${row.material_handling_before || 0}->${row.material_handling_after || 0}/${row.latest_material_handling_id || 'none'} body=${row.latest_resident_body_step_id || 'none'} integrated=${row.integrated_loop_before || 0}->${row.integrated_loop_after || 0}/${row.latest_integrated_loop_id || 'none'}`);
   const integratedRows = (session.integratedLoopLedger || []).slice(-4).map(row => `${row.integration_id}: complete=${row.chain_complete}; ordinary=${row.ordinary_feed_id}; test=${row.resident_test_id}; proposal=${row.proposal_id}; practice=${row.practice_id}; physics=${row.physics_id}; handling=${row.material_handling_id}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
   const tenMinuteRows = (session.tenMinuteLedger || []).slice(-4).map(row => `${row.loop_id}: ready=${row.acceptance_ready}; minutes=${row.minutes_simulated}; actions=${row.normal_action_rows_added}; objectChanged=${row.object_change_visible}; persisted=${row.material_state_persisted}; practice=${row.practice_id}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
   const ambientHappyPathRows = (session.ambientPhysicsHappyPathLedger || []).slice(-4).map(row => `${row.happy_path_id}: ready=${row.acceptance_ready}; action=${row.ambient_action_id}; physics=${row.ambient_physics_id}; proposal=${row.proposal_id}; word=${row.resident_word}; save=${row.save_slot_id}; restore=${row.restore_slot_id}; body=${row.body_expression_id}`);
@@ -10815,6 +10865,7 @@ function formatFirstPlayableSession() {
     `Integrated loop: rows=${latest.integrated_loop_rows || 0}; latest=${latest.latest_integrated_loop_id || 'none'}; complete=${latest.integrated_loop_complete ? 'yes' : 'no'}; proposal=${latest.integrated_loop_proposal_id || 'none'}; practice=${latest.integrated_loop_practice_id || 'none'}; physics=${latest.integrated_loop_physics_id || 'none'}; save=${latest.integrated_loop_save_slot_id || 'none'}; restore=${latest.integrated_loop_restore_slot_id || 'none'}`,
     `Ambient physics happy path: rows=${latest.ambient_happy_path_rows || 0}; latest=${latest.latest_ambient_happy_path_id || 'none'}; ready=${latest.latest_ambient_happy_path_ready ? 'yes' : 'no'}; proposal=${latest.latest_ambient_happy_path_proposal_id || 'none'}; word=${latest.latest_ambient_happy_path_word || 'none'}`,
     `Normal Physics path: rows=${latest.normal_physics_path_rows || 0}; latest=${latest.latest_normal_physics_path_action_id || 'none'}; ready=${latest.latest_normal_physics_path_ready ? 'yes' : 'no'}; happyPath=${latest.latest_normal_physics_path_happy_path_id || 'none'}; save=${latest.latest_normal_physics_path_save_slot_id || 'none'}; restore=${latest.latest_normal_physics_path_restore_slot_id || 'none'}; body=${latest.latest_normal_physics_path_body_expression_id || 'none'}`,
+    `Visible Physics Follow: rows=${latest.visible_physics_follow_rows || 0}; latest=${latest.visible_physics_follow_id || 'none'}; ready=${latest.visible_physics_follow_ready ? 'yes' : 'no'}; action=${latest.visible_physics_follow_action_id || 'none'}; happyPath=${latest.visible_physics_follow_happy_path_id || 'none'}; saved/restored=${latest.visible_physics_follow_saved_rows || 0}/${latest.visible_physics_follow_restored_rows || 0}; body=${latest.visible_physics_follow_body_expression_id || 'none'}; journal=${latest.return_journal_visible_physics_follow_rows || 0}`,
     `10-minute loop: ready=${session.tenMinuteAcceptanceReady ? 'yes' : 'no'}; rows=${(session.tenMinuteLedger || []).length}; latest=${latest.latest_ten_minute_loop_id || 'none'}; persisted=${latest.latest_ten_minute_object_persisted ? 'yes' : 'no'}; practice=${latest.latest_ten_minute_practice_id || 'none'}`,
     `Save/return: slots=${latest.save_slots}; saveReturns=${latest.save_returns}; forwardReturns=${latest.forward_returns}`,
     `No direct command: ${session.noDirectCommand ? 'yes' : 'no'} / no hidden law normal view: ${session.noHiddenLawNormalView ? 'yes' : 'no'} / no tech tree: ${session.noTechTreeUnlock ? 'yes' : 'no'}`,
@@ -16097,6 +16148,9 @@ function browserQaReadinessChecks() {
   const sessionAmbientReadyRows = session && session.ambientPhysicsHappyPathLedger
     ? session.ambientPhysicsHappyPathLedger.filter(row => row.acceptance_ready === true && row.player_facing === true && row.used_debug_physics_button === false && row.used_direct_resident_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length
     : 0;
+  const sessionVisiblePhysicsFollowRows = session && session.stepLedger
+    ? session.stepLedger.filter(row => row.step_id === 'visible_physics_follow' && row.visible_physics_follow_ready === true && row.visible_physics_follow_id && row.visible_physics_follow_id !== 'none' && row.visible_physics_follow_body_expression_id && row.visible_physics_follow_body_expression_id !== 'none' && Number(row.return_journal_visible_physics_follow_rows || 0) > 0 && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length
+    : 0;
   const visiblePhysicsFollowRows = actionRail ? normalRailVisiblePhysicsFollowRows(actionRail) : 0;
   const playerModeVisiblePhysicsFollowCard = playerMode && playerMode.visibleSurface && playerMode.visibleSurface.visible_cards.includes('visible physics follow continuity') ? 1 : 0;
   const playerModeVisiblePhysicsFollowReady = Boolean(playerMode && playerMode.visibleSurface && playerMode.visibleSurface.visible_physics_follow_ready === true && playerMode.visibleSurface.visible_physics_follow_id && playerMode.visibleSurface.visible_physics_follow_id !== 'none' && playerMode.visibleSurface.visible_physics_follow_action_id && playerMode.visibleSurface.visible_physics_follow_action_id !== 'none' && playerMode.visibleSurface.visible_physics_follow_body_expression_id && playerMode.visibleSurface.visible_physics_follow_body_expression_id !== 'none');
@@ -16150,6 +16204,12 @@ function browserQaReadinessChecks() {
       id: 'first-playable-session-physics-path',
       pass: Boolean(session && session.acceptanceReady && sessionPhysicsPathRows > 0 && sessionAmbientReadyRows > 0 && physicsPathRows > 0 && physicsPathSaveRows > 0 && physicsPathRestoreRows > 0 && primaryPhysicsPathCueRows > 0 && primaryPhysicsPathSaveRows > 0 && primaryPhysicsPathRestoreRows > 0),
       evidence: `sessionPhysics=${sessionPhysicsPathRows}, ambientReady=${sessionAmbientReadyRows}, normalRail=${physicsPathRows}, saved=${physicsPathSaveRows}, restoredMatches=${physicsPathRestoreRows}, visibleCue=${primaryPhysicsPathCueRows}, visibleSaved=${primaryPhysicsPathSaveRows}, visibleRestored=${primaryPhysicsPathRestoreRows}`,
+      next_action: 'runFirstPlayableSessionLoop',
+    },
+    {
+      id: 'first-playable-session-visible-physics-follow',
+      pass: Boolean(session && session.acceptanceReady && sessionVisiblePhysicsFollowRows > 0 && playerModeVisiblePhysicsFollowReady && playerModeVisiblePhysicsFollowSaveRows > 0 && playerModeVisiblePhysicsFollowRestoreRows > 0 && returnJournalVisiblePhysicsFollowRows > 0),
+      evidence: `sessionVisibleFollow=${sessionVisiblePhysicsFollowRows}, playerMode=${playerModeVisiblePhysicsFollowReady}, saved=${playerModeVisiblePhysicsFollowSaveRows}, restoredMatches=${playerModeVisiblePhysicsFollowRestoreRows}, journal=${returnJournalVisiblePhysicsFollowRows}`,
       next_action: 'runFirstPlayableSessionLoop',
     },
     {
@@ -17500,6 +17560,7 @@ function buildPrototypeAcceptanceReceipt() {
   const playSessionSnapshots = playSession ? playSession.snapshotLedger.length : 0;
   const playSessionIntegratedRows = playSession && playSession.integratedLoopLedger ? playSession.integratedLoopLedger.length : 0;
   const playSessionIntegratedCompleteRows = playSession && playSession.integratedLoopLedger ? playSession.integratedLoopLedger.filter(row => row.chain_complete === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
+  const playSessionVisiblePhysicsFollowRows = playSession && playSession.stepLedger ? playSession.stepLedger.filter(row => row.step_id === 'visible_physics_follow' && row.visible_physics_follow_ready === true && row.visible_physics_follow_id && row.visible_physics_follow_id !== 'none' && row.visible_physics_follow_body_expression_id && row.visible_physics_follow_body_expression_id !== 'none' && Number(row.return_journal_visible_physics_follow_rows || 0) > 0 && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
   const playSessionTenMinuteRows = playSession && playSession.tenMinuteLedger ? playSession.tenMinuteLedger.length : 0;
   const playSessionTenMinuteCompleteRows = playSession && playSession.tenMinuteLedger ? playSession.tenMinuteLedger.filter(row => row.acceptance_ready === true && row.object_change_visible === true && row.material_state_persisted === true && row.practice_id && row.practice_id !== 'none' && row.save_slot_id && row.save_slot_id !== 'none' && row.restore_slot_id && row.restore_slot_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
   const terrainRows = terrain && terrain.terrainLedger ? terrain.terrainLedger.length : 0;
@@ -17677,7 +17738,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'resident_worksite', pass: Boolean(worksite && worksite.acceptanceReady && worksiteRows >= 2 && worksiteSnapshots > 0 && worksite.avatarCannotAssignJobs === true && worksite.noDirectCommand === true && worksite.noHiddenLawNormalView === true && worksite.noResourceSpawning === true), evidence: worksite ? `watchRows=${worksiteRows}, snapshots=${worksiteSnapshots}` : 'not run' },
     { id: 'return_journal', pass: Boolean(returnJournal && returnJournal.acceptanceReady && returnJournalRows > 0 && returnJournalSnapshots >= 3 && returnJournalVisiblePhysicsFollowRows > 0 && returnJournal.forwardReturnVisible === true && returnJournal.saveRestoreVisible === true && returnJournal.noDirectReset === true && returnJournal.noHiddenLawNormalView === true), evidence: returnJournal ? `rows=${returnJournalRows}, snapshots=${returnJournalSnapshots}, visibleFollow=${returnJournalVisiblePhysicsFollowRows}` : 'not run' },
     { id: 'return_journal_visible_physics_follow_continuity', pass: Boolean(returnJournal && returnJournalVisiblePhysicsFollowRows > 0 && returnJournal.forwardReturnVisible === true && returnJournal.saveRestoreVisible === true && returnJournal.noDirectReset === true && returnJournal.noHiddenLawNormalView === true), evidence: returnJournal ? `visibleFollowRows=${returnJournalVisiblePhysicsFollowRows}` : 'not run' },
-    { id: 'first_playable_session', pass: Boolean(playSession && playSession.acceptanceReady && playSessionSteps >= playSession.requiredSteps.length && playSessionSnapshots >= playSession.requiredSteps.length && playSessionIntegratedCompleteRows > 0 && livedPracticePhysicsRows > 0 && normalPlayAmbientHappyPathReadyRows > 0 && actionRailPhysicsPathRows > 0 && normalPlayPhysicsPathSaveRows > 0 && normalPlayPhysicsPathRestoreRows > 0 && playSession.stepLedger.some(row => row.step_id === 'physics_path' && row.latest_ambient_happy_path_ready === true && row.latest_normal_physics_path_ready === true && row.latest_normal_physics_path_save_slot_id && row.latest_normal_physics_path_save_slot_id !== 'none' && row.latest_normal_physics_path_restore_slot_id && row.latest_normal_physics_path_restore_slot_id !== 'none' && row.latest_normal_physics_path_body_expression_id && row.latest_normal_physics_path_body_expression_id !== 'none') && playSession.stepLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false) && playSession.noDirectCommand === true && playSession.noHiddenLawNormalView === true && playSession.noTechTreeUnlock === true), evidence: playSession ? `steps=${playSessionSteps}/${playSession.requiredSteps.length}, snapshots=${playSessionSnapshots}, integrated=${playSessionIntegratedCompleteRows}/${playSessionIntegratedRows}, livedPhysics=${livedPracticePhysicsRows}, ambientHappy=${normalPlayAmbientHappyPathReadyRows}, physicsPath=${actionRailPhysicsPathRows}, saved=${normalPlayPhysicsPathSaveRows}, restored=${normalPlayPhysicsPathRestoreRows}` : 'not run' },
+    { id: 'first_playable_session', pass: Boolean(playSession && playSession.acceptanceReady && playSessionSteps >= playSession.requiredSteps.length && playSessionSnapshots >= playSession.requiredSteps.length && playSessionIntegratedCompleteRows > 0 && livedPracticePhysicsRows > 0 && normalPlayAmbientHappyPathReadyRows > 0 && actionRailPhysicsPathRows > 0 && normalPlayPhysicsPathSaveRows > 0 && normalPlayPhysicsPathRestoreRows > 0 && playerModeVisiblePhysicsFollowReadyRows > 0 && playerModeVisiblePhysicsFollowSaveRows > 0 && playerModeVisiblePhysicsFollowRestoreRows > 0 && returnJournalVisiblePhysicsFollowRows > 0 && playSessionVisiblePhysicsFollowRows > 0 && playSession.stepLedger.some(row => row.step_id === 'physics_path' && row.latest_ambient_happy_path_ready === true && row.latest_normal_physics_path_ready === true && row.latest_normal_physics_path_save_slot_id && row.latest_normal_physics_path_save_slot_id !== 'none' && row.latest_normal_physics_path_restore_slot_id && row.latest_normal_physics_path_restore_slot_id !== 'none' && row.latest_normal_physics_path_body_expression_id && row.latest_normal_physics_path_body_expression_id !== 'none') && playSession.stepLedger.some(row => row.step_id === 'visible_physics_follow' && row.visible_physics_follow_ready === true && row.visible_physics_follow_id && row.visible_physics_follow_id !== 'none' && row.visible_physics_follow_body_expression_id && row.visible_physics_follow_body_expression_id !== 'none' && Number(row.return_journal_visible_physics_follow_rows || 0) > 0) && playSession.stepLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false) && playSession.noDirectCommand === true && playSession.noHiddenLawNormalView === true && playSession.noTechTreeUnlock === true), evidence: playSession ? `steps=${playSessionSteps}/${playSession.requiredSteps.length}, snapshots=${playSessionSnapshots}, integrated=${playSessionIntegratedCompleteRows}/${playSessionIntegratedRows}, livedPhysics=${livedPracticePhysicsRows}, ambientHappy=${normalPlayAmbientHappyPathReadyRows}, physicsPath=${actionRailPhysicsPathRows}, saved=${normalPlayPhysicsPathSaveRows}, restored=${normalPlayPhysicsPathRestoreRows}, visibleFollow=${playSessionVisiblePhysicsFollowRows}, playerModeVisibleFollow=${playerModeVisiblePhysicsFollowReadyRows}, journalVisibleFollow=${returnJournalVisiblePhysicsFollowRows}` : 'not run' },
     { id: 'ten_minute_playable_loop', pass: Boolean(playSession && playSession.tenMinuteAcceptanceReady === true && playSessionTenMinuteRows > 0 && playSessionTenMinuteCompleteRows > 0), evidence: playSession ? `rows=${playSessionTenMinuteRows}, complete=${playSessionTenMinuteCompleteRows}, ready=${playSession.tenMinuteAcceptanceReady === true}` : 'not run' },
     { id: 'terrain_physics_substrate', pass: Boolean(terrain && terrainRows > 0 && terrainFlowRows > 0 && terrainSupportRows > 0 && terrain.terrainLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${terrainRows} terrain step(s), ${terrainFlowRows} flow row(s), ${terrainSupportRows} support row(s)` },
 	    { id: 'tool_work_physics', pass: Boolean(tools && toolUseRows > 0 && toolWearRows > 0 && tools.useLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${toolUseRows} use row(s), ${toolWearRows} wear row(s), ${toolFailureRows} failure row(s), ${toolRepairRows} repair row(s)` },

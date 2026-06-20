@@ -11060,20 +11060,43 @@ function runFirstPlayableStartHere() {
   session.startHereLedger.push(row);
   if (session.startHereLedger.length > 20) session.startHereLedger.shift();
   session.startHereAcceptanceReady = session.startHereLedger.some(entry => entry.acceptance_ready === true);
+  if (row.acceptance_ready === true && row.visible_world_component_bound === true) {
+    savePrototypeSlot('start here visible component');
+    returnPrototypeSlot();
+    const restoredSaves = world.gamePrototypeSaves || null;
+    const latestReturn = restoredSaves && restoredSaves.returnLog && restoredSaves.returnLog.length
+      ? restoredSaves.returnLog[restoredSaves.returnLog.length - 1]
+      : null;
+    const restoredSession = ensureFirstPlayableSession();
+    const restoredRow = restoredSession.startHereLedger.find(entry => entry.start_id === row.start_id) || null;
+    if (restoredRow && latestReturn) {
+      restoredRow.component_save_slot_id = latestReturn.slot_id || 'none';
+      restoredRow.component_restore_selection_id = latestReturn.restored_start_here_component_selection_id || 'none';
+      restoredRow.component_restore_cue_id = latestReturn.restored_start_here_component_visible_cue_id || 'none';
+      restoredRow.component_restore_component_id = latestReturn.restored_start_here_component_id || 'none';
+      restoredRow.component_restore_match = latestReturn.restored_start_here_component_matches_saved === true;
+      restoredRow.component_restore_ready = latestReturn.restored_start_here_component_ready === true;
+      restoredRow.acceptance_ready = Boolean(restoredRow.acceptance_ready === true && restoredRow.component_restore_match === true && restoredRow.component_restore_component_id === restoredRow.physics_path_component_id);
+      restoredSession.startHereAcceptanceReady = restoredSession.startHereLedger.some(entry => entry.acceptance_ready === true);
+    }
+  }
+  const finalSession = ensureFirstPlayableSession();
+  const finalRow = finalSession.startHereLedger.find(entry => entry.start_id === row.start_id) || row;
   recordPrototypeMilestone('first-playable-start-here', {
-    ready: session.startHereAcceptanceReady,
-    start: row.start_id,
-    loop: row.ten_minute_loop_id,
-    physicsPath: row.physics_path_action_id,
-    physicsHappyPath: row.physics_path_happy_path_id,
-    componentSelection: row.component_selection_id,
-    visibleCue: row.visible_world_cue_id,
-    objectMemory: row.object_memory_behavior_id,
-    guidedAction: row.object_memory_guided_action_id,
+    ready: finalSession.startHereAcceptanceReady,
+    start: finalRow.start_id,
+    loop: finalRow.ten_minute_loop_id,
+    physicsPath: finalRow.physics_path_action_id,
+    physicsHappyPath: finalRow.physics_path_happy_path_id,
+    componentSelection: finalRow.component_selection_id,
+    visibleCue: finalRow.visible_world_cue_id,
+    componentRestoreMatch: finalRow.component_restore_match === true,
+    objectMemory: finalRow.object_memory_behavior_id,
+    guidedAction: finalRow.object_memory_guided_action_id,
   });
   if (world.gamePrototypePlayerMode) updatePlayerModeInterfaceAcceptance();
   updateFirstPlayableSessionAcceptance();
-  return log('runFirstPlayableStartHere', { ready: session.startHereAcceptanceReady, startId: row.start_id, loopId: row.ten_minute_loop_id, physicsPath: row.physics_path_action_id, physicsHappyPath: row.physics_path_happy_path_id, componentSelection: row.component_selection_id, visibleCue: row.visible_world_cue_id, normalActions: row.normal_action_rows_added, objectMemory: row.object_memory_behavior_id, guidedAction: row.object_memory_guided_action_id, event: loopReceipt ? loopReceipt.event || loopReceipt.type || 'ten_minute_loop' : 'none' });
+  return log('runFirstPlayableStartHere', { ready: finalSession.startHereAcceptanceReady, startId: finalRow.start_id, loopId: finalRow.ten_minute_loop_id, physicsPath: finalRow.physics_path_action_id, physicsHappyPath: finalRow.physics_path_happy_path_id, componentSelection: finalRow.component_selection_id, visibleCue: finalRow.visible_world_cue_id, componentRestoreMatch: finalRow.component_restore_match === true, normalActions: finalRow.normal_action_rows_added, objectMemory: finalRow.object_memory_behavior_id, guidedAction: finalRow.object_memory_guided_action_id, event: loopReceipt ? loopReceipt.event || loopReceipt.type || 'ten_minute_loop' : 'none' });
 }
 
 function runFirstPlayableAmbientPhysicsHappyPath() {
@@ -11268,7 +11291,7 @@ function formatFirstPlayableSession() {
   const steps = session.stepLedger.slice(-8).map(row => `${row.step_id}: ${row.action_label}; event=${row.result_event}; room=${row.after.room}; proposal=${row.after.latest_proposal}; practice=${row.after.latest_practice}; livedPhysics=${row.lived_practice_physics_before || 0}->${row.lived_practice_physics_after || 0}; worldPressure=${row.world_pressure_day_before || 0}->${row.world_pressure_day_after || 0}/${row.latest_world_pressure_day_id || 'none'} full=${row.world_pressure_full_physics_ready ? 'yes' : 'no'} saved/restored=${row.world_pressure_saved_rows || 0}/${row.world_pressure_restored_rows || 0} match=${row.latest_world_pressure_restore_match ? 'yes' : 'no'} terrain=${row.latest_world_pressure_terrain_step_id || 'none'} water=${row.latest_world_pressure_water_step_id || 'none'}; ambient=${row.ambient_physics_happy_path_before || 0}->${row.ambient_physics_happy_path_after || 0}/${row.latest_ambient_happy_path_id || 'none'}; physicsPath=${row.normal_physics_path_before || 0}->${row.normal_physics_path_after || 0}/${row.latest_normal_physics_path_action_id || 'none'}; visibleFollow=${row.visible_physics_follow_before || 0}->${row.visible_physics_follow_after || 0}/${row.visible_physics_follow_id || 'none'} body=${row.visible_physics_follow_body_expression_id || 'none'} journal=${row.return_journal_visible_physics_follow_rows || 0}; handling=${row.material_handling_before || 0}->${row.material_handling_after || 0}/${row.latest_material_handling_id || 'none'} body=${row.latest_resident_body_step_id || 'none'} integrated=${row.integrated_loop_before || 0}->${row.integrated_loop_after || 0}/${row.latest_integrated_loop_id || 'none'}`);
   const integratedRows = (session.integratedLoopLedger || []).slice(-4).map(row => `${row.integration_id}: complete=${row.chain_complete}; ordinary=${row.ordinary_feed_id}; test=${row.resident_test_id}; proposal=${row.proposal_id}; practice=${row.practice_id}; physics=${row.physics_id}; handling=${row.material_handling_id}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
   const tenMinuteRows = (session.tenMinuteLedger || []).slice(-4).map(row => `${row.loop_id}: ready=${row.acceptance_ready}; minutes=${row.minutes_simulated}; actions=${row.normal_action_rows_added}; objectChanged=${row.object_change_visible}; persisted=${row.material_state_persisted}; practice=${row.practice_id}; objectMemory=${row.object_cue_return_behavior_id || 'none'} -> ${row.object_cue_return_guided_action_id || 'none'}/${row.object_cue_return_recommended_verb || 'none'}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
-  const startHereRows = (session.startHereLedger || []).slice(-4).map(row => `${row.start_id}: ready=${row.acceptance_ready}; loop=${row.ten_minute_loop_id}; physics=${row.physics_path_action_id || 'none'}/${row.physics_path_happy_path_id || 'none'} ready=${row.physics_path_ready ? 'yes' : 'no'} word=${row.physics_path_resident_word || 'none'}; selected=${row.component_selection_id || 'none'} cue=${row.visible_world_cue_id || 'none'} bound=${row.visible_world_component_bound ? 'yes' : 'no'}; actions=${row.normal_action_rows_added}; objectMemory=${row.object_memory_behavior_id || 'none'} -> ${row.object_memory_guided_action_id || 'none'}; practice=${row.practice_id}; playerMode=${row.player_mode_enabled ? 'yes' : 'no'}; debugPanel=${row.debug_panel_required ? 'yes' : 'no'}`);
+  const startHereRows = (session.startHereLedger || []).slice(-4).map(row => `${row.start_id}: ready=${row.acceptance_ready}; loop=${row.ten_minute_loop_id}; physics=${row.physics_path_action_id || 'none'}/${row.physics_path_happy_path_id || 'none'} ready=${row.physics_path_ready ? 'yes' : 'no'} word=${row.physics_path_resident_word || 'none'}; selected=${row.component_selection_id || 'none'} cue=${row.visible_world_cue_id || 'none'} bound=${row.visible_world_component_bound ? 'yes' : 'no'} restore=${row.component_save_slot_id || 'none'}:${row.component_restore_match ? 'match' : 'no-match'}; actions=${row.normal_action_rows_added}; objectMemory=${row.object_memory_behavior_id || 'none'} -> ${row.object_memory_guided_action_id || 'none'}; practice=${row.practice_id}; playerMode=${row.player_mode_enabled ? 'yes' : 'no'}; debugPanel=${row.debug_panel_required ? 'yes' : 'no'}`);
   const ambientHappyPathRows = (session.ambientPhysicsHappyPathLedger || []).slice(-4).map(row => `${row.happy_path_id}: ready=${row.acceptance_ready}; action=${row.ambient_action_id}; physics=${row.ambient_physics_id}; proposal=${row.proposal_id}; word=${row.resident_word}; save=${row.save_slot_id}; restore=${row.restore_slot_id}; body=${row.body_expression_id}`);
   return [
     `Acceptance ready: ${session.acceptanceReady ? 'yes' : 'no'}`,
@@ -17572,6 +17595,76 @@ function primarySurfacePhysicsPathVisibilitySnapshot(sourceWorld = world) {
   };
 }
 
+function startHereComponentContinuitySnapshot(sourceWorld = world) {
+  const session = sourceWorld.gamePrototypePlaySession || null;
+  const startRows = session && Array.isArray(session.startHereLedger) ? session.startHereLedger : [];
+  const latestStart = startRows.slice().reverse().find(row => row.component_selection_bound === true && row.visible_world_component_bound === true) || (startRows.length ? startRows[startRows.length - 1] : null);
+  const selectionState = sourceWorld.gamePrototypeCanvasSelection || null;
+  const selectionRows = selectionState && Array.isArray(selectionState.selectionLedger) ? selectionState.selectionLedger : [];
+  const selection = latestStart
+    ? selectionRows.find(row => row.selection_id === latestStart.component_selection_id) || null
+    : null;
+  const stage = sourceWorld.gamePrototypeWorldStage || null;
+  const cueRows = stage && Array.isArray(stage.canvasCueLedger) ? stage.canvasCueLedger : [];
+  const cue = latestStart
+    ? cueRows.find(row => row.cue_id === latestStart.visible_world_cue_id) || null
+    : null;
+  const snapshot = stage && stage.latestSnapshot ? stage.latestSnapshot : null;
+  const materialWorld = sourceWorld.gamePrototype3DWorld || null;
+  const component = latestStart && materialWorld && Array.isArray(materialWorld.components)
+    ? materialWorld.components.find(row => row.component_id === latestStart.physics_path_component_id) || null
+    : null;
+  const continuity = {
+    rows: startRows.length,
+    start_id: latestStart ? latestStart.start_id || 'none' : 'none',
+    component_id: latestStart ? latestStart.physics_path_component_id || 'none' : 'none',
+    selection_id: latestStart ? latestStart.component_selection_id || 'none' : 'none',
+    visible_cue_id: latestStart ? latestStart.visible_world_cue_id || 'none' : 'none',
+    selection_source: selection ? selection.source || 'none' : 'none',
+    selected_component_id: selection ? selection.component_id || 'none' : 'none',
+    surface_component_id: snapshot ? snapshot.active_component_id || 'none' : 'none',
+    surface_component_source: snapshot ? snapshot.active_component_source || 'none' : 'none',
+    cue_component_id: cue ? cue.component_id || 'none' : 'none',
+    resident_word: latestStart ? latestStart.physics_path_resident_word || 'none' : 'none',
+    player_gloss: latestStart ? latestStart.physics_path_player_gloss || 'none' : 'none',
+    body_expression_id: latestStart ? latestStart.physics_path_body_expression_id || 'none' : 'none',
+    physics_path_action_id: latestStart ? latestStart.physics_path_action_id || 'none' : 'none',
+    physics_path_happy_path_id: latestStart ? latestStart.physics_path_happy_path_id || 'none' : 'none',
+    component_selection_bound: latestStart ? latestStart.component_selection_bound === true : false,
+    visible_world_component_bound: latestStart ? latestStart.visible_world_component_bound === true : false,
+    inspect_only: selection ? selection.inspect_only === true : false,
+    hidden_law_normal_view: selection ? selection.hidden_law_normal_view === true : false,
+    avatar_direct_command: selection ? selection.avatar_direct_command === true : false,
+    component_state: component ? {
+      component_id: component.component_id,
+      material_id: component.material_id || 'none',
+      moisture: Number(component.moisture || 0),
+      damage: Number(component.damage || 0),
+      stability: Number(component.stability || 0),
+      carried_by: component.carried_by || 'none',
+    } : null,
+  };
+  const ready = Boolean(
+    continuity.start_id !== 'none' &&
+    continuity.component_id !== 'none' &&
+    continuity.selection_id !== 'none' &&
+    continuity.visible_cue_id !== 'none' &&
+    continuity.selected_component_id === continuity.component_id &&
+    continuity.surface_component_id === continuity.component_id &&
+    continuity.cue_component_id === continuity.component_id &&
+    continuity.component_selection_bound === true &&
+    continuity.visible_world_component_bound === true &&
+    continuity.inspect_only === true &&
+    continuity.hidden_law_normal_view === false &&
+    continuity.avatar_direct_command === false
+  );
+  return {
+    ...continuity,
+    ready,
+    fingerprint: ready ? JSON.stringify(continuity) : 'none',
+  };
+}
+
 function objectInteractionCueContinuitySnapshot(sourceWorld = world) {
   const interaction = sourceWorld.gamePrototypeObjectInteraction || null;
   const cueRows = interaction && Array.isArray(interaction.visualCueLedger) ? interaction.visualCueLedger : [];
@@ -17621,6 +17714,7 @@ function savePrototypeSlot(label = 'manual prototype save') {
   const primaryPhysicsPathVisibility = primarySurfacePhysicsPathVisibilitySnapshot(world);
   const playerModeVisiblePhysicsFollowContinuity = playerModeVisiblePhysicsFollowContinuitySnapshot(world);
   const objectCueContinuity = objectInteractionCueContinuitySnapshot(world);
+  const startHereComponentContinuity = startHereComponentContinuitySnapshot(world);
   const slotNumber = saves.slots.length + 1;
   const slot = {
     slot_id: `GPS-${String(slotNumber).padStart(2, '0')}`,
@@ -17698,6 +17792,16 @@ function savePrototypeSlot(label = 'manual prototype save') {
     primary_surface_physics_path_restore_slot_id: primaryPhysicsPathVisibility.restore_slot_id,
     primary_surface_physics_path_body_expression_id: primaryPhysicsPathVisibility.body_expression_id,
     primary_surface_physics_path_fingerprint: primaryPhysicsPathVisibility.fingerprint,
+    start_here_component_rows: startHereComponentContinuity.rows,
+    start_here_component_ready: startHereComponentContinuity.ready,
+    start_here_component_start_id: startHereComponentContinuity.start_id,
+    start_here_component_id: startHereComponentContinuity.component_id,
+    start_here_component_selection_id: startHereComponentContinuity.selection_id,
+    start_here_component_visible_cue_id: startHereComponentContinuity.visible_cue_id,
+    start_here_component_resident_word: startHereComponentContinuity.resident_word,
+    start_here_component_player_gloss: startHereComponentContinuity.player_gloss,
+    start_here_component_body_expression_id: startHereComponentContinuity.body_expression_id,
+    start_here_component_fingerprint: startHereComponentContinuity.fingerprint,
     first_playable_walkthrough_ready: world.gamePrototypeWalkthrough ? world.gamePrototypeWalkthrough.acceptanceReady === true : false,
     first_playable_walkthrough_steps: world.gamePrototypeWalkthrough ? world.gamePrototypeWalkthrough.stepLedger.length : 0,
     first_playable_walkthrough_links: world.gamePrototypeWalkthrough ? world.gamePrototypeWalkthrough.evidenceLinks.length : 0,
@@ -17978,6 +18082,16 @@ function returnPrototypeSlot() {
     saved_primary_surface_physics_path_restore_slot_id: slot.primary_surface_physics_path_restore_slot_id || 'none',
     saved_primary_surface_physics_path_body_expression_id: slot.primary_surface_physics_path_body_expression_id || 'none',
     saved_primary_surface_physics_path_fingerprint: slot.primary_surface_physics_path_fingerprint || 'none',
+    saved_start_here_component_rows: slot.start_here_component_rows || 0,
+    saved_start_here_component_ready: slot.start_here_component_ready === true,
+    saved_start_here_component_start_id: slot.start_here_component_start_id || 'none',
+    saved_start_here_component_id: slot.start_here_component_id || 'none',
+    saved_start_here_component_selection_id: slot.start_here_component_selection_id || 'none',
+    saved_start_here_component_visible_cue_id: slot.start_here_component_visible_cue_id || 'none',
+    saved_start_here_component_resident_word: slot.start_here_component_resident_word || 'none',
+    saved_start_here_component_player_gloss: slot.start_here_component_player_gloss || 'none',
+    saved_start_here_component_body_expression_id: slot.start_here_component_body_expression_id || 'none',
+    saved_start_here_component_fingerprint: slot.start_here_component_fingerprint || 'none',
     saved_player_mode_visible_physics_follow_cards: slot.player_mode_visible_physics_follow_cards || 0,
     saved_player_mode_visible_physics_follow_ready: slot.player_mode_visible_physics_follow_ready === true,
     saved_player_mode_visible_physics_follow_rows: slot.player_mode_visible_physics_follow_rows || 0,
@@ -18202,6 +18316,18 @@ function returnPrototypeSlot() {
   returnEntry.restored_primary_surface_physics_path_body_expression_id = restoredPrimaryPhysicsPathVisibility.body_expression_id;
   returnEntry.restored_primary_surface_physics_path_fingerprint = restoredPrimaryPhysicsPathVisibility.fingerprint;
   returnEntry.restored_primary_surface_physics_path_matches_saved = Boolean(slot.primary_surface_physics_path_fingerprint && slot.primary_surface_physics_path_fingerprint !== 'none' && slot.primary_surface_physics_path_fingerprint === restoredPrimaryPhysicsPathVisibility.fingerprint);
+  const restoredStartHereComponent = startHereComponentContinuitySnapshot(world);
+  returnEntry.restored_start_here_component_rows = restoredStartHereComponent.rows;
+  returnEntry.restored_start_here_component_ready = restoredStartHereComponent.ready === true;
+  returnEntry.restored_start_here_component_start_id = restoredStartHereComponent.start_id;
+  returnEntry.restored_start_here_component_id = restoredStartHereComponent.component_id;
+  returnEntry.restored_start_here_component_selection_id = restoredStartHereComponent.selection_id;
+  returnEntry.restored_start_here_component_visible_cue_id = restoredStartHereComponent.visible_cue_id;
+  returnEntry.restored_start_here_component_resident_word = restoredStartHereComponent.resident_word;
+  returnEntry.restored_start_here_component_player_gloss = restoredStartHereComponent.player_gloss;
+  returnEntry.restored_start_here_component_body_expression_id = restoredStartHereComponent.body_expression_id;
+  returnEntry.restored_start_here_component_fingerprint = restoredStartHereComponent.fingerprint;
+  returnEntry.restored_start_here_component_matches_saved = Boolean(slot.start_here_component_fingerprint && slot.start_here_component_fingerprint !== 'none' && slot.start_here_component_fingerprint === restoredStartHereComponent.fingerprint);
   const restoredPlayerModeVisiblePhysicsFollow = playerModeVisiblePhysicsFollowContinuitySnapshot(world);
   returnEntry.restored_player_mode_visible_physics_follow_cards = restoredPlayerModeVisiblePhysicsFollow.card_rows;
   returnEntry.restored_player_mode_visible_physics_follow_ready = restoredPlayerModeVisiblePhysicsFollow.ready === true;
@@ -18446,6 +18572,8 @@ function buildPrototypeAcceptanceReceipt() {
   const canvasSelectionCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.canvas_selection_id && row.canvas_selection_id !== 'none' && (row.cues || []).some(cue => /canvas selection/.test(cue))).length : 0;
   const startHereSelectedRows = canvasSelection && playSession && playSession.startHereLedger ? canvasSelection.selectionLedger.filter(selection => selection.source === 'start_here_receipt' && playSession.startHereLedger.some(start => start.component_selection_id === selection.selection_id && start.physics_path_component_id === selection.component_id && start.component_selection_bound === true)).length : 0;
   const startHereVisibleCueRows = worldStage && playSession && playSession.startHereLedger ? worldStage.canvasCueLedger.filter(cue => cue.canvas_selection_id && cue.canvas_selection_id !== 'none' && playSession.startHereLedger.some(start => start.visible_world_cue_id === cue.cue_id && start.visible_world_component_id === start.physics_path_component_id && start.visible_world_component_bound === true && cue.component_id === start.physics_path_component_id)).length : 0;
+  const startHereComponentSaveRows = saves && saves.slots ? saves.slots.filter(slot => slot.start_here_component_ready === true && slot.start_here_component_id && slot.start_here_component_id !== 'none' && slot.start_here_component_selection_id && slot.start_here_component_selection_id !== 'none' && slot.start_here_component_visible_cue_id && slot.start_here_component_visible_cue_id !== 'none' && slot.start_here_component_fingerprint && slot.start_here_component_fingerprint !== 'none').length : 0;
+  const startHereComponentRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_start_here_component_matches_saved === true && row.restored_start_here_component_id && row.restored_start_here_component_id !== 'none' && row.restored_start_here_component_selection_id && row.restored_start_here_component_selection_id !== 'none' && row.restored_start_here_component_visible_cue_id && row.restored_start_here_component_visible_cue_id !== 'none').length : 0;
   const worksiteRows = worksite ? worksite.watchLedger.length : 0;
   const worksiteSnapshots = worksite ? worksite.snapshotLedger.length : 0;
   const returnJournalRows = returnJournal ? returnJournal.journalLedger.length : 0;
@@ -18462,7 +18590,7 @@ function buildPrototypeAcceptanceReceipt() {
   const playSessionTenMinuteRows = playSession && playSession.tenMinuteLedger ? playSession.tenMinuteLedger.length : 0;
   const playSessionTenMinuteCompleteRows = playSession && playSession.tenMinuteLedger ? playSession.tenMinuteLedger.filter(row => row.acceptance_ready === true && row.object_change_visible === true && row.material_state_persisted === true && row.practice_id && row.practice_id !== 'none' && row.save_slot_id && row.save_slot_id !== 'none' && row.restore_slot_id && row.restore_slot_id !== 'none' && row.object_cue_return_behavior_id && row.object_cue_return_behavior_id !== 'none' && row.object_cue_return_guided_action_id && row.object_cue_return_guided_action_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
   const playSessionStartHereRows = playSession && playSession.startHereLedger ? playSession.startHereLedger.length : 0;
-  const playSessionStartHereCompleteRows = playSession && playSession.startHereLedger ? playSession.startHereLedger.filter(row => row.acceptance_ready === true && row.ten_minute_ready === true && row.normal_action_rows_added >= 6 && Number(row.physics_path_rows_added || 0) > 0 && row.physics_path_action_id && row.physics_path_action_id !== 'none' && row.physics_path_happy_path_id && row.physics_path_happy_path_id !== 'none' && row.physics_path_ready === true && row.physics_path_save_slot_id && row.physics_path_save_slot_id !== 'none' && row.physics_path_restore_slot_id && row.physics_path_restore_slot_id !== 'none' && row.physics_path_restore_match === true && row.physics_path_body_expression_id && row.physics_path_body_expression_id !== 'none' && row.physics_path_hidden_law_normal_view === false && row.physics_path_avatar_direct_command === false && row.object_change_visible === true && row.material_state_persisted === true && row.practice_id && row.practice_id !== 'none' && row.save_slot_id && row.save_slot_id !== 'none' && row.restore_slot_id && row.restore_slot_id !== 'none' && row.object_memory_behavior_id && row.object_memory_behavior_id !== 'none' && row.object_memory_guided_action_id && row.object_memory_guided_action_id !== 'none' && row.player_mode_enabled === true && row.player_facing === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false && row.debug_panel_required === false).length : 0;
+  const playSessionStartHereCompleteRows = playSession && playSession.startHereLedger ? playSession.startHereLedger.filter(row => row.acceptance_ready === true && row.ten_minute_ready === true && row.normal_action_rows_added >= 6 && Number(row.physics_path_rows_added || 0) > 0 && row.physics_path_action_id && row.physics_path_action_id !== 'none' && row.physics_path_happy_path_id && row.physics_path_happy_path_id !== 'none' && row.physics_path_ready === true && row.physics_path_save_slot_id && row.physics_path_save_slot_id !== 'none' && row.physics_path_restore_slot_id && row.physics_path_restore_slot_id !== 'none' && row.physics_path_restore_match === true && row.physics_path_body_expression_id && row.physics_path_body_expression_id !== 'none' && row.physics_path_hidden_law_normal_view === false && row.physics_path_avatar_direct_command === false && row.component_selection_id && row.component_selection_id !== 'none' && row.visible_world_cue_id && row.visible_world_cue_id !== 'none' && row.component_selection_bound === true && row.visible_world_component_bound === true && row.component_save_slot_id && row.component_save_slot_id !== 'none' && row.component_restore_match === true && row.object_change_visible === true && row.material_state_persisted === true && row.practice_id && row.practice_id !== 'none' && row.save_slot_id && row.save_slot_id !== 'none' && row.restore_slot_id && row.restore_slot_id !== 'none' && row.object_memory_behavior_id && row.object_memory_behavior_id !== 'none' && row.object_memory_guided_action_id && row.object_memory_guided_action_id !== 'none' && row.player_mode_enabled === true && row.player_facing === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false && row.debug_panel_required === false).length : 0;
   const terrainRows = terrain && terrain.terrainLedger ? terrain.terrainLedger.length : 0;
   const terrainFlowRows = terrain && terrain.flowLedger ? terrain.flowLedger.length : 0;
   const terrainSupportRows = terrain && terrain.supportLedger ? terrain.supportLedger.length : 0;
@@ -18647,6 +18775,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'normal_player_hud', pass: Boolean(normalPlayerHudNode && normalPlayerHud.next_action && normalPlayerHud.selected_resident && normalPlayerHud.boundary && normalPlayerHud.boundary.includes('no command')), evidence: `next=${normalPlayerHud.next_action}, resident=${normalPlayerHud.selected_resident}, proposal=${normalPlayerHud.latest_proposal}, continuity=${normalPlayerHud.save_return}` },
     { id: 'start_here_player_visible_receipt', pass: Boolean(normalPlayerHudNode && normalPlaySummaryNode && normalPlayerHud.start_here_ready === true && normalPlayerHud.start_here_receipt !== 'none' && normalPlayerHud.start_here_physics_path !== 'none' && normalPlayerHud.start_here_physics_happy_path !== 'none' && normalPlayerHud.start_here_resident_word !== 'none' && normalPlayerHud.start_here_player_gloss !== 'none' && normalPlayerHud.start_here_body_expression !== 'none' && normalPlayerHud.start_here_object_memory !== 'none'), evidence: `receipt=${normalPlayerHud.start_here_receipt}, physics=${normalPlayerHud.start_here_physics_path}/${normalPlayerHud.start_here_physics_happy_path}, word=${normalPlayerHud.start_here_resident_word}, body=${normalPlayerHud.start_here_body_expression}, objectMemory=${normalPlayerHud.start_here_object_memory}` },
     { id: 'start_here_component_selected_on_canvas', pass: Boolean(playSession && playSession.startHereAcceptanceReady === true && startHereSelectedRows > 0 && startHereVisibleCueRows > 0), evidence: `selected=${startHereSelectedRows}, visibleCues=${startHereVisibleCueRows}` },
+    { id: 'start_here_component_save_return_continuity', pass: Boolean(playSession && playSession.startHereAcceptanceReady === true && startHereComponentSaveRows > 0 && startHereComponentRestoreRows > 0), evidence: `saved=${startHereComponentSaveRows}, restored=${startHereComponentRestoreRows}` },
     { id: 'normal_play_summary_card', pass: Boolean(normalPlaySummaryNode && normalPlaySummary.next_action && normalPlaySummary.resident && normalPlaySummary.boundary && normalPlaySummary.boundary.includes('no command')), evidence: `next=${normalPlaySummary.next_action}, resident=${normalPlaySummary.resident}, proposal=${normalPlaySummary.proposal}, continuity=${normalPlaySummary.continuity}` },
     { id: 'normal_player_guided_action_highlight', pass: Boolean(normalPlayerGuideHighlight && normalPlayerGuideHighlight.matched === true), evidence: `recommended=${normalPlayerGuideHighlight.recommended_action}, highlighted=${normalPlayerGuideHighlight.highlighted_action}, matched=${normalPlayerGuideHighlight.matched === true}` },
     { id: 'advanced_prototype_controls_secondary', pass: Boolean(advancedControlsNode && advancedControlsNode.tagName === 'DETAILS' && advancedControlsButtons > 0), evidence: `details=${Boolean(advancedControlsNode)}, buttons=${advancedControlsButtons}, open=${advancedControlsNode ? advancedControlsNode.open === true : false}` },
@@ -18770,6 +18899,7 @@ function formatPrototypeSaves() {
   const physicsPathSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: physicsPath rows=${slot.normal_play_physics_path_rows || 0} ready=${slot.normal_play_physics_path_ready_rows || 0} action=${slot.normal_play_latest_physics_path_action_id || 'none'} path=${slot.normal_play_latest_physics_path_id || 'none'} proposal=${slot.normal_play_physics_path_proposal_id || 'none'} word=${slot.normal_play_physics_path_resident_word || 'none'} save=${slot.normal_play_physics_path_save_slot_id || 'none'} restore=${slot.normal_play_physics_path_restore_slot_id || 'none'} body=${slot.normal_play_physics_path_body_expression_id || 'none'}`);
   const worldPressureSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: worldPressure rows=${slot.world_pressure_rows || 0} ready=${slot.world_pressure_ready_rows || 0} day=${slot.world_pressure_latest_day_id || 'none'} weather=${slot.world_pressure_weather || 'none'} material=${slot.world_pressure_physics_step_id || 'none'} terrain=${slot.world_pressure_terrain_step_id || 'none'} resources=${slot.world_pressure_resource_step_id || 'none'} thermal=${slot.world_pressure_thermal_step_id || 'none'} water=${slot.world_pressure_water_step_id || 'none'} ecology=${slot.world_pressure_ecology_step_id || 'none'} structure=${slot.world_pressure_structural_step_id || 'none'} constraints=${slot.world_pressure_constraint_step_id || 'none'} materialState=${slot.world_pressure_material_state_step_id || 'none'}`);
   const primaryPhysicsPathSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: visiblePhysicsPath rows=${slot.primary_surface_physics_path_rows || 0} ready=${slot.primary_surface_physics_path_ready ? 'yes' : 'no'} cue=${slot.primary_surface_physics_path_cue_id || 'none'} action=${slot.primary_surface_physics_path_action_id || 'none'} happy=${slot.primary_surface_physics_path_happy_path_id || 'none'} save=${slot.primary_surface_physics_path_save_slot_id || 'none'} restore=${slot.primary_surface_physics_path_restore_slot_id || 'none'} body=${slot.primary_surface_physics_path_body_expression_id || 'none'}`);
+  const startHereComponentSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: startHereComponent ready=${slot.start_here_component_ready ? 'yes' : 'no'} start=${slot.start_here_component_start_id || 'none'} component=${slot.start_here_component_id || 'none'} selection=${slot.start_here_component_selection_id || 'none'} cue=${slot.start_here_component_visible_cue_id || 'none'} word=${slot.start_here_component_resident_word || 'none'} body=${slot.start_here_component_body_expression_id || 'none'}`);
   const playerModePhysicsFollowSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: playerModeVisibleFollow cards=${slot.player_mode_visible_physics_follow_cards || 0} ready=${slot.player_mode_visible_physics_follow_ready ? 'yes' : 'no'} follow=${slot.player_mode_visible_physics_follow_id || 'none'} action=${slot.player_mode_visible_physics_follow_action_id || 'none'} happy=${slot.player_mode_visible_physics_follow_happy_path_id || 'none'} saved/restored=${slot.player_mode_visible_physics_follow_saved_rows || 0}/${slot.player_mode_visible_physics_follow_restored_rows || 0} body=${slot.player_mode_visible_physics_follow_body_expression_id || 'none'}`);
   const ambientPhysicsSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ambientPhysics rows=${slot.normal_play_ambient_physics_rows || 0} proposals=${slot.normal_play_ambient_physics_proposals || 0} action=${slot.normal_play_ambient_latest_action_id || 'none'} step=${slot.normal_play_ambient_latest_step_id || 'none'} proposal=${slot.normal_play_ambient_latest_proposal_id || 'none'} word=${slot.normal_play_ambient_resident_word || 'none'} gloss=${slot.normal_play_ambient_player_gloss || 'none'}`);
   const pressureLanguageSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: pressureLanguage pressure=${slot.physics_pressure_rows || 0}/${slot.physics_pressure_latest_id || 'none'} step=${slot.physics_pressure_latest_step_id || 'none'} component=${slot.physics_pressure_component_id || 'none'} kind=${slot.physics_pressure_kind || 'none'} language=${slot.pressure_language_rows || 0}/${slot.pressure_language_latest_id || 'none'} root=${slot.pressure_language_root_id || 'none'} term=${slot.pressure_language_term_id || 'none'} word=${slot.pressure_language_resident_word || 'none'} gloss=${slot.pressure_language_player_gloss || 'none'}`);
@@ -18780,6 +18910,7 @@ function formatPrototypeSaves() {
   const worldPressureReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredWorldPressure rows=${row.restored_world_pressure_rows || 0} ready=${row.restored_world_pressure_ready_rows || 0} day=${row.restored_world_pressure_latest_day_id || 'none'} material=${row.restored_world_pressure_physics_step_id || 'none'} terrain=${row.restored_world_pressure_terrain_step_id || 'none'} resources=${row.restored_world_pressure_resource_step_id || 'none'} thermal=${row.restored_world_pressure_thermal_step_id || 'none'} water=${row.restored_world_pressure_water_step_id || 'none'} ecology=${row.restored_world_pressure_ecology_step_id || 'none'} structure=${row.restored_world_pressure_structural_step_id || 'none'} constraints=${row.restored_world_pressure_constraint_step_id || 'none'} materialState=${row.restored_world_pressure_material_state_step_id || 'none'} match=${row.restored_world_pressure_matches_saved ? 'yes' : 'no'}`);
   const physicsPathReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredPhysicsPath rows=${row.restored_normal_play_physics_path_rows || 0} ready=${row.restored_normal_play_physics_path_ready_rows || 0} action=${row.restored_normal_play_latest_physics_path_action_id || 'none'} path=${row.restored_normal_play_latest_physics_path_id || 'none'} proposal=${row.restored_normal_play_physics_path_proposal_id || 'none'} word=${row.restored_normal_play_physics_path_resident_word || 'none'} body=${row.restored_normal_play_physics_path_body_expression_id || 'none'} match=${row.restored_normal_play_physics_path_matches_saved ? 'yes' : 'no'}`);
   const primaryPhysicsPathReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredVisiblePhysicsPath rows=${row.restored_primary_surface_physics_path_rows || 0} ready=${row.restored_primary_surface_physics_path_ready ? 'yes' : 'no'} cue=${row.restored_primary_surface_physics_path_cue_id || 'none'} action=${row.restored_primary_surface_physics_path_action_id || 'none'} happy=${row.restored_primary_surface_physics_path_happy_path_id || 'none'} body=${row.restored_primary_surface_physics_path_body_expression_id || 'none'} match=${row.restored_primary_surface_physics_path_matches_saved ? 'yes' : 'no'}`);
+  const startHereComponentReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredStartHereComponent ready=${row.restored_start_here_component_ready ? 'yes' : 'no'} start=${row.restored_start_here_component_start_id || 'none'} component=${row.restored_start_here_component_id || 'none'} selection=${row.restored_start_here_component_selection_id || 'none'} cue=${row.restored_start_here_component_visible_cue_id || 'none'} word=${row.restored_start_here_component_resident_word || 'none'} body=${row.restored_start_here_component_body_expression_id || 'none'} match=${row.restored_start_here_component_matches_saved ? 'yes' : 'no'}`);
   const playerModePhysicsFollowReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredPlayerModeVisibleFollow cards=${row.restored_player_mode_visible_physics_follow_cards || 0} ready=${row.restored_player_mode_visible_physics_follow_ready ? 'yes' : 'no'} follow=${row.restored_player_mode_visible_physics_follow_id || 'none'} action=${row.restored_player_mode_visible_physics_follow_action_id || 'none'} happy=${row.restored_player_mode_visible_physics_follow_happy_path_id || 'none'} body=${row.restored_player_mode_visible_physics_follow_body_expression_id || 'none'} match=${row.restored_player_mode_visible_physics_follow_matches_saved ? 'yes' : 'no'}`);
   const ambientPhysicsReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredAmbientPhysics rows=${row.restored_normal_play_ambient_physics_rows || 0} proposals=${row.restored_normal_play_ambient_physics_proposals || 0} action=${row.restored_normal_play_ambient_latest_action_id || 'none'} step=${row.restored_normal_play_ambient_latest_step_id || 'none'} proposal=${row.restored_normal_play_ambient_latest_proposal_id || 'none'} word=${row.restored_normal_play_ambient_resident_word || 'none'} match=${row.restored_normal_play_ambient_physics_matches_saved ? 'yes' : 'no'}`);
   const pressureLanguageReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredPressureLanguage pressure=${row.restored_physics_pressure_rows || 0}/${row.restored_physics_pressure_latest_id || 'none'} step=${row.restored_physics_pressure_latest_step_id || 'none'} component=${row.restored_physics_pressure_component_id || 'none'} language=${row.restored_pressure_language_rows || 0}/${row.restored_pressure_language_latest_id || 'none'} root=${row.restored_pressure_language_root_id || 'none'} term=${row.restored_pressure_language_term_id || 'none'} word=${row.restored_pressure_language_resident_word || 'none'} match=${row.restored_pressure_language_matches_saved ? 'yes' : 'no'}`);
@@ -18800,6 +18931,8 @@ function formatPrototypeSaves() {
     ...(worldPressureSlots.length ? worldPressureSlots : ['none']),
     'Primary-surface Physics path visibility:',
     ...(primaryPhysicsPathSlots.length ? primaryPhysicsPathSlots : ['none']),
+    'Start Here component continuity:',
+    ...(startHereComponentSlots.length ? startHereComponentSlots : ['none']),
     'Player Mode visible Physics Follow continuity:',
     ...(playerModePhysicsFollowSlots.length ? playerModePhysicsFollowSlots : ['none']),
     'Normal-play ambient physics continuity:',
@@ -18820,6 +18953,8 @@ function formatPrototypeSaves() {
     ...(physicsPathReturns.length ? physicsPathReturns : ['none']),
     'Primary-surface Physics path returns:',
     ...(primaryPhysicsPathReturns.length ? primaryPhysicsPathReturns : ['none']),
+    'Start Here component returns:',
+    ...(startHereComponentReturns.length ? startHereComponentReturns : ['none']),
     'Player Mode visible Physics Follow returns:',
     ...(playerModePhysicsFollowReturns.length ? playerModePhysicsFollowReturns : ['none']),
     'Ambient physics returns:',
@@ -18889,6 +19024,7 @@ function buildNormalPlayerHudSnapshot() {
     start_here_component: latestStartHere ? latestStartHere.physics_path_component_id || 'none' : 'none',
     start_here_body_expression: latestStartHere ? latestStartHere.physics_path_body_expression_id || 'none' : 'none',
     start_here_object_memory: latestStartHere ? `${latestStartHere.object_memory_behavior_id || 'none'} -> ${latestStartHere.object_memory_guided_action_id || 'none'}` : 'none',
+    start_here_component_return: latestStartHere ? `${latestStartHere.component_save_slot_id || 'none'} / ${latestStartHere.component_restore_component_id || 'none'} / match=${latestStartHere.component_restore_match === true}` : 'none',
     object_cue_return_behavior: objectCueBehavior ? `${objectCueBehavior.behavior_id} / ${objectCueBehavior.behavior_kind}` : 'none',
     object_cue_return_component: objectCueBehavior ? objectCueBehavior.component_id : 'none',
     object_cue_return_recommendation: objectCueBias ? objectCueBias.label : 'none',
@@ -18909,6 +19045,7 @@ function formatNormalPlayerHud() {
     `<div>Start here: <span>${hud.start_here_receipt}</span> / ready=${hud.start_here_ready ? 'yes' : 'no'}</div>`,
     `<div>Physics receipt: <span>${hud.start_here_physics_path}</span> / ${hud.start_here_physics_happy_path}; ${hud.start_here_resident_word} ~ ${hud.start_here_player_gloss}; component ${hud.start_here_component}; body ${hud.start_here_body_expression}</div>`,
     `<div>Physics return: <span>${hud.start_here_physics_restore}</span></div>`,
+    `<div>Start component return: <span>${hud.start_here_component_return}</span></div>`,
     `<div>Object memory: <span>${hud.object_cue_return_behavior}</span> / ${hud.object_cue_return_component} -> ${hud.object_cue_return_recommendation}</div>`,
     `<div>Start object memory: <span>${hud.start_here_object_memory}</span></div>`,
     `<div>Boundary: <span>${hud.boundary}</span></div>`,
@@ -18941,7 +19078,7 @@ function buildNormalPlaySummarySnapshot() {
     proposal: latestProposal ? `${latestProposal.proposal_id || 'proposal'} / ${latestProposal.status || 'unknown'}` : 'none',
     practice: latestPractice ? `${latestPractice.local_name || latestPractice.practice_id} / ${latestPractice.status || 'unknown'}` : 'none',
     continuity: `${saveCount} save(s), ${returnCount} return(s)`,
-    start_here: `${hud.start_here_receipt}; ready=${hud.start_here_ready}; physics=${hud.start_here_physics_path}/${hud.start_here_physics_happy_path}; word=${hud.start_here_resident_word}; body=${hud.start_here_body_expression}; restore=${hud.start_here_physics_restore}; objectMemory=${hud.start_here_object_memory}`,
+    start_here: `${hud.start_here_receipt}; ready=${hud.start_here_ready}; physics=${hud.start_here_physics_path}/${hud.start_here_physics_happy_path}; word=${hud.start_here_resident_word}; body=${hud.start_here_body_expression}; restore=${hud.start_here_physics_restore}; componentReturn=${hud.start_here_component_return}; objectMemory=${hud.start_here_object_memory}`,
     object_memory: objectCueBehavior ? `${objectCueBehavior.behavior_id} ${objectCueBehavior.behavior_kind} on ${objectCueBehavior.component_id}; recommend ${objectCueBias ? objectCueBias.label : 'none'}` : 'none',
     canvas_cue: latestCue ? latestCue.cue_id || latestCue.reason || 'visible cue' : 'none',
     session: session ? `steps=${session.stepLedger ? session.stepLedger.length : 0}; ready=${session.acceptanceReady === true}` : 'not started',

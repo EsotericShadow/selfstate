@@ -140,6 +140,12 @@ The first-playable session now writes an integrated causality row that links ord
 
 This is the current prototype direction: the player should be able to follow one small village loop from problem to action to material consequence to practice to return-session continuity without reading separate report-style panels. The chain remains bounded by no-direct-command, no hidden law in normal view, and no tech-tree unlock.
 
+## Prototype v0 integrated chain player-surface update
+
+The primary play surface and world canvas now carry the latest integrated `FPI-...` chain. The normal player view can show the active chain, proposal, practice, lived physics row, save slot, and restore slot as public continuity cues while keeping hidden simulator law audit-only.
+
+The `primary_play_surface` acceptance gate now requires at least one integrated-chain canvas cue. This makes the first playable loop visible in the actual player surface instead of only in a session receipt.
+
 ## Prototype v0 save-slot update
 
 The game prototype shell now includes browser-local prototype save slots. The player can save a slot, advance the autonomous simulation, return to the saved slot, and export a save receipt. This is intentionally scoped as prototype persistence evidence: it preserves meaningful village state, practice/proposal summaries, deep-time year, autonomous day, return log, and replay row counts without claiming production persistence.

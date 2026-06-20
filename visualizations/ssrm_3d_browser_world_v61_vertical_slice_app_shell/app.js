@@ -5336,6 +5336,9 @@ function currentPrimaryPlaySurfaceSnapshot() {
   const avatarPresence = world.gamePrototypeAvatarPresence || null;
   const presenceRows = avatarPresence && avatarPresence.presenceLedger ? avatarPresence.presenceLedger : [];
   const latestPresence = presenceRows.length ? presenceRows[presenceRows.length - 1] : null;
+  const playSession = world.gamePrototypePlaySession || null;
+  const integratedRows = playSession && playSession.integratedLoopLedger ? playSession.integratedLoopLedger : [];
+  const latestIntegrated = integratedRows.length ? integratedRows[integratedRows.length - 1] : null;
   const selected = world.residents[world.selected] || currentResident();
   const latestProposal = board && board.projectProposals && board.projectProposals.length ? board.projectProposals[board.projectProposals.length - 1] : null;
   const latestPractice = graph && graph.nodes && graph.nodes.length ? graph.nodes[graph.nodes.length - 1] : null;
@@ -5390,6 +5393,16 @@ function currentPrimaryPlaySurfaceSnapshot() {
     avatar_presence_influence: latestPresence ? latestPresence.influence_type : 'none',
     avatar_presence_near_worksite: latestPresence ? latestPresence.near_worksite : false,
     avatar_presence_rows: presenceRows.length,
+    integrated_loop_id: latestIntegrated ? latestIntegrated.integration_id : 'none',
+    integrated_loop_complete: latestIntegrated ? latestIntegrated.chain_complete === true : false,
+    integrated_loop_problem: latestIntegrated ? latestIntegrated.problem_pressure : 'none',
+    integrated_loop_proposal_id: latestIntegrated ? latestIntegrated.proposal_id : 'none',
+    integrated_loop_practice_id: latestIntegrated ? latestIntegrated.practice_id : 'none',
+    integrated_loop_physics_id: latestIntegrated ? latestIntegrated.physics_id : 'none',
+    integrated_loop_handling_id: latestIntegrated ? latestIntegrated.material_handling_id : 'none',
+    integrated_loop_save_slot_id: latestIntegrated ? latestIntegrated.save_slot_id : 'none',
+    integrated_loop_restore_slot_id: latestIntegrated ? latestIntegrated.restore_slot_id : 'none',
+    integrated_loop_rows: integratedRows.length,
     resource_pressure: resourcePressure,
     canvas_cues: [
       'look at the highlighted village problem band',
@@ -5399,6 +5412,7 @@ function currentPrimaryPlaySurfaceSnapshot() {
       latestLivedPhysics ? `lived physics ${latestLivedPhysics.physics_id} on ${latestLivedPhysics.component_id}` : 'lived-action physics not visible yet',
       latestRoutine ? `routine context ${latestRoutine.context_id} ${latestRoutine.resident} -> ${latestRoutine.suggested_action || latestRoutine.action} near ${latestRoutine.latest_project_visual_id !== 'none' ? latestRoutine.latest_project_visual_id : latestRoutine.latest_component_id !== 'none' ? latestRoutine.latest_component_id : latestRoutine.practice_id}` : 'routine context not visible yet',
       latestPresence ? `avatar presence ${latestPresence.presence_id} ${latestPresence.influence_type} near=${latestPresence.near_worksite} component=${latestPresence.component_id}` : 'avatar presence not linked to worksite yet',
+      latestIntegrated ? `integrated chain ${latestIntegrated.integration_id} complete=${latestIntegrated.chain_complete} proposal=${latestIntegrated.proposal_id} practice=${latestIntegrated.practice_id} physics=${latestIntegrated.physics_id}` : 'integrated first-playable chain not visible yet',
     ],
     hidden_law_normal_view: false,
     avatar_direct_command: false,
@@ -5423,6 +5437,8 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     routine_context_id: snapshot.routine_context_id,
     routine_context_source: snapshot.routine_context_source,
     avatar_presence_id: snapshot.avatar_presence_id,
+    integrated_loop_id: snapshot.integrated_loop_id,
+    integrated_loop_complete: snapshot.integrated_loop_complete,
     reason,
     canvas_first: true,
   });
@@ -5432,6 +5448,8 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     cues: snapshot.canvas_cues,
     routine_context_id: snapshot.routine_context_id,
     avatar_presence_id: snapshot.avatar_presence_id,
+    integrated_loop_id: snapshot.integrated_loop_id,
+    integrated_loop_complete: snapshot.integrated_loop_complete,
     normal_view_hidden_law_exposed: false,
   });
   surface.actionPromptLedger.push({
@@ -5449,6 +5467,7 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     surface.focusLedger.some(row => row.proposal_id !== 'none') &&
     surface.focusLedger.some(row => row.practice_id !== 'none') &&
     surface.focusLedger.some(row => row.component_id !== 'none') &&
+    surface.canvasCueLedger.some(row => row.integrated_loop_id && row.integrated_loop_id !== 'none') &&
     surface.canvasFirst === true &&
     surface.noHiddenLawInNormalView === true &&
     surface.noDirectCommand === true
@@ -5461,8 +5480,8 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     workCost: 0,
     toolWear: 0,
     hiddenLawInvolved: 'none in normal view; audit-only physics IDs may be summarized',
-    publicObservation: snapshot.current_problem,
-    residentInterpretation: snapshot.active_practice_name,
+    publicObservation: snapshot.integrated_loop_id !== 'none' ? `${snapshot.current_problem}; chain ${snapshot.integrated_loop_id}` : snapshot.current_problem,
+    residentInterpretation: snapshot.integrated_loop_id !== 'none' ? `${snapshot.active_practice_name}; ${snapshot.integrated_loop_complete ? 'chain complete' : 'chain forming'}` : snapshot.active_practice_name,
     conservationCheck: true,
     maintenanceObligation: snapshot.active_proposal_id !== 'none' ? `watch ${snapshot.active_proposal_id}` : 'none',
     unintendedConsequence: 'player may over-focus one issue while residents keep autonomy',
@@ -5492,6 +5511,7 @@ function runPrimaryPlaySurfaceStep() {
     proposal: snapshot.active_proposal_id,
     practice: snapshot.active_practice_id,
     component: snapshot.active_component_id,
+    integratedLoop: snapshot.integrated_loop_id,
   });
 }
 
@@ -5834,6 +5854,8 @@ function normalPlayOptions() {
     proposal_id: latest.active_proposal_id,
     practice_id: latest.active_practice_id,
     component_id: latest.active_component_id,
+    integrated_loop_id: latest.integrated_loop_id,
+    integrated_loop_complete: latest.integrated_loop_complete,
   }));
 }
 
@@ -6020,6 +6042,9 @@ function playerModeVisibleSurfaceSnapshot() {
     active_proposal: proposal ? `${proposal.proposal_id}: ${proposal.problem_addressed}` : 'none',
     active_practice: practice ? `${practice.practice_id}: ${practice.local_name}` : 'none',
     active_component: latest.active_component_id || 'none',
+    integrated_chain: latest.integrated_loop_id && latest.integrated_loop_id !== 'none'
+      ? `${latest.integrated_loop_id}: ${latest.integrated_loop_complete ? 'complete' : 'forming'} / proposal ${latest.integrated_loop_proposal_id} / practice ${latest.integrated_loop_practice_id} / physics ${latest.integrated_loop_physics_id}`
+      : 'none',
     visible_cards: ['world canvas', 'normal action rail', 'player guide', 'primary play surface', 'first playable walkthrough', 'normal play action rail', 'player mode interface', 'resident encounter', 'physical object interaction', 'resident proposal deck', 'lived practice loop', 'resident worksite', 'return journal', 'first playable session receipt', 'public outcomes'],
     hidden_by_default: ['trace JSON', 'QA manifest', 'deep debug panels', 'prototype subsystem action grid', 'hidden simulator law detail'],
     audit_access: 'available after leaving player mode or through explicit audit/deep-panel controls',
@@ -6154,6 +6179,7 @@ function formatPlayerModeInterface() {
     `Current problem: ${snapshot.current_problem}`,
     `Resident cue: ${snapshot.resident_cue}`,
     `Suggested next action: ${snapshot.next_action} (${snapshot.next_action_hook})`,
+    `Integrated chain: ${snapshot.integrated_chain}`,
     `Normal verbs: ${snapshot.action_verbs.join(', ')}`,
     `Visible cards: ${snapshot.visible_cards.join(', ')}`,
     `Hidden by default: ${snapshot.hidden_by_default.join(', ')}`,
@@ -7945,6 +7971,8 @@ function runFirstPlayableSessionLoop() {
   recordFirstPlayableSessionStep('save', 'Save', runNormalPlaySave);
   recordFirstPlayableSessionStep('return', 'Return', runNormalPlayReturn);
   recordFirstPlayableSessionStep('integrated_loop', 'Integrated loop', () => recordFirstPlayableIntegratedLoop('first_playable_session_loop'));
+  recordPrimaryPlaySurfaceSnapshot('first playable integrated chain visible on canvas');
+  if (world.gamePrototypePlayerMode) updatePlayerModeInterfaceAcceptance();
   const updatedSession = ensureFirstPlayableSession();
   updateFirstPlayableSessionAcceptance();
   recordPrototypeMilestone('first-playable-session', {
@@ -13098,6 +13126,7 @@ function buildPrototypeAcceptanceReceipt() {
   const livedPracticeSnapshots = livedPractice ? livedPractice.practiceSnapshots.length : 0;
   const livedPracticePhysicsRows = livedPractice && livedPractice.physicsLedger ? livedPractice.physicsLedger.length : 0;
   const livedPracticeCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => (row.cues || []).some(cue => /lived physics/.test(cue))).length : 0;
+  const integratedCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.integrated_loop_id && row.integrated_loop_id !== 'none' && (row.cues || []).some(cue => /integrated chain/.test(cue))).length : 0;
   const worksiteRows = worksite ? worksite.watchLedger.length : 0;
   const worksiteSnapshots = worksite ? worksite.snapshotLedger.length : 0;
   const returnJournalRows = returnJournal ? returnJournal.journalLedger.length : 0;
@@ -13189,7 +13218,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'material_state_physics', pass: Boolean(materialWorld && physics && materialStateRows > 0 && propertyDriftRows > 0 && physics.materialStateLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false) && physics.propertyDriftLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${materialStateRows} state row(s), ${phaseChangeRows} phase row(s), ${propertyDriftRows} property row(s), ${materialStateRepairRows} repair row(s)` },
     { id: 'physics_to_practice_playable_slice', pass: Boolean(playableSlice && playableSlice.acceptanceReady && playableSlicePhysicsRows > 0 && playableSliceProposalRows > 0 && playableSlicePracticeRows > 0 && playableSliceReturnRows > 0 && playableSlice.noDirectCommand === true && playableSlice.noPredeclaredTechTree === true && playableSlice.noCorrectConceptInstalled === true), evidence: playableSlice ? `${playableSlice.phase}; physics=${playableSlicePhysicsRows}, proposals=${playableSliceProposalRows}, practices=${playableSlicePracticeRows}, return=${playableSliceReturnRows}` : 'not run' },
     { id: 'playable_village_day_0_3', pass: Boolean(villageDay03 && villageDay03.acceptanceReady && villageDay03Rows >= 4 && villageDay03PlayerRows >= 4 && villageDay03ResidentRows >= 4 && villageDay03WorldRows >= 4 && villageDay03.physicsLinks.length > 0 && villageDay03.proposalLinks.length > 0 && villageDay03.practiceLinks.length > 0 && villageDay03.saveLinks.length > 0 && villageDay03ReturnLinks > 0 && villageDay03.noDirectCommand === true && villageDay03.noTechTreeUnlock === true), evidence: villageDay03 ? `${villageDay03.phase}; rows=${villageDay03Rows}, player=${villageDay03PlayerRows}, resident=${villageDay03ResidentRows}, world=${villageDay03WorldRows}, returns=${villageDay03ReturnLinks}` : 'not run' },
-    { id: 'primary_play_surface', pass: Boolean(worldStage && worldStage.acceptanceReady && worldStageFocusRows >= 3 && worldStageCueRows >= 3 && worldStagePromptRows >= 3 && worldStage.canvasFirst === true && worldStage.noHiddenLawInNormalView === true && worldStage.noDirectCommand === true), evidence: worldStage ? `${worldStage.phase}; focus=${worldStageFocusRows}, cues=${worldStageCueRows}, prompts=${worldStagePromptRows}` : 'not run' },
+    { id: 'primary_play_surface', pass: Boolean(worldStage && worldStage.acceptanceReady && worldStageFocusRows >= 3 && worldStageCueRows >= 3 && worldStagePromptRows >= 3 && integratedCanvasCueRows > 0 && worldStage.canvasFirst === true && worldStage.noHiddenLawInNormalView === true && worldStage.noDirectCommand === true), evidence: worldStage ? `${worldStage.phase}; focus=${worldStageFocusRows}, cues=${worldStageCueRows}, integrated=${integratedCanvasCueRows}, prompts=${worldStagePromptRows}` : 'not run' },
     { id: 'first_playable_walkthrough', pass: Boolean(walkthrough && walkthrough.acceptanceReady && walkthroughSteps >= walkthrough.requiredSteps.length && walkthroughLinks >= walkthrough.requiredSteps.length && walkthrough.noDirectCommand === true && walkthrough.noTechTreeUnlock === true && walkthrough.noHiddenLawNormalView === true), evidence: walkthrough ? `${walkthrough.phase}; steps=${walkthroughSteps}, links=${walkthroughLinks}` : 'not run' },
     { id: 'normal_play_action_rail', pass: Boolean(actionRail && actionRail.acceptanceReady && actionRailRows >= actionRail.verbs.length && actionRailOptions > 0 && actionRail.playerLanguageOnly === true && actionRail.noDirectCommand === true && actionRail.noTechTreeUnlock === true), evidence: actionRail ? `actions=${actionRailRows}, optionSnapshots=${actionRailOptions}, verbs=${actionRail.verbs.join('/')}` : 'not run' },
     { id: 'player_mode_interface', pass: Boolean(playerMode && playerMode.acceptanceReady && playerModeSessions > 0 && playerModeVisibleCards >= 6 && playerMode.normalViewOnly === true && playerMode.debugPanelsHidden === true && playerMode.noDirectCommand === true && playerMode.noHiddenLawNormalView === true && playerMode.playerGlossesOnly === true), evidence: playerMode ? `enabled=${playerMode.enabled}, sessions=${playerModeSessions}, visibleCards=${playerModeVisibleCards}` : 'not run' },
@@ -14278,9 +14307,9 @@ function draw() {
   ctx.fillRect(730, 35, 250 * survivalScore, 10);
   const stageSnapshot = currentPrimaryPlaySurfaceSnapshot();
   ctx.fillStyle = 'rgba(17,24,22,0.78)';
-  ctx.fillRect(28, 66, 984, 72);
+  ctx.fillRect(28, 66, 984, 92);
   ctx.strokeStyle = 'rgba(240,195,91,0.52)';
-  ctx.strokeRect(28, 66, 984, 72);
+  ctx.strokeRect(28, 66, 984, 92);
   ctx.fillStyle = '#f0c35b';
   ctx.font = '15px Optima, sans-serif';
   ctx.fillText(`Primary stage: ${stageSnapshot.stage_phase}`.slice(0, 82), 44, 90);
@@ -14291,6 +14320,7 @@ function draw() {
   ctx.fillText(`Resident ${stageSnapshot.selected_resident} | proposal ${stageSnapshot.active_proposal_id} | practice ${stageSnapshot.active_practice_name} | component ${stageSnapshot.active_component_id}`.slice(0, 104), 470, 90);
   ctx.fillText(`Physics ${stageSnapshot.latest_physics_id} | lived ${stageSnapshot.latest_lived_physics_id} | resources ${stageSnapshot.resource_pressure.length ? stageSnapshot.resource_pressure.join(', ') : 'stable'}`.slice(0, 82), 470, 112);
   ctx.fillText(`Routine ${stageSnapshot.routine_context_id}: ${stageSnapshot.routine_context_resident} -> ${stageSnapshot.routine_context_suggested_action} near ${stageSnapshot.routine_context_source}`.slice(0, 82), 470, 132);
+  ctx.fillText(`Integrated ${stageSnapshot.integrated_loop_id}: proposal ${stageSnapshot.integrated_loop_proposal_id} -> practice ${stageSnapshot.integrated_loop_practice_id} -> save ${stageSnapshot.integrated_loop_save_slot_id}/${stageSnapshot.integrated_loop_restore_slot_id}`.slice(0, 104), 44, 152);
 
   const materialWorld = world.gamePrototype3DWorld;
   if (materialWorld && materialWorld.components) {

@@ -234,6 +234,10 @@
 142. Confirm the integrated row marks no direct player command, no hidden-law normal view, no tech-tree unlock, and no predeclared invention.
 143. Save after an integrated row exists, mutate the world, return the slot, and confirm Save / return shows integrated row count and latest integrated ID.
 144. Export acceptance and confirm `first_playable_session` requires at least one complete integrated causality row.
+145. After First playable, inspect the world canvas header and confirm it shows the latest `FPI-...` chain with proposal, practice, physics, save, and restore links.
+146. Run World stage after the integrated chain exists and confirm Primary play surface acceptance requires an integrated-chain canvas cue.
+147. Enter Player mode after the integrated chain exists and confirm the normal view summarizes the active chain without exposing hidden simulator law.
+148. Export acceptance and confirm `primary_play_surface` evidence includes an integrated canvas cue count.
 
 ## Physics-to-practice slice playtests
 

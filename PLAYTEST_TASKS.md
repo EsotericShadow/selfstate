@@ -668,3 +668,9 @@ Create an ambient physics proposal through normal play, save, return, and observ
 4. Confirm the suggested action is `Follow`.
 5. Inspect normal action options and confirm `Follow` is recommended with visible Physics path phase/action/happy-path evidence.
 6. Run `Guide step` and confirm guide history records visible Physics path phase, action id, saved/restored rows, and match status.
+## Playtest task: Follow and Space shell controls
+
+1. Open the first playable control surface.
+2. Confirm `Physics path`, `Follow`, and `Space` are all visible as direct controls.
+3. Use `Follow` after the guide recommends a visible Physics path continuation.
+4. Use `Space` after a guarded/refusal Follow response and confirm the resident boundary recovery row appears.

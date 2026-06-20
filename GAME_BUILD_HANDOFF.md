@@ -885,3 +885,6 @@ Follow rows now report the visible Physics path phase, action id, happy-path id,
 The Player guide and normal action rail now recognize the visible first-playable Physics path as a resumable thread. When that path exists but is not saved, restored, resurfaced, or journaled, the guide recommends `Follow` and explains the current Physics path phase, action id, and happy-path id.
 
 The normal action options also mark `Follow` as recommended for unfinished visible Physics path continuity. Option snapshots carry the visible Physics path phase, next action, action id, happy-path id, saved/restored row counts, and match status.
+## Prototype v0 Follow shell hook update
+
+The static prototype control surface now exposes `Follow` and `Space` beside `Physics path`. The QA hook manifest also lists `runNormalPlayFollow` and `runNormalPlaySpace`, so the guide-recommended Follow path is available as a direct shell action and remains visible to hook audits.

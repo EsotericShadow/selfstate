@@ -987,3 +987,12 @@ The guide now treats the visible Physics path as a first-class player-facing thr
 5. Let the normal action rail recommend `Follow` from player-language options.
 
 This makes the restored Physics path discoverable by ordinary play instead of requiring the user to infer it from receipts.
+## Follow and Space shell controls
+
+The browser shell now has direct controls for:
+
+1. `Physics path`
+2. `Follow`
+3. `Space`
+
+This lets a playtester follow a restored visible Physics path from the same player-facing control area that starts the path, while still respecting resident boundaries through `Space`.

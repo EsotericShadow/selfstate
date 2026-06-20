@@ -1127,3 +1127,14 @@ Acceptance requires:
 - no hidden simulator law or direct resident command appears in the guide
 
 This turns the restored Physics path into a discoverable play path.
+## Added scope gate: Follow shell hook exposure
+
+`follow_shell_hook_exposure` is now part of first playable prototype scope.
+
+Acceptance requires:
+
+- `Follow` has a visible browser-shell control
+- `Space` has a visible browser-shell control
+- `runNormalPlayFollow` is included in the direct hook manifest
+- `runNormalPlaySpace` is included in the direct hook manifest
+- both controls remain player-language actions, not debug-only panel operations

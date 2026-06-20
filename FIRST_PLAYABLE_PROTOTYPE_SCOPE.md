@@ -34,6 +34,7 @@
 - One canvas-visible material-state overlay for the active physical component.
 - One direct canvas component selection path that inspects simulated objects without direct manipulation.
 - One bounded resident object-response path before material manipulation.
+- One consequential object-response path where objections block and warnings reroute handling.
 - One bounded resident language/gloss layer for local terms that emerge from grounded practice history.
 
 ## First prototype success condition
@@ -648,5 +649,18 @@ Required evidence:
 - hidden simulator law remains out of normal view
 - no LLM or open-ended language is used
 - no tech-tree unlock occurs
+
+## Added scope gate: Resident object response affects handling
+
+`resident_object_response_affects_handling` is now part of first playable prototype scope.
+
+Required evidence:
+
+- object-interaction rows link an `OIR-...` response to a handling effect
+- ownership objections or safety warnings can block handling before manipulation
+- wet-material or labor cautions can reroute handling through caution action sources
+- ordinary observations can allow resident-chosen handling to continue
+- blocked handling rows do not require a manipulation id
+- no direct command, hidden-law exposure, LLM, open-ended language, or tech-tree unlock occurs
 
 This milestone makes resident continuity readable during ordinary play. It does not add an open-ended language system.

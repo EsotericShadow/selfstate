@@ -579,3 +579,9 @@ The acceptance gate is `canvas_component_selection`. It requires inspect-only se
 Object inspection now produces a bounded resident response before material manipulation. When the player uses `Objects`, the selected resident can make a phrasebook-only observation, warning, caution, or objection based on visible component state such as wetness, damage, stability, weight, carried state, and canvas selection source.
 
 The acceptance gate is `resident_object_response`. It requires `OIR-...` response rows, visible body-language expression, no LLM, no open-ended language, no direct command, no hidden-law exposure, and no tech-tree unlock.
+
+## Prototype v0 consequential object-response update
+
+Resident object responses now affect the handling path. Ownership objections and safety warnings can block material manipulation before any object state changes. Wet-material and labor cautions reroute handling through caution-specific action sources instead of treating warnings as flavor text.
+
+The acceptance gate is `resident_object_response_affects_handling`. It requires object-interaction rows where an `OIR-...` response is linked to a blocked, rerouted, or explicitly allowed handling outcome while preserving no-command and no-hidden-law boundaries.

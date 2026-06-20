@@ -666,8 +666,11 @@ Object inspection now has a social step before handling:
 2. The selected resident reads the visible object state through local term and player gloss.
 3. The resident gives a bounded response: observation, wet-material warning, safety warning, labor caution, or ownership objection.
 4. The response updates resident memory and public body language.
-5. Material handling may follow, but the response itself does not manipulate the object.
-6. The exported acceptance receipt records `resident_object_response`.
+5. Ownership objections and safety warnings can block handling before material state changes.
+6. Wet-material and labor cautions reroute handling through slower/careful action sources.
+7. Ordinary observations allow handling to continue through resident choice.
+8. The response itself does not manipulate the object.
+9. The exported acceptance receipt records `resident_object_response` and `resident_object_response_affects_handling`.
 
 ## Player movement route loop
 

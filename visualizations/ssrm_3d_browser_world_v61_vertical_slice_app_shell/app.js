@@ -7941,7 +7941,7 @@ function updatePlayerObjectInteractionAcceptance() {
   interaction.acceptanceReady = Boolean(
     interaction.interactionLedger.length > 0 &&
     interaction.snapshotLedger.length > 0 &&
-    interaction.interactionLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.resident_chosen === true && row.hidden_law_normal_view === false && row.tech_tree_unlock === false && row.manipulation_id !== 'none') &&
+    interaction.interactionLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.resident_chosen === true && row.hidden_law_normal_view === false && row.tech_tree_unlock === false && (row.manipulation_id !== 'none' || row.handling_blocked_by_response === true)) &&
     interaction.noDirectCommand === true &&
     interaction.residentChoosesHandling === true &&
     interaction.noHiddenLawNormalView === true &&
@@ -8042,6 +8042,25 @@ function recordResidentObjectResponse(source = 'object_inspection') {
   return row;
 }
 
+function residentObjectHandlingEffect(responseRow) {
+  if (!responseRow || !responseRow.response_kind) {
+    return { effect: 'normal_observation_allows_handling', actionSource: 'resident_choice', blocked: false, rerouted: false, residentAction: 'inspect_then_handle' };
+  }
+  if (responseRow.response_kind === 'ownership_objection') {
+    return { effect: 'refused_by_resident_boundary', actionSource: 'resident_objection', blocked: true, rerouted: false, residentAction: 'refuse_handling' };
+  }
+  if (responseRow.response_kind === 'safety_warning') {
+    return { effect: 'delayed_for_safety_check', actionSource: 'resident_safety_delay', blocked: true, rerouted: false, residentAction: 'delay_handling' };
+  }
+  if (responseRow.response_kind === 'wet_material_warning') {
+    return { effect: 'rerouted_to_careful_wet_handling', actionSource: 'resident_wet_caution', blocked: false, rerouted: true, residentAction: 'careful_wet_handling' };
+  }
+  if (responseRow.response_kind === 'labor_caution') {
+    return { effect: 'rerouted_to_slow_lift', actionSource: 'resident_labor_caution', blocked: false, rerouted: true, residentAction: 'slow_lift_check' };
+  }
+  return { effect: 'normal_observation_allows_handling', actionSource: 'resident_choice', blocked: false, rerouted: false, residentAction: 'inspect_then_handle' };
+}
+
 function runPlayerObjectInteractionLoop() {
   const interaction = ensurePlayerObjectInteraction();
   interaction.runCount += 1;
@@ -8050,7 +8069,9 @@ function runPlayerObjectInteractionLoop() {
   const before = playerObjectInteractionSnapshot('before-object-interaction');
   const lookReceipt = runPrimaryPlaySurfaceStep();
   const residentResponse = recordResidentObjectResponse('objects_before_handling');
-  const manipulationReceipt = runResidentMaterialManipulationStep('resident_choice');
+  const handlingEffect = residentObjectHandlingEffect(residentResponse);
+  if (residentResponse) residentResponse.handling_effect = handlingEffect.effect;
+  const manipulationReceipt = handlingEffect.blocked ? null : runResidentMaterialManipulationStep(handlingEffect.actionSource);
   const payload = manipulationReceipt && manipulationReceipt.payload ? manipulationReceipt.payload : {};
   const after = playerObjectInteractionSnapshot('after-object-interaction');
   const row = {
@@ -8064,12 +8085,15 @@ function runPlayerObjectInteractionLoop() {
     resident_response_id: residentResponse ? residentResponse.response_id : 'none',
     resident_response_kind: residentResponse ? residentResponse.response_kind : 'none',
     resident_response_text: residentResponse ? residentResponse.response_text : 'none',
-    manipulation_id: payload.manipulationId || after.latest_manipulation || 'none',
+    resident_response_effect: handlingEffect.effect,
+    handling_blocked_by_response: handlingEffect.blocked,
+    handling_rerouted_by_response: handlingEffect.rerouted,
+    manipulation_id: handlingEffect.blocked ? 'none' : payload.manipulationId || after.latest_manipulation || 'none',
     resident: payload.resident || world.selected,
-    resident_action: payload.action || after.latest_action,
-    success: payload.success === true,
-    physics_step_id: payload.physicsStepId || 'none',
-    practice_id: payload.practiceId || 'none',
+    resident_action: handlingEffect.blocked ? handlingEffect.residentAction : payload.action || after.latest_action,
+    success: handlingEffect.blocked ? false : payload.success === true,
+    physics_step_id: handlingEffect.blocked ? 'none' : payload.physicsStepId || 'none',
+    practice_id: handlingEffect.blocked ? 'none' : payload.practiceId || 'none',
     before,
     after,
     player_facing: true,
@@ -8087,14 +8111,14 @@ function runPlayerObjectInteractionLoop() {
     resident: row.resident,
     sourceBeliefId: row.interaction_id,
     materials: [row.component_id, after.material_id].filter(Boolean),
-    publicObservation: `${row.resident} ${row.resident_action} ${row.resident_term}`,
-    residentInterpretation: row.success ? 'resident handling produced usable physical evidence' : 'resident handling preserved a warning',
-    materialTransformation: `object interaction changed or observed component ${row.component_id} through resident material manipulation`,
+    publicObservation: `${row.resident} ${row.resident_action} ${row.resident_term}; response=${row.resident_response_kind}`,
+    residentInterpretation: row.handling_blocked_by_response ? 'resident objection changed the handling path' : row.handling_rerouted_by_response ? 'resident warning rerouted handling' : row.success ? 'resident handling produced usable physical evidence' : 'resident handling preserved a warning',
+    materialTransformation: row.handling_blocked_by_response ? `none; ${row.resident_response_id} blocked manipulation before material change` : `object interaction changed or observed component ${row.component_id} through resident material manipulation`,
     timeCost: 1,
     workCost: 1,
     toolWear: 0,
-    maintenanceObligation: row.practice_id !== 'none' ? row.practice_id : 'watch object handling evidence',
-    unintendedConsequence: 'object inspection can route into resident practice evidence without direct command',
+    maintenanceObligation: row.handling_blocked_by_response ? `respect ${row.resident_response_id}` : row.practice_id !== 'none' ? row.practice_id : 'watch object handling evidence',
+    unintendedConsequence: row.handling_blocked_by_response ? 'resident refusal can delay the player path without breaking continuity' : row.handling_rerouted_by_response ? 'resident caution changes the handling route' : 'object inspection can route into resident practice evidence without direct command',
     hiddenLawInvolved: 'audit only',
     conservationCheck: true
   });
@@ -8110,8 +8134,8 @@ function runPlayerObjectInteractionLoop() {
 function formatPlayerObjectInteraction() {
   const interaction = world.gamePrototypeObjectInteraction || ensurePlayerObjectInteraction();
   const latest = interaction.snapshotLedger.length ? interaction.snapshotLedger[interaction.snapshotLedger.length - 1].after : playerObjectInteractionSnapshot('current');
-  const rows = interaction.interactionLedger.slice(-6).map(row => `${row.interaction_id}: ${row.resident} ${row.resident_action} ${row.resident_term}; component=${row.component_id}; manipulation=${row.manipulation_id}; success=${row.success}; practice=${row.practice_id}`);
-  const responseRows = (interaction.responseLedger || []).slice(-5).map(row => `${row.response_id}: ${row.resident} ${row.response_kind}; component=${row.component_id}; selection=${row.selection_id}; allowed=${row.manipulation_allowed}; expression=${row.expression_marker}; "${row.response_text}"`);
+  const rows = interaction.interactionLedger.slice(-6).map(row => `${row.interaction_id}: ${row.resident} ${row.resident_action} ${row.resident_term}; component=${row.component_id}; response=${row.resident_response_id || 'none'}/${row.resident_response_effect || 'none'}; blocked=${row.handling_blocked_by_response === true}; rerouted=${row.handling_rerouted_by_response === true}; manipulation=${row.manipulation_id}; success=${row.success}; practice=${row.practice_id}`);
+  const responseRows = (interaction.responseLedger || []).slice(-5).map(row => `${row.response_id}: ${row.resident} ${row.response_kind}; effect=${row.handling_effect || 'pending'}; component=${row.component_id}; selection=${row.selection_id}; allowed=${row.manipulation_allowed}; expression=${row.expression_marker}; "${row.response_text}"`);
   return [
     `Acceptance ready: ${interaction.acceptanceReady ? 'yes' : 'no'}`,
     `Rows: ${interaction.interactionLedger.length} / snapshots=${interaction.snapshotLedger.length} / residentResponses=${(interaction.responseLedger || []).length}`,
@@ -13814,6 +13838,7 @@ function buildPrototypeAcceptanceReceipt() {
   const objectInteractionSnapshots = objectInteraction ? objectInteraction.snapshotLedger.length : 0;
   const objectResponseRows = objectInteraction && objectInteraction.responseLedger ? objectInteraction.responseLedger.length : 0;
   const objectResponseBoundedRows = objectInteraction && objectInteraction.responseLedger ? objectInteraction.responseLedger.filter(row => row.player_facing === true && row.no_llm === true && row.phrasebook_only === true && row.open_ended_language === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false && row.expression_id && row.expression_id !== 'none').length : 0;
+  const objectResponseEffectRows = objectInteraction && objectInteraction.interactionLedger ? objectInteraction.interactionLedger.filter(row => row.resident_response_id && row.resident_response_id !== 'none' && row.resident_response_effect && (row.handling_blocked_by_response === true || row.handling_rerouted_by_response === true || row.resident_response_effect === 'normal_observation_allows_handling') && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
   const proposalDeckCards = proposalDeck ? proposalDeck.cardLedger.length : 0;
   const proposalDeckActions = proposalDeck ? proposalDeck.actionLedger.length : 0;
   const livedPracticeRows = livedPractice ? livedPractice.actionLedger.length : 0;
@@ -13927,6 +13952,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'player_resident_encounter', pass: Boolean(residentEncounter && residentEncounter.acceptanceReady && residentEncounterRows > 0 && residentEncounterSnapshots > 0 && residentEncounter.encounterLedger.every(row => row.player_facing === true && row.no_llm === true && row.phrasebook_only === true && row.open_ended_language === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.source_history_preserved === true) && residentEncounter.noOpenEndedLanguage === true && residentEncounter.noDirectCommand === true), evidence: residentEncounter ? `rows=${residentEncounterRows}, snapshots=${residentEncounterSnapshots}` : 'not run' },
     { id: 'player_object_interaction', pass: Boolean(objectInteraction && objectInteraction.acceptanceReady && objectInteractionRows > 0 && objectInteractionSnapshots > 0 && objectInteraction.interactionLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.resident_chosen === true && row.hidden_law_normal_view === false && row.tech_tree_unlock === false) && objectInteraction.noDirectCommand === true && objectInteraction.noHiddenLawNormalView === true), evidence: objectInteraction ? `rows=${objectInteractionRows}, snapshots=${objectInteractionSnapshots}` : 'not run' },
     { id: 'resident_object_response', pass: Boolean(objectInteraction && objectResponseRows > 0 && objectResponseBoundedRows > 0), evidence: objectInteraction ? `responses=${objectResponseRows}, bounded=${objectResponseBoundedRows}` : 'not run' },
+    { id: 'resident_object_response_affects_handling', pass: Boolean(objectInteraction && objectResponseEffectRows > 0), evidence: objectInteraction ? `effectRows=${objectResponseEffectRows}` : 'not run' },
     { id: 'resident_proposal_deck', pass: Boolean(proposalDeck && proposalDeck.acceptanceReady && proposalDeckCards > 0 && proposalDeckActions >= 3 && proposalDeck.avatarCannotForce === true && proposalDeck.noDirectCommand === true && proposalDeck.noHiddenLawNormalView === true && proposalDeck.playerGlossesOnly === true), evidence: proposalDeck ? `cardSnapshots=${proposalDeckCards}, actions=${proposalDeckActions}` : 'not run' },
     { id: 'lived_practice_loop', pass: Boolean(livedPractice && livedPractice.acceptanceReady && livedPracticeRows >= 4 && livedPracticeSnapshots > 0 && livedPracticePhysicsRows >= 4 && livedPracticeCanvasCueRows > 0 && livedPractice.physicalCausalityReady === true && livedPractice.noDirectCommand === true && livedPractice.noHiddenLawNormalView === true && livedPractice.noPredeclaredTechTree === true && livedPractice.noCorrectConceptInstalled === true), evidence: livedPractice ? `actions=${livedPracticeRows}, snapshots=${livedPracticeSnapshots}, livedPhysics=${livedPracticePhysicsRows}, canvasCues=${livedPracticeCanvasCueRows}` : 'not run' },
     { id: 'resident_worksite', pass: Boolean(worksite && worksite.acceptanceReady && worksiteRows >= 2 && worksiteSnapshots > 0 && worksite.avatarCannotAssignJobs === true && worksite.noDirectCommand === true && worksite.noHiddenLawNormalView === true && worksite.noResourceSpawning === true), evidence: worksite ? `watchRows=${worksiteRows}, snapshots=${worksiteSnapshots}` : 'not run' },

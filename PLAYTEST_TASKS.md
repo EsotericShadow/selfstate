@@ -395,3 +395,7 @@
 - Confirm the resident shows `object note` or `object objection` body-language evidence.
 - Confirm the response is phrasebook-only, no LLM, no open-ended language, no direct command, no hidden-law normal view, and no tech-tree unlock.
 - Export acceptance and confirm `resident_object_response` appears with bounded response evidence.
+- Inspect an object that produces ownership objection or safety warning and confirm handling is blocked before manipulation.
+- Inspect an object that produces wet-material or labor caution and confirm handling is rerouted through a caution action source.
+- Confirm blocked handling rows keep `manipulation_id=none` while preserving the resident response id.
+- Export acceptance and confirm `resident_object_response_affects_handling` appears with effect-row evidence.

@@ -863,3 +863,9 @@ This keeps language tied to lived experience. A resident word changes because a 
 pressure row -> language-pressure row -> save slot fingerprint -> restore slot -> recompute language-pressure fingerprint -> return log match.
 
 This keeps resident vocabulary continuous across return sessions. The word, root, gloss, pressure ID, component, and adoption evidence survive as history rather than being recreated by a scripted naming table.
+
+## Pressure-language resident encounter loop
+
+pressure-language row -> resident encounter snapshot -> bounded phrasebook response -> resident word plus imperfect gloss -> encounter ledger.
+
+This moves cultivated resident language into ordinary play. The player hears the local term during a normal Talk action, while the audit-only engine concept stays hidden.

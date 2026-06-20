@@ -584,3 +584,11 @@
 4. Restore the slot.
 5. Confirm the Save / return panel shows `Pressure-language continuity` and `Pressure-language returns`.
 6. Confirm the restored row has the same pressure ID, language ID, root ID, term ID, resident word, and `match=yes`.
+
+## Playtest task: pressure-language resident encounter
+
+1. Run one autonomous resident tick so pressure-grounded language exists.
+2. Use Talk or run the resident encounter loop.
+3. Confirm the resident response mentions a local pressure word and an imperfect gloss.
+4. Confirm the encounter row includes pressure-language ID and source pressure ID.
+5. Confirm the response remains phrasebook-only with no LLM and no hidden-law exposure.

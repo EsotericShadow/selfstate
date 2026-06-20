@@ -792,3 +792,12 @@ Implementation boundary:
 - Persistence preserves language history; it does not regenerate a new label on return.
 - Normal view can inspect resident words and glosses without hidden simulator law.
 - The continuity check ties language to lived pressure evidence instead of a predeclared vocabulary list.
+
+## Prototype increment: pressure-language resident encounter
+
+Bounded resident encounters now surface pressure-grounded language in ordinary player-facing talk. If an `LPP-...` row exists, the resident line can mention the local pressure word, imperfect gloss, and source pressure ID through the existing no-LLM phrasebook path.
+
+Implementation boundary:
+- The response remains phrasebook-only and source-traced.
+- The resident word comes from pressure-language history, not an English engine label.
+- The player gets an imperfect gloss; hidden simulator law remains out of normal view.

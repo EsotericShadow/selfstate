@@ -976,3 +976,15 @@ A saved pressure-language path should preserve:
 - resident word and imperfect player gloss
 - continuity fingerprint match after restore
 - no hidden-law exposure in normal view
+
+## Added scope gate: Pressure language reaches resident encounter
+
+`pressure_language_reaches_resident_encounter` is now part of first playable prototype scope.
+
+An ordinary resident encounter should be able to expose cultivated language:
+
+- bounded resident encounter row includes pressure-language ID
+- row links back to source pressure ID
+- resident response includes local word and imperfect gloss
+- no LLM or open-ended language is used
+- no direct avatar command or hidden-law exposure occurs

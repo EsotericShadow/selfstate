@@ -8845,6 +8845,8 @@ function residentEncounterSnapshot(label) {
   const practice = world.emergentPracticeGraph && world.emergentPracticeGraph.nodes.length ? world.emergentPracticeGraph.nodes[world.emergentPracticeGraph.nodes.length - 1] : null;
   const objectTarget = world.gamePrototypeObjectInteraction && world.gamePrototypeObjectInteraction.interactionLedger.length ? world.gamePrototypeObjectInteraction.interactionLedger[world.gamePrototypeObjectInteraction.interactionLedger.length - 1] : null;
   const body = world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.bodies ? world.gamePrototypeResidentBodies.bodies[world.selected] : null;
+  const pressureLanguage = pressureLanguageContinuitySnapshot(world);
+  const pressureLanguageActive = pressureLanguage.latest_language_pressure_id !== 'none';
   return {
     label,
     tick: world.tick,
@@ -8862,6 +8864,16 @@ function residentEncounterSnapshot(label) {
     active_proposal: proposal ? `${proposal.proposal_id}: ${proposal.problem_addressed}` : 'none',
     active_practice: practice ? `${practice.practice_id}: ${practice.local_name}` : 'none',
     active_object: objectTarget ? `${objectTarget.component_id}: ${objectTarget.resident_term}` : 'none',
+    pressure_language: pressureLanguageActive ? `${pressureLanguage.latest_language_pressure_id}: ${pressureLanguage.latest_language_resident_word}` : 'none',
+    pressure_language_id: pressureLanguage.latest_language_pressure_id,
+    pressure_language_pressure_id: pressureLanguage.latest_pressure_id,
+    pressure_language_root_id: pressureLanguage.latest_language_root_id,
+    pressure_language_term_id: pressureLanguage.latest_language_term_id,
+    pressure_language_resident_word: pressureLanguage.latest_language_resident_word,
+    pressure_language_player_gloss: pressureLanguage.latest_language_player_gloss,
+    pressure_language_component_id: pressureLanguage.latest_pressure_component_id,
+    pressure_language_kind: pressureLanguage.latest_pressure_kind,
+    pressure_language_translation_confidence: pressureLanguage.latest_language_translation_confidence,
     phrase: phraseSelect ? phraseSelect.value : 'greet',
     player_facing: true,
     no_llm: true,
@@ -8879,9 +8891,12 @@ function boundedResidentEncounterLine(snapshot, talkPayload, schedulePayload) {
   const objectClause = snapshot.active_object !== 'none' ? `The object matter is ${snapshot.active_object}` : 'No object is the whole answer';
   const proposalClause = snapshot.active_proposal !== 'none' ? `The board concern is ${snapshot.active_proposal}` : 'The board has no single clear answer yet';
   const practiceClause = snapshot.active_practice !== 'none' ? `The practice I know is ${snapshot.active_practice}` : 'No practice is settled yet';
+  const pressureLanguageClause = snapshot.pressure_language_id !== 'none'
+    ? `For that pressure I say ${snapshot.pressure_language_resident_word}, roughly ${snapshot.pressure_language_player_gloss}, from ${snapshot.pressure_language_pressure_id}`
+    : 'I do not have a settled local word for that pressure yet';
   const schedule = schedulePayload && schedulePayload.payload ? schedulePayload.payload.schedule : snapshot.schedule;
   const tone = talkPayload && talkPayload.payload && talkPayload.payload.ordinaryInfluence ? talkPayload.payload.ordinaryInfluence.talkTone : trustBand;
-  return `${snapshot.resident} (${trustBand}, ${tone}) says: ${memoryClause}. ${proposalClause}. ${practiceClause}. ${objectClause}. I am scheduled for ${schedule}.`;
+  return `${snapshot.resident} (${trustBand}, ${tone}) says: ${memoryClause}. ${proposalClause}. ${practiceClause}. ${pressureLanguageClause}. ${objectClause}. I am scheduled for ${schedule}.`;
 }
 
 function updatePlayerResidentEncounterAcceptance() {
@@ -8932,6 +8947,15 @@ function runPlayerResidentEncounterLoop() {
     active_proposal: after.active_proposal,
     active_practice: after.active_practice,
     active_object: after.active_object,
+    pressure_language_id: after.pressure_language_id,
+    pressure_language_pressure_id: after.pressure_language_pressure_id,
+    pressure_language_root_id: after.pressure_language_root_id,
+    pressure_language_term_id: after.pressure_language_term_id,
+    pressure_language_resident_word: after.pressure_language_resident_word,
+    pressure_language_player_gloss: after.pressure_language_player_gloss,
+    pressure_language_component_id: after.pressure_language_component_id,
+    pressure_language_kind: after.pressure_language_kind,
+    pressure_language_translation_confidence: after.pressure_language_translation_confidence,
     trust_before: before.trust,
     trust_after: after.trust,
     talk_event: talkReceipt && talkReceipt.event ? talkReceipt.event : 'talkBounded',
@@ -8976,7 +9000,7 @@ function runPlayerResidentEncounterLoop() {
 function formatPlayerResidentEncounter() {
   const encounter = world.gamePrototypeResidentEncounter || ensurePlayerResidentEncounter();
   const latest = encounter.snapshotLedger.length ? encounter.snapshotLedger[encounter.snapshotLedger.length - 1].after : residentEncounterSnapshot('current');
-  const rows = encounter.encounterLedger.slice(-6).map(row => `${row.encounter_id}: ${row.resident}; cue=${row.cue}; proposal=${row.active_proposal}; practice=${row.active_practice}; trust=${row.trust_before}->${row.trust_after}`);
+  const rows = encounter.encounterLedger.slice(-6).map(row => `${row.encounter_id}: ${row.resident}; cue=${row.cue}; pressureWord=${row.pressure_language_resident_word || 'none'} (${row.pressure_language_id || 'none'}); proposal=${row.active_proposal}; practice=${row.active_practice}; trust=${row.trust_before}->${row.trust_after}`);
   const latestLine = encounter.encounterLedger.length ? encounter.encounterLedger[encounter.encounterLedger.length - 1].response : 'No bounded resident encounter yet.';
   return [
     `Acceptance ready: ${encounter.acceptanceReady ? 'yes' : 'no'}`,
@@ -8984,7 +9008,7 @@ function formatPlayerResidentEncounter() {
     `Boundary: ${encounter.boundary}`,
     `Current resident: ${latest.resident}; cue=${latest.cue}; posture=${latest.posture}`,
     `Schedule: ${latest.schedule}; memory=${latest.memory}`,
-    `Context: proposal=${latest.active_proposal}; practice=${latest.active_practice}; object=${latest.active_object}`,
+    `Context: proposal=${latest.active_proposal}; practice=${latest.active_practice}; object=${latest.active_object}; pressureLanguage=${latest.pressure_language}`,
     `Latest response: ${latestLine}`,
     `No LLM: ${encounter.noLLM ? 'yes' : 'no'} / phrasebook only: ${encounter.phrasebookOnly ? 'yes' : 'no'} / no direct command: ${encounter.noDirectCommand ? 'yes' : 'no'}`,
     'Recent resident encounters:',
@@ -15993,6 +16017,7 @@ function buildPrototypeAcceptanceReceipt() {
   const residentPhysicsLanguageRows = materialWorld && materialWorld.language && materialWorld.language.soundPressureLedger ? materialWorld.language.soundPressureLedger.filter(row => row.pressure_id && row.pressure_id !== 'none' && row.root_id && row.root_id !== 'none' && row.resident_word && row.no_random_gibberish === true && row.hidden_law_normal_view === false).length : 0;
   const residentPhysicsLanguageRootRows = materialWorld && materialWorld.language && materialWorld.language.soundRoots ? materialWorld.language.soundRoots.filter(row => row.grounded_event && row.linked_observation && Number(row.adoption_count || 0) > 0 && row.player_gloss).length : 0;
   const residentPhysicsLanguageTermRows = materialWorld && materialWorld.language && materialWorld.language.terms ? materialWorld.language.terms.filter(row => row.pressure_root_id && row.source_pressure_ids && row.source_pressure_ids.length > 0 && row.resident_word && row.player_gloss && row.engine_concept === 'resident_physics_pressure_interpretation').length : 0;
+  const pressureLanguageEncounterRows = residentEncounter && residentEncounter.encounterLedger ? residentEncounter.encounterLedger.filter(row => row.pressure_language_id && row.pressure_language_id !== 'none' && row.pressure_language_pressure_id && row.pressure_language_pressure_id !== 'none' && row.pressure_language_resident_word && row.pressure_language_player_gloss && row.no_llm === true && row.phrasebook_only === true && row.open_ended_language === false && row.hidden_law_normal_view === false).length : 0;
   const worksiteProximityRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.length : 0;
   const worksiteEffectRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.filter(row => row.effect_applied === true && row.target_component_id !== 'none' && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
   const worksiteBlockedRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.filter(row => row.blocked_by_distance === true && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
@@ -16030,6 +16055,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'ordinary_physics_pressure_drives_residents', pass: Boolean(autonomous && physics && residentPhysicsPressureRows > 0 && residentPhysicsPressureRoutineRows > 0 && residentPhysicsPressureActionRows > 0 && residentPhysicsPressurePhysicsRows > 0), evidence: `pressureRows=${residentPhysicsPressureRows}, routine=${residentPhysicsPressureRoutineRows}, action=${residentPhysicsPressureActionRows}, physicsLedger=${residentPhysicsPressurePhysicsRows}` },
     { id: 'physics_pressure_cultivates_language', pass: Boolean(materialWorld && residentPhysicsLanguageRows > 0 && residentPhysicsLanguageRootRows > 0 && residentPhysicsLanguageTermRows > 0), evidence: `languagePressure=${residentPhysicsLanguageRows}, groundedRoots=${residentPhysicsLanguageRootRows}, pressureTerms=${residentPhysicsLanguageTermRows}` },
     { id: 'physics_pressure_language_save_return_continuity', pass: Boolean(saves && pressureLanguageContinuitySaveRows > 0 && pressureLanguageContinuityRestoreRows > 0), evidence: saves ? `savedPressureLanguage=${pressureLanguageContinuitySaveRows}, restoredMatches=${pressureLanguageContinuityRestoreRows}` : 'no prototype saves' },
+    { id: 'pressure_language_reaches_resident_encounter', pass: Boolean(residentEncounter && pressureLanguageEncounterRows > 0), evidence: residentEncounter ? `pressureLanguageEncounterRows=${pressureLanguageEncounterRows}` : 'not run' },
     { id: 'reality_grounded_causality', pass: Boolean(ledger && ledger.rows.length > 0 && ledger.rows.every(row => row.conservation_check && row.normal_view_hidden_law_exposed === false)), evidence: ledger ? `${ledger.rows.length} causal row(s)` : 'no ledger' },
     { id: 'emergent_beliefs_and_practices', pass: Boolean(practiceGraph && practiceGraph.nodes.length > 0 && practiceGraph.noPredefinedTechTree === true), evidence: practiceGraph ? `${practiceGraph.nodes.length} node(s), no tech tree=${practiceGraph.noPredefinedTechTree}` : 'no practice graph' },
     { id: 'village_management_without_command', pass: Boolean(board && board.projectProposals.length > 0 && board.avatarCannotForce === true), evidence: board ? `${board.projectProposals.length} proposal(s), force=${board.avatarCannotForce === false}` : 'no board' },

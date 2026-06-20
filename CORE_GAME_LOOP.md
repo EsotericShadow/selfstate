@@ -1091,3 +1091,15 @@ This lets a playtester follow a restored visible Physics path from the same play
 7. Return journal shows the restored visible-Follow card as readable return history.
 8. QA readiness and exported acceptance require the same card through `player-mode-visible-physics-follow`, `player-mode-visible-physics-follow-save-return`, `return-journal-visible-physics-follow`, `player_mode_visible_physics_follow_continuity`, `player_mode_visible_physics_follow_save_return_continuity`, and `return_journal_visible_physics_follow_continuity`.
 9. Hidden simulator law remains audit-only and residents are not directly commanded.
+
+## Start Here playable path
+
+The first playable shell now has one normal-facing entry point: `Start here`.
+
+1. Enter the village if needed.
+2. Switch into Player Mode.
+3. Run the compact 10-minute normal play path.
+4. Produce object/material change, practice evidence, save/return continuity, returned object-memory behavior, and guided next action.
+5. Record a `start_here_player_path` receipt without opening advanced/debug controls.
+
+This is an integration gate, not a new simulation organ. It makes the existing first-playable loop discoverable from the primary player surface while preserving the rule that the avatar influences conditions instead of commanding residents.

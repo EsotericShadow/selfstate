@@ -1288,3 +1288,18 @@ Acceptance requires:
 - object and normal-test Follow chains keep priority before the Physics path branch
 - resident boundary/refusal behavior remains possible and recoverable with `Space`
 - no direct resident command, hidden-law normal-view exposure, or tech-tree unlock is introduced
+
+## Added scope gate: Start Here player path
+
+`start_here_player_path` is now part of first playable prototype scope.
+
+Acceptance requires:
+
+- the browser shell exposes a `Start here` control in the normal player action strip
+- `Start here` runs in Player Mode rather than advanced/debug panels
+- the path produces a 10-minute normal play receipt
+- the receipt includes object/material change, save/return persistence, practice evidence, returned object-memory behavior, and guided normal action
+- the path records no direct resident command, no hidden-law normal-view exposure, and no tech-tree unlock
+- the first-playable milestone surface reports the Start Here path as ready only after the lived path has generated evidence
+
+This gives playtesters one honest first action without flattening the prototype into a god-game command surface.

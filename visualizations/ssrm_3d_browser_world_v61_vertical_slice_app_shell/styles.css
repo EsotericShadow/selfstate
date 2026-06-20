@@ -58,6 +58,9 @@ select { width: 100%; padding: 10px; border-radius: 14px; border: 1px solid rgba
 .prototype-card h2 { margin: 0 0 12px; font-size: clamp(2rem, 4vw, 4.6rem); line-height: 0.9; letter-spacing: -0.055em; }
 .prototype-card h3 { margin: 0 0 10px; font-size: 1.2rem; letter-spacing: -0.02em; }
 .prototype-card pre { max-height: 260px; background: rgba(245, 232, 199, 0.12); color: #fff6de; border: 1px solid rgba(249, 235, 201, 0.18); }
+.normal-player-actions { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 16px 0; padding: 12px; border: 1px solid rgba(249, 235, 201, 0.22); border-radius: 18px; background: linear-gradient(135deg, rgba(53, 104, 104, 0.36), rgba(176, 83, 47, 0.22)); }
+.normal-player-actions button { background: #f0b35e; color: #241610; font-weight: 800; }
+.normal-player-actions button:first-child { grid-column: span 2; background: #f5e0a7; color: #1f211c; }
 .prototype-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; margin-top: 14px; }
 .prototype-actions button { background: #b75d39; }
 .prototype-actions button:nth-child(2n) { background: #2f717b; }
@@ -107,5 +110,6 @@ body.player-mode-active .prototype-card pre {
 @media (max-width: 980px) {
   .layout, .trace-grid, .game-prototype { grid-template-columns: 1fr; }
   .quickbar, .qa-buttons, .dashboard, .normal-play-rail { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .normal-player-actions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .prototype-hero-card { grid-row: auto; }
 }

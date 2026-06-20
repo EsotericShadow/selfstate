@@ -503,6 +503,12 @@ These actions map onto existing systems while preserving resident mediation. The
 
 This moves the prototype closer to a playable interface: the player no longer needs to understand subsystem names to drive the first playable path.
 
+## Prototype v0 normal player action strip
+
+The prototype hero now puts the main player verbs before the debug-heavy control grid: Continue, Look, Move, Talk, Objects, Handling, Proposals, Support, Wait, Save, Return, and Follow.
+
+This is a UI narrowing step, not a new simulation system. The buttons call existing player-facing functions and preserve resident mediation, hidden-law boundaries, and no-tech-tree constraints. The acceptance gate is `normal_player_action_strip`.
+
 ## Game prototype v0 update: Player Mode Interface
 
 The browser shell now includes a `Player mode` toggle and `Player mode loop` milestone. Player mode foregrounds the actual play surface: canvas, normal action rail, selected resident cue, current problem, player guide, primary play surface, walkthrough state, normal action receipt, and public outcomes.

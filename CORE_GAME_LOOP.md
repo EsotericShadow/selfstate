@@ -546,6 +546,17 @@ The player-facing loop now has thirteen normal verbs:
 
 Each action records a row linking player intent to proposal, practice, component, physics, save, and return evidence where available.
 
+## Normal player action strip loop
+
+The hero surface now exposes a compact normal-action strip before the debug-heavy prototype action grid:
+
+1. `Continue`: run the current Player guide step.
+2. `Look`, `Move`, `Talk`, `Objects`, and `Handling`: interact with the village through player-language verbs.
+3. `Proposals`, `Support`, and `Wait`: use diegetic management without assigning jobs.
+4. `Save`, `Return`, and `Follow`: preserve and continue the public chain.
+
+The strip calls existing player-facing functions. It does not create direct object placement, direct job assignment, hidden-law exposure, or a new tech unlock.
+
 The Follow verb can now follow an object-objection chain as well as the broader integrated chain. It reuses existing actions and records object-chain phase, response id, proposal id, resolution id, and recheck result without giving the avatar direct object control.
 
 ## Player mode interface loop

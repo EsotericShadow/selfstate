@@ -403,6 +403,18 @@ Required evidence:
 
 This is the main player-facing control layer for the first playable shell.
 
+## Added scope gate: Normal Player Action Strip
+
+`normal_player_action_strip` is now part of first playable prototype scope.
+
+Required evidence:
+
+- the hero surface exposes normal player verbs before debug-heavy prototype controls
+- the strip includes Continue, Look, Move, Talk, Objects, Handling, Proposals, Support, Wait, Save, Return, and Follow
+- each button maps to an existing player-facing function
+- the strip does not add direct resident commands, hidden-law exposure, or tech unlocks
+- exported acceptance checks the strip exists with the required action bindings
+
 ## Prototype v0 milestone: Player Mode Interface
 
 `player_mode_interface` is now part of first playable prototype scope.

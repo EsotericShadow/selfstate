@@ -303,6 +303,7 @@
 - Confirm Support is recorded as condition support, not direct job assignment.
 - Confirm Save links to a prototype save slot after the normal action flow.
 - Export acceptance and confirm `normal_play_action_rail` appears as a passing requirement after all normal verbs run, including a `physics_path` row with save/return and body-language evidence.
+- Confirm `normal_play_physics_path_save_return_continuity` passes and the Save / return card shows matching Physics path save and restore rows.
 
 ## Player mode interface playtests
 

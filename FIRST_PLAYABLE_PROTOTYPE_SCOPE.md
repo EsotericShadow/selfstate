@@ -397,6 +397,7 @@ Required evidence:
 - hidden law is not exposed in normal view
 - actions link to proposal/practice/component/physics/save/return evidence when available
 - Physics path records a happy-path ID, save slot, restore slot, restore match, and body-language expression
+- save slots and return logs preserve a matching Physics path fingerprint
 - follow recovery rows show `chain_advanced=false` after guarded/refused pressure
 - no tech-tree unlock
 

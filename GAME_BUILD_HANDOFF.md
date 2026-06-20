@@ -503,6 +503,8 @@ While player mode is active, debug-heavy controls, subsystem action grids, QA ma
 
 Player mode now also includes the `Physics path` normal action and an `ambient physics path` card. The card summarizes the latest happy-path receipt, proposal, resident word, restore match, and body-language expression so physics-driven resident proposals can be followed from the normal view.
 
+`Physics path` is now preserved as normal-rail persistence evidence. Prototype save slots, return logs, save exports, and acceptance checks record the physics-path action row, happy-path ID, save slot, restore slot, restore match, resident word, proposal, and return body-language expression.
+
 This is game-build interface work, not a research report. The goal is to make the existing village prototype playable before adding more systems.
 
 ## Game prototype v0 update: Resident Proposal Deck

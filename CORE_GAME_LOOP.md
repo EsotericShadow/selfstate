@@ -106,8 +106,9 @@
 3. Return sessions show what residents still carry.
 4. Practices can persist, burden, be forgotten, or revive.
 5. Lived-action physics row counts and latest physics IDs persist so ordinary-action material consequences survive return.
-6. Avatar presence, comfort, boundary pressure, refusal risk, and return greeting tone persist as social history rather than being recalculated from a blank slate.
-7. Object-objection chains preserve `OIR`, `VBP`, `OIRR`, and resident recheck-response counts in save slots and restore logs.
+6. Physics-path action rows persist with happy-path ID, save slot, restore slot, resident word, and visible body-language expression.
+7. Avatar presence, comfort, boundary pressure, refusal risk, and return greeting tone persist as social history rather than being recalculated from a blank slate.
+8. Object-objection chains preserve `OIR`, `VBP`, `OIRR`, and resident recheck-response counts in save slots and restore logs.
 
 ## Deep-time civilization loop
 

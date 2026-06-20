@@ -868,3 +868,18 @@ The first playable path should show that resident-generated tests are embodied s
 - canvas/player-surface expression cue
 - no hidden-law exposure in normal view
 - no direct avatar command
+
+## Added scope gate: Normal-test visible component cue
+
+`normal_test_visible_component_cue` is now part of first playable prototype scope.
+
+A resident-generated test should identify a real affected component and carry that component cue through:
+
+- practical discovery feed/test evidence
+- normal action rail row
+- Village Board proposal
+- support/project records when the proposal is acted on
+- primary surface/canvas cue text
+- drawn primitive-component highlight
+- no resource spawning
+- no hidden-law exposure in normal view

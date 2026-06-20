@@ -815,3 +815,9 @@ The goal is readable continuity: the resident response should reflect what happe
 ordinary player action -> resident detects bottleneck -> resident generates test -> village board proposal -> visible resident expression cue -> support/wait/ask -> project work expression cue -> canvas-visible normal-test chain.
 
 This keeps the normal-test chain readable as lived resident behavior. The player sees posture/marker cues and imperfect public behavior, while audit-only simulator state remains separate.
+
+## Normal-test physical component cue loop
+
+ordinary player action -> resident bottleneck -> affected 3D component selected -> resident-generated test -> bounded component cue/stress evidence -> board proposal -> support/project path -> canvas ring around the physical component.
+
+This closes the gap between resident tests and physical world readability: the player can see which primitive component became socially and materially salient without receiving audit-only simulator truth.

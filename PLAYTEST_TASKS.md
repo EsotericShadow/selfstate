@@ -514,3 +514,11 @@
 3. Support the proposal without directly commanding the resident.
 4. Advance or watch the project path and confirm the expression cue changes or persists as public behavior evidence.
 5. Confirm the UI does not reveal the hidden material law in normal view.
+
+## Playtest task: normal-test physical cue
+
+1. Use ordinary play until a resident-generated test appears.
+2. Confirm the normal-test cue names an affected component rather than only a proposal/test ID.
+3. Inspect the canvas and confirm the affected primitive component has a visible resident-test ring or marker.
+4. Support or follow the related proposal and confirm the same component cue remains linked through board/support/project evidence.
+5. Confirm the cue does not reveal hidden simulator law in normal view and does not create free resources.

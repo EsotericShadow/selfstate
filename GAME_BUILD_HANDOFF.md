@@ -718,3 +718,12 @@ Implementation boundary:
 - Expression rows are public behavior cues only.
 - Hidden state and hidden law remain audit-only.
 - The avatar can support conditions, but the resident still accepts, waits, or works through the village board/project path.
+
+## Prototype increment: normal-test physical component cue
+
+Resident-generated tests now bind to a visible physical component cue in the 3D material world. The normal player surface can identify the affected component, resident term/gloss, pressure kind, and visible change while the canvas draws a public cue ring around the primitive component.
+
+Implementation boundary:
+- The cue is caused by a resident-generated bottleneck/test, not by a direct avatar command.
+- The cue adds bounded public stress/attention evidence; it does not spawn resources or install hidden-law knowledge.
+- Board proposals, support rows, project rows, action rail rows, and acceptance evidence can trace back to the same component cue.

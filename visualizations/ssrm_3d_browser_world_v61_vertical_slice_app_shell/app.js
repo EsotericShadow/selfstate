@@ -5484,6 +5484,9 @@ function currentPrimaryPlaySurfaceSnapshot() {
   const latestNormalResidentTestAction = actionRail && actionRail.actionLedger
     ? actionRail.actionLedger.slice().reverse().find(row => row.ordinary_bottleneck_test_id && row.ordinary_bottleneck_test_id !== 'none')
     : null;
+  const latestNormalTestComponentCue = materialWorld && materialWorld.normalTestComponentCueLedger && materialWorld.normalTestComponentCueLedger.length
+    ? materialWorld.normalTestComponentCueLedger[materialWorld.normalTestComponentCueLedger.length - 1]
+    : null;
   const latestNormalTestExpression = autonomous && autonomous.expressionLedger
     ? autonomous.expressionLedger.slice().reverse().find(row => /^normal_test_/.test(row.action || '') || (row.related_resident_test_id && row.related_resident_test_id !== 'none')) || null
     : null;
@@ -5536,6 +5539,13 @@ function currentPrimaryPlaySurfaceSnapshot() {
     normal_resident_test_board_proposal_id: latestNormalResidentTestAction ? latestNormalResidentTestAction.ordinary_bottleneck_board_proposal_id || 'none' : 'none',
     normal_resident_test_type: latestNormalResidentTestAction ? latestNormalResidentTestAction.ordinary_bottleneck_type : 'none',
     normal_resident_test_source: latestNormalResidentTestAction ? latestNormalResidentTestAction.ordinary_bottleneck_source : 'none',
+    normal_test_component_cue_id: latestNormalTestComponentCue ? latestNormalTestComponentCue.cue_id : 'none',
+    normal_test_component_id: latestNormalTestComponentCue ? latestNormalTestComponentCue.component_id : 'none',
+    normal_test_component_material_id: latestNormalTestComponentCue ? latestNormalTestComponentCue.material_id : 'none',
+    normal_test_component_resident_term: latestNormalTestComponentCue ? latestNormalTestComponentCue.resident_term || 'none' : 'none',
+    normal_test_component_player_gloss: latestNormalTestComponentCue ? latestNormalTestComponentCue.player_gloss || 'none' : 'none',
+    normal_test_component_pressure: latestNormalTestComponentCue ? latestNormalTestComponentCue.pressure_kind || 'none' : 'none',
+    normal_test_component_visible_change: latestNormalTestComponentCue ? latestNormalTestComponentCue.visible_change || 'none' : 'none',
     normal_test_expression_id: latestNormalTestExpression ? latestNormalTestExpression.expression_id : 'none',
     normal_test_expression_action: latestNormalTestExpression ? latestNormalTestExpression.action || 'none' : 'none',
     normal_test_expression_marker: latestNormalTestExpression ? latestNormalTestExpression.marker || 'none' : 'none',
@@ -5617,6 +5627,7 @@ function currentPrimaryPlaySurfaceSnapshot() {
       latestPractice ? `practice ${latestPractice.local_name || latestPractice.practice_id}` : 'practice graph not yet visible',
       latestHandlingPracticeLink ? `handling practice ${latestHandlingPracticeLink.practice_id} from ${latestHandlingPracticeLink.manipulation_id} relation=${latestHandlingPracticeLink.relation}` : 'normal handling has not seeded a practice yet',
       latestNormalResidentTestAction ? `resident test ${latestNormalResidentTestAction.ordinary_bottleneck_test_id} from ${latestNormalResidentTestAction.action_id} board=${latestNormalResidentTestAction.ordinary_bottleneck_board_proposal_id || 'none'} bottleneck=${latestNormalResidentTestAction.ordinary_bottleneck_type}` : 'normal play has not generated a resident test yet',
+      latestNormalTestComponentCue ? `normal test component ${latestNormalTestComponentCue.cue_id} ${latestNormalTestComponentCue.component_id} ${latestNormalTestComponentCue.visible_change}` : 'normal-test component cue not visible yet',
       latestNormalTestExpression ? `normal test expression ${latestNormalTestExpression.expression_id} ${latestNormalTestExpression.marker || 'visible cue'} / ${latestNormalTestExpression.posture || 'posture'}` : 'normal-test resident expression not visible yet',
       latestComponent ? `component ${latestComponent.component_id}` : 'physical components not initialized',
       latestCanvasSelection ? `canvas selection ${latestCanvasSelection.selection_id} ${latestCanvasSelection.component_id} ${latestCanvasSelection.resident_term}` : 'canvas object not selected yet',
@@ -5675,6 +5686,13 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     normal_test_chain_visual_rows: snapshot.normal_test_chain_visual_rows,
     normal_test_chain_saved_rows: snapshot.normal_test_chain_saved_rows,
     normal_test_chain_restored_rows: snapshot.normal_test_chain_restored_rows,
+    normal_test_component_cue_id: snapshot.normal_test_component_cue_id,
+    normal_test_component_id: snapshot.normal_test_component_id,
+    normal_test_component_material_id: snapshot.normal_test_component_material_id,
+    normal_test_component_resident_term: snapshot.normal_test_component_resident_term,
+    normal_test_component_player_gloss: snapshot.normal_test_component_player_gloss,
+    normal_test_component_pressure: snapshot.normal_test_component_pressure,
+    normal_test_component_visible_change: snapshot.normal_test_component_visible_change,
     normal_test_expression_id: snapshot.normal_test_expression_id,
     normal_test_expression_action: snapshot.normal_test_expression_action,
     normal_test_expression_marker: snapshot.normal_test_expression_marker,
@@ -5826,6 +5844,7 @@ function formatPrimaryPlaySurface() {
     `Avatar presence: ${snapshot.avatar_presence_id} / ${snapshot.avatar_presence_resident} near=${snapshot.avatar_presence_near_worksite} / component=${snapshot.avatar_presence_component_id} / influence=${snapshot.avatar_presence_influence}`,
     `Object chain: active=${snapshot.object_chain_active ? 'yes' : 'no'} / phase=${snapshot.object_chain_phase} / next=${snapshot.object_chain_next_action} / response=${snapshot.object_chain_response_id} / proposal=${snapshot.object_chain_proposal_id} / resolution=${snapshot.object_chain_resolution_id} / recheck=${snapshot.object_chain_recheck_result}`,
     `Normal-test chain: active=${snapshot.normal_test_chain_active ? 'yes' : 'no'} / phase=${snapshot.normal_test_chain_phase} / next=${snapshot.normal_test_chain_next_action} / action=${snapshot.normal_test_chain_action_id} / test=${snapshot.normal_test_chain_test_id} / board=${snapshot.normal_test_chain_proposal_id}`,
+    `Normal-test component: ${snapshot.normal_test_component_cue_id} / ${snapshot.normal_test_component_id} / ${snapshot.normal_test_component_visible_change}`,
     `Normal-test expression: ${snapshot.normal_test_expression_id} / ${snapshot.normal_test_expression_marker} / posture=${snapshot.normal_test_expression_posture}`,
     `Resource pressure: ${snapshot.resource_pressure.length ? snapshot.resource_pressure.join(', ') : 'none'}`,
     `Rows: focus=${surface.focusLedger.length}, cues=${surface.canvasCueLedger.length}, prompts=${surface.actionPromptLedger.length}`,
@@ -6560,6 +6579,7 @@ function normalActionBottleneckFor(payload) {
       materials: Array.from(new Set([manipulation.material_id || payload.component_id || 'local_material'].concat(Object.keys(manipulation.resource_cost || {})))),
       forceTest: failed || manipulation.selected_component_bound === true,
       sourceManipulationId: manipulation.manipulation_id,
+      componentId: manipulation.component_id || payload.component_id || 'none',
     };
   }
   if (verb === 'objects') {
@@ -6571,6 +6591,7 @@ function normalActionBottleneckFor(payload) {
       materials: [payload.component_id || 'active_component'],
       forceTest: true,
       sourceManipulationId: 'none',
+      componentId: payload.component_id || 'none',
     };
   }
   if (verb === 'support') {
@@ -6582,6 +6603,7 @@ function normalActionBottleneckFor(payload) {
       materials: ['shared_support', payload.component_id || 'resident_attention'],
       forceTest: false,
       sourceManipulationId: 'none',
+      componentId: payload.component_id || 'none',
     };
   }
   if (verb === 'move') {
@@ -6593,6 +6615,7 @@ function normalActionBottleneckFor(payload) {
       materials: ['path_marker', payload.component_id || 'village_route'],
       forceTest: false,
       sourceManipulationId: 'none',
+      componentId: payload.component_id || 'none',
     };
   }
   if (verb === 'wait') {
@@ -6604,6 +6627,7 @@ function normalActionBottleneckFor(payload) {
       materials: ['time', payload.component_id || 'watched_component'],
       forceTest: false,
       sourceManipulationId: 'none',
+      componentId: payload.component_id || 'none',
     };
   }
   if (verb === 'ask') {
@@ -6615,6 +6639,7 @@ function normalActionBottleneckFor(payload) {
       materials: ['resident_memory', payload.component_id || 'current_concern'],
       forceTest: false,
       sourceManipulationId: 'none',
+      componentId: payload.component_id || 'none',
     };
   }
   return null;
@@ -6629,6 +6654,97 @@ function supportMaterialsForNormalTest(materials) {
     return 'care';
   });
   return Array.from(new Set(mapped.concat(['care']))).slice(0, 3);
+}
+
+function normalTestTargetComponentFor(payload, bottleneck) {
+  const sim = ensurePrototype3DWorld();
+  const componentId = bottleneck && bottleneck.componentId && bottleneck.componentId !== 'none'
+    ? bottleneck.componentId
+    : payload.latestManipulation && payload.latestManipulation.component_id
+      ? payload.latestManipulation.component_id
+      : payload.component_id && payload.component_id !== 'none'
+        ? payload.component_id
+        : world.gamePrototypeWorldStage && world.gamePrototypeWorldStage.latestSnapshot && world.gamePrototypeWorldStage.latestSnapshot.active_component_id !== 'none'
+          ? world.gamePrototypeWorldStage.latestSnapshot.active_component_id
+          : null;
+  return sim.components.find(component => component.component_id === componentId) || sim.components.slice().sort((a, b) => (Number(a.stability || 1) - Number(b.stability || 1)) || (Number(b.damage || 0) - Number(a.damage || 0)) || (Number(b.moisture || 0) - Number(a.moisture || 0)))[0] || null;
+}
+
+function recordNormalTestComponentCue(payload, bottleneck, test) {
+  const sim = ensurePrototype3DWorld();
+  if (!sim.normalTestComponentCueLedger) sim.normalTestComponentCueLedger = [];
+  const component = normalTestTargetComponentFor(payload, bottleneck);
+  if (!component) return null;
+  const term = sim.language && sim.language.terms
+    ? sim.language.terms.find(row => row.term_id === component.resident_term_id)
+    : null;
+  const before = {
+    position3d: component.position3d ? { ...component.position3d } : null,
+    moisture: Number(component.moisture || 0),
+    damage: Number(component.damage || 0),
+    stability: Number(component.stability || 0),
+    field_stress: Number(component.field_stress || 0),
+  };
+  const pressureKind = bottleneck.type === 'handling_failure'
+    ? 'constraint_failure'
+    : bottleneck.type === 'delayed_weather_or_decay'
+      ? 'time_decay_pressure'
+      : bottleneck.type === 'route_bottleneck'
+        ? 'access_pressure'
+        : bottleneck.type === 'object_inspection_question'
+          ? 'inspection_pressure'
+          : 'resident_test_attention';
+  component.normal_test_cue_id = `NTC-${String(sim.normalTestComponentCueLedger.length + 1).padStart(3, '0')}`;
+  component.normal_test_pressure = pressureKind;
+  component.last_normal_test_id = test.id;
+  component.last_normal_action_id = payload.normalActionId;
+  component.field_stress = Number(Math.min(1, Number(component.field_stress || 0) + (test.failure ? 0.018 : 0.008)).toFixed(3));
+  if (test.failure) component.damage = Number(Math.min(1, Number(component.damage || 0) + 0.006).toFixed(3));
+  const after = {
+    position3d: component.position3d ? { ...component.position3d } : null,
+    moisture: Number(component.moisture || 0),
+    damage: Number(component.damage || 0),
+    stability: Number(component.stability || 0),
+    field_stress: Number(component.field_stress || 0),
+  };
+  const row = {
+    cue_id: component.normal_test_cue_id,
+    tick: world.tick,
+    normal_action_id: payload.normalActionId,
+    resident: payload.resident,
+    test_id: test.id,
+    bottleneck_type: bottleneck.type,
+    component_id: component.component_id,
+    material_id: component.material_id || 'unknown',
+    resident_term: term ? term.resident_word : component.resident_term_id || component.component_id,
+    player_gloss: term ? term.player_gloss : component.player_gloss || component.material_id || component.component_id,
+    pressure_kind: pressureKind,
+    visible_change: test.failure ? 'damage/stress warning ring' : 'attention/stress test ring',
+    before,
+    after,
+    no_effect_without_cause: true,
+    no_resource_spawning: true,
+    avatar_direct_command: false,
+    hidden_law_normal_view: false,
+  };
+  sim.normalTestComponentCueLedger.push(row);
+  sim.normalTestComponentCueLedger = sim.normalTestComponentCueLedger.slice(-80);
+  recordRealityConstraint('normal_test_component_cue', {
+    resident: payload.resident,
+    sourceBeliefId: test.id,
+    materials: [component.component_id],
+    publicObservation: `${payload.resident} marked ${row.resident_term} as part of ${test.id}`,
+    residentInterpretation: row.visible_change,
+    materialTransformation: test.failure ? 'failed resident test added bounded visible stress/damage cue' : 'resident test added bounded visible component-attention cue',
+    timeCost: 1,
+    workCost: 1,
+    toolWear: 0,
+    maintenanceObligation: test.failure ? `avoid repeating ${test.id} without support` : `watch ${component.component_id} during ${test.id}`,
+    unintendedConsequence: 'component becomes socially salient for later proposal/worksite decisions',
+    hiddenLawInvolved: 'none in normal view',
+    conservationCheck: true
+  });
+  return row;
 }
 
 function createVillageBoardProposalFromNormalResidentTest(payload) {
@@ -6657,6 +6773,8 @@ function createVillageBoardProposalFromNormalResidentTest(payload) {
     related_normal_action_id: payload.normalActionId,
     related_bottleneck_feed_id: payload.feed.id,
     related_resident_test_id: payload.test.id,
+    normal_test_component_cue_id: payload.componentCue ? payload.componentCue.cue_id : 'none',
+    normal_test_component_id: payload.componentCue ? payload.componentCue.component_id : payload.test.sourceComponentId || 'none',
     normal_test_expression_id: expressionRow.expression_id,
     expression_marker: expressionRow.marker || 'visible cue',
     expression_posture: expressionRow.posture || 'posture',
@@ -6685,6 +6803,9 @@ function createVillageBoardProposalFromNormalResidentTest(payload) {
     related_auto_test_id: payload.autoTest.id,
     related_practical_proposal_id: payload.practicalProposal.id,
     related_source_manipulation_id: payload.test.sourceManipulationId || 'none',
+    normal_test_component_cue_id: payload.componentCue ? payload.componentCue.cue_id : payload.test.componentCueId || 'none',
+    normal_test_component_id: payload.componentCue ? payload.componentCue.component_id : payload.test.sourceComponentId || 'none',
+    normal_test_component_visible_change: payload.componentCue ? payload.componentCue.visible_change : payload.test.componentVisibleChange || 'none',
     normal_action_test_path: true,
     normal_test_expression_id: expressionRow.expression_id,
     expression_marker: expressionRow.marker || 'visible cue',
@@ -6739,6 +6860,7 @@ function recordNormalActionResidentGeneratedTest(payload) {
     sourceBeliefId: bottleneck.sourceBeliefId,
     sourceBeliefLabel: bottleneck.sourceBeliefLabel,
     sourceManipulationId: bottleneck.sourceManipulationId || 'none',
+    sourceComponentId: bottleneck.componentId || payload.component_id || 'none',
     pressureReady: true,
     physicalBottleneck: true,
     repeatedOrdinaryActions,
@@ -6785,6 +6907,7 @@ function recordNormalActionResidentGeneratedTest(payload) {
     sourceBeliefLabel: bottleneck.sourceBeliefLabel,
     sourceNormalActionId: payload.normalActionId,
     sourceManipulationId: bottleneck.sourceManipulationId || 'none',
+    sourceComponentId: bottleneck.componentId || payload.component_id || 'none',
   };
   const proposal = {
     id: `PDP-${String(discovery.residentProposals.length + 1).padStart(2, '0')}`,
@@ -6792,6 +6915,7 @@ function recordNormalActionResidentGeneratedTest(payload) {
     sourceBottleneckId: bottleneckRow.id,
     sourceBeliefId: bottleneck.sourceBeliefId,
     sourceNormalActionId: payload.normalActionId,
+    sourceComponentId: bottleneck.componentId || payload.component_id || 'none',
     materials: bottleneck.materials,
     question: `try a resident check for ${bottleneck.type.replace(/_/g, ' ')}`,
     residentGenerated: true,
@@ -6812,9 +6936,22 @@ function recordNormalActionResidentGeneratedTest(payload) {
     sourceFeedId: feed.id,
     sourceNormalActionId: payload.normalActionId,
     sourceManipulationId: bottleneck.sourceManipulationId || 'none',
+    sourceComponentId: bottleneck.componentId || payload.component_id || 'none',
     bottleneckType: bottleneck.type,
     noCorrectConceptInstalled: true,
   };
+  const componentCue = recordNormalTestComponentCue(payload, bottleneck, test);
+  if (componentCue) {
+    feed.componentCueId = componentCue.cue_id;
+    feed.sourceComponentId = componentCue.component_id;
+    bottleneckRow.componentCueId = componentCue.cue_id;
+    bottleneckRow.sourceComponentId = componentCue.component_id;
+    proposal.componentCueId = componentCue.cue_id;
+    proposal.sourceComponentId = componentCue.component_id;
+    test.componentCueId = componentCue.cue_id;
+    test.sourceComponentId = componentCue.component_id;
+    test.componentVisibleChange = componentCue.visible_change;
+  }
   discovery.livedActions.push(actionRow);
   discovery.bottlenecks.push(bottleneckRow);
   discovery.residentProposals.push(proposal);
@@ -6831,6 +6968,8 @@ function recordNormalActionResidentGeneratedTest(payload) {
     sourceFeedId: feed.id,
     sourceNormalActionId: payload.normalActionId,
     sourceManipulationId: bottleneck.sourceManipulationId || 'none',
+    sourceComponentId: componentCue ? componentCue.component_id : bottleneck.componentId || payload.component_id || 'none',
+    componentCueId: componentCue ? componentCue.cue_id : 'none',
     action: discoveryAction,
     resident: payload.resident,
     testId: test.id,
@@ -6851,15 +6990,17 @@ function recordNormalActionResidentGeneratedTest(payload) {
     practicalProposal: proposal,
     test,
     autoTest,
+    componentCue,
   });
   autoTest.boardProposalId = boardProposal.proposal_id;
   autoTest.normalTestExpressionId = boardProposal.normal_test_expression_id || 'none';
+  autoTest.componentCueId = componentCue ? componentCue.cue_id : 'none';
   recordRealityConstraint('normal_action_resident_generated_test', {
     resident: payload.resident,
     sourceBeliefId: payload.normalActionId,
     materials: bottleneck.materials,
     publicObservation: test.outcome,
-    residentInterpretation: candidateLabel,
+    residentInterpretation: componentCue ? `${candidateLabel}; visible component cue ${componentCue.cue_id}` : candidateLabel,
     materialTransformation: 'normal player action exposed a bottleneck; resident generated a bounded practical test',
     timeCost: 1,
     workCost: failure ? 1 : 2,
@@ -6877,11 +7018,14 @@ function recordNormalActionResidentGeneratedTest(payload) {
     autoTestId: autoTest.id,
     boardProposalId: boardProposal.proposal_id,
     expressionId: boardProposal.normal_test_expression_id || 'none',
+    componentCueId: componentCue ? componentCue.cue_id : 'none',
+    componentId: componentCue ? componentCue.component_id : bottleneck.componentId || payload.component_id || 'none',
     bottleneckType: bottleneck.type,
     repeatedOrdinaryActions,
     triggeredResidentTest: true,
     sourceBeliefId: bottleneck.sourceBeliefId,
     sourceManipulationId: bottleneck.sourceManipulationId || 'none',
+    sourceComponentId: componentCue ? componentCue.component_id : bottleneck.componentId || payload.component_id || 'none',
   };
 }
 
@@ -6975,11 +7119,14 @@ function runNormalPlayAction(verb) {
     ordinary_bottleneck_proposal_id: residentTestResult.proposalId || 'none',
     ordinary_bottleneck_board_proposal_id: residentTestResult.boardProposalId || 'none',
     ordinary_bottleneck_expression_id: residentTestResult.expressionId || 'none',
+    ordinary_bottleneck_component_cue_id: residentTestResult.componentCueId || 'none',
+    ordinary_bottleneck_component_id: residentTestResult.componentId || 'none',
     ordinary_bottleneck_type: residentTestResult.bottleneckType || 'none',
     ordinary_bottleneck_repetition: residentTestResult.repeatedOrdinaryActions || 0,
     ordinary_bottleneck_triggered_test: residentTestResult.triggeredResidentTest === true,
     ordinary_bottleneck_source: residentTestResult.sourceBeliefId || 'none',
     ordinary_bottleneck_manipulation_id: residentTestResult.sourceManipulationId || 'none',
+    ordinary_bottleneck_source_component_id: residentTestResult.sourceComponentId || 'none',
     normal_test_chain_phase: normalTestChain.phase,
     normal_test_chain_next_action: normalTestChain.next_action,
     normal_test_chain_action_id: normalTestChain.action_id,
@@ -15005,6 +15152,9 @@ function buildPrototypeAcceptanceReceipt() {
   const normalTestProposalExpressionRows = board && board.projectProposals ? board.projectProposals.filter(row => row.normal_action_test_path === true && row.normal_test_expression_id && row.normal_test_expression_id !== 'none' && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
   const normalTestSupportExpressionRows = board && board.supportEvents ? board.supportEvents.filter(row => row.normal_action_test_path === true && row.normal_test_expression_id && row.normal_test_expression_id !== 'none' && row.forced === false).length : 0;
   const normalTestProjectExpressionRows = projects && projects.projectLedger ? projects.projectLedger.filter(row => row.normal_action_test_path === true && row.normal_test_expression_id && row.normal_test_expression_id !== 'none' && row.avatar_direct_command === false).length : 0;
+  const normalTestComponentCueRows = materialWorld && materialWorld.normalTestComponentCueLedger ? materialWorld.normalTestComponentCueLedger.filter(row => row.test_id && row.test_id !== 'none' && row.component_id && row.component_id !== 'none' && row.no_effect_without_cause === true && row.no_resource_spawning === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
+  const normalTestActionComponentRows = actionRail && actionRail.actionLedger ? actionRail.actionLedger.filter(row => row.ordinary_bottleneck_component_cue_id && row.ordinary_bottleneck_component_cue_id !== 'none' && row.ordinary_bottleneck_component_id && row.ordinary_bottleneck_component_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
+  const normalTestBoardComponentRows = board && board.projectProposals ? board.projectProposals.filter(row => row.normal_action_test_path === true && row.normal_test_component_cue_id && row.normal_test_component_cue_id !== 'none' && row.normal_test_component_id && row.normal_test_component_id !== 'none' && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
   const actionRailFollowRecoveryRows = actionRail && actionRail.followRecoveryLedger ? actionRail.followRecoveryLedger.length : 0;
   const actionRailFollowRecoveryExpressionRows = actionRail && actionRail.followRecoveryLedger ? actionRail.followRecoveryLedger.filter(row => row.resident_response_expression_id && row.resident_response_expression_id !== 'none' && row.chain_advanced === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const objectGuidedOptionRows = actionRail && actionRail.optionLedger ? actionRail.optionLedger.filter(snapshot => (snapshot.options || []).some(option => option.object_chain_phase && option.object_chain_phase !== 'none' && option.object_chain_next_action && option.object_chain_next_action !== 'none' && option.recommended === true)).length : 0;
@@ -15044,6 +15194,7 @@ function buildPrototypeAcceptanceReceipt() {
   const objectChainCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.object_chain_phase && row.object_chain_phase !== 'none' && (row.cues || []).some(cue => /object chain/.test(cue)) && row.normal_view_hidden_law_exposed === false).length : 0;
   const normalTestChainCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.normal_test_chain_phase && row.normal_test_chain_phase !== 'none' && row.normal_test_chain_test_id && row.normal_test_chain_test_id !== 'none' && (row.cues || []).some(cue => /normal test chain/.test(cue)) && row.normal_view_hidden_law_exposed === false).length : 0;
   const normalTestExpressionCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => (row.cues || []).some(cue => /normal test expression/.test(cue)) && row.normal_view_hidden_law_exposed === false).length : 0;
+  const normalTestComponentCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => (row.cues || []).some(cue => /normal test component/.test(cue)) && row.normal_view_hidden_law_exposed === false).length : 0;
   const canvasSelectionRows = canvasSelection && canvasSelection.selectionLedger ? canvasSelection.selectionLedger.length : 0;
   const canvasSelectionCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.canvas_selection_id && row.canvas_selection_id !== 'none' && (row.cues || []).some(cue => /canvas selection/.test(cue))).length : 0;
   const worksiteRows = worksite ? worksite.watchLedger.length : 0;
@@ -15157,6 +15308,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'normal_test_guided_next_step', pass: Boolean(actionRail && (normalTestGuidedOptionRows > 0 || normalTestGuidedFollowRows > 0)), evidence: actionRail ? `guidedOptions=${normalTestGuidedOptionRows}, guidedFollow=${normalTestGuidedFollowRows}` : 'not run' },
     { id: 'normal_test_canvas_cue', pass: Boolean(worldStage && normalTestChainCanvasCueRows > 0), evidence: worldStage ? `normalTestChainCues=${normalTestChainCanvasCueRows}` : 'not run' },
     { id: 'normal_test_visible_resident_expression', pass: Boolean(autonomous && board && projects && worldStage && normalTestExpressionRows > 0 && normalTestProposalExpressionRows > 0 && normalTestSupportExpressionRows > 0 && normalTestProjectExpressionRows > 0 && normalTestExpressionCanvasCueRows > 0), evidence: `expressions=${normalTestExpressionRows}, proposals=${normalTestProposalExpressionRows}, support=${normalTestSupportExpressionRows}, project=${normalTestProjectExpressionRows}, canvas=${normalTestExpressionCanvasCueRows}` },
+    { id: 'normal_test_visible_component_cue', pass: Boolean(materialWorld && actionRail && board && worldStage && normalTestComponentCueRows > 0 && normalTestActionComponentRows > 0 && normalTestBoardComponentRows > 0 && normalTestComponentCanvasCueRows > 0), evidence: `componentCues=${normalTestComponentCueRows}, actions=${normalTestActionComponentRows}, board=${normalTestBoardComponentRows}, canvas=${normalTestComponentCanvasCueRows}` },
     { id: 'object_objection_guided_next_step', pass: Boolean(actionRail && (objectGuidedOptionRows > 0 || objectGuidedFollowRows > 0)), evidence: actionRail ? `guidedOptions=${objectGuidedOptionRows}, guidedFollow=${objectGuidedFollowRows}` : 'not run' },
     { id: 'object_objection_canvas_cue', pass: Boolean(worldStage && objectChainCanvasCueRows > 0), evidence: worldStage ? `objectChainCues=${objectChainCanvasCueRows}` : 'not run' },
     { id: 'player_mode_interface', pass: Boolean(playerMode && playerMode.acceptanceReady && playerModeSessions > 0 && playerModeVisibleCards >= 6 && playerMode.normalViewOnly === true && playerMode.debugPanelsHidden === true && playerMode.noDirectCommand === true && playerMode.noHiddenLawNormalView === true && playerMode.playerGlossesOnly === true), evidence: playerMode ? `enabled=${playerMode.enabled}, sessions=${playerModeSessions}, visibleCards=${playerModeVisibleCards}` : 'not run' },
@@ -16300,7 +16452,7 @@ function draw() {
   ctx.fillText(`Routine ${stageSnapshot.routine_context_id}: ${stageSnapshot.routine_context_resident} -> ${stageSnapshot.routine_context_suggested_action} near ${stageSnapshot.routine_context_source}`.slice(0, 82), 470, 132);
   ctx.fillText(`Object chain ${stageSnapshot.object_chain_phase}: next ${stageSnapshot.object_chain_next_action} | response ${stageSnapshot.object_chain_response_id} | proposal ${stageSnapshot.object_chain_proposal_id} | resolution ${stageSnapshot.object_chain_resolution_id}`.slice(0, 112), 44, 152);
   ctx.fillText(`Normal-test chain ${stageSnapshot.normal_test_chain_phase}: next ${stageSnapshot.normal_test_chain_next_action} | test ${stageSnapshot.normal_test_chain_test_id} | board ${stageSnapshot.normal_test_chain_proposal_id}`.slice(0, 112), 44, 172);
-  ctx.fillText(`Integrated ${stageSnapshot.integrated_loop_id}: proposal ${stageSnapshot.integrated_loop_proposal_id} -> practice ${stageSnapshot.integrated_loop_practice_id} -> save ${stageSnapshot.integrated_loop_save_slot_id}/${stageSnapshot.integrated_loop_restore_slot_id}`.slice(0, 104), 44, 192);
+  ctx.fillText(`Normal-test component ${stageSnapshot.normal_test_component_cue_id}: ${stageSnapshot.normal_test_component_id} / ${stageSnapshot.normal_test_component_visible_change} | integrated ${stageSnapshot.integrated_loop_id}`.slice(0, 112), 44, 192);
 
   const materialWorld = world.gamePrototype3DWorld;
   if (materialWorld && materialWorld.components) {
@@ -16319,6 +16471,12 @@ function draw() {
     const livedPractice = world.gamePrototypeLivedPractice || null;
     const livedPhysicsRows = livedPractice && livedPractice.physicsLedger ? livedPractice.physicsLedger.slice(-6) : [];
     const livedPhysicsByComponent = livedPhysicsRows.reduce((memo, row) => {
+      if (!memo[row.component_id]) memo[row.component_id] = [];
+      memo[row.component_id].push(row);
+      return memo;
+    }, {});
+    const normalTestCueRows = materialWorld.normalTestComponentCueLedger ? materialWorld.normalTestComponentCueLedger.slice(-8) : [];
+    const normalTestCueByComponent = normalTestCueRows.reduce((memo, row) => {
       if (!memo[row.component_id]) memo[row.component_id] = [];
       memo[row.component_id].push(row);
       return memo;
@@ -16405,6 +16563,25 @@ function draw() {
         ctx.fillStyle = '#f9ebc9';
         ctx.font = '10px Optima, sans-serif';
         ctx.fillText(latest.physics_id, point.x + 22, point.y + 28);
+        ctx.restore();
+      }
+      const componentNormalTestCues = normalTestCueByComponent[component.component_id] || [];
+      if (componentNormalTestCues.length) {
+        const latestCue = componentNormalTestCues[componentNormalTestCues.length - 1];
+        ctx.save();
+        ctx.strokeStyle = latestCue.bottleneck_type === 'handling_failure' ? '#ff6b4a' : '#f0c35b';
+        ctx.lineWidth = 4;
+        ctx.setLineDash([3, 6]);
+        ctx.beginPath();
+        ctx.arc(point.x, point.y, 39 + componentNormalTestCues.length * 4, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.fillStyle = 'rgba(17,24,22,0.82)';
+        ctx.fillRect(point.x + 26, point.y - 38, 178, 28);
+        ctx.fillStyle = '#f9ebc9';
+        ctx.font = '10px Optima, sans-serif';
+        ctx.fillText(`resident test ${latestCue.test_id}`, point.x + 32, point.y - 25);
+        ctx.fillText(`${latestCue.cue_id}: ${latestCue.visible_change}`.slice(0, 34), point.x + 32, point.y - 12);
         ctx.restore();
       }
 	    });
@@ -17419,7 +17596,7 @@ function supportVillageProposal() {
     proposal.support_materials_consumed = { ...(proposal.support_materials_consumed || {}), ...consumed };
     mutateResident(proposal.proposer, { trust: 0.006 + avatarPresence.trust_delta, progress: 0.008, memory: objectObjectionPath ? `felt supported after ${proposal.related_object_response_id}` : normalActionTestPath ? `felt supported after ${proposal.related_resident_test_id}` : avatarPresence.near_worksite ? `felt supported nearby on ${proposal.problem_addressed}` : `felt supported on ${proposal.problem_addressed}`, historyEvent: 'village board support', historyDetail: `${proposal.proposal_id}; presence ${avatarPresence.presence_id}` });
   }
-  board.supportEvents.push({ proposalId: proposal.proposal_id, accepted, avatarAction: 'support conditions', whoFeltThis: proposal.proposer, forced: false, related_object_response_id: proposal.related_object_response_id || 'none', object_objection_path: objectObjectionPath, normal_action_test_path: normalActionTestPath, normal_test_expression_id: supportExpression ? supportExpression.expression_id : 'none', expression_marker: supportExpression ? supportExpression.marker || 'visible cue' : 'none', expression_posture: supportExpression ? supportExpression.posture || 'posture' : 'none', related_normal_action_id: proposal.related_normal_action_id || 'none', related_resident_test_id: proposal.related_resident_test_id || 'none', related_auto_test_id: proposal.related_auto_test_id || 'none', support_materials_consumed: consumed, support_shortages: supportShortages, avatar_presence_id: avatarPresence.presence_id, near_worksite: avatarPresence.near_worksite });
+  board.supportEvents.push({ proposalId: proposal.proposal_id, accepted, avatarAction: 'support conditions', whoFeltThis: proposal.proposer, forced: false, related_object_response_id: proposal.related_object_response_id || 'none', object_objection_path: objectObjectionPath, normal_action_test_path: normalActionTestPath, normal_test_component_cue_id: proposal.normal_test_component_cue_id || 'none', normal_test_component_id: proposal.normal_test_component_id || 'none', normal_test_expression_id: supportExpression ? supportExpression.expression_id : 'none', expression_marker: supportExpression ? supportExpression.marker || 'visible cue' : 'none', expression_posture: supportExpression ? supportExpression.posture || 'posture' : 'none', related_normal_action_id: proposal.related_normal_action_id || 'none', related_resident_test_id: proposal.related_resident_test_id || 'none', related_auto_test_id: proposal.related_auto_test_id || 'none', support_materials_consumed: consumed, support_shortages: supportShortages, avatar_presence_id: avatarPresence.presence_id, near_worksite: avatarPresence.near_worksite });
   recordRealityConstraint('proposal_support', {
     resident: proposal.proposer,
     sourceBeliefId: proposal.proposal_id,
@@ -17832,6 +18009,9 @@ function advanceVillageProject() {
     related_resident_test_id: proposal.related_resident_test_id || 'none',
     related_auto_test_id: proposal.related_auto_test_id || 'none',
     related_source_manipulation_id: proposal.related_source_manipulation_id || 'none',
+    normal_test_component_cue_id: proposal.normal_test_component_cue_id || 'none',
+    normal_test_component_id: proposal.normal_test_component_id || 'none',
+    normal_test_component_visible_change: proposal.normal_test_component_visible_change || 'none',
     tick: world.tick,
     proposer: proposal.proposer,
     problem_addressed: proposal.problem_addressed,

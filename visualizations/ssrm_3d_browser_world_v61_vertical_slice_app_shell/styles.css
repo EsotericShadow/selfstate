@@ -63,6 +63,7 @@ select { width: 100%; padding: 10px; border-radius: 14px; border: 1px solid rgba
 .normal-player-actions { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 16px 0; padding: 12px; border: 1px solid rgba(249, 235, 201, 0.22); border-radius: 18px; background: linear-gradient(135deg, rgba(53, 104, 104, 0.36), rgba(176, 83, 47, 0.22)); }
 .normal-player-actions button { background: #f0b35e; color: #241610; font-weight: 800; }
 .normal-player-actions button:first-child { grid-column: span 2; background: #f5e0a7; color: #1f211c; }
+.normal-player-actions button.recommended-action { outline: 3px solid #fff6de; box-shadow: 0 0 0 5px rgba(240, 179, 94, 0.28); transform: translateY(-1px); }
 .prototype-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; margin-top: 14px; }
 .prototype-actions button { background: #b75d39; }
 .prototype-actions button:nth-child(2n) { background: #2f717b; }

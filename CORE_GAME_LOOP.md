@@ -568,6 +568,12 @@ The hero surface now shows a compact read-only HUD before the normal action stri
 
 The HUD is an orientation surface for ordinary play. It does not create simulation state.
 
+## Normal player guided action highlight
+
+The normal action strip now marks the button that matches the current Player guide step. If the current guide action is not one of the compact strip buttons, `Continue` is highlighted because it runs the guide step through the existing sequencer.
+
+This is only UI affordance. It does not command residents, reveal hidden law, create resources, or change the simulation path.
+
 The Follow verb can now follow an object-objection chain as well as the broader integrated chain. It reuses existing actions and records object-chain phase, response id, proposal id, resolution id, and recheck result without giving the avatar direct object control.
 
 ## Player mode interface loop

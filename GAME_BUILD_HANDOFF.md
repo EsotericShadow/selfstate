@@ -515,6 +515,12 @@ The prototype hero now includes a compact normal-player HUD above the action str
 
 This keeps the first playable legible without requiring the player to scan debug panels. The HUD is read-only and preserves no-command, no-hidden-law, and no-tech-tree boundaries. The acceptance gate is `normal_player_hud`.
 
+## Prototype v0 guided action highlight
+
+The compact action strip now highlights the current Player guide action. If the guide points to a deeper prototype action not present in the compact strip, the `Continue` button is highlighted as the safe fallback.
+
+This keeps the prototype oriented around ordinary play while preserving the existing resident-mediated path. The acceptance gate is `normal_player_guided_action_highlight`.
+
 ## Game prototype v0 update: Player Mode Interface
 
 The browser shell now includes a `Player mode` toggle and `Player mode loop` milestone. Player mode foregrounds the actual play surface: canvas, normal action rail, selected resident cue, current problem, player guide, primary play surface, walkthrough state, normal action receipt, and public outcomes.

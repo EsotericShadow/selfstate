@@ -428,6 +428,18 @@ Required evidence:
 - the HUD is read-only and does not create world state, command residents, expose hidden law, or unlock technology
 - exported acceptance checks the HUD exists and preserves the no-command boundary
 
+## Added scope gate: Normal Player Guided Action Highlight
+
+`normal_player_guided_action_highlight` is now part of first playable prototype scope.
+
+Required evidence:
+
+- the normal-player strip visually highlights the current Player guide action when that action is present
+- when the exact guide action is outside the compact strip, Continue is highlighted as the bounded guide-step fallback
+- the highlighted button uses existing player-facing actions only
+- the highlight changes UI affordance only and does not create world state, command residents, reveal hidden law, or unlock technology
+- exported acceptance reports the guide action, highlighted action, and match state
+
 ## Prototype v0 milestone: Player Mode Interface
 
 `player_mode_interface` is now part of first playable prototype scope.

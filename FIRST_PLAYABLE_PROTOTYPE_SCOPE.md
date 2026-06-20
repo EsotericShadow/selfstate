@@ -908,3 +908,18 @@ A normal-test Follow handling step should be able to produce:
 - proposal feedback fields linking the practice back to the Village Board item
 - resident schedule and memory bias from the practice feedback
 - no hidden-law exposure and no direct avatar command
+
+## Added scope gate: Normal-test feedback save/return continuity
+
+`normal_test_feedback_save_return_continuity` is now part of first playable prototype scope.
+
+A saved normal-test feedback path should preserve:
+
+- feedback row count
+- latest feedback ID
+- linked practice ID
+- manipulation ID
+- body step ID
+- component ID
+- resident and schedule bias
+- continuity fingerprint match after restore

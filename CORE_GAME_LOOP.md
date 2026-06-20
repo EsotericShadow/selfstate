@@ -833,3 +833,9 @@ This makes Follow a playable bridge from public test evidence into embodied resi
 normal-test Follow -> resident body/manipulation row -> emergent practice update -> feedback row -> resident schedule/memory bias -> originating proposal records the practice pressure.
 
 This turns normal-test handling into future behavior pressure. The test does not simply complete a UI chain; it becomes remembered local evidence that can influence what the resident returns to and how the board proposal is interpreted.
+
+## Normal-test feedback save/return loop
+
+normal-test feedback row -> save slot records feedback/practice/body/component fields -> restore slot -> normal-test continuity snapshot recomputes feedback state -> return log proves saved/restored feedback match.
+
+This makes resident practice feedback durable across return sessions instead of being only a live runtime artifact.

@@ -745,3 +745,12 @@ Implementation boundary:
 - This is feedback from lived resident manipulation, not a scripted tech unlock.
 - The proposal receives practice pressure only after the resident body/manipulation row exists.
 - Future schedules remember the local practice pressure through resident memory and public-facing schedule bias.
+
+## Prototype increment: normal-test feedback save/return continuity
+
+Normal-test practice feedback now participates in save/return continuity. Save slots record the feedback row count, latest feedback ID, practice ID, manipulation ID, body step ID, component ID, resident, and schedule bias. Return rows restore and compare those fields through the normal-test continuity fingerprint.
+
+Implementation boundary:
+- Feedback continuity is tied to resident-generated tests and lived body/manipulation evidence.
+- Save/return preserves source history; it does not recreate feedback from a hidden script.
+- Normal player surfaces can see restored feedback IDs without exposing simulator law.

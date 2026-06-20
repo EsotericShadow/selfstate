@@ -539,3 +539,12 @@
 4. Confirm the material handling panel shows a normal-test feedback row.
 5. Confirm the related Village Board proposal records the feedback practice and resident schedule bias.
 6. Confirm the resident's visible schedule or memory now reflects the local practice pressure.
+
+## Playtest task: normal-test feedback save/return
+
+1. Create normal-test practice feedback through Follow and resident body handling.
+2. Save the prototype slot.
+3. Mutate or advance the world.
+4. Restore the slot.
+5. Confirm the Save / return card shows the same normal-test feedback ID, practice ID, body step ID, and continuity match.
+6. Confirm the restored normal view still hides hidden simulator law.

@@ -5473,6 +5473,7 @@ function currentPrimaryPlaySurfaceSnapshot() {
   const integratedRows = playSession && playSession.integratedLoopLedger ? playSession.integratedLoopLedger : [];
   const latestIntegrated = integratedRows.length ? integratedRows[integratedRows.length - 1] : null;
   const objectChain = latestObjectObjectionChainState();
+  const normalTestChain = latestNormalTestChainState();
   const selected = world.residents[world.selected] || currentResident();
   const latestProposal = board && board.projectProposals && board.projectProposals.length ? board.projectProposals[board.projectProposals.length - 1] : null;
   const latestPractice = graph && graph.nodes && graph.nodes.length ? graph.nodes[graph.nodes.length - 1] : null;
@@ -5589,6 +5590,19 @@ function currentPrimaryPlaySurfaceSnapshot() {
     object_chain_worksite_rows: objectChain.worksite_rows || 0,
     object_chain_saved_rows: objectChain.saved_rows || 0,
     object_chain_restored_rows: objectChain.restored_rows || 0,
+    normal_test_chain_active: normalTestChain.active === true,
+    normal_test_chain_phase: normalTestChain.phase || 'none',
+    normal_test_chain_next_action: normalTestChain.next_action || 'none',
+    normal_test_chain_next_label: normalTestChain.next_label || 'none',
+    normal_test_chain_reason: normalTestChain.reason || 'none',
+    normal_test_chain_action_id: normalTestChain.action_id || 'none',
+    normal_test_chain_test_id: normalTestChain.test_id || 'none',
+    normal_test_chain_proposal_id: normalTestChain.proposal_id || 'none',
+    normal_test_chain_project_rows: normalTestChain.project_rows || 0,
+    normal_test_chain_worksite_rows: normalTestChain.worksite_rows || 0,
+    normal_test_chain_visual_rows: normalTestChain.visual_rows || 0,
+    normal_test_chain_saved_rows: normalTestChain.saved_rows || 0,
+    normal_test_chain_restored_rows: normalTestChain.restored_rows || 0,
     resource_pressure: resourcePressure,
     canvas_cues: [
       'look at the highlighted village problem band',
@@ -5604,6 +5618,7 @@ function currentPrimaryPlaySurfaceSnapshot() {
       latestPresence ? `avatar presence ${latestPresence.presence_id} ${latestPresence.influence_type} near=${latestPresence.near_worksite} component=${latestPresence.component_id}` : 'avatar presence not linked to worksite yet',
       latestIntegrated ? `integrated chain ${latestIntegrated.integration_id} complete=${latestIntegrated.chain_complete} proposal=${latestIntegrated.proposal_id} practice=${latestIntegrated.practice_id} physics=${latestIntegrated.physics_id}` : 'integrated first-playable chain not visible yet',
       objectChain.active ? `object chain ${objectChain.phase} next=${objectChain.next_action} response=${objectChain.response_id} proposal=${objectChain.proposal_id} resolution=${objectChain.resolution_id} recheck=${objectChain.recheck_result}` : 'object-objection chain not active yet',
+      normalTestChain.active ? `normal test chain ${normalTestChain.phase} next=${normalTestChain.next_action} action=${normalTestChain.action_id} test=${normalTestChain.test_id} board=${normalTestChain.proposal_id} work=${normalTestChain.project_rows}/${normalTestChain.worksite_rows}/${normalTestChain.visual_rows} return=${normalTestChain.saved_rows}/${normalTestChain.restored_rows}` : 'normal-test chain not active yet',
     ],
     hidden_law_normal_view: false,
     avatar_direct_command: false,
@@ -5641,6 +5656,17 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     object_chain_resolution_id: snapshot.object_chain_resolution_id,
     object_chain_recheck_response_id: snapshot.object_chain_recheck_response_id,
     object_chain_recheck_result: snapshot.object_chain_recheck_result,
+    normal_test_chain_active: snapshot.normal_test_chain_active,
+    normal_test_chain_phase: snapshot.normal_test_chain_phase,
+    normal_test_chain_next_action: snapshot.normal_test_chain_next_action,
+    normal_test_chain_action_id: snapshot.normal_test_chain_action_id,
+    normal_test_chain_test_id: snapshot.normal_test_chain_test_id,
+    normal_test_chain_proposal_id: snapshot.normal_test_chain_proposal_id,
+    normal_test_chain_project_rows: snapshot.normal_test_chain_project_rows,
+    normal_test_chain_worksite_rows: snapshot.normal_test_chain_worksite_rows,
+    normal_test_chain_visual_rows: snapshot.normal_test_chain_visual_rows,
+    normal_test_chain_saved_rows: snapshot.normal_test_chain_saved_rows,
+    normal_test_chain_restored_rows: snapshot.normal_test_chain_restored_rows,
     reason,
     canvas_first: true,
   });
@@ -5663,6 +5689,17 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     object_chain_resolution_id: snapshot.object_chain_resolution_id,
     object_chain_recheck_response_id: snapshot.object_chain_recheck_response_id,
     object_chain_recheck_result: snapshot.object_chain_recheck_result,
+    normal_test_chain_active: snapshot.normal_test_chain_active,
+    normal_test_chain_phase: snapshot.normal_test_chain_phase,
+    normal_test_chain_next_action: snapshot.normal_test_chain_next_action,
+    normal_test_chain_action_id: snapshot.normal_test_chain_action_id,
+    normal_test_chain_test_id: snapshot.normal_test_chain_test_id,
+    normal_test_chain_proposal_id: snapshot.normal_test_chain_proposal_id,
+    normal_test_chain_project_rows: snapshot.normal_test_chain_project_rows,
+    normal_test_chain_worksite_rows: snapshot.normal_test_chain_worksite_rows,
+    normal_test_chain_visual_rows: snapshot.normal_test_chain_visual_rows,
+    normal_test_chain_saved_rows: snapshot.normal_test_chain_saved_rows,
+    normal_test_chain_restored_rows: snapshot.normal_test_chain_restored_rows,
     normal_view_hidden_law_exposed: false,
   });
   surface.actionPromptLedger.push({
@@ -5677,6 +5714,10 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     object_chain_proposal_id: snapshot.object_chain_proposal_id,
     object_chain_resolution_id: snapshot.object_chain_resolution_id,
     object_chain_recheck_result: snapshot.object_chain_recheck_result,
+    normal_test_chain_phase: snapshot.normal_test_chain_phase,
+    normal_test_chain_next_action: snapshot.normal_test_chain_next_action,
+    normal_test_chain_test_id: snapshot.normal_test_chain_test_id,
+    normal_test_chain_proposal_id: snapshot.normal_test_chain_proposal_id,
     direct_command: false,
   });
   surface.acceptanceReady = Boolean(
@@ -5772,6 +5813,7 @@ function formatPrimaryPlaySurface() {
     `Routine context: ${snapshot.routine_context_id} / ${snapshot.routine_context_resident} -> ${snapshot.routine_context_suggested_action} / source=${snapshot.routine_context_source}`,
     `Avatar presence: ${snapshot.avatar_presence_id} / ${snapshot.avatar_presence_resident} near=${snapshot.avatar_presence_near_worksite} / component=${snapshot.avatar_presence_component_id} / influence=${snapshot.avatar_presence_influence}`,
     `Object chain: active=${snapshot.object_chain_active ? 'yes' : 'no'} / phase=${snapshot.object_chain_phase} / next=${snapshot.object_chain_next_action} / response=${snapshot.object_chain_response_id} / proposal=${snapshot.object_chain_proposal_id} / resolution=${snapshot.object_chain_resolution_id} / recheck=${snapshot.object_chain_recheck_result}`,
+    `Normal-test chain: active=${snapshot.normal_test_chain_active ? 'yes' : 'no'} / phase=${snapshot.normal_test_chain_phase} / next=${snapshot.normal_test_chain_next_action} / action=${snapshot.normal_test_chain_action_id} / test=${snapshot.normal_test_chain_test_id} / board=${snapshot.normal_test_chain_proposal_id}`,
     `Resource pressure: ${snapshot.resource_pressure.length ? snapshot.resource_pressure.join(', ') : 'none'}`,
     `Rows: focus=${surface.focusLedger.length}, cues=${surface.canvasCueLedger.length}, prompts=${surface.actionPromptLedger.length}`,
     `Boundary: ${surface.boundary}`,
@@ -14963,6 +15005,7 @@ function buildPrototypeAcceptanceReceipt() {
   const integratedCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.integrated_loop_id && row.integrated_loop_id !== 'none' && (row.cues || []).some(cue => /integrated chain/.test(cue))).length : 0;
   const materialStateCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => (row.cues || []).some(cue => /material state/.test(cue)) && row.component_id && row.component_id !== 'none').length : 0;
   const objectChainCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.object_chain_phase && row.object_chain_phase !== 'none' && (row.cues || []).some(cue => /object chain/.test(cue)) && row.normal_view_hidden_law_exposed === false).length : 0;
+  const normalTestChainCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.normal_test_chain_phase && row.normal_test_chain_phase !== 'none' && row.normal_test_chain_test_id && row.normal_test_chain_test_id !== 'none' && (row.cues || []).some(cue => /normal test chain/.test(cue)) && row.normal_view_hidden_law_exposed === false).length : 0;
   const canvasSelectionRows = canvasSelection && canvasSelection.selectionLedger ? canvasSelection.selectionLedger.length : 0;
   const canvasSelectionCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.canvas_selection_id && row.canvas_selection_id !== 'none' && (row.cues || []).some(cue => /canvas selection/.test(cue))).length : 0;
   const worksiteRows = worksite ? worksite.watchLedger.length : 0;
@@ -15074,6 +15117,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'normal_test_reaches_village_board', pass: Boolean(board && normalActionBoardProposalRows > 0), evidence: board ? `normalTestBoardProposals=${normalActionBoardProposalRows}` : 'not run' },
     { id: 'normal_test_proposal_actionable', pass: Boolean(board && projects && worksite && normalTestSupportRows > 0 && normalTestProjectRows > 0 && normalTestWorksiteRows > 0 && normalTestVisualRows > 0), evidence: board && projects && worksite ? `support=${normalTestSupportRows}, project=${normalTestProjectRows}, worksite=${normalTestWorksiteRows}, visual=${normalTestVisualRows}` : 'not run' },
     { id: 'normal_test_guided_next_step', pass: Boolean(actionRail && (normalTestGuidedOptionRows > 0 || normalTestGuidedFollowRows > 0)), evidence: actionRail ? `guidedOptions=${normalTestGuidedOptionRows}, guidedFollow=${normalTestGuidedFollowRows}` : 'not run' },
+    { id: 'normal_test_canvas_cue', pass: Boolean(worldStage && normalTestChainCanvasCueRows > 0), evidence: worldStage ? `normalTestChainCues=${normalTestChainCanvasCueRows}` : 'not run' },
     { id: 'object_objection_guided_next_step', pass: Boolean(actionRail && (objectGuidedOptionRows > 0 || objectGuidedFollowRows > 0)), evidence: actionRail ? `guidedOptions=${objectGuidedOptionRows}, guidedFollow=${objectGuidedFollowRows}` : 'not run' },
     { id: 'object_objection_canvas_cue', pass: Boolean(worldStage && objectChainCanvasCueRows > 0), evidence: worldStage ? `objectChainCues=${objectChainCanvasCueRows}` : 'not run' },
     { id: 'player_mode_interface', pass: Boolean(playerMode && playerMode.acceptanceReady && playerModeSessions > 0 && playerModeVisibleCards >= 6 && playerMode.normalViewOnly === true && playerMode.debugPanelsHidden === true && playerMode.noDirectCommand === true && playerMode.noHiddenLawNormalView === true && playerMode.playerGlossesOnly === true), evidence: playerMode ? `enabled=${playerMode.enabled}, sessions=${playerModeSessions}, visibleCards=${playerModeVisibleCards}` : 'not run' },
@@ -16202,9 +16246,9 @@ function draw() {
   ctx.fillRect(730, 35, 250 * survivalScore, 10);
   const stageSnapshot = currentPrimaryPlaySurfaceSnapshot();
   ctx.fillStyle = 'rgba(17,24,22,0.78)';
-  ctx.fillRect(28, 66, 984, 116);
+  ctx.fillRect(28, 66, 984, 138);
   ctx.strokeStyle = 'rgba(240,195,91,0.52)';
-  ctx.strokeRect(28, 66, 984, 116);
+  ctx.strokeRect(28, 66, 984, 138);
   ctx.fillStyle = '#f0c35b';
   ctx.font = '15px Optima, sans-serif';
   ctx.fillText(`Primary stage: ${stageSnapshot.stage_phase}`.slice(0, 82), 44, 90);
@@ -16216,7 +16260,8 @@ function draw() {
   ctx.fillText(`Physics ${stageSnapshot.latest_physics_id} | lived ${stageSnapshot.latest_lived_physics_id} | resources ${stageSnapshot.resource_pressure.length ? stageSnapshot.resource_pressure.join(', ') : 'stable'}`.slice(0, 82), 470, 112);
   ctx.fillText(`Routine ${stageSnapshot.routine_context_id}: ${stageSnapshot.routine_context_resident} -> ${stageSnapshot.routine_context_suggested_action} near ${stageSnapshot.routine_context_source}`.slice(0, 82), 470, 132);
   ctx.fillText(`Object chain ${stageSnapshot.object_chain_phase}: next ${stageSnapshot.object_chain_next_action} | response ${stageSnapshot.object_chain_response_id} | proposal ${stageSnapshot.object_chain_proposal_id} | resolution ${stageSnapshot.object_chain_resolution_id}`.slice(0, 112), 44, 152);
-  ctx.fillText(`Integrated ${stageSnapshot.integrated_loop_id}: proposal ${stageSnapshot.integrated_loop_proposal_id} -> practice ${stageSnapshot.integrated_loop_practice_id} -> save ${stageSnapshot.integrated_loop_save_slot_id}/${stageSnapshot.integrated_loop_restore_slot_id}`.slice(0, 104), 44, 172);
+  ctx.fillText(`Normal-test chain ${stageSnapshot.normal_test_chain_phase}: next ${stageSnapshot.normal_test_chain_next_action} | test ${stageSnapshot.normal_test_chain_test_id} | board ${stageSnapshot.normal_test_chain_proposal_id}`.slice(0, 112), 44, 172);
+  ctx.fillText(`Integrated ${stageSnapshot.integrated_loop_id}: proposal ${stageSnapshot.integrated_loop_proposal_id} -> practice ${stageSnapshot.integrated_loop_practice_id} -> save ${stageSnapshot.integrated_loop_save_slot_id}/${stageSnapshot.integrated_loop_restore_slot_id}`.slice(0, 104), 44, 192);
 
   const materialWorld = world.gamePrototype3DWorld;
   if (materialWorld && materialWorld.components) {

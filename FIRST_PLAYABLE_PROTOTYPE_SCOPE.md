@@ -845,3 +845,13 @@ Evidence required:
 - linked normal action ID, resident test ID, and board proposal ID
 - Follow remains resident-mediated and cannot force work
 - no hidden-law exposure and no tech-tree unlock
+
+## Added scope gate: Normal-test canvas cue
+
+The first playable scope now requires normal-action resident-test chains to be visible in the main primary surface/canvas cue model.
+
+Evidence required:
+- at least one `normal_test_canvas_cue` acceptance row
+- primary surface snapshot includes normal-test phase, next action, test ID, and board proposal ID
+- canvas cue ledger includes normal-test chain text
+- normal view keeps hidden simulator law out of the player-facing cue

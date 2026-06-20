@@ -801,3 +801,11 @@ The goal is readable continuity: the resident response should reflect what happe
 4. `Follow` routes through proposal support, resident worksite, save, return, or return journal.
 5. Follow rows preserve the normal-test action, test, proposal, project/worksite/visual counts, and persistence counts.
 6. The player can continue the chain from the normal surface instead of inspecting debug panels.
+
+## Normal-test primary surface cue loop
+
+1. A normal action creates a resident-test chain.
+2. The primary play surface derives the current normal-test phase and next action.
+3. Focus, canvas cue, and prompt ledgers carry the normal action, test, and board proposal IDs.
+4. The canvas HUD shows the normal-test chain state in normal view.
+5. The cue remains a readable player guide, not a hidden-law audit leak.

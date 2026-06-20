@@ -498,3 +498,11 @@
 - Use `Follow` and confirm the Follow row shows normal-test phase, test ID, board proposal ID, and next action.
 - Continue using `Follow` through support/worksite/save/return where applicable.
 - Export or inspect acceptance and confirm `normal_test_guided_next_step` passes.
+
+## Normal-test canvas cue playtests
+
+- Generate a normal-action resident-test chain.
+- Run `World stage` or refresh the primary surface.
+- Confirm the primary surface shows `Normal-test chain` with phase, next action, test ID, and board proposal ID.
+- Confirm the canvas HUD shows the normal-test chain below the object-chain line.
+- Export or inspect acceptance and confirm `normal_test_canvas_cue` passes.

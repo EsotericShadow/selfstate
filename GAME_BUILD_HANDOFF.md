@@ -703,3 +703,9 @@ The normal action rail `Follow` verb can now follow `normal action -> resident t
 Normal action rows, Follow rows, and option snapshots now carry normal-test phase, next action, normal action ID, resident test ID, board proposal ID, project/worksite/visual counts, and save/return counts.
 
 The acceptance gate is `normal_test_guided_next_step`. It requires the normal action rail or Follow ledger to expose a next step for a normal-test chain without direct command, hidden-law exposure, or tech-tree unlock.
+
+## Prototype v0 normal-test primary surface/canvas cue update
+
+Normal-test chains now appear on the primary play surface and canvas cue ledger. The primary snapshot records phase, next action, normal action ID, resident test ID, board proposal ID, project/worksite/visual row counts, and save/return counts. The canvas HUD now shows the normal-test chain below the object-chain cue.
+
+The acceptance gate is `normal_test_canvas_cue`. It requires a normal-test chain cue on the player-facing surface while preserving no hidden-law exposure.

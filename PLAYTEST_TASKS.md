@@ -613,3 +613,7 @@ Run or wait through a stochastic physics step until a material strain creates a 
 ## Playtest task: wait or return into a physics-language proposal
 
 Use normal player verbs such as Wait or Return instead of a debug physics button. Confirm the action rail records an ambient physics step, a resident proposal appears from material strain, and the proposal/action row carries a local pressure word and imperfect gloss without revealing hidden simulator law.
+
+## Playtest task: save and return after ambient physics proposal
+
+Use a normal verb such as Wait, Return, Look, or Handling until an ambient physics proposal appears. Save, return, and inspect the save panel. Confirm the ambient physics proposal keeps its normal action id, physics step id, proposal id, resident word, imperfect gloss, and match status after restore.

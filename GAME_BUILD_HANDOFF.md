@@ -828,3 +828,9 @@ This moves the prototype closer to the target loop where physics is not just a d
 Normal player-facing verbs now advance the stochastic 3D physics substrate through an ambient action-rail physics row. Look, Move, Objects, Handling, Wait, Return, and Follow can step material physics, surface maintenance pressure, create or reuse a resident proposal, and carry resident pressure-language into the normal action row.
 
 This reduces dependence on debug physics buttons. The player can wait, return, or act normally and still see the village produce resident-language proposals from physical strain without exposing hidden simulator law.
+
+## Prototype increment: normal-play physics proposal save/return continuity
+
+Normal-play ambient physics proposals are now first-class save/return continuity. Save slots store the ambient physics row count, latest normal action, physics step, proposal id, resident pressure-language id, local word, imperfect gloss, component id, pressure kind, and a continuity fingerprint. Return restores compare the saved fingerprint against the restored normal-play ambient physics state.
+
+This keeps normal gameplay history durable: a resident-language proposal created by ordinary player action can survive return sessions as a traceable physical/social event, not just as a transient action rail row.

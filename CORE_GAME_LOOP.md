@@ -893,3 +893,9 @@ The player sees local wording and an imperfect gloss. The engine keeps the hidde
 The playable loop now includes: normal verb -> ambient stochastic physics step -> resident pressure-language proposal -> action-rail evidence -> proposal/worksite continuation.
 
 Wait and Return are no longer only calendar/save actions. They can let the physical world drift, strain, create maintenance pressure, and push a local resident term into the visible proposal flow.
+
+## Normal-play physics save/return loop
+
+The loop now includes: normal verb -> ambient physics proposal -> resident pressure-language -> save slot fingerprint -> return restore comparison -> visible save panel row.
+
+The restored state must preserve the normal action id, physics step id, proposal id, resident word, gloss, and component link without revealing hidden physical law in normal view.

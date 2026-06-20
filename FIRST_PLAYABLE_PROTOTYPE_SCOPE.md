@@ -1009,3 +1009,7 @@ The first playable scope now expects pressure-language proposals to remain intac
 ## Added scope gate: Normal play advances physics-language proposals
 
 The first playable scope now expects normal player verbs to advance physics-driven resident proposals without using debug controls. Acceptance requires ambient action-rail physics rows, physics-linked proposals carrying resident pressure-language, and normal action rows that preserve the physics step, proposal id, local word, imperfect gloss, no direct avatar command, no hidden-law normal-view exposure, and no resource spawning.
+
+## Added scope gate: Normal-play physics-language save/return continuity
+
+The first playable scope now requires normal-play ambient physics proposals to persist through save/return. Acceptance requires saved ambient physics rows, restored matching rows, a proposal id, a pressure-language id, resident word/gloss continuity, and a fingerprint match.

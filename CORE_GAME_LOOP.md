@@ -60,7 +60,8 @@
 8. The normal action rail offers `Follow` to continue the next missing public link without opening debug panels.
 9. Residents visibly notice `Follow` through memory and public body-language cues.
 10. Residents may accept, guard, or refuse the follow pressure; refusal records a boundary instead of advancing the chain.
-11. The first-playable session receipt exposes the single chain without exposing hidden simulator law or installing a modern concept.
+11. `Space` can recover from guarded/refused `Follow` pressure without advancing the chain.
+12. The first-playable session receipt exposes the single chain without exposing hidden simulator law or installing a modern concept.
 
 ## Resident language/gloss loop
 
@@ -511,14 +512,20 @@ Each row records player action, resident mediation, world evidence, proposal/pra
 
 ## Normal play action rail loop
 
-The player-facing loop now has six normal verbs:
+The player-facing loop now has twelve normal verbs:
 
 1. `Look`: refresh the primary world-stage readout.
-2. `Ask`: ask the selected resident about schedule/context.
-3. `Support`: offer material support without assigning a job.
-4. `Wait`: let residents/world systems advance.
-5. `Return`: leave and return with continuity.
-6. `Save`: save the current prototype state.
+2. `Move`: change village position through bounded space.
+3. `Ask`: ask the selected resident about schedule/context.
+4. `Talk`: use bounded resident encounter phrases.
+5. `Objects`: inspect and request resident-mediated object interaction.
+6. `Handling`: route material manipulation through resident choice and constraints.
+7. `Support`: offer material support without assigning a job.
+8. `Wait`: let residents/world systems advance.
+9. `Return`: leave and return with continuity.
+10. `Save`: save the current prototype state.
+11. `Follow`: continue the public integrated chain when residents allow it.
+12. `Space`: recover from guarded/refused follow pressure without advancing the chain.
 
 Each action records a row linking player intent to proposal, practice, component, physics, save, and return evidence where available.
 

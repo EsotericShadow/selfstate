@@ -248,6 +248,11 @@
 156. Use `Follow` repeatedly or after high boundary pressure and confirm the follow row can become `guarded_tracking` or `refused_boundary`.
 157. Confirm a refused `Follow` records `resident_allowed_follow=false` and does not advance the chain as if the resident obeyed.
 158. Export acceptance and confirm `normal_play_action_rail` evidence includes calibrated follow counts.
+159. Use `Space` after a guarded or refused `Follow` and confirm it records an `NPFR-...` follow-recovery row.
+160. Confirm the `Space` recovery row records `chain_advanced=false` and does not complete the integrated chain.
+161. Inspect Readable behavior or Autonomous residents and confirm the selected resident shows a public `space accepted` cue after recovery.
+162. Save after using `Space`, return the slot, and confirm Save / return shows follow-recovery counts.
+163. Export acceptance and confirm `normal_play_action_rail` evidence includes follow-recovery and follow-recovery-expression counts.
 
 ## Physics-to-practice slice playtests
 
@@ -286,7 +291,7 @@
 
 ## Normal play action rail playtests
 
-- Use Look, Move, Ask, Talk, Objects, Support, Wait, Return, and Save from the normal action rail.
+- Use Look, Move, Ask, Talk, Objects, Handling, Support, Wait, Return, Save, Follow, and Space from the normal action rail.
 - Confirm each action creates a row in the `Normal play action rail` card.
 - Confirm Support is recorded as condition support, not direct job assignment.
 - Confirm Save links to a prototype save slot after the normal action flow.

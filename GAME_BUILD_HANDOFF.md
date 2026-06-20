@@ -164,6 +164,12 @@ This makes chain-following readable as a resident-noticed interaction rather tha
 
 If boundary/refusal pressure is high, `Follow` records the resident-held boundary and does not advance the chain. The normal action-rail acceptance gate now requires calibrated follow evidence as well as response-expression evidence.
 
+## Prototype v0 Follow boundary recovery update
+
+The normal action rail now includes `Space`. This player-facing verb gives room after a guarded or refused `Follow`, records an `NPFR-...` recovery row, reduces boundary/refusal pressure, and emits a public `space accepted` body-language cue.
+
+`Space` is deliberately non-advancing: it does not progress the integrated chain, command a resident, expose hidden simulator law, or unlock a practice. It makes refusal recoverable without making refusal meaningless.
+
 ## Prototype v0 save-slot update
 
 The game prototype shell now includes browser-local prototype save slots. The player can save a slot, advance the autonomous simulation, return to the saved slot, and export a save receipt. This is intentionally scoped as prototype persistence evidence: it preserves meaningful village state, practice/proposal summaries, deep-time year, autonomous day, return log, and replay row counts without claiming production persistence.
@@ -461,17 +467,20 @@ The acceptance gate is `first_playable_walkthrough`. This is the first durable r
 
 ## Prototype v0 milestone: Normal Play Action Rail
 
-The shell now includes a normal player-facing action rail with nine verbs:
+The shell now includes a normal player-facing action rail with twelve verbs:
 
 - Look
 - Move
 - Ask
 - Talk
 - Objects
+- Handling
 - Support
 - Wait
 - Return
 - Save
+- Follow
+- Space
 
 These actions map onto existing systems while preserving resident mediation. The acceptance gate is `normal_play_action_rail`.
 

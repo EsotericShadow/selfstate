@@ -29,6 +29,7 @@
 - One normal `Follow` verb that advances or refreshes the active integrated chain without directly commanding residents.
 - One resident-visible `Follow` response that records memory and a public body-language cue.
 - One calibrated `Follow` boundary path where residents can guard or refuse under pressure.
+- One normal `Space` verb that recovers after guarded/refused `Follow` without advancing the chain.
 - One bounded resident language/gloss layer for local terms that emerge from grounded practice history.
 
 ## First prototype success condition
@@ -368,6 +369,7 @@ Required evidence:
 - action rows remain non-commanding
 - hidden law is not exposed in normal view
 - actions link to proposal/practice/component/physics/save/return evidence when available
+- follow recovery rows show `chain_advanced=false` after guarded/refused pressure
 - no tech-tree unlock
 
 This is the main player-facing control layer for the first playable shell.

@@ -152,6 +152,12 @@ The normal action rail now includes `Follow`. This player-facing verb reads the 
 
 `Follow` is not a command to a resident and does not unlock a technology. It is a player navigation affordance for continuing the visible chain while preserving no-direct-command, no hidden-law normal view, and no tech-tree boundaries.
 
+## Prototype v0 Follow resident-response update
+
+When the player uses `Follow`, the selected resident now records a small memory/social-state response and emits a public body-language cue. The normal rail stores the response expression ID and marker beside the `NPF-...` row.
+
+This makes chain-following readable as a resident-noticed interaction rather than a silent UI automation step. The response remains bounded: it adjusts memory, comfort, trust, and public posture only; it does not command work, expose hidden state, or install knowledge.
+
 ## Prototype v0 save-slot update
 
 The game prototype shell now includes browser-local prototype save slots. The player can save a slot, advance the autonomous simulation, return to the saved slot, and export a save receipt. This is intentionally scoped as prototype persistence evidence: it preserves meaningful village state, practice/proposal summaries, deep-time year, autonomous day, return log, and replay row counts without claiming production persistence.

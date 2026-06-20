@@ -242,6 +242,9 @@
 150. Confirm `Follow` advances the next missing public chain link through proposal, handling, lived practice, save, restore, return journal, or surface refresh without directly commanding a resident.
 151. Save after using `Follow`, return the slot, and confirm Save / return shows normal action rows plus follow-row counts.
 152. Export acceptance and confirm `normal_play_action_rail` evidence includes follow-row counts.
+153. After using `Follow`, inspect Readable behavior or Autonomous residents and confirm the selected resident shows a public `tracking` cue tied to the follow row.
+154. Confirm the selected resident memory mentions following the public chain without claiming hidden-law knowledge or obedience.
+155. Export acceptance and confirm `normal_play_action_rail` evidence includes follow-expression counts.
 
 ## Physics-to-practice slice playtests
 

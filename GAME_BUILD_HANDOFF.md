@@ -855,3 +855,8 @@ This keeps normal gameplay history durable: a resident-language proposal created
 Restored normal-play ambient physics proposals now create public resident body-language cues. When a save/return restores a physics-language proposal, the resident who owns the proposal can update schedule and memory, record a return behavior row, and show a visible posture/movement/gaze cue such as cautious pressure checking or measured proposal follow-up.
 
 This makes return continuity readable in the village surface: residents do not merely preserve JSON state, they visibly carry restored physical/social history.
+## Prototype v0 first-playable Physics path session update
+
+`Physics path` is now a required first-playable session step, not only a normal action-rail verb. Running `First playable` routes through the same player-facing physics path used by normal play, records the ambient happy-path row, records the normal physics-path row, and then performs the session save/return pass.
+
+The session receipt now exposes ambient physics happy-path readiness, normal physics-path row counts, latest physics-path action id, save slot, restore slot, restored proposal/word continuity, and body-language expression. This keeps stochastic physical pressure inside the first playable loop instead of leaving it as a separate readiness artifact.

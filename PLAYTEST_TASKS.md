@@ -625,3 +625,10 @@ Use a normal verb such as Wait, Return, Look, or Handling until an ambient physi
 ## Playtest task: watch restored physics memory in body language
 
 Create an ambient physics proposal through normal play, save, return, and observe the proposer. Confirm the resident visibly reacts through posture, movement, or gaze tied to the restored proposal word and component, without exposing hidden physical law.
+## First-playable Physics path receipt playtests
+
+1. Run `First playable` from a fresh or reset village.
+2. Inspect the `First playable session` card and confirm `physics_path` appears in recent session steps.
+3. Confirm the session card shows an `Ambient physics happy path` row with `ready=yes`.
+4. Confirm the session card shows `Normal Physics path` with a latest action id, happy-path id, save id, restore id, and body-language id.
+5. Confirm the first-playable receipt remains normal-view safe: no hidden law is revealed, no resident is directly commanded, and no named technology unlock appears.

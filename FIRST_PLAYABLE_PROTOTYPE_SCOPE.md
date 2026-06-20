@@ -1041,3 +1041,18 @@ The first playable scope now requires normal-play ambient physics proposals to p
 ## Added scope gate: Normal-play physics return body language
 
 The first playable scope now requires restored normal-play ambient physics proposals to affect readable resident behavior. Acceptance requires a restored ambient physics behavior row, a public expression cue, resident word/proposal linkage, no direct avatar command, and no hidden-law normal-view exposure.
+## Added scope gate: First-playable Physics path session receipt
+
+`first_playable_physics_path_session_receipt` is now part of first playable prototype scope.
+
+Acceptance requires:
+
+- `Physics path` is a required first-playable session step
+- `First playable` runs the same normal player-facing Physics path used by the action rail
+- the session receipt records ambient happy-path readiness
+- the session receipt records normal physics-path row counts and latest action id
+- save/return continuity remains linked to the physics-path happy path
+- the latest body-language expression from restored physical pressure is visible in the session receipt
+- no direct avatar command, hidden-law normal-view exposure, fixed tech unlock, or debug-only physics shortcut is used
+
+This closes the gap between a physics-path readiness check and an actual playable-session proof.

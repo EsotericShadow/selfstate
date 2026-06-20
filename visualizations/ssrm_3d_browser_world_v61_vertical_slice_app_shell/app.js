@@ -9737,10 +9737,11 @@ function ensureFirstPlayableSession() {
       snapshotLedger: [],
       integratedLoopLedger: [],
       tenMinuteLedger: [],
+      ambientPhysicsHappyPathLedger: [],
       receipt: null,
       acceptanceReady: false,
       tenMinuteAcceptanceReady: false,
-      requiredSteps: ['enter_player_mode', 'look', 'move', 'talk', 'objects', 'material_handling', 'proposal_deck', 'practice_loop', 'resident_worksite', 'return_journal', 'save', 'return', 'integrated_loop'],
+      requiredSteps: ['enter_player_mode', 'look', 'move', 'talk', 'objects', 'material_handling', 'proposal_deck', 'practice_loop', 'resident_worksite', 'return_journal', 'physics_path', 'save', 'return', 'integrated_loop'],
       playerFacing: true,
       noDirectCommand: true,
       noHiddenLawNormalView: true,
@@ -9750,9 +9751,11 @@ function ensureFirstPlayableSession() {
   }
   if (!Array.isArray(world.gamePrototypePlaySession.integratedLoopLedger)) world.gamePrototypePlaySession.integratedLoopLedger = [];
   if (!Array.isArray(world.gamePrototypePlaySession.tenMinuteLedger)) world.gamePrototypePlaySession.tenMinuteLedger = [];
+  if (!Array.isArray(world.gamePrototypePlaySession.ambientPhysicsHappyPathLedger)) world.gamePrototypePlaySession.ambientPhysicsHappyPathLedger = [];
   if (typeof world.gamePrototypePlaySession.tenMinuteAcceptanceReady !== 'boolean') world.gamePrototypePlaySession.tenMinuteAcceptanceReady = false;
-  const preferredSessionSteps = ['enter_player_mode', 'look', 'move', 'talk', 'objects', 'material_handling', 'proposal_deck', 'practice_loop', 'resident_worksite', 'return_journal', 'save', 'return', 'integrated_loop'];
-  world.gamePrototypePlaySession.requiredSteps = preferredSessionSteps.concat(world.gamePrototypePlaySession.requiredSteps.filter(step => !preferredSessionSteps.includes(step)));
+  const preferredSessionSteps = ['enter_player_mode', 'look', 'move', 'talk', 'objects', 'material_handling', 'proposal_deck', 'practice_loop', 'resident_worksite', 'return_journal', 'physics_path', 'save', 'return', 'integrated_loop'];
+  const existingRequiredSteps = Array.isArray(world.gamePrototypePlaySession.requiredSteps) ? world.gamePrototypePlaySession.requiredSteps : [];
+  world.gamePrototypePlaySession.requiredSteps = preferredSessionSteps.concat(existingRequiredSteps.filter(step => !preferredSessionSteps.includes(step)));
   return world.gamePrototypePlaySession;
 }
 
@@ -9763,15 +9766,35 @@ function cloneFirstPlayableSession(session) {
     snapshotLedger: session.snapshotLedger.slice(),
     integratedLoopLedger: session.integratedLoopLedger ? session.integratedLoopLedger.slice() : [],
     tenMinuteLedger: session.tenMinuteLedger ? session.tenMinuteLedger.slice() : [],
+    ambientPhysicsHappyPathLedger: session.ambientPhysicsHappyPathLedger ? session.ambientPhysicsHappyPathLedger.slice() : [],
     receipt: session.receipt ? { ...session.receipt } : null,
   };
 }
 
+function mergeFirstPlayableSessionRows(primaryRows, secondaryRows, idKey) {
+  const merged = Array.isArray(primaryRows) ? primaryRows.slice() : [];
+  (Array.isArray(secondaryRows) ? secondaryRows : []).forEach(row => {
+    const rowId = row && row[idKey] ? row[idKey] : null;
+    const exists = rowId ? merged.some(existing => existing && existing[idKey] === rowId) : merged.includes(row);
+    if (!exists) merged.push(row);
+  });
+  return merged.slice(-40);
+}
+
 function restoreFirstPlayableSessionAfterWorldSwap(preserved) {
-  if (!world.gamePrototypePlaySession || world.gamePrototypePlaySession.stepLedger.length < preserved.stepLedger.length || world.gamePrototypePlaySession.snapshotLedger.length < preserved.snapshotLedger.length || world.gamePrototypePlaySession.runCount < preserved.runCount) {
+  const current = world.gamePrototypePlaySession || null;
+  if (current && Array.isArray(current.ambientPhysicsHappyPathLedger)) {
+    preserved.ambientPhysicsHappyPathLedger = mergeFirstPlayableSessionRows(preserved.ambientPhysicsHappyPathLedger, current.ambientPhysicsHappyPathLedger, 'happy_path_id');
+  }
+  const currentStepRows = current && Array.isArray(current.stepLedger) ? current.stepLedger.length : 0;
+  const currentSnapshotRows = current && Array.isArray(current.snapshotLedger) ? current.snapshotLedger.length : 0;
+  const currentRunCount = current && typeof current.runCount === 'number' ? current.runCount : 0;
+  if (!current || currentStepRows < preserved.stepLedger.length || currentSnapshotRows < preserved.snapshotLedger.length || currentRunCount < preserved.runCount) {
     world.gamePrototypePlaySession = preserved;
   }
-  return ensureFirstPlayableSession();
+  const session = ensureFirstPlayableSession();
+  session.ambientPhysicsHappyPathLedger = mergeFirstPlayableSessionRows(session.ambientPhysicsHappyPathLedger, preserved.ambientPhysicsHappyPathLedger, 'happy_path_id');
+  return session;
 }
 
 function latestFirstPlayableRow(rows) {
@@ -9869,6 +9892,11 @@ function firstPlayableSessionSnapshot(label) {
   const latestIntegratedLoop = playSession && playSession.integratedLoopLedger && playSession.integratedLoopLedger.length ? playSession.integratedLoopLedger[playSession.integratedLoopLedger.length - 1] : null;
   const latestTenMinuteLoop = playSession && playSession.tenMinuteLedger && playSession.tenMinuteLedger.length ? playSession.tenMinuteLedger[playSession.tenMinuteLedger.length - 1] : null;
   const latestAmbientHappyPath = playSession && playSession.ambientPhysicsHappyPathLedger && playSession.ambientPhysicsHappyPathLedger.length ? playSession.ambientPhysicsHappyPathLedger[playSession.ambientPhysicsHappyPathLedger.length - 1] : null;
+  const actionRail = world.gamePrototypeActionRail || null;
+  const normalPhysicsPathRows = actionRail && actionRail.actionLedger
+    ? actionRail.actionLedger.filter(row => row && (row.verb === 'physics_path' || row.action === 'physics_path' || row.action_label === 'Physics path'))
+    : [];
+  const latestNormalPhysicsPath = normalPhysicsPathRows.length ? normalPhysicsPathRows[normalPhysicsPathRows.length - 1] : null;
   const objectInteraction = world.gamePrototypeObjectInteraction || null;
   const latestObjectInteraction = objectInteraction && objectInteraction.interactionLedger && objectInteraction.interactionLedger.length ? objectInteraction.interactionLedger[objectInteraction.interactionLedger.length - 1] : null;
   return {
@@ -9934,6 +9962,13 @@ function firstPlayableSessionSnapshot(label) {
     latest_ambient_happy_path_ready: latestAmbientHappyPath ? latestAmbientHappyPath.acceptance_ready === true : false,
     latest_ambient_happy_path_proposal_id: latestAmbientHappyPath ? latestAmbientHappyPath.proposal_id : 'none',
     latest_ambient_happy_path_word: latestAmbientHappyPath ? latestAmbientHappyPath.resident_word : 'none',
+    normal_physics_path_rows: normalPhysicsPathRows.length,
+    latest_normal_physics_path_action_id: latestNormalPhysicsPath ? latestNormalPhysicsPath.action_id || latestNormalPhysicsPath.id || 'none' : 'none',
+    latest_normal_physics_path_ready: latestNormalPhysicsPath ? latestNormalPhysicsPath.physics_path_ready === true || latestNormalPhysicsPath.acceptance_ready === true || latestNormalPhysicsPath.restore_match === true || latestNormalPhysicsPath.physics_path_restore_match === true : false,
+    latest_normal_physics_path_happy_path_id: latestNormalPhysicsPath ? latestNormalPhysicsPath.physics_path_happy_path_id || latestNormalPhysicsPath.happy_path_id || 'none' : 'none',
+    latest_normal_physics_path_save_slot_id: latestNormalPhysicsPath ? latestNormalPhysicsPath.physics_path_save_slot_id || latestNormalPhysicsPath.save_slot_id || 'none' : 'none',
+    latest_normal_physics_path_restore_slot_id: latestNormalPhysicsPath ? latestNormalPhysicsPath.physics_path_restore_slot_id || latestNormalPhysicsPath.restore_slot_id || 'none' : 'none',
+    latest_normal_physics_path_body_expression_id: latestNormalPhysicsPath ? latestNormalPhysicsPath.physics_path_body_expression_id || latestNormalPhysicsPath.body_expression_id || 'none' : 'none',
     movement_rows: world.gamePrototypeMovementRoute ? world.gamePrototypeMovementRoute.routeLedger.length : 0,
     resident_encounter_rows: world.gamePrototypeResidentEncounter ? world.gamePrototypeResidentEncounter.encounterLedger.length : 0,
     worksite_rows: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.watchLedger.length : 0,
@@ -9949,6 +9984,12 @@ function firstPlayableSessionSnapshot(label) {
 function updateFirstPlayableSessionAcceptance() {
   const session = ensureFirstPlayableSession();
   const completed = new Set(session.stepLedger.map(row => row.step_id));
+  const actionRail = world.gamePrototypeActionRail || null;
+  const normalPhysicsPathRows = actionRail && actionRail.actionLedger
+    ? actionRail.actionLedger.filter(row => row && (row.verb === 'physics_path' || row.action === 'physics_path' || row.action_label === 'Physics path'))
+    : [];
+  const hasReadyNormalPhysicsPath = normalPhysicsPathRows.some(row => row.physics_path_ready === true || row.acceptance_ready === true || row.restore_match === true || row.physics_path_restore_match === true);
+  const hasReadyAmbientPhysicsPath = session.ambientPhysicsHappyPathLedger && session.ambientPhysicsHappyPathLedger.some(row => row.acceptance_ready === true);
   session.acceptanceReady = Boolean(
     session.requiredSteps.every(step => completed.has(step)) &&
     session.stepLedger.length >= session.requiredSteps.length &&
@@ -9960,6 +10001,9 @@ function updateFirstPlayableSessionAcceptance() {
     world.gamePrototypeLivedPractice && world.gamePrototypeLivedPractice.acceptanceReady === true &&
     world.gamePrototypeLivedPractice.physicalCausalityReady === true &&
     world.gamePrototypeLivedPractice.physicsLedger && world.gamePrototypeLivedPractice.physicsLedger.length > 0 &&
+    completed.has('physics_path') &&
+    hasReadyAmbientPhysicsPath &&
+    hasReadyNormalPhysicsPath &&
     world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.actionLedger && world.gamePrototypeMaterialManipulation.actionLedger.length > 0 &&
     world.gamePrototypeMaterialManipulation.actionLedger.some(row => row.body_step_id) &&
     world.gamePrototypeWorksite && world.gamePrototypeWorksite.acceptanceReady === true &&
@@ -9990,6 +10034,11 @@ function updateFirstPlayableSessionAcceptance() {
     ten_minute_rows: session.tenMinuteLedger ? session.tenMinuteLedger.length : 0,
     ten_minute_complete_rows: session.tenMinuteLedger ? session.tenMinuteLedger.filter(row => row.acceptance_ready === true).length : 0,
     latest_ten_minute_loop_id: session.tenMinuteLedger && session.tenMinuteLedger.length ? session.tenMinuteLedger[session.tenMinuteLedger.length - 1].loop_id : 'none',
+    ambient_happy_path_ready_rows: session.ambientPhysicsHappyPathLedger ? session.ambientPhysicsHappyPathLedger.filter(row => row.acceptance_ready === true).length : 0,
+    latest_ambient_happy_path_id: session.ambientPhysicsHappyPathLedger && session.ambientPhysicsHappyPathLedger.length ? session.ambientPhysicsHappyPathLedger[session.ambientPhysicsHappyPathLedger.length - 1].happy_path_id : 'none',
+    normal_physics_path_rows: normalPhysicsPathRows.length,
+    normal_physics_path_ready_rows: normalPhysicsPathRows.filter(row => row.physics_path_ready === true || row.acceptance_ready === true || row.restore_match === true || row.physics_path_restore_match === true).length,
+    latest_normal_physics_path_action_id: normalPhysicsPathRows.length ? normalPhysicsPathRows[normalPhysicsPathRows.length - 1].action_id || normalPhysicsPathRows[normalPhysicsPathRows.length - 1].id || 'none' : 'none',
     boundary: session.boundary,
   };
   return session.acceptanceReady;
@@ -10022,6 +10071,20 @@ function recordFirstPlayableSessionStep(stepId, actionLabel, actionFn) {
     integrated_loop_after: after.integrated_loop_rows || 0,
     latest_integrated_loop_id: after.latest_integrated_loop_id || 'none',
     integrated_loop_complete: after.integrated_loop_complete === true,
+    ambient_physics_happy_path_before: before.ambient_happy_path_rows || 0,
+    ambient_physics_happy_path_after: after.ambient_happy_path_rows || 0,
+    latest_ambient_happy_path_id: after.latest_ambient_happy_path_id || 'none',
+    latest_ambient_happy_path_ready: after.latest_ambient_happy_path_ready === true,
+    latest_ambient_happy_path_proposal_id: after.latest_ambient_happy_path_proposal_id || 'none',
+    latest_ambient_happy_path_word: after.latest_ambient_happy_path_word || 'none',
+    normal_physics_path_before: before.normal_physics_path_rows || 0,
+    normal_physics_path_after: after.normal_physics_path_rows || 0,
+    latest_normal_physics_path_action_id: after.latest_normal_physics_path_action_id || 'none',
+    latest_normal_physics_path_ready: after.latest_normal_physics_path_ready === true,
+    latest_normal_physics_path_happy_path_id: after.latest_normal_physics_path_happy_path_id || 'none',
+    latest_normal_physics_path_save_slot_id: after.latest_normal_physics_path_save_slot_id || 'none',
+    latest_normal_physics_path_restore_slot_id: after.latest_normal_physics_path_restore_slot_id || 'none',
+    latest_normal_physics_path_body_expression_id: after.latest_normal_physics_path_body_expression_id || 'none',
     object_resolution_before: before.object_resolution_rows || 0,
     object_resolution_after: after.object_resolution_rows || 0,
     object_recheck_response_before: before.object_recheck_response_rows || 0,
@@ -10365,6 +10428,7 @@ function runFirstPlayableSessionLoop() {
   recordFirstPlayableSessionStep('practice_loop', 'Practice', runLivedPracticeLoop);
   recordFirstPlayableSessionStep('resident_worksite', 'Worksite', runResidentWorksiteLoop);
   recordFirstPlayableSessionStep('return_journal', 'Journal', runReturnJournalLoop);
+  recordFirstPlayableSessionStep('physics_path', 'Physics path', runNormalPlayPhysicsPath);
   recordFirstPlayableSessionStep('save', 'Save', runNormalPlaySave);
   recordFirstPlayableSessionStep('return', 'Return', runNormalPlayReturn);
   recordFirstPlayableSessionStep('integrated_loop', 'Integrated loop', () => recordFirstPlayableIntegratedLoop('first_playable_session_loop'));
@@ -10383,7 +10447,7 @@ function runFirstPlayableSessionLoop() {
 function formatFirstPlayableSession() {
   const session = world.gamePrototypePlaySession || ensureFirstPlayableSession();
   const latest = session.snapshotLedger.length ? session.snapshotLedger[session.snapshotLedger.length - 1].snapshot : firstPlayableSessionSnapshot('current');
-  const steps = session.stepLedger.slice(-8).map(row => `${row.step_id}: ${row.action_label}; event=${row.result_event}; room=${row.after.room}; proposal=${row.after.latest_proposal}; practice=${row.after.latest_practice}; livedPhysics=${row.lived_practice_physics_before || 0}->${row.lived_practice_physics_after || 0}; handling=${row.material_handling_before || 0}->${row.material_handling_after || 0}/${row.latest_material_handling_id || 'none'} body=${row.latest_resident_body_step_id || 'none'} integrated=${row.integrated_loop_before || 0}->${row.integrated_loop_after || 0}/${row.latest_integrated_loop_id || 'none'}`);
+  const steps = session.stepLedger.slice(-8).map(row => `${row.step_id}: ${row.action_label}; event=${row.result_event}; room=${row.after.room}; proposal=${row.after.latest_proposal}; practice=${row.after.latest_practice}; livedPhysics=${row.lived_practice_physics_before || 0}->${row.lived_practice_physics_after || 0}; ambient=${row.ambient_physics_happy_path_before || 0}->${row.ambient_physics_happy_path_after || 0}/${row.latest_ambient_happy_path_id || 'none'}; physicsPath=${row.normal_physics_path_before || 0}->${row.normal_physics_path_after || 0}/${row.latest_normal_physics_path_action_id || 'none'}; handling=${row.material_handling_before || 0}->${row.material_handling_after || 0}/${row.latest_material_handling_id || 'none'} body=${row.latest_resident_body_step_id || 'none'} integrated=${row.integrated_loop_before || 0}->${row.integrated_loop_after || 0}/${row.latest_integrated_loop_id || 'none'}`);
   const integratedRows = (session.integratedLoopLedger || []).slice(-4).map(row => `${row.integration_id}: complete=${row.chain_complete}; ordinary=${row.ordinary_feed_id}; test=${row.resident_test_id}; proposal=${row.proposal_id}; practice=${row.practice_id}; physics=${row.physics_id}; handling=${row.material_handling_id}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
   const tenMinuteRows = (session.tenMinuteLedger || []).slice(-4).map(row => `${row.loop_id}: ready=${row.acceptance_ready}; minutes=${row.minutes_simulated}; actions=${row.normal_action_rows_added}; objectChanged=${row.object_change_visible}; persisted=${row.material_state_persisted}; practice=${row.practice_id}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
   const ambientHappyPathRows = (session.ambientPhysicsHappyPathLedger || []).slice(-4).map(row => `${row.happy_path_id}: ready=${row.acceptance_ready}; action=${row.ambient_action_id}; physics=${row.ambient_physics_id}; proposal=${row.proposal_id}; word=${row.resident_word}; save=${row.save_slot_id}; restore=${row.restore_slot_id}; body=${row.body_expression_id}`);
@@ -10398,6 +10462,7 @@ function formatFirstPlayableSession() {
     `Resident body: steps=${latest.resident_body_steps || 0}; latest=${latest.latest_resident_body_step_id || 'none'} / ${latest.latest_resident_body_source || 'none'}`,
     `Integrated loop: rows=${latest.integrated_loop_rows || 0}; latest=${latest.latest_integrated_loop_id || 'none'}; complete=${latest.integrated_loop_complete ? 'yes' : 'no'}; proposal=${latest.integrated_loop_proposal_id || 'none'}; practice=${latest.integrated_loop_practice_id || 'none'}; physics=${latest.integrated_loop_physics_id || 'none'}; save=${latest.integrated_loop_save_slot_id || 'none'}; restore=${latest.integrated_loop_restore_slot_id || 'none'}`,
     `Ambient physics happy path: rows=${latest.ambient_happy_path_rows || 0}; latest=${latest.latest_ambient_happy_path_id || 'none'}; ready=${latest.latest_ambient_happy_path_ready ? 'yes' : 'no'}; proposal=${latest.latest_ambient_happy_path_proposal_id || 'none'}; word=${latest.latest_ambient_happy_path_word || 'none'}`,
+    `Normal Physics path: rows=${latest.normal_physics_path_rows || 0}; latest=${latest.latest_normal_physics_path_action_id || 'none'}; ready=${latest.latest_normal_physics_path_ready ? 'yes' : 'no'}; happyPath=${latest.latest_normal_physics_path_happy_path_id || 'none'}; save=${latest.latest_normal_physics_path_save_slot_id || 'none'}; restore=${latest.latest_normal_physics_path_restore_slot_id || 'none'}; body=${latest.latest_normal_physics_path_body_expression_id || 'none'}`,
     `10-minute loop: ready=${session.tenMinuteAcceptanceReady ? 'yes' : 'no'}; rows=${(session.tenMinuteLedger || []).length}; latest=${latest.latest_ten_minute_loop_id || 'none'}; persisted=${latest.latest_ten_minute_object_persisted ? 'yes' : 'no'}; practice=${latest.latest_ten_minute_practice_id || 'none'}`,
     `Save/return: slots=${latest.save_slots}; saveReturns=${latest.save_returns}; forwardReturns=${latest.forward_returns}`,
     `No direct command: ${session.noDirectCommand ? 'yes' : 'no'} / no hidden law normal view: ${session.noHiddenLawNormalView ? 'yes' : 'no'} / no tech tree: ${session.noTechTreeUnlock ? 'yes' : 'no'}`,

@@ -6121,10 +6121,66 @@ function latestObjectObjectionChainState() {
   return { active: true, phase, next_action: nextAction, next_label: nextLabel, reason, response_id: responseId, proposal_id: proposalId, resolution_id: latestResolution ? latestResolution.resolution_id : 'none', recheck_response_id: latestRecheck ? latestRecheck.response_id : 'none', recheck_result: latestRecheck ? latestRecheck.resident_recheck_result : 'none', project_rows: proposalProjectRows.length, worksite_rows: proposalWorksiteRows.length, saved_rows: savedRows, restored_rows: restoredRows };
 }
 
+function latestNormalTestChainState() {
+  const rail = world.gamePrototypeActionRail || null;
+  const board = world.villageBoard || null;
+  const proposals = board && board.projectProposals ? board.projectProposals : [];
+  const projectRows = world.gamePrototypeProjects && world.gamePrototypeProjects.projectLedger ? world.gamePrototypeProjects.projectLedger : [];
+  const worksiteRows = world.gamePrototypeWorksite && world.gamePrototypeWorksite.watchLedger ? world.gamePrototypeWorksite.watchLedger : [];
+  const visualRows = world.gamePrototypeProjects && world.gamePrototypeProjects.visualLedger ? world.gamePrototypeProjects.visualLedger : [];
+  const saves = world.gamePrototypeSaves || null;
+  const latestAction = rail && rail.actionLedger
+    ? rail.actionLedger.slice().reverse().find(row => row.ordinary_bottleneck_test_id && row.ordinary_bottleneck_test_id !== 'none' && row.ordinary_bottleneck_board_proposal_id && row.ordinary_bottleneck_board_proposal_id !== 'none') || null
+    : null;
+  const latestProposal = proposals.slice().reverse().find(row => row.normal_action_test_path === true && row.related_resident_test_id && row.related_resident_test_id !== 'none') || null;
+  const proposalId = latestProposal ? latestProposal.proposal_id : latestAction ? latestAction.ordinary_bottleneck_board_proposal_id || 'none' : 'none';
+  const testId = latestProposal ? latestProposal.related_resident_test_id || 'none' : latestAction ? latestAction.ordinary_bottleneck_test_id || 'none' : 'none';
+  const actionId = latestProposal ? latestProposal.related_normal_action_id || 'none' : latestAction ? latestAction.action_id || 'none' : 'none';
+  const proposalProjectRows = proposalId !== 'none' ? projectRows.filter(row => row.proposal_id === proposalId || row.related_resident_test_id === testId) : [];
+  const proposalWorksiteRows = proposalId !== 'none' ? worksiteRows.filter(row => row.proposal_id === proposalId || row.related_resident_test_id === testId) : [];
+  const proposalVisualRows = proposalId !== 'none' ? visualRows.filter(row => row.proposal_id === proposalId || row.related_resident_test_id === testId) : [];
+  const savedRows = saves && saves.slots ? saves.slots.filter(slot => slot.normal_test_id && slot.normal_test_id !== 'none' && slot.normal_test_board_proposal_id && slot.normal_test_board_proposal_id !== 'none' && slot.normal_test_continuity_fingerprint && slot.normal_test_continuity_fingerprint !== 'none').length : 0;
+  const restoredRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_normal_test_continuity_matches_saved === true && row.restored_normal_test_id && row.restored_normal_test_id !== 'none').length : 0;
+  if (!latestAction && !latestProposal) {
+    return { active: false, phase: 'none', next_action: 'runNormalPlayHandling', next_label: 'Use ordinary action', reason: 'no normal-action resident test chain exists yet', action_id: 'none', test_id: 'none', proposal_id: 'none', project_rows: 0, worksite_rows: 0, visual_rows: 0, saved_rows: savedRows, restored_rows: restoredRows };
+  }
+  const proposalAccepted = latestProposal && (latestProposal.status === 'accepted' || latestProposal.status === 'in progress' || latestProposal.status === 'completed' || Number(latestProposal.current_support_level || 0) >= 0.48);
+  let phase = 'normal test proposal support';
+  let nextAction = 'runPlayerProposalDeckLoop';
+  let nextLabel = 'Support resident test proposal';
+  let reason = `${proposalId} came from ${testId} after ${actionId} and needs Ask/Support/Wait`;
+  if (latestProposal && proposalAccepted && (!proposalProjectRows.length || !proposalWorksiteRows.length || !proposalVisualRows.length)) {
+    phase = 'normal test worksite';
+    nextAction = 'runResidentWorksiteLoop';
+    nextLabel = 'Watch normal-test worksite';
+    reason = `${proposalId} needs resident project/worksite/visual evidence`;
+  } else if (latestProposal && proposalProjectRows.length && proposalWorksiteRows.length && proposalVisualRows.length && !savedRows) {
+    phase = 'normal test save';
+    nextAction = 'savePrototypeSlot';
+    nextLabel = 'Save normal-test chain';
+    reason = `${testId} has project/worksite/visual evidence but no save continuity`;
+  } else if (latestProposal && savedRows && !restoredRows) {
+    phase = 'normal test return';
+    nextAction = 'returnPrototypeSlot';
+    nextLabel = 'Restore normal-test chain';
+    reason = `${testId} is saved but has not been restored`;
+  } else if (latestProposal && savedRows && restoredRows) {
+    phase = 'normal test persisted';
+    nextAction = 'runReturnJournalLoop';
+    nextLabel = 'Show normal-test return continuity';
+    reason = `${testId} is saved/restored with board, project, worksite, and visual evidence`;
+  }
+  return { active: true, phase, next_action: nextAction, next_label: nextLabel, reason, action_id: actionId, test_id: testId, proposal_id: proposalId, project_rows: proposalProjectRows.length, worksite_rows: proposalWorksiteRows.length, visual_rows: proposalVisualRows.length, saved_rows: savedRows, restored_rows: restoredRows };
+}
+
 function chooseFollowChainAction(chain) {
   const objectChain = latestObjectObjectionChainState();
   if (objectChain.active && objectChain.phase !== 'object chain persisted') {
     return { action: objectChain.next_action, label: objectChain.next_label, reason: `${objectChain.reason}; ${objectChain.response_id}->${objectChain.proposal_id}->${objectChain.resolution_id}` };
+  }
+  const normalTestChain = latestNormalTestChainState();
+  if (normalTestChain.active && normalTestChain.phase !== 'normal test persisted') {
+    return { action: normalTestChain.next_action, label: normalTestChain.next_label, reason: `${normalTestChain.reason}; ${normalTestChain.action_id}->${normalTestChain.test_id}->${normalTestChain.proposal_id}` };
   }
   if (!chain) return { action: 'recordFirstPlayableIntegratedLoop', label: 'seed integrated chain', reason: 'no integrated chain exists yet' };
   if (!chain.proposal_id || chain.proposal_id === 'none') return { action: 'runPlayerProposalDeckLoop', label: 'surface resident proposal', reason: 'chain has no resident proposal link' };
@@ -6220,6 +6276,7 @@ function runNormalPlayFollowChain() {
   if (world.gamePrototypePlayerMode) updatePlayerModeInterfaceAcceptance();
   const afterChain = latestIntegratedChainRow();
   const objectChainAfter = latestObjectObjectionChainState();
+  const normalTestChainAfter = latestNormalTestChainState();
   const row = {
     follow_id: `NPF-${String(rail.followChainLedger.length + 1).padStart(3, '0')}`,
     tick: world.tick,
@@ -6247,6 +6304,16 @@ function runNormalPlayFollowChain() {
     object_chain_resolution_id: objectChainAfter.resolution_id,
     object_chain_recheck_response_id: objectChainAfter.recheck_response_id,
     object_chain_recheck_result: objectChainAfter.recheck_result,
+    normal_test_chain_phase: normalTestChainAfter.phase,
+    normal_test_chain_next_action: normalTestChainAfter.next_action,
+    normal_test_chain_action_id: normalTestChainAfter.action_id,
+    normal_test_chain_test_id: normalTestChainAfter.test_id,
+    normal_test_chain_proposal_id: normalTestChainAfter.proposal_id,
+    normal_test_chain_project_rows: normalTestChainAfter.project_rows,
+    normal_test_chain_worksite_rows: normalTestChainAfter.worksite_rows,
+    normal_test_chain_visual_rows: normalTestChainAfter.visual_rows,
+    normal_test_chain_saved_rows: normalTestChainAfter.saved_rows,
+    normal_test_chain_restored_rows: normalTestChainAfter.restored_rows,
     player_language: true,
     avatar_direct_command: false,
     hidden_law_normal_view: false,
@@ -6355,6 +6422,7 @@ function normalPlayOptions() {
   const latest = stage && stage.latestSnapshot ? stage.latestSnapshot : currentPrimaryPlaySurfaceSnapshot();
   const boundaryFollow = latestFollowBoundaryPressureRow();
   const objectChain = latestObjectObjectionChainState();
+  const normalTestChain = latestNormalTestChainState();
   return [
     { verb: 'look', label: 'Look', action: 'runPrimaryPlaySurfaceStep', intent: 'read the current world-stage problem and object context', recommended: guide.button === 'runPrimaryPlaySurfaceStep' || !stage || !stage.acceptanceReady },
     { verb: 'move', label: 'Move', action: 'runPlayerMovementRouteLoop', intent: 'move through village space and update nearby affordances', recommended: guide.button === 'runPlayerMovementRouteLoop' },
@@ -6366,7 +6434,7 @@ function normalPlayOptions() {
     { verb: 'wait', label: 'Wait', action: 'endVillageDay', intent: 'let residents and world systems advance one step', recommended: guide.button === 'endVillageDay' || guide.button === 'runPlayableVillageDay03Step' },
     { verb: 'return', label: 'Return', action: 'leaveAndReturnLater', intent: 'leave and come back to check continuity', recommended: guide.button === 'leaveAndReturnLater' },
     { verb: 'save', label: 'Save', action: 'savePrototypeSlot', intent: 'save current village and walkthrough state', recommended: guide.button === 'exportPrototypeAcceptanceReceipt' || guide.button === 'runFirstPlayableWalkthrough' },
-    { verb: 'follow', label: 'Follow', action: 'runNormalPlayFollowChain', intent: objectChain.active && objectChain.phase !== 'object chain persisted' ? `follow object chain ${objectChain.response_id}->${objectChain.proposal_id}->${objectChain.resolution_id}: ${objectChain.next_label}` : latest.integrated_loop_id && latest.integrated_loop_id !== 'none' ? `follow chain ${latest.integrated_loop_id} through the next missing public link` : 'create and follow the first integrated causality chain', recommended: guide.button === 'runNormalPlayFollowChain' || Boolean(objectChain.active && objectChain.phase !== 'object chain persisted') || Boolean(latest.integrated_loop_id && latest.integrated_loop_id !== 'none' && latest.integrated_loop_complete !== true) },
+    { verb: 'follow', label: 'Follow', action: 'runNormalPlayFollowChain', intent: objectChain.active && objectChain.phase !== 'object chain persisted' ? `follow object chain ${objectChain.response_id}->${objectChain.proposal_id}->${objectChain.resolution_id}: ${objectChain.next_label}` : normalTestChain.active && normalTestChain.phase !== 'normal test persisted' ? `follow normal-test chain ${normalTestChain.action_id}->${normalTestChain.test_id}->${normalTestChain.proposal_id}: ${normalTestChain.next_label}` : latest.integrated_loop_id && latest.integrated_loop_id !== 'none' ? `follow chain ${latest.integrated_loop_id} through the next missing public link` : 'create and follow the first integrated causality chain', recommended: guide.button === 'runNormalPlayFollowChain' || Boolean(objectChain.active && objectChain.phase !== 'object chain persisted') || Boolean(normalTestChain.active && normalTestChain.phase !== 'normal test persisted') || Boolean(latest.integrated_loop_id && latest.integrated_loop_id !== 'none' && latest.integrated_loop_complete !== true) },
     { verb: 'space', label: 'Space', action: 'runNormalPlayGiveSpace', intent: boundaryFollow ? `give space after ${boundaryFollow.response_outcome} on ${boundaryFollow.chain_after}` : 'give residents room before pressing the chain again', recommended: guide.button === 'runNormalPlayGiveSpace' || Boolean(boundaryFollow) },
   ].map(option => ({
     ...option,
@@ -6380,6 +6448,10 @@ function normalPlayOptions() {
     object_chain_next_action: objectChain.next_action,
     object_chain_resolution_id: objectChain.resolution_id,
     object_chain_recheck_result: objectChain.recheck_result,
+    normal_test_chain_phase: normalTestChain.phase,
+    normal_test_chain_next_action: normalTestChain.next_action,
+    normal_test_chain_test_id: normalTestChain.test_id,
+    normal_test_chain_proposal_id: normalTestChain.proposal_id,
   }));
 }
 
@@ -6790,6 +6862,7 @@ function runNormalPlayAction(verb) {
     component_id: evidence.component_id,
     latestManipulation,
   });
+  const normalTestChain = latestNormalTestChainState();
   const row = {
     action_id: normalActionId,
     verb: option.verb,
@@ -6832,6 +6905,11 @@ function runNormalPlayAction(verb) {
     ordinary_bottleneck_triggered_test: residentTestResult.triggeredResidentTest === true,
     ordinary_bottleneck_source: residentTestResult.sourceBeliefId || 'none',
     ordinary_bottleneck_manipulation_id: residentTestResult.sourceManipulationId || 'none',
+    normal_test_chain_phase: normalTestChain.phase,
+    normal_test_chain_next_action: normalTestChain.next_action,
+    normal_test_chain_action_id: normalTestChain.action_id,
+    normal_test_chain_test_id: normalTestChain.test_id,
+    normal_test_chain_proposal_id: normalTestChain.proposal_id,
     material_handling_rows: manipulationLoop && manipulationLoop.actionLedger ? manipulationLoop.actionLedger.length : 0,
     material_handling_practice_links: manipulationLoop && manipulationLoop.practiceLinks ? manipulationLoop.practiceLinks.length : 0,
     save_slot_id: evidence.save_slot_id,
@@ -6892,8 +6970,8 @@ function formatNormalPlayActionRail() {
   const rail = world.gamePrototypeActionRail || ensureNormalPlayActionRail();
   const options = normalPlayOptions();
   const optionRows = options.map(option => `${option.label}: ${option.intent}; recommended=${option.recommended ? 'yes' : 'no'}`);
-  const actionRows = rail.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.label} -> ${row.underlying_action}; proposal=${row.proposal_id}; practice=${row.practice_id}; handling=${row.manipulation_id || 'none'}; handlingPractice=${row.handling_practice_id || 'none'}; residentTest=${row.ordinary_bottleneck_test_id || 'none'}; follow=${row.follow_chain_id || 'none'}/${row.follow_chain_after || 'none'}; object=${row.object_chain_phase || 'none'}/${row.object_chain_resolution_id || 'none'}; recovery=${row.follow_recovery_id || 'none'}; save=${row.save_slot_id}`);
-  const followRows = (rail.followChainLedger || []).slice(-5).map(row => `${row.follow_id}: ${row.chosen_label}; outcome=${row.response_outcome || 'none'}; allowed=${row.resident_allowed_follow !== false}; chain=${row.chain_before}->${row.chain_after}; object=${row.object_chain_phase || 'none'}/${row.object_chain_resolution_id || 'none'} result=${row.object_chain_recheck_result || 'none'}; complete=${row.chain_complete_after}; response=${row.resident_response_expression_id || 'none'}/${row.resident_response_marker || 'none'}; proposal=${row.proposal_id}; practice=${row.practice_id}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
+  const actionRows = rail.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.label} -> ${row.underlying_action}; proposal=${row.proposal_id}; practice=${row.practice_id}; handling=${row.manipulation_id || 'none'}; handlingPractice=${row.handling_practice_id || 'none'}; residentTest=${row.ordinary_bottleneck_test_id || 'none'}; follow=${row.follow_chain_id || 'none'}/${row.follow_chain_after || 'none'}; object=${row.object_chain_phase || 'none'}/${row.object_chain_resolution_id || 'none'}; normalTest=${row.normal_test_chain_phase || 'none'}/${row.normal_test_chain_test_id || 'none'}; recovery=${row.follow_recovery_id || 'none'}; save=${row.save_slot_id}`);
+  const followRows = (rail.followChainLedger || []).slice(-5).map(row => `${row.follow_id}: ${row.chosen_label}; outcome=${row.response_outcome || 'none'}; allowed=${row.resident_allowed_follow !== false}; chain=${row.chain_before}->${row.chain_after}; object=${row.object_chain_phase || 'none'}/${row.object_chain_resolution_id || 'none'} result=${row.object_chain_recheck_result || 'none'}; normalTest=${row.normal_test_chain_phase || 'none'}/${row.normal_test_chain_test_id || 'none'} board=${row.normal_test_chain_proposal_id || 'none'}; complete=${row.chain_complete_after}; response=${row.resident_response_expression_id || 'none'}/${row.resident_response_marker || 'none'}; proposal=${row.proposal_id}; practice=${row.practice_id}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
   const recoveryRows = (rail.followRecoveryLedger || []).slice(-5).map(row => `${row.recovery_id}: ${row.recovery_outcome}; source=${row.source_follow_id}/${row.source_outcome}; chain=${row.chain_id}; response=${row.resident_response_expression_id || 'none'}/${row.resident_response_marker || 'none'}; advanced=${row.chain_advanced}`);
   return [
     `Acceptance ready: ${rail.acceptanceReady ? 'yes' : 'no'}`,
@@ -14852,6 +14930,8 @@ function buildPrototypeAcceptanceReceipt() {
   const actionRailFollowRecoveryExpressionRows = actionRail && actionRail.followRecoveryLedger ? actionRail.followRecoveryLedger.filter(row => row.resident_response_expression_id && row.resident_response_expression_id !== 'none' && row.chain_advanced === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const objectGuidedOptionRows = actionRail && actionRail.optionLedger ? actionRail.optionLedger.filter(snapshot => (snapshot.options || []).some(option => option.object_chain_phase && option.object_chain_phase !== 'none' && option.object_chain_next_action && option.object_chain_next_action !== 'none' && option.recommended === true)).length : 0;
   const objectGuidedFollowRows = actionRail && actionRail.followChainLedger ? actionRail.followChainLedger.filter(row => row.object_chain_phase && row.object_chain_phase !== 'none' && row.object_chain_response_id && row.object_chain_response_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
+  const normalTestGuidedOptionRows = actionRail && actionRail.optionLedger ? actionRail.optionLedger.filter(snapshot => (snapshot.options || []).some(option => option.normal_test_chain_phase && option.normal_test_chain_phase !== 'none' && option.normal_test_chain_next_action && option.normal_test_chain_next_action !== 'none' && option.normal_test_chain_test_id && option.normal_test_chain_test_id !== 'none' && option.recommended === true)).length : 0;
+  const normalTestGuidedFollowRows = actionRail && actionRail.followChainLedger ? actionRail.followChainLedger.filter(row => row.normal_test_chain_phase && row.normal_test_chain_phase !== 'none' && row.normal_test_chain_test_id && row.normal_test_chain_test_id !== 'none' && row.normal_test_chain_proposal_id && row.normal_test_chain_proposal_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
   const playerModeSessions = playerMode ? playerMode.sessionLedger.length : 0;
   const playerModeVisibleCards = playerMode && playerMode.visibleSurface ? playerMode.visibleSurface.visible_cards.length : 0;
   const movementRouteRows = movementRoute ? movementRoute.routeLedger.length : 0;
@@ -14993,6 +15073,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'normal_action_resident_generated_test', pass: Boolean(actionRail && normalActionResidentTestRows > 0 && normalActionAutoTestRows > 0), evidence: actionRail ? `normalActionTests=${normalActionResidentTestRows}, autoTests=${normalActionAutoTestRows}` : 'not run' },
     { id: 'normal_test_reaches_village_board', pass: Boolean(board && normalActionBoardProposalRows > 0), evidence: board ? `normalTestBoardProposals=${normalActionBoardProposalRows}` : 'not run' },
     { id: 'normal_test_proposal_actionable', pass: Boolean(board && projects && worksite && normalTestSupportRows > 0 && normalTestProjectRows > 0 && normalTestWorksiteRows > 0 && normalTestVisualRows > 0), evidence: board && projects && worksite ? `support=${normalTestSupportRows}, project=${normalTestProjectRows}, worksite=${normalTestWorksiteRows}, visual=${normalTestVisualRows}` : 'not run' },
+    { id: 'normal_test_guided_next_step', pass: Boolean(actionRail && (normalTestGuidedOptionRows > 0 || normalTestGuidedFollowRows > 0)), evidence: actionRail ? `guidedOptions=${normalTestGuidedOptionRows}, guidedFollow=${normalTestGuidedFollowRows}` : 'not run' },
     { id: 'object_objection_guided_next_step', pass: Boolean(actionRail && (objectGuidedOptionRows > 0 || objectGuidedFollowRows > 0)), evidence: actionRail ? `guidedOptions=${objectGuidedOptionRows}, guidedFollow=${objectGuidedFollowRows}` : 'not run' },
     { id: 'object_objection_canvas_cue', pass: Boolean(worldStage && objectChainCanvasCueRows > 0), evidence: worldStage ? `objectChainCues=${objectChainCanvasCueRows}` : 'not run' },
     { id: 'player_mode_interface', pass: Boolean(playerMode && playerMode.acceptanceReady && playerModeSessions > 0 && playerModeVisibleCards >= 6 && playerMode.normalViewOnly === true && playerMode.debugPanelsHidden === true && playerMode.noDirectCommand === true && playerMode.noHiddenLawNormalView === true && playerMode.playerGlossesOnly === true), evidence: playerMode ? `enabled=${playerMode.enabled}, sessions=${playerModeSessions}, visibleCards=${playerModeVisibleCards}` : 'not run' },

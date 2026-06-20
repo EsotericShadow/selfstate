@@ -490,3 +490,11 @@
 - Inspect the save panel and confirm `Normal-test continuity` lists the action, test, board proposal, project, worksite, and visual IDs.
 - Confirm `Normal-test returns` reports the same chain with `match=yes`.
 - Export or inspect acceptance and confirm `normal_test_save_return_continuity` passes.
+
+## Normal-test guided next-step playtests
+
+- Generate a normal-action resident test and `VBP-NAT` proposal.
+- Open the normal action rail and confirm `Follow` is recommended for the normal-test chain.
+- Use `Follow` and confirm the Follow row shows normal-test phase, test ID, board proposal ID, and next action.
+- Continue using `Follow` through support/worksite/save/return where applicable.
+- Export or inspect acceptance and confirm `normal_test_guided_next_step` passes.

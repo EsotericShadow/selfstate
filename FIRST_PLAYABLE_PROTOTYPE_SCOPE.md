@@ -834,3 +834,14 @@ Evidence required:
 - restored normal-test chain fingerprint matches the saved fingerprint
 - evidence is recomputed from restored world state, not a detached counter
 - no hidden-law exposure or direct command is introduced
+
+## Added scope gate: Normal-test guided next step
+
+The first playable scope now requires normal-action resident-test chains to have a guided next-step path through the normal action rail.
+
+Evidence required:
+- at least one `normal_test_guided_next_step` acceptance row
+- normal action rail option or Follow row with normal-test phase and next action
+- linked normal action ID, resident test ID, and board proposal ID
+- Follow remains resident-mediated and cannot force work
+- no hidden-law exposure and no tech-tree unlock

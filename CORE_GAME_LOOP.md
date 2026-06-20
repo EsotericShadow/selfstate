@@ -792,3 +792,12 @@ The goal is readable continuity: the resident response should reflect what happe
 4. Return restores the browser-local world snapshot.
 5. The restored chain is recomputed from normal action, board, project, worksite, and visual rows.
 6. The save panel reports whether the restored normal-test chain matches the saved chain.
+
+## Normal-test guided Follow loop
+
+1. A normal player action creates a resident test and `VBP-NAT` proposal.
+2. The shell derives the current normal-test chain phase.
+3. The normal action rail recommends `Follow` when the chain has an unfinished public next step.
+4. `Follow` routes through proposal support, resident worksite, save, return, or return journal.
+5. Follow rows preserve the normal-test action, test, proposal, project/worksite/visual counts, and persistence counts.
+6. The player can continue the chain from the normal surface instead of inspecting debug panels.

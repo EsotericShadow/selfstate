@@ -695,3 +695,11 @@ Normal-action resident-test chains now have explicit save/return continuity evid
 The save panel now includes `Normal-test continuity` and `Normal-test returns` sections so the chain can be inspected without raw JSON.
 
 The acceptance gate is `normal_test_save_return_continuity`. It requires a saved normal-test chain with project/worksite/visual evidence and a restored chain whose fingerprint matches the saved state.
+
+## Prototype v0 normal-test guided next-step update
+
+The normal action rail `Follow` verb can now follow `normal action -> resident test -> VBP-NAT -> project/worksite/visual -> save/return` chains. `latestNormalTestChainState()` derives the next playable step from normal-test chain evidence and routes Follow through proposal deck support, resident worksite, save, return, or return journal as needed.
+
+Normal action rows, Follow rows, and option snapshots now carry normal-test phase, next action, normal action ID, resident test ID, board proposal ID, project/worksite/visual counts, and save/return counts.
+
+The acceptance gate is `normal_test_guided_next_step`. It requires the normal action rail or Follow ledger to expose a next step for a normal-test chain without direct command, hidden-law exposure, or tech-tree unlock.

@@ -1005,4 +1005,5 @@ This lets a playtester follow a restored visible Physics path from the same play
 3. Player Mode reads the latest visible Physics Follow row.
 4. Player Mode shows a `visible physics follow continuity` card with Follow id, action id, happy-path id, save/return counts, and public body-expression id.
 5. Player Mode readiness requires the card so the continuity proof stays inside the normal player surface.
-6. Hidden simulator law remains audit-only and residents are not directly commanded.
+6. QA readiness and exported acceptance require the same card through `player-mode-visible-physics-follow` and `player_mode_visible_physics_follow_continuity`.
+7. Hidden simulator law remains audit-only and residents are not directly commanded.

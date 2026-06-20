@@ -183,6 +183,7 @@
 
 - Run the normal action rail loop and confirm the action-rail receipt reports both a ready `Physics path` row and at least one visible Physics Follow row with action id, happy-path id, body-expression id, save/return counts, no direct command, and no hidden-law exposure in normal view.
 - Enter Player mode after the rail loop and confirm a `visible physics follow continuity` card appears with the latest Follow row, action id, happy-path id, save/return counts, and body-expression id.
+- Export acceptance and confirm `player_mode_visible_physics_follow_continuity` passes only when that Player Mode card and the action-rail Follow-visible-physics row both exist.
 
 ## Contact/joint constraint playtests
 
@@ -316,9 +317,11 @@
 
 - Toggle `Player mode` from the normal action rail and confirm debug-heavy controls disappear while Look, Move, Ask, Talk, Objects, Support, Wait, Return, Save, Physics path, and Player mode remain reachable.
 - Confirm the canvas, player guide, primary play surface, normal action rail, ambient physics path, public outcomes, and Player mode interface card remain visible.
+- Confirm Player mode shows `visible physics follow continuity` after the normal rail has produced Follow-visible-physics evidence.
 - Confirm Player mode records a session row with no direct resident command and no hidden-law exposure in normal view.
 - Leave Player mode and confirm audit/reviewer surfaces are still recoverable explicitly.
-- Export acceptance and confirm `player_mode_interface` appears as a requirement after the Player mode loop runs.
+- Run QA readiness and confirm `player-mode-visible-physics-follow` reports the card, ready state, and Follow-visible-physics rows.
+- Export acceptance and confirm `player_mode_interface` and `player_mode_visible_physics_follow_continuity` appear as requirements after the Player mode loop runs.
 
 ## Resident proposal deck playtests
 

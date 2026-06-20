@@ -521,6 +521,12 @@ The compact action strip now highlights the current Player guide action. If the 
 
 This keeps the prototype oriented around ordinary play while preserving the existing resident-mediated path. The acceptance gate is `normal_player_guided_action_highlight`.
 
+## Prototype v0 advanced controls secondary
+
+The prototype hero now keeps normal play primary by grouping the large prototype/debug control set under `Advanced prototype / debug controls`. Existing development and audit buttons remain reachable, but they no longer dominate the initial game surface.
+
+The acceptance gate is `advanced_prototype_controls_secondary`.
+
 ## Game prototype v0 update: Player Mode Interface
 
 The browser shell now includes a `Player mode` toggle and `Player mode loop` milestone. Player mode foregrounds the actual play surface: canvas, normal action rail, selected resident cue, current problem, player guide, primary play surface, walkthrough state, normal action receipt, and public outcomes.

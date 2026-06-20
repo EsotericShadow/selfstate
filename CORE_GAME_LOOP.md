@@ -574,6 +574,12 @@ The normal action strip now marks the button that matches the current Player gui
 
 This is only UI affordance. It does not command residents, reveal hidden law, create resources, or change the simulation path.
 
+## Advanced prototype controls secondary loop
+
+The normal HUD and compact action strip are the primary hero controls. Debug-heavy prototype actions remain available, but they are grouped under `Advanced prototype / debug controls` so ordinary play is not visually dominated by subsystem buttons.
+
+This preserves developer reachability without changing simulation state or resident autonomy.
+
 The Follow verb can now follow an object-objection chain as well as the broader integrated chain. It reuses existing actions and records object-chain phase, response id, proposal id, resolution id, and recheck result without giving the avatar direct object control.
 
 ## Player mode interface loop

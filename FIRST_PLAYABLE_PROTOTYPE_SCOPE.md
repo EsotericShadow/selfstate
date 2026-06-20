@@ -440,6 +440,18 @@ Required evidence:
 - the highlight changes UI affordance only and does not create world state, command residents, reveal hidden law, or unlock technology
 - exported acceptance reports the guide action, highlighted action, and match state
 
+## Added scope gate: Advanced Prototype Controls Secondary
+
+`advanced_prototype_controls_secondary` is now part of first playable prototype scope.
+
+Required evidence:
+
+- the normal HUD and normal action strip remain the primary hero controls
+- debug-heavy prototype actions are grouped under an Advanced prototype / debug controls section
+- the advanced section preserves existing action buttons for development and audit work
+- moving controls into the advanced section does not remove hooks, command residents, expose hidden law in normal view, or unlock technology
+- exported acceptance confirms the advanced controls exist as a secondary details section
+
 ## Prototype v0 milestone: Player Mode Interface
 
 `player_mode_interface` is now part of first playable prototype scope.

@@ -224,6 +224,11 @@
 132. Inspect Village state and confirm residents show comfort, boundary, and refusal values.
 133. Run Resident tick after repeated/crowded presence and confirm refusal or guarded public cue can trace back to presence pressure.
 134. Export acceptance and confirm `avatar_presence_affects_comfort_and_refusal` appears as a prototype requirement.
+135. Save after avatar presence has affected comfort or boundary pressure, mutate the world, return the slot, and confirm Save / return preserves presence row count, comfort row count, remembered tone, comfort, boundary, and refusal values.
+136. Use Return later after helpful or repeated non-crowding presence and confirm the return receipt includes an `AWPR-...` presence-return row with a familiar/helpful tone.
+137. Crowd a worksite before returning later and confirm the resident return greeting is more guarded while still preserving refusal and no-direct-command boundaries.
+138. Inspect Autonomous residents after a return and confirm Presence return memory lists source presence rows and preserved comfort history instead of recalculating from a blank state.
+139. Export acceptance and confirm `avatar_presence_persists_through_return` appears as a prototype requirement.
 
 ## Physics-to-practice slice playtests
 

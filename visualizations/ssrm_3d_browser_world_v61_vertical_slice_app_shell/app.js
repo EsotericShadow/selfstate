@@ -621,8 +621,10 @@ function enterWorld() {
     };
     advancePromiseFollowUpState(residentName, 'return', replayRowsBeforeReturn);
     applyAccountabilityReturnGreeting(replayRowsBeforeReturn);
+    const presenceReturn = applyAvatarPresenceReturnMemory('enterWorld', replayRowsBeforeReturn);
+    if (presenceReturn) world.returnContinuity.avatarPresenceReturnId = presenceReturn.return_presence_id;
   }
-  return log('enterWorld', { boundary: BOUNDARY, returningVisit, returnContinuity: world.returnContinuity || null, returnGreetingContinuity: world.returnGreetingContinuity || null, promiseFollowUp: world.promiseFollowUp || null });
+  return log('enterWorld', { boundary: BOUNDARY, returningVisit, returnContinuity: world.returnContinuity || null, returnGreetingContinuity: world.returnGreetingContinuity || null, avatarPresenceReturn: world.returnContinuity ? world.returnContinuity.avatarPresenceReturnId || 'none' : 'none', promiseFollowUp: world.promiseFollowUp || null });
 }
 function applyAccountabilityReturnGreeting(replayRowsBeforeReturn) {
   const receipt = world.avatarAbsenceAccountabilityReceipt;
@@ -724,11 +726,13 @@ function ensureAvatarWorksitePresence() {
       runCount: 0,
       presenceLedger: [],
       comfortLedger: [],
+      returnLedger: [],
       boundary: 'avatar presence can influence conditions, trust, and willingness near a physical worksite, but cannot assign labor or install decisions',
     };
   }
   if (!Array.isArray(world.gamePrototypeAvatarPresence.presenceLedger)) world.gamePrototypeAvatarPresence.presenceLedger = [];
   if (!Array.isArray(world.gamePrototypeAvatarPresence.comfortLedger)) world.gamePrototypeAvatarPresence.comfortLedger = [];
+  if (!Array.isArray(world.gamePrototypeAvatarPresence.returnLedger)) world.gamePrototypeAvatarPresence.returnLedger = [];
   return world.gamePrototypeAvatarPresence;
 }
 
@@ -849,6 +853,129 @@ function recordAvatarWorksitePresence(residentName, component, source = 'worksit
     toolWear: 0,
     maintenanceObligation: nearWorksite ? `respect ${residentName}'s work boundary near ${row.component_id}` : 'none',
     unintendedConsequence: crowding ? 'close presence increased boundary or refusal pressure' : nearWorksite ? 'nearby presence can shift comfort, trust, or willingness' : 'no cooperation change',
+    hiddenLawInvolved: 'none in normal view',
+    conservationCheck: true
+  });
+  return row;
+}
+
+function avatarPresenceSocialSnapshot() {
+  const sim = world.gamePrototypeAvatarPresence || null;
+  const presenceLedger = sim && sim.presenceLedger ? sim.presenceLedger : [];
+  const comfortLedger = sim && sim.comfortLedger ? sim.comfortLedger : [];
+  const returnLedger = sim && sim.returnLedger ? sim.returnLedger : [];
+  const latestPresence = presenceLedger.length ? presenceLedger[presenceLedger.length - 1] : null;
+  const latestComfort = comfortLedger.length ? comfortLedger[comfortLedger.length - 1] : null;
+  const residentName = latestPresence ? latestPresence.resident : world.selected;
+  const resident = world.residents[residentName] || currentResident();
+  const crowdingRows = presenceLedger.filter(row => row.near_worksite === true && row.crowding === true).length;
+  const helpfulRows = presenceLedger.filter(row => row.near_worksite === true && row.crowding !== true && Number(row.cooperation_modifier || 0) > 0).length;
+  const familiarRows = presenceLedger.filter(row => row.near_worksite === true && Number(row.repeated_nearby_count || 0) > 0 && row.crowding !== true).length;
+  const socialComfort = Number(resident.socialComfort ?? 0.5);
+  const boundaryPressure = Number(resident.boundaryPressure ?? 0.18);
+  const refusalRisk = Number(resident.refusalRisk ?? 0.12);
+  let rememberedTone = 'absent';
+  if (presenceLedger.length > 0) {
+    if ((latestPresence && latestPresence.crowding === true) || boundaryPressure > 0.44 || refusalRisk > 0.36 || crowdingRows > helpfulRows) {
+      rememberedTone = 'crowded_guarded';
+    } else if (familiarRows > 0 || socialComfort > 0.54 || helpfulRows > 0) {
+      rememberedTone = 'helpful_familiar';
+    } else if (latestPresence && latestPresence.near_worksite === true) {
+      rememberedTone = 'noticed_nearby';
+    } else {
+      rememberedTone = 'witnessed_away';
+    }
+  }
+  const toneGloss = {
+    absent: 'no remembered worksite presence',
+    crowded_guarded: 'guarded after crowded worksite presence',
+    helpful_familiar: 'more comfortable with steady helpful presence',
+    noticed_nearby: 'noticed nearby presence without a clear request',
+    witnessed_away: 'remembers the avatar as distant from the worksite',
+  }[rememberedTone] || rememberedTone;
+  return {
+    resident: residentName,
+    presence_rows: presenceLedger.length,
+    comfort_rows: comfortLedger.length,
+    return_rows: returnLedger.length,
+    latest_presence_id: latestPresence ? latestPresence.presence_id : 'none',
+    latest_comfort_id: latestComfort ? latestComfort.comfort_id : 'none',
+    latest_influence_type: latestPresence ? latestPresence.influence_type : 'none',
+    latest_component_id: latestPresence ? latestPresence.component_id : 'none',
+    latest_component_gloss: latestPresence ? latestPresence.component_gloss : 'none',
+    crowding_rows: crowdingRows,
+    helpful_rows: helpfulRows,
+    familiar_rows: familiarRows,
+    social_comfort: Number(socialComfort.toFixed(3)),
+    boundary_pressure: Number(boundaryPressure.toFixed(3)),
+    refusal_risk: Number(refusalRisk.toFixed(3)),
+    remembered_tone: rememberedTone,
+    tone_gloss: toneGloss,
+  };
+}
+
+function applyAvatarPresenceReturnMemory(source = 'return_session', replayRowsBeforeReturn = world.replay.length) {
+  const sim = ensureAvatarWorksitePresence();
+  const snapshot = avatarPresenceSocialSnapshot();
+  if (snapshot.presence_rows <= 0) return null;
+  const trustDelta = snapshot.remembered_tone === 'crowded_guarded' ? -0.003 : snapshot.remembered_tone === 'helpful_familiar' ? 0.006 : 0.002;
+  const comfortDelta = snapshot.remembered_tone === 'crowded_guarded' ? -0.004 : snapshot.remembered_tone === 'helpful_familiar' ? 0.006 : 0.001;
+  const boundaryDelta = snapshot.remembered_tone === 'crowded_guarded' ? 0.008 : snapshot.remembered_tone === 'helpful_familiar' ? -0.004 : 0;
+  const refusalDelta = snapshot.remembered_tone === 'crowded_guarded' ? 0.006 : snapshot.remembered_tone === 'helpful_familiar' ? -0.003 : 0;
+  const greeting = `${snapshot.resident} remembers Gabriel as ${snapshot.tone_gloss} near ${snapshot.latest_component_gloss}`;
+  const row = {
+    return_presence_id: `AWPR-${String(sim.returnLedger.length + 1).padStart(3, '0')}`,
+    tick: world.tick,
+    source,
+    replay_rows_before_return: replayRowsBeforeReturn,
+    resident: snapshot.resident,
+    remembered_tone: snapshot.remembered_tone,
+    return_greeting: greeting,
+    presence_rows: snapshot.presence_rows,
+    comfort_rows: snapshot.comfort_rows,
+    latest_presence_id: snapshot.latest_presence_id,
+    latest_comfort_id: snapshot.latest_comfort_id,
+    latest_influence_type: snapshot.latest_influence_type,
+    latest_component_id: snapshot.latest_component_id,
+    social_comfort: snapshot.social_comfort,
+    boundary_pressure: snapshot.boundary_pressure,
+    refusal_risk: snapshot.refusal_risk,
+    crowding_rows: snapshot.crowding_rows,
+    helpful_rows: snapshot.helpful_rows,
+    familiar_rows: snapshot.familiar_rows,
+    trust_delta: Number(trustDelta.toFixed(3)),
+    comfort_delta: Number(comfortDelta.toFixed(3)),
+    boundary_pressure_delta: Number(boundaryDelta.toFixed(3)),
+    refusal_risk_delta: Number(refusalDelta.toFixed(3)),
+    source_history_preserved: snapshot.presence_rows > 0 && snapshot.comfort_rows > 0,
+    resident_can_refuse: true,
+    avatar_direct_command: false,
+    hidden_law_normal_view: false,
+  };
+  sim.returnLedger.push(row);
+  sim.returnLedger = sim.returnLedger.slice(-120);
+  mutateResident(snapshot.resident, {
+    trust: row.trust_delta,
+    progress: 0.003,
+    socialComfort: row.comfort_delta,
+    boundaryPressure: row.boundary_pressure_delta,
+    refusalRisk: row.refusal_risk_delta,
+    memory: `return greeting carried avatar presence tone: ${snapshot.tone_gloss}`,
+    historyEvent: 'avatar presence return memory',
+    historyDetail: `${row.return_presence_id}; ${snapshot.remembered_tone}; source ${source}`
+  });
+  recordRealityConstraint('avatar_presence_return_memory', {
+    resident: snapshot.resident,
+    sourceBeliefId: row.return_presence_id,
+    materials: [],
+    publicObservation: greeting,
+    residentInterpretation: `${snapshot.remembered_tone}; comfort ${snapshot.social_comfort}; boundary ${snapshot.boundary_pressure}; refusal ${snapshot.refusal_risk}`,
+    materialTransformation: 'no material transformed by remembered avatar presence',
+    timeCost: 0,
+    workCost: 0,
+    toolWear: 0,
+    maintenanceObligation: snapshot.remembered_tone === 'crowded_guarded' ? `give ${snapshot.resident} more worksite distance` : 'preserve remembered presence tone across return',
+    unintendedConsequence: snapshot.remembered_tone === 'crowded_guarded' ? 'return greeting may be more guarded' : 'return greeting may be more familiar',
     hiddenLawInvolved: 'none in normal view',
     conservationCheck: true
   });
@@ -1127,6 +1254,7 @@ function leaveAndReturnLater(daysAway = 3) {
       historyDetail: `avatar away ${days} day(s); village advanced from day ${beforeDay} to ${afterDay}`
     });
   });
+  const presenceReturn = applyAvatarPresenceReturnMemory('return_later', replayBefore);
   const receipt = {
     return_id: `GPLR-${String(returns.returnLedger.length + 1).padStart(3, '0')}`,
     absence_id: absence.absence_id,
@@ -1149,6 +1277,13 @@ function leaveAndReturnLater(daysAway = 3) {
     restored_old_state: false,
     direct_reset: false,
     continuity_preserved: true,
+    avatar_presence_return_id: presenceReturn ? presenceReturn.return_presence_id : 'none',
+    avatar_presence_return_tone: presenceReturn ? presenceReturn.remembered_tone : 'none',
+    avatar_presence_rows: presenceReturn ? presenceReturn.presence_rows : 0,
+    avatar_comfort_rows: presenceReturn ? presenceReturn.comfort_rows : 0,
+    avatar_social_comfort: presenceReturn ? presenceReturn.social_comfort : 'none',
+    avatar_boundary_pressure: presenceReturn ? presenceReturn.boundary_pressure : 'none',
+    avatar_refusal_risk: presenceReturn ? presenceReturn.refusal_risk : 'none',
   };
   returns.runCount += 1;
   returns.returnLedger.push(receipt);
@@ -1169,7 +1304,7 @@ function leaveAndReturnLater(daysAway = 3) {
     conservationCheck: true
   });
   recordPrototypeMilestone('return-later', `${days} day(s) away; day ${beforeDay}->${afterDay}; remembered by ${rememberedResidents.join(', ')}`);
-  return log('leaveAndReturnLater', { daysAway: days, dayBefore: beforeDay, dayAfter: afterDay, remembered: rememberedResidents.length, projectVisualRowsAdded: Math.max(0, afterVisualRows - beforeVisualRows), latestProjectVisualId: latestProjectVisual ? latestProjectVisual.visual_id : 'none', restoredOldState: false, directReset: false });
+  return log('leaveAndReturnLater', { daysAway: days, dayBefore: beforeDay, dayAfter: afterDay, remembered: rememberedResidents.length, projectVisualRowsAdded: Math.max(0, afterVisualRows - beforeVisualRows), latestProjectVisualId: latestProjectVisual ? latestProjectVisual.visual_id : 'none', avatarPresenceReturn: presenceReturn ? presenceReturn.return_presence_id : 'none', avatarPresenceTone: presenceReturn ? presenceReturn.remembered_tone : 'none', restoredOldState: false, directReset: false });
 }
 
 function ensurePrototype3DWorld() {
@@ -11890,6 +12025,7 @@ function formatPrototypeAutonomousResidents() {
   const worksiteRows = (sim.worksiteProximityLedger || []).slice(-6).map(row => `${row.worksite_effect_id}: ${row.resident} ${row.action}; component=${row.target_component_id}; distance=${row.distance_before}->${row.distance_after}; near=${row.near_enough}; applied=${row.effect_applied}; blocked=${row.blocked_by_distance}`);
   const presenceRows = (world.gamePrototypeAvatarPresence && world.gamePrototypeAvatarPresence.presenceLedger ? world.gamePrototypeAvatarPresence.presenceLedger : []).slice(-6).map(row => `${row.presence_id}: ${row.resident}; component=${row.component_id}; distance=${row.distance_to_worksite}; near=${row.near_worksite}; crowd=${row.crowding}; repeated=${row.repeated_nearby_count}; influence=${row.influence_type}; comfortDelta=${row.comfort_delta}; boundaryDelta=${row.boundary_pressure_delta}; command=${row.avatar_direct_command}`);
   const comfortRows = (world.gamePrototypeAvatarPresence && world.gamePrototypeAvatarPresence.comfortLedger ? world.gamePrototypeAvatarPresence.comfortLedger : []).slice(-6).map(row => `${row.comfort_id}: ${row.resident}; presence=${row.presence_id}; comfort=${row.comfort_before}->${row.comfort_after}; boundary=${row.boundary_pressure_after}; refusal=${row.refusal_risk_after}; canRefuse=${row.resident_can_refuse}`);
+  const presenceReturnRows = (world.gamePrototypeAvatarPresence && world.gamePrototypeAvatarPresence.returnLedger ? world.gamePrototypeAvatarPresence.returnLedger : []).slice(-6).map(row => `${row.return_presence_id}: ${row.resident}; tone=${row.remembered_tone}; presence=${row.presence_rows}; comfort=${row.comfort_rows}; preserved=${row.source_history_preserved}; greeting=${row.return_greeting}`);
   return [
     `Day: ${sim.day} / season: ${sim.season}`,
     `Boundary: stochastic autonomous actions; no direct player command; actions cost time/needs/materials.`,
@@ -11903,6 +12039,8 @@ function formatPrototypeAutonomousResidents() {
     ...(presenceRows.length ? presenceRows : ['none']),
     'Presence comfort/boundary:',
     ...(comfortRows.length ? comfortRows : ['none']),
+    'Presence return memory:',
+    ...(presenceReturnRows.length ? presenceReturnRows : ['none']),
     'Visible expression cues:',
     ...(expressions.length ? expressions : ['none']),
     'Refusals:',
@@ -12414,6 +12552,16 @@ function saveSlotSummary(slot) {
     nearby_action_rows: slot.nearby_action_rows,
     village_day_rows: slot.village_day_rows,
 	    return_later_rows: slot.return_later_rows,
+    avatar_presence_rows: slot.avatar_presence_rows,
+    avatar_comfort_rows: slot.avatar_comfort_rows,
+    avatar_presence_return_rows: slot.avatar_presence_return_rows,
+    avatar_presence_latest_id: slot.avatar_presence_latest_id,
+    avatar_presence_latest_comfort_id: slot.avatar_presence_latest_comfort_id,
+    avatar_presence_return_tone: slot.avatar_presence_return_tone,
+    avatar_presence_resident: slot.avatar_presence_resident,
+    avatar_presence_social_comfort: slot.avatar_presence_social_comfort,
+    avatar_presence_boundary_pressure: slot.avatar_presence_boundary_pressure,
+    avatar_presence_refusal_risk: slot.avatar_presence_refusal_risk,
     playable_slice_ready: slot.playable_slice_ready,
     playable_slice_phase_rows: slot.playable_slice_phase_rows,
     playable_slice_physics_rows: slot.playable_slice_physics_rows,
@@ -12530,6 +12678,7 @@ function savePrototypeSlot(label = 'manual prototype save') {
   const deepTime = world.deepTimeCivilization;
   const autonomous = world.autonomousResidents;
   const latestProjectVisual = world.gamePrototypeProjects && world.gamePrototypeProjects.visualLedger && world.gamePrototypeProjects.visualLedger.length ? world.gamePrototypeProjects.visualLedger[world.gamePrototypeProjects.visualLedger.length - 1] : null;
+  const avatarPresenceSnapshot = avatarPresenceSocialSnapshot();
   const slotNumber = saves.slots.length + 1;
   const slot = {
     slot_id: `GPS-${String(slotNumber).padStart(2, '0')}`,
@@ -12550,6 +12699,16 @@ function savePrototypeSlot(label = 'manual prototype save') {
     nearby_action_rows: world.gamePrototypeNearbyActions ? world.gamePrototypeNearbyActions.actionLedger.length : 0,
     village_day_rows: world.gamePrototypeDayCycle ? world.gamePrototypeDayCycle.dayLedger.length : 0,
     return_later_rows: world.gamePrototypeReturnLater ? world.gamePrototypeReturnLater.returnLedger.length : 0,
+    avatar_presence_rows: avatarPresenceSnapshot.presence_rows,
+    avatar_comfort_rows: avatarPresenceSnapshot.comfort_rows,
+    avatar_presence_return_rows: avatarPresenceSnapshot.return_rows,
+    avatar_presence_latest_id: avatarPresenceSnapshot.latest_presence_id,
+    avatar_presence_latest_comfort_id: avatarPresenceSnapshot.latest_comfort_id,
+    avatar_presence_return_tone: avatarPresenceSnapshot.remembered_tone,
+    avatar_presence_resident: avatarPresenceSnapshot.resident,
+    avatar_presence_social_comfort: avatarPresenceSnapshot.social_comfort,
+    avatar_presence_boundary_pressure: avatarPresenceSnapshot.boundary_pressure,
+    avatar_presence_refusal_risk: avatarPresenceSnapshot.refusal_risk,
     playable_slice_ready: world.gamePrototypePlayableSlice ? world.gamePrototypePlayableSlice.acceptanceReady === true : false,
     playable_slice_phase_rows: world.gamePrototypePlayableSlice ? world.gamePrototypePlayableSlice.phaseLedger.length : 0,
     playable_slice_physics_rows: world.gamePrototypePlayableSlice ? world.gamePrototypePlayableSlice.linkedPhysicsRows.length : 0,
@@ -12657,7 +12816,7 @@ function savePrototypeSlot(label = 'manual prototype save') {
   persistPrototypeSaves();
   recordPrototypeMilestone('prototype-save-slot', `${slot.slot_id} saved year ${slot.year}, day ${slot.autonomous_day}`);
   recordCheckpoint(`prototype save ${slot.slot_id}`);
-  return log('savePrototypeSlot', { slotId: slot.slot_id, year: slot.year, autonomousDay: slot.autonomous_day, practices: slot.practices, proposals: slot.proposals, livedPhysicsRows: slot.lived_practice_physics_rows, projectVisualRows: slot.project_visual_rows, latestProjectVisualId: slot.latest_project_visual_id });
+  return log('savePrototypeSlot', { slotId: slot.slot_id, year: slot.year, autonomousDay: slot.autonomous_day, practices: slot.practices, proposals: slot.proposals, livedPhysicsRows: slot.lived_practice_physics_rows, projectVisualRows: slot.project_visual_rows, latestProjectVisualId: slot.latest_project_visual_id, avatarPresenceRows: slot.avatar_presence_rows, avatarPresenceTone: slot.avatar_presence_return_tone });
 }
 
 function returnPrototypeSlot() {
@@ -12675,15 +12834,30 @@ function returnPrototypeSlot() {
     restored_project_visual_rows: slot.project_visual_rows || 0,
     restored_latest_project_visual_id: slot.latest_project_visual_id || 'none',
     restored_latest_project_visual_cue: slot.latest_project_visual_cue || 'none',
+    restored_avatar_presence_rows: slot.avatar_presence_rows || 0,
+    restored_avatar_comfort_rows: slot.avatar_comfort_rows || 0,
+    restored_avatar_presence_return_rows: slot.avatar_presence_return_rows || 0,
+    restored_avatar_presence_latest_id: slot.avatar_presence_latest_id || 'none',
+    restored_avatar_presence_latest_comfort_id: slot.avatar_presence_latest_comfort_id || 'none',
+    restored_avatar_presence_tone: slot.avatar_presence_return_tone || 'none',
+    restored_avatar_presence_social_comfort: slot.avatar_presence_social_comfort || 'none',
+    restored_avatar_presence_boundary_pressure: slot.avatar_presence_boundary_pressure || 'none',
+    restored_avatar_presence_refusal_risk: slot.avatar_presence_refusal_risk || 'none',
   };
   const nextWorld = JSON.parse(slot.snapshot);
   saves.returnLog.push(returnEntry);
   nextWorld.gamePrototypeSaves = saves;
   world = nextWorld;
+  const restoredPresenceReturn = applyAvatarPresenceReturnMemory('save_slot_restore', returnEntry.returned_from_replay_rows);
+  if (restoredPresenceReturn) {
+    returnEntry.restored_avatar_presence_return_id = restoredPresenceReturn.return_presence_id;
+    returnEntry.restored_avatar_presence_tone_after_restore = restoredPresenceReturn.remembered_tone;
+    returnEntry.restored_avatar_presence_return_rows_after = restoredPresenceReturn.presence_rows;
+  }
   persistPrototypeSaves();
   recordPrototypeMilestone('prototype-return-slot', `${slot.slot_id} restored year ${slot.year}, day ${slot.autonomous_day}`);
   recordCheckpoint(`prototype return ${slot.slot_id}`);
-  return log('returnPrototypeSlot', { restored: true, slotId: slot.slot_id, year: slot.year, autonomousDay: slot.autonomous_day, projectVisualRows: slot.project_visual_rows || 0, latestProjectVisualId: slot.latest_project_visual_id || 'none' });
+  return log('returnPrototypeSlot', { restored: true, slotId: slot.slot_id, year: slot.year, autonomousDay: slot.autonomous_day, projectVisualRows: slot.project_visual_rows || 0, latestProjectVisualId: slot.latest_project_visual_id || 'none', avatarPresenceRows: returnEntry.restored_avatar_presence_rows, avatarPresenceReturn: returnEntry.restored_avatar_presence_return_id || 'none', avatarPresenceTone: returnEntry.restored_avatar_presence_tone_after_restore || returnEntry.restored_avatar_presence_tone || 'none' });
 }
 
 function exportPrototypeSaveReceipt() {
@@ -12866,6 +13040,10 @@ function buildPrototypeAcceptanceReceipt() {
   const avatarComfortRows = avatarPresence && avatarPresence.comfortLedger ? avatarPresence.comfortLedger.length : 0;
   const avatarBoundaryRows = avatarPresence && avatarPresence.presenceLedger ? avatarPresence.presenceLedger.filter(row => row.near_worksite === true && row.resident_can_refuse === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && (Number(row.comfort_delta || 0) !== 0 || Number(row.boundary_pressure_delta || 0) !== 0 || Number(row.refusal_risk_delta || 0) !== 0)).length : 0;
   const avatarCrowdingOrRepeatRows = avatarPresence && avatarPresence.presenceLedger ? avatarPresence.presenceLedger.filter(row => row.crowding === true || Number(row.repeated_nearby_count || 0) > 0).length : 0;
+  const avatarPresenceReturnRows = avatarPresence && avatarPresence.returnLedger ? avatarPresence.returnLedger.length : 0;
+  const avatarPresenceReturnIntegrity = avatarPresence && avatarPresence.returnLedger ? avatarPresence.returnLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.resident_can_refuse === true && row.source_history_preserved === true) : false;
+  const avatarPresenceSaveRows = saves && saves.slots ? saves.slots.filter(slot => Number(slot.avatar_presence_rows || 0) > 0 && Number(slot.avatar_comfort_rows || 0) > 0 && typeof slot.avatar_presence_return_tone === 'string').length : 0;
+  const avatarPresenceRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => Number(row.restored_avatar_presence_rows || 0) > 0 && row.restored_avatar_presence_return_id && row.restored_avatar_presence_return_id !== 'none').length : 0;
 	  const requirements = [
     { id: 'basic_visual_surface', pass: Boolean(world.entered && Object.keys(world.residents).length <= 6), evidence: `${Object.keys(world.residents).length} resident(s), room=${world.avatar.room}` },
     { id: 'persistent_save_return', pass: Boolean(saves && saves.slots && saves.slots.length > 0 && saves.returnLog && saves.returnLog.length > 0), evidence: saves ? `${saves.slots.length} slot(s), ${saves.returnLog.length} return(s)` : 'no prototype saves' },
@@ -12917,6 +13095,7 @@ function buildPrototypeAcceptanceReceipt() {
 	    { id: 'worksite_proximity_affects_component_work', pass: Boolean(autonomous && worksiteProximityRows > 0 && worksiteEffectRows > 0 && projectProximityRows > 0 && autonomous.worksiteProximityLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false)), evidence: `${worksiteProximityRows} proximity row(s), ${worksiteEffectRows} effect row(s), ${worksiteBlockedRows} blocked row(s), ${projectProximityRows} project proximity row(s)` },
 	    { id: 'avatar_presence_influences_worksite_cooperation', pass: Boolean(avatarPresence && avatarPresenceRows > 0 && avatarInfluenceRows > 0 && avatarPresenceCueRows > 0 && avatarPresence.presenceLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.resident_can_refuse === true)), evidence: `${avatarPresenceRows} presence row(s), ${avatarInfluenceRows} influence row(s), ${avatarPresenceCueRows} canvas cue row(s)` },
 	    { id: 'avatar_presence_affects_comfort_and_refusal', pass: Boolean(avatarPresence && avatarComfortRows > 0 && avatarBoundaryRows > 0 && avatarPresence.comfortLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.resident_can_refuse === true)), evidence: `${avatarComfortRows} comfort row(s), ${avatarBoundaryRows} boundary/refusal row(s), ${avatarCrowdingOrRepeatRows} crowd/repeat row(s)` },
+	    { id: 'avatar_presence_persists_through_return', pass: Boolean(avatarPresence && avatarPresenceRows > 0 && avatarComfortRows > 0 && avatarPresenceReturnRows > 0 && avatarPresenceSaveRows > 0 && avatarPresenceRestoreRows > 0 && avatarPresenceReturnIntegrity), evidence: `${avatarPresenceReturnRows} return row(s), ${avatarPresenceSaveRows} save row(s), ${avatarPresenceRestoreRows} restore row(s)` },
 		    { id: 'physics_consequences_reach_residents', pass: Boolean(physicsProposalCount > 0 && board.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${physicsProposalCount} physics-linked proposal(s)` },
 		    { id: 'projects_construct_physical_components', pass: Boolean(constructionCount > 0 && projectVisualRows > 0 && projectBuiltComponentCount > 0 && materialWorld.constructionLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true) && projects.visualLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${constructionCount} construction row(s), ${projectVisualRows} visual row(s), ${projectBuiltComponentCount} project-built component(s)` },
 	    { id: 'construction_evolves_practice_language', pass: Boolean(constructionPracticeLinks > 0 && constructionPracticeNodes > 0 && materialWorld.language.terms.some(row => (row.meaning_drift || []).some(text => /repair|reinforced|retie/.test(text)))), evidence: `${constructionPracticeLinks} construction-practice link(s), ${constructionPracticeNodes} construction practice node(s)` },
@@ -13007,8 +13186,8 @@ function formatPrototypeClock() {
 
 function formatPrototypeSaves() {
   const saves = world.gamePrototypeSaves || ensurePrototypeSaves();
-  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; projectVisuals=${slot.project_visual_rows || 0}/${slot.latest_project_visual_id || 'none'}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; livedPhysics=${slot.lived_practice_physics_rows || 0}/${slot.lived_practice_latest_physics_id || 'none'}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals/${slot.physical_field_rows || 0} fields/${slot.physical_energy_rows || 0} energy; structural=${slot.structural_stress_rows || 0} stress/${slot.structural_deformation_rows || 0} deform/${slot.structural_repair_rows || 0} repair; constraints=${slot.contact_constraint_rows || 0} contact/${slot.joint_constraint_rows || 0} joints/${slot.constraint_repair_rows || 0} repair; materialState=${slot.material_state_rows || 0} state/${slot.phase_change_rows || 0} phase/${slot.property_drift_rows || 0} props; terrain=${slot.terrain_steps || 0} steps/${slot.terrain_flow_rows || 0} flow/${slot.terrain_support_rows || 0} support; tools=${slot.tool_use_rows || 0} uses/${slot.tool_failure_rows || 0} failures/${slot.tool_repair_rows || 0} repairs; resources=${slot.resource_stock_rows || 0} steps/${slot.resource_loss_rows || 0} losses/${slot.resource_gain_rows || 0} gains; thermal=${slot.thermal_heat_rows || 0} heat/${slot.thermal_smoke_rows || 0} smoke/${slot.thermal_safety_rows || 0} safety; water=${slot.water_flow_rows || 0} flows/${slot.water_leak_rows || 0} leaks/${slot.water_safety_rows || 0} safety; ecology=${slot.ecology_growth_rows || 0} growth/${slot.ecology_harvest_rows || 0} harvest/${slot.ecology_hunger_rows || 0} hunger; manipulation=${slot.material_manipulation_rows || 0}/${slot.material_manipulation_practice_links || 0} practice links; bodies=${slot.resident_body_steps || 0} steps/${slot.resident_body_contacts || 0} contacts/${slot.resident_body_recoveries || 0} recoveries; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; deepPhysics=${slot.deep_time_physics_epochs || 0} epochs/${slot.deep_time_material_flux_rows || 0} flux/${slot.deep_time_physical_effects || 0} effects/${slot.physical_heritage_rows || 0} heritage; survival=${slot.survival_status}`);
-  const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, livedPhysics=${row.restored_lived_practice_physics_rows || 0}/${row.restored_lived_practice_latest_physics_id || 'none'}, projectVisuals=${row.restored_project_visual_rows || 0}/${row.restored_latest_project_visual_id || 'none'}, from replay=${row.returned_from_replay_rows}`);
+  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; projectVisuals=${slot.project_visual_rows || 0}/${slot.latest_project_visual_id || 'none'}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; avatarPresence=${slot.avatar_presence_rows || 0}/${slot.avatar_presence_latest_id || 'none'} comfort=${slot.avatar_comfort_rows || 0} returnTone=${slot.avatar_presence_return_tone || 'none'}; livedPhysics=${slot.lived_practice_physics_rows || 0}/${slot.lived_practice_latest_physics_id || 'none'}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals/${slot.physical_field_rows || 0} fields/${slot.physical_energy_rows || 0} energy; structural=${slot.structural_stress_rows || 0} stress/${slot.structural_deformation_rows || 0} deform/${slot.structural_repair_rows || 0} repair; constraints=${slot.contact_constraint_rows || 0} contact/${slot.joint_constraint_rows || 0} joints/${slot.constraint_repair_rows || 0} repair; materialState=${slot.material_state_rows || 0} state/${slot.phase_change_rows || 0} phase/${slot.property_drift_rows || 0} props; terrain=${slot.terrain_steps || 0} steps/${slot.terrain_flow_rows || 0} flow/${slot.terrain_support_rows || 0} support; tools=${slot.tool_use_rows || 0} uses/${slot.tool_failure_rows || 0} failures/${slot.tool_repair_rows || 0} repairs; resources=${slot.resource_stock_rows || 0} steps/${slot.resource_loss_rows || 0} losses/${slot.resource_gain_rows || 0} gains; thermal=${slot.thermal_heat_rows || 0} heat/${slot.thermal_smoke_rows || 0} smoke/${slot.thermal_safety_rows || 0} safety; water=${slot.water_flow_rows || 0} flows/${slot.water_leak_rows || 0} leaks/${slot.water_safety_rows || 0} safety; ecology=${slot.ecology_growth_rows || 0} growth/${slot.ecology_harvest_rows || 0} harvest/${slot.ecology_hunger_rows || 0} hunger; manipulation=${slot.material_manipulation_rows || 0}/${slot.material_manipulation_practice_links || 0} practice links; bodies=${slot.resident_body_steps || 0} steps/${slot.resident_body_contacts || 0} contacts/${slot.resident_body_recoveries || 0} recoveries; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; deepPhysics=${slot.deep_time_physics_epochs || 0} epochs/${slot.deep_time_material_flux_rows || 0} flux/${slot.deep_time_physical_effects || 0} effects/${slot.physical_heritage_rows || 0} heritage; survival=${slot.survival_status}`);
+  const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, livedPhysics=${row.restored_lived_practice_physics_rows || 0}/${row.restored_lived_practice_latest_physics_id || 'none'}, projectVisuals=${row.restored_project_visual_rows || 0}/${row.restored_latest_project_visual_id || 'none'}, avatarPresence=${row.restored_avatar_presence_rows || 0}/${row.restored_avatar_presence_return_id || 'none'} tone=${row.restored_avatar_presence_tone_after_restore || row.restored_avatar_presence_tone || 'none'}, from replay=${row.returned_from_replay_rows}`);
   return [
     `Active slot: ${saves.activeSlotId || 'none'}`,
     `Boundary: ${saves.boundary}`,

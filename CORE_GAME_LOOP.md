@@ -81,6 +81,7 @@
 3. Return sessions show what residents still carry.
 4. Practices can persist, burden, be forgotten, or revive.
 5. Lived-action physics row counts and latest physics IDs persist so ordinary-action material consequences survive return.
+6. Avatar presence, comfort, boundary pressure, refusal risk, and return greeting tone persist as social history rather than being recalculated from a blank slate.
 
 ## Deep-time civilization loop
 
@@ -270,6 +271,15 @@ The first playable loop includes a direct save/return pass: enter the village, l
 8. Distance affects progress and repair scale; the body-position simulation is allowed to make project work slower or partial.
 9. Scarcity or unreadiness creates a stalled project row instead of spawning resources or forcing obedience.
 10. Completed projects create maintenance obligations and become part of save/return, QA, acceptance, and replay evidence.
+
+## Avatar presence return-continuity loop
+
+1. The avatar's distance to a resident worksite records presence, crowding, cooperation, comfort, boundary, and refusal-risk rows.
+2. Save slots summarize the latest presence row, comfort row, remembered tone, and resident social state.
+3. Return-later sessions and save-slot restores create a presence return-memory row when source history exists.
+4. Resident memory and greeting tone reflect helpful, familiar, crowded, nearby, or distant presence without installing a command.
+5. Reality Constraint Ledger records that no material changed from remembered presence alone.
+6. Acceptance requires live presence evidence, comfort evidence, save evidence, restore evidence, and no-direct-command/normal-view safety.
 
 ## Project-to-component construction loop
 

@@ -253,6 +253,24 @@ Required evidence:
 
 This gate prevents player proximity from being a one-way positive buff.
 
+## Added scope gate: Avatar presence persists through return
+
+`avatar_presence_persists_through_return` is part of the first playable prototype scope.
+
+Required evidence:
+
+- avatar presence rows and comfort rows exist before save or return
+- return-memory rows preserve the source presence and comfort history
+- save slots summarize presence rows, comfort rows, remembered tone, comfort, boundary pressure, and refusal risk
+- save-slot restore logs report restored presence state and create a return greeting row
+- return-later receipts can carry the same remembered tone forward
+- resident greetings can distinguish helpful/familiar presence from crowded/guarded presence
+- no direct player command is introduced
+- hidden simulator law remains out of normal view
+- remembered presence does not transform material by itself
+
+This gate keeps player proximity socially persistent without turning it into obedience, a buff, or a hidden reset.
+
 ## Added scope gate: Playable Village Day 0-3
 
 `playable_village_day_0_3` is now part of the first playable prototype scope.

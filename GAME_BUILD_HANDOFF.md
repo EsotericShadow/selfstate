@@ -128,6 +128,12 @@ Visible construction cues now participate in persistence evidence. Prototype sav
 
 The return journal surfaces these fields beside lived-action physics so later-session continuity includes physical project changes, not just abstract project completion counts.
 
+## Prototype v0 avatar-presence return-continuity update
+
+Avatar worksite presence now participates in return-session continuity. Presence rows, comfort/boundary rows, return-memory rows, remembered tone, comfort, boundary pressure, and refusal risk are summarized in prototype save slots and restore logs.
+
+Return greetings can now reflect whether Gabriel was a helpful/familiar presence, a crowding pressure, a nearby witness, or absent from the worksite. This remains a condition-memory loop only: it does not command residents, transform material, expose hidden law, or erase the resident's ability to refuse.
+
 ## Prototype v0 save-slot update
 
 The game prototype shell now includes browser-local prototype save slots. The player can save a slot, advance the autonomous simulation, return to the saved slot, and export a save receipt. This is intentionally scoped as prototype persistence evidence: it preserves meaningful village state, practice/proposal summaries, deep-time year, autonomous day, return log, and replay row counts without claiming production persistence.

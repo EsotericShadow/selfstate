@@ -551,9 +551,9 @@ Each action records a row linking player intent to proposal, practice, component
 The hero surface now exposes a compact normal-action strip before the debug-heavy prototype action grid:
 
 1. `Continue`: run the current Player guide step.
-2. `Look`, `Move`, `Talk`, `Objects`, and `Handling`: interact with the village through player-language verbs.
+2. `Look`, `Move`, `Ask`, `Talk`, `Objects`, and `Handling`: interact with the village through player-language verbs.
 3. `Proposals`, `Support`, and `Wait`: use diegetic management without assigning jobs.
-4. `Save`, `Return`, and `Follow`: preserve and continue the public chain.
+4. `Save`, `Return`, `Physics path`, `Follow`, and `Space`: preserve, continue, or recover the public chain.
 
 The strip calls existing player-facing functions. It does not create direct object placement, direct job assignment, hidden-law exposure, or a new tech unlock.
 

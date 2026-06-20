@@ -15654,7 +15654,7 @@ function derivePrototypePlayerGuide() {
     return { ...guide, phase: 'follow integrated chain', nextAction: 'Follow chain', why: `continue ${integratedChain.integration_id} through the normal action rail instead of opening debug panels`, button: 'runNormalPlayFollow' };
   }
   if (!world.gamePrototypeActionRail || !world.gamePrototypeActionRail.acceptanceReady) {
-    return { ...guide, phase: 'normal play controls', nextAction: 'Normal play loop', why: 'prove the prototype can be driven through player-language verbs: Look, Move, Ask, Talk, Objects, Handling, Support, Wait, Return, Save, Physics path, and Follow', button: 'runNormalPlayActionRailLoop' };
+    return { ...guide, phase: 'normal play controls', nextAction: 'Normal play loop', why: 'prove the prototype can be driven through player-language verbs: Look, Move, Ask, Talk, Objects, Handling, Support, Wait, Return, Save, Physics path, Follow, and Space', button: 'runNormalPlayActionRailLoop' };
   }
   if (!world.gamePrototypePlayerMode || !world.gamePrototypePlayerMode.acceptanceReady) {
     return { ...guide, phase: 'player mode interface', nextAction: 'Player mode loop', why: 'switch the shell into a normal player-facing view that foregrounds the canvas, resident cues, public problems, and player-language verbs while hiding debug-heavy panels', button: 'runPlayerModeInterfaceLoop' };
@@ -17693,7 +17693,7 @@ function buildPrototypeAcceptanceReceipt() {
   const returnJournal = world.gamePrototypeReturnJournal || null;
   const playSession = world.gamePrototypePlaySession || null;
   const firstPlayableMilestone = buildFirstPlayableMilestoneSnapshot();
-  const normalPlayerRequiredActions = ['runPrototypeGuidedStep', 'runNormalPlayLook', 'runNormalPlayMove', 'runNormalPlayTalk', 'runNormalPlayObjects', 'runNormalPlayHandling', 'runPlayerProposalDeckLoop', 'supportPlayerProposalDeck', 'waitPlayerProposalDeck', 'runNormalPlaySave', 'runNormalPlayReturn', 'runNormalPlayFollow'];
+  const normalPlayerRequiredActions = ['runPrototypeGuidedStep', 'runNormalPlayLook', 'runNormalPlayMove', 'runNormalPlayAsk', 'runNormalPlayTalk', 'runNormalPlayObjects', 'runNormalPlayHandling', 'runPlayerProposalDeckLoop', 'supportPlayerProposalDeck', 'waitPlayerProposalDeck', 'runNormalPlaySave', 'runNormalPlayReturn', 'runNormalPlayPhysicsPath', 'runNormalPlayFollow', 'runNormalPlaySpace'];
   const normalPlayerActionStripButtons = typeof document !== 'undefined'
     ? Array.from(document.querySelectorAll('#normalPlayerActionStrip [data-action]')).map(button => button.getAttribute('data-action'))
     : [];

@@ -598,6 +598,12 @@ Reviewer, trace, source, and QA panels now sit under `Audit / reviewer traces`. 
 
 This keeps the audit boundary intact while making ordinary play the default view.
 
+## Physical object inspector loop
+
+normal play action -> current simulated component selected -> inspector shows resident term, imperfect gloss, position, mass, support, carried-by state, moisture, damage, stability, stress, and recent causal trace pointers.
+
+The inspector is read-only. It does not spawn resources, run physics, command residents, or reveal hidden simulator law in normal view.
+
 The Follow verb can now follow an object-objection chain as well as the broader integrated chain. It reuses existing actions and records object-chain phase, response id, proposal id, resolution id, and recheck result without giving the avatar direct object control.
 
 ## Player mode interface loop

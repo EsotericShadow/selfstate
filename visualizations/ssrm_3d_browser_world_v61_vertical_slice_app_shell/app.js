@@ -15306,6 +15306,90 @@ function formatPrototypeTerrain() {
   ].join('\n');
 }
 
+function prototypePhysicalInspectorNumber(value, fallback = 0) {
+  const numeric = Number(value);
+  return Number.isFinite(numeric) ? numeric : fallback;
+}
+
+function selectPrototypePhysicalInspectorComponent() {
+  const materialWorld = world.gamePrototype3DWorld || null;
+  const components = materialWorld && Array.isArray(materialWorld.components) ? materialWorld.components : [];
+  if (!components.length) return null;
+  const stage = world.gamePrototypeWorldStage || null;
+  const snapshot = stage && stage.latestSnapshot ? stage.latestSnapshot : null;
+  const activeId = snapshot && snapshot.active_component_id && snapshot.active_component_id !== 'none'
+    ? snapshot.active_component_id
+    : null;
+  if (activeId) {
+    const active = components.find(component => component.component_id === activeId);
+    if (active) return active;
+  }
+  const carried = components.find(component => component.carried_by && component.carried_by !== 'none');
+  if (carried) return carried;
+  const projectBuilt = components.find(component => component.project_built === true);
+  if (projectBuilt) return projectBuilt;
+  return components.slice().sort((a, b) => {
+    const pressureA = prototypePhysicalInspectorNumber(a.damage) + prototypePhysicalInspectorNumber(a.moisture) * 0.35 + Math.max(0, 1 - prototypePhysicalInspectorNumber(a.stability, 1));
+    const pressureB = prototypePhysicalInspectorNumber(b.damage) + prototypePhysicalInspectorNumber(b.moisture) * 0.35 + Math.max(0, 1 - prototypePhysicalInspectorNumber(b.stability, 1));
+    return pressureB - pressureA;
+  })[0];
+}
+
+function formatPrototypePhysicalInspector() {
+  const materialWorld = world.gamePrototype3DWorld || null;
+  if (!materialWorld || !Array.isArray(materialWorld.components) || !materialWorld.components.length) {
+    return [
+      'No physical components initialized yet.',
+      'Use Look, Physics path, Handling, Terrain physics, or 3D stochastic physics to expose the first simulated object.',
+      'Boundary: normal view will show observed state and resident terms, not hidden material law.'
+    ].join('\n');
+  }
+  const component = selectPrototypePhysicalInspectorComponent();
+  if (!component) return 'No inspectable physical component found.';
+  const physics = materialWorld.physics || {};
+  const catalog = materialWorld.materialCatalog || {};
+  const material = catalog[component.material_id] || {};
+  const language = materialWorld.language || {};
+  const terms = Array.isArray(language.terms) ? language.terms : [];
+  const term = terms.find(row => row.term_id === component.resident_term_id)
+    || terms.find(row => Array.isArray(row.linked_materials) && row.linked_materials.includes(component.material_id))
+    || null;
+  const stage = world.gamePrototypeWorldStage || null;
+  const snapshot = stage && stage.latestSnapshot ? stage.latestSnapshot : null;
+  const position = component.position3d || {};
+  const dimensions = component.dimensions || {};
+  const observed = [
+    `wet=${prototypePhysicalInspectorNumber(component.moisture).toFixed(2)}`,
+    `damage=${prototypePhysicalInspectorNumber(component.damage).toFixed(2)}`,
+    `stability=${prototypePhysicalInspectorNumber(component.stability, 1).toFixed(2)}`,
+    `stress=${prototypePhysicalInspectorNumber(component.field_stress).toFixed(2)}`
+  ].join(' / ');
+  const latestRows = [
+    physics.latestStep ? `material=${physics.latestStep.step_id}` : null,
+    physics.latestMaterialStateStep ? `state=${physics.latestMaterialStateStep.step_id}` : null,
+    physics.latestStructuralStep ? `structure=${physics.latestStructuralStep.step_id}` : null,
+    physics.latestConstraintStep ? `constraint=${physics.latestConstraintStep.step_id}` : null
+  ].filter(Boolean);
+  const cueLedger = Array.isArray(materialWorld.normalTestComponentCueLedger) ? materialWorld.normalTestComponentCueLedger : [];
+  const latestCue = cueLedger.slice().reverse().find(row => row.component_id === component.component_id) || null;
+  const manipulation = world.gamePrototypeMaterialManipulation || null;
+  const latestHandling = manipulation && Array.isArray(manipulation.actionLedger)
+    ? manipulation.actionLedger.slice().reverse().find(row => row.component_id === component.component_id)
+    : null;
+  return [
+    `Resident term: ${term ? term.resident_word : component.resident_term_id || 'unnamed-local-object'}`,
+    `Imperfect gloss: ${term ? term.player_gloss : component.player_gloss || component.affordance || material.name || 'worked physical component'}`,
+    `Audit pointer: ${component.component_id} / ${component.material_id || 'material-unknown'} / shape=${component.shape || 'primitive'}`,
+    `Position: x=${prototypePhysicalInspectorNumber(position.x).toFixed(1)} y=${prototypePhysicalInspectorNumber(position.y).toFixed(1)} z=${prototypePhysicalInspectorNumber(position.z).toFixed(1)} / size=${prototypePhysicalInspectorNumber(dimensions.x).toFixed(1)}x${prototypePhysicalInspectorNumber(dimensions.y).toFixed(1)}x${prototypePhysicalInspectorNumber(dimensions.z).toFixed(1)}`,
+    `Load: mass=${prototypePhysicalInspectorNumber(component.mass).toFixed(2)} / support=${component.supported_by || component.support || 'local support check'} / carried_by=${component.carried_by || 'none'}`,
+    `Observed condition: ${observed}`,
+    `Latest cause rows: ${latestRows.length ? latestRows.join(' / ') : 'none yet'}`,
+    `Resident cue: ${latestCue ? `${latestCue.cue_id} ${latestCue.visible_change}` : 'no resident-generated component cue yet'}`,
+    `Handling trace: ${latestHandling ? `${latestHandling.action} by ${latestHandling.resident}; success=${latestHandling.success}` : 'no recent handling trace for this component'}`,
+    `Normal boundary: hidden_law_visible=false / direct_command=false / source=${snapshot ? snapshot.current_problem || 'current world snapshot' : 'component state'}`
+  ].join('\n');
+}
+
 function formatPrototypeMaterialWorld() {
   const sim = world.gamePrototype3DWorld || ensurePrototype3DWorld();
   const physics = sim.physics || { mode: 'stochastic physics first', gravity: 9.8, solver_layers: ['mass', 'support', 'collision/contact', 'friction', 'stochastic failure'], forceLedger: [], supportLedger: [], collisionLedger: [], failureLedger: [], fieldLedger: [], energyLedger: [], transformationLedger: [] };
@@ -18461,6 +18545,7 @@ function renderGamePrototypeSurface() {
   const dayCycleNode = document.getElementById('gamePrototypeDayCycleOut');
 	  const returnLaterNode = document.getElementById('gamePrototypeReturnLaterOut');
   const terrainNode = document.getElementById('gamePrototypeTerrainOut');
+  const physicalInspectorNode = document.getElementById('gamePrototypePhysicalInspectorOut');
   const materialWorldNode = document.getElementById('gamePrototypeMaterialWorldOut');
   const structuralPhysicsNode = document.getElementById('gamePrototypeStructuralPhysicsOut');
   const contactConstraintPhysicsNode = document.getElementById('gamePrototypeContactConstraintPhysicsOut');
@@ -18512,6 +18597,7 @@ function renderGamePrototypeSurface() {
   if (dayCycleNode) dayCycleNode.textContent = formatPrototypeDayCycle();
 	  if (returnLaterNode) returnLaterNode.textContent = formatPrototypeReturnLater();
   if (terrainNode) terrainNode.textContent = formatPrototypeTerrain();
+  if (physicalInspectorNode) physicalInspectorNode.textContent = formatPrototypePhysicalInspector();
   if (materialWorldNode) materialWorldNode.textContent = formatPrototypeMaterialWorld();
   if (structuralPhysicsNode) structuralPhysicsNode.textContent = formatPrototypeStructuralPhysics();
   if (contactConstraintPhysicsNode) contactConstraintPhysicsNode.textContent = formatPrototypeContactConstraintPhysics();

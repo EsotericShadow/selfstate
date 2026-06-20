@@ -488,6 +488,18 @@ Required evidence:
 - grouping audit panels does not create state, remove hooks, command residents, expose hidden law in normal view, or unlock technology
 - exported acceptance confirms the audit panels exist inside the secondary details section
 
+## Added scope target: Physical Object Inspector
+
+The normal player surface now includes a `Physical object inspector` card.
+
+Required behavior:
+
+- it reads an existing simulated 3D component instead of creating a new object
+- it shows resident term, imperfect player gloss, position, mass, support, carried-by state, moisture, damage, stability, and stress
+- it links to recent material, structural, constraint, resident cue, and handling rows when those rows exist
+- it preserves the normal-view boundary by showing observations and trace pointers, not hidden material law
+- it makes physical objects readable during player mode without requiring the reviewer trace panels
+
 ## Prototype v0 milestone: Player Mode Interface
 
 `player_mode_interface` is now part of first playable prototype scope.

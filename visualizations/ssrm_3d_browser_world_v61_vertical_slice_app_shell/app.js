@@ -5476,6 +5476,9 @@ function currentPrimaryPlaySurfaceSnapshot() {
   const selected = world.residents[world.selected] || currentResident();
   const latestProposal = board && board.projectProposals && board.projectProposals.length ? board.projectProposals[board.projectProposals.length - 1] : null;
   const latestPractice = graph && graph.nodes && graph.nodes.length ? graph.nodes[graph.nodes.length - 1] : null;
+  const manipulationLoop = world.gamePrototypeMaterialManipulation || null;
+  const latestHandlingPracticeLink = manipulationLoop && manipulationLoop.practiceLinks && manipulationLoop.practiceLinks.length ? manipulationLoop.practiceLinks[manipulationLoop.practiceLinks.length - 1] : null;
+  const latestHandlingPractice = latestHandlingPracticeLink && graph && graph.nodes ? graph.nodes.find(node => node.practice_id === latestHandlingPracticeLink.practice_id) : null;
   const canvasSelection = world.gamePrototypeCanvasSelection || null;
   const latestCanvasSelection = canvasSelection && canvasSelection.selectionLedger && canvasSelection.selectionLedger.length ? canvasSelection.selectionLedger[canvasSelection.selectionLedger.length - 1] : null;
   const selectedComponent = canvasSelection && canvasSelection.selected_component_id && canvasSelection.selected_component_id !== 'none' && materialWorld && materialWorld.components
@@ -5514,6 +5517,11 @@ function currentPrimaryPlaySurfaceSnapshot() {
     active_proposal_status: latestProposal ? latestProposal.status : 'none',
     active_practice_id: latestPractice ? latestPractice.practice_id : 'none',
     active_practice_name: latestPractice ? (latestPractice.local_name || latestPractice.practice_id) : 'none',
+    handling_practice_id: latestHandlingPracticeLink ? latestHandlingPracticeLink.practice_id : 'none',
+    handling_practice_relation: latestHandlingPracticeLink ? latestHandlingPracticeLink.relation : 'none',
+    handling_practice_manipulation_id: latestHandlingPracticeLink ? latestHandlingPracticeLink.manipulation_id : 'none',
+    handling_practice_name: latestHandlingPractice ? latestHandlingPractice.local_name || latestHandlingPractice.practice_id : 'none',
+    handling_practice_status: latestHandlingPractice ? latestHandlingPractice.status : 'none',
     active_component_id: latestComponent ? latestComponent.component_id : 'none',
     active_component_gloss: latestComponent ? (latestComponent.player_gloss || latestComponent.material_id || latestComponent.component_id) : 'none',
     active_component_material_id: latestComponent ? latestComponent.material_id || 'none' : 'none',
@@ -5576,6 +5584,7 @@ function currentPrimaryPlaySurfaceSnapshot() {
       'look at the highlighted village problem band',
       latestProposal ? `proposal ${latestProposal.proposal_id}` : 'village board has no current proposal',
       latestPractice ? `practice ${latestPractice.local_name || latestPractice.practice_id}` : 'practice graph not yet visible',
+      latestHandlingPracticeLink ? `handling practice ${latestHandlingPracticeLink.practice_id} from ${latestHandlingPracticeLink.manipulation_id} relation=${latestHandlingPracticeLink.relation}` : 'normal handling has not seeded a practice yet',
       latestComponent ? `component ${latestComponent.component_id}` : 'physical components not initialized',
       latestCanvasSelection ? `canvas selection ${latestCanvasSelection.selection_id} ${latestCanvasSelection.component_id} ${latestCanvasSelection.resident_term}` : 'canvas object not selected yet',
       latestComponent ? `material state ${latestComponent.component_id} ${latestComponent.material_id} m=${Number(latestComponent.moisture || 0).toFixed(2)} d=${Number(latestComponent.damage || 0).toFixed(2)} s=${Number(latestComponent.stability || 0).toFixed(2)} carried=${latestComponent.carried_by || 'none'}` : 'material state not visible yet',
@@ -5744,6 +5753,7 @@ function formatPrimaryPlaySurface() {
     `Next player action: ${snapshot.player_next_action} (${snapshot.player_next_button})`,
     `Active proposal: ${snapshot.active_proposal_id} / ${snapshot.active_proposal_status}`,
     `Active practice: ${snapshot.active_practice_id} / ${snapshot.active_practice_name}`,
+    `Handling practice: ${snapshot.handling_practice_id} / ${snapshot.handling_practice_name} / relation=${snapshot.handling_practice_relation} / status=${snapshot.handling_practice_status}`,
     `Active component: ${snapshot.active_component_id} / ${snapshot.active_component_gloss}; source=${snapshot.active_component_source || 'none'}; selection=${snapshot.canvas_selection_id || 'none'}`,
     `Latest physics: ${snapshot.latest_physics_id}`,
     `Latest lived physics: ${snapshot.latest_lived_physics_id} / component=${snapshot.latest_lived_physics_component_id} / rows=${snapshot.lived_physics_rows}`,
@@ -6397,6 +6407,7 @@ function runNormalPlayAction(verb) {
     selected: verb,
   });
   const option = options.find(row => row.verb === verb) || options[0];
+  const handlingPracticeLinksBefore = world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.practiceLinks ? world.gamePrototypeMaterialManipulation.practiceLinks.length : 0;
   let receipt = null;
   if (verb === 'look') receipt = runPrimaryPlaySurfaceStep();
   else if (verb === 'move') receipt = runPlayerMovementRouteLoop();
@@ -6417,6 +6428,13 @@ function runNormalPlayAction(verb) {
   const evidence = latestWalkthroughEvidence();
   const manipulationLoop = world.gamePrototypeMaterialManipulation || null;
   const latestManipulation = manipulationLoop && manipulationLoop.actionLedger.length ? manipulationLoop.actionLedger[manipulationLoop.actionLedger.length - 1] : null;
+  const handlingPracticeLinksAfter = manipulationLoop && manipulationLoop.practiceLinks ? manipulationLoop.practiceLinks.length : 0;
+  const latestManipulationPracticeLink = latestManipulation && manipulationLoop && manipulationLoop.practiceLinks
+    ? manipulationLoop.practiceLinks.slice().reverse().find(link => link.manipulation_id === latestManipulation.manipulation_id)
+    : null;
+  const handlingPracticeNode = latestManipulationPracticeLink && world.emergentPracticeGraph && world.emergentPracticeGraph.nodes
+    ? world.emergentPracticeGraph.nodes.find(node => node.practice_id === latestManipulationPracticeLink.practice_id)
+    : null;
   const latestFollowChain = rail.followChainLedger.length ? rail.followChainLedger[rail.followChainLedger.length - 1] : null;
   const latestFollowRecovery = rail.followRecoveryLedger.length ? rail.followRecoveryLedger[rail.followRecoveryLedger.length - 1] : null;
   const objectChain = latestObjectObjectionChainState();
@@ -6433,6 +6451,13 @@ function runNormalPlayAction(verb) {
     component_id: evidence.component_id,
     physics_id: evidence.physics_id,
     manipulation_id: latestManipulation ? latestManipulation.manipulation_id : 'none',
+    handling_practice_id: latestManipulationPracticeLink ? latestManipulationPracticeLink.practice_id : 'none',
+    handling_practice_relation: latestManipulationPracticeLink ? latestManipulationPracticeLink.relation : 'none',
+    handling_practice_status: handlingPracticeNode ? handlingPracticeNode.status : 'none',
+    handling_practice_local_name: handlingPracticeNode ? handlingPracticeNode.local_name : 'none',
+    handling_practice_links_before: handlingPracticeLinksBefore,
+    handling_practice_links_after: handlingPracticeLinksAfter,
+    handling_practice_link_delta: handlingPracticeLinksAfter - handlingPracticeLinksBefore,
     follow_chain_id: latestFollowChain ? latestFollowChain.follow_id : 'none',
     follow_chain_after: latestFollowChain ? latestFollowChain.chain_after : 'none',
     follow_chain_complete: latestFollowChain ? latestFollowChain.chain_complete_after === true : false,
@@ -6505,7 +6530,7 @@ function formatNormalPlayActionRail() {
   const rail = world.gamePrototypeActionRail || ensureNormalPlayActionRail();
   const options = normalPlayOptions();
   const optionRows = options.map(option => `${option.label}: ${option.intent}; recommended=${option.recommended ? 'yes' : 'no'}`);
-  const actionRows = rail.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.label} -> ${row.underlying_action}; proposal=${row.proposal_id}; practice=${row.practice_id}; handling=${row.manipulation_id || 'none'}; follow=${row.follow_chain_id || 'none'}/${row.follow_chain_after || 'none'}; object=${row.object_chain_phase || 'none'}/${row.object_chain_resolution_id || 'none'}; recovery=${row.follow_recovery_id || 'none'}; save=${row.save_slot_id}`);
+  const actionRows = rail.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.label} -> ${row.underlying_action}; proposal=${row.proposal_id}; practice=${row.practice_id}; handling=${row.manipulation_id || 'none'}; handlingPractice=${row.handling_practice_id || 'none'}; follow=${row.follow_chain_id || 'none'}/${row.follow_chain_after || 'none'}; object=${row.object_chain_phase || 'none'}/${row.object_chain_resolution_id || 'none'}; recovery=${row.follow_recovery_id || 'none'}; save=${row.save_slot_id}`);
   const followRows = (rail.followChainLedger || []).slice(-5).map(row => `${row.follow_id}: ${row.chosen_label}; outcome=${row.response_outcome || 'none'}; allowed=${row.resident_allowed_follow !== false}; chain=${row.chain_before}->${row.chain_after}; object=${row.object_chain_phase || 'none'}/${row.object_chain_resolution_id || 'none'} result=${row.object_chain_recheck_result || 'none'}; complete=${row.chain_complete_after}; response=${row.resident_response_expression_id || 'none'}/${row.resident_response_marker || 'none'}; proposal=${row.proposal_id}; practice=${row.practice_id}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
   const recoveryRows = (rail.followRecoveryLedger || []).slice(-5).map(row => `${row.recovery_id}: ${row.recovery_outcome}; source=${row.source_follow_id}/${row.source_outcome}; chain=${row.chain_id}; response=${row.resident_response_expression_id || 'none'}/${row.resident_response_marker || 'none'}; advanced=${row.chain_advanced}`);
   return [
@@ -14349,6 +14374,7 @@ function buildPrototypeAcceptanceReceipt() {
   const actionRailFollowRows = actionRail && actionRail.followChainLedger ? actionRail.followChainLedger.length : 0;
   const actionRailFollowExpressionRows = actionRail && actionRail.followChainLedger ? actionRail.followChainLedger.filter(row => row.resident_response_expression_id && row.resident_response_expression_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const actionRailFollowCalibratedRows = actionRail && actionRail.followChainLedger ? actionRail.followChainLedger.filter(row => row.response_outcome && typeof row.resident_allowed_follow === 'boolean' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
+  const normalHandlingPracticeRows = actionRail && actionRail.actionLedger ? actionRail.actionLedger.filter(row => row.verb === 'handling' && row.manipulation_id && row.manipulation_id !== 'none' && row.handling_practice_id && row.handling_practice_id !== 'none' && Number(row.handling_practice_links_after || 0) >= Number(row.handling_practice_links_before || 0) && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const actionRailFollowRecoveryRows = actionRail && actionRail.followRecoveryLedger ? actionRail.followRecoveryLedger.length : 0;
   const actionRailFollowRecoveryExpressionRows = actionRail && actionRail.followRecoveryLedger ? actionRail.followRecoveryLedger.filter(row => row.resident_response_expression_id && row.resident_response_expression_id !== 'none' && row.chain_advanced === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const objectGuidedOptionRows = actionRail && actionRail.optionLedger ? actionRail.optionLedger.filter(snapshot => (snapshot.options || []).some(option => option.object_chain_phase && option.object_chain_phase !== 'none' && option.object_chain_next_action && option.object_chain_next_action !== 'none' && option.recommended === true)).length : 0;
@@ -14487,6 +14513,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'canvas_component_selection', pass: Boolean(canvasSelection && canvasSelection.acceptanceReady === true && canvasSelectionRows > 0 && canvasSelectionCueRows > 0 && canvasSelection.selectionLedger.every(row => row.inspect_only === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false)), evidence: canvasSelection ? `selections=${canvasSelectionRows}, cueRows=${canvasSelectionCueRows}, selected=${canvasSelection.selected_component_id || 'none'}` : 'not run' },
     { id: 'first_playable_walkthrough', pass: Boolean(walkthrough && walkthrough.acceptanceReady && walkthroughSteps >= walkthrough.requiredSteps.length && walkthroughLinks >= walkthrough.requiredSteps.length && walkthrough.noDirectCommand === true && walkthrough.noTechTreeUnlock === true && walkthrough.noHiddenLawNormalView === true), evidence: walkthrough ? `${walkthrough.phase}; steps=${walkthroughSteps}, links=${walkthroughLinks}` : 'not run' },
     { id: 'normal_play_action_rail', pass: Boolean(actionRail && actionRail.acceptanceReady && actionRailRows >= actionRail.verbs.length && actionRailOptions > 0 && actionRailFollowRows > 0 && actionRailFollowExpressionRows > 0 && actionRailFollowCalibratedRows > 0 && actionRailFollowRecoveryRows > 0 && actionRailFollowRecoveryExpressionRows > 0 && actionRail.playerLanguageOnly === true && actionRail.noDirectCommand === true && actionRail.noTechTreeUnlock === true), evidence: actionRail ? `actions=${actionRailRows}, optionSnapshots=${actionRailOptions}, follow=${actionRailFollowRows}, followExpression=${actionRailFollowExpressionRows}, calibrated=${actionRailFollowCalibratedRows}, followRecovery=${actionRailFollowRecoveryRows}, followRecoveryExpression=${actionRailFollowRecoveryExpressionRows}, verbs=${actionRail.verbs.join('/')}` : 'not run' },
+    { id: 'normal_handling_practice_emergence', pass: Boolean(actionRail && normalHandlingPracticeRows > 0), evidence: actionRail ? `handlingPracticeRows=${normalHandlingPracticeRows}` : 'not run' },
     { id: 'object_objection_guided_next_step', pass: Boolean(actionRail && (objectGuidedOptionRows > 0 || objectGuidedFollowRows > 0)), evidence: actionRail ? `guidedOptions=${objectGuidedOptionRows}, guidedFollow=${objectGuidedFollowRows}` : 'not run' },
     { id: 'object_objection_canvas_cue', pass: Boolean(worldStage && objectChainCanvasCueRows > 0), evidence: worldStage ? `objectChainCues=${objectChainCanvasCueRows}` : 'not run' },
     { id: 'player_mode_interface', pass: Boolean(playerMode && playerMode.acceptanceReady && playerModeSessions > 0 && playerModeVisibleCards >= 6 && playerMode.normalViewOnly === true && playerMode.debugPanelsHidden === true && playerMode.noDirectCommand === true && playerMode.noHiddenLawNormalView === true && playerMode.playerGlossesOnly === true), evidence: playerMode ? `enabled=${playerMode.enabled}, sessions=${playerModeSessions}, visibleCards=${playerModeVisibleCards}` : 'not run' },

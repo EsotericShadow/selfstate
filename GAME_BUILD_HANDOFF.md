@@ -655,3 +655,11 @@ Prototype saves now record explicit continuity metadata for the latest resident-
 This does not replace the browser-local world snapshot. It makes the already-restored material state inspectable as first-playable evidence.
 
 The acceptance gate is `material_state_save_return_continuity`. It requires a saved handled-component state and a return row proving the restored component fingerprint matches the saved state.
+
+## Prototype v0 normal-handling practice emergence update
+
+Normal `Handling` now records the emergent practice link created or refined by the resident material manipulation it triggers. The action rail row keeps the handling ID, linked practice ID, relation, local practice name, status, and practice-link counts before/after the action.
+
+The primary play surface also shows the latest handling-derived practice cue. This closes the gap between component manipulation and lived invention: a player-facing handling action can now be traced into the Emergent Practice Graph without a predeclared technology unlock.
+
+The acceptance gate is `normal_handling_practice_emergence`. It requires at least one normal `Handling` action that links a resident-mediated manipulation row to an emergent practice while preserving no-direct-command and no-hidden-law boundaries.

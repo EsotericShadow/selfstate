@@ -778,3 +778,14 @@ Evidence required:
 - saved and restored rows identify component ID, handling action, target source, and body step where available
 - continuity is derived from restored world state, not a separate fake counter
 - normal view does not expose hidden material law
+
+## Added scope gate: Normal handling practice emergence
+
+The first playable scope now requires ordinary player `Handling` to be able to create or refine an emergent practice node through resident material manipulation.
+
+Evidence required:
+- at least one `normal_handling_practice_emergence` acceptance row
+- a normal action rail row with `verb=handling`, a material handling ID, and a linked practice ID
+- practice evidence comes from resident-mediated manipulation, not a predeclared tech tree
+- primary surface carries the latest handling-derived practice cue
+- normal view preserves no direct command and no hidden-law exposure

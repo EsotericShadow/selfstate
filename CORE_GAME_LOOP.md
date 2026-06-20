@@ -747,3 +747,12 @@ The goal is readable continuity: the resident response should reflect what happe
 4. The return log recomputes the handled component state from the restored world.
 5. The save panel reports whether the restored material fingerprint matches the saved one.
 6. This proves physical object continuity without exposing hidden simulator law in normal view.
+
+## Normal-handling practice emergence loop
+
+1. The player uses `Handling` from the normal action rail.
+2. A resident chooses and performs a constrained material manipulation.
+3. Repeated success or recoverable failure can create or refine an Emergent Practice Graph node.
+4. The normal action row records the handling ID, practice ID, relation, local name, status, and before/after practice-link counts.
+5. The primary play surface shows the latest handling-derived practice cue.
+6. The loop remains resident-mediated: no direct command, no hidden-law exposure, no fixed tech unlock.

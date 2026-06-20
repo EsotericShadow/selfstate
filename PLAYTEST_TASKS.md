@@ -450,3 +450,11 @@
 - Confirm `Material returns` reports the same component and `match=yes` after return.
 - Export or inspect acceptance and confirm `material_state_save_return_continuity` passes when saved and restored fingerprints match.
 - Confirm this evidence is normal-view safe and does not expose hidden simulator law.
+
+## Normal-handling practice emergence playtests
+
+- Use `Handling` repeatedly through the normal action rail until a material manipulation links to an emergent practice.
+- Inspect the normal action rail and confirm the `Handling` row includes `handlingPractice=...`.
+- Inspect the primary play surface and confirm it shows the latest handling-derived practice cue.
+- Export or inspect acceptance and confirm `normal_handling_practice_emergence` reports at least one handling-practice row.
+- Confirm the practice is not named as a modern technology unlock and remains tied to resident-local handling evidence.

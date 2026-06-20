@@ -1300,7 +1300,7 @@ Acceptance requires:
 - the path produces a normal Physics path receipt with resident language, save/return continuity, and body-expression evidence
 - the path produces a 10-minute normal play receipt
 - the receipt includes object/material change, save/return persistence, practice evidence, returned object-memory behavior, and guided normal action
-- the normal HUD and play summary expose the receipt through player-facing terms: resident word, imperfect gloss, physical component, body expression, save/return match, Start resident expression, and object-memory next action
+- both the normal HUD and play summary expose the receipt through player-facing terms: resident word, imperfect gloss, physical component, body expression, save/return match, Start resident expression, and object-memory next action
 - the receipt component is selected through the inspect-only canvas-selection path and appears as a primary-surface visible cue
 - the selected receipt component survives a focused save/return with matching component, selection, cue, resident word, gloss, and body-expression evidence
 - the restored component becomes an ordinary `Objects` recommendation and can be consumed by a normal player action

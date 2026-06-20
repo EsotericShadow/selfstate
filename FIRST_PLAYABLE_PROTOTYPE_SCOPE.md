@@ -962,3 +962,17 @@ A physics pressure event should be able to cultivate resident language:
 - player gloss is imperfect and separate from engine concept
 - generated language is structured, not random gibberish
 - hidden simulator law stays out of normal view
+
+## Added scope gate: Physics pressure language save/return continuity
+
+`physics_pressure_language_save_return_continuity` is now part of first playable prototype scope.
+
+A saved pressure-language path should preserve:
+
+- pressure row count and latest pressure ID
+- physics step, component, and pressure kind
+- language-pressure row count and latest `LPP-...` ID
+- sound root ID and pressure term ID
+- resident word and imperfect player gloss
+- continuity fingerprint match after restore
+- no hidden-law exposure in normal view

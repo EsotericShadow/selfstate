@@ -857,3 +857,9 @@ This makes physics part of normal lived play. Residents feel physical pressure a
 physics pressure row -> grounded sound root -> pressure term or term drift -> imperfect player gloss -> future resident language variant.
 
 This keeps language tied to lived experience. A resident word changes because a resident noticed a pressure event around a component, not because the engine assigned an English tech label.
+
+## Pressure-language save/return loop
+
+pressure row -> language-pressure row -> save slot fingerprint -> restore slot -> recompute language-pressure fingerprint -> return log match.
+
+This keeps resident vocabulary continuous across return sessions. The word, root, gloss, pressure ID, component, and adoption evidence survive as history rather than being recreated by a scripted naming table.

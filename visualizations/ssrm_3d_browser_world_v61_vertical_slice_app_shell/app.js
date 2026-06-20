@@ -15340,6 +15340,59 @@ function normalTestContinuitySnapshot(sourceWorld = world) {
   };
 }
 
+function pressureLanguageContinuitySnapshot(sourceWorld = world) {
+  const materialWorld = sourceWorld.gamePrototype3DWorld || null;
+  const physics = materialWorld && materialWorld.physics ? materialWorld.physics : null;
+  const language = materialWorld && materialWorld.language ? materialWorld.language : null;
+  const autonomous = sourceWorld.autonomousResidents || null;
+  const pressureRows = autonomous && Array.isArray(autonomous.physicsPressureLedger) && autonomous.physicsPressureLedger.length
+    ? autonomous.physicsPressureLedger
+    : physics && Array.isArray(physics.residentPressureLedger)
+      ? physics.residentPressureLedger
+      : [];
+  const languageRows = language && Array.isArray(language.soundPressureLedger) ? language.soundPressureLedger : [];
+  const roots = language && Array.isArray(language.soundRoots) ? language.soundRoots : [];
+  const terms = language && Array.isArray(language.terms) ? language.terms : [];
+  const latestPressure = pressureRows.length ? pressureRows[pressureRows.length - 1] : null;
+  const latestLanguage = languageRows.length ? languageRows[languageRows.length - 1] : null;
+  const latestRoot = latestLanguage ? roots.find(row => row.sound_id === latestLanguage.root_id) || null : null;
+  const latestTerm = latestLanguage ? terms.find(row => row.term_id === latestLanguage.pressure_term_id) || null : null;
+  const fingerprintParts = [
+    pressureRows.length,
+    languageRows.length,
+    latestPressure ? latestPressure.pressure_id : 'none',
+    latestPressure ? latestPressure.physics_step_id : 'none',
+    latestPressure ? latestPressure.component_id : 'none',
+    latestPressure ? latestPressure.pressure_kind : 'none',
+    latestLanguage ? latestLanguage.language_pressure_id : 'none',
+    latestLanguage ? latestLanguage.root_id : 'none',
+    latestLanguage ? latestLanguage.pressure_term_id : 'none',
+    latestLanguage ? latestLanguage.resident_word : 'none',
+    latestLanguage ? latestLanguage.translation_confidence : 'none',
+  ];
+  return {
+    pressure_rows: pressureRows.length,
+    latest_pressure_id: latestPressure ? latestPressure.pressure_id : 'none',
+    latest_pressure_step_id: latestPressure ? latestPressure.physics_step_id : 'none',
+    latest_pressure_component_id: latestPressure ? latestPressure.component_id : 'none',
+    latest_pressure_kind: latestPressure ? latestPressure.pressure_kind : 'none',
+    latest_pressure_word: latestPressure ? latestPressure.resident_pressure_word || 'none' : 'none',
+    latest_pressure_gloss: latestPressure ? latestPressure.player_pressure_gloss || 'none' : 'none',
+    language_rows: languageRows.length,
+    latest_language_pressure_id: latestLanguage ? latestLanguage.language_pressure_id : 'none',
+    latest_language_root_id: latestLanguage ? latestLanguage.root_id : 'none',
+    latest_language_term_id: latestLanguage ? latestLanguage.pressure_term_id : 'none',
+    latest_language_resident_word: latestLanguage ? latestLanguage.resident_word : 'none',
+    latest_language_player_gloss: latestLanguage ? latestLanguage.player_gloss : 'none',
+    latest_language_translation_confidence: latestLanguage ? latestLanguage.translation_confidence : 'none',
+    latest_root_adoption_count: latestRoot ? latestRoot.adoption_count || 0 : 0,
+    latest_term_adoption_count: latestTerm ? latestTerm.adoption_count || 0 : 0,
+    grounded_root_rows: roots.filter(row => row.grounded_event && row.linked_observation && Number(row.adoption_count || 0) > 0).length,
+    pressure_term_rows: terms.filter(row => row.pressure_root_id && row.source_pressure_ids && row.source_pressure_ids.length > 0).length,
+    fingerprint: fingerprintParts.join('|'),
+  };
+}
+
 function savePrototypeSlot(label = 'manual prototype save') {
   ensureGamePrototype();
   const saves = ensurePrototypeSaves();
@@ -15351,6 +15404,7 @@ function savePrototypeSlot(label = 'manual prototype save') {
   const latestIntegratedLoop = integratedLedger.length ? integratedLedger[integratedLedger.length - 1] : null;
   const materialContinuity = materialHandlingContinuitySnapshot(world);
   const normalTestContinuity = normalTestContinuitySnapshot(world);
+  const pressureLanguageContinuity = pressureLanguageContinuitySnapshot(world);
   const slotNumber = saves.slots.length + 1;
   const slot = {
     slot_id: `GPS-${String(slotNumber).padStart(2, '0')}`,
@@ -15452,6 +15506,23 @@ function savePrototypeSlot(label = 'manual prototype save') {
     normal_test_feedback_resident: normalTestContinuity.latest_feedback_resident,
     normal_test_feedback_schedule: normalTestContinuity.latest_feedback_schedule,
     normal_test_continuity_fingerprint: normalTestContinuity.fingerprint,
+    physics_pressure_rows: pressureLanguageContinuity.pressure_rows,
+    physics_pressure_latest_id: pressureLanguageContinuity.latest_pressure_id,
+    physics_pressure_latest_step_id: pressureLanguageContinuity.latest_pressure_step_id,
+    physics_pressure_component_id: pressureLanguageContinuity.latest_pressure_component_id,
+    physics_pressure_kind: pressureLanguageContinuity.latest_pressure_kind,
+    pressure_language_rows: pressureLanguageContinuity.language_rows,
+    pressure_language_latest_id: pressureLanguageContinuity.latest_language_pressure_id,
+    pressure_language_root_id: pressureLanguageContinuity.latest_language_root_id,
+    pressure_language_term_id: pressureLanguageContinuity.latest_language_term_id,
+    pressure_language_resident_word: pressureLanguageContinuity.latest_language_resident_word,
+    pressure_language_player_gloss: pressureLanguageContinuity.latest_language_player_gloss,
+    pressure_language_translation_confidence: pressureLanguageContinuity.latest_language_translation_confidence,
+    pressure_language_root_adoption_count: pressureLanguageContinuity.latest_root_adoption_count,
+    pressure_language_term_adoption_count: pressureLanguageContinuity.latest_term_adoption_count,
+    pressure_language_grounded_root_rows: pressureLanguageContinuity.grounded_root_rows,
+    pressure_language_pressure_term_rows: pressureLanguageContinuity.pressure_term_rows,
+    pressure_language_continuity_fingerprint: pressureLanguageContinuity.fingerprint,
     return_journal_ready: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.acceptanceReady === true : false,
     return_journal_rows: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.journalLedger.length : 0,
     return_journal_snapshots: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.snapshotLedger.length : 0,
@@ -15599,6 +15670,19 @@ function returnPrototypeSlot() {
     saved_normal_test_feedback_resident: slot.normal_test_feedback_resident || 'none',
     saved_normal_test_feedback_schedule: slot.normal_test_feedback_schedule || 'none',
     saved_normal_test_continuity_fingerprint: slot.normal_test_continuity_fingerprint || 'none',
+    saved_physics_pressure_rows: slot.physics_pressure_rows || 0,
+    saved_physics_pressure_latest_id: slot.physics_pressure_latest_id || 'none',
+    saved_physics_pressure_latest_step_id: slot.physics_pressure_latest_step_id || 'none',
+    saved_physics_pressure_component_id: slot.physics_pressure_component_id || 'none',
+    saved_physics_pressure_kind: slot.physics_pressure_kind || 'none',
+    saved_pressure_language_rows: slot.pressure_language_rows || 0,
+    saved_pressure_language_latest_id: slot.pressure_language_latest_id || 'none',
+    saved_pressure_language_root_id: slot.pressure_language_root_id || 'none',
+    saved_pressure_language_term_id: slot.pressure_language_term_id || 'none',
+    saved_pressure_language_resident_word: slot.pressure_language_resident_word || 'none',
+    saved_pressure_language_player_gloss: slot.pressure_language_player_gloss || 'none',
+    saved_pressure_language_translation_confidence: slot.pressure_language_translation_confidence || 'none',
+    saved_pressure_language_continuity_fingerprint: slot.pressure_language_continuity_fingerprint || 'none',
   };
   const nextWorld = JSON.parse(slot.snapshot);
   saves.returnLog.push(returnEntry);
@@ -15644,6 +15728,25 @@ function returnPrototypeSlot() {
     returnEntry.restored_normal_test_feedback_behavior_resident = restoredNormalTestFeedbackBehavior.resident;
     returnEntry.restored_normal_test_feedback_behavior_expression_id = restoredNormalTestFeedbackBehavior.expression_id;
   }
+  const restoredPressureLanguageContinuity = pressureLanguageContinuitySnapshot(world);
+  returnEntry.restored_physics_pressure_rows = restoredPressureLanguageContinuity.pressure_rows;
+  returnEntry.restored_physics_pressure_latest_id = restoredPressureLanguageContinuity.latest_pressure_id;
+  returnEntry.restored_physics_pressure_latest_step_id = restoredPressureLanguageContinuity.latest_pressure_step_id;
+  returnEntry.restored_physics_pressure_component_id = restoredPressureLanguageContinuity.latest_pressure_component_id;
+  returnEntry.restored_physics_pressure_kind = restoredPressureLanguageContinuity.latest_pressure_kind;
+  returnEntry.restored_pressure_language_rows = restoredPressureLanguageContinuity.language_rows;
+  returnEntry.restored_pressure_language_latest_id = restoredPressureLanguageContinuity.latest_language_pressure_id;
+  returnEntry.restored_pressure_language_root_id = restoredPressureLanguageContinuity.latest_language_root_id;
+  returnEntry.restored_pressure_language_term_id = restoredPressureLanguageContinuity.latest_language_term_id;
+  returnEntry.restored_pressure_language_resident_word = restoredPressureLanguageContinuity.latest_language_resident_word;
+  returnEntry.restored_pressure_language_player_gloss = restoredPressureLanguageContinuity.latest_language_player_gloss;
+  returnEntry.restored_pressure_language_translation_confidence = restoredPressureLanguageContinuity.latest_language_translation_confidence;
+  returnEntry.restored_pressure_language_root_adoption_count = restoredPressureLanguageContinuity.latest_root_adoption_count;
+  returnEntry.restored_pressure_language_term_adoption_count = restoredPressureLanguageContinuity.latest_term_adoption_count;
+  returnEntry.restored_pressure_language_grounded_root_rows = restoredPressureLanguageContinuity.grounded_root_rows;
+  returnEntry.restored_pressure_language_pressure_term_rows = restoredPressureLanguageContinuity.pressure_term_rows;
+  returnEntry.restored_pressure_language_continuity_fingerprint = restoredPressureLanguageContinuity.fingerprint;
+  returnEntry.restored_pressure_language_matches_saved = Boolean(slot.pressure_language_continuity_fingerprint && slot.pressure_language_continuity_fingerprint !== 'none' && slot.pressure_language_continuity_fingerprint === restoredPressureLanguageContinuity.fingerprint);
   const restoredPresenceReturn = applyAvatarPresenceReturnMemory('save_slot_restore', returnEntry.returned_from_replay_rows);
   if (restoredPresenceReturn) {
     returnEntry.restored_avatar_presence_return_id = restoredPresenceReturn.return_presence_id;
@@ -15914,6 +16017,8 @@ function buildPrototypeAcceptanceReceipt() {
   const normalTestFeedbackReturnBehaviorRows = autonomous && autonomous.normalTestReturnBehaviorLedger ? autonomous.normalTestReturnBehaviorLedger.filter(row => row.feedback_id && row.feedback_id !== 'none' && row.practice_id && row.practice_id !== 'none' && row.return_key && row.no_direct_avatar_command === true && row.hidden_law_normal_view === false && row.source_history_preserved === true).length : 0;
   const normalTestFeedbackReturnActionRows = autonomous && autonomous.actionLog ? autonomous.actionLog.filter(row => row.normal_test_return_behavior_id && row.normal_test_return_behavior_id !== 'none' && row.normal_test_return_feedback_id && row.normal_test_return_feedback_id !== 'none' && row.post_return_feedback_bias === true && row.no_direct_player_command === true).length : 0;
   const normalTestFeedbackReturnRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_normal_test_feedback_behavior_id && row.restored_normal_test_feedback_behavior_id !== 'none' && row.restored_normal_test_feedback_behavior_kind && row.restored_normal_test_feedback_behavior_kind !== 'none').length : 0;
+  const pressureLanguageContinuitySaveRows = saves && saves.slots ? saves.slots.filter(slot => Number(slot.pressure_language_rows || 0) > 0 && slot.pressure_language_latest_id && slot.pressure_language_latest_id !== 'none' && slot.pressure_language_root_id && slot.pressure_language_root_id !== 'none' && slot.pressure_language_term_id && slot.pressure_language_term_id !== 'none' && slot.pressure_language_continuity_fingerprint && slot.pressure_language_continuity_fingerprint !== 'none').length : 0;
+  const pressureLanguageContinuityRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_pressure_language_matches_saved === true && Number(row.restored_pressure_language_rows || 0) > 0 && row.restored_pressure_language_latest_id && row.restored_pressure_language_latest_id !== 'none' && row.restored_pressure_language_root_id && row.restored_pressure_language_root_id !== 'none' && row.restored_pressure_language_term_id && row.restored_pressure_language_term_id !== 'none').length : 0;
 	  const requirements = [
     { id: 'basic_visual_surface', pass: Boolean(world.entered && Object.keys(world.residents).length <= 6), evidence: `${Object.keys(world.residents).length} resident(s), room=${world.avatar.room}` },
     { id: 'persistent_save_return', pass: Boolean(saves && saves.slots && saves.slots.length > 0 && saves.returnLog && saves.returnLog.length > 0), evidence: saves ? `${saves.slots.length} slot(s), ${saves.returnLog.length} return(s)` : 'no prototype saves' },
@@ -15924,6 +16029,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'autonomous_stochastic_residents', pass: Boolean(autonomous && autonomous.actionLog.length > 0 && autonomous.entropyLedger.length > 0), evidence: autonomous ? `${autonomous.actionLog.length} action(s), entropy rows=${autonomous.entropyLedger.length}` : 'not started' },
     { id: 'ordinary_physics_pressure_drives_residents', pass: Boolean(autonomous && physics && residentPhysicsPressureRows > 0 && residentPhysicsPressureRoutineRows > 0 && residentPhysicsPressureActionRows > 0 && residentPhysicsPressurePhysicsRows > 0), evidence: `pressureRows=${residentPhysicsPressureRows}, routine=${residentPhysicsPressureRoutineRows}, action=${residentPhysicsPressureActionRows}, physicsLedger=${residentPhysicsPressurePhysicsRows}` },
     { id: 'physics_pressure_cultivates_language', pass: Boolean(materialWorld && residentPhysicsLanguageRows > 0 && residentPhysicsLanguageRootRows > 0 && residentPhysicsLanguageTermRows > 0), evidence: `languagePressure=${residentPhysicsLanguageRows}, groundedRoots=${residentPhysicsLanguageRootRows}, pressureTerms=${residentPhysicsLanguageTermRows}` },
+    { id: 'physics_pressure_language_save_return_continuity', pass: Boolean(saves && pressureLanguageContinuitySaveRows > 0 && pressureLanguageContinuityRestoreRows > 0), evidence: saves ? `savedPressureLanguage=${pressureLanguageContinuitySaveRows}, restoredMatches=${pressureLanguageContinuityRestoreRows}` : 'no prototype saves' },
     { id: 'reality_grounded_causality', pass: Boolean(ledger && ledger.rows.length > 0 && ledger.rows.every(row => row.conservation_check && row.normal_view_hidden_law_exposed === false)), evidence: ledger ? `${ledger.rows.length} causal row(s)` : 'no ledger' },
     { id: 'emergent_beliefs_and_practices', pass: Boolean(practiceGraph && practiceGraph.nodes.length > 0 && practiceGraph.noPredefinedTechTree === true), evidence: practiceGraph ? `${practiceGraph.nodes.length} node(s), no tech tree=${practiceGraph.noPredefinedTechTree}` : 'no practice graph' },
     { id: 'village_management_without_command', pass: Boolean(board && board.projectProposals.length > 0 && board.avatarCannotForce === true), evidence: board ? `${board.projectProposals.length} proposal(s), force=${board.avatarCannotForce === false}` : 'no board' },
@@ -16089,10 +16195,12 @@ function formatPrototypeSaves() {
   const objectSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: objectChain interactions=${slot.object_interaction_rows || 0}, responses=${slot.object_response_rows || 0}, resolutions=${slot.object_resolution_rows || 0}/${slot.latest_object_resolution_id || 'none'}, rechecks=${slot.object_recheck_response_rows || 0}/${slot.latest_object_recheck_response_id || 'none'} result=${slot.latest_object_recheck_result || 'none'}`);
   const materialSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: materialContinuity handling=${slot.material_continuity_latest_id || 'none'} action=${slot.material_continuity_action || 'none'} component=${slot.material_continuity_component_id || 'none'} target=${slot.material_continuity_target_source || 'none'} selected=${slot.material_continuity_selected_component_bound ? 'yes' : 'no'} body=${slot.material_continuity_body_step_id || 'none'}`);
   const normalTestSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: normalTestContinuity action=${slot.normal_test_action_id || 'none'} test=${slot.normal_test_id || 'none'} board=${slot.normal_test_board_proposal_id || 'none'} support=${slot.normal_test_support_rows || 0} project=${slot.normal_test_project_rows || 0}/${slot.normal_test_latest_project_id || 'none'} worksite=${slot.normal_test_worksite_rows || 0}/${slot.normal_test_latest_worksite_id || 'none'} visual=${slot.normal_test_visual_rows || 0}/${slot.normal_test_latest_visual_id || 'none'} feedback=${slot.normal_test_feedback_rows || 0}/${slot.normal_test_latest_feedback_id || 'none'} practice=${slot.normal_test_feedback_practice_id || 'none'} body=${slot.normal_test_feedback_body_step_id || 'none'}`);
+  const pressureLanguageSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: pressureLanguage pressure=${slot.physics_pressure_rows || 0}/${slot.physics_pressure_latest_id || 'none'} step=${slot.physics_pressure_latest_step_id || 'none'} component=${slot.physics_pressure_component_id || 'none'} kind=${slot.physics_pressure_kind || 'none'} language=${slot.pressure_language_rows || 0}/${slot.pressure_language_latest_id || 'none'} root=${slot.pressure_language_root_id || 'none'} term=${slot.pressure_language_term_id || 'none'} word=${slot.pressure_language_resident_word || 'none'} gloss=${slot.pressure_language_player_gloss || 'none'}`);
   const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, livedPhysics=${row.restored_lived_practice_physics_rows || 0}/${row.restored_lived_practice_latest_physics_id || 'none'}, projectVisuals=${row.restored_project_visual_rows || 0}/${row.restored_latest_project_visual_id || 'none'}, integrated=${row.restored_first_playable_integrated_rows || 0}/${row.restored_first_playable_latest_integrated_id || 'none'} complete=${row.restored_first_playable_integrated_complete ? 'yes' : 'no'} follow=${row.restored_normal_play_follow_rows || 0}/${row.restored_normal_play_follow_recovery_rows || 0} space, avatarPresence=${row.restored_avatar_presence_rows || 0}/${row.restored_avatar_presence_return_id || 'none'} tone=${row.restored_avatar_presence_tone_after_restore || row.restored_avatar_presence_tone || 'none'}, from replay=${row.returned_from_replay_rows}`);
   const objectReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredObjectChain interactions=${row.restored_object_interaction_rows || 0}, responses=${row.restored_object_response_rows || 0}, resolutions=${row.restored_object_resolution_rows || 0}/${row.restored_latest_object_resolution_id || 'none'}, rechecks=${row.restored_object_recheck_response_rows || 0}/${row.restored_latest_object_recheck_response_id || 'none'} result=${row.restored_latest_object_recheck_result || 'none'}`);
   const materialReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredMaterial handling=${row.restored_material_continuity_latest_id || 'none'} action=${row.restored_material_continuity_action || 'none'} component=${row.restored_material_continuity_component_id || 'none'} target=${row.restored_material_continuity_target_source || 'none'} match=${row.restored_material_continuity_matches_saved ? 'yes' : 'no'}`);
   const normalTestReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredNormalTest action=${row.restored_normal_test_action_id || 'none'} test=${row.restored_normal_test_id || 'none'} board=${row.restored_normal_test_board_proposal_id || 'none'} project=${row.restored_normal_test_project_rows || 0}/${row.restored_normal_test_latest_project_id || 'none'} worksite=${row.restored_normal_test_worksite_rows || 0}/${row.restored_normal_test_latest_worksite_id || 'none'} visual=${row.restored_normal_test_visual_rows || 0}/${row.restored_normal_test_latest_visual_id || 'none'} feedback=${row.restored_normal_test_feedback_rows || 0}/${row.restored_normal_test_latest_feedback_id || 'none'} practice=${row.restored_normal_test_feedback_practice_id || 'none'} body=${row.restored_normal_test_feedback_body_step_id || 'none'} behavior=${row.restored_normal_test_feedback_behavior_id || 'none'}/${row.restored_normal_test_feedback_behavior_kind || 'none'} match=${row.restored_normal_test_continuity_matches_saved ? 'yes' : 'no'}`);
+  const pressureLanguageReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredPressureLanguage pressure=${row.restored_physics_pressure_rows || 0}/${row.restored_physics_pressure_latest_id || 'none'} step=${row.restored_physics_pressure_latest_step_id || 'none'} component=${row.restored_physics_pressure_component_id || 'none'} language=${row.restored_pressure_language_rows || 0}/${row.restored_pressure_language_latest_id || 'none'} root=${row.restored_pressure_language_root_id || 'none'} term=${row.restored_pressure_language_term_id || 'none'} word=${row.restored_pressure_language_resident_word || 'none'} match=${row.restored_pressure_language_matches_saved ? 'yes' : 'no'}`);
   return [
     `Active slot: ${saves.activeSlotId || 'none'}`,
     `Boundary: ${saves.boundary}`,
@@ -16104,6 +16212,8 @@ function formatPrototypeSaves() {
     ...(materialSlots.length ? materialSlots : ['none']),
     'Normal-test continuity:',
     ...(normalTestSlots.length ? normalTestSlots : ['none']),
+    'Pressure-language continuity:',
+    ...(pressureLanguageSlots.length ? pressureLanguageSlots : ['none']),
     'Returns:',
     ...(returns.length ? returns : ['none']),
     'Object returns:',
@@ -16112,6 +16222,8 @@ function formatPrototypeSaves() {
     ...(materialReturns.length ? materialReturns : ['none']),
     'Normal-test returns:',
     ...(normalTestReturns.length ? normalTestReturns : ['none']),
+    'Pressure-language returns:',
+    ...(pressureLanguageReturns.length ? pressureLanguageReturns : ['none']),
     `Export receipt: ${saves.exportReceipt ? `${saves.exportReceipt.slots.length} slot(s) prepared` : 'not prepared'}`,
   ].join('\n');
 }

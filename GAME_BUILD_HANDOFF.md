@@ -783,3 +783,12 @@ Implementation boundary:
 - Terms are grounded in public observations and linked pressure/component evidence.
 - Player glosses remain imperfect and separate from engine concepts.
 - Hidden simulator law remains audit-only.
+
+## Prototype increment: pressure-language save/return continuity
+
+Pressure-grounded language now participates in prototype save/return continuity. Save slots record the latest `RPP-...` pressure row, `LPP-...` language row, root, pressure term, resident word, imperfect gloss, adoption counts, and a continuity fingerprint. Return recomputes the same fingerprint from the restored world.
+
+Implementation boundary:
+- Persistence preserves language history; it does not regenerate a new label on return.
+- Normal view can inspect resident words and glosses without hidden simulator law.
+- The continuity check ties language to lived pressure evidence instead of a predeclared vocabulary list.

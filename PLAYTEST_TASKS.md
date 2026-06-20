@@ -575,3 +575,12 @@
 4. Confirm the row includes a resident word, an imperfect player gloss, a sound root, a pressure ID, and a component ID.
 5. Confirm the related sound root has a grounded event and adoption count.
 6. Confirm the resident term is not an English technology label and does not reveal hidden simulator law.
+
+## Playtest task: pressure-language save/return
+
+1. Run one autonomous resident tick so an `RPP-...` pressure row and `LPP-...` language row exist.
+2. Save the prototype slot.
+3. Advance the world or run another tick.
+4. Restore the slot.
+5. Confirm the Save / return panel shows `Pressure-language continuity` and `Pressure-language returns`.
+6. Confirm the restored row has the same pressure ID, language ID, root ID, term ID, resident word, and `match=yes`.

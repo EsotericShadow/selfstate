@@ -783,3 +783,12 @@ The goal is readable continuity: the resident response should reflect what happe
 4. If residents accept support and materials exist, resident project work advances.
 5. Project, construction, visual, completion, and worksite rows keep the resident-test source ID.
 6. The visible work remains causal: materials are consumed, residents work, structures/components change, and hidden law stays audit-only.
+
+## Normal-test save/return continuity loop
+
+1. A normal action generates a resident test.
+2. The test reaches the village board and becomes actionable project/worksite evidence.
+3. Save captures the normal-test chain fingerprint.
+4. Return restores the browser-local world snapshot.
+5. The restored chain is recomputed from normal action, board, project, worksite, and visual rows.
+6. The save panel reports whether the restored normal-test chain matches the saved chain.

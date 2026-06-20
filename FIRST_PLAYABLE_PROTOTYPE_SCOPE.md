@@ -823,3 +823,14 @@ Evidence required:
 - worksite row linked to the same normal-test path
 - visual construction cue linked to the normal-test path
 - no hidden-law exposure, no resource spawning, and no direct command
+
+## Added scope gate: Normal-test save/return continuity
+
+The first playable scope now requires normal-action resident-test project chains to persist across save/return.
+
+Evidence required:
+- at least one `normal_test_save_return_continuity` acceptance row
+- saved normal-test chain includes resident test, board proposal, project, worksite, and visual evidence
+- restored normal-test chain fingerprint matches the saved fingerprint
+- evidence is recomputed from restored world state, not a detached counter
+- no hidden-law exposure or direct command is introduced

@@ -14401,6 +14401,50 @@ function materialHandlingContinuitySnapshot(sourceWorld = world) {
   };
 }
 
+function normalTestContinuitySnapshot(sourceWorld = world) {
+  const actionRail = sourceWorld.gamePrototypeActionRail || null;
+  const actionRows = actionRail && actionRail.actionLedger ? actionRail.actionLedger : [];
+  const latestAction = actionRows.slice().reverse().find(row => row.ordinary_bottleneck_test_id && row.ordinary_bottleneck_test_id !== 'none' && row.ordinary_bottleneck_board_proposal_id && row.ordinary_bottleneck_board_proposal_id !== 'none') || null;
+  const board = sourceWorld.villageBoard || null;
+  const proposals = board && board.projectProposals ? board.projectProposals : [];
+  const boardProposal = latestAction ? proposals.find(row => row.proposal_id === latestAction.ordinary_bottleneck_board_proposal_id) || null : null;
+  const boardProposalId = boardProposal ? boardProposal.proposal_id : latestAction ? latestAction.ordinary_bottleneck_board_proposal_id || 'none' : 'none';
+  const residentTestId = boardProposal ? boardProposal.related_resident_test_id || 'none' : latestAction ? latestAction.ordinary_bottleneck_test_id || 'none' : 'none';
+  const supportEvents = board && board.supportEvents ? board.supportEvents.filter(row => row.normal_action_test_path === true && (row.proposalId === boardProposalId || row.related_resident_test_id === residentTestId)) : [];
+  const projects = sourceWorld.gamePrototypeProjects || null;
+  const projectRows = projects && projects.projectLedger ? projects.projectLedger.filter(row => row.normal_action_test_path === true && (row.proposal_id === boardProposalId || row.related_resident_test_id === residentTestId)) : [];
+  const visualRows = projects && projects.visualLedger ? projects.visualLedger.filter(row => row.normal_action_test_path === true && (row.proposal_id === boardProposalId || row.related_resident_test_id === residentTestId)) : [];
+  const worksite = sourceWorld.gamePrototypeWorksite || null;
+  const worksiteRows = worksite && worksite.watchLedger ? worksite.watchLedger.filter(row => row.normal_action_test_path === true && (row.proposal_id === boardProposalId || row.related_resident_test_id === residentTestId)) : [];
+  const latestProject = projectRows.length ? projectRows[projectRows.length - 1] : null;
+  const latestVisual = visualRows.length ? visualRows[visualRows.length - 1] : null;
+  const latestWorksite = worksiteRows.length ? worksiteRows[worksiteRows.length - 1] : null;
+  const continuity = {
+    normal_action_id: latestAction ? latestAction.action_id : 'none',
+    feed_id: latestAction ? latestAction.ordinary_bottleneck_feed_id || 'none' : 'none',
+    test_id: residentTestId,
+    auto_test_id: boardProposal ? boardProposal.related_auto_test_id || 'none' : latestAction ? latestAction.ordinary_bottleneck_auto_test_id || 'none' : 'none',
+    board_proposal_id: boardProposalId,
+    proposal_status: boardProposal ? boardProposal.status || 'none' : 'none',
+    proposal_support_level: boardProposal ? Number(boardProposal.current_support_level || 0) : 0,
+    support_rows: supportEvents.length,
+    project_rows: projectRows.length,
+    worksite_rows: worksiteRows.length,
+    visual_rows: visualRows.length,
+    latest_project_id: latestProject ? latestProject.project_id : 'none',
+    latest_project_status: latestProject ? latestProject.status : 'none',
+    latest_project_progress: latestProject ? Number(latestProject.progress || 0) : 0,
+    latest_worksite_id: latestWorksite ? latestWorksite.watch_id : 'none',
+    latest_visual_id: latestVisual ? latestVisual.visual_id : 'none',
+    latest_visual_stage: latestVisual ? latestVisual.stage : 'none',
+    component_ids: latestVisual ? latestVisual.affected_component_ids || [] : [],
+  };
+  return {
+    ...continuity,
+    fingerprint: continuity.test_id !== 'none' && continuity.board_proposal_id !== 'none' ? JSON.stringify(continuity) : 'none',
+  };
+}
+
 function savePrototypeSlot(label = 'manual prototype save') {
   ensureGamePrototype();
   const saves = ensurePrototypeSaves();
@@ -14411,6 +14455,7 @@ function savePrototypeSlot(label = 'manual prototype save') {
   const integratedLedger = world.gamePrototypePlaySession && world.gamePrototypePlaySession.integratedLoopLedger ? world.gamePrototypePlaySession.integratedLoopLedger : [];
   const latestIntegratedLoop = integratedLedger.length ? integratedLedger[integratedLedger.length - 1] : null;
   const materialContinuity = materialHandlingContinuitySnapshot(world);
+  const normalTestContinuity = normalTestContinuitySnapshot(world);
   const slotNumber = saves.slots.length + 1;
   const slot = {
     slot_id: `GPS-${String(slotNumber).padStart(2, '0')}`,
@@ -14490,6 +14535,20 @@ function savePrototypeSlot(label = 'manual prototype save') {
     latest_object_resolution_id: world.gamePrototypeObjectInteraction && world.gamePrototypeObjectInteraction.resolutionLedger && world.gamePrototypeObjectInteraction.resolutionLedger.length ? world.gamePrototypeObjectInteraction.resolutionLedger[world.gamePrototypeObjectInteraction.resolutionLedger.length - 1].resolution_id : 'none',
     latest_object_recheck_response_id: world.gamePrototypeObjectInteraction && world.gamePrototypeObjectInteraction.responseLedger ? (world.gamePrototypeObjectInteraction.responseLedger.slice().reverse().find(row => row.recheck_resolution_id && row.recheck_resolution_id !== 'none') || {}).response_id || 'none' : 'none',
     latest_object_recheck_result: world.gamePrototypeObjectInteraction && world.gamePrototypeObjectInteraction.responseLedger ? (world.gamePrototypeObjectInteraction.responseLedger.slice().reverse().find(row => row.recheck_resolution_id && row.recheck_resolution_id !== 'none') || {}).resident_recheck_result || 'none' : 'none',
+    normal_test_action_id: normalTestContinuity.normal_action_id,
+    normal_test_feed_id: normalTestContinuity.feed_id,
+    normal_test_id: normalTestContinuity.test_id,
+    normal_test_auto_test_id: normalTestContinuity.auto_test_id,
+    normal_test_board_proposal_id: normalTestContinuity.board_proposal_id,
+    normal_test_proposal_status: normalTestContinuity.proposal_status,
+    normal_test_support_rows: normalTestContinuity.support_rows,
+    normal_test_project_rows: normalTestContinuity.project_rows,
+    normal_test_worksite_rows: normalTestContinuity.worksite_rows,
+    normal_test_visual_rows: normalTestContinuity.visual_rows,
+    normal_test_latest_project_id: normalTestContinuity.latest_project_id,
+    normal_test_latest_worksite_id: normalTestContinuity.latest_worksite_id,
+    normal_test_latest_visual_id: normalTestContinuity.latest_visual_id,
+    normal_test_continuity_fingerprint: normalTestContinuity.fingerprint,
     return_journal_ready: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.acceptanceReady === true : false,
     return_journal_rows: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.journalLedger.length : 0,
     return_journal_snapshots: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.snapshotLedger.length : 0,
@@ -14616,6 +14675,19 @@ function returnPrototypeSlot() {
     saved_material_continuity_body_step_id: slot.material_continuity_body_step_id || 'none',
     saved_material_continuity_canvas_cue: slot.material_continuity_canvas_cue || 'none',
     saved_material_continuity_fingerprint: slot.material_continuity_fingerprint || 'none',
+    saved_normal_test_action_id: slot.normal_test_action_id || 'none',
+    saved_normal_test_feed_id: slot.normal_test_feed_id || 'none',
+    saved_normal_test_id: slot.normal_test_id || 'none',
+    saved_normal_test_auto_test_id: slot.normal_test_auto_test_id || 'none',
+    saved_normal_test_board_proposal_id: slot.normal_test_board_proposal_id || 'none',
+    saved_normal_test_support_rows: slot.normal_test_support_rows || 0,
+    saved_normal_test_project_rows: slot.normal_test_project_rows || 0,
+    saved_normal_test_worksite_rows: slot.normal_test_worksite_rows || 0,
+    saved_normal_test_visual_rows: slot.normal_test_visual_rows || 0,
+    saved_normal_test_latest_project_id: slot.normal_test_latest_project_id || 'none',
+    saved_normal_test_latest_worksite_id: slot.normal_test_latest_worksite_id || 'none',
+    saved_normal_test_latest_visual_id: slot.normal_test_latest_visual_id || 'none',
+    saved_normal_test_continuity_fingerprint: slot.normal_test_continuity_fingerprint || 'none',
   };
   const nextWorld = JSON.parse(slot.snapshot);
   saves.returnLog.push(returnEntry);
@@ -14631,6 +14703,21 @@ function returnPrototypeSlot() {
   returnEntry.restored_material_continuity_canvas_cue = restoredMaterialContinuity.latest_canvas_cue;
   returnEntry.restored_material_continuity_fingerprint = restoredMaterialContinuity.component_state_fingerprint;
   returnEntry.restored_material_continuity_matches_saved = Boolean(slot.material_continuity_fingerprint && slot.material_continuity_fingerprint !== 'none' && slot.material_continuity_fingerprint === restoredMaterialContinuity.component_state_fingerprint);
+  const restoredNormalTestContinuity = normalTestContinuitySnapshot(world);
+  returnEntry.restored_normal_test_action_id = restoredNormalTestContinuity.normal_action_id;
+  returnEntry.restored_normal_test_feed_id = restoredNormalTestContinuity.feed_id;
+  returnEntry.restored_normal_test_id = restoredNormalTestContinuity.test_id;
+  returnEntry.restored_normal_test_auto_test_id = restoredNormalTestContinuity.auto_test_id;
+  returnEntry.restored_normal_test_board_proposal_id = restoredNormalTestContinuity.board_proposal_id;
+  returnEntry.restored_normal_test_support_rows = restoredNormalTestContinuity.support_rows;
+  returnEntry.restored_normal_test_project_rows = restoredNormalTestContinuity.project_rows;
+  returnEntry.restored_normal_test_worksite_rows = restoredNormalTestContinuity.worksite_rows;
+  returnEntry.restored_normal_test_visual_rows = restoredNormalTestContinuity.visual_rows;
+  returnEntry.restored_normal_test_latest_project_id = restoredNormalTestContinuity.latest_project_id;
+  returnEntry.restored_normal_test_latest_worksite_id = restoredNormalTestContinuity.latest_worksite_id;
+  returnEntry.restored_normal_test_latest_visual_id = restoredNormalTestContinuity.latest_visual_id;
+  returnEntry.restored_normal_test_continuity_fingerprint = restoredNormalTestContinuity.fingerprint;
+  returnEntry.restored_normal_test_continuity_matches_saved = Boolean(slot.normal_test_continuity_fingerprint && slot.normal_test_continuity_fingerprint !== 'none' && slot.normal_test_continuity_fingerprint === restoredNormalTestContinuity.fingerprint);
   const restoredPresenceReturn = applyAvatarPresenceReturnMemory('save_slot_restore', returnEntry.returned_from_replay_rows);
   if (restoredPresenceReturn) {
     returnEntry.restored_avatar_presence_return_id = restoredPresenceReturn.return_presence_id;
@@ -14868,10 +14955,13 @@ function buildPrototypeAcceptanceReceipt() {
   const avatarPresenceRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => Number(row.restored_avatar_presence_rows || 0) > 0 && row.restored_avatar_presence_return_id && row.restored_avatar_presence_return_id !== 'none').length : 0;
   const materialContinuitySaveRows = saves && saves.slots ? saves.slots.filter(slot => slot.material_continuity_component_id && slot.material_continuity_component_id !== 'none' && slot.material_continuity_fingerprint && slot.material_continuity_fingerprint !== 'none').length : 0;
   const materialContinuityRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_material_continuity_matches_saved === true && row.restored_material_continuity_component_id && row.restored_material_continuity_component_id !== 'none').length : 0;
+  const normalTestContinuitySaveRows = saves && saves.slots ? saves.slots.filter(slot => slot.normal_test_id && slot.normal_test_id !== 'none' && slot.normal_test_board_proposal_id && slot.normal_test_board_proposal_id !== 'none' && Number(slot.normal_test_project_rows || 0) > 0 && Number(slot.normal_test_worksite_rows || 0) > 0 && Number(slot.normal_test_visual_rows || 0) > 0 && slot.normal_test_continuity_fingerprint && slot.normal_test_continuity_fingerprint !== 'none').length : 0;
+  const normalTestContinuityRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_normal_test_continuity_matches_saved === true && row.restored_normal_test_id && row.restored_normal_test_id !== 'none' && Number(row.restored_normal_test_project_rows || 0) > 0 && Number(row.restored_normal_test_worksite_rows || 0) > 0 && Number(row.restored_normal_test_visual_rows || 0) > 0).length : 0;
 	  const requirements = [
     { id: 'basic_visual_surface', pass: Boolean(world.entered && Object.keys(world.residents).length <= 6), evidence: `${Object.keys(world.residents).length} resident(s), room=${world.avatar.room}` },
     { id: 'persistent_save_return', pass: Boolean(saves && saves.slots && saves.slots.length > 0 && saves.returnLog && saves.returnLog.length > 0), evidence: saves ? `${saves.slots.length} slot(s), ${saves.returnLog.length} return(s)` : 'no prototype saves' },
     { id: 'material_state_save_return_continuity', pass: Boolean(saves && materialContinuitySaveRows > 0 && materialContinuityRestoreRows > 0), evidence: saves ? `savedMaterial=${materialContinuitySaveRows}, restoredMatches=${materialContinuityRestoreRows}` : 'no prototype saves' },
+    { id: 'normal_test_save_return_continuity', pass: Boolean(saves && normalTestContinuitySaveRows > 0 && normalTestContinuityRestoreRows > 0), evidence: saves ? `savedNormalTests=${normalTestContinuitySaveRows}, restoredMatches=${normalTestContinuityRestoreRows}` : 'no prototype saves' },
     { id: 'autonomous_stochastic_residents', pass: Boolean(autonomous && autonomous.actionLog.length > 0 && autonomous.entropyLedger.length > 0), evidence: autonomous ? `${autonomous.actionLog.length} action(s), entropy rows=${autonomous.entropyLedger.length}` : 'not started' },
     { id: 'reality_grounded_causality', pass: Boolean(ledger && ledger.rows.length > 0 && ledger.rows.every(row => row.conservation_check && row.normal_view_hidden_law_exposed === false)), evidence: ledger ? `${ledger.rows.length} causal row(s)` : 'no ledger' },
     { id: 'emergent_beliefs_and_practices', pass: Boolean(practiceGraph && practiceGraph.nodes.length > 0 && practiceGraph.noPredefinedTechTree === true), evidence: practiceGraph ? `${practiceGraph.nodes.length} node(s), no tech tree=${practiceGraph.noPredefinedTechTree}` : 'no practice graph' },
@@ -15031,9 +15121,11 @@ function formatPrototypeSaves() {
   const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; projectVisuals=${slot.project_visual_rows || 0}/${slot.latest_project_visual_id || 'none'}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; integrated=${slot.first_playable_integrated_rows || 0}/${slot.first_playable_latest_integrated_id || 'none'} complete=${slot.first_playable_integrated_complete ? 'yes' : 'no'}; normalActions=${slot.normal_play_action_rows || 0}/${slot.normal_play_follow_rows || 0} follow/${slot.normal_play_follow_recovery_rows || 0} space; avatarPresence=${slot.avatar_presence_rows || 0}/${slot.avatar_presence_latest_id || 'none'} comfort=${slot.avatar_comfort_rows || 0} returnTone=${slot.avatar_presence_return_tone || 'none'}; livedPhysics=${slot.lived_practice_physics_rows || 0}/${slot.lived_practice_latest_physics_id || 'none'}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals/${slot.physical_field_rows || 0} fields/${slot.physical_energy_rows || 0} energy; structural=${slot.structural_stress_rows || 0} stress/${slot.structural_deformation_rows || 0} deform/${slot.structural_repair_rows || 0} repair; constraints=${slot.contact_constraint_rows || 0} contact/${slot.joint_constraint_rows || 0} joints/${slot.constraint_repair_rows || 0} repair; materialState=${slot.material_state_rows || 0} state/${slot.phase_change_rows || 0} phase/${slot.property_drift_rows || 0} props; terrain=${slot.terrain_steps || 0} steps/${slot.terrain_flow_rows || 0} flow/${slot.terrain_support_rows || 0} support; tools=${slot.tool_use_rows || 0} uses/${slot.tool_failure_rows || 0} failures/${slot.tool_repair_rows || 0} repairs; resources=${slot.resource_stock_rows || 0} steps/${slot.resource_loss_rows || 0} losses/${slot.resource_gain_rows || 0} gains; thermal=${slot.thermal_heat_rows || 0} heat/${slot.thermal_smoke_rows || 0} smoke/${slot.thermal_safety_rows || 0} safety; water=${slot.water_flow_rows || 0} flows/${slot.water_leak_rows || 0} leaks/${slot.water_safety_rows || 0} safety; ecology=${slot.ecology_growth_rows || 0} growth/${slot.ecology_harvest_rows || 0} harvest/${slot.ecology_hunger_rows || 0} hunger; manipulation=${slot.material_manipulation_rows || 0}/${slot.material_manipulation_practice_links || 0} practice links; bodies=${slot.resident_body_steps || 0} steps/${slot.resident_body_contacts || 0} contacts/${slot.resident_body_recoveries || 0} recoveries; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; deepPhysics=${slot.deep_time_physics_epochs || 0} epochs/${slot.deep_time_material_flux_rows || 0} flux/${slot.deep_time_physical_effects || 0} effects/${slot.physical_heritage_rows || 0} heritage; survival=${slot.survival_status}`);
   const objectSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: objectChain interactions=${slot.object_interaction_rows || 0}, responses=${slot.object_response_rows || 0}, resolutions=${slot.object_resolution_rows || 0}/${slot.latest_object_resolution_id || 'none'}, rechecks=${slot.object_recheck_response_rows || 0}/${slot.latest_object_recheck_response_id || 'none'} result=${slot.latest_object_recheck_result || 'none'}`);
   const materialSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: materialContinuity handling=${slot.material_continuity_latest_id || 'none'} action=${slot.material_continuity_action || 'none'} component=${slot.material_continuity_component_id || 'none'} target=${slot.material_continuity_target_source || 'none'} selected=${slot.material_continuity_selected_component_bound ? 'yes' : 'no'} body=${slot.material_continuity_body_step_id || 'none'}`);
+  const normalTestSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: normalTestContinuity action=${slot.normal_test_action_id || 'none'} test=${slot.normal_test_id || 'none'} board=${slot.normal_test_board_proposal_id || 'none'} support=${slot.normal_test_support_rows || 0} project=${slot.normal_test_project_rows || 0}/${slot.normal_test_latest_project_id || 'none'} worksite=${slot.normal_test_worksite_rows || 0}/${slot.normal_test_latest_worksite_id || 'none'} visual=${slot.normal_test_visual_rows || 0}/${slot.normal_test_latest_visual_id || 'none'}`);
   const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, livedPhysics=${row.restored_lived_practice_physics_rows || 0}/${row.restored_lived_practice_latest_physics_id || 'none'}, projectVisuals=${row.restored_project_visual_rows || 0}/${row.restored_latest_project_visual_id || 'none'}, integrated=${row.restored_first_playable_integrated_rows || 0}/${row.restored_first_playable_latest_integrated_id || 'none'} complete=${row.restored_first_playable_integrated_complete ? 'yes' : 'no'} follow=${row.restored_normal_play_follow_rows || 0}/${row.restored_normal_play_follow_recovery_rows || 0} space, avatarPresence=${row.restored_avatar_presence_rows || 0}/${row.restored_avatar_presence_return_id || 'none'} tone=${row.restored_avatar_presence_tone_after_restore || row.restored_avatar_presence_tone || 'none'}, from replay=${row.returned_from_replay_rows}`);
   const objectReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredObjectChain interactions=${row.restored_object_interaction_rows || 0}, responses=${row.restored_object_response_rows || 0}, resolutions=${row.restored_object_resolution_rows || 0}/${row.restored_latest_object_resolution_id || 'none'}, rechecks=${row.restored_object_recheck_response_rows || 0}/${row.restored_latest_object_recheck_response_id || 'none'} result=${row.restored_latest_object_recheck_result || 'none'}`);
   const materialReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredMaterial handling=${row.restored_material_continuity_latest_id || 'none'} action=${row.restored_material_continuity_action || 'none'} component=${row.restored_material_continuity_component_id || 'none'} target=${row.restored_material_continuity_target_source || 'none'} match=${row.restored_material_continuity_matches_saved ? 'yes' : 'no'}`);
+  const normalTestReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredNormalTest action=${row.restored_normal_test_action_id || 'none'} test=${row.restored_normal_test_id || 'none'} board=${row.restored_normal_test_board_proposal_id || 'none'} project=${row.restored_normal_test_project_rows || 0}/${row.restored_normal_test_latest_project_id || 'none'} worksite=${row.restored_normal_test_worksite_rows || 0}/${row.restored_normal_test_latest_worksite_id || 'none'} visual=${row.restored_normal_test_visual_rows || 0}/${row.restored_normal_test_latest_visual_id || 'none'} match=${row.restored_normal_test_continuity_matches_saved ? 'yes' : 'no'}`);
   return [
     `Active slot: ${saves.activeSlotId || 'none'}`,
     `Boundary: ${saves.boundary}`,
@@ -15043,12 +15135,16 @@ function formatPrototypeSaves() {
     ...(objectSlots.length ? objectSlots : ['none']),
     'Material continuity:',
     ...(materialSlots.length ? materialSlots : ['none']),
+    'Normal-test continuity:',
+    ...(normalTestSlots.length ? normalTestSlots : ['none']),
     'Returns:',
     ...(returns.length ? returns : ['none']),
     'Object returns:',
     ...(objectReturns.length ? objectReturns : ['none']),
     'Material returns:',
     ...(materialReturns.length ? materialReturns : ['none']),
+    'Normal-test returns:',
+    ...(normalTestReturns.length ? normalTestReturns : ['none']),
     `Export receipt: ${saves.exportReceipt ? `${saves.exportReceipt.slots.length} slot(s) prepared` : 'not prepared'}`,
   ].join('\n');
 }

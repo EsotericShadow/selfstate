@@ -482,3 +482,11 @@
 - Confirm worksite watch rows show the same resident-test source.
 - Confirm visual construction cues preserve the normal-test lineage and still draw physical component changes.
 - Export or inspect acceptance and confirm `normal_test_proposal_actionable` passes with support, project, worksite, and visual evidence.
+
+## Normal-test save/return continuity playtests
+
+- Generate a normal-action resident test, support its `VBP-NAT-...` proposal, and advance resident work until project/worksite/visual rows exist.
+- Use Save and Return.
+- Inspect the save panel and confirm `Normal-test continuity` lists the action, test, board proposal, project, worksite, and visual IDs.
+- Confirm `Normal-test returns` reports the same chain with `match=yes`.
+- Export or inspect acceptance and confirm `normal_test_save_return_continuity` passes.

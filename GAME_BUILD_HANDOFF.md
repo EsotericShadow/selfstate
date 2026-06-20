@@ -687,3 +687,11 @@ The acceptance gate is `normal_test_reaches_village_board`. It requires at least
 The project and worksite panels show `normalTest=...` so a playtester can trace ordinary action -> resident test -> board proposal -> support -> resident work -> visible construction without reading debug-only state.
 
 The acceptance gate is `normal_test_proposal_actionable`. It requires normal-test proposals to produce support, project, worksite, and visual rows while preserving no-force, no-resource-spawning, and no-hidden-law boundaries.
+
+## Prototype v0 normal-test save/return continuity update
+
+Normal-action resident-test chains now have explicit save/return continuity evidence. Saves capture the latest chain across normal action, feed, resident test, auto-test, `VBP-NAT` board proposal, support rows, project rows, worksite rows, visual rows, and affected components. Return recomputes the same chain from the restored world and records whether the continuity fingerprint matches.
+
+The save panel now includes `Normal-test continuity` and `Normal-test returns` sections so the chain can be inspected without raw JSON.
+
+The acceptance gate is `normal_test_save_return_continuity`. It requires a saved normal-test chain with project/worksite/visual evidence and a restored chain whose fingerprint matches the saved state.

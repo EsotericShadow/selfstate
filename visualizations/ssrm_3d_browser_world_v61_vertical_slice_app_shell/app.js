@@ -17693,7 +17693,7 @@ function buildPrototypeAcceptanceReceipt() {
   const returnJournal = world.gamePrototypeReturnJournal || null;
   const playSession = world.gamePrototypePlaySession || null;
   const firstPlayableMilestone = buildFirstPlayableMilestoneSnapshot();
-  const normalPlayerRequiredActions = ['runPrototypeGuidedStep', 'runNormalPlayLook', 'runNormalPlayMove', 'runNormalPlayAsk', 'runNormalPlayTalk', 'runNormalPlayObjects', 'runNormalPlayHandling', 'runPlayerProposalDeckLoop', 'askPlayerProposalDeck', 'supportPlayerProposalDeck', 'waitPlayerProposalDeck', 'runNormalPlaySave', 'runNormalPlayReturn', 'runNormalPlayPhysicsPath', 'runNormalPlayFollow', 'runNormalPlaySpace'];
+  const normalPlayerRequiredActions = ['runPrototypeGuidedStep', 'runNormalPlayLook', 'runNormalPlayMove', 'runNormalPlayAsk', 'runNormalPlayTalk', 'runNormalPlayObjects', 'runNormalPlayHandling', 'runPlayerProposalDeckLoop', 'askPlayerProposalDeck', 'supportPlayerProposalDeck', 'waitPlayerProposalDeck', 'runNormalPlayWait', 'runNormalPlaySave', 'runNormalPlayReturn', 'runNormalPlayPhysicsPath', 'runNormalPlayFollow', 'runNormalPlaySpace'];
   const normalPlayerActionStripButtons = typeof document !== 'undefined'
     ? Array.from(document.querySelectorAll('#normalPlayerActionStrip [data-action]')).map(button => button.getAttribute('data-action'))
     : [];

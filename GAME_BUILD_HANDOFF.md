@@ -593,3 +593,11 @@ Blocked object responses now create a resident-facing follow-up instead of endin
 The player can later ask about, support, or wait on that proposal through the existing proposal surfaces. The avatar still cannot force the resident to allow handling, install the correct explanation, or bypass material and social constraints.
 
 The acceptance gate is `blocked_object_response_creates_proposal`. It requires a blocked object-interaction row with a `follow_up_proposal_id` plus a Village Board proposal carrying `related_object_response_id`, `avatar_can_force=false`, no hidden-law exposure in normal view, and no tech-tree unlock.
+
+## Prototype v0 actionable object-objection proposal update
+
+Object-objection proposals now move through the existing proposal and worksite gameplay instead of remaining inert cards. The proposal deck prioritizes the latest `OIR -> VBP` chain, support consumes the proposal's own material list, shortages are preserved instead of faked, and resident project/worksite rows carry the originating object-response id.
+
+This keeps the loop diegetic: a resident objection becomes a resident problem, the avatar can offer support, and later work can repair or stabilize physical components if residents accept and materials exist.
+
+The acceptance gate is `object_objection_proposal_actionable`. It requires an objection-linked proposal deck action plus objection-linked project or worksite evidence, with no direct command, no resource spawning, no hidden-law exposure in normal view, and no tech-tree unlock.

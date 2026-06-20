@@ -678,3 +678,17 @@ Required evidence:
 - the avatar can ask, support, or wait on the proposal but cannot force acceptance
 - the proposal preserves no direct command, hidden-law separation, and no tech-tree unlock
 - blocked object handling becomes a diegetic management problem instead of an invisible failure
+
+## Added scope gate: Object-objection proposal actionable
+
+`object_objection_proposal_actionable` is now part of first playable prototype scope.
+
+Required evidence:
+
+- the proposal deck prioritizes an open proposal linked to an `OIR-...` response
+- proposal-deck action rows record `source_object_response_id`
+- support consumes only the proposal's own material requirements
+- missing materials produce preserved shortage state, not spawned resources
+- project, construction, completion, or worksite rows carry `related_object_response_id`
+- resident work can repair or stabilize components only through accepted proposal work
+- no direct command, hidden-law exposure, resource spawning, or tech-tree unlock occurs

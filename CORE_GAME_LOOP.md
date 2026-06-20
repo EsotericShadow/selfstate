@@ -551,7 +551,8 @@ The normal player loop now includes a proposal deck:
 4. Ask records a council question without revealing hidden simulator law.
 5. Support offers conditions through the existing proposal system; residents may accept, consider, refuse, stall, or consume scarce resources.
 6. Wait lets resident schedules and willingness remain consequential.
-7. Every deck action records no direct command, no tech-tree unlock, and no hidden-law exposure in normal view.
+7. If a proposal came from an object objection, the deck keeps the `OIR -> VBP` source visible and prioritizes the latest objection-born proposal.
+8. Every deck action records no direct command, no tech-tree unlock, and no hidden-law exposure in normal view.
 
 This is the diegetic management bridge: the player supports village conditions without assigning jobs.
 
@@ -579,8 +580,9 @@ The first playable loop now has a player-facing worksite path:
 2. The player opens Worksite from the normal rail.
 3. Resident project work advances through the existing project system.
 4. Work can stall on readiness or resources, consume materials, use tools, repair components, add components, complete, or create future maintenance burden.
-5. The Worksite card shows progress, construction id, resident term, practice link, components added/repaired, stalls, and maintenance cost.
-6. The avatar watches and supports conditions but does not assign jobs or spawn resources.
+5. Object-objection proposals carry their source `OIR-...` id into project, construction, completion, and worksite rows.
+6. The Worksite card shows progress, construction id, resident term, practice link, components added/repaired, stalls, object source, and maintenance cost.
+7. The avatar watches and supports conditions but does not assign jobs or spawn resources.
 
 This is the practical management bridge from proposals into visible physical world change.
 
@@ -672,7 +674,8 @@ Object inspection now has a social step before handling:
 8. The response itself does not manipulate the object.
 9. Blocked ownership or safety responses create a resident-facing Village Board concern and proposal linked to the `OIR-...` row.
 10. The player can support, ask, or wait on the proposal, but cannot force the resident to allow handling.
-11. The exported acceptance receipt records `resident_object_response`, `resident_object_response_affects_handling`, and `blocked_object_response_creates_proposal`.
+11. If supported and accepted, the proposal can advance through resident worksite/project rows while preserving the `OIR -> VBP -> GPP/RWW` chain.
+12. The exported acceptance receipt records `resident_object_response`, `resident_object_response_affects_handling`, `blocked_object_response_creates_proposal`, and `object_objection_proposal_actionable`.
 
 ## Player movement route loop
 

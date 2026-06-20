@@ -403,3 +403,8 @@
 - Open Proposals after the blocked response and confirm the Village Board proposal records `related_object_response_id=OIR-...`.
 - Confirm the proposal can be asked about, supported, or waited on, but not forced.
 - Export acceptance and confirm `blocked_object_response_creates_proposal` appears with interaction and board links.
+- Run Proposals after a blocked object response and confirm the objection-linked `VBP-...` card is prioritized and shows the `OIR-...` source.
+- Support the objection-linked proposal and confirm the deck action records `source_object_response_id=OIR-...`.
+- Run Worksite and confirm project or worksite rows carry `related_object_response_id=OIR-...`.
+- Confirm support consumes proposal-specific materials or preserves a shortage without spawning resources.
+- Export acceptance and confirm `object_objection_proposal_actionable` appears with deck and project/worksite evidence.

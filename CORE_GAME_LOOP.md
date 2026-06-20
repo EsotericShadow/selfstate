@@ -525,7 +525,7 @@ Each row records player action, resident mediation, world evidence, proposal/pra
 
 ## Normal play action rail loop
 
-The player-facing loop now has twelve normal verbs:
+The player-facing loop now has thirteen normal verbs:
 
 1. `Look`: refresh the primary world-stage readout.
 2. `Move`: change village position through bounded space.
@@ -537,8 +537,9 @@ The player-facing loop now has twelve normal verbs:
 8. `Wait`: let residents/world systems advance.
 9. `Return`: leave and return with continuity.
 10. `Save`: save the current prototype state.
-11. `Follow`: continue the public integrated chain when residents allow it.
-12. `Space`: recover from guarded/refused follow pressure without advancing the chain.
+11. `Physics path`: follow ambient physical pressure through resident language, proposal, save/return, and return body language as a normal rail action.
+12. `Follow`: continue the public integrated chain when residents allow it.
+13. `Space`: recover from guarded/refused follow pressure without advancing the chain.
 
 Each action records a row linking player intent to proposal, practice, component, physics, save, and return evidence where available.
 

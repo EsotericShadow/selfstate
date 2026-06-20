@@ -475,7 +475,7 @@ The acceptance gate is `first_playable_walkthrough`. This is the first durable r
 
 ## Prototype v0 milestone: Normal Play Action Rail
 
-The shell now includes a normal player-facing action rail with twelve verbs:
+The shell now includes a normal player-facing action rail with thirteen verbs:
 
 - Look
 - Move
@@ -487,6 +487,7 @@ The shell now includes a normal player-facing action rail with twelve verbs:
 - Wait
 - Return
 - Save
+- Physics path
 - Follow
 - Space
 

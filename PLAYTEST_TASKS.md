@@ -298,11 +298,11 @@
 
 ## Normal play action rail playtests
 
-- Use Look, Move, Ask, Talk, Objects, Handling, Support, Wait, Return, Save, Follow, and Space from the normal action rail.
+- Use Look, Move, Ask, Talk, Objects, Handling, Support, Wait, Return, Save, Physics path, Follow, and Space from the normal action rail.
 - Confirm each action creates a row in the `Normal play action rail` card.
 - Confirm Support is recorded as condition support, not direct job assignment.
 - Confirm Save links to a prototype save slot after the normal action flow.
-- Export acceptance and confirm `normal_play_action_rail` appears as a passing requirement after all normal verbs run.
+- Export acceptance and confirm `normal_play_action_rail` appears as a passing requirement after all normal verbs run, including a `physics_path` row with save/return and body-language evidence.
 
 ## Player mode interface playtests
 

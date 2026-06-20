@@ -391,11 +391,12 @@ This is the first single-receipt proof that the prototype has a coherent playabl
 
 Required evidence:
 
-- all normal verbs are used at least once, including Move, Talk, and Objects
+- all normal verbs are used at least once, including Move, Talk, Objects, and Physics path
 - options shown in player language
 - action rows remain non-commanding
 - hidden law is not exposed in normal view
 - actions link to proposal/practice/component/physics/save/return evidence when available
+- Physics path records a happy-path ID, save slot, restore slot, restore match, and body-language expression
 - follow recovery rows show `chain_advanced=false` after guarded/refused pressure
 - no tech-tree unlock
 

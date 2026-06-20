@@ -745,3 +745,14 @@ Required evidence:
 - Follow can advance the next object-chain step through existing resident-mediated actions
 - Follow rows record object response id, proposal id, resolution id, and recheck result
 - guided object steps do not assign jobs, grant direct object permission, expose hidden law, or unlock technology
+
+## Added scope gate: Object-objection canvas cue
+
+The first playable scope now requires object-objection chain state to be visible in the normal primary surface/canvas cue model.
+
+Evidence required:
+- at least one `object_objection_canvas_cue` acceptance row
+- canvas cue text containing active object-chain phase and next action
+- linked `OIR`, `VBP`, or `OIRR` identifiers where present
+- normal view keeps hidden law out of the player-facing cue
+- the avatar still influences conditions through resident-mediated actions instead of direct command

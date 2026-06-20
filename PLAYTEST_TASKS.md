@@ -427,3 +427,10 @@
 - Use `Follow` and confirm it advances the next object-chain step through Proposals, Worksite, Objects, Save, or Return rather than a debug panel.
 - Confirm the Follow row records object response id, proposal id, resolution id, and recheck result without direct command or hidden-law exposure.
 - Export acceptance and confirm `object_objection_guided_next_step` appears with guided option or Follow evidence.
+
+## Object-objection canvas cue playtests
+
+- Create or load an unfinished object-objection chain and run `World stage` until the primary surface refreshes.
+- Confirm the canvas HUD shows the object-chain phase, next action, response ID, proposal ID, and resolution ID when available.
+- Export or inspect acceptance and confirm `object_objection_canvas_cue` reports at least one object-chain cue.
+- Confirm the cue does not expose hidden simulator law, does not grant direct object control, and does not create a tech-tree unlock.

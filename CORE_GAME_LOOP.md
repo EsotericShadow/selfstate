@@ -721,3 +721,11 @@ The normal player loop now includes bounded resident encounters:
 7. No LLM or open-ended resident language is introduced.
 
 The goal is readable continuity: the resident response should reflect what happened in the village without pretending to be autonomous free-form conversation.
+
+## Object-objection primary surface cue loop
+
+1. A resident objects to or constrains an object interaction.
+2. The objection can create a resident-mediated proposal, worksite step, resolution, recheck, save, or return link.
+3. The primary play surface records the chain phase, next action, response ID, proposal ID, resolution ID, and recheck result.
+4. The canvas HUD shows the active object-objection phase as a player-facing cue.
+5. The cue is normal-view safe: it does not expose hidden simulator law, does not grant direct object control, and does not install a correct concept.

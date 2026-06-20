@@ -5423,6 +5423,7 @@ function currentPrimaryPlaySurfaceSnapshot() {
   const playSession = world.gamePrototypePlaySession || null;
   const integratedRows = playSession && playSession.integratedLoopLedger ? playSession.integratedLoopLedger : [];
   const latestIntegrated = integratedRows.length ? integratedRows[integratedRows.length - 1] : null;
+  const objectChain = latestObjectObjectionChainState();
   const selected = world.residents[world.selected] || currentResident();
   const latestProposal = board && board.projectProposals && board.projectProposals.length ? board.projectProposals[board.projectProposals.length - 1] : null;
   const latestPractice = graph && graph.nodes && graph.nodes.length ? graph.nodes[graph.nodes.length - 1] : null;
@@ -5507,6 +5508,20 @@ function currentPrimaryPlaySurfaceSnapshot() {
     integrated_loop_save_slot_id: latestIntegrated ? latestIntegrated.save_slot_id : 'none',
     integrated_loop_restore_slot_id: latestIntegrated ? latestIntegrated.restore_slot_id : 'none',
     integrated_loop_rows: integratedRows.length,
+    object_chain_active: objectChain.active === true,
+    object_chain_phase: objectChain.phase || 'none',
+    object_chain_next_action: objectChain.next_action || 'none',
+    object_chain_next_label: objectChain.next_label || 'none',
+    object_chain_reason: objectChain.reason || 'none',
+    object_chain_response_id: objectChain.response_id || 'none',
+    object_chain_proposal_id: objectChain.proposal_id || 'none',
+    object_chain_resolution_id: objectChain.resolution_id || 'none',
+    object_chain_recheck_response_id: objectChain.recheck_response_id || 'none',
+    object_chain_recheck_result: objectChain.recheck_result || 'none',
+    object_chain_project_rows: objectChain.project_rows || 0,
+    object_chain_worksite_rows: objectChain.worksite_rows || 0,
+    object_chain_saved_rows: objectChain.saved_rows || 0,
+    object_chain_restored_rows: objectChain.restored_rows || 0,
     resource_pressure: resourcePressure,
     canvas_cues: [
       'look at the highlighted village problem band',
@@ -5519,6 +5534,7 @@ function currentPrimaryPlaySurfaceSnapshot() {
       latestRoutine ? `routine context ${latestRoutine.context_id} ${latestRoutine.resident} -> ${latestRoutine.suggested_action || latestRoutine.action} near ${latestRoutine.latest_project_visual_id !== 'none' ? latestRoutine.latest_project_visual_id : latestRoutine.latest_component_id !== 'none' ? latestRoutine.latest_component_id : latestRoutine.practice_id}` : 'routine context not visible yet',
       latestPresence ? `avatar presence ${latestPresence.presence_id} ${latestPresence.influence_type} near=${latestPresence.near_worksite} component=${latestPresence.component_id}` : 'avatar presence not linked to worksite yet',
       latestIntegrated ? `integrated chain ${latestIntegrated.integration_id} complete=${latestIntegrated.chain_complete} proposal=${latestIntegrated.proposal_id} practice=${latestIntegrated.practice_id} physics=${latestIntegrated.physics_id}` : 'integrated first-playable chain not visible yet',
+      objectChain.active ? `object chain ${objectChain.phase} next=${objectChain.next_action} response=${objectChain.response_id} proposal=${objectChain.proposal_id} resolution=${objectChain.resolution_id} recheck=${objectChain.recheck_result}` : 'object-objection chain not active yet',
     ],
     hidden_law_normal_view: false,
     avatar_direct_command: false,
@@ -5548,6 +5564,14 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     avatar_presence_id: snapshot.avatar_presence_id,
     integrated_loop_id: snapshot.integrated_loop_id,
     integrated_loop_complete: snapshot.integrated_loop_complete,
+    object_chain_active: snapshot.object_chain_active,
+    object_chain_phase: snapshot.object_chain_phase,
+    object_chain_next_action: snapshot.object_chain_next_action,
+    object_chain_response_id: snapshot.object_chain_response_id,
+    object_chain_proposal_id: snapshot.object_chain_proposal_id,
+    object_chain_resolution_id: snapshot.object_chain_resolution_id,
+    object_chain_recheck_response_id: snapshot.object_chain_recheck_response_id,
+    object_chain_recheck_result: snapshot.object_chain_recheck_result,
     reason,
     canvas_first: true,
   });
@@ -5562,6 +5586,14 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     avatar_presence_id: snapshot.avatar_presence_id,
     integrated_loop_id: snapshot.integrated_loop_id,
     integrated_loop_complete: snapshot.integrated_loop_complete,
+    object_chain_active: snapshot.object_chain_active,
+    object_chain_phase: snapshot.object_chain_phase,
+    object_chain_next_action: snapshot.object_chain_next_action,
+    object_chain_response_id: snapshot.object_chain_response_id,
+    object_chain_proposal_id: snapshot.object_chain_proposal_id,
+    object_chain_resolution_id: snapshot.object_chain_resolution_id,
+    object_chain_recheck_response_id: snapshot.object_chain_recheck_response_id,
+    object_chain_recheck_result: snapshot.object_chain_recheck_result,
     normal_view_hidden_law_exposed: false,
   });
   surface.actionPromptLedger.push({
@@ -5570,6 +5602,12 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     button: snapshot.player_next_button,
     action: snapshot.player_next_action,
     reason: snapshot.player_next_reason,
+    object_chain_phase: snapshot.object_chain_phase,
+    object_chain_next_action: snapshot.object_chain_next_action,
+    object_chain_response_id: snapshot.object_chain_response_id,
+    object_chain_proposal_id: snapshot.object_chain_proposal_id,
+    object_chain_resolution_id: snapshot.object_chain_resolution_id,
+    object_chain_recheck_result: snapshot.object_chain_recheck_result,
     direct_command: false,
   });
   surface.acceptanceReady = Boolean(
@@ -5647,7 +5685,7 @@ function runPrimaryPlaySurfaceLoop() {
 function formatPrimaryPlaySurface() {
   const surface = world.gamePrototypeWorldStage || ensurePrimaryPlaySurface();
   const snapshot = surface.latestSnapshot || currentPrimaryPlaySurfaceSnapshot();
-  const focus = surface.focusLedger.slice(-5).map(row => `${row.focus_id}: ${row.problem} / proposal=${row.proposal_id} / practice=${row.practice_id} / component=${row.component_id}`);
+  const focus = surface.focusLedger.slice(-5).map(row => `${row.focus_id}: ${row.problem} / proposal=${row.proposal_id} / practice=${row.practice_id} / component=${row.component_id} / object=${row.object_chain_phase || 'none'}`);
   return [
     `Phase: ${surface.phase}`,
     `Acceptance ready: ${surface.acceptanceReady ? 'yes' : 'no'}`,
@@ -5662,6 +5700,7 @@ function formatPrimaryPlaySurface() {
     `Latest lived physics: ${snapshot.latest_lived_physics_id} / component=${snapshot.latest_lived_physics_component_id} / rows=${snapshot.lived_physics_rows}`,
     `Routine context: ${snapshot.routine_context_id} / ${snapshot.routine_context_resident} -> ${snapshot.routine_context_suggested_action} / source=${snapshot.routine_context_source}`,
     `Avatar presence: ${snapshot.avatar_presence_id} / ${snapshot.avatar_presence_resident} near=${snapshot.avatar_presence_near_worksite} / component=${snapshot.avatar_presence_component_id} / influence=${snapshot.avatar_presence_influence}`,
+    `Object chain: active=${snapshot.object_chain_active ? 'yes' : 'no'} / phase=${snapshot.object_chain_phase} / next=${snapshot.object_chain_next_action} / response=${snapshot.object_chain_response_id} / proposal=${snapshot.object_chain_proposal_id} / resolution=${snapshot.object_chain_resolution_id} / recheck=${snapshot.object_chain_recheck_result}`,
     `Resource pressure: ${snapshot.resource_pressure.length ? snapshot.resource_pressure.join(', ') : 'none'}`,
     `Rows: focus=${surface.focusLedger.length}, cues=${surface.canvasCueLedger.length}, prompts=${surface.actionPromptLedger.length}`,
     `Boundary: ${surface.boundary}`,
@@ -14233,6 +14272,7 @@ function buildPrototypeAcceptanceReceipt() {
   const livedPracticeCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => (row.cues || []).some(cue => /lived physics/.test(cue))).length : 0;
   const integratedCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.integrated_loop_id && row.integrated_loop_id !== 'none' && (row.cues || []).some(cue => /integrated chain/.test(cue))).length : 0;
   const materialStateCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => (row.cues || []).some(cue => /material state/.test(cue)) && row.component_id && row.component_id !== 'none').length : 0;
+  const objectChainCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.object_chain_phase && row.object_chain_phase !== 'none' && (row.cues || []).some(cue => /object chain/.test(cue)) && row.normal_view_hidden_law_exposed === false).length : 0;
   const canvasSelectionRows = canvasSelection && canvasSelection.selectionLedger ? canvasSelection.selectionLedger.length : 0;
   const canvasSelectionCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.canvas_selection_id && row.canvas_selection_id !== 'none' && (row.cues || []).some(cue => /canvas selection/.test(cue))).length : 0;
   const worksiteRows = worksite ? worksite.watchLedger.length : 0;
@@ -14334,6 +14374,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'first_playable_walkthrough', pass: Boolean(walkthrough && walkthrough.acceptanceReady && walkthroughSteps >= walkthrough.requiredSteps.length && walkthroughLinks >= walkthrough.requiredSteps.length && walkthrough.noDirectCommand === true && walkthrough.noTechTreeUnlock === true && walkthrough.noHiddenLawNormalView === true), evidence: walkthrough ? `${walkthrough.phase}; steps=${walkthroughSteps}, links=${walkthroughLinks}` : 'not run' },
     { id: 'normal_play_action_rail', pass: Boolean(actionRail && actionRail.acceptanceReady && actionRailRows >= actionRail.verbs.length && actionRailOptions > 0 && actionRailFollowRows > 0 && actionRailFollowExpressionRows > 0 && actionRailFollowCalibratedRows > 0 && actionRailFollowRecoveryRows > 0 && actionRailFollowRecoveryExpressionRows > 0 && actionRail.playerLanguageOnly === true && actionRail.noDirectCommand === true && actionRail.noTechTreeUnlock === true), evidence: actionRail ? `actions=${actionRailRows}, optionSnapshots=${actionRailOptions}, follow=${actionRailFollowRows}, followExpression=${actionRailFollowExpressionRows}, calibrated=${actionRailFollowCalibratedRows}, followRecovery=${actionRailFollowRecoveryRows}, followRecoveryExpression=${actionRailFollowRecoveryExpressionRows}, verbs=${actionRail.verbs.join('/')}` : 'not run' },
     { id: 'object_objection_guided_next_step', pass: Boolean(actionRail && (objectGuidedOptionRows > 0 || objectGuidedFollowRows > 0)), evidence: actionRail ? `guidedOptions=${objectGuidedOptionRows}, guidedFollow=${objectGuidedFollowRows}` : 'not run' },
+    { id: 'object_objection_canvas_cue', pass: Boolean(worldStage && objectChainCanvasCueRows > 0), evidence: worldStage ? `objectChainCues=${objectChainCanvasCueRows}` : 'not run' },
     { id: 'player_mode_interface', pass: Boolean(playerMode && playerMode.acceptanceReady && playerModeSessions > 0 && playerModeVisibleCards >= 6 && playerMode.normalViewOnly === true && playerMode.debugPanelsHidden === true && playerMode.noDirectCommand === true && playerMode.noHiddenLawNormalView === true && playerMode.playerGlossesOnly === true), evidence: playerMode ? `enabled=${playerMode.enabled}, sessions=${playerModeSessions}, visibleCards=${playerModeVisibleCards}` : 'not run' },
     { id: 'player_movement_route', pass: Boolean(movementRoute && movementRoute.acceptanceReady && movementRouteRows > 0 && movementRouteSnapshots > 0 && movementRoute.routeLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.no_teleport === true && row.distance > 0) && movementRoute.noDirectCommand === true), evidence: movementRoute ? `rows=${movementRouteRows}, snapshots=${movementRouteSnapshots}` : 'not run' },
     { id: 'player_resident_encounter', pass: Boolean(residentEncounter && residentEncounter.acceptanceReady && residentEncounterRows > 0 && residentEncounterSnapshots > 0 && residentEncounter.encounterLedger.every(row => row.player_facing === true && row.no_llm === true && row.phrasebook_only === true && row.open_ended_language === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.source_history_preserved === true) && residentEncounter.noOpenEndedLanguage === true && residentEncounter.noDirectCommand === true), evidence: residentEncounter ? `rows=${residentEncounterRows}, snapshots=${residentEncounterSnapshots}` : 'not run' },
@@ -15447,9 +15488,9 @@ function draw() {
   ctx.fillRect(730, 35, 250 * survivalScore, 10);
   const stageSnapshot = currentPrimaryPlaySurfaceSnapshot();
   ctx.fillStyle = 'rgba(17,24,22,0.78)';
-  ctx.fillRect(28, 66, 984, 92);
+  ctx.fillRect(28, 66, 984, 116);
   ctx.strokeStyle = 'rgba(240,195,91,0.52)';
-  ctx.strokeRect(28, 66, 984, 92);
+  ctx.strokeRect(28, 66, 984, 116);
   ctx.fillStyle = '#f0c35b';
   ctx.font = '15px Optima, sans-serif';
   ctx.fillText(`Primary stage: ${stageSnapshot.stage_phase}`.slice(0, 82), 44, 90);
@@ -15460,7 +15501,8 @@ function draw() {
   ctx.fillText(`Resident ${stageSnapshot.selected_resident} | proposal ${stageSnapshot.active_proposal_id} | practice ${stageSnapshot.active_practice_name} | component ${stageSnapshot.active_component_id}`.slice(0, 104), 470, 90);
   ctx.fillText(`Physics ${stageSnapshot.latest_physics_id} | lived ${stageSnapshot.latest_lived_physics_id} | resources ${stageSnapshot.resource_pressure.length ? stageSnapshot.resource_pressure.join(', ') : 'stable'}`.slice(0, 82), 470, 112);
   ctx.fillText(`Routine ${stageSnapshot.routine_context_id}: ${stageSnapshot.routine_context_resident} -> ${stageSnapshot.routine_context_suggested_action} near ${stageSnapshot.routine_context_source}`.slice(0, 82), 470, 132);
-  ctx.fillText(`Integrated ${stageSnapshot.integrated_loop_id}: proposal ${stageSnapshot.integrated_loop_proposal_id} -> practice ${stageSnapshot.integrated_loop_practice_id} -> save ${stageSnapshot.integrated_loop_save_slot_id}/${stageSnapshot.integrated_loop_restore_slot_id}`.slice(0, 104), 44, 152);
+  ctx.fillText(`Object chain ${stageSnapshot.object_chain_phase}: next ${stageSnapshot.object_chain_next_action} | response ${stageSnapshot.object_chain_response_id} | proposal ${stageSnapshot.object_chain_proposal_id} | resolution ${stageSnapshot.object_chain_resolution_id}`.slice(0, 112), 44, 152);
+  ctx.fillText(`Integrated ${stageSnapshot.integrated_loop_id}: proposal ${stageSnapshot.integrated_loop_proposal_id} -> practice ${stageSnapshot.integrated_loop_practice_id} -> save ${stageSnapshot.integrated_loop_save_slot_id}/${stageSnapshot.integrated_loop_restore_slot_id}`.slice(0, 104), 44, 172);
 
   const materialWorld = world.gamePrototype3DWorld;
   if (materialWorld && materialWorld.components) {

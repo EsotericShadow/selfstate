@@ -633,3 +633,9 @@ The Player guide and normal action rail now derive a playable next step from the
 The `Follow` verb can also advance the next object-chain step through existing resident-mediated actions. It still preserves resident autonomy: Follow does not grant object permission, assign jobs, expose hidden law, or install a tech unlock.
 
 The acceptance gate is `object_objection_guided_next_step`. It requires a normal action option or Follow row carrying object-chain phase/source IDs while preserving no direct command, no hidden-law exposure, and no tech-tree unlock.
+
+## Prototype v0 object-objection primary surface/canvas cue update
+
+Object-objection chains now surface in the primary play snapshot and canvas cue ledger. When an `OIR -> VBP -> OIRR` chain is active, the normal player surface can show phase, next action, response ID, proposal ID, resolution ID, and recheck result without opening audit/debug panels.
+
+The acceptance gate is `object_objection_canvas_cue`. It requires an object-chain canvas cue in normal view while preserving the hidden-law boundary and resident-mediated chain state.

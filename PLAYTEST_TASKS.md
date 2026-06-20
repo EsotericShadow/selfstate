@@ -229,6 +229,11 @@
 137. Crowd a worksite before returning later and confirm the resident return greeting is more guarded while still preserving refusal and no-direct-command boundaries.
 138. Inspect Autonomous residents after a return and confirm Presence return memory lists source presence rows and preserved comfort history instead of recalculating from a blank state.
 139. Export acceptance and confirm `avatar_presence_persists_through_return` appears as a prototype requirement.
+140. Run First playable and confirm the session card includes an integrated causality row `FPI-...`.
+141. Inspect the integrated row and confirm it links ordinary pressure, resident test, proposal, practice, lived physics, material handling, save slot, and restore slot.
+142. Confirm the integrated row marks no direct player command, no hidden-law normal view, no tech-tree unlock, and no predeclared invention.
+143. Save after an integrated row exists, mutate the world, return the slot, and confirm Save / return shows integrated row count and latest integrated ID.
+144. Export acceptance and confirm `first_playable_session` requires at least one complete integrated causality row.
 
 ## Physics-to-practice slice playtests
 

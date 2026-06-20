@@ -134,6 +134,12 @@ Avatar worksite presence now participates in return-session continuity. Presence
 
 Return greetings can now reflect whether Gabriel was a helpful/familiar presence, a crowding pressure, a nearby witness, or absent from the worksite. This remains a condition-memory loop only: it does not command residents, transform material, expose hidden law, or erase the resident's ability to refuse.
 
+## Prototype v0 integrated first-playable causality update
+
+The first-playable session now writes an integrated causality row that links ordinary player pressure, resident-generated tests, resident proposals, physical handling, lived-action physics, emergent practice, save slot, and restore row into one inspectable chain.
+
+This is the current prototype direction: the player should be able to follow one small village loop from problem to action to material consequence to practice to return-session continuity without reading separate report-style panels. The chain remains bounded by no-direct-command, no hidden law in normal view, and no tech-tree unlock.
+
 ## Prototype v0 save-slot update
 
 The game prototype shell now includes browser-local prototype save slots. The player can save a slot, advance the autonomous simulation, return to the saved slot, and export a save receipt. This is intentionally scoped as prototype persistence evidence: it preserves meaningful village state, practice/proposal summaries, deep-time year, autonomous day, return log, and replay row counts without claiming production persistence.

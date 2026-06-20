@@ -24,6 +24,7 @@
 - One save/return loop.
 - One audit/replay mode.
 - One normal player-facing interface.
+- One integrated first-playable causality chain linking ordinary action, resident bottleneck/test, proposal, physical handling, lived physics, emergent practice, save, and restore.
 - One bounded resident language/gloss layer for local terms that emerge from grounded practice history.
 
 ## First prototype success condition
@@ -154,6 +155,26 @@ Required evidence:
 - no installed correct modern concept
 
 This is the preferred next milestone for prototype work. Do not add new research reports to satisfy it; improve the playable shell.
+
+## Added scope gate: Integrated first-playable causality chain
+
+The first-playable session must include an inspectable chain from player action to return continuity.
+
+Required evidence:
+
+- ordinary player action or pressure row
+- resident bottleneck or resident-generated test
+- resident proposal or board pressure
+- material handling row against a real component
+- lived-action physics row
+- emergent practice row with local name or imperfect gloss
+- save slot row
+- restore row
+- no direct player command
+- no hidden simulator law in normal view
+- no tech-tree unlock or installed modern concept
+
+This gate prevents the first playable from being a collection of isolated panels.
 
 ## Added scope gate: Resident routines use physical context
 

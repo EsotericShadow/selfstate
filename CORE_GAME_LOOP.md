@@ -48,6 +48,16 @@
 5. Social transmission spreads and mutates it.
 6. Maintenance cost, risk, usefulness, and belief determine survival.
 
+## Integrated first-playable causality loop
+
+1. The player performs normal village actions rather than a debug-only report step.
+2. Ordinary pressure creates or references a resident bottleneck.
+3. Residents generate a test or proposal from that bottleneck.
+4. A material action and lived physics row change or observe a real component.
+5. Repeated usefulness can update an emergent practice with local language.
+6. Save and return preserve the chain as source history.
+7. The first-playable session receipt exposes the single chain without exposing hidden simulator law or installing a modern concept.
+
 ## Resident language/gloss loop
 
 1. Residents repeatedly attend to a material, action, place, risk, or useful practice.

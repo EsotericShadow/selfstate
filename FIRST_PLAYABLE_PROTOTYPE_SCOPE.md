@@ -1155,6 +1155,9 @@ Acceptance requires:
 - exported acceptance includes `player_mode_visible_physics_follow_continuity`
 - save slots persist the Player Mode visible Physics Follow card fingerprint
 - return logs compare the restored visible Follow card through `player_mode_visible_physics_follow_save_return_continuity`
+- Return journal displays restored Player Mode visible Follow continuity as player-facing return history
+- QA readiness includes `return-journal-visible-physics-follow`
+- exported acceptance includes `return_journal_visible_physics_follow_continuity`
 - object and normal-test Follow chains keep priority before the Physics path branch
 - resident boundary/refusal behavior remains possible and recoverable with `Space`
 - no direct resident command, hidden-law normal-view exposure, or tech-tree unlock is introduced

@@ -184,7 +184,8 @@
 - Run the normal action rail loop and confirm the action-rail receipt reports both a ready `Physics path` row and at least one visible Physics Follow row with action id, happy-path id, body-expression id, save/return counts, no direct command, and no hidden-law exposure in normal view.
 - Enter Player mode after the rail loop and confirm a `visible physics follow continuity` card appears with the latest Follow row, action id, happy-path id, save/return counts, and body-expression id.
 - Save and return, then confirm the restored Player Mode visible-Follow fingerprint matches the saved fingerprint.
-- Export acceptance and confirm `player_mode_visible_physics_follow_continuity` and `player_mode_visible_physics_follow_save_return_continuity` pass only when that Player Mode card, action-rail Follow-visible-physics row, saved row, and restored match all exist.
+- Run Return journal and confirm it shows the restored visible-Follow id, Physics action id, body-expression id, and `match=yes`.
+- Export acceptance and confirm `player_mode_visible_physics_follow_continuity`, `player_mode_visible_physics_follow_save_return_continuity`, and `return_journal_visible_physics_follow_continuity` pass only when that Player Mode card, action-rail Follow-visible-physics row, saved row, restored match, and journal row all exist.
 
 ## Contact/joint constraint playtests
 
@@ -322,7 +323,7 @@
 - Confirm Player mode records a session row with no direct resident command and no hidden-law exposure in normal view.
 - Leave Player mode and confirm audit/reviewer surfaces are still recoverable explicitly.
 - Save and return after Player mode shows the visible Follow card, then confirm the Save / return card reports `playerModeVisibleFollow` slot and return rows with `match=yes`.
-- Run QA readiness and confirm `player-mode-visible-physics-follow` and `player-mode-visible-physics-follow-save-return` report the card, ready state, saved row, restored match, and Follow-visible-physics rows.
+- Run QA readiness and confirm `player-mode-visible-physics-follow`, `player-mode-visible-physics-follow-save-return`, and `return-journal-visible-physics-follow` report the card, ready state, saved row, restored match, journal row, and Follow-visible-physics rows.
 - Export acceptance and confirm `player_mode_interface`, `player_mode_visible_physics_follow_continuity`, and `player_mode_visible_physics_follow_save_return_continuity` appear as requirements after the Player mode loop runs.
 
 ## Resident proposal deck playtests
@@ -361,7 +362,8 @@
 - Confirm forward return sessions are distinct from save-slot restoration.
 - Confirm remembered residents, days away, save slot, restored year/day, and resource totals are visible.
 - Confirm lived-action physics counts are visible before save, after away time, and after save-slot restoration.
-- Export acceptance and confirm `return_journal` appears as a requirement after the journal loop runs.
+- Confirm restored Player Mode visible-Follow continuity appears with Follow id, Physics action id, body-expression id, and saved/restored match.
+- Export acceptance and confirm `return_journal` and `return_journal_visible_physics_follow_continuity` appear as requirements after the journal loop runs.
 
 ## First playable session playtests
 

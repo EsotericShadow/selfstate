@@ -9035,6 +9035,15 @@ function returnJournalSnapshot(label) {
     latest_restore_day: latestRestore ? latestRestore.restored_autonomous_day : 'none',
     latest_restore_project_visual_rows: latestRestore ? Number(latestRestore.restored_project_visual_rows || 0) : 0,
     latest_restore_project_visual_id: latestRestore ? latestRestore.restored_latest_project_visual_id || 'none' : 'none',
+    latest_slot_player_mode_visible_physics_follow_ready: latestSlot ? latestSlot.player_mode_visible_physics_follow_ready === true : false,
+    latest_slot_player_mode_visible_physics_follow_id: latestSlot ? latestSlot.player_mode_visible_physics_follow_id || 'none' : 'none',
+    latest_slot_player_mode_visible_physics_follow_action_id: latestSlot ? latestSlot.player_mode_visible_physics_follow_action_id || 'none' : 'none',
+    latest_slot_player_mode_visible_physics_follow_body_expression_id: latestSlot ? latestSlot.player_mode_visible_physics_follow_body_expression_id || 'none' : 'none',
+    latest_restore_player_mode_visible_physics_follow_ready: latestRestore ? latestRestore.restored_player_mode_visible_physics_follow_ready === true : false,
+    latest_restore_player_mode_visible_physics_follow_id: latestRestore ? latestRestore.restored_player_mode_visible_physics_follow_id || 'none' : 'none',
+    latest_restore_player_mode_visible_physics_follow_action_id: latestRestore ? latestRestore.restored_player_mode_visible_physics_follow_action_id || 'none' : 'none',
+    latest_restore_player_mode_visible_physics_follow_body_expression_id: latestRestore ? latestRestore.restored_player_mode_visible_physics_follow_body_expression_id || 'none' : 'none',
+    latest_restore_player_mode_visible_physics_follow_matches_saved: latestRestore ? latestRestore.restored_player_mode_visible_physics_follow_matches_saved === true : false,
     object_interaction_rows: objectInteraction && objectInteraction.interactionLedger ? objectInteraction.interactionLedger.length : 0,
     object_response_rows: objectInteraction && objectInteraction.responseLedger ? objectInteraction.responseLedger.length : 0,
     object_resolution_rows: objectResolutionRows,
@@ -9066,6 +9075,8 @@ function updateReturnJournalAcceptance() {
     latest.save_slots > 0 &&
     latest.save_returns > 0 &&
     latest.project_visual_rows > 0 &&
+    latest.latest_slot_player_mode_visible_physics_follow_ready === true &&
+    latest.latest_restore_player_mode_visible_physics_follow_matches_saved === true &&
     journal.journalLedger.every(row => row.forward_return_visible === true && row.save_restore_visible === true && row.direct_reset === false && row.hidden_law_normal_view === false) &&
     journal.forwardReturnVisible === true &&
     journal.saveRestoreVisible === true &&
@@ -9086,6 +9097,10 @@ function updateReturnJournalAcceptance() {
     object_recheck_response_rows: latest.object_recheck_response_rows,
     latest_object_resolution_id: latest.latest_object_resolution_id,
     latest_object_recheck_result: latest.latest_object_recheck_result,
+    player_mode_visible_physics_follow_id: latest.latest_restore_player_mode_visible_physics_follow_id,
+    player_mode_visible_physics_follow_action_id: latest.latest_restore_player_mode_visible_physics_follow_action_id,
+    player_mode_visible_physics_follow_body_expression_id: latest.latest_restore_player_mode_visible_physics_follow_body_expression_id,
+    player_mode_visible_physics_follow_matches_saved: latest.latest_restore_player_mode_visible_physics_follow_matches_saved,
     active_slot: latest.active_slot,
     boundary: journal.boundary,
   };
@@ -9173,6 +9188,11 @@ function runReturnJournalLoop() {
     latest_restore_object_resolution_rows: afterRestore.latest_restore_object_resolution_rows,
     latest_restore_object_recheck_response_rows: afterRestore.latest_restore_object_recheck_response_rows,
     latest_restore_object_resolution_id: afterRestore.latest_restore_object_resolution_id,
+    latest_slot_player_mode_visible_physics_follow_id: afterRestore.latest_slot_player_mode_visible_physics_follow_id,
+    latest_restore_player_mode_visible_physics_follow_id: afterRestore.latest_restore_player_mode_visible_physics_follow_id,
+    latest_restore_player_mode_visible_physics_follow_action_id: afterRestore.latest_restore_player_mode_visible_physics_follow_action_id,
+    latest_restore_player_mode_visible_physics_follow_body_expression_id: afterRestore.latest_restore_player_mode_visible_physics_follow_body_expression_id,
+    latest_restore_player_mode_visible_physics_follow_matches_saved: afterRestore.latest_restore_player_mode_visible_physics_follow_matches_saved,
     restore_slot: afterRestore.latest_restore_slot,
     restore_year: afterRestore.latest_restore_year,
     restore_day: afterRestore.latest_restore_day,
@@ -9188,7 +9208,7 @@ function runReturnJournalLoop() {
     sourceBeliefId: row.journal_id,
     materials: ['saved_state', 'away_time', 'resident_memory', 'lived_practice_physics', 'project_visual_construction'],
     publicObservation: `away ${row.days_away} day(s), restored ${row.restore_slot}`,
-    residentInterpretation: `${row.remembered_residents.length} resident(s) remembered the absence; lived physics rows ${row.lived_practice_physics_before}->${row.lived_practice_physics_after_restore}; project visuals ${row.project_visual_rows_before}->${row.project_visual_rows_after_restore}`,
+    residentInterpretation: `${row.remembered_residents.length} resident(s) remembered the absence; lived physics rows ${row.lived_practice_physics_before}->${row.lived_practice_physics_after_restore}; project visuals ${row.project_visual_rows_before}->${row.project_visual_rows_after_restore}; visible Follow ${row.latest_restore_player_mode_visible_physics_follow_id}`,
     materialTransformation: 'return journal recorded continuity, lived-action physics, and project construction visual evidence only; no material resource spawned',
     timeCost: row.days_away,
     workCost: 0,
@@ -9212,7 +9232,7 @@ function runReturnJournalLoop() {
 function formatReturnJournal() {
   const journal = world.gamePrototypeReturnJournal || ensureReturnJournal();
   const latest = journal.snapshotLedger.length ? journal.snapshotLedger[journal.snapshotLedger.length - 1].snapshot : returnJournalSnapshot('current');
-  const rows = journal.journalLedger.slice(-6).map(row => `${row.journal_id}: forward=${row.forward_return_id} away=${row.days_away}d remembered=${row.remembered_residents.join('+') || 'none'} restored=${row.restore_slot}; resources ${row.resource_total_before}->${row.resource_total_after_away}->${row.resource_total_after_restore}; livedPhysics ${row.lived_practice_physics_before || 0}->${row.lived_practice_physics_after_restore || 0}; projectVisuals ${row.project_visual_rows_before || 0}->${row.project_visual_rows_after_restore || 0}/${row.latest_project_visual_after_restore || 'none'}; objectChain resolutions ${row.object_resolution_rows_before || 0}->${row.object_resolution_rows_after_restore || 0}/${row.latest_object_resolution_after_restore || 'none'} rechecks=${row.object_recheck_response_rows_after_restore || 0}/${row.latest_object_recheck_result_after_restore || 'none'}`);
+  const rows = journal.journalLedger.slice(-6).map(row => `${row.journal_id}: forward=${row.forward_return_id} away=${row.days_away}d remembered=${row.remembered_residents.join('+') || 'none'} restored=${row.restore_slot}; resources ${row.resource_total_before}->${row.resource_total_after_away}->${row.resource_total_after_restore}; livedPhysics ${row.lived_practice_physics_before || 0}->${row.lived_practice_physics_after_restore || 0}; projectVisuals ${row.project_visual_rows_before || 0}->${row.project_visual_rows_after_restore || 0}/${row.latest_project_visual_after_restore || 'none'}; visibleFollow=${row.latest_restore_player_mode_visible_physics_follow_id || 'none'}/${row.latest_restore_player_mode_visible_physics_follow_action_id || 'none'} body=${row.latest_restore_player_mode_visible_physics_follow_body_expression_id || 'none'} match=${row.latest_restore_player_mode_visible_physics_follow_matches_saved ? 'yes' : 'no'}; objectChain resolutions ${row.object_resolution_rows_before || 0}->${row.object_resolution_rows_after_restore || 0}/${row.latest_object_resolution_after_restore || 'none'} rechecks=${row.object_recheck_response_rows_after_restore || 0}/${row.latest_object_recheck_result_after_restore || 'none'}`);
   return [
     `Acceptance ready: ${journal.acceptanceReady ? 'yes' : 'no'}`,
     `Rows: ${journal.journalLedger.length} / snapshots=${journal.snapshotLedger.length}`,
@@ -9222,6 +9242,7 @@ function formatReturnJournal() {
     `Latest restore: slot=${latest.latest_restore_slot}; year=${latest.latest_restore_year}; day=${latest.latest_restore_day}`,
     `Lived physics rows: current=${latest.lived_practice_physics_rows || 0}; slot=${latest.latest_slot_lived_practice_physics_rows || 0}; latest=${latest.latest_lived_practice_physics_id || 'none'}`,
     `Project visuals: current=${latest.project_visual_rows || 0}; slot=${latest.latest_slot_project_visual_rows || 0}/${latest.latest_slot_project_visual_id || 'none'}; forwardAdded=${latest.latest_forward_project_visual_rows_added || 0}/${latest.latest_forward_project_visual_id || 'none'}; latest=${latest.latest_project_visual_id || 'none'}`,
+    `Player Mode visible Follow: slot=${latest.latest_slot_player_mode_visible_physics_follow_id || 'none'}/${latest.latest_slot_player_mode_visible_physics_follow_action_id || 'none'}; restored=${latest.latest_restore_player_mode_visible_physics_follow_id || 'none'}/${latest.latest_restore_player_mode_visible_physics_follow_action_id || 'none'} body=${latest.latest_restore_player_mode_visible_physics_follow_body_expression_id || 'none'} match=${latest.latest_restore_player_mode_visible_physics_follow_matches_saved ? 'yes' : 'no'}`,
     `Object objection chain: current resolutions=${latest.object_resolution_rows || 0}/${latest.latest_object_resolution_id || 'none'}; rechecks=${latest.object_recheck_response_rows || 0}/${latest.latest_object_recheck_response_id || 'none'} result=${latest.latest_object_recheck_result || 'none'}; slot=${latest.latest_slot_object_resolution_rows || 0}/${latest.latest_slot_object_resolution_id || 'none'}; restored=${latest.latest_restore_object_resolution_rows || 0}/${latest.latest_restore_object_resolution_id || 'none'}`,
     `Remembered residents: ${latest.latest_forward_remembered.join(', ') || 'none'}`,
     `No direct reset in normal view: ${journal.noDirectReset ? 'yes' : 'no'}`,
@@ -15941,6 +15962,7 @@ function runPrototypeQASmoke() {
     returnJournalReady: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.acceptanceReady === true : false,
     returnJournalRows: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.journalLedger.length : 0,
     returnJournalSnapshots: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.snapshotLedger.length : 0,
+    returnJournalVisiblePhysicsFollowRows: world.gamePrototypeReturnJournal && world.gamePrototypeReturnJournal.journalLedger ? world.gamePrototypeReturnJournal.journalLedger.filter(row => row.latest_restore_player_mode_visible_physics_follow_matches_saved === true && row.latest_restore_player_mode_visible_physics_follow_id && row.latest_restore_player_mode_visible_physics_follow_id !== 'none' && row.latest_restore_player_mode_visible_physics_follow_body_expression_id && row.latest_restore_player_mode_visible_physics_follow_body_expression_id !== 'none').length : 0,
     playSessionReady: world.gamePrototypePlaySession ? world.gamePrototypePlaySession.acceptanceReady === true : false,
     playSessionSteps: world.gamePrototypePlaySession ? world.gamePrototypePlaySession.stepLedger.length : 0,
     playSessionSnapshots: world.gamePrototypePlaySession ? world.gamePrototypePlaySession.snapshotLedger.length : 0,
@@ -15981,7 +16003,7 @@ function runPrototypeQASmoke() {
     { id: 'resident-proposal-deck', pass: Boolean(world.gamePrototypeProposalDeck && savedCounts.proposalDeckReady && savedCounts.proposalDeckCards > 0 && savedCounts.proposalDeckActions >= 3 && world.gamePrototypeProposalDeck.avatarCannotForce === true && world.gamePrototypeProposalDeck.noDirectCommand === true && world.gamePrototypeProposalDeck.noHiddenLawNormalView === true), evidence: `${savedCounts.proposalDeckCards} card snapshot(s), ${savedCounts.proposalDeckActions} deck action(s)` },
     { id: 'lived-practice-loop', pass: Boolean(world.gamePrototypeLivedPractice && savedCounts.livedPracticeReady && savedCounts.livedPracticeRows >= 4 && savedCounts.livedPracticeSnapshots > 0 && savedCounts.livedPracticePhysicsRows >= 4 && savedCounts.livedPracticeCanvasCueRows > 0 && savedCounts.livedPracticePhysicalCausalityReady && world.gamePrototypeLivedPractice.noDirectCommand === true && world.gamePrototypeLivedPractice.noHiddenLawNormalView === true && world.gamePrototypeLivedPractice.noPredeclaredTechTree === true), evidence: `${savedCounts.livedPracticeRows} lived action row(s), ${savedCounts.livedPracticeSnapshots} practice snapshot(s), ${savedCounts.livedPracticePhysicsRows} lived physics row(s), ${savedCounts.livedPracticeCanvasCueRows} canvas cue row(s)` },
     { id: 'resident-worksite', pass: Boolean(world.gamePrototypeWorksite && savedCounts.worksiteReady && savedCounts.worksiteRows >= 2 && savedCounts.worksiteSnapshots > 0 && world.gamePrototypeWorksite.avatarCannotAssignJobs === true && world.gamePrototypeWorksite.noDirectCommand === true && world.gamePrototypeWorksite.noHiddenLawNormalView === true && world.gamePrototypeWorksite.noResourceSpawning === true), evidence: `${savedCounts.worksiteRows} worksite watch row(s), ${savedCounts.worksiteSnapshots} snapshot(s)` },
-    { id: 'return-journal', pass: Boolean(world.gamePrototypeReturnJournal && savedCounts.returnJournalReady && savedCounts.returnJournalRows > 0 && savedCounts.returnJournalSnapshots >= 3 && world.gamePrototypeReturnJournal.forwardReturnVisible === true && world.gamePrototypeReturnJournal.saveRestoreVisible === true && world.gamePrototypeReturnJournal.noDirectReset === true && world.gamePrototypeReturnJournal.noHiddenLawNormalView === true), evidence: `${savedCounts.returnJournalRows} journal row(s), ${savedCounts.returnJournalSnapshots} snapshot(s)` },
+    { id: 'return-journal', pass: Boolean(world.gamePrototypeReturnJournal && savedCounts.returnJournalReady && savedCounts.returnJournalRows > 0 && savedCounts.returnJournalSnapshots >= 3 && savedCounts.returnJournalVisiblePhysicsFollowRows > 0 && world.gamePrototypeReturnJournal.forwardReturnVisible === true && world.gamePrototypeReturnJournal.saveRestoreVisible === true && world.gamePrototypeReturnJournal.noDirectReset === true && world.gamePrototypeReturnJournal.noHiddenLawNormalView === true), evidence: `${savedCounts.returnJournalRows} journal row(s), ${savedCounts.returnJournalSnapshots} snapshot(s), visibleFollow=${savedCounts.returnJournalVisiblePhysicsFollowRows}` },
     { id: 'first-playable-session', pass: Boolean(world.gamePrototypePlaySession && savedCounts.playSessionReady && savedCounts.playSessionSteps >= world.gamePrototypePlaySession.requiredSteps.length && savedCounts.playSessionSnapshots >= world.gamePrototypePlaySession.requiredSteps.length && savedCounts.actionRailPhysicsPathRows > 0 && savedCounts.physicsPathSaveRows > 0 && savedCounts.physicsPathRestoreRows > 0 && savedCounts.primaryPhysicsPathCueRows > 0 && savedCounts.primaryPhysicsPathSaveRows > 0 && savedCounts.primaryPhysicsPathRestoreRows > 0 && world.gamePrototypePlaySession.stepLedger.some(row => row.step_id === 'physics_path' && row.latest_ambient_happy_path_ready === true && row.latest_normal_physics_path_ready === true) && world.gamePrototypePlaySession.stepLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false)), evidence: `${savedCounts.playSessionSteps} session step(s), ${savedCounts.playSessionSnapshots} snapshot(s), physicsPath=${savedCounts.actionRailPhysicsPathRows}, saved=${savedCounts.physicsPathSaveRows}, restored=${savedCounts.physicsPathRestoreRows}, visibleCue=${savedCounts.primaryPhysicsPathCueRows}, visibleSaved=${savedCounts.primaryPhysicsPathSaveRows}, visibleRestored=${savedCounts.primaryPhysicsPathRestoreRows}` },
     { id: 'terrain-physics-substrate', pass: Boolean(world.gamePrototypeTerrain && savedCounts.terrainRows > 0 && savedCounts.terrainFlowRows > 0 && savedCounts.terrainSupportRows > 0 && world.gamePrototypeTerrain.terrainLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.terrainRows} terrain step(s), ${savedCounts.terrainFlowRows} flow row(s), ${savedCounts.terrainSupportRows} support row(s)` },
     { id: 'tool-work-physics', pass: Boolean(world.gamePrototypeTools && savedCounts.toolUseRows > 0 && savedCounts.toolWearRows > 0 && world.gamePrototypeTools.useLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.toolUseRows} use row(s), ${savedCounts.toolWearRows} wear row(s), ${savedCounts.toolFailureRows} failure row(s), ${savedCounts.toolRepairRows} repair row(s)` },
@@ -16084,6 +16106,9 @@ function browserQaReadinessChecks() {
   const playerModeVisiblePhysicsFollowRestoreRows = saves && saves.returnLog
     ? saves.returnLog.filter(row => row.restored_player_mode_visible_physics_follow_matches_saved === true && row.restored_player_mode_visible_physics_follow_ready === true).length
     : 0;
+  const returnJournalVisiblePhysicsFollowRows = returnJournal && returnJournal.journalLedger
+    ? returnJournal.journalLedger.filter(row => row.latest_restore_player_mode_visible_physics_follow_matches_saved === true && row.latest_restore_player_mode_visible_physics_follow_id && row.latest_restore_player_mode_visible_physics_follow_id !== 'none' && row.latest_restore_player_mode_visible_physics_follow_body_expression_id && row.latest_restore_player_mode_visible_physics_follow_body_expression_id !== 'none').length
+    : 0;
   const readiness = [
     {
       id: 'normal-player-surface',
@@ -16102,6 +16127,12 @@ function browserQaReadinessChecks() {
       pass: Boolean(playerModeVisiblePhysicsFollowSaveRows > 0 && playerModeVisiblePhysicsFollowRestoreRows > 0),
       evidence: `saved=${playerModeVisiblePhysicsFollowSaveRows}, restoredMatches=${playerModeVisiblePhysicsFollowRestoreRows}`,
       next_action: 'runPlayerModeInterfaceLoop then save/return or export acceptance',
+    },
+    {
+      id: 'return-journal-visible-physics-follow',
+      pass: Boolean(returnJournal && returnJournal.acceptanceReady && returnJournalVisiblePhysicsFollowRows > 0),
+      evidence: `returnJournal=${returnJournal ? returnJournal.acceptanceReady === true : false}, visibleFollowRows=${returnJournalVisiblePhysicsFollowRows}`,
+      next_action: 'runReturnJournalLoop after visible Physics Follow save/return',
     },
     {
       id: 'canvas-primary-surface',
@@ -17464,6 +17495,7 @@ function buildPrototypeAcceptanceReceipt() {
   const worksiteSnapshots = worksite ? worksite.snapshotLedger.length : 0;
   const returnJournalRows = returnJournal ? returnJournal.journalLedger.length : 0;
   const returnJournalSnapshots = returnJournal ? returnJournal.snapshotLedger.length : 0;
+  const returnJournalVisiblePhysicsFollowRows = returnJournal && returnJournal.journalLedger ? returnJournal.journalLedger.filter(row => row.latest_restore_player_mode_visible_physics_follow_matches_saved === true && row.latest_restore_player_mode_visible_physics_follow_id && row.latest_restore_player_mode_visible_physics_follow_id !== 'none' && row.latest_restore_player_mode_visible_physics_follow_body_expression_id && row.latest_restore_player_mode_visible_physics_follow_body_expression_id !== 'none').length : 0;
   const playSessionSteps = playSession ? playSession.stepLedger.length : 0;
   const playSessionSnapshots = playSession ? playSession.snapshotLedger.length : 0;
   const playSessionIntegratedRows = playSession && playSession.integratedLoopLedger ? playSession.integratedLoopLedger.length : 0;
@@ -17643,7 +17675,8 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'resident_proposal_deck', pass: Boolean(proposalDeck && proposalDeck.acceptanceReady && proposalDeckCards > 0 && proposalDeckActions >= 3 && proposalDeck.avatarCannotForce === true && proposalDeck.noDirectCommand === true && proposalDeck.noHiddenLawNormalView === true && proposalDeck.playerGlossesOnly === true), evidence: proposalDeck ? `cardSnapshots=${proposalDeckCards}, actions=${proposalDeckActions}` : 'not run' },
     { id: 'lived_practice_loop', pass: Boolean(livedPractice && livedPractice.acceptanceReady && livedPracticeRows >= 4 && livedPracticeSnapshots > 0 && livedPracticePhysicsRows >= 4 && livedPracticeCanvasCueRows > 0 && livedPractice.physicalCausalityReady === true && livedPractice.noDirectCommand === true && livedPractice.noHiddenLawNormalView === true && livedPractice.noPredeclaredTechTree === true && livedPractice.noCorrectConceptInstalled === true), evidence: livedPractice ? `actions=${livedPracticeRows}, snapshots=${livedPracticeSnapshots}, livedPhysics=${livedPracticePhysicsRows}, canvasCues=${livedPracticeCanvasCueRows}` : 'not run' },
     { id: 'resident_worksite', pass: Boolean(worksite && worksite.acceptanceReady && worksiteRows >= 2 && worksiteSnapshots > 0 && worksite.avatarCannotAssignJobs === true && worksite.noDirectCommand === true && worksite.noHiddenLawNormalView === true && worksite.noResourceSpawning === true), evidence: worksite ? `watchRows=${worksiteRows}, snapshots=${worksiteSnapshots}` : 'not run' },
-    { id: 'return_journal', pass: Boolean(returnJournal && returnJournal.acceptanceReady && returnJournalRows > 0 && returnJournalSnapshots >= 3 && returnJournal.forwardReturnVisible === true && returnJournal.saveRestoreVisible === true && returnJournal.noDirectReset === true && returnJournal.noHiddenLawNormalView === true), evidence: returnJournal ? `rows=${returnJournalRows}, snapshots=${returnJournalSnapshots}` : 'not run' },
+    { id: 'return_journal', pass: Boolean(returnJournal && returnJournal.acceptanceReady && returnJournalRows > 0 && returnJournalSnapshots >= 3 && returnJournalVisiblePhysicsFollowRows > 0 && returnJournal.forwardReturnVisible === true && returnJournal.saveRestoreVisible === true && returnJournal.noDirectReset === true && returnJournal.noHiddenLawNormalView === true), evidence: returnJournal ? `rows=${returnJournalRows}, snapshots=${returnJournalSnapshots}, visibleFollow=${returnJournalVisiblePhysicsFollowRows}` : 'not run' },
+    { id: 'return_journal_visible_physics_follow_continuity', pass: Boolean(returnJournal && returnJournalVisiblePhysicsFollowRows > 0 && returnJournal.forwardReturnVisible === true && returnJournal.saveRestoreVisible === true && returnJournal.noDirectReset === true && returnJournal.noHiddenLawNormalView === true), evidence: returnJournal ? `visibleFollowRows=${returnJournalVisiblePhysicsFollowRows}` : 'not run' },
     { id: 'first_playable_session', pass: Boolean(playSession && playSession.acceptanceReady && playSessionSteps >= playSession.requiredSteps.length && playSessionSnapshots >= playSession.requiredSteps.length && playSessionIntegratedCompleteRows > 0 && livedPracticePhysicsRows > 0 && normalPlayAmbientHappyPathReadyRows > 0 && actionRailPhysicsPathRows > 0 && normalPlayPhysicsPathSaveRows > 0 && normalPlayPhysicsPathRestoreRows > 0 && playSession.stepLedger.some(row => row.step_id === 'physics_path' && row.latest_ambient_happy_path_ready === true && row.latest_normal_physics_path_ready === true && row.latest_normal_physics_path_save_slot_id && row.latest_normal_physics_path_save_slot_id !== 'none' && row.latest_normal_physics_path_restore_slot_id && row.latest_normal_physics_path_restore_slot_id !== 'none' && row.latest_normal_physics_path_body_expression_id && row.latest_normal_physics_path_body_expression_id !== 'none') && playSession.stepLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false) && playSession.noDirectCommand === true && playSession.noHiddenLawNormalView === true && playSession.noTechTreeUnlock === true), evidence: playSession ? `steps=${playSessionSteps}/${playSession.requiredSteps.length}, snapshots=${playSessionSnapshots}, integrated=${playSessionIntegratedCompleteRows}/${playSessionIntegratedRows}, livedPhysics=${livedPracticePhysicsRows}, ambientHappy=${normalPlayAmbientHappyPathReadyRows}, physicsPath=${actionRailPhysicsPathRows}, saved=${normalPlayPhysicsPathSaveRows}, restored=${normalPlayPhysicsPathRestoreRows}` : 'not run' },
     { id: 'ten_minute_playable_loop', pass: Boolean(playSession && playSession.tenMinuteAcceptanceReady === true && playSessionTenMinuteRows > 0 && playSessionTenMinuteCompleteRows > 0), evidence: playSession ? `rows=${playSessionTenMinuteRows}, complete=${playSessionTenMinuteCompleteRows}, ready=${playSession.tenMinuteAcceptanceReady === true}` : 'not run' },
     { id: 'terrain_physics_substrate', pass: Boolean(terrain && terrainRows > 0 && terrainFlowRows > 0 && terrainSupportRows > 0 && terrain.terrainLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${terrainRows} terrain step(s), ${terrainFlowRows} flow row(s), ${terrainSupportRows} support row(s)` },

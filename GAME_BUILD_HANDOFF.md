@@ -888,3 +888,9 @@ The normal action options also mark `Follow` as recommended for unfinished visib
 ## Prototype v0 Follow shell hook update
 
 The static prototype control surface now exposes `Follow` and `Space` beside `Physics path`. The QA hook manifest also lists `runNormalPlayFollow` and `runNormalPlaySpace`, so the guide-recommended Follow path is available as a direct shell action and remains visible to hook audits.
+
+## Prototype v0 normal rail visible Physics Follow evidence update
+
+The automatic normal action rail loop now finishes the visible Physics-path evidence path when it runs the full normal verb sequence. After normal verbs are present, the rail performs a bounded Follow completion pass if no Follow row yet carries visible Physics path evidence.
+
+The action-rail receipt now reports ready Physics path rows, visible Physics Follow rows, and the latest completion evidence. Action rows also surface the visible Physics path phase, action id, happy-path id, save/return counts, and body-expression id. This keeps the proof inside ordinary play: the normal loop must create a playable Follow-visible-physics row without direct resident command, hidden-law exposure in normal view, or a tech-tree unlock.

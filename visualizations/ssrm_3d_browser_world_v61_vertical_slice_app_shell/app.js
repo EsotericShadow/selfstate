@@ -6878,9 +6878,13 @@ function normalPlayOptions() {
 function updateNormalPlayActionRailAcceptance() {
   const rail = ensureNormalPlayActionRail();
   const verbs = new Set(rail.actionLedger.map(row => row.verb));
+  const physicsPathRows = normalRailReadyPhysicsPathRows(rail);
+  const visiblePhysicsFollowRows = normalRailVisiblePhysicsFollowRows(rail);
   rail.acceptanceReady = Boolean(
     rail.verbs.every(verb => verbs.has(verb)) &&
     rail.actionLedger.length >= rail.verbs.length &&
+    physicsPathRows > 0 &&
+    visiblePhysicsFollowRows > 0 &&
     rail.actionLedger.every(row => row.player_language === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false) &&
     rail.optionLedger.length > 0 &&
     rail.noDirectCommand === true &&
@@ -6894,10 +6898,46 @@ function updateNormalPlayActionRailAcceptance() {
     option_rows: rail.optionLedger.length,
     follow_rows: rail.followChainLedger.length,
     follow_recovery_rows: rail.followRecoveryLedger.length,
+    physics_path_rows: physicsPathRows,
+    visible_physics_follow_rows: visiblePhysicsFollowRows,
+    visible_physics_follow_evidence: rail.visiblePhysicsFollowEvidence || null,
     latest_options: normalPlayOptions(),
     boundary: rail.boundary,
   };
   return rail.acceptanceReady;
+}
+
+function normalRailReadyPhysicsPathRows(rail) {
+  if (!rail || !rail.actionLedger) return 0;
+  return rail.actionLedger.filter(row => (
+    row.verb === 'physics_path' &&
+    row.physics_path_happy_path_id &&
+    row.physics_path_happy_path_id !== 'none' &&
+    row.physics_path_ready === true &&
+    row.physics_path_save_slot_id &&
+    row.physics_path_save_slot_id !== 'none' &&
+    row.physics_path_restore_slot_id &&
+    row.physics_path_restore_slot_id !== 'none' &&
+    row.physics_path_body_expression_id &&
+    row.physics_path_body_expression_id !== 'none' &&
+    row.player_language === true &&
+    row.avatar_direct_command === false &&
+    row.hidden_law_normal_view === false
+  )).length;
+}
+
+function normalRailVisiblePhysicsFollowRows(rail) {
+  if (!rail || !rail.followChainLedger) return 0;
+  return rail.followChainLedger.filter(row => (
+    row.visible_physics_path_phase_after &&
+    row.visible_physics_path_phase_after !== 'none' &&
+    row.visible_physics_path_action_id &&
+    row.visible_physics_path_action_id !== 'none' &&
+    row.visible_physics_path_body_expression_id &&
+    row.visible_physics_path_body_expression_id !== 'none' &&
+    row.avatar_direct_command === false &&
+    row.hidden_law_normal_view === false
+  )).length;
 }
 
 function normalPlayDiscoveryActionFor(verb, latestManipulation) {
@@ -7497,6 +7537,8 @@ function runNormalPlayAction(verb) {
     latestManipulation,
   });
   const normalTestChain = latestNormalTestChainState();
+  const visiblePhysicsPath = latestVisiblePhysicsPathChainState();
+  const visiblePhysicsPathFollow = latestFollowChain && latestFollowChain.visible_physics_path_action_id && latestFollowChain.visible_physics_path_action_id !== 'none' ? latestFollowChain : null;
   const row = {
     action_id: normalActionId,
     verb: option.verb,
@@ -7556,6 +7598,15 @@ function runNormalPlayAction(verb) {
     normal_test_chain_action_id: normalTestChain.action_id,
     normal_test_chain_test_id: normalTestChain.test_id,
     normal_test_chain_proposal_id: normalTestChain.proposal_id,
+    visible_physics_path_phase: visiblePhysicsPathFollow ? visiblePhysicsPathFollow.visible_physics_path_phase_after || visiblePhysicsPath.phase : visiblePhysicsPath.phase,
+    visible_physics_path_next_action: visiblePhysicsPathFollow ? visiblePhysicsPathFollow.visible_physics_path_next_action || visiblePhysicsPath.next_action : visiblePhysicsPath.next_action,
+    visible_physics_path_action_id: visiblePhysicsPathFollow ? visiblePhysicsPathFollow.visible_physics_path_action_id || visiblePhysicsPath.action_id : visiblePhysicsPath.action_id,
+    visible_physics_path_happy_path_id: visiblePhysicsPathFollow ? visiblePhysicsPathFollow.visible_physics_path_happy_path_id || visiblePhysicsPath.happy_path_id : visiblePhysicsPath.happy_path_id,
+    visible_physics_path_cue_id: visiblePhysicsPathFollow ? visiblePhysicsPathFollow.visible_physics_path_cue_id || visiblePhysicsPath.cue_id : visiblePhysicsPath.cue_id,
+    visible_physics_path_saved_rows: visiblePhysicsPathFollow ? visiblePhysicsPathFollow.visible_physics_path_saved_rows || visiblePhysicsPath.saved_rows : visiblePhysicsPath.saved_rows,
+    visible_physics_path_restored_rows: visiblePhysicsPathFollow ? visiblePhysicsPathFollow.visible_physics_path_restored_rows || visiblePhysicsPath.restored_rows : visiblePhysicsPath.restored_rows,
+    visible_physics_path_body_expression_id: visiblePhysicsPathFollow ? visiblePhysicsPathFollow.visible_physics_path_body_expression_id || visiblePhysicsPath.body_expression_id : visiblePhysicsPath.body_expression_id,
+    visible_physics_path_match: visiblePhysicsPathFollow ? visiblePhysicsPathFollow.visible_physics_path_match === true : visiblePhysicsPath.match === true,
     material_handling_rows: manipulationLoop && manipulationLoop.actionLedger ? manipulationLoop.actionLedger.length : 0,
     material_handling_practice_links: manipulationLoop && manipulationLoop.practiceLinks ? manipulationLoop.practiceLinks.length : 0,
     save_slot_id: evidence.save_slot_id,
@@ -7696,6 +7747,48 @@ function runNormalPlayPhysicsPath() {
   return log('runNormalPlayPhysicsPath', { ready: rail.acceptanceReady, pathReady: row.physics_path_ready, actionId: row.action_id, happyPath: row.physics_path_happy_path_id, proposal: row.proposal_id });
 }
 
+function ensureNormalRailVisiblePhysicsFollowEvidence() {
+  const rail = ensureNormalPlayActionRail();
+  const attempts = [];
+  const maxAttempts = 6;
+  for (let attempt = 0; attempt < maxAttempts && normalRailVisiblePhysicsFollowRows(rail) === 0; attempt += 1) {
+    const before = latestVisiblePhysicsPathChainState();
+    if (!before.active || before.phase === 'none' || before.phase === 'visible physics path seed') {
+      const receipt = runNormalPlayPhysicsPath();
+      attempts.push({
+        attempt: attempt + 1,
+        phase_before: before.phase,
+        action: 'runNormalPlayPhysicsPath',
+        result: receipt && receipt.event ? receipt.event : 'physics_path',
+      });
+    } else {
+      const receipt = runNormalPlayFollowChain();
+      const latestFollow = rail.followChainLedger.length ? rail.followChainLedger[rail.followChainLedger.length - 1] : null;
+      attempts.push({
+        attempt: attempt + 1,
+        phase_before: before.phase,
+        action: latestFollow ? latestFollow.chosen_action : 'runNormalPlayFollowChain',
+        result: receipt && receipt.event ? receipt.event : 'follow_chain',
+        follow_id: latestFollow ? latestFollow.follow_id : 'none',
+        resident_allowed_follow: latestFollow ? latestFollow.resident_allowed_follow !== false : true,
+      });
+      if (latestFollow && latestFollow.resident_allowed_follow === false) runNormalPlayGiveSpace();
+    }
+  }
+  const after = latestVisiblePhysicsPathChainState();
+  rail.visiblePhysicsFollowEvidence = {
+    rows: normalRailVisiblePhysicsFollowRows(rail),
+    attempts: attempts.length,
+    phase_after: after.phase,
+    action_id: after.action_id,
+    happy_path_id: after.happy_path_id,
+    body_expression_id: after.body_expression_id,
+    match: after.match === true,
+    attempted_actions: attempts,
+  };
+  return rail.visiblePhysicsFollowEvidence;
+}
+
 function runNormalPlayActionRailLoop() {
   const rail = ensureNormalPlayActionRail();
   rail.verbs.forEach(verb => {
@@ -7704,22 +7797,24 @@ function runNormalPlayActionRailLoop() {
       else runNormalPlayAction(verb);
     }
   });
+  ensureNormalRailVisiblePhysicsFollowEvidence();
   updateNormalPlayActionRailAcceptance();
   const currentRail = ensureNormalPlayActionRail();
-  return log('runNormalPlayActionRailLoop', { ready: currentRail.acceptanceReady, actionRows: currentRail.actionLedger.length, optionRows: currentRail.optionLedger.length });
+  return log('runNormalPlayActionRailLoop', { ready: currentRail.acceptanceReady, actionRows: currentRail.actionLedger.length, optionRows: currentRail.optionLedger.length, visiblePhysicsFollowRows: normalRailVisiblePhysicsFollowRows(currentRail) });
 }
 
 function formatNormalPlayActionRail() {
   const rail = world.gamePrototypeActionRail || ensureNormalPlayActionRail();
   const options = normalPlayOptions();
   const optionRows = options.map(option => `${option.label}: ${option.intent}; recommended=${option.recommended ? 'yes' : 'no'}`);
-  const actionRows = rail.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.label} -> ${row.underlying_action}; proposal=${row.proposal_id}; practice=${row.practice_id}; handling=${row.manipulation_id || 'none'}; handlingPractice=${row.handling_practice_id || 'none'}; residentTest=${row.ordinary_bottleneck_test_id || 'none'}; follow=${row.follow_chain_id || 'none'}/${row.follow_chain_after || 'none'}; object=${row.object_chain_phase || 'none'}/${row.object_chain_resolution_id || 'none'}; normalTest=${row.normal_test_chain_phase || 'none'}/${row.normal_test_chain_test_id || 'none'}; recovery=${row.follow_recovery_id || 'none'}; save=${row.save_slot_id}`);
+  const actionRows = rail.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.label} -> ${row.underlying_action}; proposal=${row.proposal_id}; practice=${row.practice_id}; handling=${row.manipulation_id || 'none'}; handlingPractice=${row.handling_practice_id || 'none'}; residentTest=${row.ordinary_bottleneck_test_id || 'none'}; follow=${row.follow_chain_id || 'none'}/${row.follow_chain_after || 'none'}; object=${row.object_chain_phase || 'none'}/${row.object_chain_resolution_id || 'none'}; normalTest=${row.normal_test_chain_phase || 'none'}/${row.normal_test_chain_test_id || 'none'}; visiblePhysics=${row.visible_physics_path_phase || 'none'}/${row.visible_physics_path_action_id || 'none'} body=${row.visible_physics_path_body_expression_id || 'none'}; recovery=${row.follow_recovery_id || 'none'}; save=${row.save_slot_id}`);
   const followRows = (rail.followChainLedger || []).slice(-5).map(row => `${row.follow_id}: ${row.chosen_label}; outcome=${row.response_outcome || 'none'}; allowed=${row.resident_allowed_follow !== false}; chain=${row.chain_before}->${row.chain_after}; object=${row.object_chain_phase || 'none'}/${row.object_chain_resolution_id || 'none'} result=${row.object_chain_recheck_result || 'none'}; normalTest=${row.normal_test_chain_phase || 'none'}/${row.normal_test_chain_test_id || 'none'} board=${row.normal_test_chain_proposal_id || 'none'} handling=${row.normal_test_chain_handling_rows || 0}/${row.normal_test_follow_manipulation_id || 'none'} body=${row.normal_test_follow_body_step_id || 'none'} feedback=${row.normal_test_follow_feedback_id || 'none'} practice=${row.normal_test_follow_practice_id || 'none'}; visiblePhysics=${row.visible_physics_path_phase_after || 'none'}/${row.visible_physics_path_action_id || 'none'} saved=${row.visible_physics_path_saved_rows || 0} restored=${row.visible_physics_path_restored_rows || 0} match=${row.visible_physics_path_match ? 'yes' : 'no'}; complete=${row.chain_complete_after}; response=${row.resident_response_expression_id || 'none'}/${row.resident_response_marker || 'none'}; proposal=${row.proposal_id}; practice=${row.practice_id}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
   const recoveryRows = (rail.followRecoveryLedger || []).slice(-5).map(row => `${row.recovery_id}: ${row.recovery_outcome}; source=${row.source_follow_id}/${row.source_outcome}; chain=${row.chain_id}; response=${row.resident_response_expression_id || 'none'}/${row.resident_response_marker || 'none'}; advanced=${row.chain_advanced}`);
   return [
     `Acceptance ready: ${rail.acceptanceReady ? 'yes' : 'no'}`,
     `Actions: ${rail.actionLedger.length} / option snapshots=${rail.optionLedger.length}`,
     `Follow rows: ${(rail.followChainLedger || []).length}`,
+    `Visible Physics Follow rows: ${normalRailVisiblePhysicsFollowRows(rail)}`,
     `Follow recovery rows: ${(rail.followRecoveryLedger || []).length}`,
     `Verbs: ${rail.verbs.join(', ')}`,
     `Boundary: ${rail.boundary}`,

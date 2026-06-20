@@ -1138,3 +1138,17 @@ Acceptance requires:
 - `runNormalPlayFollow` is included in the direct hook manifest
 - `runNormalPlaySpace` is included in the direct hook manifest
 - both controls remain player-language actions, not debug-only panel operations
+
+## Added scope gate: Normal rail produces visible Physics Follow evidence
+
+`normal_rail_visible_physics_follow_evidence` is now part of first playable prototype scope.
+
+Acceptance requires:
+
+- running the full normal action rail loop produces a ready `Physics path` row
+- the rail loop performs a bounded Follow completion pass when visible Physics-path evidence is missing
+- at least one Follow row records visible Physics path phase, action id, happy-path id, body-expression id, save/return counts, and normal-view boundary fields
+- the action-rail receipt reports ready Physics path rows and visible Physics Follow rows
+- object and normal-test Follow chains keep priority before the Physics path branch
+- resident boundary/refusal behavior remains possible and recoverable with `Space`
+- no direct resident command, hidden-law normal-view exposure, or tech-tree unlock is introduced

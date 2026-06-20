@@ -179,6 +179,10 @@
 94. Confirm resident proposals can mention physical strain without letting the avatar directly command a repair.
 95. Save and return after structural stress accumulates; confirm stress counters persist in the save panel.
 
+## Normal rail visible Physics Follow playtest
+
+- Run the normal action rail loop and confirm the action-rail receipt reports both a ready `Physics path` row and at least one visible Physics Follow row with action id, happy-path id, body-expression id, save/return counts, no direct command, and no hidden-law exposure in normal view.
+
 ## Contact/joint constraint playtests
 
 96. Run `Contact constraints` and inspect contact, joint, friction, impulse, and repair rows.

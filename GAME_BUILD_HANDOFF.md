@@ -567,3 +567,9 @@ This is the first explicit 10-minute prototype proof: a player can affect materi
 The main world canvas now renders the active physical component as visible material state, not only as a component id in a receipt. The highlighted object shows local resident term, player gloss, material id, mass, carried state, moisture, damage, stability, and field stress through a compact canvas badge and state bars.
 
 The acceptance gate is `canvas_material_state_visible`. It requires a current component, current material id, material-state cue rows, and normal-view hidden-law separation.
+
+## Prototype v0 direct canvas object selection update
+
+Canvas clicks now inspect nearby simulated components instead of only moving the avatar. If the click lands inside a component hit radius, the shell records a `COS-...` canvas selection row, refreshes the primary play surface around that component, and routes later `Objects` inspection through the selected component.
+
+The acceptance gate is `canvas_component_selection`. It requires inspect-only selection rows, matching canvas cue rows, no direct resident command, no hidden-law exposure in normal view, and no tech-tree unlock.

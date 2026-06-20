@@ -646,6 +646,18 @@ The main canvas must show actual simulated material state for the active object:
 
 This keeps the first playable grounded in visible objects instead of panel-only numbers.
 
+## Canvas component selection loop
+
+The player can select objects through the canvas without gaining direct control:
+
+1. The player clicks in the world canvas.
+2. The avatar moves to the clicked location.
+3. If the click is near a projected physical component, the shell records a `COS-...` inspect-only selection.
+4. The primary surface makes that component the active component.
+5. `Objects` uses the selected component as the inspection target.
+6. Resident handling remains separate and resident-mediated.
+7. The exported acceptance receipt records `canvas_component_selection`.
+
 ## Player movement route loop
 
 1. The avatar moves through bounded village space instead of teleporting.

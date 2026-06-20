@@ -386,3 +386,7 @@
 - Confirm the canvas badge shows resident term, player gloss, material id, mass, and carried state.
 - Confirm the canvas badge shows moisture, damage, stability, and stress bars.
 - Export acceptance and confirm `canvas_material_state_visible` appears with material cue evidence.
+- Click near a projected physical component on the main canvas and confirm replay records `canvasObjectSelect`.
+- Confirm the primary surface shows the clicked component as active with `source=canvas_selection`.
+- Run `Objects` after canvas selection and confirm object inspection targets the selected component.
+- Export acceptance and confirm `canvas_component_selection` appears with `COS-...` cue evidence.

@@ -32,6 +32,7 @@
 - One normal `Space` verb that recovers after guarded/refused `Follow` without advancing the chain.
 - One 10-minute playable loop that proves object/material change, emergent practice evidence, and save/return persistence in one normal play path.
 - One canvas-visible material-state overlay for the active physical component.
+- One direct canvas component selection path that inspects simulated objects without direct manipulation.
 - One bounded resident language/gloss layer for local terms that emerge from grounded practice history.
 
 ## First prototype success condition
@@ -617,5 +618,19 @@ Required evidence:
 - exported acceptance includes material-state canvas cue rows
 - hidden simulator law remains out of normal view
 - no step installs a tech-tree unlock or correct resident concept
+
+## Added scope gate: Canvas component selection
+
+`canvas_component_selection` is now part of first playable prototype scope.
+
+Required evidence:
+
+- clicking near a projected physical component records a `COS-...` selection row
+- the selected component becomes the active primary-surface component
+- later object inspection uses the canvas-selected component
+- selection rows are inspect-only
+- residents are not commanded by selection
+- hidden simulator law remains out of normal view
+- no tech-tree unlock occurs
 
 This milestone makes resident continuity readable during ordinary play. It does not add an open-ended language system.

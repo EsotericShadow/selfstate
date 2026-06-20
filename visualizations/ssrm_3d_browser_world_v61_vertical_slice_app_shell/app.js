@@ -48,7 +48,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, PROTOTYPE_SAVE_KEY, PROTOTYPE_ACCEPTANCE_KEY, WALKTHROUGH_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'gamePrototypePlayableSlice', 'gamePrototypeVillageDay03', 'gamePrototypeWorldStage', 'gamePrototypeWalkthrough', 'gamePrototypeActionRail', 'gamePrototypePlayerMode', 'gamePrototypeMovementRoute', 'gamePrototypeResidentEncounter', 'gamePrototypeObjectInteraction', 'gamePrototypeProposalDeck', 'gamePrototypeLivedPractice', 'gamePrototypeWorksite', 'gamePrototypeReturnJournal', 'gamePrototypePlaySession', 'gamePrototypeBrowserQaReadiness', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'gamePrototypeAcceptance', 'gamePrototypeDivergence', 'gamePrototypeCommons', 'gamePrototypeProjects', 'gamePrototypeCommonsSupport', 'gamePrototypeNearbyActions', 'gamePrototypeDayCycle', 'gamePrototypeReturnLater', 'gamePrototype3DWorld', 'gamePrototypeMaterialManipulation', 'gamePrototypeResidentBodies', 'gamePrototypeTerrain', 'gamePrototypeTools', 'gamePrototypeResourcePhysics', 'gamePrototypeThermalPhysics', 'gamePrototypeWaterPhysics', 'gamePrototypeEcologyPhysics', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'gamePrototypePlayableSlice', 'gamePrototypeVillageDay03', 'gamePrototypeWorldStage', 'gamePrototypeCanvasSelection', 'gamePrototypeWalkthrough', 'gamePrototypeActionRail', 'gamePrototypePlayerMode', 'gamePrototypeMovementRoute', 'gamePrototypeResidentEncounter', 'gamePrototypeObjectInteraction', 'gamePrototypeProposalDeck', 'gamePrototypeLivedPractice', 'gamePrototypeWorksite', 'gamePrototypeReturnJournal', 'gamePrototypePlaySession', 'gamePrototypeBrowserQaReadiness', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'gamePrototypeAcceptance', 'gamePrototypeDivergence', 'gamePrototypeCommons', 'gamePrototypeProjects', 'gamePrototypeCommonsSupport', 'gamePrototypeNearbyActions', 'gamePrototypeDayCycle', 'gamePrototypeReturnLater', 'gamePrototype3DWorld', 'gamePrototypeMaterialManipulation', 'gamePrototypeResidentBodies', 'gamePrototypeTerrain', 'gamePrototypeTools', 'gamePrototypeResourcePhysics', 'gamePrototypeThermalPhysics', 'gamePrototypeWaterPhysics', 'gamePrototypeEcologyPhysics', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay', 'exportPrototypeAcceptanceReceipt', 'comparePrototypeDivergenceSeeds', 'auditPrototypeCommons', 'runPrototypeGuidedStep', 'runPlayablePhysicsPracticeSliceStep', 'runPlayablePhysicsPracticeSliceLoop', 'runPlayableVillageDay03Step', 'runPlayableVillageDay03Loop', 'runPrimaryPlaySurfaceStep', 'runPrimaryPlaySurfaceLoop', 'runFirstPlayableWalkthrough', 'exportFirstPlayableWalkthrough', 'runNormalPlayLook', 'runNormalPlayMove', 'runNormalPlayAsk', 'runNormalPlayTalk', 'runNormalPlayObjects', 'runNormalPlayHandling', 'runNormalPlaySupport', 'runNormalPlayWait', 'runNormalPlayReturn', 'runNormalPlaySave', 'runNormalPlayActionRailLoop', 'enterPlayerMode', 'exitPlayerMode', 'togglePlayerMode', 'runPlayerModeInterfaceLoop', 'runPlayerMovementRouteLoop', 'runPlayerResidentEncounterLoop', 'runPlayerObjectInteractionLoop', 'runPlayerProposalDeckLoop', 'supportPlayerProposalDeck', 'askPlayerProposalDeck', 'waitPlayerProposalDeck', 'runLivedPracticeLoop', 'runResidentWorksiteLoop', 'runReturnJournalLoop', 'runFirstPlayableSessionLoop', 'runTenMinutePlayableLoop', 'runFirstPlayableBrowserQaReadiness', 'advanceVillageProject', 'supportResourceCommons', 'performNearbyAction', 'endVillageDay', 'leaveAndReturnLater', 'runPrototypeMaterialWorldStep', 'runPrototypePhysicsStep', 'runStructuralPhysicsStep', 'runStructuralPhysicsLoop', 'runContactConstraintPhysicsStep', 'runContactConstraintPhysicsLoop', 'runMaterialStatePhysicsStep', 'runMaterialStatePhysicsLoop', 'runTerrainPhysicsStep', 'runTerrainPhysicsLoop', 'runToolPhysicsStep', 'runToolPhysicsLoop', 'runResourcePhysicsStep', 'runResourcePhysicsLoop', 'runThermalPhysicsStep', 'runThermalPhysicsLoop', 'runWaterPhysicsStep', 'runWaterPhysicsLoop', 'runEcologyPhysicsStep', 'runEcologyPhysicsLoop', 'runResidentMaterialManipulationStep', 'runResidentMaterialManipulationLoop', 'runResidentBodyPhysicsStep', 'runResidentBodyPhysicsLoop', 'runDeepTimePhysicsEpoch']
@@ -90,6 +90,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   gamePrototypePlayableSlice: null,
   gamePrototypeVillageDay03: null,
   gamePrototypeWorldStage: null,
+  gamePrototypeCanvasSelection: null,
   gamePrototypeWalkthrough: null,
   gamePrototypeActionRail: null,
   gamePrototypePlayerMode: null,
@@ -743,6 +744,89 @@ function componentCanvasPoint(component) {
     x: origin.x + Number(pos.x || 0) * 1.05 - Number(pos.y || 0) * 0.55,
     y: origin.y + Number(pos.y || 0) * 0.52 - Number(pos.z || 0) * 0.72,
   };
+}
+
+function ensureCanvasObjectSelection() {
+  if (!world.gamePrototypeCanvasSelection) {
+    world.gamePrototypeCanvasSelection = {
+      selected_component_id: 'none',
+      selectionLedger: [],
+      acceptanceReady: false,
+      boundary: 'canvas object selection is inspect-only; it selects simulated components without direct manipulation or hidden-law exposure',
+    };
+  }
+  if (!Array.isArray(world.gamePrototypeCanvasSelection.selectionLedger)) world.gamePrototypeCanvasSelection.selectionLedger = [];
+  return world.gamePrototypeCanvasSelection;
+}
+
+function canvasComponentHitAt(x, y) {
+  const sim = world.gamePrototype3DWorld || ensurePrototype3DWorld();
+  if (!sim || !sim.components || !sim.components.length) return null;
+  const candidates = sim.components.map(component => {
+    const point = componentCanvasPoint(component);
+    const dx = Number(x || 0) - point.x;
+    const dy = Number(y || 0) - point.y;
+    const distance = Math.sqrt(dx * dx + dy * dy);
+    const shapeRadius = component.shape === 'plane' ? 64 : component.shape === 'beam_x' ? 52 : component.shape === 'post' ? 34 : component.shape === 'cylinder' ? 36 : 40;
+    return { component, point, distance, shapeRadius };
+  }).sort((a, b) => a.distance - b.distance);
+  const hit = candidates.find(row => row.distance <= row.shapeRadius);
+  return hit || null;
+}
+
+function selectCanvasComponentAt(x, y, source = 'canvas_click') {
+  const selection = ensureCanvasObjectSelection();
+  const hit = canvasComponentHitAt(x, y);
+  if (!hit || !hit.component) {
+    selection.acceptanceReady = selection.selectionLedger.length > 0;
+    return null;
+  }
+  const sim = world.gamePrototype3DWorld || ensurePrototype3DWorld();
+  const term = sim.language && sim.language.terms ? sim.language.terms.find(row => row.term_id === hit.component.resident_term_id) : null;
+  const row = {
+    selection_id: `COS-${String(selection.selectionLedger.length + 1).padStart(3, '0')}`,
+    tick: world.tick,
+    source,
+    component_id: hit.component.component_id,
+    material_id: hit.component.material_id || 'none',
+    resident_term: term ? term.resident_word : hit.component.resident_term_id || 'none',
+    player_gloss: term ? term.player_gloss : hit.component.player_gloss || hit.component.affordance || 'none',
+    affordance: hit.component.affordance || 'none',
+    mass: Number(hit.component.mass || 0),
+    moisture: Number(hit.component.moisture || 0),
+    damage: Number(hit.component.damage || 0),
+    stability: Number(hit.component.stability || 0),
+    stress: Number(hit.component.field_stress || 0),
+    carried_by: hit.component.carried_by || 'none',
+    click_position: { x: Number(x || 0), y: Number(y || 0) },
+    component_canvas_position: { x: Number(hit.point.x.toFixed(2)), y: Number(hit.point.y.toFixed(2)) },
+    distance: Number(hit.distance.toFixed(3)),
+    inspect_only: true,
+    avatar_direct_command: false,
+    resident_chosen: true,
+    hidden_law_normal_view: false,
+    tech_tree_unlock: false,
+  };
+  selection.selected_component_id = row.component_id;
+  selection.selectionLedger.push(row);
+  if (selection.selectionLedger.length > 40) selection.selectionLedger.shift();
+  selection.acceptanceReady = selection.selectionLedger.some(item => item.inspect_only === true && item.avatar_direct_command === false && item.hidden_law_normal_view === false && item.tech_tree_unlock === false);
+  recordRealityConstraint('canvas_component_selection', {
+    resident: world.selected,
+    sourceBeliefId: row.selection_id,
+    materials: [row.component_id, row.material_id].filter(Boolean),
+    publicObservation: `avatar inspected ${row.component_id} as ${row.resident_term}`,
+    residentInterpretation: `${row.player_gloss}; visible material state only`,
+    materialTransformation: 'none; selection observes existing component state',
+    timeCost: 0,
+    workCost: 0,
+    toolWear: 0,
+    maintenanceObligation: row.damage > 0.1 || row.stability < 0.72 ? `watch ${row.component_id}` : 'none',
+    unintendedConsequence: 'attention can bias player support, but does not command resident work',
+    hiddenLawInvolved: 'none in normal view',
+    conservationCheck: true
+  });
+  return row;
 }
 
 function projectTargetComponentForProposal() {
@@ -5342,10 +5426,15 @@ function currentPrimaryPlaySurfaceSnapshot() {
   const selected = world.residents[world.selected] || currentResident();
   const latestProposal = board && board.projectProposals && board.projectProposals.length ? board.projectProposals[board.projectProposals.length - 1] : null;
   const latestPractice = graph && graph.nodes && graph.nodes.length ? graph.nodes[graph.nodes.length - 1] : null;
+  const canvasSelection = world.gamePrototypeCanvasSelection || null;
+  const latestCanvasSelection = canvasSelection && canvasSelection.selectionLedger && canvasSelection.selectionLedger.length ? canvasSelection.selectionLedger[canvasSelection.selectionLedger.length - 1] : null;
+  const selectedComponent = canvasSelection && canvasSelection.selected_component_id && canvasSelection.selected_component_id !== 'none' && materialWorld && materialWorld.components
+    ? materialWorld.components.find(component => component.component_id === canvasSelection.selected_component_id)
+    : null;
   const routineComponent = latestRoutine && materialWorld && materialWorld.components
     ? materialWorld.components.find(component => component.component_id === latestRoutine.latest_component_id)
     : null;
-  const latestComponent = routineComponent || (materialWorld && materialWorld.components && materialWorld.components.length ? materialWorld.components[materialWorld.components.length - 1] : null);
+  const latestComponent = selectedComponent || routineComponent || (materialWorld && materialWorld.components && materialWorld.components.length ? materialWorld.components[materialWorld.components.length - 1] : null);
   const latestComponentTerm = latestComponent && materialWorld && materialWorld.language && materialWorld.language.terms
     ? materialWorld.language.terms.find(term => term.term_id === latestComponent.resident_term_id)
     : null;
@@ -5378,6 +5467,9 @@ function currentPrimaryPlaySurfaceSnapshot() {
     active_component_id: latestComponent ? latestComponent.component_id : 'none',
     active_component_gloss: latestComponent ? (latestComponent.player_gloss || latestComponent.material_id || latestComponent.component_id) : 'none',
     active_component_material_id: latestComponent ? latestComponent.material_id || 'none' : 'none',
+    active_component_source: selectedComponent ? 'canvas_selection' : routineComponent ? 'routine_context' : 'latest_world_component',
+    canvas_selection_id: latestCanvasSelection ? latestCanvasSelection.selection_id : 'none',
+    canvas_selected_component_id: canvasSelection ? canvasSelection.selected_component_id || 'none' : 'none',
     active_component_resident_term: latestComponentTerm ? latestComponentTerm.resident_word : (latestComponent ? latestComponent.resident_term_id || 'none' : 'none'),
     active_component_player_gloss: latestComponentTerm ? latestComponentTerm.player_gloss : (latestComponent ? latestComponent.player_gloss || latestComponent.material_id || latestComponent.component_id : 'none'),
     active_component_mass: latestComponent ? Number(latestComponent.mass || 0) : 0,
@@ -5421,6 +5513,7 @@ function currentPrimaryPlaySurfaceSnapshot() {
       latestProposal ? `proposal ${latestProposal.proposal_id}` : 'village board has no current proposal',
       latestPractice ? `practice ${latestPractice.local_name || latestPractice.practice_id}` : 'practice graph not yet visible',
       latestComponent ? `component ${latestComponent.component_id}` : 'physical components not initialized',
+      latestCanvasSelection ? `canvas selection ${latestCanvasSelection.selection_id} ${latestCanvasSelection.component_id} ${latestCanvasSelection.resident_term}` : 'canvas object not selected yet',
       latestComponent ? `material state ${latestComponent.component_id} ${latestComponent.material_id} m=${Number(latestComponent.moisture || 0).toFixed(2)} d=${Number(latestComponent.damage || 0).toFixed(2)} s=${Number(latestComponent.stability || 0).toFixed(2)} carried=${latestComponent.carried_by || 'none'}` : 'material state not visible yet',
       latestLivedPhysics ? `lived physics ${latestLivedPhysics.physics_id} on ${latestLivedPhysics.component_id}` : 'lived-action physics not visible yet',
       latestRoutine ? `routine context ${latestRoutine.context_id} ${latestRoutine.resident} -> ${latestRoutine.suggested_action || latestRoutine.action} near ${latestRoutine.latest_project_visual_id !== 'none' ? latestRoutine.latest_project_visual_id : latestRoutine.latest_component_id !== 'none' ? latestRoutine.latest_component_id : latestRoutine.practice_id}` : 'routine context not visible yet',
@@ -5447,6 +5540,9 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     proposal_id: snapshot.active_proposal_id,
     practice_id: snapshot.active_practice_id,
     component_id: snapshot.active_component_id,
+    material_id: snapshot.active_component_material_id,
+    canvas_selection_id: snapshot.canvas_selection_id,
+    active_component_source: snapshot.active_component_source,
     routine_context_id: snapshot.routine_context_id,
     routine_context_source: snapshot.routine_context_source,
     avatar_presence_id: snapshot.avatar_presence_id,
@@ -5459,6 +5555,9 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     cue_id: `PPSURF-C-${String(surface.canvasCueLedger.length + 1).padStart(2, '0')}`,
     snapshot_id: snapshot.snapshot_id,
     cues: snapshot.canvas_cues,
+    component_id: snapshot.active_component_id,
+    material_id: snapshot.active_component_material_id,
+    canvas_selection_id: snapshot.canvas_selection_id,
     routine_context_id: snapshot.routine_context_id,
     avatar_presence_id: snapshot.avatar_presence_id,
     integrated_loop_id: snapshot.integrated_loop_id,
@@ -5558,7 +5657,7 @@ function formatPrimaryPlaySurface() {
     `Next player action: ${snapshot.player_next_action} (${snapshot.player_next_button})`,
     `Active proposal: ${snapshot.active_proposal_id} / ${snapshot.active_proposal_status}`,
     `Active practice: ${snapshot.active_practice_id} / ${snapshot.active_practice_name}`,
-    `Active component: ${snapshot.active_component_id} / ${snapshot.active_component_gloss}`,
+    `Active component: ${snapshot.active_component_id} / ${snapshot.active_component_gloss}; source=${snapshot.active_component_source || 'none'}; selection=${snapshot.canvas_selection_id || 'none'}`,
     `Latest physics: ${snapshot.latest_physics_id}`,
     `Latest lived physics: ${snapshot.latest_lived_physics_id} / component=${snapshot.latest_lived_physics_component_id} / rows=${snapshot.lived_physics_rows}`,
     `Routine context: ${snapshot.routine_context_id} / ${snapshot.routine_context_resident} -> ${snapshot.routine_context_suggested_action} / source=${snapshot.routine_context_source}`,
@@ -7791,7 +7890,10 @@ function currentObjectInteractionTarget() {
   const sim = ensurePrototype3DWorld();
   const stage = world.gamePrototypeWorldStage || null;
   const latest = stage && stage.latestSnapshot ? stage.latestSnapshot : currentPrimaryPlaySurfaceSnapshot();
-  const activeId = latest.active_component_id || latest.component_id || null;
+  const selection = world.gamePrototypeCanvasSelection || null;
+  const activeId = selection && selection.selected_component_id && selection.selected_component_id !== 'none'
+    ? selection.selected_component_id
+    : latest.active_component_id || latest.component_id || null;
   const component = sim.components.find(row => row.component_id === activeId)
     || sim.components.slice().sort((a, b) => (Number(a.stability || 1) - Number(b.stability || 1)) || (Number(b.damage || 0) - Number(a.damage || 0)) || (Number(b.moisture || 0) - Number(a.moisture || 0)))[0]
     || sim.components[0];
@@ -12508,6 +12610,7 @@ function formatPrototypePlayerGuide() {
   const worksite = world.gamePrototypeWorksite || null;
   const returnJournal = world.gamePrototypeReturnJournal || null;
   const playSession = world.gamePrototypePlaySession || null;
+  const canvasSelection = world.gamePrototypeCanvasSelection || null;
   const projects = world.gamePrototypeProjects || null;
   const commonsSupport = world.gamePrototypeCommonsSupport || null;
   const nearby = world.gamePrototypeNearbyActions || null;
@@ -13614,6 +13717,8 @@ function buildPrototypeAcceptanceReceipt() {
   const livedPracticeCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => (row.cues || []).some(cue => /lived physics/.test(cue))).length : 0;
   const integratedCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.integrated_loop_id && row.integrated_loop_id !== 'none' && (row.cues || []).some(cue => /integrated chain/.test(cue))).length : 0;
   const materialStateCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => (row.cues || []).some(cue => /material state/.test(cue)) && row.component_id && row.component_id !== 'none').length : 0;
+  const canvasSelectionRows = canvasSelection && canvasSelection.selectionLedger ? canvasSelection.selectionLedger.length : 0;
+  const canvasSelectionCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.canvas_selection_id && row.canvas_selection_id !== 'none' && (row.cues || []).some(cue => /canvas selection/.test(cue))).length : 0;
   const worksiteRows = worksite ? worksite.watchLedger.length : 0;
   const worksiteSnapshots = worksite ? worksite.snapshotLedger.length : 0;
   const returnJournalRows = returnJournal ? returnJournal.journalLedger.length : 0;
@@ -13709,6 +13814,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'playable_village_day_0_3', pass: Boolean(villageDay03 && villageDay03.acceptanceReady && villageDay03Rows >= 4 && villageDay03PlayerRows >= 4 && villageDay03ResidentRows >= 4 && villageDay03WorldRows >= 4 && villageDay03.physicsLinks.length > 0 && villageDay03.proposalLinks.length > 0 && villageDay03.practiceLinks.length > 0 && villageDay03.saveLinks.length > 0 && villageDay03ReturnLinks > 0 && villageDay03.noDirectCommand === true && villageDay03.noTechTreeUnlock === true), evidence: villageDay03 ? `${villageDay03.phase}; rows=${villageDay03Rows}, player=${villageDay03PlayerRows}, resident=${villageDay03ResidentRows}, world=${villageDay03WorldRows}, returns=${villageDay03ReturnLinks}` : 'not run' },
     { id: 'primary_play_surface', pass: Boolean(worldStage && worldStage.acceptanceReady && worldStageFocusRows >= 3 && worldStageCueRows >= 3 && worldStagePromptRows >= 3 && integratedCanvasCueRows > 0 && worldStage.canvasFirst === true && worldStage.noHiddenLawInNormalView === true && worldStage.noDirectCommand === true), evidence: worldStage ? `${worldStage.phase}; focus=${worldStageFocusRows}, cues=${worldStageCueRows}, integrated=${integratedCanvasCueRows}, prompts=${worldStagePromptRows}` : 'not run' },
     { id: 'canvas_material_state_visible', pass: Boolean(worldStage && materialStateCanvasCueRows > 0 && worldStage.latestSnapshot && worldStage.latestSnapshot.active_component_id !== 'none' && worldStage.latestSnapshot.active_component_material_id !== 'none' && worldStage.latestSnapshot.hidden_law_normal_view === false && worldStage.noHiddenLawInNormalView === true), evidence: worldStage && worldStage.latestSnapshot ? `materialCues=${materialStateCanvasCueRows}, component=${worldStage.latestSnapshot.active_component_id}, material=${worldStage.latestSnapshot.active_component_material_id}, moisture=${worldStage.latestSnapshot.active_component_moisture}, damage=${worldStage.latestSnapshot.active_component_damage}, stability=${worldStage.latestSnapshot.active_component_stability}` : 'not run' },
+    { id: 'canvas_component_selection', pass: Boolean(canvasSelection && canvasSelection.acceptanceReady === true && canvasSelectionRows > 0 && canvasSelectionCueRows > 0 && canvasSelection.selectionLedger.every(row => row.inspect_only === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false)), evidence: canvasSelection ? `selections=${canvasSelectionRows}, cueRows=${canvasSelectionCueRows}, selected=${canvasSelection.selected_component_id || 'none'}` : 'not run' },
     { id: 'first_playable_walkthrough', pass: Boolean(walkthrough && walkthrough.acceptanceReady && walkthroughSteps >= walkthrough.requiredSteps.length && walkthroughLinks >= walkthrough.requiredSteps.length && walkthrough.noDirectCommand === true && walkthrough.noTechTreeUnlock === true && walkthrough.noHiddenLawNormalView === true), evidence: walkthrough ? `${walkthrough.phase}; steps=${walkthroughSteps}, links=${walkthroughLinks}` : 'not run' },
     { id: 'normal_play_action_rail', pass: Boolean(actionRail && actionRail.acceptanceReady && actionRailRows >= actionRail.verbs.length && actionRailOptions > 0 && actionRailFollowRows > 0 && actionRailFollowExpressionRows > 0 && actionRailFollowCalibratedRows > 0 && actionRailFollowRecoveryRows > 0 && actionRailFollowRecoveryExpressionRows > 0 && actionRail.playerLanguageOnly === true && actionRail.noDirectCommand === true && actionRail.noTechTreeUnlock === true), evidence: actionRail ? `actions=${actionRailRows}, optionSnapshots=${actionRailOptions}, follow=${actionRailFollowRows}, followExpression=${actionRailFollowExpressionRows}, calibrated=${actionRailFollowCalibratedRows}, followRecovery=${actionRailFollowRecoveryRows}, followRecoveryExpression=${actionRailFollowRecoveryExpressionRows}, verbs=${actionRail.verbs.join('/')}` : 'not run' },
     { id: 'player_mode_interface', pass: Boolean(playerMode && playerMode.acceptanceReady && playerModeSessions > 0 && playerModeVisibleCards >= 6 && playerMode.normalViewOnly === true && playerMode.debugPanelsHidden === true && playerMode.noDirectCommand === true && playerMode.noHiddenLawNormalView === true && playerMode.playerGlossesOnly === true), evidence: playerMode ? `enabled=${playerMode.enabled}, sessions=${playerModeSessions}, visibleCards=${playerModeVisibleCards}` : 'not run' },
@@ -13996,8 +14102,19 @@ function bindControls() {
     const rect = canvas.getBoundingClientRect();
     world.avatar.x = Math.round((event.clientX - rect.left) * canvas.width / rect.width);
     world.avatar.y = Math.round((event.clientY - rect.top) * canvas.height / rect.height);
+    const selection = selectCanvasComponentAt(world.avatar.x, world.avatar.y, 'canvas_click');
     updateRoom();
-    log('canvasMove', { x: world.avatar.x, y: world.avatar.y, room: world.avatar.room, zone: locationZoneForAvatar().zone_id, nearbyAction: nearbyActionPlan().action });
+    if (selection) recordPrimaryPlaySurfaceSnapshot('canvas component selected');
+    log(selection ? 'canvasObjectSelect' : 'canvasMove', {
+      x: world.avatar.x,
+      y: world.avatar.y,
+      room: world.avatar.room,
+      zone: locationZoneForAvatar().zone_id,
+      nearbyAction: nearbyActionPlan().action,
+      componentId: selection ? selection.component_id : 'none',
+      selectionId: selection ? selection.selection_id : 'none',
+      residentTerm: selection ? selection.resident_term : 'none'
+    });
   });
   renderReturnContinuity();
   renderReturnGreetingContinuity();
@@ -14579,7 +14696,8 @@ function describeReplayRow(row) {
     runReviewerLandingPass: `ran reviewer landing pass focus=${payload.reviewerFocus === true}`,
     toggleAudit: `audit overlay=${payload.audit === true}`,
     selectResident: `selected resident ${payload.selected}`,
-    canvasMove: `canvas move to ${payload.room} at ${payload.x},${payload.y}`
+    canvasMove: `canvas move to ${payload.room} at ${payload.x},${payload.y}`,
+    canvasObjectSelect: `canvas selected ${payload.componentId || 'none'} ${payload.residentTerm || 'none'} at ${payload.x},${payload.y}`
     ,
     introduceWorldAnomaly: `introduced anomaly seed=${payload.seed}; hidden law audit only=${payload.hiddenLawAuditOnly === true}`,
     runAnomalyExperiment: `anomaly experiment ${payload.experiment ? payload.experiment.id : ''} failed=${payload.failedExperimentPreserved === true}`,

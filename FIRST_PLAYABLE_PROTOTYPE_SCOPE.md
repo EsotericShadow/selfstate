@@ -988,3 +988,16 @@ An ordinary resident encounter should be able to expose cultivated language:
 - resident response includes local word and imperfect gloss
 - no LLM or open-ended language is used
 - no direct avatar command or hidden-law exposure occurs
+
+## Added scope gate: Pressure language reaches proposal deck
+
+`pressure_language_reaches_proposal_deck` is now part of first playable prototype scope.
+
+A pressure-grounded management card should preserve:
+
+- Village Board proposal pressure-language ID
+- source pressure ID
+- resident word and imperfect player gloss
+- proposal deck card carrying the same language fields
+- Ask/Support/Wait action row carrying the same language fields
+- no direct avatar command, hidden-law exposure, resource spawning, or forced job assignment

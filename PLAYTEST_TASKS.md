@@ -592,3 +592,12 @@
 3. Confirm the resident response mentions a local pressure word and an imperfect gloss.
 4. Confirm the encounter row includes pressure-language ID and source pressure ID.
 5. Confirm the response remains phrasebook-only with no LLM and no hidden-law exposure.
+
+## Playtest task: pressure-language proposal deck
+
+1. Run autonomous resident ticks until a physics pressure proposal appears.
+2. Open the proposal deck.
+3. Confirm the visible card includes a local pressure word, imperfect gloss, and `LPP-...` ID.
+4. Use Ask, Support, or Wait.
+5. Confirm the deck action row preserves the same pressure-language fields.
+6. Confirm the card cannot force the resident and does not expose hidden simulator law.

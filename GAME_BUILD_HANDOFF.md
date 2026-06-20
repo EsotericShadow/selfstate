@@ -801,3 +801,12 @@ Implementation boundary:
 - The response remains phrasebook-only and source-traced.
 - The resident word comes from pressure-language history, not an English engine label.
 - The player gets an imperfect gloss; hidden simulator law remains out of normal view.
+
+## Prototype increment: pressure-language proposal deck
+
+Resident proposal cards now carry pressure-grounded local words when the proposal came from a physics pressure event. The Village Board proposal, proposal card, and Ask/Support/Wait deck action can preserve the same `LPP-...` language row, source `RPP-...` pressure row, resident word, and imperfect gloss.
+
+Implementation boundary:
+- The proposal remains resident-authored and cannot be forced by the avatar.
+- The card uses resident language plus a gloss, not an English technology label.
+- Hidden simulator law remains audit-only and no resource is spawned by the deck.

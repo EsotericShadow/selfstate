@@ -7624,7 +7624,9 @@ function proposalDeckCards(seedIfEmpty = false) {
       const bObject = b.related_object_response_id && b.related_object_response_id !== 'none' ? 1 : 0;
       const aNormalTest = a.normal_action_test_path === true ? 1 : 0;
       const bNormalTest = b.normal_action_test_path === true ? 1 : 0;
-      return (bLatest - aLatest) || (bObject - aObject) || (bNormalTest - aNormalTest);
+      const aPressureLanguage = a.pressure_language_id && a.pressure_language_id !== 'none' ? 1 : 0;
+      const bPressureLanguage = b.pressure_language_id && b.pressure_language_id !== 'none' ? 1 : 0;
+      return (bLatest - aLatest) || (bPressureLanguage - aPressureLanguage) || (bObject - aObject) || (bNormalTest - aNormalTest);
     })
     .slice(0, 6)
     .map((proposal, index) => ({
@@ -7642,6 +7644,15 @@ function proposalDeckCards(seedIfEmpty = false) {
       source_resident_test_id: proposal.related_resident_test_id || 'none',
       source_auto_test_id: proposal.related_auto_test_id || 'none',
       normal_action_test_path: proposal.normal_action_test_path === true,
+      pressure_language_id: proposal.pressure_language_id || 'none',
+      pressure_language_pressure_id: proposal.pressure_language_pressure_id || 'none',
+      pressure_language_root_id: proposal.pressure_language_root_id || 'none',
+      pressure_language_term_id: proposal.pressure_language_term_id || 'none',
+      pressure_language_resident_word: proposal.pressure_language_resident_word || 'none',
+      pressure_language_player_gloss: proposal.pressure_language_player_gloss || 'none',
+      pressure_language_component_id: proposal.pressure_language_component_id || 'none',
+      pressure_language_kind: proposal.pressure_language_kind || 'none',
+      pressure_language_path: Boolean(proposal.pressure_language_id && proposal.pressure_language_id !== 'none'),
       materials_needed: proposal.materials_needed || [],
       likely_helpers: proposal.likely_helpers || [],
       willingness: Number(proposal.resident_willingness || 0),
@@ -7653,9 +7664,11 @@ function proposalDeckCards(seedIfEmpty = false) {
       possible_failure_modes: proposal.possible_failure_modes || [],
       related_practice_nodes: proposal.related_practice_nodes || [],
       player_actions: ['Ask', 'Support', 'Wait'],
-      player_gloss: proposal.related_object_response_id && proposal.related_object_response_id !== 'none'
-        ? `${proposal.proposer} wants ${proposal.problem_addressed} after ${proposal.related_object_response_id}`
-        : proposal.normal_action_test_path === true
+      player_gloss: proposal.pressure_language_id && proposal.pressure_language_id !== 'none'
+        ? `${proposal.proposer} calls this ${proposal.pressure_language_resident_word}, roughly ${proposal.pressure_language_player_gloss}`
+        : proposal.related_object_response_id && proposal.related_object_response_id !== 'none'
+          ? `${proposal.proposer} wants ${proposal.problem_addressed} after ${proposal.related_object_response_id}`
+          : proposal.normal_action_test_path === true
           ? `${proposal.proposer} wants support for ${proposal.related_resident_test_id} after ${proposal.related_normal_action_id}`
         : `${proposal.proposer} is concerned about ${proposal.problem_addressed}`,
       avatar_can_force: proposal.avatar_can_force === true ? true : false,
@@ -7705,6 +7718,12 @@ function recordProposalDeckAction(playerAction, result) {
     source_normal_action_id: active ? active.source_normal_action_id : 'none',
     source_resident_test_id: active ? active.source_resident_test_id : 'none',
     source_auto_test_id: active ? active.source_auto_test_id : 'none',
+    pressure_language_id: active ? active.pressure_language_id : 'none',
+    pressure_language_pressure_id: active ? active.pressure_language_pressure_id : 'none',
+    pressure_language_resident_word: active ? active.pressure_language_resident_word : 'none',
+    pressure_language_player_gloss: active ? active.pressure_language_player_gloss : 'none',
+    pressure_language_component_id: active ? active.pressure_language_component_id : 'none',
+    pressure_language_path: active ? active.pressure_language_path === true : false,
     object_response_kind: active ? active.object_response_kind : 'none',
     object_response_effect: active ? active.object_response_effect : 'none',
     object_objection_path: active ? active.object_objection_path : false,
@@ -7793,8 +7812,8 @@ function runPlayerProposalDeckLoop() {
 function formatPlayerProposalDeck() {
   const deck = world.gamePrototypeProposalDeck || ensurePlayerProposalDeck();
   const cards = proposalDeckCards();
-  const cardRows = cards.map(card => `${card.proposal_id}: ${card.player_gloss}; status=${card.status}; support=${card.support_level}; objectSource=${card.source_object_response_id}; normalTest=${card.source_resident_test_id}; materials=${card.materials_needed.join('+') || 'none'}; force=${card.avatar_can_force}`);
-  const actionRows = deck.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.player_action} ${row.proposal_id}; objectSource=${row.source_object_response_id || 'none'}; normalTest=${row.source_resident_test_id || 'none'}; direct=${row.avatar_direct_command}; hidden-law=${row.hidden_law_normal_view}`);
+  const cardRows = cards.map(card => `${card.proposal_id}: ${card.player_gloss}; pressureWord=${card.pressure_language_resident_word || 'none'}/${card.pressure_language_id || 'none'}; status=${card.status}; support=${card.support_level}; objectSource=${card.source_object_response_id}; normalTest=${card.source_resident_test_id}; materials=${card.materials_needed.join('+') || 'none'}; force=${card.avatar_can_force}`);
+  const actionRows = deck.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.player_action} ${row.proposal_id}; pressureWord=${row.pressure_language_resident_word || 'none'}/${row.pressure_language_id || 'none'}; objectSource=${row.source_object_response_id || 'none'}; normalTest=${row.source_resident_test_id || 'none'}; direct=${row.avatar_direct_command}; hidden-law=${row.hidden_law_normal_view}`);
   return [
     `Acceptance ready: ${deck.acceptanceReady ? 'yes' : 'no'}`,
     `Cards: ${cards.length} / action rows=${deck.actionLedger.length}`,
@@ -12958,6 +12977,24 @@ function recordResidentPhysicsPressure(residentName, entropy, source = 'autonomo
   row.resident_pressure_word = languageGrounding.resident_word;
   row.player_pressure_gloss = languageGrounding.player_gloss;
   row.translation_confidence = languageGrounding.translation_confidence;
+  if (consequence && consequence.proposal) {
+    consequence.proposal.pressure_language_id = languageGrounding.language_pressure_id;
+    consequence.proposal.pressure_language_pressure_id = row.pressure_id;
+    consequence.proposal.pressure_language_root_id = languageGrounding.root_id;
+    consequence.proposal.pressure_language_term_id = languageGrounding.pressure_term_id;
+    consequence.proposal.pressure_language_resident_word = languageGrounding.resident_word;
+    consequence.proposal.pressure_language_player_gloss = languageGrounding.player_gloss;
+    consequence.proposal.pressure_language_component_id = row.component_id;
+    consequence.proposal.pressure_language_kind = row.pressure_kind;
+    consequence.proposal.pressure_language_translation_confidence = languageGrounding.translation_confidence;
+    consequence.proposal.problem_addressed = `${languageGrounding.resident_word} pressure: ${consequence.proposal.problem_addressed}`;
+    consequence.proposal.related_memories = Array.from(new Set([...(consequence.proposal.related_memories || []), `word ${languageGrounding.resident_word} came from ${row.pressure_id}`]));
+  }
+  if (consequence && consequence.concern) {
+    consequence.concern.pressure_language_id = languageGrounding.language_pressure_id;
+    consequence.concern.pressure_language_resident_word = languageGrounding.resident_word;
+    consequence.concern.pressure_language_player_gloss = languageGrounding.player_gloss;
+  }
   ledger.push(row);
   if (ledger.length > 120) ledger.shift();
   materialWorld.physics.residentPressureLedger.push(row);
@@ -16018,6 +16055,9 @@ function buildPrototypeAcceptanceReceipt() {
   const residentPhysicsLanguageRootRows = materialWorld && materialWorld.language && materialWorld.language.soundRoots ? materialWorld.language.soundRoots.filter(row => row.grounded_event && row.linked_observation && Number(row.adoption_count || 0) > 0 && row.player_gloss).length : 0;
   const residentPhysicsLanguageTermRows = materialWorld && materialWorld.language && materialWorld.language.terms ? materialWorld.language.terms.filter(row => row.pressure_root_id && row.source_pressure_ids && row.source_pressure_ids.length > 0 && row.resident_word && row.player_gloss && row.engine_concept === 'resident_physics_pressure_interpretation').length : 0;
   const pressureLanguageEncounterRows = residentEncounter && residentEncounter.encounterLedger ? residentEncounter.encounterLedger.filter(row => row.pressure_language_id && row.pressure_language_id !== 'none' && row.pressure_language_pressure_id && row.pressure_language_pressure_id !== 'none' && row.pressure_language_resident_word && row.pressure_language_player_gloss && row.no_llm === true && row.phrasebook_only === true && row.open_ended_language === false && row.hidden_law_normal_view === false).length : 0;
+  const pressureLanguageProposalRows = board && board.projectProposals ? board.projectProposals.filter(row => row.pressure_language_id && row.pressure_language_id !== 'none' && row.pressure_language_pressure_id && row.pressure_language_pressure_id !== 'none' && row.pressure_language_resident_word && row.pressure_language_player_gloss && row.avatar_can_force === false).length : 0;
+  const pressureLanguageDeckCardRows = proposalDeck ? proposalDeck.cardLedger.filter(snapshot => (snapshot.cards || []).some(card => card.pressure_language_id && card.pressure_language_id !== 'none' && card.pressure_language_resident_word && card.pressure_language_player_gloss && card.avatar_can_force === false && card.hidden_law_normal_view === false)).length : 0;
+  const pressureLanguageDeckActionRows = proposalDeck && proposalDeck.actionLedger ? proposalDeck.actionLedger.filter(row => row.pressure_language_id && row.pressure_language_id !== 'none' && row.pressure_language_resident_word && row.pressure_language_player_gloss && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const worksiteProximityRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.length : 0;
   const worksiteEffectRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.filter(row => row.effect_applied === true && row.target_component_id !== 'none' && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
   const worksiteBlockedRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.filter(row => row.blocked_by_distance === true && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
@@ -16056,6 +16096,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'physics_pressure_cultivates_language', pass: Boolean(materialWorld && residentPhysicsLanguageRows > 0 && residentPhysicsLanguageRootRows > 0 && residentPhysicsLanguageTermRows > 0), evidence: `languagePressure=${residentPhysicsLanguageRows}, groundedRoots=${residentPhysicsLanguageRootRows}, pressureTerms=${residentPhysicsLanguageTermRows}` },
     { id: 'physics_pressure_language_save_return_continuity', pass: Boolean(saves && pressureLanguageContinuitySaveRows > 0 && pressureLanguageContinuityRestoreRows > 0), evidence: saves ? `savedPressureLanguage=${pressureLanguageContinuitySaveRows}, restoredMatches=${pressureLanguageContinuityRestoreRows}` : 'no prototype saves' },
     { id: 'pressure_language_reaches_resident_encounter', pass: Boolean(residentEncounter && pressureLanguageEncounterRows > 0), evidence: residentEncounter ? `pressureLanguageEncounterRows=${pressureLanguageEncounterRows}` : 'not run' },
+    { id: 'pressure_language_reaches_proposal_deck', pass: Boolean(board && proposalDeck && pressureLanguageProposalRows > 0 && pressureLanguageDeckCardRows > 0 && pressureLanguageDeckActionRows > 0), evidence: proposalDeck ? `proposals=${pressureLanguageProposalRows}, cards=${pressureLanguageDeckCardRows}, actions=${pressureLanguageDeckActionRows}` : 'not run' },
     { id: 'reality_grounded_causality', pass: Boolean(ledger && ledger.rows.length > 0 && ledger.rows.every(row => row.conservation_check && row.normal_view_hidden_law_exposed === false)), evidence: ledger ? `${ledger.rows.length} causal row(s)` : 'no ledger' },
     { id: 'emergent_beliefs_and_practices', pass: Boolean(practiceGraph && practiceGraph.nodes.length > 0 && practiceGraph.noPredefinedTechTree === true), evidence: practiceGraph ? `${practiceGraph.nodes.length} node(s), no tech tree=${practiceGraph.noPredefinedTechTree}` : 'no practice graph' },
     { id: 'village_management_without_command', pass: Boolean(board && board.projectProposals.length > 0 && board.avatarCannotForce === true), evidence: board ? `${board.projectProposals.length} proposal(s), force=${board.avatarCannotForce === false}` : 'no board' },

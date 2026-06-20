@@ -869,3 +869,9 @@ This keeps resident vocabulary continuous across return sessions. The word, root
 pressure-language row -> resident encounter snapshot -> bounded phrasebook response -> resident word plus imperfect gloss -> encounter ledger.
 
 This moves cultivated resident language into ordinary play. The player hears the local term during a normal Talk action, while the audit-only engine concept stays hidden.
+
+## Pressure-language proposal deck loop
+
+physics pressure -> resident proposal -> pressure-language grounding -> proposal card -> Ask/Support/Wait deck action.
+
+This makes diegetic village management use resident language. A card can show what residents call the pressure while still keeping the avatar in an influence-not-command role.

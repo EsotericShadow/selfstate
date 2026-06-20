@@ -953,3 +953,14 @@ After `First playable` runs, the normal primary surface should show the physics 
 5. The canvas HUD names the playable physics path beside the existing physical-chain cues.
 
 This keeps the physics path as ordinary game state, not a hidden export-only proof.
+## Visible Physics path save-return loop
+
+The save/return loop now preserves what the player saw in normal view:
+
+1. The primary surface records the first-playable Physics path cue.
+2. Saving stores the visible cue fingerprint alongside the normal action-rail Physics path fingerprint.
+3. Returning recomputes the primary-surface cue from restored state.
+4. The return log compares visible cue fingerprints.
+5. Readiness, QA, and acceptance require visible cue save/return continuity.
+
+This keeps persistence tied to player-facing state, not just hidden continuity rows.

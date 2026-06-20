@@ -15607,6 +15607,9 @@ function runPrototypeQASmoke() {
     actionRailPhysicsPathRows: world.gamePrototypeActionRail && world.gamePrototypeActionRail.actionLedger ? world.gamePrototypeActionRail.actionLedger.filter(row => row.verb === 'physics_path' && row.physics_path_ready === true && row.physics_path_happy_path_id && row.physics_path_happy_path_id !== 'none' && row.physics_path_body_expression_id && row.physics_path_body_expression_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0,
     physicsPathSaveRows: world.gamePrototypeSaves && world.gamePrototypeSaves.slots ? world.gamePrototypeSaves.slots.filter(slot => Number(slot.normal_play_physics_path_ready_rows || 0) > 0 && slot.normal_play_physics_path_fingerprint && slot.normal_play_physics_path_fingerprint !== 'none').length : 0,
     physicsPathRestoreRows: world.gamePrototypeSaves && world.gamePrototypeSaves.returnLog ? world.gamePrototypeSaves.returnLog.filter(row => row.restored_normal_play_physics_path_matches_saved === true && Number(row.restored_normal_play_physics_path_ready_rows || 0) > 0).length : 0,
+    primaryPhysicsPathCueRows: world.gamePrototypeWorldStage && world.gamePrototypeWorldStage.canvasCueLedger ? world.gamePrototypeWorldStage.canvasCueLedger.filter(row => row.session_physics_path_step_id === 'physics_path' && row.session_physics_path_ready === true && row.session_physics_path_body_expression_id && row.session_physics_path_body_expression_id !== 'none').length : 0,
+    primaryPhysicsPathSaveRows: world.gamePrototypeSaves && world.gamePrototypeSaves.slots ? world.gamePrototypeSaves.slots.filter(slot => slot.primary_surface_physics_path_ready === true && slot.primary_surface_physics_path_fingerprint && slot.primary_surface_physics_path_fingerprint !== 'none').length : 0,
+    primaryPhysicsPathRestoreRows: world.gamePrototypeSaves && world.gamePrototypeSaves.returnLog ? world.gamePrototypeSaves.returnLog.filter(row => row.restored_primary_surface_physics_path_matches_saved === true && row.restored_primary_surface_physics_path_ready === true).length : 0,
     playerModeReady: world.gamePrototypePlayerMode ? world.gamePrototypePlayerMode.acceptanceReady === true : false,
     playerModeSessions: world.gamePrototypePlayerMode ? world.gamePrototypePlayerMode.sessionLedger.length : 0,
     playerModeVisibleCards: world.gamePrototypePlayerMode && world.gamePrototypePlayerMode.visibleSurface ? world.gamePrototypePlayerMode.visibleSurface.visible_cards.length : 0,
@@ -15674,7 +15677,7 @@ function runPrototypeQASmoke() {
     { id: 'lived-practice-loop', pass: Boolean(world.gamePrototypeLivedPractice && savedCounts.livedPracticeReady && savedCounts.livedPracticeRows >= 4 && savedCounts.livedPracticeSnapshots > 0 && savedCounts.livedPracticePhysicsRows >= 4 && savedCounts.livedPracticeCanvasCueRows > 0 && savedCounts.livedPracticePhysicalCausalityReady && world.gamePrototypeLivedPractice.noDirectCommand === true && world.gamePrototypeLivedPractice.noHiddenLawNormalView === true && world.gamePrototypeLivedPractice.noPredeclaredTechTree === true), evidence: `${savedCounts.livedPracticeRows} lived action row(s), ${savedCounts.livedPracticeSnapshots} practice snapshot(s), ${savedCounts.livedPracticePhysicsRows} lived physics row(s), ${savedCounts.livedPracticeCanvasCueRows} canvas cue row(s)` },
     { id: 'resident-worksite', pass: Boolean(world.gamePrototypeWorksite && savedCounts.worksiteReady && savedCounts.worksiteRows >= 2 && savedCounts.worksiteSnapshots > 0 && world.gamePrototypeWorksite.avatarCannotAssignJobs === true && world.gamePrototypeWorksite.noDirectCommand === true && world.gamePrototypeWorksite.noHiddenLawNormalView === true && world.gamePrototypeWorksite.noResourceSpawning === true), evidence: `${savedCounts.worksiteRows} worksite watch row(s), ${savedCounts.worksiteSnapshots} snapshot(s)` },
     { id: 'return-journal', pass: Boolean(world.gamePrototypeReturnJournal && savedCounts.returnJournalReady && savedCounts.returnJournalRows > 0 && savedCounts.returnJournalSnapshots >= 3 && world.gamePrototypeReturnJournal.forwardReturnVisible === true && world.gamePrototypeReturnJournal.saveRestoreVisible === true && world.gamePrototypeReturnJournal.noDirectReset === true && world.gamePrototypeReturnJournal.noHiddenLawNormalView === true), evidence: `${savedCounts.returnJournalRows} journal row(s), ${savedCounts.returnJournalSnapshots} snapshot(s)` },
-    { id: 'first-playable-session', pass: Boolean(world.gamePrototypePlaySession && savedCounts.playSessionReady && savedCounts.playSessionSteps >= world.gamePrototypePlaySession.requiredSteps.length && savedCounts.playSessionSnapshots >= world.gamePrototypePlaySession.requiredSteps.length && savedCounts.actionRailPhysicsPathRows > 0 && savedCounts.physicsPathSaveRows > 0 && savedCounts.physicsPathRestoreRows > 0 && world.gamePrototypePlaySession.stepLedger.some(row => row.step_id === 'physics_path' && row.latest_ambient_happy_path_ready === true && row.latest_normal_physics_path_ready === true) && world.gamePrototypePlaySession.stepLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false)), evidence: `${savedCounts.playSessionSteps} session step(s), ${savedCounts.playSessionSnapshots} snapshot(s), physicsPath=${savedCounts.actionRailPhysicsPathRows}, saved=${savedCounts.physicsPathSaveRows}, restored=${savedCounts.physicsPathRestoreRows}` },
+    { id: 'first-playable-session', pass: Boolean(world.gamePrototypePlaySession && savedCounts.playSessionReady && savedCounts.playSessionSteps >= world.gamePrototypePlaySession.requiredSteps.length && savedCounts.playSessionSnapshots >= world.gamePrototypePlaySession.requiredSteps.length && savedCounts.actionRailPhysicsPathRows > 0 && savedCounts.physicsPathSaveRows > 0 && savedCounts.physicsPathRestoreRows > 0 && savedCounts.primaryPhysicsPathCueRows > 0 && savedCounts.primaryPhysicsPathSaveRows > 0 && savedCounts.primaryPhysicsPathRestoreRows > 0 && world.gamePrototypePlaySession.stepLedger.some(row => row.step_id === 'physics_path' && row.latest_ambient_happy_path_ready === true && row.latest_normal_physics_path_ready === true) && world.gamePrototypePlaySession.stepLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false)), evidence: `${savedCounts.playSessionSteps} session step(s), ${savedCounts.playSessionSnapshots} snapshot(s), physicsPath=${savedCounts.actionRailPhysicsPathRows}, saved=${savedCounts.physicsPathSaveRows}, restored=${savedCounts.physicsPathRestoreRows}, visibleCue=${savedCounts.primaryPhysicsPathCueRows}, visibleSaved=${savedCounts.primaryPhysicsPathSaveRows}, visibleRestored=${savedCounts.primaryPhysicsPathRestoreRows}` },
     { id: 'terrain-physics-substrate', pass: Boolean(world.gamePrototypeTerrain && savedCounts.terrainRows > 0 && savedCounts.terrainFlowRows > 0 && savedCounts.terrainSupportRows > 0 && world.gamePrototypeTerrain.terrainLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.terrainRows} terrain step(s), ${savedCounts.terrainFlowRows} flow row(s), ${savedCounts.terrainSupportRows} support row(s)` },
     { id: 'tool-work-physics', pass: Boolean(world.gamePrototypeTools && savedCounts.toolUseRows > 0 && savedCounts.toolWearRows > 0 && world.gamePrototypeTools.useLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.toolUseRows} use row(s), ${savedCounts.toolWearRows} wear row(s), ${savedCounts.toolFailureRows} failure row(s), ${savedCounts.toolRepairRows} repair row(s)` },
     { id: 'resource-stock-physics', pass: Boolean(world.gamePrototypeResourcePhysics && savedCounts.resourceStockRows > 0 && savedCounts.resourceTransformRows >= savedCounts.resourceStockRows && world.gamePrototypeResourcePhysics.stockLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.resourceStockRows} stock step(s), ${savedCounts.resourceTransformRows} transform row(s), ${savedCounts.resourceLossRows} loss row(s), ${savedCounts.resourceGainRows} gain row(s)` },
@@ -15752,6 +15755,15 @@ function browserQaReadinessChecks() {
   const physicsPathRestoreRows = saves && saves.returnLog
     ? saves.returnLog.filter(row => row.restored_normal_play_physics_path_matches_saved === true && Number(row.restored_normal_play_physics_path_ready_rows || 0) > 0).length
     : 0;
+  const primaryPhysicsPathCueRows = stage && stage.canvasCueLedger
+    ? stage.canvasCueLedger.filter(row => row.session_physics_path_step_id === 'physics_path' && row.session_physics_path_ready === true && row.session_physics_path_body_expression_id && row.session_physics_path_body_expression_id !== 'none').length
+    : 0;
+  const primaryPhysicsPathSaveRows = saves && saves.slots
+    ? saves.slots.filter(slot => slot.primary_surface_physics_path_ready === true && slot.primary_surface_physics_path_fingerprint && slot.primary_surface_physics_path_fingerprint !== 'none').length
+    : 0;
+  const primaryPhysicsPathRestoreRows = saves && saves.returnLog
+    ? saves.returnLog.filter(row => row.restored_primary_surface_physics_path_matches_saved === true && row.restored_primary_surface_physics_path_ready === true).length
+    : 0;
   const sessionPhysicsPathRows = session && session.stepLedger
     ? session.stepLedger.filter(row => row.step_id === 'physics_path' && row.latest_ambient_happy_path_ready === true && row.latest_normal_physics_path_ready === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length
     : 0;
@@ -15779,8 +15791,8 @@ function browserQaReadinessChecks() {
     },
     {
       id: 'first-playable-session-physics-path',
-      pass: Boolean(session && session.acceptanceReady && sessionPhysicsPathRows > 0 && sessionAmbientReadyRows > 0 && physicsPathRows > 0 && physicsPathSaveRows > 0 && physicsPathRestoreRows > 0),
-      evidence: `sessionPhysics=${sessionPhysicsPathRows}, ambientReady=${sessionAmbientReadyRows}, normalRail=${physicsPathRows}, saved=${physicsPathSaveRows}, restoredMatches=${physicsPathRestoreRows}`,
+      pass: Boolean(session && session.acceptanceReady && sessionPhysicsPathRows > 0 && sessionAmbientReadyRows > 0 && physicsPathRows > 0 && physicsPathSaveRows > 0 && physicsPathRestoreRows > 0 && primaryPhysicsPathCueRows > 0 && primaryPhysicsPathSaveRows > 0 && primaryPhysicsPathRestoreRows > 0),
+      evidence: `sessionPhysics=${sessionPhysicsPathRows}, ambientReady=${sessionAmbientReadyRows}, normalRail=${physicsPathRows}, saved=${physicsPathSaveRows}, restoredMatches=${physicsPathRestoreRows}, visibleCue=${primaryPhysicsPathCueRows}, visibleSaved=${primaryPhysicsPathSaveRows}, visibleRestored=${primaryPhysicsPathRestoreRows}`,
       next_action: 'runFirstPlayableSessionLoop',
     },
     {
@@ -16008,6 +16020,14 @@ function saveSlotSummary(slot) {
     primary_play_surface_focus_rows: slot.primary_play_surface_focus_rows,
     primary_play_surface_cue_rows: slot.primary_play_surface_cue_rows,
     primary_play_surface_prompt_rows: slot.primary_play_surface_prompt_rows,
+    primary_surface_physics_path_rows: slot.primary_surface_physics_path_rows,
+    primary_surface_physics_path_ready: slot.primary_surface_physics_path_ready,
+    primary_surface_physics_path_action_id: slot.primary_surface_physics_path_action_id,
+    primary_surface_physics_path_happy_path_id: slot.primary_surface_physics_path_happy_path_id,
+    primary_surface_physics_path_save_slot_id: slot.primary_surface_physics_path_save_slot_id,
+    primary_surface_physics_path_restore_slot_id: slot.primary_surface_physics_path_restore_slot_id,
+    primary_surface_physics_path_body_expression_id: slot.primary_surface_physics_path_body_expression_id,
+    primary_surface_physics_path_fingerprint: slot.primary_surface_physics_path_fingerprint,
     first_playable_walkthrough_ready: slot.first_playable_walkthrough_ready,
     first_playable_walkthrough_steps: slot.first_playable_walkthrough_steps,
     first_playable_walkthrough_links: slot.first_playable_walkthrough_links,
@@ -16340,6 +16360,56 @@ function normalPlayPhysicsPathContinuitySnapshot(sourceWorld = world) {
   };
 }
 
+function primarySurfacePhysicsPathVisibilitySnapshot(sourceWorld = world) {
+  const stage = sourceWorld.gamePrototypeWorldStage || null;
+  const latestSnapshot = stage && stage.latestSnapshot
+    ? stage.latestSnapshot
+    : sourceWorld === world && typeof currentPrimaryPlaySurfaceSnapshot === 'function'
+      ? currentPrimaryPlaySurfaceSnapshot()
+      : null;
+  const cueRows = stage && Array.isArray(stage.canvasCueLedger)
+    ? stage.canvasCueLedger.filter(row => row.session_physics_path_step_id === 'physics_path')
+    : [];
+  const latestCue = cueRows.length ? cueRows[cueRows.length - 1] : null;
+  const playSession = sourceWorld.gamePrototypePlaySession || null;
+  const stepRows = playSession && Array.isArray(playSession.stepLedger) ? playSession.stepLedger.filter(row => row.step_id === 'physics_path') : [];
+  const latestStep = stepRows.length ? stepRows[stepRows.length - 1] : null;
+  const valueFrom = (field, fallback = 'none') => {
+    if (latestSnapshot && latestSnapshot[field] !== undefined && latestSnapshot[field] !== null) return latestSnapshot[field];
+    if (latestCue && latestCue[field] !== undefined && latestCue[field] !== null) return latestCue[field];
+    return fallback;
+  };
+  const stepId = valueFrom('session_physics_path_step_id', latestStep ? latestStep.step_id : 'none');
+  const ready = valueFrom('session_physics_path_ready', latestStep ? latestStep.latest_ambient_happy_path_ready === true && latestStep.latest_normal_physics_path_ready === true : false) === true;
+  const actionId = valueFrom('session_physics_path_action_id', latestStep ? latestStep.latest_normal_physics_path_action_id || 'none' : 'none');
+  const happyPathId = valueFrom('session_physics_path_happy_path_id', latestStep ? latestStep.latest_normal_physics_path_happy_path_id || latestStep.latest_ambient_happy_path_id || 'none' : 'none');
+  const proposalId = valueFrom('session_physics_path_proposal_id', latestStep ? latestStep.latest_ambient_happy_path_proposal_id || 'none' : 'none');
+  const residentWord = valueFrom('session_physics_path_word', latestStep ? latestStep.latest_ambient_happy_path_word || 'none' : 'none');
+  const saveSlotId = valueFrom('session_physics_path_save_slot_id', latestStep ? latestStep.latest_normal_physics_path_save_slot_id || 'none' : 'none');
+  const restoreSlotId = valueFrom('session_physics_path_restore_slot_id', latestStep ? latestStep.latest_normal_physics_path_restore_slot_id || 'none' : 'none');
+  const bodyExpressionId = valueFrom('session_physics_path_body_expression_id', latestStep ? latestStep.latest_normal_physics_path_body_expression_id || 'none' : 'none');
+  const continuity = {
+    rows: cueRows.length,
+    snapshot_id: latestSnapshot ? latestSnapshot.snapshot_id || 'none' : 'none',
+    cue_id: latestCue ? latestCue.cue_id || 'none' : 'none',
+    step_id: stepId,
+    ready,
+    action_id: actionId,
+    happy_path_id: happyPathId,
+    proposal_id: proposalId,
+    resident_word: residentWord,
+    save_slot_id: saveSlotId,
+    restore_slot_id: restoreSlotId,
+    body_expression_id: bodyExpressionId,
+  };
+  return {
+    ...continuity,
+    fingerprint: continuity.step_id === 'physics_path' && continuity.action_id !== 'none'
+      ? JSON.stringify(continuity)
+      : 'none',
+  };
+}
+
 function savePrototypeSlot(label = 'manual prototype save') {
   ensureGamePrototype();
   const saves = ensurePrototypeSaves();
@@ -16354,6 +16424,7 @@ function savePrototypeSlot(label = 'manual prototype save') {
   const pressureLanguageContinuity = pressureLanguageContinuitySnapshot(world);
   const ambientPhysicsContinuity = normalPlayAmbientPhysicsContinuitySnapshot(world);
   const physicsPathContinuity = normalPlayPhysicsPathContinuitySnapshot(world);
+  const primaryPhysicsPathVisibility = primarySurfacePhysicsPathVisibilitySnapshot(world);
   const slotNumber = saves.slots.length + 1;
   const slot = {
     slot_id: `GPS-${String(slotNumber).padStart(2, '0')}`,
@@ -16403,6 +16474,18 @@ function savePrototypeSlot(label = 'manual prototype save') {
     primary_play_surface_focus_rows: world.gamePrototypeWorldStage ? world.gamePrototypeWorldStage.focusLedger.length : 0,
     primary_play_surface_cue_rows: world.gamePrototypeWorldStage ? world.gamePrototypeWorldStage.canvasCueLedger.length : 0,
     primary_play_surface_prompt_rows: world.gamePrototypeWorldStage ? world.gamePrototypeWorldStage.actionPromptLedger.length : 0,
+    primary_surface_physics_path_rows: primaryPhysicsPathVisibility.rows,
+    primary_surface_physics_path_ready: primaryPhysicsPathVisibility.ready,
+    primary_surface_physics_path_snapshot_id: primaryPhysicsPathVisibility.snapshot_id,
+    primary_surface_physics_path_cue_id: primaryPhysicsPathVisibility.cue_id,
+    primary_surface_physics_path_action_id: primaryPhysicsPathVisibility.action_id,
+    primary_surface_physics_path_happy_path_id: primaryPhysicsPathVisibility.happy_path_id,
+    primary_surface_physics_path_proposal_id: primaryPhysicsPathVisibility.proposal_id,
+    primary_surface_physics_path_resident_word: primaryPhysicsPathVisibility.resident_word,
+    primary_surface_physics_path_save_slot_id: primaryPhysicsPathVisibility.save_slot_id,
+    primary_surface_physics_path_restore_slot_id: primaryPhysicsPathVisibility.restore_slot_id,
+    primary_surface_physics_path_body_expression_id: primaryPhysicsPathVisibility.body_expression_id,
+    primary_surface_physics_path_fingerprint: primaryPhysicsPathVisibility.fingerprint,
     first_playable_walkthrough_ready: world.gamePrototypeWalkthrough ? world.gamePrototypeWalkthrough.acceptanceReady === true : false,
     first_playable_walkthrough_steps: world.gamePrototypeWalkthrough ? world.gamePrototypeWalkthrough.stepLedger.length : 0,
     first_playable_walkthrough_links: world.gamePrototypeWalkthrough ? world.gamePrototypeWalkthrough.evidenceLinks.length : 0,
@@ -16624,6 +16707,16 @@ function returnPrototypeSlot() {
     saved_normal_play_physics_path_body_expression_id: slot.normal_play_physics_path_body_expression_id || 'none',
     saved_normal_play_physics_path_resident_word: slot.normal_play_physics_path_resident_word || 'none',
     saved_normal_play_physics_path_fingerprint: slot.normal_play_physics_path_fingerprint || 'none',
+    saved_primary_surface_physics_path_rows: slot.primary_surface_physics_path_rows || 0,
+    saved_primary_surface_physics_path_ready: slot.primary_surface_physics_path_ready === true,
+    saved_primary_surface_physics_path_snapshot_id: slot.primary_surface_physics_path_snapshot_id || 'none',
+    saved_primary_surface_physics_path_cue_id: slot.primary_surface_physics_path_cue_id || 'none',
+    saved_primary_surface_physics_path_action_id: slot.primary_surface_physics_path_action_id || 'none',
+    saved_primary_surface_physics_path_happy_path_id: slot.primary_surface_physics_path_happy_path_id || 'none',
+    saved_primary_surface_physics_path_save_slot_id: slot.primary_surface_physics_path_save_slot_id || 'none',
+    saved_primary_surface_physics_path_restore_slot_id: slot.primary_surface_physics_path_restore_slot_id || 'none',
+    saved_primary_surface_physics_path_body_expression_id: slot.primary_surface_physics_path_body_expression_id || 'none',
+    saved_primary_surface_physics_path_fingerprint: slot.primary_surface_physics_path_fingerprint || 'none',
     saved_normal_play_ambient_physics_rows: slot.normal_play_ambient_physics_rows || 0,
     saved_normal_play_ambient_physics_proposals: slot.normal_play_ambient_physics_proposals || 0,
     saved_normal_play_ambient_physics_action_rows: slot.normal_play_ambient_physics_action_rows || 0,
@@ -16782,6 +16875,20 @@ function returnPrototypeSlot() {
   returnEntry.restored_normal_play_physics_path_resident_word = restoredPhysicsPathContinuity.latest_resident_word;
   returnEntry.restored_normal_play_physics_path_fingerprint = restoredPhysicsPathContinuity.fingerprint;
   returnEntry.restored_normal_play_physics_path_matches_saved = Boolean(slot.normal_play_physics_path_fingerprint && slot.normal_play_physics_path_fingerprint !== 'none' && slot.normal_play_physics_path_fingerprint === restoredPhysicsPathContinuity.fingerprint);
+  const restoredPrimaryPhysicsPathVisibility = primarySurfacePhysicsPathVisibilitySnapshot(world);
+  returnEntry.restored_primary_surface_physics_path_rows = restoredPrimaryPhysicsPathVisibility.rows;
+  returnEntry.restored_primary_surface_physics_path_ready = restoredPrimaryPhysicsPathVisibility.ready === true;
+  returnEntry.restored_primary_surface_physics_path_snapshot_id = restoredPrimaryPhysicsPathVisibility.snapshot_id;
+  returnEntry.restored_primary_surface_physics_path_cue_id = restoredPrimaryPhysicsPathVisibility.cue_id;
+  returnEntry.restored_primary_surface_physics_path_action_id = restoredPrimaryPhysicsPathVisibility.action_id;
+  returnEntry.restored_primary_surface_physics_path_happy_path_id = restoredPrimaryPhysicsPathVisibility.happy_path_id;
+  returnEntry.restored_primary_surface_physics_path_proposal_id = restoredPrimaryPhysicsPathVisibility.proposal_id;
+  returnEntry.restored_primary_surface_physics_path_resident_word = restoredPrimaryPhysicsPathVisibility.resident_word;
+  returnEntry.restored_primary_surface_physics_path_save_slot_id = restoredPrimaryPhysicsPathVisibility.save_slot_id;
+  returnEntry.restored_primary_surface_physics_path_restore_slot_id = restoredPrimaryPhysicsPathVisibility.restore_slot_id;
+  returnEntry.restored_primary_surface_physics_path_body_expression_id = restoredPrimaryPhysicsPathVisibility.body_expression_id;
+  returnEntry.restored_primary_surface_physics_path_fingerprint = restoredPrimaryPhysicsPathVisibility.fingerprint;
+  returnEntry.restored_primary_surface_physics_path_matches_saved = Boolean(slot.primary_surface_physics_path_fingerprint && slot.primary_surface_physics_path_fingerprint !== 'none' && slot.primary_surface_physics_path_fingerprint === restoredPrimaryPhysicsPathVisibility.fingerprint);
   const restoredAmbientPhysicsBehavior = applyRestoredAmbientPhysicsProposalBehavior(returnEntry);
   if (restoredAmbientPhysicsBehavior) {
     returnEntry.restored_normal_play_ambient_behavior_id = restoredAmbientPhysicsBehavior.behavior_id;
@@ -16973,6 +17080,7 @@ function buildPrototypeAcceptanceReceipt() {
   const livedPracticePhysicsRows = livedPractice && livedPractice.physicsLedger ? livedPractice.physicsLedger.length : 0;
   const livedPracticeCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => (row.cues || []).some(cue => /lived physics/.test(cue))).length : 0;
   const integratedCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.integrated_loop_id && row.integrated_loop_id !== 'none' && (row.cues || []).some(cue => /integrated chain/.test(cue))).length : 0;
+  const primarySurfacePhysicsPathCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.session_physics_path_step_id === 'physics_path' && row.session_physics_path_ready === true && row.session_physics_path_body_expression_id && row.session_physics_path_body_expression_id !== 'none' && (row.cues || []).some(cue => /first playable physics path/.test(cue))).length : 0;
   const materialStateCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => (row.cues || []).some(cue => /material state/.test(cue)) && row.component_id && row.component_id !== 'none').length : 0;
   const objectChainCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.object_chain_phase && row.object_chain_phase !== 'none' && (row.cues || []).some(cue => /object chain/.test(cue)) && row.normal_view_hidden_law_exposed === false).length : 0;
   const normalTestChainCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.normal_test_chain_phase && row.normal_test_chain_phase !== 'none' && row.normal_test_chain_test_id && row.normal_test_chain_test_id !== 'none' && (row.cues || []).some(cue => /normal test chain/.test(cue)) && row.normal_view_hidden_law_exposed === false).length : 0;
@@ -17080,6 +17188,8 @@ function buildPrototypeAcceptanceReceipt() {
   const pressureLanguageContinuityRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_pressure_language_matches_saved === true && Number(row.restored_pressure_language_rows || 0) > 0 && row.restored_pressure_language_latest_id && row.restored_pressure_language_latest_id !== 'none' && row.restored_pressure_language_root_id && row.restored_pressure_language_root_id !== 'none' && row.restored_pressure_language_term_id && row.restored_pressure_language_term_id !== 'none').length : 0;
   const normalPlayPhysicsPathSaveRows = saves && saves.slots ? saves.slots.filter(slot => Number(slot.normal_play_physics_path_ready_rows || 0) > 0 && slot.normal_play_latest_physics_path_id && slot.normal_play_latest_physics_path_id !== 'none' && slot.normal_play_physics_path_save_slot_id && slot.normal_play_physics_path_save_slot_id !== 'none' && slot.normal_play_physics_path_restore_slot_id && slot.normal_play_physics_path_restore_slot_id !== 'none' && slot.normal_play_physics_path_body_expression_id && slot.normal_play_physics_path_body_expression_id !== 'none' && slot.normal_play_physics_path_fingerprint && slot.normal_play_physics_path_fingerprint !== 'none').length : 0;
   const normalPlayPhysicsPathRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_normal_play_physics_path_matches_saved === true && Number(row.restored_normal_play_physics_path_ready_rows || 0) > 0 && row.restored_normal_play_latest_physics_path_id && row.restored_normal_play_latest_physics_path_id !== 'none' && row.restored_normal_play_physics_path_body_expression_id && row.restored_normal_play_physics_path_body_expression_id !== 'none').length : 0;
+  const primarySurfacePhysicsPathSaveRows = saves && saves.slots ? saves.slots.filter(slot => slot.primary_surface_physics_path_ready === true && slot.primary_surface_physics_path_action_id && slot.primary_surface_physics_path_action_id !== 'none' && slot.primary_surface_physics_path_body_expression_id && slot.primary_surface_physics_path_body_expression_id !== 'none' && slot.primary_surface_physics_path_fingerprint && slot.primary_surface_physics_path_fingerprint !== 'none').length : 0;
+  const primarySurfacePhysicsPathRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_primary_surface_physics_path_matches_saved === true && row.restored_primary_surface_physics_path_ready === true && row.restored_primary_surface_physics_path_action_id && row.restored_primary_surface_physics_path_action_id !== 'none' && row.restored_primary_surface_physics_path_body_expression_id && row.restored_primary_surface_physics_path_body_expression_id !== 'none').length : 0;
   const normalPlayAmbientPhysicsSaveRows = saves && saves.slots ? saves.slots.filter(slot => Number(slot.normal_play_ambient_physics_rows || 0) > 0 && Number(slot.normal_play_ambient_physics_proposals || 0) > 0 && slot.normal_play_ambient_latest_proposal_id && slot.normal_play_ambient_latest_proposal_id !== 'none' && slot.normal_play_ambient_pressure_language_id && slot.normal_play_ambient_pressure_language_id !== 'none' && slot.normal_play_ambient_continuity_fingerprint && slot.normal_play_ambient_continuity_fingerprint !== 'none').length : 0;
   const normalPlayAmbientPhysicsRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_normal_play_ambient_physics_matches_saved === true && Number(row.restored_normal_play_ambient_physics_rows || 0) > 0 && Number(row.restored_normal_play_ambient_physics_proposals || 0) > 0 && row.restored_normal_play_ambient_latest_proposal_id && row.restored_normal_play_ambient_latest_proposal_id !== 'none' && row.restored_normal_play_ambient_pressure_language_id && row.restored_normal_play_ambient_pressure_language_id !== 'none').length : 0;
   const normalPlayAmbientHappyPathRows = playSession && playSession.ambientPhysicsHappyPathLedger ? playSession.ambientPhysicsHappyPathLedger.length : 0;
@@ -17094,7 +17204,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'normal_play_physics_language_save_return_continuity', pass: Boolean(saves && normalPlayAmbientPhysicsSaveRows > 0 && normalPlayAmbientPhysicsRestoreRows > 0), evidence: saves ? `savedAmbientPhysics=${normalPlayAmbientPhysicsSaveRows}, restoredMatches=${normalPlayAmbientPhysicsRestoreRows}` : 'no prototype saves' },
     { id: 'normal_play_physics_return_body_language', pass: Boolean(autonomous && saves && normalPlayAmbientReturnBehaviorRows > 0 && normalPlayAmbientReturnExpressionRows > 0 && normalPlayAmbientReturnRestoreRows > 0), evidence: `returnBehavior=${normalPlayAmbientReturnBehaviorRows}, expressions=${normalPlayAmbientReturnExpressionRows}, restoreRows=${normalPlayAmbientReturnRestoreRows}` },
     { id: 'first_playable_ambient_physics_happy_path', pass: Boolean(playSession && normalPlayAmbientHappyPathRows > 0 && normalPlayAmbientHappyPathReadyRows > 0), evidence: playSession ? `happyPaths=${normalPlayAmbientHappyPathRows}, ready=${normalPlayAmbientHappyPathReadyRows}` : 'not run' },
-    { id: 'normal_play_physics_path_save_return_continuity', pass: Boolean(saves && normalPlayPhysicsPathSaveRows > 0 && normalPlayPhysicsPathRestoreRows > 0), evidence: saves ? `savedPhysicsPath=${normalPlayPhysicsPathSaveRows}, restoredMatches=${normalPlayPhysicsPathRestoreRows}` : 'not run' },
+    { id: 'normal_play_physics_path_save_return_continuity', pass: Boolean(saves && normalPlayPhysicsPathSaveRows > 0 && normalPlayPhysicsPathRestoreRows > 0 && primarySurfacePhysicsPathSaveRows > 0 && primarySurfacePhysicsPathRestoreRows > 0), evidence: saves ? `savedPhysicsPath=${normalPlayPhysicsPathSaveRows}, restoredMatches=${normalPlayPhysicsPathRestoreRows}, visibleSaved=${primarySurfacePhysicsPathSaveRows}, visibleRestored=${primarySurfacePhysicsPathRestoreRows}` : 'not run' },
     { id: 'autonomous_stochastic_residents', pass: Boolean(autonomous && autonomous.actionLog.length > 0 && autonomous.entropyLedger.length > 0), evidence: autonomous ? `${autonomous.actionLog.length} action(s), entropy rows=${autonomous.entropyLedger.length}` : 'not started' },
     { id: 'ordinary_physics_pressure_drives_residents', pass: Boolean(autonomous && physics && residentPhysicsPressureRows > 0 && residentPhysicsPressureRoutineRows > 0 && residentPhysicsPressureActionRows > 0 && residentPhysicsPressurePhysicsRows > 0), evidence: `pressureRows=${residentPhysicsPressureRows}, routine=${residentPhysicsPressureRoutineRows}, action=${residentPhysicsPressureActionRows}, physicsLedger=${residentPhysicsPressurePhysicsRows}` },
     { id: 'physics_pressure_cultivates_language', pass: Boolean(materialWorld && residentPhysicsLanguageRows > 0 && residentPhysicsLanguageRootRows > 0 && residentPhysicsLanguageTermRows > 0), evidence: `languagePressure=${residentPhysicsLanguageRows}, groundedRoots=${residentPhysicsLanguageRootRows}, pressureTerms=${residentPhysicsLanguageTermRows}` },
@@ -17124,7 +17234,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'material_state_physics', pass: Boolean(materialWorld && physics && materialStateRows > 0 && propertyDriftRows > 0 && physics.materialStateLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false) && physics.propertyDriftLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${materialStateRows} state row(s), ${phaseChangeRows} phase row(s), ${propertyDriftRows} property row(s), ${materialStateRepairRows} repair row(s)` },
     { id: 'physics_to_practice_playable_slice', pass: Boolean(playableSlice && playableSlice.acceptanceReady && playableSlicePhysicsRows > 0 && playableSliceProposalRows > 0 && playableSlicePracticeRows > 0 && playableSliceReturnRows > 0 && playableSlice.noDirectCommand === true && playableSlice.noPredeclaredTechTree === true && playableSlice.noCorrectConceptInstalled === true), evidence: playableSlice ? `${playableSlice.phase}; physics=${playableSlicePhysicsRows}, proposals=${playableSliceProposalRows}, practices=${playableSlicePracticeRows}, return=${playableSliceReturnRows}` : 'not run' },
     { id: 'playable_village_day_0_3', pass: Boolean(villageDay03 && villageDay03.acceptanceReady && villageDay03Rows >= 4 && villageDay03PlayerRows >= 4 && villageDay03ResidentRows >= 4 && villageDay03WorldRows >= 4 && villageDay03.physicsLinks.length > 0 && villageDay03.proposalLinks.length > 0 && villageDay03.practiceLinks.length > 0 && villageDay03.saveLinks.length > 0 && villageDay03ReturnLinks > 0 && villageDay03.noDirectCommand === true && villageDay03.noTechTreeUnlock === true), evidence: villageDay03 ? `${villageDay03.phase}; rows=${villageDay03Rows}, player=${villageDay03PlayerRows}, resident=${villageDay03ResidentRows}, world=${villageDay03WorldRows}, returns=${villageDay03ReturnLinks}` : 'not run' },
-    { id: 'primary_play_surface', pass: Boolean(worldStage && worldStage.acceptanceReady && worldStageFocusRows >= 3 && worldStageCueRows >= 3 && worldStagePromptRows >= 3 && integratedCanvasCueRows > 0 && worldStage.canvasFirst === true && worldStage.noHiddenLawInNormalView === true && worldStage.noDirectCommand === true), evidence: worldStage ? `${worldStage.phase}; focus=${worldStageFocusRows}, cues=${worldStageCueRows}, integrated=${integratedCanvasCueRows}, prompts=${worldStagePromptRows}` : 'not run' },
+    { id: 'primary_play_surface', pass: Boolean(worldStage && worldStage.acceptanceReady && worldStageFocusRows >= 3 && worldStageCueRows >= 3 && worldStagePromptRows >= 3 && integratedCanvasCueRows > 0 && primarySurfacePhysicsPathCueRows > 0 && worldStage.canvasFirst === true && worldStage.noHiddenLawInNormalView === true && worldStage.noDirectCommand === true), evidence: worldStage ? `${worldStage.phase}; focus=${worldStageFocusRows}, cues=${worldStageCueRows}, integrated=${integratedCanvasCueRows}, visiblePhysicsPath=${primarySurfacePhysicsPathCueRows}, prompts=${worldStagePromptRows}` : 'not run' },
     { id: 'canvas_material_state_visible', pass: Boolean(worldStage && materialStateCanvasCueRows > 0 && worldStage.latestSnapshot && worldStage.latestSnapshot.active_component_id !== 'none' && worldStage.latestSnapshot.active_component_material_id !== 'none' && worldStage.latestSnapshot.hidden_law_normal_view === false && worldStage.noHiddenLawInNormalView === true), evidence: worldStage && worldStage.latestSnapshot ? `materialCues=${materialStateCanvasCueRows}, component=${worldStage.latestSnapshot.active_component_id}, material=${worldStage.latestSnapshot.active_component_material_id}, moisture=${worldStage.latestSnapshot.active_component_moisture}, damage=${worldStage.latestSnapshot.active_component_damage}, stability=${worldStage.latestSnapshot.active_component_stability}` : 'not run' },
     { id: 'canvas_component_selection', pass: Boolean(canvasSelection && canvasSelection.acceptanceReady === true && canvasSelectionRows > 0 && canvasSelectionCueRows > 0 && canvasSelection.selectionLedger.every(row => row.inspect_only === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false)), evidence: canvasSelection ? `selections=${canvasSelectionRows}, cueRows=${canvasSelectionCueRows}, selected=${canvasSelection.selected_component_id || 'none'}` : 'not run' },
     { id: 'first_playable_walkthrough', pass: Boolean(walkthrough && walkthrough.acceptanceReady && walkthroughSteps >= walkthrough.requiredSteps.length && walkthroughLinks >= walkthrough.requiredSteps.length && walkthrough.noDirectCommand === true && walkthrough.noTechTreeUnlock === true && walkthrough.noHiddenLawNormalView === true), evidence: walkthrough ? `${walkthrough.phase}; steps=${walkthroughSteps}, links=${walkthroughLinks}` : 'not run' },
@@ -17270,6 +17380,7 @@ function formatPrototypeSaves() {
   const materialSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: materialContinuity handling=${slot.material_continuity_latest_id || 'none'} action=${slot.material_continuity_action || 'none'} component=${slot.material_continuity_component_id || 'none'} target=${slot.material_continuity_target_source || 'none'} selected=${slot.material_continuity_selected_component_bound ? 'yes' : 'no'} body=${slot.material_continuity_body_step_id || 'none'}`);
   const normalTestSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: normalTestContinuity action=${slot.normal_test_action_id || 'none'} test=${slot.normal_test_id || 'none'} board=${slot.normal_test_board_proposal_id || 'none'} support=${slot.normal_test_support_rows || 0} project=${slot.normal_test_project_rows || 0}/${slot.normal_test_latest_project_id || 'none'} worksite=${slot.normal_test_worksite_rows || 0}/${slot.normal_test_latest_worksite_id || 'none'} visual=${slot.normal_test_visual_rows || 0}/${slot.normal_test_latest_visual_id || 'none'} feedback=${slot.normal_test_feedback_rows || 0}/${slot.normal_test_latest_feedback_id || 'none'} practice=${slot.normal_test_feedback_practice_id || 'none'} body=${slot.normal_test_feedback_body_step_id || 'none'}`);
   const physicsPathSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: physicsPath rows=${slot.normal_play_physics_path_rows || 0} ready=${slot.normal_play_physics_path_ready_rows || 0} action=${slot.normal_play_latest_physics_path_action_id || 'none'} path=${slot.normal_play_latest_physics_path_id || 'none'} proposal=${slot.normal_play_physics_path_proposal_id || 'none'} word=${slot.normal_play_physics_path_resident_word || 'none'} save=${slot.normal_play_physics_path_save_slot_id || 'none'} restore=${slot.normal_play_physics_path_restore_slot_id || 'none'} body=${slot.normal_play_physics_path_body_expression_id || 'none'}`);
+  const primaryPhysicsPathSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: visiblePhysicsPath rows=${slot.primary_surface_physics_path_rows || 0} ready=${slot.primary_surface_physics_path_ready ? 'yes' : 'no'} cue=${slot.primary_surface_physics_path_cue_id || 'none'} action=${slot.primary_surface_physics_path_action_id || 'none'} happy=${slot.primary_surface_physics_path_happy_path_id || 'none'} save=${slot.primary_surface_physics_path_save_slot_id || 'none'} restore=${slot.primary_surface_physics_path_restore_slot_id || 'none'} body=${slot.primary_surface_physics_path_body_expression_id || 'none'}`);
   const ambientPhysicsSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ambientPhysics rows=${slot.normal_play_ambient_physics_rows || 0} proposals=${slot.normal_play_ambient_physics_proposals || 0} action=${slot.normal_play_ambient_latest_action_id || 'none'} step=${slot.normal_play_ambient_latest_step_id || 'none'} proposal=${slot.normal_play_ambient_latest_proposal_id || 'none'} word=${slot.normal_play_ambient_resident_word || 'none'} gloss=${slot.normal_play_ambient_player_gloss || 'none'}`);
   const pressureLanguageSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: pressureLanguage pressure=${slot.physics_pressure_rows || 0}/${slot.physics_pressure_latest_id || 'none'} step=${slot.physics_pressure_latest_step_id || 'none'} component=${slot.physics_pressure_component_id || 'none'} kind=${slot.physics_pressure_kind || 'none'} language=${slot.pressure_language_rows || 0}/${slot.pressure_language_latest_id || 'none'} root=${slot.pressure_language_root_id || 'none'} term=${slot.pressure_language_term_id || 'none'} word=${slot.pressure_language_resident_word || 'none'} gloss=${slot.pressure_language_player_gloss || 'none'}`);
   const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, livedPhysics=${row.restored_lived_practice_physics_rows || 0}/${row.restored_lived_practice_latest_physics_id || 'none'}, projectVisuals=${row.restored_project_visual_rows || 0}/${row.restored_latest_project_visual_id || 'none'}, integrated=${row.restored_first_playable_integrated_rows || 0}/${row.restored_first_playable_latest_integrated_id || 'none'} complete=${row.restored_first_playable_integrated_complete ? 'yes' : 'no'} follow=${row.restored_normal_play_follow_rows || 0}/${row.restored_normal_play_follow_recovery_rows || 0} space, avatarPresence=${row.restored_avatar_presence_rows || 0}/${row.restored_avatar_presence_return_id || 'none'} tone=${row.restored_avatar_presence_tone_after_restore || row.restored_avatar_presence_tone || 'none'}, from replay=${row.returned_from_replay_rows}`);
@@ -17277,6 +17388,7 @@ function formatPrototypeSaves() {
   const materialReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredMaterial handling=${row.restored_material_continuity_latest_id || 'none'} action=${row.restored_material_continuity_action || 'none'} component=${row.restored_material_continuity_component_id || 'none'} target=${row.restored_material_continuity_target_source || 'none'} match=${row.restored_material_continuity_matches_saved ? 'yes' : 'no'}`);
   const normalTestReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredNormalTest action=${row.restored_normal_test_action_id || 'none'} test=${row.restored_normal_test_id || 'none'} board=${row.restored_normal_test_board_proposal_id || 'none'} project=${row.restored_normal_test_project_rows || 0}/${row.restored_normal_test_latest_project_id || 'none'} worksite=${row.restored_normal_test_worksite_rows || 0}/${row.restored_normal_test_latest_worksite_id || 'none'} visual=${row.restored_normal_test_visual_rows || 0}/${row.restored_normal_test_latest_visual_id || 'none'} feedback=${row.restored_normal_test_feedback_rows || 0}/${row.restored_normal_test_latest_feedback_id || 'none'} practice=${row.restored_normal_test_feedback_practice_id || 'none'} body=${row.restored_normal_test_feedback_body_step_id || 'none'} behavior=${row.restored_normal_test_feedback_behavior_id || 'none'}/${row.restored_normal_test_feedback_behavior_kind || 'none'} match=${row.restored_normal_test_continuity_matches_saved ? 'yes' : 'no'}`);
   const physicsPathReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredPhysicsPath rows=${row.restored_normal_play_physics_path_rows || 0} ready=${row.restored_normal_play_physics_path_ready_rows || 0} action=${row.restored_normal_play_latest_physics_path_action_id || 'none'} path=${row.restored_normal_play_latest_physics_path_id || 'none'} proposal=${row.restored_normal_play_physics_path_proposal_id || 'none'} word=${row.restored_normal_play_physics_path_resident_word || 'none'} body=${row.restored_normal_play_physics_path_body_expression_id || 'none'} match=${row.restored_normal_play_physics_path_matches_saved ? 'yes' : 'no'}`);
+  const primaryPhysicsPathReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredVisiblePhysicsPath rows=${row.restored_primary_surface_physics_path_rows || 0} ready=${row.restored_primary_surface_physics_path_ready ? 'yes' : 'no'} cue=${row.restored_primary_surface_physics_path_cue_id || 'none'} action=${row.restored_primary_surface_physics_path_action_id || 'none'} happy=${row.restored_primary_surface_physics_path_happy_path_id || 'none'} body=${row.restored_primary_surface_physics_path_body_expression_id || 'none'} match=${row.restored_primary_surface_physics_path_matches_saved ? 'yes' : 'no'}`);
   const ambientPhysicsReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredAmbientPhysics rows=${row.restored_normal_play_ambient_physics_rows || 0} proposals=${row.restored_normal_play_ambient_physics_proposals || 0} action=${row.restored_normal_play_ambient_latest_action_id || 'none'} step=${row.restored_normal_play_ambient_latest_step_id || 'none'} proposal=${row.restored_normal_play_ambient_latest_proposal_id || 'none'} word=${row.restored_normal_play_ambient_resident_word || 'none'} match=${row.restored_normal_play_ambient_physics_matches_saved ? 'yes' : 'no'}`);
   const pressureLanguageReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredPressureLanguage pressure=${row.restored_physics_pressure_rows || 0}/${row.restored_physics_pressure_latest_id || 'none'} step=${row.restored_physics_pressure_latest_step_id || 'none'} component=${row.restored_physics_pressure_component_id || 'none'} language=${row.restored_pressure_language_rows || 0}/${row.restored_pressure_language_latest_id || 'none'} root=${row.restored_pressure_language_root_id || 'none'} term=${row.restored_pressure_language_term_id || 'none'} word=${row.restored_pressure_language_resident_word || 'none'} match=${row.restored_pressure_language_matches_saved ? 'yes' : 'no'}`);
   return [
@@ -17292,6 +17404,8 @@ function formatPrototypeSaves() {
     ...(normalTestSlots.length ? normalTestSlots : ['none']),
     'Normal-play physics path continuity:',
     ...(physicsPathSlots.length ? physicsPathSlots : ['none']),
+    'Primary-surface Physics path visibility:',
+    ...(primaryPhysicsPathSlots.length ? primaryPhysicsPathSlots : ['none']),
     'Normal-play ambient physics continuity:',
     ...(ambientPhysicsSlots.length ? ambientPhysicsSlots : ['none']),
     'Pressure-language continuity:',
@@ -17306,6 +17420,8 @@ function formatPrototypeSaves() {
     ...(normalTestReturns.length ? normalTestReturns : ['none']),
     'Physics path returns:',
     ...(physicsPathReturns.length ? physicsPathReturns : ['none']),
+    'Primary-surface Physics path returns:',
+    ...(primaryPhysicsPathReturns.length ? primaryPhysicsPathReturns : ['none']),
     'Ambient physics returns:',
     ...(ambientPhysicsReturns.length ? ambientPhysicsReturns : ['none']),
     'Pressure-language returns:',

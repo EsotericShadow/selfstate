@@ -1085,3 +1085,17 @@ Acceptance requires:
 - hidden simulator law remains absent from normal view
 
 This makes the Physics path proof inspectable during ordinary play rather than only through readiness/export receipts.
+## Added scope gate: Visible Physics path save-return continuity
+
+`visible_physics_path_save_return_continuity` is now part of first playable prototype scope.
+
+Acceptance requires:
+
+- save slots persist the primary-surface Physics path cue
+- return logs restore and compare the visible cue fingerprint
+- browser readiness reports visible cue, visible saved rows, and visible restored rows
+- Prototype QA requires visible cue persistence in the first-playable session check
+- exported acceptance requires visible cue save/return continuity as part of normal Physics path continuity
+- normal view remains free of hidden simulator law and direct resident commands
+
+This ensures the first playable saves what the player actually saw, not only internal physics ledger state.

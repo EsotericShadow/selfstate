@@ -646,3 +646,10 @@ Create an ambient physics proposal through normal play, save, return, and observ
 3. Inspect Player Mode and confirm the visible cards include `first playable physics path`.
 4. Inspect the canvas HUD and confirm `Playable physics path` appears beside the normal-test and integrated-chain cues.
 5. Confirm the normal view does not reveal hidden simulator law or offer direct resident command controls.
+## Playtest task: visible Physics path save-return continuity
+
+1. Run `First playable` until the primary surface shows `First playable Physics path`.
+2. Save and return.
+3. Inspect `Save / return` and confirm `Primary-surface Physics path visibility` shows a saved cue, action id, happy-path id, save id, restore id, and body-expression id.
+4. Confirm `Primary-surface Physics path returns` reports `match=yes`.
+5. Run `QA readiness` and confirm `first-playable-session-physics-path` includes visible cue, visible saved, and visible restored counts.

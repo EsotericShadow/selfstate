@@ -870,3 +870,8 @@ Browser QA readiness now includes a separate `first-playable-session-physics-pat
 The normal primary play surface now carries the first-playable Physics path proof as player-facing state. The surface snapshot, focus ledger, canvas cue ledger, Player Mode card, and canvas HUD expose the latest `physics_path` session step, happy-path id, proposal/word, save slot, restore slot, and public body-language expression.
 
 The primary surface readiness gate now requires a visible session Physics path cue. This prevents the first playable from being accepted only through receipts while the normal village view remains unaware of the physics path chain.
+## Prototype v0 visible Physics path save-return update
+
+Prototype save slots now persist the player-facing first-playable Physics path cue from the primary surface. The saved slot records the visible cue id, action id, happy-path id, proposal/word, save slot, restore slot, body-expression id, and a fingerprint.
+
+Return logs recompute the same primary-surface cue after restore and report whether it matches the saved visible fingerprint. Browser readiness, Prototype QA, and exported acceptance now require the visible cue to be saved and restored, not only the underlying normal action-rail Physics path.

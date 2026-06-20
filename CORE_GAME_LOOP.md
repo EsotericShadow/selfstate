@@ -604,6 +604,8 @@ normal play action -> current simulated component selected -> inspector shows re
 
 The inspector display is read-only. The `Ask resident about this object` action does not spawn resources, directly run hidden law in normal view, command residents, or force handling. It routes the selected component into the resident-mediated object interaction loop.
 
+The object interaction loop now writes a persistent visible cue row (`OIC-...`) keyed to the component. The canvas draws that cue as the normal-player trace of what happened: resident block, resident reroute, state change, or watch-only outcome.
+
 The Follow verb can now follow an object-objection chain as well as the broader integrated chain. It reuses existing actions and records object-chain phase, response id, proposal id, resolution id, and recheck result without giving the avatar direct object control.
 
 ## Player mode interface loop

@@ -501,6 +501,8 @@ Required behavior:
 - it makes physical objects readable during player mode without requiring the reviewer trace panels
 - it includes an `Ask resident about this object` action that routes the inspected component into resident-mediated object interaction
 - object interaction rows record `physical_inspector_action`, `inspector_component_id`, and the target source while preserving resident choice and no direct command
+- object interaction writes a persistent visible cue row (`OIC-...`) so normal object actions leave a canvas-visible world trace
+- exported acceptance includes `object_interaction_visible_world_cue`
 
 ## Prototype v0 milestone: Player Mode Interface
 

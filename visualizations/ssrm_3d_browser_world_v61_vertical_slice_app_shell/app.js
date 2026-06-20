@@ -829,6 +829,62 @@ function selectCanvasComponentAt(x, y, source = 'canvas_click') {
   return row;
 }
 
+function selectCanvasComponentById(componentId, source = 'component_receipt') {
+  const selection = ensureCanvasObjectSelection();
+  const sim = world.gamePrototype3DWorld || ensurePrototype3DWorld();
+  const component = sim && sim.components ? sim.components.find(row => row.component_id === componentId) : null;
+  if (!component) {
+    selection.acceptanceReady = selection.selectionLedger.length > 0;
+    return null;
+  }
+  const point = componentCanvasPoint(component);
+  const term = sim.language && sim.language.terms ? sim.language.terms.find(row => row.term_id === component.resident_term_id) : null;
+  const row = {
+    selection_id: `COS-${String(selection.selectionLedger.length + 1).padStart(3, '0')}`,
+    tick: world.tick,
+    source,
+    component_id: component.component_id,
+    material_id: component.material_id || 'none',
+    resident_term: term ? term.resident_word : component.resident_term_id || 'none',
+    player_gloss: term ? term.player_gloss : component.player_gloss || component.affordance || 'none',
+    affordance: component.affordance || 'none',
+    mass: Number(component.mass || 0),
+    moisture: Number(component.moisture || 0),
+    damage: Number(component.damage || 0),
+    stability: Number(component.stability || 0),
+    stress: Number(component.field_stress || 0),
+    carried_by: component.carried_by || 'none',
+    click_position: { x: Number(point.x.toFixed(2)), y: Number(point.y.toFixed(2)) },
+    component_canvas_position: { x: Number(point.x.toFixed(2)), y: Number(point.y.toFixed(2)) },
+    distance: 0,
+    inspect_only: true,
+    avatar_direct_command: false,
+    resident_chosen: true,
+    hidden_law_normal_view: false,
+    tech_tree_unlock: false,
+  };
+  selection.selected_component_id = row.component_id;
+  selection.selectionLedger.push(row);
+  if (selection.selectionLedger.length > 40) selection.selectionLedger.shift();
+  selection.acceptanceReady = selection.selectionLedger.some(item => item.inspect_only === true && item.avatar_direct_command === false && item.hidden_law_normal_view === false && item.tech_tree_unlock === false);
+  recordRealityConstraint('canvas_component_receipt_selection', {
+    resident: world.selected,
+    sourceBeliefId: row.selection_id,
+    materials: [row.component_id, row.material_id].filter(Boolean),
+    publicObservation: `avatar attention pinned ${row.component_id} as ${row.resident_term}`,
+    residentInterpretation: `${row.player_gloss}; visible material state only`,
+    materialTransformation: 'none; selection binds existing receipt component to normal view',
+    timeCost: 0,
+    workCost: 0,
+    toolWear: 0,
+    maintenanceObligation: row.damage > 0.1 || row.stability < 0.72 ? `watch ${row.component_id}` : 'none',
+    unintendedConsequence: 'attention can make a physical consequence easier to follow, but does not command resident work',
+    hiddenLawInvolved: 'none in normal view',
+    conservationCheck: true
+  });
+  return row;
+}
+
 function projectTargetComponentForProposal() {
   const materialWorld = world.gamePrototype3DWorld || ensurePrototype3DWorld();
   if (!materialWorld || !materialWorld.components || !materialWorld.components.length) return null;
@@ -10956,6 +11012,20 @@ function runFirstPlayableStartHere() {
     debug_panel_required: false,
     boundary: 'normal Start here path; uses player-language verbs and records a receipt without adding world law or commanding residents',
   };
+  const startHereSelection = row.physics_path_component_id !== 'none'
+    ? selectCanvasComponentById(row.physics_path_component_id, 'start_here_receipt')
+    : null;
+  const startHereSurfaceSnapshot = recordPrimaryPlaySurfaceSnapshot('start here physical component selected');
+  const startHereSurface = world.gamePrototypeWorldStage || null;
+  const startHereCue = startHereSurface && startHereSurface.canvasCueLedger && startHereSurface.canvasCueLedger.length
+    ? startHereSurface.canvasCueLedger[startHereSurface.canvasCueLedger.length - 1]
+    : null;
+  row.component_selection_id = startHereSelection ? startHereSelection.selection_id : 'none';
+  row.component_selection_bound = Boolean(startHereSelection && startHereSelection.component_id === row.physics_path_component_id && startHereSelection.inspect_only === true && startHereSelection.avatar_direct_command === false && startHereSelection.hidden_law_normal_view === false);
+  row.visible_world_cue_id = startHereCue ? startHereCue.cue_id || 'none' : 'none';
+  row.visible_world_component_id = startHereSurfaceSnapshot ? startHereSurfaceSnapshot.active_component_id || 'none' : 'none';
+  row.visible_world_component_source = startHereSurfaceSnapshot ? startHereSurfaceSnapshot.active_component_source || 'none' : 'none';
+  row.visible_world_component_bound = Boolean(startHereSurfaceSnapshot && startHereSurfaceSnapshot.active_component_id === row.physics_path_component_id && startHereSurfaceSnapshot.canvas_selected_component_id === row.physics_path_component_id && startHereSurfaceSnapshot.hidden_law_normal_view === false && startHereCue && startHereCue.canvas_selection_id === row.component_selection_id);
   row.acceptance_ready = Boolean(
     row.ten_minute_ready === true &&
     row.normal_action_rows_added >= 6 &&
@@ -10969,6 +11039,10 @@ function runFirstPlayableStartHere() {
     row.physics_path_body_expression_id !== 'none' &&
     row.physics_path_hidden_law_normal_view === false &&
     row.physics_path_avatar_direct_command === false &&
+    row.component_selection_id !== 'none' &&
+    row.component_selection_bound === true &&
+    row.visible_world_cue_id !== 'none' &&
+    row.visible_world_component_bound === true &&
     row.object_memory_behavior_id !== 'none' &&
     row.object_memory_guided_action_id !== 'none' &&
     row.object_change_visible === true &&
@@ -10992,13 +11066,14 @@ function runFirstPlayableStartHere() {
     loop: row.ten_minute_loop_id,
     physicsPath: row.physics_path_action_id,
     physicsHappyPath: row.physics_path_happy_path_id,
+    componentSelection: row.component_selection_id,
+    visibleCue: row.visible_world_cue_id,
     objectMemory: row.object_memory_behavior_id,
     guidedAction: row.object_memory_guided_action_id,
   });
   if (world.gamePrototypePlayerMode) updatePlayerModeInterfaceAcceptance();
   updateFirstPlayableSessionAcceptance();
-  recordPrimaryPlaySurfaceSnapshot('start here playable path persisted');
-  return log('runFirstPlayableStartHere', { ready: session.startHereAcceptanceReady, startId: row.start_id, loopId: row.ten_minute_loop_id, physicsPath: row.physics_path_action_id, physicsHappyPath: row.physics_path_happy_path_id, normalActions: row.normal_action_rows_added, objectMemory: row.object_memory_behavior_id, guidedAction: row.object_memory_guided_action_id, event: loopReceipt ? loopReceipt.event || loopReceipt.type || 'ten_minute_loop' : 'none' });
+  return log('runFirstPlayableStartHere', { ready: session.startHereAcceptanceReady, startId: row.start_id, loopId: row.ten_minute_loop_id, physicsPath: row.physics_path_action_id, physicsHappyPath: row.physics_path_happy_path_id, componentSelection: row.component_selection_id, visibleCue: row.visible_world_cue_id, normalActions: row.normal_action_rows_added, objectMemory: row.object_memory_behavior_id, guidedAction: row.object_memory_guided_action_id, event: loopReceipt ? loopReceipt.event || loopReceipt.type || 'ten_minute_loop' : 'none' });
 }
 
 function runFirstPlayableAmbientPhysicsHappyPath() {
@@ -11193,7 +11268,7 @@ function formatFirstPlayableSession() {
   const steps = session.stepLedger.slice(-8).map(row => `${row.step_id}: ${row.action_label}; event=${row.result_event}; room=${row.after.room}; proposal=${row.after.latest_proposal}; practice=${row.after.latest_practice}; livedPhysics=${row.lived_practice_physics_before || 0}->${row.lived_practice_physics_after || 0}; worldPressure=${row.world_pressure_day_before || 0}->${row.world_pressure_day_after || 0}/${row.latest_world_pressure_day_id || 'none'} full=${row.world_pressure_full_physics_ready ? 'yes' : 'no'} saved/restored=${row.world_pressure_saved_rows || 0}/${row.world_pressure_restored_rows || 0} match=${row.latest_world_pressure_restore_match ? 'yes' : 'no'} terrain=${row.latest_world_pressure_terrain_step_id || 'none'} water=${row.latest_world_pressure_water_step_id || 'none'}; ambient=${row.ambient_physics_happy_path_before || 0}->${row.ambient_physics_happy_path_after || 0}/${row.latest_ambient_happy_path_id || 'none'}; physicsPath=${row.normal_physics_path_before || 0}->${row.normal_physics_path_after || 0}/${row.latest_normal_physics_path_action_id || 'none'}; visibleFollow=${row.visible_physics_follow_before || 0}->${row.visible_physics_follow_after || 0}/${row.visible_physics_follow_id || 'none'} body=${row.visible_physics_follow_body_expression_id || 'none'} journal=${row.return_journal_visible_physics_follow_rows || 0}; handling=${row.material_handling_before || 0}->${row.material_handling_after || 0}/${row.latest_material_handling_id || 'none'} body=${row.latest_resident_body_step_id || 'none'} integrated=${row.integrated_loop_before || 0}->${row.integrated_loop_after || 0}/${row.latest_integrated_loop_id || 'none'}`);
   const integratedRows = (session.integratedLoopLedger || []).slice(-4).map(row => `${row.integration_id}: complete=${row.chain_complete}; ordinary=${row.ordinary_feed_id}; test=${row.resident_test_id}; proposal=${row.proposal_id}; practice=${row.practice_id}; physics=${row.physics_id}; handling=${row.material_handling_id}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
   const tenMinuteRows = (session.tenMinuteLedger || []).slice(-4).map(row => `${row.loop_id}: ready=${row.acceptance_ready}; minutes=${row.minutes_simulated}; actions=${row.normal_action_rows_added}; objectChanged=${row.object_change_visible}; persisted=${row.material_state_persisted}; practice=${row.practice_id}; objectMemory=${row.object_cue_return_behavior_id || 'none'} -> ${row.object_cue_return_guided_action_id || 'none'}/${row.object_cue_return_recommended_verb || 'none'}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
-  const startHereRows = (session.startHereLedger || []).slice(-4).map(row => `${row.start_id}: ready=${row.acceptance_ready}; loop=${row.ten_minute_loop_id}; physics=${row.physics_path_action_id || 'none'}/${row.physics_path_happy_path_id || 'none'} ready=${row.physics_path_ready ? 'yes' : 'no'} word=${row.physics_path_resident_word || 'none'}; actions=${row.normal_action_rows_added}; objectMemory=${row.object_memory_behavior_id || 'none'} -> ${row.object_memory_guided_action_id || 'none'}; practice=${row.practice_id}; playerMode=${row.player_mode_enabled ? 'yes' : 'no'}; debugPanel=${row.debug_panel_required ? 'yes' : 'no'}`);
+  const startHereRows = (session.startHereLedger || []).slice(-4).map(row => `${row.start_id}: ready=${row.acceptance_ready}; loop=${row.ten_minute_loop_id}; physics=${row.physics_path_action_id || 'none'}/${row.physics_path_happy_path_id || 'none'} ready=${row.physics_path_ready ? 'yes' : 'no'} word=${row.physics_path_resident_word || 'none'}; selected=${row.component_selection_id || 'none'} cue=${row.visible_world_cue_id || 'none'} bound=${row.visible_world_component_bound ? 'yes' : 'no'}; actions=${row.normal_action_rows_added}; objectMemory=${row.object_memory_behavior_id || 'none'} -> ${row.object_memory_guided_action_id || 'none'}; practice=${row.practice_id}; playerMode=${row.player_mode_enabled ? 'yes' : 'no'}; debugPanel=${row.debug_panel_required ? 'yes' : 'no'}`);
   const ambientHappyPathRows = (session.ambientPhysicsHappyPathLedger || []).slice(-4).map(row => `${row.happy_path_id}: ready=${row.acceptance_ready}; action=${row.ambient_action_id}; physics=${row.ambient_physics_id}; proposal=${row.proposal_id}; word=${row.resident_word}; save=${row.save_slot_id}; restore=${row.restore_slot_id}; body=${row.body_expression_id}`);
   return [
     `Acceptance ready: ${session.acceptanceReady ? 'yes' : 'no'}`,
@@ -18369,6 +18444,8 @@ function buildPrototypeAcceptanceReceipt() {
   const normalTestComponentCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => (row.cues || []).some(cue => /normal test component/.test(cue)) && row.normal_view_hidden_law_exposed === false).length : 0;
   const canvasSelectionRows = canvasSelection && canvasSelection.selectionLedger ? canvasSelection.selectionLedger.length : 0;
   const canvasSelectionCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.canvas_selection_id && row.canvas_selection_id !== 'none' && (row.cues || []).some(cue => /canvas selection/.test(cue))).length : 0;
+  const startHereSelectedRows = canvasSelection && playSession && playSession.startHereLedger ? canvasSelection.selectionLedger.filter(selection => selection.source === 'start_here_receipt' && playSession.startHereLedger.some(start => start.component_selection_id === selection.selection_id && start.physics_path_component_id === selection.component_id && start.component_selection_bound === true)).length : 0;
+  const startHereVisibleCueRows = worldStage && playSession && playSession.startHereLedger ? worldStage.canvasCueLedger.filter(cue => cue.canvas_selection_id && cue.canvas_selection_id !== 'none' && playSession.startHereLedger.some(start => start.visible_world_cue_id === cue.cue_id && start.visible_world_component_id === start.physics_path_component_id && start.visible_world_component_bound === true && cue.component_id === start.physics_path_component_id)).length : 0;
   const worksiteRows = worksite ? worksite.watchLedger.length : 0;
   const worksiteSnapshots = worksite ? worksite.snapshotLedger.length : 0;
   const returnJournalRows = returnJournal ? returnJournal.journalLedger.length : 0;
@@ -18569,6 +18646,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'normal_player_action_strip', pass: Boolean(normalPlayerActionStripReady && normalPlayerActionStripButtons.length >= normalPlayerRequiredActions.length), evidence: `buttons=${normalPlayerActionStripButtons.length}/${normalPlayerRequiredActions.length}, startHere=${normalPlayerActionStripButtons.includes('runFirstPlayableStartHere')}, continue=${normalPlayerActionStripButtons.includes('runPrototypeGuidedStep')}` },
     { id: 'normal_player_hud', pass: Boolean(normalPlayerHudNode && normalPlayerHud.next_action && normalPlayerHud.selected_resident && normalPlayerHud.boundary && normalPlayerHud.boundary.includes('no command')), evidence: `next=${normalPlayerHud.next_action}, resident=${normalPlayerHud.selected_resident}, proposal=${normalPlayerHud.latest_proposal}, continuity=${normalPlayerHud.save_return}` },
     { id: 'start_here_player_visible_receipt', pass: Boolean(normalPlayerHudNode && normalPlaySummaryNode && normalPlayerHud.start_here_ready === true && normalPlayerHud.start_here_receipt !== 'none' && normalPlayerHud.start_here_physics_path !== 'none' && normalPlayerHud.start_here_physics_happy_path !== 'none' && normalPlayerHud.start_here_resident_word !== 'none' && normalPlayerHud.start_here_player_gloss !== 'none' && normalPlayerHud.start_here_body_expression !== 'none' && normalPlayerHud.start_here_object_memory !== 'none'), evidence: `receipt=${normalPlayerHud.start_here_receipt}, physics=${normalPlayerHud.start_here_physics_path}/${normalPlayerHud.start_here_physics_happy_path}, word=${normalPlayerHud.start_here_resident_word}, body=${normalPlayerHud.start_here_body_expression}, objectMemory=${normalPlayerHud.start_here_object_memory}` },
+    { id: 'start_here_component_selected_on_canvas', pass: Boolean(playSession && playSession.startHereAcceptanceReady === true && startHereSelectedRows > 0 && startHereVisibleCueRows > 0), evidence: `selected=${startHereSelectedRows}, visibleCues=${startHereVisibleCueRows}` },
     { id: 'normal_play_summary_card', pass: Boolean(normalPlaySummaryNode && normalPlaySummary.next_action && normalPlaySummary.resident && normalPlaySummary.boundary && normalPlaySummary.boundary.includes('no command')), evidence: `next=${normalPlaySummary.next_action}, resident=${normalPlaySummary.resident}, proposal=${normalPlaySummary.proposal}, continuity=${normalPlaySummary.continuity}` },
     { id: 'normal_player_guided_action_highlight', pass: Boolean(normalPlayerGuideHighlight && normalPlayerGuideHighlight.matched === true), evidence: `recommended=${normalPlayerGuideHighlight.recommended_action}, highlighted=${normalPlayerGuideHighlight.highlighted_action}, matched=${normalPlayerGuideHighlight.matched === true}` },
     { id: 'advanced_prototype_controls_secondary', pass: Boolean(advancedControlsNode && advancedControlsNode.tagName === 'DETAILS' && advancedControlsButtons > 0), evidence: `details=${Boolean(advancedControlsNode)}, buttons=${advancedControlsButtons}, open=${advancedControlsNode ? advancedControlsNode.open === true : false}` },

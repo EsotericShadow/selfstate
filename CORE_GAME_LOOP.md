@@ -606,6 +606,8 @@ The inspector display is read-only. The `Ask resident about this object` action 
 
 The object interaction loop now writes a persistent visible cue row (`OIC-...`) keyed to the component. The canvas draws that cue as the normal-player trace of what happened: resident block, resident reroute, state change, or watch-only outcome.
 
+Save/return records the latest object cue id, component id, cue kind, visible change, and component-side cue pointer. Restore compares the saved fingerprint with the restored world so object-action consequences can survive return sessions as physical world history.
+
 The Follow verb can now follow an object-objection chain as well as the broader integrated chain. It reuses existing actions and records object-chain phase, response id, proposal id, resolution id, and recheck result without giving the avatar direct object control.
 
 ## Player mode interface loop

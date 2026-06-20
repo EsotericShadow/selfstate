@@ -503,6 +503,8 @@ Required behavior:
 - object interaction rows record `physical_inspector_action`, `inspector_component_id`, and the target source while preserving resident choice and no direct command
 - object interaction writes a persistent visible cue row (`OIC-...`) so normal object actions leave a canvas-visible world trace
 - exported acceptance includes `object_interaction_visible_world_cue`
+- save/return records and restores the latest object cue fingerprint, component id, cue kind, and component-side cue pointer
+- exported acceptance includes `object_interaction_cue_save_return_persistence`
 
 ## Prototype v0 milestone: Player Mode Interface
 

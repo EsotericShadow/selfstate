@@ -809,3 +809,9 @@ The goal is readable continuity: the resident response should reflect what happe
 3. Focus, canvas cue, and prompt ledgers carry the normal action, test, and board proposal IDs.
 4. The canvas HUD shows the normal-test chain state in normal view.
 5. The cue remains a readable player guide, not a hidden-law audit leak.
+
+## Normal-test visible expression loop
+
+ordinary player action -> resident detects bottleneck -> resident generates test -> village board proposal -> visible resident expression cue -> support/wait/ask -> project work expression cue -> canvas-visible normal-test chain.
+
+This keeps the normal-test chain readable as lived resident behavior. The player sees posture/marker cues and imperfect public behavior, while audit-only simulator state remains separate.

@@ -855,3 +855,16 @@ Evidence required:
 - primary surface snapshot includes normal-test phase, next action, test ID, and board proposal ID
 - canvas cue ledger includes normal-test chain text
 - normal view keeps hidden simulator law out of the player-facing cue
+
+## Added scope gate: Normal-test visible resident expression
+
+`normal_test_visible_resident_expression` is now part of first playable prototype scope.
+
+The first playable path should show that resident-generated tests are embodied social events, not only ledger rows. A normal action that becomes a resident test must be able to produce:
+
+- proposal-stage expression evidence
+- support-stage expression evidence
+- project/work-stage expression evidence
+- canvas/player-surface expression cue
+- no hidden-law exposure in normal view
+- no direct avatar command

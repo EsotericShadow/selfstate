@@ -709,3 +709,12 @@ The acceptance gate is `normal_test_guided_next_step`. It requires the normal ac
 Normal-test chains now appear on the primary play surface and canvas cue ledger. The primary snapshot records phase, next action, normal action ID, resident test ID, board proposal ID, project/worksite/visual row counts, and save/return counts. The canvas HUD now shows the normal-test chain below the object-chain cue.
 
 The acceptance gate is `normal_test_canvas_cue`. It requires a normal-test chain cue on the player-facing surface while preserving no hidden-law exposure.
+
+## Prototype increment: normal-test visible resident expression
+
+The normal-action resident-test path now carries visible resident expression evidence from the moment a resident posts a test-derived proposal through support and project work. The player-facing surface can show the resident's public cue and posture for the test chain without exposing hidden simulator law or letting the avatar command the resident.
+
+Implementation boundary:
+- Expression rows are public behavior cues only.
+- Hidden state and hidden law remain audit-only.
+- The avatar can support conditions, but the resident still accepts, waits, or works through the village board/project path.

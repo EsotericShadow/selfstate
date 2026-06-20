@@ -506,3 +506,11 @@
 - Confirm the primary surface shows `Normal-test chain` with phase, next action, test ID, and board proposal ID.
 - Confirm the canvas HUD shows the normal-test chain below the object-chain line.
 - Export or inspect acceptance and confirm `normal_test_canvas_cue` passes.
+
+## Playtest task: normal-test expression continuity
+
+1. Use ordinary play until a resident-generated test reaches the village board.
+2. Inspect the normal player surface and confirm the resident has a visible posture/marker cue for the test.
+3. Support the proposal without directly commanding the resident.
+4. Advance or watch the project path and confirm the expression cue changes or persists as public behavior evidence.
+5. Confirm the UI does not reveal the hidden material law in normal view.

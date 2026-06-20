@@ -936,3 +936,16 @@ A restored normal-test feedback path should affect ordinary resident behavior af
 - visible expression cue is recorded
 - next autonomous action consumes the restored feedback bias
 - hidden simulator law stays out of normal view
+
+## Added scope gate: Ordinary physics pressure drives residents
+
+`ordinary_physics_pressure_drives_residents` is now part of first playable prototype scope.
+
+An autonomous resident tick should prove that stochastic physics participates in ordinary play:
+
+- a stochastic 3D physics step is applied before action choice
+- a resident-facing pressure row records physics step, component, pressure kind, and public observation
+- routine context carries the pressure ID
+- the autonomous action row carries the same pressure ID as behavior bias
+- the pressure row is mirrored into the physics ledger
+- no direct avatar command, hidden-law exposure, or resource spawning occurs

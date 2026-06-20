@@ -845,3 +845,9 @@ This makes resident practice feedback durable across return sessions instead of 
 normal-test feedback row -> save/return continuity match -> restored feedback behavior row -> resident schedule/memory/expression update -> next autonomous action consumes the restored bias.
 
 This closes the loop between persistence and ordinary play. A resident does not merely carry a restored ID; they resume, avoid, or retest a local practice through normal post-return behavior without the avatar directly commanding them.
+
+## Ordinary stochastic physics pressure loop
+
+autonomous tick -> stochastic 3D physics step -> component/field pressure row -> resident routine context -> action selection -> body/worksite behavior -> reality ledger.
+
+This makes physics part of normal lived play. Residents feel physical pressure as local material strain, heat, moisture, collision, weak support, or ordinary drift. They do not learn hidden physics law; they receive public observations that can redirect schedules, proposals, and repair behavior.

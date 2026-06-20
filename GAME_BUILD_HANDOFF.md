@@ -763,3 +763,13 @@ Implementation boundary:
 - The restored behavior is caused by saved resident feedback, not by a new avatar command.
 - The next autonomous action records the feedback/practice IDs that shaped it.
 - Normal view shows the resident behavior and local practice pressure; hidden simulator law remains audit-only.
+
+## Prototype increment: ordinary stochastic physics pressure
+
+Autonomous resident ticks now begin by sampling/applying the stochastic 3D physics field. The shell records which resident experienced the resulting pressure, which component or structure was implicated, which physics step caused it, and whether it redirected the resident toward repair, observation, or caution.
+
+Implementation boundary:
+- Physics updates component state before the resident chooses an action.
+- Resident routine context and action rows carry `RPP-...` pressure IDs.
+- The pressure row is public-facing behavior pressure, not hidden simulator truth.
+- No resources spawn and no direct avatar command is created by the physics tick.

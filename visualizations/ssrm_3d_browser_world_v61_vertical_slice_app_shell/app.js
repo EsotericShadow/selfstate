@@ -1557,12 +1557,13 @@ function ensurePrototype3DWorld() {
 	      phaseChangeLedger: [],
 	      propertyDriftLedger: [],
 	      materialStateRepairLedger: [],
+	      residentPressureLedger: [],
 	      transformationLedger: [],
 	      latestStep: null
 	    };
 	  }
   if (!world.gamePrototype3DWorld.physics.environment) world.gamePrototype3DWorld.physics.environment = { moisture: 0.31, heat: 0.46, wind: 0.18, decayPressure: 0.22, stress: 0.16 };
-  ['forceLedger', 'supportLedger', 'collisionLedger', 'failureLedger', 'fieldLedger', 'energyLedger', 'loadPathLedger', 'stressLedger', 'deformationLedger', 'collapseLedger', 'structuralRepairLedger', 'contactConstraintLedger', 'jointConstraintLedger', 'frictionLedger', 'impulseLedger', 'constraintRepairLedger', 'materialStateLedger', 'phaseChangeLedger', 'propertyDriftLedger', 'materialStateRepairLedger', 'transformationLedger'].forEach(key => {
+  ['forceLedger', 'supportLedger', 'collisionLedger', 'failureLedger', 'fieldLedger', 'energyLedger', 'loadPathLedger', 'stressLedger', 'deformationLedger', 'collapseLedger', 'structuralRepairLedger', 'contactConstraintLedger', 'jointConstraintLedger', 'frictionLedger', 'impulseLedger', 'constraintRepairLedger', 'materialStateLedger', 'phaseChangeLedger', 'propertyDriftLedger', 'materialStateRepairLedger', 'residentPressureLedger', 'transformationLedger'].forEach(key => {
     if (!Array.isArray(world.gamePrototype3DWorld.physics[key])) world.gamePrototype3DWorld.physics[key] = [];
   });
   if (!Array.isArray(world.gamePrototype3DWorld.physics.solver_layers)) world.gamePrototype3DWorld.physics.solver_layers = ['mass', 'weight', 'support', 'collision/contact', 'friction', 'moisture', 'heat', 'decay', 'tool wear', 'labor/work', 'stochastic field pressure', 'stochastic failure'];
@@ -12711,6 +12712,109 @@ function currentPhysicsPressure() {
   return pressure;
 }
 
+function ensureResidentPhysicsPressureLedger() {
+  const sim = ensureAutonomousResidents();
+  if (!Array.isArray(sim.physicsPressureLedger)) sim.physicsPressureLedger = [];
+  const materialWorld = ensurePrototype3DWorld();
+  if (!Array.isArray(materialWorld.physics.residentPressureLedger)) materialWorld.physics.residentPressureLedger = [];
+  return sim.physicsPressureLedger;
+}
+
+function latestResidentPhysicsPressureFor(residentName) {
+  const sim = world.autonomousResidents || null;
+  if (!sim || !Array.isArray(sim.physicsPressureLedger)) return null;
+  return sim.physicsPressureLedger.slice().reverse().find(row => row.resident === residentName) || null;
+}
+
+function classifyResidentPhysicsPressure(pressure) {
+  if (!pressure) return 'none';
+  if (pressure.failures > 0) return 'component failure';
+  if (pressure.collisions > 0) return 'contact or collision';
+  if (pressure.weakComponents > 0) return 'weak component';
+  if (pressure.structureStability < 0.74) return 'low support stability';
+  if (pressure.moistureRisk > 0.32 || pressure.fieldMoisture > 0.52) return 'wet material risk';
+  if (pressure.fieldStress > 0.24) return 'field stress';
+  if (pressure.fieldHeat > 0.62) return 'heat strain';
+  return 'ordinary physical drift';
+}
+
+function recordResidentPhysicsPressure(residentName, entropy, source = 'autonomous resident tick') {
+  const sim = ensureAutonomousResidents();
+  const materialWorld = ensurePrototype3DWorld();
+  const physicsStep = applyPrototypePhysicsStep(source);
+  const pressure = currentPhysicsPressure();
+  const pressureKind = classifyResidentPhysicsPressure(pressure);
+  const components = materialWorld.components || [];
+  const weakComponents = components
+    .slice()
+    .filter(component => Number(component.stability || 1) < 0.74 || Number(component.damage || 0) > 0.14)
+    .sort((a, b) => (Number(a.stability || 1) - Number(b.stability || 1)) || (Number(b.damage || 0) - Number(a.damage || 0)));
+  const component = weakComponents[0] || components[entropy % Math.max(1, components.length)] || null;
+  const structure = materialWorld.structures && materialWorld.structures.length ? materialWorld.structures[0] : null;
+  const term = component && component.resident_term_id && materialWorld.language && materialWorld.language.terms
+    ? materialWorld.language.terms.find(row => row.term_id === component.resident_term_id)
+    : structure && structure.resident_term_id && materialWorld.language && materialWorld.language.terms
+      ? materialWorld.language.terms.find(row => row.term_id === structure.resident_term_id)
+      : null;
+  const consequence = pressure && pressure.active ? applyPhysicsConsequencesToVillage(physicsStep, source) : null;
+  const ledger = ensureResidentPhysicsPressureLedger();
+  const row = {
+    pressure_id: `RPP-${String(ledger.length + 1).padStart(3, '0')}`,
+    day: sim.day + 1,
+    season: sim.season,
+    resident: residentName,
+    entropy,
+    source,
+    physics_step_id: physicsStep ? physicsStep.step_id : 'none',
+    field_id: physicsStep ? physicsStep.field_id || 'none' : 'none',
+    energy_id: physicsStep ? physicsStep.energy_id || 'none' : 'none',
+    active: Boolean(pressure && pressure.active),
+    pressure_kind: pressureKind,
+    component_id: component ? component.component_id : 'none',
+    structure_id: structure ? structure.structure_id : 'none',
+    resident_term: term ? term.resident_word : 'local material pressure',
+    field_stress: pressure ? pressure.fieldStress : 0,
+    field_heat: pressure ? pressure.fieldHeat : 0,
+    field_moisture: pressure ? pressure.fieldMoisture : 0,
+    failures: pressure ? pressure.failures : 0,
+    collisions: pressure ? pressure.collisions : 0,
+    weak_components: pressure ? pressure.weakComponents : 0,
+    suggested_action: pressure && pressure.active ? 'physics_repair' : 'observe',
+    board_proposal_id: consequence && consequence.proposal ? consequence.proposal.proposal_id : 'none',
+    public_observation: pressure && pressure.active
+      ? `${residentName} notices ${pressureKind} around ${component ? component.component_id : 'local work'}`
+      : `${residentName} feels ordinary material drift without repair pressure`,
+    resident_interpretation: pressure && pressure.active
+      ? `${term ? term.resident_word : 'local work'} needs checking before the day moves on`
+      : 'materials are still being watched through ordinary movement',
+    no_direct_player_command: true,
+    no_resource_spawning: true,
+    hidden_law_normal_view: false,
+    conservation_check: true,
+  };
+  ledger.push(row);
+  if (ledger.length > 120) ledger.shift();
+  materialWorld.physics.residentPressureLedger.push(row);
+  materialWorld.physics.residentPressureLedger = materialWorld.physics.residentPressureLedger.slice(-120);
+  recordRealityConstraint('resident_stochastic_physics_pressure', {
+    resident: residentName,
+    sourceBeliefId: row.pressure_id,
+    materials: row.component_id !== 'none' ? [row.component_id] : [],
+    publicObservation: row.public_observation,
+    residentInterpretation: row.resident_interpretation,
+    materialTransformation: 'stochastic physics step updated component state; resident pressure row translated it into public behavior pressure',
+    timeCost: 1,
+    workCost: 0,
+    toolWear: row.failures,
+    maintenanceObligation: row.active ? row.board_proposal_id || 'resident inspection' : 'none',
+    unintendedConsequence: row.active ? 'physics pressure can redirect ordinary resident behavior' : 'ordinary monitoring continues',
+    hiddenLawInvolved: 'none in normal view',
+    conservationCheck: true,
+    normalViewHiddenLawExposed: false,
+  });
+  return row;
+}
+
 function deriveResidentPhysicalRoutineContext(residentName, entropy) {
   const materialWorld = world.gamePrototype3DWorld || null;
   const projects = world.gamePrototypeProjects || null;
@@ -12728,11 +12832,19 @@ function deriveResidentPhysicalRoutineContext(residentName, entropy) {
     : null;
   const latestPractice = linkedPractice || (practiceGraph && practiceGraph.nodes && practiceGraph.nodes.length ? practiceGraph.nodes[practiceGraph.nodes.length - 1] : null);
   const pressure = currentPhysicsPressure();
-  const latestComponent = weakComponents[0] || carriedComponents[0] || projectBuiltComponents[projectBuiltComponents.length - 1] || components[0] || null;
+  const residentPressure = latestResidentPhysicsPressureFor(residentName);
+  const pressureComponent = residentPressure && residentPressure.component_id && residentPressure.component_id !== 'none'
+    ? components.find(component => component.component_id === residentPressure.component_id)
+    : null;
+  const latestComponent = pressureComponent || weakComponents[0] || carriedComponents[0] || projectBuiltComponents[projectBuiltComponents.length - 1] || components[0] || null;
   let suggestedAction = null;
   let scheduleHint = 'ordinary route check';
   let pressureReason = 'no active physical context';
-  if (weakComponents.length > 0 || (pressure && pressure.active)) {
+  if (residentPressure && residentPressure.active) {
+    suggestedAction = residentPressure.suggested_action || 'physics_repair';
+    scheduleHint = `checks ${residentPressure.component_id} after ${residentPressure.pressure_kind}`;
+    pressureReason = `${residentPressure.pressure_id}: ${residentPressure.pressure_kind}`;
+  } else if (weakComponents.length > 0 || (pressure && pressure.active)) {
     suggestedAction = 'physics_repair';
     scheduleHint = `checks strained physical work ${latestComponent ? latestComponent.component_id : pressure ? pressure.latestStepId : 'unknown'}`;
     pressureReason = `weak=${weakComponents.length}, failures=${pressure ? pressure.failures : 0}, collisions=${pressure ? pressure.collisions : 0}`;
@@ -12762,6 +12874,11 @@ function deriveResidentPhysicalRoutineContext(residentName, entropy) {
     suggested_action: suggestedAction,
     schedule_hint: scheduleHint,
     pressure_reason: pressureReason,
+    resident_physics_pressure_id: residentPressure ? residentPressure.pressure_id : 'none',
+    resident_physics_pressure_kind: residentPressure ? residentPressure.pressure_kind : 'none',
+    resident_physics_pressure_active: residentPressure ? residentPressure.active === true : false,
+    resident_physics_pressure_component_id: residentPressure ? residentPressure.component_id : 'none',
+    resident_physics_pressure_step_id: residentPressure ? residentPressure.physics_step_id : 'none',
     maintenance_obligation: latestConstruction ? (latestConstruction.maintenance_cost_after || latestConstruction.maintenance_cost || 'construction upkeep') : latestPractice ? latestPractice.maintenance_cost || 'practice upkeep' : pressure && pressure.active ? 'physical inspection' : 'none',
     no_direct_player_command: true,
     hidden_law_normal_view: false,
@@ -13233,6 +13350,7 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
   const proposal = board.projectProposals[board.projectProposals.length - 1] || null;
   const practice = world.emergentPracticeGraph && world.emergentPracticeGraph.nodes.length ? world.emergentPracticeGraph.nodes[world.emergentPracticeGraph.nodes.length - 1] : null;
   const restoredNormalTestBias = latestNormalTestReturnBehaviorFor(residentName);
+  const residentPhysicsPressure = latestResidentPhysicsPressureFor(residentName);
   let schedule = resident.schedule;
   let memory = resident.memory;
   let materialCost = [];
@@ -13347,6 +13465,14 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
     progressDelta += restoredNormalTestBias.behavior_kind === 'avoid_or_retest_carefully' ? 0.001 : 0.002;
     trustDelta += 0.001;
   }
+  if (residentPhysicsPressure && routineContext.resident_physics_pressure_id !== 'none') {
+    const pressureText = residentPhysicsPressure.active
+      ? `responds to ${residentPhysicsPressure.pressure_kind} at ${residentPhysicsPressure.component_id}`
+      : `keeps watch on ${residentPhysicsPressure.component_id}`;
+    schedule = `${schedule}; ${pressureText}`;
+    memory = `${memory}; felt physics pressure ${residentPhysicsPressure.pressure_id}`;
+    progressDelta += residentPhysicsPressure.active ? 0.002 : 0.001;
+  }
   const worksiteEffect = worksiteProximity.actionable && worksiteProximity.target_component_id !== 'none'
     ? applyResidentWorksiteComponentEffect(worksiteProximity, materialCost)
     : null;
@@ -13396,6 +13522,11 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
       resident_term: routineContext.resident_term,
       suggested_action: routineContext.suggested_action || 'none',
       schedule_hint: routineContext.schedule_hint,
+      resident_physics_pressure_id: routineContext.resident_physics_pressure_id,
+      resident_physics_pressure_kind: routineContext.resident_physics_pressure_kind,
+      resident_physics_pressure_active: routineContext.resident_physics_pressure_active,
+      resident_physics_pressure_component_id: routineContext.resident_physics_pressure_component_id,
+      resident_physics_pressure_step_id: routineContext.resident_physics_pressure_step_id,
     },
     body_physics_step_id: bodyPhysicsRow.body_step_id,
     body_target_source: bodyPhysicsRow.target_source,
@@ -13416,6 +13547,12 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
     normal_test_return_feedback_id: restoredNormalTestBias ? restoredNormalTestBias.feedback_id : 'none',
     normal_test_return_practice_id: restoredNormalTestBias ? restoredNormalTestBias.practice_id : 'none',
     post_return_feedback_bias: Boolean(restoredNormalTestBias),
+    physics_pressure_id: residentPhysicsPressure ? residentPhysicsPressure.pressure_id : 'none',
+    physics_pressure_step_id: residentPhysicsPressure ? residentPhysicsPressure.physics_step_id : 'none',
+    physics_pressure_component_id: residentPhysicsPressure ? residentPhysicsPressure.component_id : 'none',
+    physics_pressure_kind: residentPhysicsPressure ? residentPhysicsPressure.pressure_kind : 'none',
+    physics_pressure_active: residentPhysicsPressure ? residentPhysicsPressure.active === true : false,
+    post_physics_pressure_bias: Boolean(residentPhysicsPressure),
   };
   sim.actionLog.push(row);
   if (restoredNormalTestBias) {
@@ -13451,12 +13588,13 @@ function runAutonomousResidentTick() {
   const entropy = deepTimeEntropyByte();
   const residentNames = Object.keys(world.residents);
   const residentName = residentNames[(entropy + sim.day + sim.actionLog.length) % residentNames.length];
+  const pressureRow = recordResidentPhysicsPressure(residentName, entropy, 'autonomous resident tick');
   const action = chooseAutonomousResidentAction(residentName, entropy);
   sim.day += 1;
   sim.entropyLedger.push({ day: sim.day, entropy, source: window.crypto && window.crypto.getRandomValues ? 'crypto.getRandomValues' : 'Math.random fallback' });
   const row = applyAutonomousResidentAction(residentName, action, entropy);
-  recordPrototypeMilestone('autonomous-resident-tick', `${residentName} chose ${action} without direct player command`);
-  return log('runAutonomousResidentTick', { resident: residentName, action, day: sim.day, entropy, needs: row.needs });
+  recordPrototypeMilestone('autonomous-resident-tick', `${residentName} chose ${action} without direct player command; pressure=${pressureRow.pressure_id}`);
+  return log('runAutonomousResidentTick', { resident: residentName, action, day: sim.day, entropy, needs: row.needs, physicsPressureId: pressureRow.pressure_id, physicsStepId: pressureRow.physics_step_id, pressureKind: pressureRow.pressure_kind });
 }
 
 function runAutonomousResidentSeason() {
@@ -14296,16 +14434,17 @@ function formatPrototypeResidentBodies() {
 function formatPrototypeAutonomousResidents() {
   const sim = world.autonomousResidents;
   if (!sim) return 'No autonomous resident ticks yet. Run Resident tick or Resident season.';
-  const actions = sim.actionLog.slice(-8).map(row => `${row.action_id}: day ${row.day}, ${row.resident} chose ${row.action}; energy=${row.needs.energy.toFixed(2)} hunger=${row.needs.hunger.toFixed(2)} safety=${row.needs.safety.toFixed(2)}; body=${row.body_physics_step_id || 'none'}; ctx=${row.routine_context_id || 'none'}${row.physical_context ? `/${row.physical_context.suggested_action}` : ''}; worksite=${row.worksite_effect_id || 'none'}/${row.worksite_effect_applied ? 'applied' : row.worksite_blocked_by_distance ? 'blocked' : 'none'}; returnBias=${row.normal_test_return_behavior_id || 'none'}`);
+  const actions = sim.actionLog.slice(-8).map(row => `${row.action_id}: day ${row.day}, ${row.resident} chose ${row.action}; energy=${row.needs.energy.toFixed(2)} hunger=${row.needs.hunger.toFixed(2)} safety=${row.needs.safety.toFixed(2)}; body=${row.body_physics_step_id || 'none'}; ctx=${row.routine_context_id || 'none'}${row.physical_context ? `/${row.physical_context.suggested_action}` : ''}; worksite=${row.worksite_effect_id || 'none'}/${row.worksite_effect_applied ? 'applied' : row.worksite_blocked_by_distance ? 'blocked' : 'none'}; returnBias=${row.normal_test_return_behavior_id || 'none'}; phys=${row.physics_pressure_id || 'none'}`);
   const refusals = sim.refusalLog.slice(-4).map(row => `day ${row.day}: ${row.resident} refused because ${row.reason}`);
   const care = sim.careLedger.slice(-6).map(row => `${row.action_id}: ${row.resident} energy=${row.energy.toFixed(2)} hunger=${row.hunger.toFixed(2)} autonomy=${row.autonomy.toFixed(2)}`);
   const expressions = (sim.expressionLedger || []).slice(-8).map(row => `${row.expression_id}: ${row.resident} ${row.marker}; posture=${row.posture}; movement=${row.movementCue}; gaze=${row.gazeCue}`);
-  const routineContexts = (sim.routineContextLedger || []).slice(-6).map(row => `${row.context_id}: ${row.resident} ${row.action}; suggested=${row.suggested_action || 'none'}; visual=${row.latest_project_visual_id}; component=${row.latest_component_id}; practice=${row.practice_id}; hint=${row.schedule_hint}`);
+  const routineContexts = (sim.routineContextLedger || []).slice(-6).map(row => `${row.context_id}: ${row.resident} ${row.action}; suggested=${row.suggested_action || 'none'}; visual=${row.latest_project_visual_id}; component=${row.latest_component_id}; practice=${row.practice_id}; pressure=${row.resident_physics_pressure_id || 'none'}/${row.resident_physics_pressure_kind || 'none'}; hint=${row.schedule_hint}`);
   const worksiteRows = (sim.worksiteProximityLedger || []).slice(-6).map(row => `${row.worksite_effect_id}: ${row.resident} ${row.action}; component=${row.target_component_id}; distance=${row.distance_before}->${row.distance_after}; near=${row.near_enough}; applied=${row.effect_applied}; blocked=${row.blocked_by_distance}`);
   const presenceRows = (world.gamePrototypeAvatarPresence && world.gamePrototypeAvatarPresence.presenceLedger ? world.gamePrototypeAvatarPresence.presenceLedger : []).slice(-6).map(row => `${row.presence_id}: ${row.resident}; component=${row.component_id}; distance=${row.distance_to_worksite}; near=${row.near_worksite}; crowd=${row.crowding}; repeated=${row.repeated_nearby_count}; influence=${row.influence_type}; comfortDelta=${row.comfort_delta}; boundaryDelta=${row.boundary_pressure_delta}; command=${row.avatar_direct_command}`);
   const comfortRows = (world.gamePrototypeAvatarPresence && world.gamePrototypeAvatarPresence.comfortLedger ? world.gamePrototypeAvatarPresence.comfortLedger : []).slice(-6).map(row => `${row.comfort_id}: ${row.resident}; presence=${row.presence_id}; comfort=${row.comfort_before}->${row.comfort_after}; boundary=${row.boundary_pressure_after}; refusal=${row.refusal_risk_after}; canRefuse=${row.resident_can_refuse}`);
   const presenceReturnRows = (world.gamePrototypeAvatarPresence && world.gamePrototypeAvatarPresence.returnLedger ? world.gamePrototypeAvatarPresence.returnLedger : []).slice(-6).map(row => `${row.return_presence_id}: ${row.resident}; tone=${row.remembered_tone}; presence=${row.presence_rows}; comfort=${row.comfort_rows}; preserved=${row.source_history_preserved}; greeting=${row.return_greeting}`);
   const normalTestReturnRows = (sim.normalTestReturnBehaviorLedger || []).slice(-6).map(row => `${row.behavior_id}: ${row.resident}; feedback=${row.feedback_id}; practice=${row.practice_id}; kind=${row.behavior_kind}; expression=${row.expression_id}; consumed=${row.consumed_by_action_id || 'none'}`);
+  const physicsPressureRows = (sim.physicsPressureLedger || []).slice(-6).map(row => `${row.pressure_id}: ${row.resident}; step=${row.physics_step_id}; kind=${row.pressure_kind}; component=${row.component_id}; active=${row.active}; proposal=${row.board_proposal_id}`);
   return [
     `Day: ${sim.day} / season: ${sim.season}`,
     `Boundary: stochastic autonomous actions; no direct player command; actions cost time/needs/materials.`,
@@ -14321,6 +14460,8 @@ function formatPrototypeAutonomousResidents() {
     ...(comfortRows.length ? comfortRows : ['none']),
     'Presence return memory:',
     ...(presenceReturnRows.length ? presenceReturnRows : ['none']),
+    'Stochastic physics pressure:',
+    ...(physicsPressureRows.length ? physicsPressureRows : ['none']),
     'Normal-test feedback return behavior:',
     ...(normalTestReturnRows.length ? normalTestReturnRows : ['none']),
     'Visible expression cues:',
@@ -15597,6 +15738,10 @@ function buildPrototypeAcceptanceReceipt() {
   const routineActionLinks = autonomous && autonomous.actionLog ? autonomous.actionLog.filter(row => row.routine_context_id && row.physical_context).length : 0;
   const routineCanvasCueRows = worldStage && worldStage.canvasCueLedger ? worldStage.canvasCueLedger.filter(row => row.routine_context_id && row.routine_context_id !== 'none' && (row.cues || []).some(cue => /routine context/.test(cue))).length : 0;
   const routineDirectedBodyRows = residentBodies && residentBodies.bodyLedger ? residentBodies.bodyLedger.filter(row => row.target_source === 'routine_context' && row.routine_context_id && row.routine_context_id !== 'none' && row.moved_toward_target === true && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
+  const residentPhysicsPressureRows = autonomous && autonomous.physicsPressureLedger ? autonomous.physicsPressureLedger.filter(row => row.physics_step_id && row.physics_step_id !== 'none' && row.no_direct_player_command === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false && row.conservation_check === true).length : 0;
+  const residentPhysicsPressureRoutineRows = autonomous && autonomous.routineContextLedger ? autonomous.routineContextLedger.filter(row => row.resident_physics_pressure_id && row.resident_physics_pressure_id !== 'none' && row.resident_physics_pressure_step_id && row.resident_physics_pressure_step_id !== 'none' && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
+  const residentPhysicsPressureActionRows = autonomous && autonomous.actionLog ? autonomous.actionLog.filter(row => row.physics_pressure_id && row.physics_pressure_id !== 'none' && row.physics_pressure_step_id && row.physics_pressure_step_id !== 'none' && row.post_physics_pressure_bias === true && row.no_direct_player_command === true).length : 0;
+  const residentPhysicsPressurePhysicsRows = physics && physics.residentPressureLedger ? physics.residentPressureLedger.filter(row => row.physics_step_id && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
   const worksiteProximityRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.length : 0;
   const worksiteEffectRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.filter(row => row.effect_applied === true && row.target_component_id !== 'none' && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
   const worksiteBlockedRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.filter(row => row.blocked_by_distance === true && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
@@ -15629,6 +15774,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'normal_test_feedback_save_return_continuity', pass: Boolean(saves && normalTestFeedbackContinuitySaveRows > 0 && normalTestFeedbackContinuityRestoreRows > 0), evidence: saves ? `savedFeedback=${normalTestFeedbackContinuitySaveRows}, restoredFeedback=${normalTestFeedbackContinuityRestoreRows}` : 'no prototype saves' },
     { id: 'normal_test_feedback_return_affects_behavior', pass: Boolean(autonomous && saves && normalTestFeedbackReturnBehaviorRows > 0 && normalTestFeedbackReturnRestoreRows > 0 && normalTestFeedbackReturnActionRows > 0), evidence: `returnBehavior=${normalTestFeedbackReturnBehaviorRows}, restoreRows=${normalTestFeedbackReturnRestoreRows}, actionBias=${normalTestFeedbackReturnActionRows}` },
     { id: 'autonomous_stochastic_residents', pass: Boolean(autonomous && autonomous.actionLog.length > 0 && autonomous.entropyLedger.length > 0), evidence: autonomous ? `${autonomous.actionLog.length} action(s), entropy rows=${autonomous.entropyLedger.length}` : 'not started' },
+    { id: 'ordinary_physics_pressure_drives_residents', pass: Boolean(autonomous && physics && residentPhysicsPressureRows > 0 && residentPhysicsPressureRoutineRows > 0 && residentPhysicsPressureActionRows > 0 && residentPhysicsPressurePhysicsRows > 0), evidence: `pressureRows=${residentPhysicsPressureRows}, routine=${residentPhysicsPressureRoutineRows}, action=${residentPhysicsPressureActionRows}, physicsLedger=${residentPhysicsPressurePhysicsRows}` },
     { id: 'reality_grounded_causality', pass: Boolean(ledger && ledger.rows.length > 0 && ledger.rows.every(row => row.conservation_check && row.normal_view_hidden_law_exposed === false)), evidence: ledger ? `${ledger.rows.length} causal row(s)` : 'no ledger' },
     { id: 'emergent_beliefs_and_practices', pass: Boolean(practiceGraph && practiceGraph.nodes.length > 0 && practiceGraph.noPredefinedTechTree === true), evidence: practiceGraph ? `${practiceGraph.nodes.length} node(s), no tech tree=${practiceGraph.noPredefinedTechTree}` : 'no practice graph' },
     { id: 'village_management_without_command', pass: Boolean(board && board.projectProposals.length > 0 && board.avatarCannotForce === true), evidence: board ? `${board.projectProposals.length} proposal(s), force=${board.avatarCannotForce === false}` : 'no board' },

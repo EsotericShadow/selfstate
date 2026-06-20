@@ -557,3 +557,12 @@
 4. Run one autonomous resident tick after return.
 5. Confirm the resident action row shows the restored feedback behavior ID as a return bias.
 6. Confirm the resident schedule, memory, or visible expression changed without a direct avatar command.
+
+## Playtest task: ordinary stochastic physics pressure
+
+1. Enter the prototype village and make sure the 3D material world has initialized.
+2. Run one autonomous resident tick.
+3. Confirm the autonomous resident panel shows an `RPP-...` stochastic physics pressure row.
+4. Confirm the same resident action row shows `phys=RPP-...`.
+5. Confirm the routine context shows the pressure kind and component.
+6. Confirm the pressure did not reveal hidden simulator law, spawn resources, or issue a direct avatar command.

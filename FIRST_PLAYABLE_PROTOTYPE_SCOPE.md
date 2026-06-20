@@ -510,6 +510,8 @@ Required behavior:
 - active `OCRB-...` rows can recommend normal verbs: `Look`, `Objects`, `Support`, or `Wait`
 - matching normal action rows consume the active object-cue return behavior and keep the source id visible
 - exported acceptance includes `object_cue_return_guides_normal_action`
+- the first-playable milestone surface includes `object_memory_return_path`
+- exported acceptance includes `first_playable_milestone_object_memory`
 
 ## Prototype v0 milestone: Player Mode Interface
 

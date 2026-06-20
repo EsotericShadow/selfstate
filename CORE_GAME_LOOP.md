@@ -612,6 +612,8 @@ When the saved object cue survives restore, a resident gets a return behavior ro
 
 The active `OCRB-...` row now biases the normal action rail toward `Look`, `Objects`, `Support`, or `Wait`. When the matching verb runs, the behavior row is marked consumed by that normal action id so the memory affects the next step without permanently hijacking play.
 
+The first-playable milestone surface includes `object_memory_return_path`, which reports whether the 10-minute path produced object-memory rows and consumed them through normal action guidance.
+
 The Follow verb can now follow an object-objection chain as well as the broader integrated chain. It reuses existing actions and records object-chain phase, response id, proposal id, resolution id, and recheck result without giving the avatar direct object control.
 
 ## Player mode interface loop

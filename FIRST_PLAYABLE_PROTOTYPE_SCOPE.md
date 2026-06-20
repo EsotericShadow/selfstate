@@ -692,3 +692,17 @@ Required evidence:
 - project, construction, completion, or worksite rows carry `related_object_response_id`
 - resident work can repair or stabilize components only through accepted proposal work
 - no direct command, hidden-law exposure, resource spawning, or tech-tree unlock occurs
+
+## Added scope gate: Object-objection resolution recheck
+
+`object_objection_resolution_recheck` is now part of first playable prototype scope.
+
+Required evidence:
+
+- resident project work linked to an object objection creates an `OIRR-...` resolution row
+- the original `OIR-...` response records resolution status and follow-up project/construction ids
+- the blocked object-interaction row records `proposal_resolution_id`
+- resolution status requires resident recheck instead of directly allowing handling
+- `handling_auto_allowed=false` is preserved
+- physical work must be visible as repaired or added components, or as a preserved pending watch state
+- no direct command, hidden-law exposure, resource spawning, or tech-tree unlock occurs

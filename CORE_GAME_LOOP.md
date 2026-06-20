@@ -581,8 +581,9 @@ The first playable loop now has a player-facing worksite path:
 3. Resident project work advances through the existing project system.
 4. Work can stall on readiness or resources, consume materials, use tools, repair components, add components, complete, or create future maintenance burden.
 5. Object-objection proposals carry their source `OIR-...` id into project, construction, completion, and worksite rows.
-6. The Worksite card shows progress, construction id, resident term, practice link, components added/repaired, stalls, object source, and maintenance cost.
-7. The avatar watches and supports conditions but does not assign jobs or spawn resources.
+6. Project work linked to an object objection writes an `OIRR-...` resolution row back to the object interaction surface.
+7. The Worksite card shows progress, construction id, resident term, practice link, components added/repaired, stalls, object source, resolution state, and maintenance cost.
+8. The avatar watches and supports conditions but does not assign jobs or spawn resources.
 
 This is the practical management bridge from proposals into visible physical world change.
 
@@ -675,7 +676,8 @@ Object inspection now has a social step before handling:
 9. Blocked ownership or safety responses create a resident-facing Village Board concern and proposal linked to the `OIR-...` row.
 10. The player can support, ask, or wait on the proposal, but cannot force the resident to allow handling.
 11. If supported and accepted, the proposal can advance through resident worksite/project rows while preserving the `OIR -> VBP -> GPP/RWW` chain.
-12. The exported acceptance receipt records `resident_object_response`, `resident_object_response_affects_handling`, `blocked_object_response_creates_proposal`, and `object_objection_proposal_actionable`.
+12. Resident work can create an `OIRR-...` resolution row that marks resident recheck required without auto-allowing handling.
+13. The exported acceptance receipt records `resident_object_response`, `resident_object_response_affects_handling`, `blocked_object_response_creates_proposal`, `object_objection_proposal_actionable`, and `object_objection_resolution_recheck`.
 
 ## Player movement route loop
 

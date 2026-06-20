@@ -601,3 +601,11 @@ Object-objection proposals now move through the existing proposal and worksite g
 This keeps the loop diegetic: a resident objection becomes a resident problem, the avatar can offer support, and later work can repair or stabilize physical components if residents accept and materials exist.
 
 The acceptance gate is `object_objection_proposal_actionable`. It requires an objection-linked proposal deck action plus objection-linked project or worksite evidence, with no direct command, no resource spawning, no hidden-law exposure in normal view, and no tech-tree unlock.
+
+## Prototype v0 object-objection resolution/recheck update
+
+Object-objection work now writes a resolution row back to the object interaction surface. When resident project work advances a proposal linked to an `OIR-...` response, the original response and object-interaction row receive an `OIRR-...` resolution id, project id, construction id, and resolution status.
+
+The resolution does not auto-grant handling permission. It marks the object as ready for resident recheck after physical work changed the situation. This keeps the resident boundary intact: construction can repair or stabilize a component, but the resident still decides whether handling may continue.
+
+The acceptance gate is `object_objection_resolution_recheck`. It requires an `OIRR-...` resolution row plus a linked object-interaction row with `resident_recheck_required=true`, `handling_auto_allowed=false`, no direct command, no resource spawning, no hidden-law exposure in normal view, and no tech-tree unlock.

@@ -408,3 +408,8 @@
 - Run Worksite and confirm project or worksite rows carry `related_object_response_id=OIR-...`.
 - Confirm support consumes proposal-specific materials or preserves a shortage without spawning resources.
 - Export acceptance and confirm `object_objection_proposal_actionable` appears with deck and project/worksite evidence.
+- After Worksite advances the objection-linked proposal, reopen Objects and confirm an `OIRR-...` resolution appears.
+- Confirm the original blocked object row records `proposal_resolution_id` and `resident_recheck_required=true`.
+- Confirm the resolution records project id, construction id, repaired/added component counts, and `handling_auto_allowed=false`.
+- Confirm the resident must recheck before handling continues; the avatar does not gain direct object permission.
+- Export acceptance and confirm `object_objection_resolution_recheck` appears with resolution and recheck evidence.

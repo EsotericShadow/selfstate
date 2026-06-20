@@ -422,3 +422,8 @@
 - Open Journal and confirm object-chain counts appear before save, after away time, and after save-slot restore.
 - Run Session and confirm Journal, Save, and Return steps preserve latest object resolution id and recheck result in their snapshots.
 - Export acceptance and confirm `object_objection_save_return_persistence` appears with saved and restored object-chain evidence.
+- With an unfinished object-objection chain, inspect the Player guide and confirm it recommends the next object-chain step.
+- Open the normal action rail and confirm one option carries object-chain phase and next-action evidence.
+- Use `Follow` and confirm it advances the next object-chain step through Proposals, Worksite, Objects, Save, or Return rather than a debug panel.
+- Confirm the Follow row records object response id, proposal id, resolution id, and recheck result without direct command or hidden-law exposure.
+- Export acceptance and confirm `object_objection_guided_next_step` appears with guided option or Follow evidence.

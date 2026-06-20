@@ -248,7 +248,8 @@ The first playable loop includes a direct save/return pass: enter the village, l
 1. The shell derives the current phase from existing village state, not from a scripted mission flag.
 2. The guide suggests one player action and explains why it matters to the living loop.
 3. The suggestion updates after normal actions, resident autonomy, save/return, QA, or acceptance export.
-4. The guide remains advisory: it helps the player navigate the prototype without overriding resident autonomy.
+4. When an object-objection chain is active, the guide can point to proposal support, worksite, resident recheck, save, or return based on `OIR/VBP/OIRR` state.
+5. The guide remains advisory: it helps the player navigate the prototype without overriding resident autonomy.
 
 
 ## Seed divergence loop
@@ -530,6 +531,8 @@ The player-facing loop now has twelve normal verbs:
 
 Each action records a row linking player intent to proposal, practice, component, physics, save, and return evidence where available.
 
+The Follow verb can now follow an object-objection chain as well as the broader integrated chain. It reuses existing actions and records object-chain phase, response id, proposal id, resolution id, and recheck result without giving the avatar direct object control.
+
 ## Player mode interface loop
 
 The prototype now has a normal player-facing mode:
@@ -681,7 +684,8 @@ Object inspection now has a social step before handling:
 13. A later `Objects` action reads that `OIRR-...` row and records either `post_resolution_recheck` or `recheck_still_blocks`.
 14. Recheck can reroute careful handling or preserve the block, but `handling_auto_allowed=false` remains true.
 15. Save/return and return-journal receipts preserve object resolution and recheck-response counts.
-16. The exported acceptance receipt records `resident_object_response`, `resident_object_response_affects_handling`, `blocked_object_response_creates_proposal`, `object_objection_proposal_actionable`, `object_objection_resolution_recheck`, `object_objection_recheck_response`, and `object_objection_save_return_persistence`.
+16. The Player guide and Follow verb can surface the next object-chain step without opening debug panels.
+17. The exported acceptance receipt records `resident_object_response`, `resident_object_response_affects_handling`, `blocked_object_response_creates_proposal`, `object_objection_proposal_actionable`, `object_objection_resolution_recheck`, `object_objection_recheck_response`, `object_objection_save_return_persistence`, and `object_objection_guided_next_step`.
 
 ## Player movement route loop
 

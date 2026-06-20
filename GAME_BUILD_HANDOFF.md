@@ -625,3 +625,11 @@ Object-objection continuity now appears in save-slot, restore, return-journal, a
 The return journal shows object-chain counts before save, after away time, and after save-slot restoration. This proves the object objection chain is part of playable continuity, not only a live debug surface.
 
 The acceptance gate is `object_objection_save_return_persistence`. It requires at least one saved slot and restore log preserving object resolution and recheck-response evidence, while keeping the same no-direct-command, no-hidden-law normal view, and no-tech-tree boundary.
+
+## Prototype v0 guided object-objection next-step update
+
+The Player guide and normal action rail now derive a playable next step from the object-objection chain. If an `OIR -> VBP -> OIRR` chain is incomplete, the guide can point the player to Proposals, Worksite, Objects recheck, Save, or Return instead of leaving the player to inspect debug state.
+
+The `Follow` verb can also advance the next object-chain step through existing resident-mediated actions. It still preserves resident autonomy: Follow does not grant object permission, assign jobs, expose hidden law, or install a tech unlock.
+
+The acceptance gate is `object_objection_guided_next_step`. It requires a normal action option or Follow row carrying object-chain phase/source IDs while preserving no direct command, no hidden-law exposure, and no tech-tree unlock.

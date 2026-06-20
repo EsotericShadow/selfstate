@@ -5955,7 +5955,67 @@ function latestIntegratedChainRow() {
   return rows.length ? rows[rows.length - 1] : null;
 }
 
+function latestObjectObjectionChainState() {
+  const interaction = world.gamePrototypeObjectInteraction || null;
+  const board = world.villageBoard || null;
+  const proposals = board && board.projectProposals ? board.projectProposals : [];
+  const projectRows = world.gamePrototypeProjects && world.gamePrototypeProjects.projectLedger ? world.gamePrototypeProjects.projectLedger : [];
+  const worksiteRows = world.gamePrototypeWorksite && world.gamePrototypeWorksite.watchLedger ? world.gamePrototypeWorksite.watchLedger : [];
+  const saves = world.gamePrototypeSaves || null;
+  const responseRows = interaction && interaction.responseLedger ? interaction.responseLedger : [];
+  const resolutionRows = interaction && interaction.resolutionLedger ? interaction.resolutionLedger : [];
+  const latestResolution = resolutionRows.length ? resolutionRows[resolutionRows.length - 1] : null;
+  const latestRecheck = responseRows.slice().reverse().find(row => row.recheck_resolution_id && row.recheck_resolution_id !== 'none') || null;
+  const latestProposal = proposals.slice().reverse().find(row => row.related_object_response_id && row.related_object_response_id !== 'none') || null;
+  const proposalId = latestProposal ? latestProposal.proposal_id : latestResolution ? latestResolution.proposal_id : 'none';
+  const responseId = latestProposal ? latestProposal.related_object_response_id : latestResolution ? latestResolution.response_id : latestRecheck ? latestRecheck.recheck_resolution_id : 'none';
+  const proposalProjectRows = proposalId !== 'none' ? projectRows.filter(row => row.proposal_id === proposalId) : [];
+  const proposalWorksiteRows = proposalId !== 'none' ? worksiteRows.filter(row => row.proposal_id === proposalId) : [];
+  const savedRows = saves && saves.slots ? saves.slots.filter(slot => Number(slot.object_resolution_rows || 0) > 0 && Number(slot.object_recheck_response_rows || 0) > 0).length : 0;
+  const restoredRows = saves && saves.returnLog ? saves.returnLog.filter(row => Number(row.restored_object_resolution_rows || 0) > 0 && Number(row.restored_object_recheck_response_rows || 0) > 0).length : 0;
+  if (!latestProposal && !latestResolution && !latestRecheck) {
+    return { active: false, phase: 'none', next_action: 'runPlayerObjectInteractionLoop', next_label: 'Inspect object', reason: 'no object objection chain exists yet', response_id: 'none', proposal_id: 'none', resolution_id: 'none', recheck_response_id: 'none', recheck_result: 'none', saved_rows: savedRows, restored_rows: restoredRows };
+  }
+  const proposalOpen = latestProposal && latestProposal.status !== 'completed' && latestProposal.status !== 'refused' && !latestProposal.project_completed;
+  const proposalAccepted = latestProposal && (latestProposal.status === 'accepted' || latestProposal.status === 'in progress' || Number(latestProposal.current_support_level || 0) >= 0.48);
+  let phase = 'object proposal support';
+  let nextAction = 'runPlayerProposalDeckLoop';
+  let nextLabel = 'Support objection proposal';
+  let reason = `${proposalId} came from ${responseId} and needs Ask/Support/Wait`;
+  if (proposalOpen && proposalAccepted && !latestResolution) {
+    phase = 'object worksite';
+    nextAction = 'runResidentWorksiteLoop';
+    nextLabel = 'Watch object worksite';
+    reason = `${proposalId} needs resident project work before recheck`;
+  } else if (latestResolution && !latestRecheck) {
+    phase = 'object recheck';
+    nextAction = 'runPlayerObjectInteractionLoop';
+    nextLabel = 'Resident recheck';
+    reason = `${latestResolution.resolution_id} requires a resident object recheck`;
+  } else if (latestRecheck && !savedRows) {
+    phase = 'object chain save';
+    nextAction = 'savePrototypeSlot';
+    nextLabel = 'Save object chain';
+    reason = `${latestRecheck.response_id} has not been saved into return continuity`;
+  } else if (latestRecheck && savedRows && !restoredRows) {
+    phase = 'object chain return';
+    nextAction = 'returnPrototypeSlot';
+    nextLabel = 'Restore object chain';
+    reason = `${latestRecheck.response_id} is saved but has not been restored`;
+  } else if (latestRecheck && savedRows && restoredRows) {
+    phase = 'object chain persisted';
+    nextAction = 'runReturnJournalLoop';
+    nextLabel = 'Show object return journal';
+    reason = `${latestRecheck.response_id} is saved/restored; show continuity in the journal`;
+  }
+  return { active: true, phase, next_action: nextAction, next_label: nextLabel, reason, response_id: responseId, proposal_id: proposalId, resolution_id: latestResolution ? latestResolution.resolution_id : 'none', recheck_response_id: latestRecheck ? latestRecheck.response_id : 'none', recheck_result: latestRecheck ? latestRecheck.resident_recheck_result : 'none', project_rows: proposalProjectRows.length, worksite_rows: proposalWorksiteRows.length, saved_rows: savedRows, restored_rows: restoredRows };
+}
+
 function chooseFollowChainAction(chain) {
+  const objectChain = latestObjectObjectionChainState();
+  if (objectChain.active && objectChain.phase !== 'object chain persisted') {
+    return { action: objectChain.next_action, label: objectChain.next_label, reason: `${objectChain.reason}; ${objectChain.response_id}->${objectChain.proposal_id}->${objectChain.resolution_id}` };
+  }
   if (!chain) return { action: 'recordFirstPlayableIntegratedLoop', label: 'seed integrated chain', reason: 'no integrated chain exists yet' };
   if (!chain.proposal_id || chain.proposal_id === 'none') return { action: 'runPlayerProposalDeckLoop', label: 'surface resident proposal', reason: 'chain has no resident proposal link' };
   if (!chain.material_handling_id || chain.material_handling_id === 'none') return { action: 'runResidentMaterialManipulationStep', label: 'watch resident material handling', reason: 'chain has no material handling row' };
@@ -6035,6 +6095,8 @@ function runNormalPlayFollowChain() {
   if (response.execute === false) receipt = { event: 'followChainBoundaryHeld', chosenAction: chosen.action };
   else if (chosen.action === 'recordFirstPlayableIntegratedLoop') receipt = recordFirstPlayableIntegratedLoop('normal_play_follow_chain_seed');
   else if (chosen.action === 'runPlayerProposalDeckLoop') receipt = runPlayerProposalDeckLoop();
+  else if (chosen.action === 'runPlayerObjectInteractionLoop') receipt = runPlayerObjectInteractionLoop();
+  else if (chosen.action === 'runResidentWorksiteLoop') receipt = runResidentWorksiteLoop();
   else if (chosen.action === 'runResidentMaterialManipulationStep') receipt = runResidentMaterialManipulationStep('follow_chain');
   else if (chosen.action === 'runLivedPracticeLoop') receipt = runLivedPracticeLoop();
   else if (chosen.action === 'savePrototypeSlot') receipt = savePrototypeSlot('follow integrated chain');
@@ -6047,6 +6109,7 @@ function runNormalPlayFollowChain() {
   const snapshot = recordPrimaryPlaySurfaceSnapshot('follow integrated chain visible');
   if (world.gamePrototypePlayerMode) updatePlayerModeInterfaceAcceptance();
   const afterChain = latestIntegratedChainRow();
+  const objectChainAfter = latestObjectObjectionChainState();
   const row = {
     follow_id: `NPF-${String(rail.followChainLedger.length + 1).padStart(3, '0')}`,
     tick: world.tick,
@@ -6067,6 +6130,13 @@ function runNormalPlayFollowChain() {
     physics_id: afterChain ? afterChain.physics_id : 'none',
     save_slot_id: afterChain ? afterChain.save_slot_id : 'none',
     restore_slot_id: afterChain ? afterChain.restore_slot_id : 'none',
+    object_chain_phase: objectChainAfter.phase,
+    object_chain_next_action: objectChainAfter.next_action,
+    object_chain_response_id: objectChainAfter.response_id,
+    object_chain_proposal_id: objectChainAfter.proposal_id,
+    object_chain_resolution_id: objectChainAfter.resolution_id,
+    object_chain_recheck_response_id: objectChainAfter.recheck_response_id,
+    object_chain_recheck_result: objectChainAfter.recheck_result,
     player_language: true,
     avatar_direct_command: false,
     hidden_law_normal_view: false,
@@ -6174,18 +6244,19 @@ function normalPlayOptions() {
   const stage = world.gamePrototypeWorldStage || null;
   const latest = stage && stage.latestSnapshot ? stage.latestSnapshot : currentPrimaryPlaySurfaceSnapshot();
   const boundaryFollow = latestFollowBoundaryPressureRow();
+  const objectChain = latestObjectObjectionChainState();
   return [
     { verb: 'look', label: 'Look', action: 'runPrimaryPlaySurfaceStep', intent: 'read the current world-stage problem and object context', recommended: guide.button === 'runPrimaryPlaySurfaceStep' || !stage || !stage.acceptanceReady },
     { verb: 'move', label: 'Move', action: 'runPlayerMovementRouteLoop', intent: 'move through village space and update nearby affordances', recommended: guide.button === 'runPlayerMovementRouteLoop' },
     { verb: 'ask', label: 'Ask', action: 'askSchedule', intent: `ask ${world.selected} about schedule and current concern`, recommended: guide.button === 'askSchedule' },
     { verb: 'talk', label: 'Talk', action: 'runPlayerResidentEncounterLoop', intent: `have a bounded source-traced encounter with ${world.selected}`, recommended: guide.button === 'runPlayerResidentEncounterLoop' },
-    { verb: 'objects', label: 'Objects', action: 'runPlayerObjectInteractionLoop', intent: 'inspect a real physical component and let residents choose a handling response', recommended: guide.button === 'runPlayerObjectInteractionLoop' },
+    { verb: 'objects', label: 'Objects', action: 'runPlayerObjectInteractionLoop', intent: objectChain.phase === 'object recheck' ? `ask resident to recheck ${objectChain.resolution_id}` : 'inspect a real physical component and let residents choose a handling response', recommended: guide.button === 'runPlayerObjectInteractionLoop' || objectChain.next_action === 'runPlayerObjectInteractionLoop' },
     { verb: 'handling', label: 'Handling', action: 'runResidentMaterialManipulationStep', intent: 'watch a resident move, tie, dry, wet-test, stack, or test material under constraints', recommended: guide.button === 'runNormalPlayHandling' || guide.button === 'runResidentMaterialManipulationStep' },
     { verb: 'support', label: 'Support', action: 'supportResourceCommons', intent: 'offer material help without assigning a job', recommended: guide.button === 'supportResourceCommons' },
     { verb: 'wait', label: 'Wait', action: 'endVillageDay', intent: 'let residents and world systems advance one step', recommended: guide.button === 'endVillageDay' || guide.button === 'runPlayableVillageDay03Step' },
     { verb: 'return', label: 'Return', action: 'leaveAndReturnLater', intent: 'leave and come back to check continuity', recommended: guide.button === 'leaveAndReturnLater' },
     { verb: 'save', label: 'Save', action: 'savePrototypeSlot', intent: 'save current village and walkthrough state', recommended: guide.button === 'exportPrototypeAcceptanceReceipt' || guide.button === 'runFirstPlayableWalkthrough' },
-    { verb: 'follow', label: 'Follow', action: 'runNormalPlayFollowChain', intent: latest.integrated_loop_id && latest.integrated_loop_id !== 'none' ? `follow chain ${latest.integrated_loop_id} through the next missing public link` : 'create and follow the first integrated causality chain', recommended: guide.button === 'runNormalPlayFollowChain' || Boolean(latest.integrated_loop_id && latest.integrated_loop_id !== 'none' && latest.integrated_loop_complete !== true) },
+    { verb: 'follow', label: 'Follow', action: 'runNormalPlayFollowChain', intent: objectChain.active && objectChain.phase !== 'object chain persisted' ? `follow object chain ${objectChain.response_id}->${objectChain.proposal_id}->${objectChain.resolution_id}: ${objectChain.next_label}` : latest.integrated_loop_id && latest.integrated_loop_id !== 'none' ? `follow chain ${latest.integrated_loop_id} through the next missing public link` : 'create and follow the first integrated causality chain', recommended: guide.button === 'runNormalPlayFollowChain' || Boolean(objectChain.active && objectChain.phase !== 'object chain persisted') || Boolean(latest.integrated_loop_id && latest.integrated_loop_id !== 'none' && latest.integrated_loop_complete !== true) },
     { verb: 'space', label: 'Space', action: 'runNormalPlayGiveSpace', intent: boundaryFollow ? `give space after ${boundaryFollow.response_outcome} on ${boundaryFollow.chain_after}` : 'give residents room before pressing the chain again', recommended: guide.button === 'runNormalPlayGiveSpace' || Boolean(boundaryFollow) },
   ].map(option => ({
     ...option,
@@ -6195,6 +6266,10 @@ function normalPlayOptions() {
     component_id: latest.active_component_id,
     integrated_loop_id: latest.integrated_loop_id,
     integrated_loop_complete: latest.integrated_loop_complete,
+    object_chain_phase: objectChain.phase,
+    object_chain_next_action: objectChain.next_action,
+    object_chain_resolution_id: objectChain.resolution_id,
+    object_chain_recheck_result: objectChain.recheck_result,
   }));
 }
 
@@ -6256,6 +6331,7 @@ function runNormalPlayAction(verb) {
   const latestManipulation = manipulationLoop && manipulationLoop.actionLedger.length ? manipulationLoop.actionLedger[manipulationLoop.actionLedger.length - 1] : null;
   const latestFollowChain = rail.followChainLedger.length ? rail.followChainLedger[rail.followChainLedger.length - 1] : null;
   const latestFollowRecovery = rail.followRecoveryLedger.length ? rail.followRecoveryLedger[rail.followRecoveryLedger.length - 1] : null;
+  const objectChain = latestObjectObjectionChainState();
   const row = {
     action_id: `NPAR-${String(rail.actionLedger.length + 1).padStart(2, '0')}`,
     verb: option.verb,
@@ -6274,6 +6350,13 @@ function runNormalPlayAction(verb) {
     follow_chain_complete: latestFollowChain ? latestFollowChain.chain_complete_after === true : false,
     follow_recovery_id: latestFollowRecovery ? latestFollowRecovery.recovery_id : 'none',
     follow_recovery_source: latestFollowRecovery ? latestFollowRecovery.source_follow_id : 'none',
+    object_chain_phase: objectChain.phase,
+    object_chain_next_action: objectChain.next_action,
+    object_chain_response_id: objectChain.response_id,
+    object_chain_proposal_id: objectChain.proposal_id,
+    object_chain_resolution_id: objectChain.resolution_id,
+    object_chain_recheck_response_id: objectChain.recheck_response_id,
+    object_chain_recheck_result: objectChain.recheck_result,
     material_handling_rows: manipulationLoop && manipulationLoop.actionLedger ? manipulationLoop.actionLedger.length : 0,
     material_handling_practice_links: manipulationLoop && manipulationLoop.practiceLinks ? manipulationLoop.practiceLinks.length : 0,
     save_slot_id: evidence.save_slot_id,
@@ -6334,8 +6417,8 @@ function formatNormalPlayActionRail() {
   const rail = world.gamePrototypeActionRail || ensureNormalPlayActionRail();
   const options = normalPlayOptions();
   const optionRows = options.map(option => `${option.label}: ${option.intent}; recommended=${option.recommended ? 'yes' : 'no'}`);
-  const actionRows = rail.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.label} -> ${row.underlying_action}; proposal=${row.proposal_id}; practice=${row.practice_id}; handling=${row.manipulation_id || 'none'}; follow=${row.follow_chain_id || 'none'}/${row.follow_chain_after || 'none'}; recovery=${row.follow_recovery_id || 'none'}; save=${row.save_slot_id}`);
-  const followRows = (rail.followChainLedger || []).slice(-5).map(row => `${row.follow_id}: ${row.chosen_label}; outcome=${row.response_outcome || 'none'}; allowed=${row.resident_allowed_follow !== false}; chain=${row.chain_before}->${row.chain_after}; complete=${row.chain_complete_after}; response=${row.resident_response_expression_id || 'none'}/${row.resident_response_marker || 'none'}; proposal=${row.proposal_id}; practice=${row.practice_id}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
+  const actionRows = rail.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.label} -> ${row.underlying_action}; proposal=${row.proposal_id}; practice=${row.practice_id}; handling=${row.manipulation_id || 'none'}; follow=${row.follow_chain_id || 'none'}/${row.follow_chain_after || 'none'}; object=${row.object_chain_phase || 'none'}/${row.object_chain_resolution_id || 'none'}; recovery=${row.follow_recovery_id || 'none'}; save=${row.save_slot_id}`);
+  const followRows = (rail.followChainLedger || []).slice(-5).map(row => `${row.follow_id}: ${row.chosen_label}; outcome=${row.response_outcome || 'none'}; allowed=${row.resident_allowed_follow !== false}; chain=${row.chain_before}->${row.chain_after}; object=${row.object_chain_phase || 'none'}/${row.object_chain_resolution_id || 'none'} result=${row.object_chain_recheck_result || 'none'}; complete=${row.chain_complete_after}; response=${row.resident_response_expression_id || 'none'}/${row.resident_response_marker || 'none'}; proposal=${row.proposal_id}; practice=${row.practice_id}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
   const recoveryRows = (rail.followRecoveryLedger || []).slice(-5).map(row => `${row.recovery_id}: ${row.recovery_outcome}; source=${row.source_follow_id}/${row.source_outcome}; chain=${row.chain_id}; response=${row.resident_response_expression_id || 'none'}/${row.resident_response_marker || 'none'}; advanced=${row.chain_advanced}`);
   return [
     `Acceptance ready: ${rail.acceptanceReady ? 'yes' : 'no'}`,
@@ -12886,12 +12969,16 @@ function derivePrototypePlayerGuide() {
     return { ...guide, phase: 'first playable walkthrough', nextAction: 'First playable', why: 'run the whole playable path once and produce a receipt linking entry, world-stage inspection, physics bottleneck, proposal/test, support, resident work, return, save, and acceptance snapshot', button: 'runFirstPlayableWalkthrough' };
   }
   const integratedChain = typeof latestIntegratedChainRow === 'function' ? latestIntegratedChainRow() : null;
+  const objectChainForGuide = typeof latestObjectObjectionChainState === 'function' ? latestObjectObjectionChainState() : { active: false, phase: 'none' };
   const actionRailForGuide = world.gamePrototypeActionRail || null;
   const followRowsForGuide = actionRailForGuide && actionRailForGuide.followChainLedger ? actionRailForGuide.followChainLedger.length : 0;
   const boundaryFollowForGuide = typeof latestFollowBoundaryPressureRow === 'function' ? latestFollowBoundaryPressureRow() : null;
   const recoveryRowsForGuide = actionRailForGuide && actionRailForGuide.followRecoveryLedger ? actionRailForGuide.followRecoveryLedger.length : 0;
   if (boundaryFollowForGuide && recoveryRowsForGuide <= 0) {
     return { ...guide, phase: 'follow boundary recovery', nextAction: 'Give space', why: `respect ${boundaryFollowForGuide.response_outcome} before following ${boundaryFollowForGuide.chain_after} again`, button: 'runNormalPlaySpace' };
+  }
+  if (objectChainForGuide.active && objectChainForGuide.phase !== 'object chain persisted') {
+    return { ...guide, phase: objectChainForGuide.phase, nextAction: objectChainForGuide.next_label, why: objectChainForGuide.reason, button: 'runNormalPlayFollow' };
   }
   if (integratedChain && followRowsForGuide <= 0) {
     return { ...guide, phase: 'follow integrated chain', nextAction: 'Follow chain', why: `continue ${integratedChain.integration_id} through the normal action rail instead of opening debug panels`, button: 'runNormalPlayFollow' };
@@ -13006,6 +13093,7 @@ function formatPrototypePlayerGuide() {
   const nearby = world.gamePrototypeNearbyActions || null;
   const dayCycle = world.gamePrototypeDayCycle || null;
   const returnLater = world.gamePrototypeReturnLater || null;
+  const objectChain = typeof latestObjectObjectionChainState === 'function' ? latestObjectObjectionChainState() : { phase: 'none', next_label: 'none', reason: 'not available', response_id: 'none', proposal_id: 'none', resolution_id: 'none', recheck_result: 'none', saved_rows: 0, restored_rows: 0 };
   const history = prototype.guideHistory.slice(-5).map(row => `${row.id}: ${row.from_phase}->${row.next_phase} via ${row.action}`);
   return [
     `Phase: ${guide.phase}`,
@@ -13023,6 +13111,7 @@ function formatPrototypePlayerGuide() {
     `Movement: ${movementRoute ? `ready=${movementRoute.acceptanceReady}; rows=${movementRoute.routeLedger.length}; snapshots=${movementRoute.snapshotLedger.length}` : 'not started'}`,
     `Resident encounter: ${residentEncounter ? `ready=${residentEncounter.acceptanceReady}; rows=${residentEncounter.encounterLedger.length}; snapshots=${residentEncounter.snapshotLedger.length}` : 'not started'}`,
     `Objects: ${objectInteraction ? `ready=${objectInteraction.acceptanceReady}; rows=${objectInteraction.interactionLedger.length}; snapshots=${objectInteraction.snapshotLedger.length}` : 'not started'}`,
+    `Object chain: phase=${objectChain.phase}; next=${objectChain.next_label}; response=${objectChain.response_id}; proposal=${objectChain.proposal_id}; resolution=${objectChain.resolution_id}; result=${objectChain.recheck_result}; saved/restored=${objectChain.saved_rows}/${objectChain.restored_rows}`,
     `Proposal deck: ${proposalDeck ? `ready=${proposalDeck.acceptanceReady}; cards=${proposalDeck.cardLedger.length}; actions=${proposalDeck.actionLedger.length}` : 'not started'}`,
     `Lived practice: ${livedPractice ? `ready=${livedPractice.acceptanceReady}; actions=${livedPractice.actionLedger.length}; snapshots=${livedPractice.practiceSnapshots.length}` : 'not started'}`,
     `Resident worksite: ${worksite ? `ready=${worksite.acceptanceReady}; watches=${worksite.watchLedger.length}; snapshots=${worksite.snapshotLedger.length}` : 'not started'}`,
@@ -14112,6 +14201,8 @@ function buildPrototypeAcceptanceReceipt() {
   const actionRailFollowCalibratedRows = actionRail && actionRail.followChainLedger ? actionRail.followChainLedger.filter(row => row.response_outcome && typeof row.resident_allowed_follow === 'boolean' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const actionRailFollowRecoveryRows = actionRail && actionRail.followRecoveryLedger ? actionRail.followRecoveryLedger.length : 0;
   const actionRailFollowRecoveryExpressionRows = actionRail && actionRail.followRecoveryLedger ? actionRail.followRecoveryLedger.filter(row => row.resident_response_expression_id && row.resident_response_expression_id !== 'none' && row.chain_advanced === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
+  const objectGuidedOptionRows = actionRail && actionRail.optionLedger ? actionRail.optionLedger.filter(snapshot => (snapshot.options || []).some(option => option.object_chain_phase && option.object_chain_phase !== 'none' && option.object_chain_next_action && option.object_chain_next_action !== 'none' && option.recommended === true)).length : 0;
+  const objectGuidedFollowRows = actionRail && actionRail.followChainLedger ? actionRail.followChainLedger.filter(row => row.object_chain_phase && row.object_chain_phase !== 'none' && row.object_chain_response_id && row.object_chain_response_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
   const playerModeSessions = playerMode ? playerMode.sessionLedger.length : 0;
   const playerModeVisibleCards = playerMode && playerMode.visibleSurface ? playerMode.visibleSurface.visible_cards.length : 0;
   const movementRouteRows = movementRoute ? movementRoute.routeLedger.length : 0;
@@ -14242,6 +14333,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'canvas_component_selection', pass: Boolean(canvasSelection && canvasSelection.acceptanceReady === true && canvasSelectionRows > 0 && canvasSelectionCueRows > 0 && canvasSelection.selectionLedger.every(row => row.inspect_only === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false)), evidence: canvasSelection ? `selections=${canvasSelectionRows}, cueRows=${canvasSelectionCueRows}, selected=${canvasSelection.selected_component_id || 'none'}` : 'not run' },
     { id: 'first_playable_walkthrough', pass: Boolean(walkthrough && walkthrough.acceptanceReady && walkthroughSteps >= walkthrough.requiredSteps.length && walkthroughLinks >= walkthrough.requiredSteps.length && walkthrough.noDirectCommand === true && walkthrough.noTechTreeUnlock === true && walkthrough.noHiddenLawNormalView === true), evidence: walkthrough ? `${walkthrough.phase}; steps=${walkthroughSteps}, links=${walkthroughLinks}` : 'not run' },
     { id: 'normal_play_action_rail', pass: Boolean(actionRail && actionRail.acceptanceReady && actionRailRows >= actionRail.verbs.length && actionRailOptions > 0 && actionRailFollowRows > 0 && actionRailFollowExpressionRows > 0 && actionRailFollowCalibratedRows > 0 && actionRailFollowRecoveryRows > 0 && actionRailFollowRecoveryExpressionRows > 0 && actionRail.playerLanguageOnly === true && actionRail.noDirectCommand === true && actionRail.noTechTreeUnlock === true), evidence: actionRail ? `actions=${actionRailRows}, optionSnapshots=${actionRailOptions}, follow=${actionRailFollowRows}, followExpression=${actionRailFollowExpressionRows}, calibrated=${actionRailFollowCalibratedRows}, followRecovery=${actionRailFollowRecoveryRows}, followRecoveryExpression=${actionRailFollowRecoveryExpressionRows}, verbs=${actionRail.verbs.join('/')}` : 'not run' },
+    { id: 'object_objection_guided_next_step', pass: Boolean(actionRail && (objectGuidedOptionRows > 0 || objectGuidedFollowRows > 0)), evidence: actionRail ? `guidedOptions=${objectGuidedOptionRows}, guidedFollow=${objectGuidedFollowRows}` : 'not run' },
     { id: 'player_mode_interface', pass: Boolean(playerMode && playerMode.acceptanceReady && playerModeSessions > 0 && playerModeVisibleCards >= 6 && playerMode.normalViewOnly === true && playerMode.debugPanelsHidden === true && playerMode.noDirectCommand === true && playerMode.noHiddenLawNormalView === true && playerMode.playerGlossesOnly === true), evidence: playerMode ? `enabled=${playerMode.enabled}, sessions=${playerModeSessions}, visibleCards=${playerModeVisibleCards}` : 'not run' },
     { id: 'player_movement_route', pass: Boolean(movementRoute && movementRoute.acceptanceReady && movementRouteRows > 0 && movementRouteSnapshots > 0 && movementRoute.routeLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.no_teleport === true && row.distance > 0) && movementRoute.noDirectCommand === true), evidence: movementRoute ? `rows=${movementRouteRows}, snapshots=${movementRouteSnapshots}` : 'not run' },
     { id: 'player_resident_encounter', pass: Boolean(residentEncounter && residentEncounter.acceptanceReady && residentEncounterRows > 0 && residentEncounterSnapshots > 0 && residentEncounter.encounterLedger.every(row => row.player_facing === true && row.no_llm === true && row.phrasebook_only === true && row.open_ended_language === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.source_history_preserved === true) && residentEncounter.noOpenEndedLanguage === true && residentEncounter.noDirectCommand === true), evidence: residentEncounter ? `rows=${residentEncounterRows}, snapshots=${residentEncounterSnapshots}` : 'not run' },

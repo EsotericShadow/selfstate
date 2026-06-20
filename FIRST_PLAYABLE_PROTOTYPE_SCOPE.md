@@ -733,3 +733,15 @@ Required evidence:
 - return journal snapshots show object-chain state before save, after away time, and after restore
 - first-playable session snapshots preserve object-chain counts across Journal, Save, and Return steps
 - the saved/restored object chain remains resident-mediated and does not expose hidden law or create direct object permission
+
+## Added scope gate: Object-objection guided next step
+
+`object_objection_guided_next_step` is now part of first playable prototype scope.
+
+Required evidence:
+
+- the Player guide can derive an object-chain phase from active `OIR/VBP/OIRR` state
+- normal action options carry object-chain phase, next action, resolution id, and recheck result
+- Follow can advance the next object-chain step through existing resident-mediated actions
+- Follow rows record object response id, proposal id, resolution id, and recheck result
+- guided object steps do not assign jobs, grant direct object permission, expose hidden law, or unlock technology

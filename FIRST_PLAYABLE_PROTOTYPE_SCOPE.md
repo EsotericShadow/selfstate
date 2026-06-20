@@ -706,3 +706,17 @@ Required evidence:
 - `handling_auto_allowed=false` is preserved
 - physical work must be visible as repaired or added components, or as a preserved pending watch state
 - no direct command, hidden-law exposure, resource spawning, or tech-tree unlock occurs
+
+## Added scope gate: Object-objection recheck response
+
+`object_objection_recheck_response` is now part of first playable prototype scope.
+
+Required evidence:
+
+- a later object inspection reads an existing `OIRR-...` resident recheck requirement
+- the resident produces `post_resolution_recheck` or `recheck_still_blocks`
+- `post_resolution_recheck` can reroute handling through careful resident action
+- `recheck_still_blocks` preserves the block if the object remains unsafe or socially unavailable
+- interaction rows record `resident_recheck_result`
+- `handling_auto_allowed=false` remains preserved
+- no LLM, open-ended language, direct command, hidden-law exposure, resource spawning, or tech-tree unlock occurs

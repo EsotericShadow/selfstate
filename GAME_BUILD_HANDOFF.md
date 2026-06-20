@@ -609,3 +609,11 @@ Object-objection work now writes a resolution row back to the object interaction
 The resolution does not auto-grant handling permission. It marks the object as ready for resident recheck after physical work changed the situation. This keeps the resident boundary intact: construction can repair or stabilize a component, but the resident still decides whether handling may continue.
 
 The acceptance gate is `object_objection_resolution_recheck`. It requires an `OIRR-...` resolution row plus a linked object-interaction row with `resident_recheck_required=true`, `handling_auto_allowed=false`, no direct command, no resource spawning, no hidden-law exposure in normal view, and no tech-tree unlock.
+
+## Prototype v0 resident recheck response update
+
+The object surface now uses `OIRR-...` rows during later `Objects` actions. If the active component has a resident recheck requirement, the selected resident produces a bounded recheck response instead of repeating the original object warning blindly.
+
+There are two recheck outcomes. `post_resolution_recheck` means the resident agrees to try careful handling after visible work changed the object. `recheck_still_blocks` means the resident inspected the changed situation and still refuses handling because the object remains unsafe or unavailable. Neither path gives the avatar direct object permission.
+
+The acceptance gate is `object_objection_recheck_response`. It requires a post-resolution resident response linked to an `OIRR-...` row plus a handling row with `resident_recheck_result`, `handling_auto_allowed=false`, no LLM, no open-ended language, no direct command, no hidden-law exposure in normal view, and no tech-tree unlock.

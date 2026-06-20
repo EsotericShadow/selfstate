@@ -677,7 +677,9 @@ Object inspection now has a social step before handling:
 10. The player can support, ask, or wait on the proposal, but cannot force the resident to allow handling.
 11. If supported and accepted, the proposal can advance through resident worksite/project rows while preserving the `OIR -> VBP -> GPP/RWW` chain.
 12. Resident work can create an `OIRR-...` resolution row that marks resident recheck required without auto-allowing handling.
-13. The exported acceptance receipt records `resident_object_response`, `resident_object_response_affects_handling`, `blocked_object_response_creates_proposal`, `object_objection_proposal_actionable`, and `object_objection_resolution_recheck`.
+13. A later `Objects` action reads that `OIRR-...` row and records either `post_resolution_recheck` or `recheck_still_blocks`.
+14. Recheck can reroute careful handling or preserve the block, but `handling_auto_allowed=false` remains true.
+15. The exported acceptance receipt records `resident_object_response`, `resident_object_response_affects_handling`, `blocked_object_response_creates_proposal`, `object_objection_proposal_actionable`, `object_objection_resolution_recheck`, and `object_objection_recheck_response`.
 
 ## Player movement route loop
 

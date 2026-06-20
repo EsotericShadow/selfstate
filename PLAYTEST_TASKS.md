@@ -413,3 +413,8 @@
 - Confirm the resolution records project id, construction id, repaired/added component counts, and `handling_auto_allowed=false`.
 - Confirm the resident must recheck before handling continues; the avatar does not gain direct object permission.
 - Export acceptance and confirm `object_objection_resolution_recheck` appears with resolution and recheck evidence.
+- Run `Objects` again after the `OIRR-...` row exists and confirm the resident response is `post_resolution_recheck` or `recheck_still_blocks`.
+- Confirm `post_resolution_recheck` reroutes handling through careful resident action instead of direct player handling.
+- Confirm `recheck_still_blocks` keeps `manipulation_id=none` when the object is still unsafe or unavailable.
+- Confirm the row records `resident_recheck_result` and keeps `handling_auto_allowed=false`.
+- Export acceptance and confirm `object_objection_recheck_response` appears with recheck response and handling evidence.

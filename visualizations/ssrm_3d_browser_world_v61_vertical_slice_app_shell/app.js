@@ -8003,8 +8003,23 @@ function updatePlayerObjectInteractionAcceptance() {
   return interaction.acceptanceReady;
 }
 
-function residentObjectResponseKind(component) {
+function latestObjectResolutionForComponent(componentId) {
+  const interaction = world.gamePrototypeObjectInteraction || null;
+  const rows = interaction && interaction.resolutionLedger ? interaction.resolutionLedger : [];
+  for (let index = rows.length - 1; index >= 0; index -= 1) {
+    const row = rows[index];
+    if (row.component_id === componentId && row.resident_recheck_required === true && row.handling_auto_allowed === false) return row;
+  }
+  return null;
+}
+
+function residentObjectResponseKind(component, resolution = null) {
   if (!component || !component.component_id) return 'uncertain';
+  if (resolution && resolution.resident_recheck_required === true) {
+    if (component.carried_by && component.carried_by !== world.selected) return 'recheck_still_blocks';
+    if (Number(component.damage || 0) > 0.18 || Number(component.stability || 1) < 0.68) return 'recheck_still_blocks';
+    return 'post_resolution_recheck';
+  }
   if (component.carried_by && component.carried_by !== world.selected) return 'ownership_objection';
   if (Number(component.damage || 0) > 0.16 || Number(component.stability || 1) < 0.7) return 'safety_warning';
   if (Number(component.moisture || 0) > 0.3) return 'wet_material_warning';
@@ -8020,7 +8035,8 @@ function recordResidentObjectResponse(source = 'object_inspection') {
   const resident = world.residents[residentName] || currentResident();
   const selection = world.gamePrototypeCanvasSelection || null;
   const latestSelection = selection && selection.selectionLedger && selection.selectionLedger.length ? selection.selectionLedger[selection.selectionLedger.length - 1] : null;
-  const kind = residentObjectResponseKind(component);
+  const recheckResolution = latestObjectResolutionForComponent(component.component_id || 'none');
+  const kind = residentObjectResponseKind(component, recheckResolution);
   const residentTerm = target.term ? target.term.resident_word : component.resident_term_id || 'thing';
   const playerGloss = target.term ? target.term.player_gloss : component.player_gloss || component.affordance || 'object';
   const responseTextByKind = {
@@ -8028,6 +8044,8 @@ function recordResidentObjectResponse(source = 'object_inspection') {
     safety_warning: `${residentName} points to the weak part of ${residentTerm} before anyone moves it.`,
     wet_material_warning: `${residentName} says ${residentTerm} is wet and may slip if rushed.`,
     labor_caution: `${residentName} says ${residentTerm} is heavy and needs care, not a quick lift.`,
+    post_resolution_recheck: `${residentName} checks the repaired ${residentTerm} after ${recheckResolution ? recheckResolution.resolution_id : 'the work'} and agrees to try carefully.`,
+    recheck_still_blocks: `${residentName} checks ${residentTerm} after ${recheckResolution ? recheckResolution.resolution_id : 'the work'} and says it still needs care before handling.`,
     bounded_observation: `${residentName} says ${residentTerm} can be inspected, but the residents should decide the handling.`,
     uncertain: `${residentName} says they need to see it from here before guessing.`
   };
@@ -8043,10 +8061,16 @@ function recordResidentObjectResponse(source = 'object_inspection') {
     player_gloss: playerGloss,
     response_kind: kind,
     response_text: responseTextByKind[kind] || responseTextByKind.uncertain,
+    recheck_resolution_id: recheckResolution ? recheckResolution.resolution_id : 'none',
+    recheck_project_id: recheckResolution ? recheckResolution.project_id : 'none',
+    recheck_construction_id: recheckResolution ? recheckResolution.construction_id : 'none',
+    recheck_required_from_resolution: Boolean(recheckResolution),
+    resident_recheck_result: kind === 'post_resolution_recheck' ? 'allows_careful_handling_after_recheck' : kind === 'recheck_still_blocks' ? 'still_blocks_after_recheck' : 'not_a_recheck',
+    handling_auto_allowed: false,
     trust_before: Number(resident.trust || 0),
     comfort_before: Number(resident.socialComfort || 0),
     boundary_pressure_before: Number(resident.boundaryPressure || 0),
-    manipulation_allowed: !['ownership_objection', 'safety_warning'].includes(kind),
+    manipulation_allowed: !['ownership_objection', 'safety_warning', 'recheck_still_blocks'].includes(kind),
     resident_can_object: true,
     phrasebook_only: true,
     no_llm: true,
@@ -8059,7 +8083,7 @@ function recordResidentObjectResponse(source = 'object_inspection') {
   resident.memory = row.response_text;
   resident.boundaryPressure = clamp(Number(resident.boundaryPressure || 0) + (row.manipulation_allowed ? -0.004 : 0.018), 0, 1);
   resident.socialComfort = clamp(Number(resident.socialComfort || 0) + (row.manipulation_allowed ? 0.004 : -0.006), 0, 1);
-  recordVisibleResidentExpression(residentName, row.manipulation_allowed ? 'object_observation' : 'object_objection');
+  recordVisibleResidentExpression(residentName, kind === 'post_resolution_recheck' ? 'object_recheck' : row.manipulation_allowed ? 'object_observation' : 'object_objection');
   const latestExpression = latestVisibleExpressionFor(residentName);
   row.expression_id = latestExpression ? latestExpression.expression_id : 'none';
   row.expression_marker = latestExpression ? latestExpression.marker : 'none';
@@ -8070,13 +8094,13 @@ function recordResidentObjectResponse(source = 'object_inspection') {
     sourceBeliefId: row.response_id,
     materials: [row.component_id, row.material_id].filter(value => value && value !== 'none'),
     publicObservation: row.response_text,
-    residentInterpretation: `${row.response_kind}; ${row.player_gloss}`,
+    residentInterpretation: `${row.response_kind}; ${row.player_gloss}; recheck=${row.recheck_resolution_id}`,
     materialTransformation: 'none; resident response occurs before material manipulation',
     timeCost: 0,
     workCost: 0,
     toolWear: 0,
-    maintenanceObligation: row.manipulation_allowed ? 'none' : `respect ${residentName}'s object objection`,
-    unintendedConsequence: 'object inspection can slow handling when residents object or warn',
+    maintenanceObligation: row.recheck_required_from_resolution ? `honor resident recheck after ${row.recheck_resolution_id}` : row.manipulation_allowed ? 'none' : `respect ${residentName}'s object objection`,
+    unintendedConsequence: row.recheck_required_from_resolution ? 'object project work creates a new resident-mediated recheck decision' : 'object inspection can slow handling when residents object or warn',
     hiddenLawInvolved: 'none in normal view',
     conservationCheck: true
   });
@@ -8093,6 +8117,12 @@ function residentObjectHandlingEffect(responseRow) {
   }
   if (responseRow.response_kind === 'safety_warning') {
     return { effect: 'delayed_for_safety_check', actionSource: 'resident_safety_delay', blocked: true, rerouted: false, residentAction: 'delay_handling' };
+  }
+  if (responseRow.response_kind === 'recheck_still_blocks') {
+    return { effect: 'recheck_preserves_resident_block', actionSource: 'resident_recheck_block', blocked: true, rerouted: false, residentAction: 'recheck_and_refuse_handling' };
+  }
+  if (responseRow.response_kind === 'post_resolution_recheck') {
+    return { effect: 'resident_recheck_allows_careful_handling', actionSource: 'resident_recheck_caution', blocked: false, rerouted: true, residentAction: 'recheck_then_handle_carefully' };
   }
   if (responseRow.response_kind === 'wet_material_warning') {
     return { effect: 'rerouted_to_careful_wet_handling', actionSource: 'resident_wet_caution', blocked: false, rerouted: true, residentAction: 'careful_wet_handling' };
@@ -8262,6 +8292,11 @@ function runPlayerObjectInteractionLoop() {
     resident_response_kind: residentResponse ? residentResponse.response_kind : 'none',
     resident_response_text: residentResponse ? residentResponse.response_text : 'none',
     resident_response_effect: handlingEffect.effect,
+    recheck_resolution_id: residentResponse ? residentResponse.recheck_resolution_id || 'none' : 'none',
+    recheck_project_id: residentResponse ? residentResponse.recheck_project_id || 'none' : 'none',
+    recheck_construction_id: residentResponse ? residentResponse.recheck_construction_id || 'none' : 'none',
+    resident_recheck_result: residentResponse ? residentResponse.resident_recheck_result || 'not_a_recheck' : 'none',
+    handling_auto_allowed: false,
     handling_blocked_by_response: handlingEffect.blocked,
     handling_rerouted_by_response: handlingEffect.rerouted,
     follow_up_proposal_id: followUpProposal ? followUpProposal.proposal_id : 'none',
@@ -8311,8 +8346,8 @@ function runPlayerObjectInteractionLoop() {
 function formatPlayerObjectInteraction() {
   const interaction = world.gamePrototypeObjectInteraction || ensurePlayerObjectInteraction();
   const latest = interaction.snapshotLedger.length ? interaction.snapshotLedger[interaction.snapshotLedger.length - 1].after : playerObjectInteractionSnapshot('current');
-  const rows = interaction.interactionLedger.slice(-6).map(row => `${row.interaction_id}: ${row.resident} ${row.resident_action} ${row.resident_term}; component=${row.component_id}; response=${row.resident_response_id || 'none'}/${row.resident_response_effect || 'none'}; blocked=${row.handling_blocked_by_response === true}; rerouted=${row.handling_rerouted_by_response === true}; proposal=${row.follow_up_proposal_id || 'none'}; resolution=${row.proposal_resolution_status || 'none'}; recheck=${row.resident_recheck_required === true}; manipulation=${row.manipulation_id}; success=${row.success}; practice=${row.practice_id}`);
-  const responseRows = (interaction.responseLedger || []).slice(-5).map(row => `${row.response_id}: ${row.resident} ${row.response_kind}; effect=${row.handling_effect || 'pending'}; proposal=${row.follow_up_proposal_id || 'none'}; resolution=${row.resolution_status || 'none'}; component=${row.component_id}; selection=${row.selection_id}; allowed=${row.manipulation_allowed}; expression=${row.expression_marker}; "${row.response_text}"`);
+  const rows = interaction.interactionLedger.slice(-6).map(row => `${row.interaction_id}: ${row.resident} ${row.resident_action} ${row.resident_term}; component=${row.component_id}; response=${row.resident_response_id || 'none'}/${row.resident_response_effect || 'none'}; blocked=${row.handling_blocked_by_response === true}; rerouted=${row.handling_rerouted_by_response === true}; proposal=${row.follow_up_proposal_id || 'none'}; resolution=${row.proposal_resolution_status || row.recheck_resolution_id || 'none'}; recheck=${row.resident_recheck_required === true || row.recheck_resolution_id !== 'none'}; result=${row.resident_recheck_result || 'none'}; manipulation=${row.manipulation_id}; success=${row.success}; practice=${row.practice_id}`);
+  const responseRows = (interaction.responseLedger || []).slice(-5).map(row => `${row.response_id}: ${row.resident} ${row.response_kind}; effect=${row.handling_effect || 'pending'}; proposal=${row.follow_up_proposal_id || 'none'}; resolution=${row.resolution_status || row.recheck_resolution_id || 'none'}; recheckResult=${row.resident_recheck_result || 'none'}; component=${row.component_id}; selection=${row.selection_id}; allowed=${row.manipulation_allowed}; expression=${row.expression_marker}; "${row.response_text}"`);
   const resolutionRows = (interaction.resolutionLedger || []).slice(-5).map(row => `${row.resolution_id}: ${row.response_id}->${row.proposal_id}/${row.project_id}; status=${row.resolution_status}; component=${row.component_id}; repaired=${row.components_repaired.length}; added=${row.components_added.length}; recheck=${row.resident_recheck_required}`);
   return [
     `Acceptance ready: ${interaction.acceptanceReady ? 'yes' : 'no'}`,
@@ -14026,6 +14061,8 @@ function buildPrototypeAcceptanceReceipt() {
   const objectResponseWorksiteRows = worksite && worksite.watchLedger ? worksite.watchLedger.filter(row => row.related_object_response_id && row.related_object_response_id !== 'none' && row.object_objection_path === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.resource_spawning === false).length : 0;
   const objectResponseResolutionRows = objectInteraction && objectInteraction.resolutionLedger ? objectInteraction.resolutionLedger.filter(row => row.response_id && row.response_id !== 'none' && row.proposal_id && row.proposal_id !== 'none' && row.project_id && row.project_id !== 'none' && row.resident_recheck_required === true && row.handling_auto_allowed === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false && row.resource_spawning === false).length : 0;
   const objectResponseRecheckRows = objectInteraction && objectInteraction.interactionLedger ? objectInteraction.interactionLedger.filter(row => row.proposal_resolution_id && row.proposal_resolution_id !== 'none' && row.resident_recheck_required === true && row.handling_auto_allowed === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
+  const objectResponseRecheckAttemptRows = objectInteraction && objectInteraction.responseLedger ? objectInteraction.responseLedger.filter(row => row.recheck_resolution_id && row.recheck_resolution_id !== 'none' && ['post_resolution_recheck', 'recheck_still_blocks'].includes(row.response_kind) && row.handling_auto_allowed === false && row.no_llm === true && row.phrasebook_only === true && row.open_ended_language === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
+  const objectResponseRecheckHandlingRows = objectInteraction && objectInteraction.interactionLedger ? objectInteraction.interactionLedger.filter(row => row.recheck_resolution_id && row.recheck_resolution_id !== 'none' && ['allows_careful_handling_after_recheck', 'still_blocks_after_recheck'].includes(row.resident_recheck_result) && row.handling_auto_allowed === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
   const proposalDeckCards = proposalDeck ? proposalDeck.cardLedger.length : 0;
   const proposalDeckActions = proposalDeck ? proposalDeck.actionLedger.length : 0;
   const livedPracticeRows = livedPractice ? livedPractice.actionLedger.length : 0;
@@ -14143,6 +14180,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'blocked_object_response_creates_proposal', pass: Boolean(objectInteraction && board && objectResponseProposalRows > 0 && objectResponseBoardProposalRows > 0), evidence: objectInteraction && board ? `interactionLinks=${objectResponseProposalRows}, boardLinks=${objectResponseBoardProposalRows}` : 'not run' },
     { id: 'object_objection_proposal_actionable', pass: Boolean(objectInteraction && board && proposalDeck && projects && worksite && objectResponseDeckActionRows > 0 && (objectResponseProjectRows > 0 || objectResponseWorksiteRows > 0)), evidence: objectInteraction && board ? `deckActions=${objectResponseDeckActionRows}, projectRows=${objectResponseProjectRows}, worksiteRows=${objectResponseWorksiteRows}` : 'not run' },
     { id: 'object_objection_resolution_recheck', pass: Boolean(objectInteraction && objectResponseResolutionRows > 0 && objectResponseRecheckRows > 0), evidence: objectInteraction ? `resolutionRows=${objectResponseResolutionRows}, recheckRows=${objectResponseRecheckRows}` : 'not run' },
+    { id: 'object_objection_recheck_response', pass: Boolean(objectInteraction && objectResponseRecheckAttemptRows > 0 && objectResponseRecheckHandlingRows > 0), evidence: objectInteraction ? `recheckResponses=${objectResponseRecheckAttemptRows}, recheckHandling=${objectResponseRecheckHandlingRows}` : 'not run' },
     { id: 'resident_proposal_deck', pass: Boolean(proposalDeck && proposalDeck.acceptanceReady && proposalDeckCards > 0 && proposalDeckActions >= 3 && proposalDeck.avatarCannotForce === true && proposalDeck.noDirectCommand === true && proposalDeck.noHiddenLawNormalView === true && proposalDeck.playerGlossesOnly === true), evidence: proposalDeck ? `cardSnapshots=${proposalDeckCards}, actions=${proposalDeckActions}` : 'not run' },
     { id: 'lived_practice_loop', pass: Boolean(livedPractice && livedPractice.acceptanceReady && livedPracticeRows >= 4 && livedPracticeSnapshots > 0 && livedPracticePhysicsRows >= 4 && livedPracticeCanvasCueRows > 0 && livedPractice.physicalCausalityReady === true && livedPractice.noDirectCommand === true && livedPractice.noHiddenLawNormalView === true && livedPractice.noPredeclaredTechTree === true && livedPractice.noCorrectConceptInstalled === true), evidence: livedPractice ? `actions=${livedPracticeRows}, snapshots=${livedPracticeSnapshots}, livedPhysics=${livedPracticePhysicsRows}, canvasCues=${livedPracticeCanvasCueRows}` : 'not run' },
     { id: 'resident_worksite', pass: Boolean(worksite && worksite.acceptanceReady && worksiteRows >= 2 && worksiteSnapshots > 0 && worksite.avatarCannotAssignJobs === true && worksite.noDirectCommand === true && worksite.noHiddenLawNormalView === true && worksite.noResourceSpawning === true), evidence: worksite ? `watchRows=${worksiteRows}, snapshots=${worksiteSnapshots}` : 'not run' },

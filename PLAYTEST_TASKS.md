@@ -390,3 +390,8 @@
 - Confirm the primary surface shows the clicked component as active with `source=canvas_selection`.
 - Run `Objects` after canvas selection and confirm object inspection targets the selected component.
 - Export acceptance and confirm `canvas_component_selection` appears with `COS-...` cue evidence.
+- Run `Objects` and confirm the Physical object interaction card records an `OIR-...` resident object response before the manipulation row.
+- Confirm the response kind reflects visible component state, such as wet material, weak support, heavy object, or ownership/carrying.
+- Confirm the resident shows `object note` or `object objection` body-language evidence.
+- Confirm the response is phrasebook-only, no LLM, no open-ended language, no direct command, no hidden-law normal view, and no tech-tree unlock.
+- Export acceptance and confirm `resident_object_response` appears with bounded response evidence.

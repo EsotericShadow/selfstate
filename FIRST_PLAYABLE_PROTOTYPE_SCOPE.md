@@ -33,6 +33,7 @@
 - One 10-minute playable loop that proves object/material change, emergent practice evidence, and save/return persistence in one normal play path.
 - One canvas-visible material-state overlay for the active physical component.
 - One direct canvas component selection path that inspects simulated objects without direct manipulation.
+- One bounded resident object-response path before material manipulation.
 - One bounded resident language/gloss layer for local terms that emerge from grounded practice history.
 
 ## First prototype success condition
@@ -631,6 +632,21 @@ Required evidence:
 - selection rows are inspect-only
 - residents are not commanded by selection
 - hidden simulator law remains out of normal view
+- no tech-tree unlock occurs
+
+## Added scope gate: Resident object response
+
+`resident_object_response` is now part of first playable prototype scope.
+
+Required evidence:
+
+- object inspection records an `OIR-...` resident response before handling
+- response kind comes from visible component state
+- resident response is phrasebook-only and deterministic
+- visible body language records observation or objection
+- response can warn, object, or allow handling without forcing obedience
+- hidden simulator law remains out of normal view
+- no LLM or open-ended language is used
 - no tech-tree unlock occurs
 
 This milestone makes resident continuity readable during ordinary play. It does not add an open-ended language system.

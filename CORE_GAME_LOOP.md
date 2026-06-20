@@ -658,6 +658,17 @@ The player can select objects through the canvas without gaining direct control:
 6. Resident handling remains separate and resident-mediated.
 7. The exported acceptance receipt records `canvas_component_selection`.
 
+## Resident object-response loop
+
+Object inspection now has a social step before handling:
+
+1. The player uses `Objects` after looking at or selecting a component.
+2. The selected resident reads the visible object state through local term and player gloss.
+3. The resident gives a bounded response: observation, wet-material warning, safety warning, labor caution, or ownership objection.
+4. The response updates resident memory and public body language.
+5. Material handling may follow, but the response itself does not manipulate the object.
+6. The exported acceptance receipt records `resident_object_response`.
+
 ## Player movement route loop
 
 1. The avatar moves through bounded village space instead of teleporting.

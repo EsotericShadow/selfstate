@@ -573,3 +573,9 @@ The acceptance gate is `canvas_material_state_visible`. It requires a current co
 Canvas clicks now inspect nearby simulated components instead of only moving the avatar. If the click lands inside a component hit radius, the shell records a `COS-...` canvas selection row, refreshes the primary play surface around that component, and routes later `Objects` inspection through the selected component.
 
 The acceptance gate is `canvas_component_selection`. It requires inspect-only selection rows, matching canvas cue rows, no direct resident command, no hidden-law exposure in normal view, and no tech-tree unlock.
+
+## Prototype v0 bounded resident object-response update
+
+Object inspection now produces a bounded resident response before material manipulation. When the player uses `Objects`, the selected resident can make a phrasebook-only observation, warning, caution, or objection based on visible component state such as wetness, damage, stability, weight, carried state, and canvas selection source.
+
+The acceptance gate is `resident_object_response`. It requires `OIR-...` response rows, visible body-language expression, no LLM, no open-ended language, no direct command, no hidden-law exposure, and no tech-tree unlock.

@@ -17692,6 +17692,7 @@ function buildPrototypeAcceptanceReceipt() {
   const worksite = world.gamePrototypeWorksite || null;
   const returnJournal = world.gamePrototypeReturnJournal || null;
   const playSession = world.gamePrototypePlaySession || null;
+  const firstPlayableMilestone = buildFirstPlayableMilestoneSnapshot();
 		  const materialWorld = world.gamePrototype3DWorld || null;
   const terrain = world.gamePrototypeTerrain || null;
   const tools = world.gamePrototypeTools || null;
@@ -18007,6 +18008,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'resident_worksite', pass: Boolean(worksite && worksite.acceptanceReady && worksiteRows >= 2 && worksiteSnapshots > 0 && worksite.avatarCannotAssignJobs === true && worksite.noDirectCommand === true && worksite.noHiddenLawNormalView === true && worksite.noResourceSpawning === true), evidence: worksite ? `watchRows=${worksiteRows}, snapshots=${worksiteSnapshots}` : 'not run' },
     { id: 'return_journal', pass: Boolean(returnJournal && returnJournal.acceptanceReady && returnJournalRows > 0 && returnJournalSnapshots >= 3 && returnJournalVisiblePhysicsFollowRows > 0 && returnJournal.forwardReturnVisible === true && returnJournal.saveRestoreVisible === true && returnJournal.noDirectReset === true && returnJournal.noHiddenLawNormalView === true), evidence: returnJournal ? `rows=${returnJournalRows}, snapshots=${returnJournalSnapshots}, visibleFollow=${returnJournalVisiblePhysicsFollowRows}` : 'not run' },
     { id: 'return_journal_visible_physics_follow_continuity', pass: Boolean(returnJournal && returnJournalVisiblePhysicsFollowRows > 0 && returnJournal.forwardReturnVisible === true && returnJournal.saveRestoreVisible === true && returnJournal.noDirectReset === true && returnJournal.noHiddenLawNormalView === true), evidence: returnJournal ? `visibleFollowRows=${returnJournalVisiblePhysicsFollowRows}` : 'not run' },
+    { id: 'first_playable_milestone_surface', pass: Boolean(firstPlayableMilestone && firstPlayableMilestone.surface_ready === true && firstPlayableMilestone.rows.length >= 10 && firstPlayableMilestone.next_action && firstPlayableMilestone.boundary), evidence: firstPlayableMilestone ? `ready=${firstPlayableMilestone.ready_rows}, partial=${firstPlayableMilestone.partial_rows}, missing=${firstPlayableMilestone.missing_rows}, next=${firstPlayableMilestone.next_action}` : 'not built' },
     { id: 'first_playable_session', pass: Boolean(playSession && playSession.acceptanceReady && playSessionSteps >= playSession.requiredSteps.length && playSessionSnapshots >= playSession.requiredSteps.length && playSessionIntegratedCompleteRows > 0 && playSessionWorldPressureRows > 0 && playSessionWorldPressureSaveRows > 0 && playSessionWorldPressureRestoreRows > 0 && livedPracticePhysicsRows > 0 && normalPlayAmbientHappyPathReadyRows > 0 && actionRailPhysicsPathRows > 0 && normalPlayPhysicsPathSaveRows > 0 && normalPlayPhysicsPathRestoreRows > 0 && playerModeVisiblePhysicsFollowReadyRows > 0 && playerModeVisiblePhysicsFollowSaveRows > 0 && playerModeVisiblePhysicsFollowRestoreRows > 0 && returnJournalVisiblePhysicsFollowRows > 0 && playSessionVisiblePhysicsFollowRows > 0 && playSession.stepLedger.some(row => row.step_id === 'physics_path' && row.latest_ambient_happy_path_ready === true && row.latest_normal_physics_path_ready === true && row.latest_normal_physics_path_save_slot_id && row.latest_normal_physics_path_save_slot_id !== 'none' && row.latest_normal_physics_path_restore_slot_id && row.latest_normal_physics_path_restore_slot_id !== 'none' && row.latest_normal_physics_path_body_expression_id && row.latest_normal_physics_path_body_expression_id !== 'none') && playSession.stepLedger.some(row => row.step_id === 'world_pressure' && row.world_pressure_full_physics_ready === true && row.latest_world_pressure_physics_step_id && row.latest_world_pressure_physics_step_id !== 'none' && row.latest_world_pressure_terrain_step_id && row.latest_world_pressure_terrain_step_id !== 'none' && row.latest_world_pressure_resource_step_id && row.latest_world_pressure_resource_step_id !== 'none' && row.latest_world_pressure_thermal_step_id && row.latest_world_pressure_thermal_step_id !== 'none' && row.latest_world_pressure_water_step_id && row.latest_world_pressure_water_step_id !== 'none' && row.latest_world_pressure_ecology_step_id && row.latest_world_pressure_ecology_step_id !== 'none' && row.latest_world_pressure_structural_step_id && row.latest_world_pressure_structural_step_id !== 'none' && row.latest_world_pressure_constraint_step_id && row.latest_world_pressure_constraint_step_id !== 'none' && row.latest_world_pressure_material_state_step_id && row.latest_world_pressure_material_state_step_id !== 'none') && playSession.stepLedger.some(row => row.step_id === 'visible_physics_follow' && row.visible_physics_follow_ready === true && row.visible_physics_follow_id && row.visible_physics_follow_id !== 'none' && row.visible_physics_follow_body_expression_id && row.visible_physics_follow_body_expression_id !== 'none' && Number(row.return_journal_visible_physics_follow_rows || 0) > 0) && playSession.stepLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false) && playSession.noDirectCommand === true && playSession.noHiddenLawNormalView === true && playSession.noTechTreeUnlock === true), evidence: playSession ? `steps=${playSessionSteps}/${playSession.requiredSteps.length}, snapshots=${playSessionSnapshots}, integrated=${playSessionIntegratedCompleteRows}/${playSessionIntegratedRows}, worldPressure=${playSessionWorldPressureRows}, worldPressureSaved=${playSessionWorldPressureSaveRows}, worldPressureRestored=${playSessionWorldPressureRestoreRows}, livedPhysics=${livedPracticePhysicsRows}, ambientHappy=${normalPlayAmbientHappyPathReadyRows}, physicsPath=${actionRailPhysicsPathRows}, saved=${normalPlayPhysicsPathSaveRows}, restored=${normalPlayPhysicsPathRestoreRows}, visibleFollow=${playSessionVisiblePhysicsFollowRows}, playerModeVisibleFollow=${playerModeVisiblePhysicsFollowReadyRows}, journalVisibleFollow=${returnJournalVisiblePhysicsFollowRows}` : 'not run' },
     { id: 'ten_minute_playable_loop', pass: Boolean(playSession && playSession.tenMinuteAcceptanceReady === true && playSessionTenMinuteRows > 0 && playSessionTenMinuteCompleteRows > 0), evidence: playSession ? `rows=${playSessionTenMinuteRows}, complete=${playSessionTenMinuteCompleteRows}, ready=${playSession.tenMinuteAcceptanceReady === true}` : 'not run' },
     { id: 'terrain_physics_substrate', pass: Boolean(terrain && terrainRows > 0 && terrainFlowRows > 0 && terrainSupportRows > 0 && terrain.terrainLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${terrainRows} terrain step(s), ${terrainFlowRows} flow row(s), ${terrainSupportRows} support row(s)` },
@@ -18194,6 +18196,86 @@ function formatPrototypeAcceptance() {
   ].join('\n');
 }
 
+function firstPlayableMilestoneRow(id, label, ready, partial, evidence, nextAction) {
+  return {
+    id,
+    label,
+    status: ready ? 'READY' : partial ? 'PARTIAL' : 'MISSING',
+    evidence,
+    next_action: ready ? 'continue ordinary play' : nextAction,
+  };
+}
+
+function buildFirstPlayableMilestoneSnapshot() {
+  const guide = derivePrototypePlayerGuide();
+  const rail = world.gamePrototypeActionRail || null;
+  const board = world.villageBoard || null;
+  const practiceGraph = world.emergentPracticeGraph || null;
+  const projects = world.gamePrototypeProjects || null;
+  const worksite = world.gamePrototypeWorksite || null;
+  const session = world.gamePrototypePlaySession || null;
+  const saves = world.gamePrototypeSaves || null;
+  const readiness = world.gamePrototypeBrowserQaReadiness || null;
+  const acceptance = world.gamePrototypeAcceptance || null;
+  const worldStage = world.gamePrototypeWorldStage || null;
+  const actionRows = rail && rail.actionLedger ? rail.actionLedger.length : 0;
+  const ambientPhysicsRows = rail && rail.ambientPhysicsLedger ? rail.ambientPhysicsLedger.filter(row => row.proposal_id && row.proposal_id !== 'none' && row.pressure_language_id && row.pressure_language_id !== 'none').length : 0;
+  const followRows = rail && rail.followChainLedger ? rail.followChainLedger.filter(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
+  const proposalRows = board && board.projectProposals ? board.projectProposals.filter(row => row.avatar_can_force === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
+  const practiceRows = practiceGraph && practiceGraph.nodes ? practiceGraph.nodes.filter(row => row.practice_id && row.status && row.local_name).length : 0;
+  const projectRows = projects && projects.projectLedger ? projects.projectLedger.filter(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
+  const worksiteRows = worksite && worksite.watchLedger ? worksite.watchLedger.filter(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
+  const saveRows = saves && saves.slots ? saves.slots.length : 0;
+  const restoreRows = saves && saves.returnLog ? saves.returnLog.length : 0;
+  const sessionSteps = session && session.stepLedger ? session.stepLedger.length : 0;
+  const requiredSteps = session && session.requiredSteps ? session.requiredSteps.length : 0;
+  const sessionReady = Boolean(session && session.acceptanceReady === true);
+  const tenMinuteRows = session && session.tenMinuteLedger ? session.tenMinuteLedger.length : 0;
+  const tenMinuteReady = Boolean(session && session.tenMinuteAcceptanceReady === true);
+  const canvasCueRows = worldStage && worldStage.canvasCueLedger ? worldStage.canvasCueLedger.length : 0;
+  const qaReadinessRows = readiness && readiness.readinessRows ? readiness.readinessRows.length : 0;
+  const acceptanceRows = acceptance && acceptance.requirements ? acceptance.requirements.length : 0;
+  const rows = [
+    firstPlayableMilestoneRow('normal_player_surface', 'Normal player verbs', actionRows >= 8 && followRows > 0, actionRows > 0, `actions=${actionRows}, follow=${followRows}`, 'use the normal action rail'),
+    firstPlayableMilestoneRow('ambient_physics_language', 'Physics pressure language', ambientPhysicsRows > 0, actionRows > 0, `ambient pressure-language rows=${ambientPhysicsRows}`, 'run Physics path or Wait'),
+    firstPlayableMilestoneRow('resident_management', 'Resident proposals', proposalRows > 0, Boolean(board && board.concerns && board.concerns.length > 0), `proposal rows=${proposalRows}`, 'open or support proposals'),
+    firstPlayableMilestoneRow('emergent_practice', 'Emergent practice evidence', practiceRows > 0, Boolean(practiceGraph && practiceGraph.edges && practiceGraph.edges.length > 0), `practice nodes=${practiceRows}`, 'run lived practice or handling'),
+    firstPlayableMilestoneRow('resident_worksite', 'Resident worksite consequence', projectRows > 0 && worksiteRows > 0, projectRows > 0 || worksiteRows > 0, `projects=${projectRows}, worksite=${worksiteRows}`, 'watch resident worksite'),
+    firstPlayableMilestoneRow('save_return', 'Save and return continuity', saveRows > 0 && restoreRows > 0, saveRows > 0, `save slots=${saveRows}, restore rows=${restoreRows}`, 'save then return'),
+    firstPlayableMilestoneRow('first_playable_session', 'First playable session receipt', sessionReady && requiredSteps > 0, sessionSteps > 0, `steps=${sessionSteps}/${requiredSteps}, ready=${sessionReady}`, 'run Session or First playable'),
+    firstPlayableMilestoneRow('ten_minute_loop', '10-minute compact loop', tenMinuteReady, tenMinuteRows > 0, `ready=${tenMinuteReady}, rows=${tenMinuteRows}`, 'run 10-minute loop'),
+    firstPlayableMilestoneRow('canvas_public_cues', 'Canvas public cues', canvasCueRows > 0, Boolean(worldStage && worldStage.latestSnapshot), `canvas cues=${canvasCueRows}`, 'run primary play surface'),
+    firstPlayableMilestoneRow('qa_readiness', 'QA readiness preflight', Boolean(readiness && readiness.ready === true), qaReadinessRows > 0, `readiness rows=${qaReadinessRows}, ready=${readiness ? readiness.ready === true : false}`, 'run QA readiness when authorized'),
+    firstPlayableMilestoneRow('acceptance_receipt', 'Acceptance receipt', Boolean(acceptance && acceptance.pass === true), acceptanceRows > 0, `requirements=${acceptanceRows}, pass=${acceptance ? acceptance.pass === true : false}`, 'export acceptance after validation'),
+  ];
+  const readyRows = rows.filter(row => row.status === 'READY').length;
+  const partialRows = rows.filter(row => row.status === 'PARTIAL').length;
+  const missingRows = rows.filter(row => row.status === 'MISSING').length;
+  return {
+    milestone_id: `FPM-${String(world.tick).padStart(4, '0')}`,
+    phase: guide.phase,
+    next_action: guide.nextAction,
+    next_button: guide.button,
+    ready_rows: readyRows,
+    partial_rows: partialRows,
+    missing_rows: missingRows,
+    rows,
+    surface_ready: rows.length >= 10 && Boolean(guide.nextAction && guide.button),
+    boundary: 'read-only first playable consolidation; reports status honestly and does not create world state, command residents, expose hidden law, or unlock technology',
+  };
+}
+
+function formatFirstPlayableMilestone() {
+  const snapshot = buildFirstPlayableMilestoneSnapshot();
+  const rows = snapshot.rows.map(row => `${row.status} ${row.label}: ${row.evidence}; next=${row.next_action}`);
+  return [
+    `${snapshot.milestone_id}: ready=${snapshot.ready_rows}, partial=${snapshot.partial_rows}, missing=${snapshot.missing_rows}`,
+    `Guide: ${snapshot.phase} -> ${snapshot.next_action} (${snapshot.next_button})`,
+    `Boundary: ${snapshot.boundary}`,
+    ...rows,
+  ].join('\n');
+}
+
 function formatPrototypeDivergence() {
   const comparison = world.gamePrototypeDivergence || null;
   if (!comparison) return 'No seed comparison yet. Use Compare seeds after or during a prototype run.';
@@ -18216,6 +18298,7 @@ function renderGamePrototypeSurface() {
   const villageNode = document.getElementById('gamePrototypeVillageOut');
   const publicNode = document.getElementById('gamePrototypePublicOut');
   const guideNode = document.getElementById('gamePrototypeGuideOut');
+  const milestoneNode = document.getElementById('gamePrototypeMilestoneOut');
   const playableSliceNode = document.getElementById('gamePrototypePlayableSliceOut');
   const villageDay03Node = document.getElementById('gamePrototypeVillageDay03Out');
   const primarySurfaceNode = document.getElementById('gamePrototypePrimarySurfaceOut');
@@ -18263,6 +18346,7 @@ function renderGamePrototypeSurface() {
   if (villageNode) villageNode.textContent = formatPrototypeVillageState();
   if (publicNode) publicNode.textContent = formatPrototypePublicOutcomes();
   if (guideNode) guideNode.textContent = formatPrototypePlayerGuide();
+  if (milestoneNode) milestoneNode.textContent = formatFirstPlayableMilestone();
   if (playableSliceNode) playableSliceNode.textContent = formatPlayablePhysicsPracticeSlice();
   if (villageDay03Node) villageDay03Node.textContent = formatPlayableVillageDay03();
   if (primarySurfaceNode) primarySurfaceNode.textContent = formatPrimaryPlaySurface();

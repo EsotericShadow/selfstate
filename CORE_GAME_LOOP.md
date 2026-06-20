@@ -642,6 +642,16 @@ Each step records a session row and snapshot. The loop does not add world law; i
 
 The session rows also preserve lived-action physics continuity. The Practice step creates the rows; later Journal, Save, and Return steps must keep those counts and latest physics IDs visible.
 
+## First playable milestone surface loop
+
+The first playable surface now has one consolidation card that reads existing ledgers and reports:
+
+1. Ready, partial, and missing rows.
+2. Current Player guide phase and next action.
+3. Normal verbs, ambient physics language, proposals, practice, worksite, save/return, session, 10-minute loop, canvas cues, QA readiness, and acceptance.
+
+The card is read-only. It does not add world law, command residents, expose hidden law, or unlock technology. Its purpose is to make incompleteness visible while keeping the player oriented toward the next ordinary action.
+
 ## 10-minute playable loop
 
 The shell now has a compact proof loop for the first actual game-prototype milestone:

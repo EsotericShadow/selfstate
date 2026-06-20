@@ -380,6 +380,8 @@
 - Confirm rows record no direct resident command, no hidden-law exposure in normal view, and no tech-tree unlock.
 - Confirm the session still has its earlier step rows after the Journal step performs save-slot restoration.
 - Export acceptance and confirm `first_playable_session` appears as a requirement after the session loop runs and includes visible Follow continuity evidence.
+- Inspect `First playable milestone` and confirm it shows ready, partial, and missing rows plus the Player guide next action without creating world state.
+- Export acceptance and confirm `first_playable_milestone_surface` appears as a requirement.
 
 ## Bounded resident encounter playtests
 

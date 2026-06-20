@@ -148,6 +148,12 @@ The primary play surface and world canvas now carry the latest integrated `FPI-.
 
 The `primary_play_surface` acceptance gate now requires at least one integrated-chain canvas cue. This makes the first playable loop visible in the actual player surface instead of only in a session receipt.
 
+## Prototype v0 first playable milestone surface
+
+The prototype surface now includes a `First playable milestone` card. It consolidates existing ledgers into ready, partial, and missing rows for normal verbs, physics-language proposals, resident management, emergent practice, worksite consequence, save/return, first-playable session, 10-minute loop, canvas cues, QA readiness, and acceptance.
+
+This is not a new simulation organ. It is a player-facing orientation layer that keeps incompleteness visible and points to the current Player guide next action without commanding residents or exposing hidden simulator law.
+
 ## Prototype v0 ambient physics happy-path update
 
 The maintained shell now includes `runFirstPlayableAmbientPhysicsHappyPath`. This is a player-facing route through existing normal verbs: player mode, Look, Wait, Handling, Follow, Proposal deck, Support, Save, Wait, and Return.

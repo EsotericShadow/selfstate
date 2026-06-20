@@ -619,6 +619,20 @@ Each step records a session row and snapshot. The loop does not add world law; i
 
 The session rows also preserve lived-action physics continuity. The Practice step creates the rows; later Journal, Save, and Return steps must keep those counts and latest physics IDs visible.
 
+## 10-minute playable loop
+
+The shell now has a compact proof loop for the first actual game-prototype milestone:
+
+1. The player enters the normal surface and uses Look, Move, Talk, Objects, Handling, Support, and Practice.
+2. Residents mediate object handling under material/body constraints.
+3. A visible object/material state changes or produces preserved evidence.
+4. The lived practice loop links that evidence to an emergent practice id.
+5. The player saves, waits, and returns.
+6. The loop compares object state before interaction, after change, after away time, and after restore.
+7. The loop passes only if material state persisted through save/return and no resident was directly commanded.
+
+This is not a research panel. It is a short player path proving the game can carry a material consequence into practice memory and return-session continuity.
+
 ## Player movement route loop
 
 1. The avatar moves through bounded village space instead of teleporting.

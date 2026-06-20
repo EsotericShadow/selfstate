@@ -30,6 +30,7 @@
 - One resident-visible `Follow` response that records memory and a public body-language cue.
 - One calibrated `Follow` boundary path where residents can guard or refuse under pressure.
 - One normal `Space` verb that recovers after guarded/refused `Follow` without advancing the chain.
+- One 10-minute playable loop that proves object/material change, emergent practice evidence, and save/return persistence in one normal play path.
 - One bounded resident language/gloss layer for local terms that emerge from grounded practice history.
 
 ## First prototype success condition
@@ -586,6 +587,21 @@ Required evidence:
 - source history is preserved
 - every row records no direct resident command
 - hidden simulator law remains out of normal view
+
+## Added scope gate: 10-minute playable loop
+
+`ten_minute_playable_loop` is now part of first playable prototype scope.
+
+Required evidence:
+
+- the normal player surface can run a compact 10-minute path
+- the path includes Look, Move, Talk, Objects, Handling, Support, Practice, Save, Wait, and Return
+- object/material state changes visibly through resident-mediated handling
+- the changed state persists after save/return
+- one emergent practice id is linked to the lived evidence
+- residents are not directly commanded
+- hidden simulator law remains out of normal view
+- no tech-tree unlock occurs
 - no step installs a tech-tree unlock or correct resident concept
 
 This milestone makes resident continuity readable during ordinary play. It does not add an open-ended language system.

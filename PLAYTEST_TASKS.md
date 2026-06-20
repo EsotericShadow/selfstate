@@ -253,6 +253,12 @@
 161. Inspect Readable behavior or Autonomous residents and confirm the selected resident shows a public `space accepted` cue after recovery.
 162. Save after using `Space`, return the slot, and confirm Save / return shows follow-recovery counts.
 163. Export acceptance and confirm `normal_play_action_rail` evidence includes follow-recovery and follow-recovery-expression counts.
+164. Use `10 min loop` and confirm the Play session receipt records a `TMP-...` row.
+165. Confirm the `TMP-...` row shows Look, Move, Talk, Objects, Handling, Support, Practice, Save, Wait, and Return as the compact player path.
+166. Confirm object/material state changes between before-interaction and after-change snapshots.
+167. Confirm the changed material state persists after save-slot return.
+168. Confirm the `TMP-...` row links a non-`none` emergent practice id.
+169. Export acceptance and confirm `ten_minute_playable_loop` appears with ready evidence.
 
 ## Physics-to-practice slice playtests
 

@@ -553,3 +553,11 @@ The browser shell now includes a `Talk` normal rail action, `Resident encounter`
 The acceptance gate is `player_resident_encounter`. It records resident cue, posture, schedule, memory, active proposal, active practice, active object, trust before/after, and a deterministic bounded response. The response is assembled from existing state and phrasebook hooks; no LLM is called and no autonomous natural-language system is introduced.
 
 This makes resident continuity visible in normal play. The player talks and listens; the resident response remains source-traced, bounded, and tied to actual simulation state.
+
+## Prototype v0 10-minute playable loop update
+
+The maintained shell now includes a `10 min loop` player-facing action. It runs a compact normal-play path through Look, Move, Talk, Objects, Handling, Support, Practice, Save, Wait, and Return.
+
+The receipt records object/material state before interaction, after resident-mediated change, after away time, and after save-slot return. The acceptance gate is `ten_minute_playable_loop`: object/material change must be visible, the changed state must persist through save/return, and an emergent practice id must be linked without direct command, hidden-law exposure, or tech-tree unlock.
+
+This is the first explicit 10-minute prototype proof: a player can affect material conditions, get resident-mediated practice evidence, leave/return, and see continuity in the normal play surface.

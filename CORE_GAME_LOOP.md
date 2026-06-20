@@ -923,14 +923,15 @@ The loop now includes: saved ambient physics proposal -> restored fingerprint ma
 The expression remains a player-facing cue only. It does not reveal hidden physical law and does not let the avatar command a resident body.
 ## First-playable physics session receipt loop
 
-The first playable session now includes `Visible Follow` and `Physics path` as explicit required steps:
+The first playable session now includes `World pressure`, `Visible Follow`, and `Physics path` as explicit required steps:
 
 1. Enter player mode and run normal look/move/talk/object/handling/proposal/practice/worksite/journal steps.
-2. Run `Visible Follow` through the normal action rail, Player Mode, and Return Journal so visible physics continuity is player-facing before the session advances.
-3. Run `Physics path` through the normal action rail, not a debug physics button.
-4. Surface ambient stochastic pressure as resident language, a resident proposal, save/return continuity, and a public body-language expression.
-5. Run the session save/return pass after the physics path so the receipt proves continuity survived the playable loop.
-6. Record ambient happy-path rows, normal physics-path rows, and visible Follow continuity rows in the session card.
+2. Run `World pressure` through normal `Wait`, which advances the full stochastic physics bundle rather than a debug-only panel.
+3. Run `Visible Follow` through the normal action rail, Player Mode, and Return Journal so visible physics continuity is player-facing before the session advances.
+4. Run `Physics path` through the normal action rail, not a debug physics button.
+5. Surface ambient stochastic pressure as resident language, a resident proposal, save/return continuity, and a public body-language expression.
+6. Run the session save/return pass after the physics path so the receipt proves continuity survived the playable loop.
+7. Record world-pressure rows, ambient happy-path rows, normal physics-path rows, and visible Follow continuity rows in the session card.
 
 This keeps the first playable loop aligned with the game direction: physics appears through ordinary player actions, resident interpretation, proposals, persistence, and readable behavior.
 ## Exported first-playable Physics path gate

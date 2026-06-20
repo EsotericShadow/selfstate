@@ -376,7 +376,7 @@
 - Use `Move` from the normal rail and confirm the avatar changes village zone without direct resident command.
 - Inspect the movement route card and confirm nearby residents, materials, and practices update from the new position.
 - Save, return, and confirm the movement route remains part of the first playable session receipt.
-- Confirm the receipt links proposal, practice, worksite, return journal, visible Follow, Physics path, save, and return evidence from one player-facing sequence.
+- Confirm the receipt links proposal, practice, worksite, world pressure, return journal, visible Follow, Physics path, save, and return evidence from one player-facing sequence.
 - Confirm rows record no direct resident command, no hidden-law exposure in normal view, and no tech-tree unlock.
 - Confirm the session still has its earlier step rows after the Journal step performs save-slot restoration.
 - Export acceptance and confirm `first_playable_session` appears as a requirement after the session loop runs and includes visible Follow continuity evidence.
@@ -649,9 +649,10 @@ Create an ambient physics proposal through normal play, save, return, and observ
 1. Run `First playable`.
 2. Run `QA readiness` without running Prototype QA.
 3. Confirm `first-playable-session-physics-path` reports session physics, ambient ready rows, normal rail rows, saved rows, and restored match rows.
-4. Confirm `first-playable-session-visible-physics-follow` reports session visible Follow rows, Player Mode readiness, saved/restored match rows, and Return Journal continuity.
-5. Export acceptance and confirm `first_playable_session` evidence includes ambient happy-path rows, Physics path rows, saved rows, restored rows, visible Follow rows, Player Mode visible Follow readiness, and Return Journal visible Follow rows.
-6. Confirm the exported proof still reports no hidden-law normal-view exposure and no direct resident command.
+4. Confirm `first-playable-session-world-pressure` reports a session world-pressure row from normal Wait.
+5. Confirm `first-playable-session-visible-physics-follow` reports session visible Follow rows, Player Mode readiness, saved/restored match rows, and Return Journal continuity.
+6. Export acceptance and confirm `first_playable_session` evidence includes world-pressure rows, ambient happy-path rows, Physics path rows, saved rows, restored rows, visible Follow rows, Player Mode visible Follow readiness, and Return Journal visible Follow rows.
+7. Confirm the exported proof still reports no hidden-law normal-view exposure and no direct resident command.
 ## Playtest task: normal-view first-playable Physics path
 
 1. Run `First playable`.

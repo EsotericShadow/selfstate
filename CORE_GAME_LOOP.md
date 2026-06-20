@@ -931,7 +931,7 @@ The first playable session now includes `World pressure`, `Visible Follow`, and 
 4. Run `Physics path` through the normal action rail, not a debug physics button.
 5. Surface ambient stochastic pressure as resident language, a resident proposal, save/return continuity, and a public body-language expression.
 6. Run the session save/return pass after the physics path so the receipt proves continuity survived the playable loop.
-7. Record world-pressure rows, ambient happy-path rows, normal physics-path rows, and visible Follow continuity rows in the session card.
+7. Record world-pressure rows, world-pressure save/return matches, ambient happy-path rows, normal physics-path rows, and visible Follow continuity rows in the session card.
 
 This keeps the first playable loop aligned with the game direction: physics appears through ordinary player actions, resident interpretation, proposals, persistence, and readable behavior.
 ## Exported first-playable Physics path gate

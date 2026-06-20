@@ -498,6 +498,7 @@ Required evidence:
 - lived-action physics rows remain visible through Journal, Save, and Return steps
 - visible Physics Follow continuity remains visible through Player Mode, Return Journal, save/return evidence, and body-language expression
 - World pressure advances the full stochastic physics bundle through normal Wait: material physics, terrain, resource stock, thermal/fire, water/fluid, ecology/food, structural stress, contact constraints, and material-state physics
+- World pressure also has an explicit save/return fingerprint so the session proves the full physics bundle survives restoration, not just that it advanced once
 
 ## Prototype v0 milestone: Player Movement Route
 

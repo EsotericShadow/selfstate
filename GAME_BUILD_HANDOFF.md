@@ -869,6 +869,8 @@ Browser QA readiness now includes a separate `first-playable-session-physics-pat
 The same receipt now requires a `visible_physics_follow` session step. A passing session must show the normal Follow action creating visible physics continuity, the Player Mode card exposing it, the Return Journal preserving it, save/return rows matching it, and a public body-language expression tied to the chain.
 
 The receipt also requires a `world_pressure` session step driven by normal `Wait`. A passing session must show one village day advancing the full stochastic physics bundle: material physics, terrain, resource stock, thermal/fire, water/fluid, ecology/food, structural stress, contact constraints, and material-state physics.
+
+World pressure now has its own save/return fingerprint. The save panel, browser readiness, and exported acceptance require saved and restored world-pressure rows to match, so the first playable proves the physics bundle survives restoration rather than only appearing as a transient Wait result.
 ## Prototype v0 normal-view Physics path proof update
 
 The normal primary play surface now carries the first-playable Physics path proof as player-facing state. The surface snapshot, focus ledger, canvas cue ledger, Player Mode card, and canvas HUD expose the latest `physics_path` session step, happy-path id, proposal/word, save slot, restore slot, and public body-language expression.

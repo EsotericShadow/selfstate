@@ -649,9 +649,9 @@ Create an ambient physics proposal through normal play, save, return, and observ
 1. Run `First playable`.
 2. Run `QA readiness` without running Prototype QA.
 3. Confirm `first-playable-session-physics-path` reports session physics, ambient ready rows, normal rail rows, saved rows, and restored match rows.
-4. Confirm `first-playable-session-world-pressure` reports a session world-pressure row from normal Wait.
+4. Confirm `first-playable-session-world-pressure` reports a session world-pressure row from normal Wait plus saved and restored world-pressure match rows.
 5. Confirm `first-playable-session-visible-physics-follow` reports session visible Follow rows, Player Mode readiness, saved/restored match rows, and Return Journal continuity.
-6. Export acceptance and confirm `first_playable_session` evidence includes world-pressure rows, ambient happy-path rows, Physics path rows, saved rows, restored rows, visible Follow rows, Player Mode visible Follow readiness, and Return Journal visible Follow rows.
+6. Export acceptance and confirm `first_playable_session` evidence includes world-pressure rows, world-pressure saved/restored rows, ambient happy-path rows, Physics path rows, saved rows, restored rows, visible Follow rows, Player Mode visible Follow readiness, and Return Journal visible Follow rows.
 7. Confirm the exported proof still reports no hidden-law normal-view exposure and no direct resident command.
 ## Playtest task: normal-view first-playable Physics path
 

@@ -639,3 +639,11 @@ The acceptance gate is `object_objection_guided_next_step`. It requires a normal
 Object-objection chains now surface in the primary play snapshot and canvas cue ledger. When an `OIR -> VBP -> OIRR` chain is active, the normal player surface can show phase, next action, response ID, proposal ID, resolution ID, and recheck result without opening audit/debug panels.
 
 The acceptance gate is `object_objection_canvas_cue`. It requires an object-chain canvas cue in normal view while preserving the hidden-law boundary and resident-mediated chain state.
+
+## Prototype v0 selected-component handling update
+
+Normal `Handling` now prefers the physical component the player selected on the canvas, or the component currently focused by the primary play surface, before falling back to resident constraint choice. This keeps handling tied to the object the player is actually looking at while preserving resident mediation: residents still choose the action, carry limits, tool fit, moisture, support, and resource constraints can still block or reroute the outcome.
+
+Material handling rows now record `target_source`, `target_reason`, and `selected_component_bound`. The canvas cue and resident handling card expose that source in normal view without revealing hidden material law.
+
+The acceptance gate is `handling_selected_component_binding`. It requires at least one resident-mediated handling row bound to either `canvas_selection` or `primary_surface` with no direct command and no hidden-law exposure.

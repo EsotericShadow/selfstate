@@ -756,3 +756,14 @@ Evidence required:
 - linked `OIR`, `VBP`, or `OIRR` identifiers where present
 - normal view keeps hidden law out of the player-facing cue
 - the avatar still influences conditions through resident-mediated actions instead of direct command
+
+## Added scope gate: Handling selected-component binding
+
+The first playable scope now requires normal `Handling` to bind to the object the player selected or the primary surface is focused on when feasible.
+
+Evidence required:
+- at least one `handling_selected_component_binding` acceptance row
+- resident material handling row with `selected_component_bound=true`
+- `target_source` is `canvas_selection` or `primary_surface`
+- handling remains resident-mediated and can fail under material/body/tool constraints
+- normal view does not expose hidden law or grant direct object control

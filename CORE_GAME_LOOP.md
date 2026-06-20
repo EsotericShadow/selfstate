@@ -729,3 +729,12 @@ The goal is readable continuity: the resident response should reflect what happe
 3. The primary play surface records the chain phase, next action, response ID, proposal ID, resolution ID, and recheck result.
 4. The canvas HUD shows the active object-objection phase as a player-facing cue.
 5. The cue is normal-view safe: it does not expose hidden simulator law, does not grant direct object control, and does not install a correct concept.
+
+## Selected-component handling loop
+
+1. The player selects or focuses a physical component through the canvas or primary play surface.
+2. The player uses `Handling` from the normal action rail.
+3. The resident chooses a feasible handling action for that component when possible: carry, tie, dry, wet-test, stack, test, or drop carried material.
+4. Material constraints can still block or alter the result.
+5. The handling row records whether the target came from `canvas_selection`, `primary_surface`, carried state, or resident constraint choice.
+6. The canvas marker shows the resident-body link and target source without exposing hidden simulator law.

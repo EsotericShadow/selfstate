@@ -434,3 +434,11 @@
 - Confirm the canvas HUD shows the object-chain phase, next action, response ID, proposal ID, and resolution ID when available.
 - Export or inspect acceptance and confirm `object_objection_canvas_cue` reports at least one object-chain cue.
 - Confirm the cue does not expose hidden simulator law, does not grant direct object control, and does not create a tech-tree unlock.
+
+## Selected-component handling playtests
+
+- Click or focus a physical component on the canvas, then use `Handling` from the normal action rail.
+- Confirm the resident handling card shows `target=canvas_selection` or `target=primary_surface` for the new row.
+- Confirm the canvas handling marker includes the target source near the manipulated component.
+- Export or inspect acceptance and confirm `handling_selected_component_binding` has at least one selected/focused handling row.
+- Confirm the resident still chooses the handling action and that carry limits, tools, resources, moisture, support, or failure can still affect the result.

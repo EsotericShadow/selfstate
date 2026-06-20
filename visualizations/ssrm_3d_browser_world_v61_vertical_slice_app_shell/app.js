@@ -2802,33 +2802,78 @@ function residentForMaterialManipulation(entropy) {
   return names[(entropy + ensureMaterialManipulationLoop().actionLedger.length) % names.length];
 }
 
+function preferredManipulationComponent(sim) {
+  const selection = world.gamePrototypeCanvasSelection || null;
+  const selectedId = selection && selection.selected_component_id && selection.selected_component_id !== 'none'
+    ? selection.selected_component_id
+    : null;
+  const selectedComponent = selectedId && sim.components
+    ? sim.components.find(component => component.component_id === selectedId)
+    : null;
+  if (selectedComponent) {
+    return {
+      component: selectedComponent,
+      targetSource: 'canvas_selection',
+      targetReason: `player inspected ${selectedComponent.component_id}; resident still chooses handling`,
+    };
+  }
+  const stage = world.gamePrototypeWorldStage || null;
+  const snapshot = stage && stage.latestSnapshot ? stage.latestSnapshot : null;
+  const activeId = snapshot && snapshot.active_component_id && snapshot.active_component_id !== 'none'
+    ? snapshot.active_component_id
+    : null;
+  const activeComponent = activeId && sim.components
+    ? sim.components.find(component => component.component_id === activeId)
+    : null;
+  if (activeComponent) {
+    return {
+      component: activeComponent,
+      targetSource: 'primary_surface',
+      targetReason: `primary surface focused ${activeComponent.component_id}; resident still chooses handling`,
+    };
+  }
+  return { component: null, targetSource: 'resident_constraint_choice', targetReason: 'no player-selected component available' };
+}
+
 function componentForManipulation(sim, action, residentName, entropy) {
   const carried = sim.components.find(component => component.carried_by === residentName);
-  if (action === 'drop' && carried) return carried;
+  if (action === 'drop' && carried) return { component: carried, targetSource: 'carried_by_resident', targetReason: `${residentName} is already carrying ${carried.component_id}` };
+  const preferred = preferredManipulationComponent(sim);
+  if (preferred.component && action !== 'drop') return preferred;
   const weak = sim.components
     .filter(component => Number(component.stability || 1) < 0.74 || Number(component.damage || 0) > 0.14 || Number(component.field_stress || 0) > 0.18)
     .sort((a, b) => (Number(a.stability || 1) - Number(b.stability || 1)) || (Number(b.damage || 0) - Number(a.damage || 0)))[0];
   const damp = sim.components
     .filter(component => Number(component.moisture || 0) > 0.34)
     .sort((a, b) => Number(b.moisture || 0) - Number(a.moisture || 0))[0];
-  if (action === 'tie' && weak) return weak;
-  if (action === 'dry' && damp) return damp;
-  if (action === 'wet_test' && damp) return damp;
-  if (action === 'carry') return sim.components.filter(component => Number(component.mass || 1) <= residentCarryCapacity(residentName)).sort((a, b) => Number(b.moisture || 0) - Number(a.moisture || 0))[0] || sim.components[entropy % sim.components.length];
-  if (action === 'stack' && weak) return weak;
-  return sim.components[(entropy + ensureMaterialManipulationLoop().actionLedger.length) % sim.components.length];
+  if (action === 'tie' && weak) return { component: weak, targetSource: 'resident_constraint_choice', targetReason: `${weak.component_id} looked weak or stressed` };
+  if (action === 'dry' && damp) return { component: damp, targetSource: 'resident_constraint_choice', targetReason: `${damp.component_id} looked damp` };
+  if (action === 'wet_test' && damp) return { component: damp, targetSource: 'resident_constraint_choice', targetReason: `${damp.component_id} was already damp enough to compare` };
+  if (action === 'carry') {
+    const carryable = sim.components.filter(component => Number(component.mass || 1) <= residentCarryCapacity(residentName)).sort((a, b) => Number(b.moisture || 0) - Number(a.moisture || 0))[0] || sim.components[entropy % sim.components.length];
+    return { component: carryable, targetSource: 'resident_constraint_choice', targetReason: `${carryable.component_id} fit resident carry constraints` };
+  }
+  if (action === 'stack' && weak) return { component: weak, targetSource: 'resident_constraint_choice', targetReason: `${weak.component_id} needed support or height adjustment` };
+  const component = sim.components[(entropy + ensureMaterialManipulationLoop().actionLedger.length) % sim.components.length];
+  return { component, targetSource: 'resident_constraint_choice', targetReason: 'resident sampled available component under current constraints' };
 }
 
 function chooseMaterialManipulationPlan(residentName, entropy, actionOverride = null) {
   const sim = ensurePrototype3DWorld();
   const loop = ensureMaterialManipulationLoop();
   const carried = sim.components.find(component => component.carried_by === residentName);
+  const preferred = preferredManipulationComponent(sim);
+  const preferredComponent = preferred.component || null;
   const weak = sim.components.some(component => Number(component.stability || 1) < 0.72 || Number(component.damage || 0) > 0.18 || Number(component.field_stress || 0) > 0.2);
   const damp = sim.components.some(component => Number(component.moisture || 0) > 0.36);
   const sequence = loop.actionLedger.length + entropy;
   let action = actionOverride;
   if (!action || action === 'auto' || action === 'resident_choice') {
     if (carried && sequence % 3 === 0) action = 'drop';
+    else if (preferredComponent && (Number(preferredComponent.stability || 1) < 0.74 || Number(preferredComponent.damage || 0) > 0.14 || Number(preferredComponent.field_stress || 0) > 0.18) && Number(world.resources.fiber || 0) > 0) action = 'tie';
+    else if (preferredComponent && Number(preferredComponent.moisture || 0) > 0.34) action = 'dry';
+    else if (preferredComponent && Number(preferredComponent.mass || 1) <= residentCarryCapacity(residentName) && sequence % 3 !== 0) action = 'carry';
+    else if (preferredComponent) action = 'test';
     else if (weak && Number(world.resources.fiber || 0) > 0) action = 'tie';
     else if (damp && sequence % 2 === 0) action = 'dry';
     else if (sequence % 7 === 0) action = 'wet_test';
@@ -2836,9 +2881,10 @@ function chooseMaterialManipulationPlan(residentName, entropy, actionOverride = 
     else if (sequence % 3 === 0) action = 'carry';
     else action = 'test';
   }
-  const component = componentForManipulation(sim, action, residentName, entropy);
+  const target = componentForManipulation(sim, action, residentName, entropy);
+  const component = target.component;
   const term = sim.language.terms.find(row => row.term_id === (component ? component.resident_term_id : 'TERM-TAKU-REN')) || sim.language.terms[0];
-  return { action, residentName, component, term, capacity: residentCarryCapacity(residentName) };
+  return { action, residentName, component, term, capacity: residentCarryCapacity(residentName), targetSource: target.targetSource, targetReason: target.targetReason };
 }
 
 function updatePracticeFromMaterialManipulation(row, term) {
@@ -3025,6 +3071,8 @@ function runResidentMaterialManipulationStep(actionOverride = 'resident_choice')
     tick: world.tick,
     resident: residentName,
     action: plan.action,
+    target_source: plan.targetSource || 'resident_constraint_choice',
+    target_reason: plan.targetReason || 'resident chose from visible constraints',
     component_id: component.component_id,
     material_id: component.material_id,
     affordance: component.affordance,
@@ -3053,6 +3101,7 @@ function runResidentMaterialManipulationStep(actionOverride = 'resident_choice')
       carried_by: component.carried_by || null,
     },
     physics_step_id: physicsStep.step_id,
+    selected_component_bound: ['canvas_selection', 'primary_surface'].includes(plan.targetSource || ''),
     avatar_direct_command: false,
     resident_chosen: true,
     hidden_law_normal_view: false,
@@ -10160,7 +10209,7 @@ function coupleResidentBodyToMaterialHandling(row, component, entropy) {
   row.body_contact_count = bodyStep.collision_count;
   row.body_slip_event = bodyStep.slip_event;
   row.embodied_distance = Number(Math.sqrt(dx * dx + dy * dy).toFixed(3));
-  row.canvas_cue = `${row.resident} ${row.action.replace('_', ' ')} ${row.component_id} with body step ${bodyStep.body_step_id}`;
+  row.canvas_cue = `${row.resident} ${row.action.replace('_', ' ')} ${row.component_id} via ${row.target_source || 'resident_constraint_choice'} with body step ${bodyStep.body_step_id}`;
   if (component) {
     row.after = {
       position3d: { ...(component.position3d || {}) },
@@ -12800,7 +12849,7 @@ function formatPrototypeMaterialStatePhysics() {
 
 function formatPrototypeMaterialManipulation() {
   const loop = world.gamePrototypeMaterialManipulation || ensureMaterialManipulationLoop();
-  const actions = loop.actionLedger.slice(-8).map(row => `${row.manipulation_id}: ${row.resident} ${row.action} ${row.component_id}/${row.resident_term}; success=${row.success}; body=${row.body_step_id || 'none'} dist=${row.embodied_distance ?? 'n/a'}; tool=${row.tool_id || 'none'} fit=${row.tool_fit || 0} failed=${row.tool_failed === true}; cost=${Object.entries(row.resource_cost || {}).map(([key, value]) => `${key}:${value}`).join('+') || 'none'}; physics=${row.physics_step_id}`);
+  const actions = loop.actionLedger.slice(-8).map(row => `${row.manipulation_id}: ${row.resident} ${row.action} ${row.component_id}/${row.resident_term}; target=${row.target_source || 'resident_constraint_choice'}; success=${row.success}; body=${row.body_step_id || 'none'} dist=${row.embodied_distance ?? 'n/a'}; tool=${row.tool_id || 'none'} fit=${row.tool_fit || 0} failed=${row.tool_failed === true}; cost=${Object.entries(row.resource_cost || {}).map(([key, value]) => `${key}:${value}`).join('+') || 'none'}; physics=${row.physics_step_id}`);
   const observations = loop.observationLedger.slice(-5).map(row => `${row.observation_id}: ${row.public_observation} -> ${row.resident_interpretation}`);
   const failures = loop.failureLedger.slice(-5).map(row => `${row.manipulation_id}: ${row.failure_reason}; recoverable=${row.recoverable}`);
   const links = loop.practiceLinks.slice(-6).map(row => `${row.manipulation_id}->${row.practice_id} (${row.relation})`);
@@ -14196,6 +14245,7 @@ function buildPrototypeAcceptanceReceipt() {
 		  const physics = materialWorld && materialWorld.physics ? materialWorld.physics : null;
 	  const manipulation = world.gamePrototypeMaterialManipulation || null;
 	  const embodiedManipulationRows = manipulation && manipulation.actionLedger ? manipulation.actionLedger.filter(row => row.body_step_id).length : 0;
+	  const selectedManipulationRows = manipulation && manipulation.actionLedger ? manipulation.actionLedger.filter(row => row.selected_component_bound === true && ['canvas_selection', 'primary_surface'].includes(row.target_source) && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
 	  const residentBodies = world.gamePrototypeResidentBodies || null;
 	  const physicsProposalCount = board && board.projectProposals ? board.projectProposals.filter(row => row.related_physics_step).length : 0;
 	  const constructionCount = materialWorld && materialWorld.constructionLedger ? materialWorld.constructionLedger.length : 0;
@@ -14399,6 +14449,7 @@ function buildPrototypeAcceptanceReceipt() {
 	    { id: 'water_fluid_physics', pass: Boolean(waterPhysics && waterFlowRows > 0 && waterRouteRows > 0 && waterQualityRows > 0 && waterPhysics.flowLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${waterFlowRows} flow row(s), ${waterLeakRows} leak row(s), ${waterRouteRows} route row(s), ${waterQualityRows} quality row(s), ${waterSafetyRows} safety row(s)` },
 	    { id: 'ecology_food_physics', pass: Boolean(ecologyPhysics && ecologyGrowthRows > 0 && ecologyHarvestRows > 0 && ecologySpoilageRows > 0 && ecologyHungerRows > 0 && ecologyPhysics.growthLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${ecologyGrowthRows} growth row(s), ${ecologyHarvestRows} harvest row(s), ${ecologySpoilageRows} spoilage row(s), ${ecologyHungerRows} hunger row(s), ${ecologySafetyRows} safety row(s)` },
 	    { id: 'resident_material_manipulation', pass: Boolean(manipulation && manipulationRows > 0 && manipulationPracticeLinks > 0 && embodiedManipulationRows > 0 && manipulation.actionLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false)), evidence: `${manipulationRows} handling row(s), ${manipulationPracticeLinks} practice link(s), ${embodiedManipulationRows} body-linked row(s)` },
+	    { id: 'handling_selected_component_binding', pass: Boolean(manipulation && selectedManipulationRows > 0), evidence: `${selectedManipulationRows} selected/focused component handling row(s)` },
 	    { id: 'resident_body_physics', pass: Boolean(residentBodies && residentBodyRows > 0 && residentBodyFatigueRows > 0 && residentBodies.bodyLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false && row.fatigue_delta >= 0)), evidence: `${residentBodyRows} body step(s), ${residentBodyContactRows} contact row(s), ${residentBodyRecoveryRows} recovery row(s)` },
 	    { id: 'resident_routines_use_physical_context', pass: Boolean(autonomous && routineContextRows > 0 && routinePhysicalRows > 0 && routineActionLinks > 0 && autonomous.routineContextLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false)), evidence: `${routineContextRows} routine context row(s), ${routinePhysicalRows} physical context row(s), ${routineActionLinks} action link(s)` },
 	    { id: 'routine_context_visible_on_canvas', pass: Boolean(worldStage && routineCanvasCueRows > 0 && worldStage.latestSnapshot && worldStage.latestSnapshot.routine_context_id !== 'none' && worldStage.noHiddenLawInNormalView === true && worldStage.noDirectCommand === true), evidence: `${routineCanvasCueRows} routine canvas cue row(s), latest=${worldStage && worldStage.latestSnapshot ? worldStage.latestSnapshot.routine_context_id : 'none'}` },
@@ -15701,7 +15752,7 @@ function draw() {
         ctx.fillRect((bodyX + point.x) / 2 - 26, (bodyY + point.y) / 2 - 15, 82, 20);
         ctx.fillStyle = '#f9ebc9';
         ctx.font = '10px Optima, sans-serif';
-        ctx.fillText(`${row.body_step_id || 'body'} ${row.action}`.slice(0, 16), (bodyX + point.x) / 2 - 20, (bodyY + point.y) / 2 - 1);
+        ctx.fillText(`${row.body_step_id || 'body'} ${row.action} ${row.target_source || 'resident'}`.slice(0, 24), (bodyX + point.x) / 2 - 20, (bodyY + point.y) / 2 - 1);
         if (component.carried_by === row.resident) {
           ctx.fillStyle = '#d5a13a';
           ctx.fillRect(bodyX + 22, bodyY - 18, 16, 12);

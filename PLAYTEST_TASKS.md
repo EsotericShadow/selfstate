@@ -605,3 +605,7 @@
 ## Playtest task: support a pressure-language proposal into a worksite
 
 Find a proposal carrying a local pressure-language term, support it without assigning a job, then watch residents advance the project. Confirm the resident word and imperfect gloss remain visible in project/worksite/visual evidence, while audit-only physics remains hidden from normal view.
+
+## Playtest task: physics creates a resident-language proposal
+
+Run or wait through a stochastic physics step until a material strain creates a village-board concern. Confirm the proposal carries a local resident pressure word and imperfect gloss, links back to the physics step and affected component, and does not expose hidden support/moisture/failure law in normal view.

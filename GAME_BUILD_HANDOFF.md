@@ -816,3 +816,9 @@ Implementation boundary:
 Supported pressure-language proposals now keep their local resident word, imperfect player gloss, pressure id, root id, term id, component id, and pressure kind when residents turn the proposal into project work. The lineage is carried through support events, project rows, material-world construction rows, visual construction cues, resident worksite watch rows, and the first-playable acceptance gate.
 
 This keeps the game rule intact: the avatar can support conditions, but the resident meaning travels with the resident action. Normal view still shows local wording and glosses without exposing hidden physical law or installing a correct concept.
+
+## Prototype increment: stochastic physics proposals carry resident language
+
+Direct stochastic 3D physics steps can now create village-board repair proposals with resident pressure-language attached at creation time. A physics step that creates maintenance pressure records a resident pressure row, grounds a local pressure term, attaches the resident word and imperfect player gloss to the physics proposal, and keeps hidden physical law audit-only.
+
+This moves the prototype closer to the target loop where physics is not just a debug substrate. Physics produces visible strain, residents notice it through their language, and village management receives the concern as a resident proposal rather than a raw engine event.

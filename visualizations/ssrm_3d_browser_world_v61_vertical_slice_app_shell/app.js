@@ -2565,7 +2565,7 @@ function runMaterialStatePhysicsLoop() {
   });
 }
 
-function applyPhysicsConsequencesToVillage(step, source = 'physics') {
+function applyPhysicsConsequencesToVillage(step, source = 'physics', options = {}) {
   if (!step || !step.maintenance_pressure) return null;
   const sim = ensurePrototype3DWorld();
   const board = ensureVillageBoard();
@@ -2573,7 +2573,10 @@ function applyPhysicsConsequencesToVillage(step, source = 'physics') {
   const term = structure ? sim.language.terms.find(row => row.term_id === structure.resident_term_id) : sim.language.terms[0];
   const resident = term ? term.origin_resident : world.selected;
   const existing = board.concerns.find(row => row.source === step.step_id);
-  if (existing) return existing;
+  if (existing) {
+    const existingProposal = board.projectProposals.find(row => row.related_physics_step === step.step_id) || null;
+    return { concern: existing, proposal: existingProposal, pressureLanguageBridge: null };
+  }
   const urgency = step.failures > 0 || step.min_stability < 0.64 ? 'high' : (step.collisions > 0 || step.moisture_risk > 0.34 ? 'medium' : 'low');
   const problem = `${term ? term.resident_word : 'local support'} physical strain after ${step.step_id}`;
   const concern = {
@@ -2617,6 +2620,9 @@ function applyPhysicsConsequencesToVillage(step, source = 'physics') {
   };
   board.concerns.push(concern);
   board.projectProposals.push(proposal);
+  const pressureLanguageBridge = options.deferResidentPressureLanguage === true
+    ? null
+    : recordPhysicsStepProposalLanguage(step, resident, source, proposal, concern);
   mutateResident(resident, {
     trust: 0.002,
     progress: 0.004,
@@ -2639,8 +2645,8 @@ function applyPhysicsConsequencesToVillage(step, source = 'physics') {
 	    hiddenLawInvolved: world.audit ? 'support, collision, fatigue, moisture, heat, stochastic field pressure' : 'audit only',
     conservationCheck: true
   });
-  recordPrototypeMilestone('physics-to-village-board', `${step.step_id} created ${proposal.proposal_id} for ${resident}`);
-  return { concern, proposal };
+  recordPrototypeMilestone('physics-to-village-board', `${step.step_id} created ${proposal.proposal_id} for ${resident}${pressureLanguageBridge ? ` with ${pressureLanguageBridge.languageGrounding.resident_word}` : ''}`);
+  return { concern, proposal, pressureLanguageBridge };
 }
 
 function runPrototypePhysicsStep() {
@@ -2663,7 +2669,7 @@ function runPrototypePhysicsStep() {
     conservationCheck: true
 	  });
 	  recordPrototypeMilestone('stochastic-physics-step', `${step.support_checks} support checks, ${step.collisions} collision(s), ${step.failures} failure(s)`);
-	  return log('runPrototypePhysicsStep', { stepId: step.step_id, supportChecks: step.support_checks, collisions: step.collisions, failures: step.failures, maintenancePressure: step.maintenance_pressure, proposalId: consequence && consequence.proposal ? consequence.proposal.proposal_id : null, stochasticPhysics: true });
+	  return log('runPrototypePhysicsStep', { stepId: step.step_id, supportChecks: step.support_checks, collisions: step.collisions, failures: step.failures, maintenancePressure: step.maintenance_pressure, proposalId: consequence && consequence.proposal ? consequence.proposal.proposal_id : null, pressureLanguageId: consequence && consequence.proposal ? consequence.proposal.pressure_language_id || 'none' : 'none', pressureLanguageResidentWord: consequence && consequence.proposal ? consequence.proposal.pressure_language_resident_word || 'none' : 'none', stochasticPhysics: true });
 	}
 
 function runPrototypeMaterialWorldStep() {
@@ -12943,6 +12949,125 @@ function groundPhysicsPressureLanguage(row, baseTerm, component, structure) {
   return languageRow;
 }
 
+function recordPhysicsStepProposalLanguage(step, residentName, source, proposal, concern) {
+  if (!step || !proposal || !concern) return null;
+  const materialWorld = ensurePrototype3DWorld();
+  const ledger = ensureResidentPhysicsPressureLedger();
+  const existing = ledger.find(row => row.physics_step_id === step.step_id && row.board_proposal_id === proposal.proposal_id);
+  if (existing && existing.language_pressure_id) {
+    const existingLanguage = materialWorld.language && materialWorld.language.soundPressureLedger
+      ? materialWorld.language.soundPressureLedger.find(row => row.language_pressure_id === existing.language_pressure_id) || null
+      : null;
+    if (existingLanguage) {
+      proposal.pressure_language_id = existingLanguage.language_pressure_id;
+      proposal.pressure_language_pressure_id = existing.pressure_id;
+      proposal.pressure_language_root_id = existingLanguage.root_id;
+      proposal.pressure_language_term_id = existingLanguage.pressure_term_id;
+      proposal.pressure_language_resident_word = existingLanguage.resident_word;
+      proposal.pressure_language_player_gloss = existingLanguage.player_gloss;
+      proposal.pressure_language_component_id = existing.component_id;
+      proposal.pressure_language_kind = existing.pressure_kind;
+      proposal.pressure_language_translation_confidence = existingLanguage.translation_confidence;
+      proposal.physics_driven_proposal = true;
+      concern.pressure_language_id = existingLanguage.language_pressure_id;
+      concern.pressure_language_resident_word = existingLanguage.resident_word;
+      concern.pressure_language_player_gloss = existingLanguage.player_gloss;
+      return { row: existing, languageGrounding: existingLanguage };
+    }
+  }
+  const components = materialWorld.components || [];
+  const weakComponents = components
+    .slice()
+    .filter(component => Number(component.stability || 1) < 0.74 || Number(component.damage || 0) > 0.14)
+    .sort((a, b) => (Number(a.stability || 1) - Number(b.stability || 1)) || (Number(b.damage || 0) - Number(a.damage || 0)));
+  const relatedComponent = proposal.related_components && proposal.related_components.length
+    ? components.find(component => component.component_id === proposal.related_components[0])
+    : null;
+  const component = relatedComponent || weakComponents[0] || components[0] || null;
+  const structure = materialWorld.structures && materialWorld.structures.length ? materialWorld.structures[0] : null;
+  const term = component && component.resident_term_id && materialWorld.language && materialWorld.language.terms
+    ? materialWorld.language.terms.find(row => row.term_id === component.resident_term_id)
+    : structure && structure.resident_term_id && materialWorld.language && materialWorld.language.terms
+      ? materialWorld.language.terms.find(row => row.term_id === structure.resident_term_id)
+      : null;
+  const pressure = {
+    active: Boolean(step.maintenance_pressure),
+    failures: Number(step.failures || 0),
+    collisions: Number(step.collisions || 0),
+    weakComponents: weakComponents.length,
+    structureStability: Number(step.structure_stability || (structure ? structure.stability : 1) || 1),
+    moistureRisk: Number(step.moisture_risk || (structure ? structure.moisture_risk : 0) || 0),
+    fieldStress: Number(step.field_stress || 0),
+    fieldHeat: Number(step.field_heat || 0),
+    fieldMoisture: Number(step.field_moisture || 0),
+  };
+  const pressureKind = classifyResidentPhysicsPressure(pressure);
+  const row = {
+    pressure_id: `RPP-${String(ledger.length + 1).padStart(3, '0')}`,
+    day: world.autonomousResidents ? world.autonomousResidents.day + 1 : 0,
+    season: world.autonomousResidents ? world.autonomousResidents.season : 'prototype',
+    resident: residentName,
+    entropy: step.entropy || 0,
+    source: `${source}:village_board`,
+    physics_step_id: step.step_id,
+    field_id: step.field_id || 'none',
+    energy_id: step.energy_id || 'none',
+    active: Boolean(step.maintenance_pressure),
+    pressure_kind: pressureKind,
+    component_id: component ? component.component_id : 'none',
+    structure_id: structure ? structure.structure_id : 'none',
+    resident_term: term ? term.resident_word : 'local material pressure',
+    field_stress: pressure.fieldStress,
+    field_heat: pressure.fieldHeat,
+    field_moisture: pressure.fieldMoisture,
+    failures: pressure.failures,
+    collisions: pressure.collisions,
+    weak_components: pressure.weakComponents,
+    suggested_action: 'physics_repair',
+    board_proposal_id: proposal.proposal_id,
+    public_observation: concern.problem,
+    resident_interpretation: `${term ? term.resident_word : 'local work'} asks for ${proposal.proposal_id} before more work`,
+    no_direct_player_command: true,
+    no_resource_spawning: true,
+    hidden_law_normal_view: false,
+    conservation_check: true,
+  };
+  const languageGrounding = groundPhysicsPressureLanguage(row, term, component, structure);
+  row.language_pressure_id = languageGrounding.language_pressure_id;
+  row.language_root_id = languageGrounding.root_id;
+  row.language_pressure_term_id = languageGrounding.pressure_term_id;
+  row.resident_pressure_word = languageGrounding.resident_word;
+  row.player_pressure_gloss = languageGrounding.player_gloss;
+  row.translation_confidence = languageGrounding.translation_confidence;
+  proposal.pressure_language_id = languageGrounding.language_pressure_id;
+  proposal.pressure_language_pressure_id = row.pressure_id;
+  proposal.pressure_language_root_id = languageGrounding.root_id;
+  proposal.pressure_language_term_id = languageGrounding.pressure_term_id;
+  proposal.pressure_language_resident_word = languageGrounding.resident_word;
+  proposal.pressure_language_player_gloss = languageGrounding.player_gloss;
+  proposal.pressure_language_component_id = row.component_id;
+  proposal.pressure_language_kind = row.pressure_kind;
+  proposal.pressure_language_translation_confidence = languageGrounding.translation_confidence;
+  proposal.related_resident_physics_pressure_id = row.pressure_id;
+  proposal.physics_driven_proposal = true;
+  proposal.stochastic_physics_source = true;
+  if (!String(proposal.problem_addressed || '').startsWith(`${languageGrounding.resident_word} pressure:`)) {
+    proposal.problem_addressed = `${languageGrounding.resident_word} pressure: ${proposal.problem_addressed}`;
+  }
+  proposal.related_memories = Array.from(new Set([...(proposal.related_memories || []), `physics word ${languageGrounding.resident_word} came from ${row.pressure_id}`]));
+  concern.pressure_language_id = languageGrounding.language_pressure_id;
+  concern.pressure_language_pressure_id = row.pressure_id;
+  concern.pressure_language_resident_word = languageGrounding.resident_word;
+  concern.pressure_language_player_gloss = languageGrounding.player_gloss;
+  concern.pressure_language_component_id = row.component_id;
+  concern.pressure_language_kind = row.pressure_kind;
+  ledger.push(row);
+  if (ledger.length > 120) ledger.shift();
+  materialWorld.physics.residentPressureLedger.push(row);
+  materialWorld.physics.residentPressureLedger = materialWorld.physics.residentPressureLedger.slice(-120);
+  return { row, languageGrounding };
+}
+
 function recordResidentPhysicsPressure(residentName, entropy, source = 'autonomous resident tick') {
   const sim = ensureAutonomousResidents();
   const materialWorld = ensurePrototype3DWorld();
@@ -12961,7 +13086,7 @@ function recordResidentPhysicsPressure(residentName, entropy, source = 'autonomo
     : structure && structure.resident_term_id && materialWorld.language && materialWorld.language.terms
       ? materialWorld.language.terms.find(row => row.term_id === structure.resident_term_id)
       : null;
-  const consequence = pressure && pressure.active ? applyPhysicsConsequencesToVillage(physicsStep, source) : null;
+  const consequence = pressure && pressure.active ? applyPhysicsConsequencesToVillage(physicsStep, source, { deferResidentPressureLanguage: true }) : null;
   const ledger = ensureResidentPhysicsPressureLedger();
   const row = {
     pressure_id: `RPP-${String(ledger.length + 1).padStart(3, '0')}`,
@@ -16088,6 +16213,8 @@ function buildPrototypeAcceptanceReceipt() {
   const pressureLanguageProjectRows = projects && projects.projectLedger ? projects.projectLedger.filter(row => row.pressure_language_id && row.pressure_language_id !== 'none' && row.pressure_language_resident_word && row.pressure_language_player_gloss && row.avatar_direct_command === false).length : 0;
   const pressureLanguageWorksiteRows = worksite && worksite.watchLedger ? worksite.watchLedger.filter(row => row.pressure_language_id && row.pressure_language_id !== 'none' && row.pressure_language_resident_word && row.pressure_language_player_gloss && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.resource_spawning === false).length : 0;
   const pressureLanguageVisualRows = projects && projects.visualLedger ? projects.visualLedger.filter(row => row.pressure_language_id && row.pressure_language_id !== 'none' && row.pressure_language_resident_word && row.pressure_language_player_gloss && row.hidden_law_normal_view === false && row.no_fixed_asset === true && row.no_resource_spawning === true).length : 0;
+  const stochasticPhysicsProposalLanguageRows = board && board.projectProposals ? board.projectProposals.filter(row => row.related_physics_step && row.related_physics_step !== 'none' && row.physics_driven_proposal === true && row.pressure_language_id && row.pressure_language_id !== 'none' && row.pressure_language_resident_word && row.pressure_language_player_gloss && row.avatar_can_force === false).length : 0;
+  const stochasticPhysicsPressureLanguageRows = physics && physics.residentPressureLedger ? physics.residentPressureLedger.filter(row => row.board_proposal_id && row.board_proposal_id !== 'none' && row.language_pressure_id && row.language_pressure_id !== 'none' && row.physics_step_id && row.physics_step_id !== 'none' && row.no_direct_player_command === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false).length : 0;
   const worksiteProximityRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.length : 0;
   const worksiteEffectRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.filter(row => row.effect_applied === true && row.target_component_id !== 'none' && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
   const worksiteBlockedRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.filter(row => row.blocked_by_distance === true && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
@@ -16128,6 +16255,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'pressure_language_reaches_resident_encounter', pass: Boolean(residentEncounter && pressureLanguageEncounterRows > 0), evidence: residentEncounter ? `pressureLanguageEncounterRows=${pressureLanguageEncounterRows}` : 'not run' },
     { id: 'pressure_language_reaches_proposal_deck', pass: Boolean(board && proposalDeck && pressureLanguageProposalRows > 0 && pressureLanguageDeckCardRows > 0 && pressureLanguageDeckActionRows > 0), evidence: proposalDeck ? `proposals=${pressureLanguageProposalRows}, cards=${pressureLanguageDeckCardRows}, actions=${pressureLanguageDeckActionRows}` : 'not run' },
     { id: 'pressure_language_reaches_project_worksite', pass: Boolean(projects && worksite && pressureLanguageProjectRows > 0 && pressureLanguageWorksiteRows > 0 && pressureLanguageVisualRows > 0), evidence: projects && worksite ? `project=${pressureLanguageProjectRows}, worksite=${pressureLanguageWorksiteRows}, visual=${pressureLanguageVisualRows}` : 'not run' },
+    { id: 'stochastic_physics_proposals_carry_resident_language', pass: Boolean(board && physics && stochasticPhysicsProposalLanguageRows > 0 && stochasticPhysicsPressureLanguageRows > 0), evidence: board && physics ? `physicsProposals=${stochasticPhysicsProposalLanguageRows}, pressureRows=${stochasticPhysicsPressureLanguageRows}` : 'not run' },
     { id: 'reality_grounded_causality', pass: Boolean(ledger && ledger.rows.length > 0 && ledger.rows.every(row => row.conservation_check && row.normal_view_hidden_law_exposed === false)), evidence: ledger ? `${ledger.rows.length} causal row(s)` : 'no ledger' },
     { id: 'emergent_beliefs_and_practices', pass: Boolean(practiceGraph && practiceGraph.nodes.length > 0 && practiceGraph.noPredefinedTechTree === true), evidence: practiceGraph ? `${practiceGraph.nodes.length} node(s), no tech tree=${practiceGraph.noPredefinedTechTree}` : 'no practice graph' },
     { id: 'village_management_without_command', pass: Boolean(board && board.projectProposals.length > 0 && board.avatarCannotForce === true), evidence: board ? `${board.projectProposals.length} proposal(s), force=${board.avatarCannotForce === false}` : 'no board' },

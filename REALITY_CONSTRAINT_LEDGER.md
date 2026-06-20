@@ -270,3 +270,9 @@ The walkthrough records `first_playable_walkthrough` as a causal ledger event. I
 ## Normal play action rail ledger event
 
 The normal action rail records `normal_play_action_rail` ledger rows. The rail does not spawn resources or command residents; it maps simple player verbs to existing causal systems and keeps hidden laws out of normal view.
+
+## Physics-to-language causality requirement
+
+When stochastic physics creates a village-board proposal, the proposal must carry a causal chain: physics step id, resident pressure row, affected component, local pressure term, player gloss, no direct avatar command, no resource spawning, and no hidden-law exposure in normal view.
+
+A physics proposal is invalid if it appears as a raw engine concept without resident observation or if the player-facing label directly exposes the hidden simulator law.

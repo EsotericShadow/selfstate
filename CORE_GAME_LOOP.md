@@ -881,3 +881,9 @@ This makes diegetic village management use resident language. A card can show wh
 The playable chain now includes: resident physics pressure -> grounded resident word -> proposal card -> avatar support -> resident project work -> material-world construction row -> visual worksite cue -> resident worksite watch row.
 
 The player influences the conditions around a proposal, but does not command labor or grant knowledge. The resulting project/worksite evidence remains tied to the resident term and imperfect gloss so physical world changes stay culturally and causally traceable.
+
+## Stochastic physics proposal-language loop
+
+The physics loop now includes: stochastic solver step -> support/collision/failure pressure -> resident pressure row -> grounded pressure term -> village concern/proposal -> proposal deck/project/worksite lineage.
+
+The player sees local wording and an imperfect gloss. The engine keeps the hidden support, moisture, heat, fatigue, and stochastic thresholds in audit surfaces only.

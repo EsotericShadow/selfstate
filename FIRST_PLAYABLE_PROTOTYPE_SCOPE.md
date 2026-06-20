@@ -664,3 +664,17 @@ Required evidence:
 - no direct command, hidden-law exposure, LLM, open-ended language, or tech-tree unlock occurs
 
 This milestone makes resident continuity readable during ordinary play. It does not add an open-ended language system.
+
+## Added scope gate: Blocked object response creates proposal
+
+`blocked_object_response_creates_proposal` is now part of first playable prototype scope.
+
+Required evidence:
+
+- a blocked ownership objection or safety warning creates a follow-up `VBP-...` proposal
+- the object-interaction row records `follow_up_proposal_id`
+- the Village Board proposal records `related_object_response_id`
+- the proposal describes resident access, safety, or stabilization work rather than direct object manipulation
+- the avatar can ask, support, or wait on the proposal but cannot force acceptance
+- the proposal preserves no direct command, hidden-law separation, and no tech-tree unlock
+- blocked object handling becomes a diegetic management problem instead of an invisible failure

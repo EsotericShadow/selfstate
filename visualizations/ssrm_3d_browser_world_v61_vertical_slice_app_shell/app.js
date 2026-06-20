@@ -8061,6 +8061,64 @@ function residentObjectHandlingEffect(responseRow) {
   return { effect: 'normal_observation_allows_handling', actionSource: 'resident_choice', blocked: false, rerouted: false, residentAction: 'inspect_then_handle' };
 }
 
+function createObjectResponseProposal(responseRow, handlingEffect) {
+  if (!responseRow || !handlingEffect || handlingEffect.blocked !== true) return null;
+  const board = ensureVillageBoard();
+  const existing = board.projectProposals.find(proposal => proposal.related_object_response_id === responseRow.response_id);
+  if (existing) return existing;
+  const concern = {
+    concern_id: `VBC-OIR-${String(board.concerns.filter(row => /^VBC-OIR/.test(row.concern_id || '')).length + 1).padStart(2, '0')}`,
+    resident: responseRow.resident,
+    problem: responseRow.response_kind === 'ownership_objection'
+      ? `resolve access before touching ${responseRow.resident_term}`
+      : `stabilize ${responseRow.resident_term} before handling`,
+    source: responseRow.response_id,
+    urgency: responseRow.response_kind === 'safety_warning' ? 'high' : 'medium',
+    who_felt_this: responseRow.resident,
+    avatar_direct_control: false,
+    related_object_response_id: responseRow.response_id,
+    related_component_id: responseRow.component_id,
+  };
+  const proposal = projectProposalFromConcern(concern);
+  proposal.origin_event = responseRow.response_id;
+  proposal.related_object_response_id = responseRow.response_id;
+  proposal.related_component_id = responseRow.component_id;
+  proposal.object_response_kind = responseRow.response_kind;
+  proposal.object_response_effect = handlingEffect.effect;
+  proposal.problem_addressed = concern.problem;
+  proposal.materials_needed = responseRow.response_kind === 'safety_warning' ? ['fiber', 'wood', 'care'] : ['care'];
+  proposal.known_objections = [`${responseRow.response_kind} from ${responseRow.resident}`];
+  proposal.possible_failure_modes = ['resident refuses access', 'component remains unsafe', 'materials unavailable'];
+  proposal.status = 'resident proposed from object objection';
+  proposal.avatar_can_force = false;
+  board.concerns.push(concern);
+  board.projectProposals.push(proposal);
+  responseRow.follow_up_proposal_id = proposal.proposal_id;
+  mutateResident(responseRow.resident, {
+    trust: 0.002,
+    progress: 0.001,
+    memory: `${responseRow.response_id} became proposal ${proposal.proposal_id}`,
+    historyEvent: 'object objection proposal',
+    historyDetail: `${responseRow.component_id} -> ${proposal.proposal_id}`
+  });
+  recordRealityConstraint('object_response_proposal', {
+    resident: responseRow.resident,
+    sourceBeliefId: responseRow.response_id,
+    materials: proposal.materials_needed,
+    publicObservation: concern.problem,
+    residentInterpretation: proposal.status,
+    materialTransformation: 'proposal only; blocked object handling creates work for later instead of manipulating the object',
+    timeCost: 1,
+    workCost: 0,
+    toolWear: 0,
+    maintenanceObligation: proposal.proposal_id,
+    unintendedConsequence: 'resident objection creates a public project burden',
+    hiddenLawInvolved: 'none in normal view',
+    conservationCheck: true
+  });
+  return proposal;
+}
+
 function runPlayerObjectInteractionLoop() {
   const interaction = ensurePlayerObjectInteraction();
   interaction.runCount += 1;
@@ -8074,6 +8132,7 @@ function runPlayerObjectInteractionLoop() {
   const manipulationReceipt = handlingEffect.blocked ? null : runResidentMaterialManipulationStep(handlingEffect.actionSource);
   const payload = manipulationReceipt && manipulationReceipt.payload ? manipulationReceipt.payload : {};
   const after = playerObjectInteractionSnapshot('after-object-interaction');
+  const followUpProposal = createObjectResponseProposal(residentResponse, handlingEffect);
   const row = {
     interaction_id: `POI-${String(interaction.interactionLedger.length + 1).padStart(2, '0')}`,
     tick: world.tick,
@@ -8088,6 +8147,7 @@ function runPlayerObjectInteractionLoop() {
     resident_response_effect: handlingEffect.effect,
     handling_blocked_by_response: handlingEffect.blocked,
     handling_rerouted_by_response: handlingEffect.rerouted,
+    follow_up_proposal_id: followUpProposal ? followUpProposal.proposal_id : 'none',
     manipulation_id: handlingEffect.blocked ? 'none' : payload.manipulationId || after.latest_manipulation || 'none',
     resident: payload.resident || world.selected,
     resident_action: handlingEffect.blocked ? handlingEffect.residentAction : payload.action || after.latest_action,
@@ -8128,14 +8188,14 @@ function runPlayerObjectInteractionLoop() {
     component: row.component_id,
     manipulation: row.manipulation_id,
   });
-  return log('runPlayerObjectInteractionLoop', { ready: interaction.acceptanceReady, rows: interaction.interactionLedger.length, componentId: row.component_id, manipulationId: row.manipulation_id, residentAction: row.resident_action, responseId: row.resident_response_id, responseKind: row.resident_response_kind, success: row.success });
+  return log('runPlayerObjectInteractionLoop', { ready: interaction.acceptanceReady, rows: interaction.interactionLedger.length, componentId: row.component_id, manipulationId: row.manipulation_id, residentAction: row.resident_action, responseId: row.resident_response_id, responseKind: row.resident_response_kind, followUpProposalId: row.follow_up_proposal_id, success: row.success });
 }
 
 function formatPlayerObjectInteraction() {
   const interaction = world.gamePrototypeObjectInteraction || ensurePlayerObjectInteraction();
   const latest = interaction.snapshotLedger.length ? interaction.snapshotLedger[interaction.snapshotLedger.length - 1].after : playerObjectInteractionSnapshot('current');
-  const rows = interaction.interactionLedger.slice(-6).map(row => `${row.interaction_id}: ${row.resident} ${row.resident_action} ${row.resident_term}; component=${row.component_id}; response=${row.resident_response_id || 'none'}/${row.resident_response_effect || 'none'}; blocked=${row.handling_blocked_by_response === true}; rerouted=${row.handling_rerouted_by_response === true}; manipulation=${row.manipulation_id}; success=${row.success}; practice=${row.practice_id}`);
-  const responseRows = (interaction.responseLedger || []).slice(-5).map(row => `${row.response_id}: ${row.resident} ${row.response_kind}; effect=${row.handling_effect || 'pending'}; component=${row.component_id}; selection=${row.selection_id}; allowed=${row.manipulation_allowed}; expression=${row.expression_marker}; "${row.response_text}"`);
+  const rows = interaction.interactionLedger.slice(-6).map(row => `${row.interaction_id}: ${row.resident} ${row.resident_action} ${row.resident_term}; component=${row.component_id}; response=${row.resident_response_id || 'none'}/${row.resident_response_effect || 'none'}; blocked=${row.handling_blocked_by_response === true}; rerouted=${row.handling_rerouted_by_response === true}; proposal=${row.follow_up_proposal_id || 'none'}; manipulation=${row.manipulation_id}; success=${row.success}; practice=${row.practice_id}`);
+  const responseRows = (interaction.responseLedger || []).slice(-5).map(row => `${row.response_id}: ${row.resident} ${row.response_kind}; effect=${row.handling_effect || 'pending'}; proposal=${row.follow_up_proposal_id || 'none'}; component=${row.component_id}; selection=${row.selection_id}; allowed=${row.manipulation_allowed}; expression=${row.expression_marker}; "${row.response_text}"`);
   return [
     `Acceptance ready: ${interaction.acceptanceReady ? 'yes' : 'no'}`,
     `Rows: ${interaction.interactionLedger.length} / snapshots=${interaction.snapshotLedger.length} / residentResponses=${(interaction.responseLedger || []).length}`,
@@ -13839,6 +13899,8 @@ function buildPrototypeAcceptanceReceipt() {
   const objectResponseRows = objectInteraction && objectInteraction.responseLedger ? objectInteraction.responseLedger.length : 0;
   const objectResponseBoundedRows = objectInteraction && objectInteraction.responseLedger ? objectInteraction.responseLedger.filter(row => row.player_facing === true && row.no_llm === true && row.phrasebook_only === true && row.open_ended_language === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false && row.expression_id && row.expression_id !== 'none').length : 0;
   const objectResponseEffectRows = objectInteraction && objectInteraction.interactionLedger ? objectInteraction.interactionLedger.filter(row => row.resident_response_id && row.resident_response_id !== 'none' && row.resident_response_effect && (row.handling_blocked_by_response === true || row.handling_rerouted_by_response === true || row.resident_response_effect === 'normal_observation_allows_handling') && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
+  const objectResponseProposalRows = objectInteraction && objectInteraction.interactionLedger ? objectInteraction.interactionLedger.filter(row => row.handling_blocked_by_response === true && row.follow_up_proposal_id && row.follow_up_proposal_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
+  const objectResponseBoardProposalRows = board && board.projectProposals ? board.projectProposals.filter(row => row.related_object_response_id && row.related_object_response_id !== 'none' && row.avatar_can_force === false).length : 0;
   const proposalDeckCards = proposalDeck ? proposalDeck.cardLedger.length : 0;
   const proposalDeckActions = proposalDeck ? proposalDeck.actionLedger.length : 0;
   const livedPracticeRows = livedPractice ? livedPractice.actionLedger.length : 0;
@@ -13953,6 +14015,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'player_object_interaction', pass: Boolean(objectInteraction && objectInteraction.acceptanceReady && objectInteractionRows > 0 && objectInteractionSnapshots > 0 && objectInteraction.interactionLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.resident_chosen === true && row.hidden_law_normal_view === false && row.tech_tree_unlock === false) && objectInteraction.noDirectCommand === true && objectInteraction.noHiddenLawNormalView === true), evidence: objectInteraction ? `rows=${objectInteractionRows}, snapshots=${objectInteractionSnapshots}` : 'not run' },
     { id: 'resident_object_response', pass: Boolean(objectInteraction && objectResponseRows > 0 && objectResponseBoundedRows > 0), evidence: objectInteraction ? `responses=${objectResponseRows}, bounded=${objectResponseBoundedRows}` : 'not run' },
     { id: 'resident_object_response_affects_handling', pass: Boolean(objectInteraction && objectResponseEffectRows > 0), evidence: objectInteraction ? `effectRows=${objectResponseEffectRows}` : 'not run' },
+    { id: 'blocked_object_response_creates_proposal', pass: Boolean(objectInteraction && board && objectResponseProposalRows > 0 && objectResponseBoardProposalRows > 0), evidence: objectInteraction && board ? `interactionLinks=${objectResponseProposalRows}, boardLinks=${objectResponseBoardProposalRows}` : 'not run' },
     { id: 'resident_proposal_deck', pass: Boolean(proposalDeck && proposalDeck.acceptanceReady && proposalDeckCards > 0 && proposalDeckActions >= 3 && proposalDeck.avatarCannotForce === true && proposalDeck.noDirectCommand === true && proposalDeck.noHiddenLawNormalView === true && proposalDeck.playerGlossesOnly === true), evidence: proposalDeck ? `cardSnapshots=${proposalDeckCards}, actions=${proposalDeckActions}` : 'not run' },
     { id: 'lived_practice_loop', pass: Boolean(livedPractice && livedPractice.acceptanceReady && livedPracticeRows >= 4 && livedPracticeSnapshots > 0 && livedPracticePhysicsRows >= 4 && livedPracticeCanvasCueRows > 0 && livedPractice.physicalCausalityReady === true && livedPractice.noDirectCommand === true && livedPractice.noHiddenLawNormalView === true && livedPractice.noPredeclaredTechTree === true && livedPractice.noCorrectConceptInstalled === true), evidence: livedPractice ? `actions=${livedPracticeRows}, snapshots=${livedPracticeSnapshots}, livedPhysics=${livedPracticePhysicsRows}, canvasCues=${livedPracticeCanvasCueRows}` : 'not run' },
     { id: 'resident_worksite', pass: Boolean(worksite && worksite.acceptanceReady && worksiteRows >= 2 && worksiteSnapshots > 0 && worksite.avatarCannotAssignJobs === true && worksite.noDirectCommand === true && worksite.noHiddenLawNormalView === true && worksite.noResourceSpawning === true), evidence: worksite ? `watchRows=${worksiteRows}, snapshots=${worksiteSnapshots}` : 'not run' },
@@ -14904,7 +14967,7 @@ function describeReplayRow(row) {
     waitOnVillageBoard: `waited on village board proposals=${payload.proposals}`,
     runPlayerMovementRouteLoop: `movement ready=${payload.ready === true} rows=${payload.rows} direction=${payload.direction} zone=${payload.zone}`,
     runPlayerResidentEncounterLoop: `resident encounter ready=${payload.ready === true} rows=${payload.rows} resident=${payload.resident} noLLM=${payload.noLLM === true}`,
-    runPlayerObjectInteractionLoop: `object interaction ready=${payload.ready === true} rows=${payload.rows} component=${payload.componentId} response=${payload.responseId || 'none'}/${payload.responseKind || 'none'} handling=${payload.manipulationId}`,
+    runPlayerObjectInteractionLoop: `object interaction ready=${payload.ready === true} rows=${payload.rows} component=${payload.componentId} response=${payload.responseId || 'none'}/${payload.responseKind || 'none'} proposal=${payload.followUpProposalId || 'none'} handling=${payload.manipulationId}`,
     runResidentMaterialManipulationStep: `resident handling ${payload.manipulationId || 'none'} ${payload.resident || 'none'} ${payload.action || 'none'} component=${payload.componentId || 'none'} body=${payload.bodyStepId || 'none'} distance=${payload.embodiedDistance ?? 'n/a'} success=${payload.success === true}`,
     runResidentMaterialManipulationLoop: `resident handling loop +${payload.actionsAdded || 0} actions=${payload.totalActions || 0} practiceLinks=${payload.practiceLinks || 0}`,
     runPlayerProposalDeckLoop: `proposal deck ready=${payload.ready === true} cards=${payload.cards} actions=${payload.actions}`,

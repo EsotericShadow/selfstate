@@ -399,3 +399,7 @@
 - Inspect an object that produces wet-material or labor caution and confirm handling is rerouted through a caution action source.
 - Confirm blocked handling rows keep `manipulation_id=none` while preserving the resident response id.
 - Export acceptance and confirm `resident_object_response_affects_handling` appears with effect-row evidence.
+- Confirm a blocked ownership or safety response records `follow_up_proposal_id=VBP-...`.
+- Open Proposals after the blocked response and confirm the Village Board proposal records `related_object_response_id=OIR-...`.
+- Confirm the proposal can be asked about, supported, or waited on, but not forced.
+- Export acceptance and confirm `blocked_object_response_creates_proposal` appears with interaction and board links.

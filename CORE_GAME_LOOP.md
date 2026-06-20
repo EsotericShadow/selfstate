@@ -670,7 +670,9 @@ Object inspection now has a social step before handling:
 6. Wet-material and labor cautions reroute handling through slower/careful action sources.
 7. Ordinary observations allow handling to continue through resident choice.
 8. The response itself does not manipulate the object.
-9. The exported acceptance receipt records `resident_object_response` and `resident_object_response_affects_handling`.
+9. Blocked ownership or safety responses create a resident-facing Village Board concern and proposal linked to the `OIR-...` row.
+10. The player can support, ask, or wait on the proposal, but cannot force the resident to allow handling.
+11. The exported acceptance receipt records `resident_object_response`, `resident_object_response_affects_handling`, and `blocked_object_response_creates_proposal`.
 
 ## Player movement route loop
 

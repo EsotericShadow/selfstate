@@ -585,3 +585,11 @@ The acceptance gate is `resident_object_response`. It requires `OIR-...` respons
 Resident object responses now affect the handling path. Ownership objections and safety warnings can block material manipulation before any object state changes. Wet-material and labor cautions reroute handling through caution-specific action sources instead of treating warnings as flavor text.
 
 The acceptance gate is `resident_object_response_affects_handling`. It requires object-interaction rows where an `OIR-...` response is linked to a blocked, rerouted, or explicitly allowed handling outcome while preserving no-command and no-hidden-law boundaries.
+
+## Prototype v0 object-objection proposal update
+
+Blocked object responses now create a resident-facing follow-up instead of ending as a dead stop. If an ownership objection or safety warning blocks object handling, the shell creates a Village Board concern and `VBP-...` project proposal linked back to the originating `OIR-...` response.
+
+The player can later ask about, support, or wait on that proposal through the existing proposal surfaces. The avatar still cannot force the resident to allow handling, install the correct explanation, or bypass material and social constraints.
+
+The acceptance gate is `blocked_object_response_creates_proposal`. It requires a blocked object-interaction row with a `follow_up_proposal_id` plus a Village Board proposal carrying `related_object_response_id`, `avatar_can_force=false`, no hidden-law exposure in normal view, and no tech-tree unlock.

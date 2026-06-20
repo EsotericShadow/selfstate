@@ -18568,6 +18568,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'return_journal_visible_physics_follow_continuity', pass: Boolean(returnJournal && returnJournalVisiblePhysicsFollowRows > 0 && returnJournal.forwardReturnVisible === true && returnJournal.saveRestoreVisible === true && returnJournal.noDirectReset === true && returnJournal.noHiddenLawNormalView === true), evidence: returnJournal ? `visibleFollowRows=${returnJournalVisiblePhysicsFollowRows}` : 'not run' },
     { id: 'normal_player_action_strip', pass: Boolean(normalPlayerActionStripReady && normalPlayerActionStripButtons.length >= normalPlayerRequiredActions.length), evidence: `buttons=${normalPlayerActionStripButtons.length}/${normalPlayerRequiredActions.length}, startHere=${normalPlayerActionStripButtons.includes('runFirstPlayableStartHere')}, continue=${normalPlayerActionStripButtons.includes('runPrototypeGuidedStep')}` },
     { id: 'normal_player_hud', pass: Boolean(normalPlayerHudNode && normalPlayerHud.next_action && normalPlayerHud.selected_resident && normalPlayerHud.boundary && normalPlayerHud.boundary.includes('no command')), evidence: `next=${normalPlayerHud.next_action}, resident=${normalPlayerHud.selected_resident}, proposal=${normalPlayerHud.latest_proposal}, continuity=${normalPlayerHud.save_return}` },
+    { id: 'start_here_player_visible_receipt', pass: Boolean(normalPlayerHudNode && normalPlaySummaryNode && normalPlayerHud.start_here_ready === true && normalPlayerHud.start_here_receipt !== 'none' && normalPlayerHud.start_here_physics_path !== 'none' && normalPlayerHud.start_here_physics_happy_path !== 'none' && normalPlayerHud.start_here_resident_word !== 'none' && normalPlayerHud.start_here_player_gloss !== 'none' && normalPlayerHud.start_here_body_expression !== 'none' && normalPlayerHud.start_here_object_memory !== 'none'), evidence: `receipt=${normalPlayerHud.start_here_receipt}, physics=${normalPlayerHud.start_here_physics_path}/${normalPlayerHud.start_here_physics_happy_path}, word=${normalPlayerHud.start_here_resident_word}, body=${normalPlayerHud.start_here_body_expression}, objectMemory=${normalPlayerHud.start_here_object_memory}` },
     { id: 'normal_play_summary_card', pass: Boolean(normalPlaySummaryNode && normalPlaySummary.next_action && normalPlaySummary.resident && normalPlaySummary.boundary && normalPlaySummary.boundary.includes('no command')), evidence: `next=${normalPlaySummary.next_action}, resident=${normalPlaySummary.resident}, proposal=${normalPlaySummary.proposal}, continuity=${normalPlaySummary.continuity}` },
     { id: 'normal_player_guided_action_highlight', pass: Boolean(normalPlayerGuideHighlight && normalPlayerGuideHighlight.matched === true), evidence: `recommended=${normalPlayerGuideHighlight.recommended_action}, highlighted=${normalPlayerGuideHighlight.highlighted_action}, matched=${normalPlayerGuideHighlight.matched === true}` },
     { id: 'advanced_prototype_controls_secondary', pass: Boolean(advancedControlsNode && advancedControlsNode.tagName === 'DETAILS' && advancedControlsButtons > 0), evidence: `details=${Boolean(advancedControlsNode)}, buttons=${advancedControlsButtons}, open=${advancedControlsNode ? advancedControlsNode.open === true : false}` },
@@ -18780,10 +18781,12 @@ function buildNormalPlayerHudSnapshot() {
   const board = world.villageBoard || null;
   const practiceGraph = world.emergentPracticeGraph || null;
   const saves = world.gamePrototypeSaves || null;
+  const session = world.gamePrototypePlaySession || null;
   const latestAction = rail && rail.actionLedger && rail.actionLedger.length ? rail.actionLedger[rail.actionLedger.length - 1] : null;
   const latestProposal = board && board.projectProposals && board.projectProposals.length ? board.projectProposals[board.projectProposals.length - 1] : null;
   const latestPractice = practiceGraph && practiceGraph.nodes && practiceGraph.nodes.length ? practiceGraph.nodes[practiceGraph.nodes.length - 1] : null;
   const latestReturn = saves && saves.returnLog && saves.returnLog.length ? saves.returnLog[saves.returnLog.length - 1] : null;
+  const latestStartHere = session && session.startHereLedger && session.startHereLedger.length ? session.startHereLedger[session.startHereLedger.length - 1] : null;
   const objectCueBehavior = latestObjectCueReturnBehaviorFor(world.selected) || latestObjectCueReturnBehaviorFor(null);
   const objectCueBias = objectCueReturnActionBias(objectCueBehavior);
   return {
@@ -18798,6 +18801,16 @@ function buildNormalPlayerHudSnapshot() {
     latest_practice: latestPractice ? `${latestPractice.local_name || latestPractice.practice_id} / ${latestPractice.status || 'unknown'}` : 'none',
     save_return: saves ? `${saves.slots ? saves.slots.length : 0} save(s), ${saves.returnLog ? saves.returnLog.length : 0} return(s)` : 'none',
     latest_return: latestReturn ? latestReturn.slot_id || 'return' : 'none',
+    start_here_ready: latestStartHere ? latestStartHere.acceptance_ready === true : false,
+    start_here_receipt: latestStartHere ? `${latestStartHere.start_id} / ${latestStartHere.ten_minute_loop_id}` : 'none',
+    start_here_physics_path: latestStartHere ? latestStartHere.physics_path_action_id || 'none' : 'none',
+    start_here_physics_happy_path: latestStartHere ? latestStartHere.physics_path_happy_path_id || 'none' : 'none',
+    start_here_physics_restore: latestStartHere ? `${latestStartHere.physics_path_save_slot_id || 'none'} -> ${latestStartHere.physics_path_restore_slot_id || 'none'} / match=${latestStartHere.physics_path_restore_match === true}` : 'none',
+    start_here_resident_word: latestStartHere ? latestStartHere.physics_path_resident_word || 'none' : 'none',
+    start_here_player_gloss: latestStartHere ? latestStartHere.physics_path_player_gloss || 'none' : 'none',
+    start_here_component: latestStartHere ? latestStartHere.physics_path_component_id || 'none' : 'none',
+    start_here_body_expression: latestStartHere ? latestStartHere.physics_path_body_expression_id || 'none' : 'none',
+    start_here_object_memory: latestStartHere ? `${latestStartHere.object_memory_behavior_id || 'none'} -> ${latestStartHere.object_memory_guided_action_id || 'none'}` : 'none',
     object_cue_return_behavior: objectCueBehavior ? `${objectCueBehavior.behavior_id} / ${objectCueBehavior.behavior_kind}` : 'none',
     object_cue_return_component: objectCueBehavior ? objectCueBehavior.component_id : 'none',
     object_cue_return_recommendation: objectCueBias ? objectCueBias.label : 'none',
@@ -18815,7 +18828,11 @@ function formatNormalPlayerHud() {
     `<div>Proposal: <span>${hud.latest_proposal}</span> / ${hud.latest_proposal_status}</div>`,
     `<div>Practice: <span>${hud.latest_practice}</span></div>`,
     `<div>Continuity: <span>${hud.save_return}</span> / latest ${hud.latest_return}</div>`,
+    `<div>Start here: <span>${hud.start_here_receipt}</span> / ready=${hud.start_here_ready ? 'yes' : 'no'}</div>`,
+    `<div>Physics receipt: <span>${hud.start_here_physics_path}</span> / ${hud.start_here_physics_happy_path}; ${hud.start_here_resident_word} ~ ${hud.start_here_player_gloss}; component ${hud.start_here_component}; body ${hud.start_here_body_expression}</div>`,
+    `<div>Physics return: <span>${hud.start_here_physics_restore}</span></div>`,
     `<div>Object memory: <span>${hud.object_cue_return_behavior}</span> / ${hud.object_cue_return_component} -> ${hud.object_cue_return_recommendation}</div>`,
+    `<div>Start object memory: <span>${hud.start_here_object_memory}</span></div>`,
     `<div>Boundary: <span>${hud.boundary}</span></div>`,
   ].join('');
 }
@@ -18846,6 +18863,7 @@ function buildNormalPlaySummarySnapshot() {
     proposal: latestProposal ? `${latestProposal.proposal_id || 'proposal'} / ${latestProposal.status || 'unknown'}` : 'none',
     practice: latestPractice ? `${latestPractice.local_name || latestPractice.practice_id} / ${latestPractice.status || 'unknown'}` : 'none',
     continuity: `${saveCount} save(s), ${returnCount} return(s)`,
+    start_here: `${hud.start_here_receipt}; ready=${hud.start_here_ready}; physics=${hud.start_here_physics_path}/${hud.start_here_physics_happy_path}; word=${hud.start_here_resident_word}; body=${hud.start_here_body_expression}; restore=${hud.start_here_physics_restore}; objectMemory=${hud.start_here_object_memory}`,
     object_memory: objectCueBehavior ? `${objectCueBehavior.behavior_id} ${objectCueBehavior.behavior_kind} on ${objectCueBehavior.component_id}; recommend ${objectCueBias ? objectCueBias.label : 'none'}` : 'none',
     canvas_cue: latestCue ? latestCue.cue_id || latestCue.reason || 'visible cue' : 'none',
     session: session ? `steps=${session.stepLedger ? session.stepLedger.length : 0}; ready=${session.acceptanceReady === true}` : 'not started',
@@ -18863,6 +18881,7 @@ function formatNormalPlaySummary() {
     `Proposal: ${summary.proposal}`,
     `Practice: ${summary.practice}`,
     `Continuity: ${summary.continuity}; session ${summary.session}`,
+    `Start here receipt: ${summary.start_here}`,
     `Object memory: ${summary.object_memory}`,
     `Canvas cue: ${summary.canvas_cue}`,
     `Boundary: ${summary.boundary}`,

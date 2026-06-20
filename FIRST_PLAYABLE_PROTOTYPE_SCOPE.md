@@ -1300,6 +1300,7 @@ Acceptance requires:
 - the path produces a normal Physics path receipt with resident language, save/return continuity, and body-expression evidence
 - the path produces a 10-minute normal play receipt
 - the receipt includes object/material change, save/return persistence, practice evidence, returned object-memory behavior, and guided normal action
+- the normal HUD and play summary expose the receipt through player-facing terms: resident word, imperfect gloss, physical component, body expression, save/return match, and object-memory next action
 - the path records no direct resident command, no hidden-law normal-view exposure, and no tech-tree unlock
 - the first-playable milestone surface reports the Start Here path as ready only after the lived path has generated evidence
 

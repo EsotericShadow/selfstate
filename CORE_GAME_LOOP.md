@@ -1098,8 +1098,9 @@ The first playable shell now has one normal-facing entry point: `Start here`.
 
 1. Enter the village if needed.
 2. Switch into Player Mode.
-3. Run the compact 10-minute normal play path.
-4. Produce object/material change, practice evidence, save/return continuity, returned object-memory behavior, and guided next action.
-5. Record a `start_here_player_path` receipt without opening advanced/debug controls.
+3. Run the normal `Physics path` so ambient physical pressure produces resident language, proposal evidence, save/return continuity, and a body-expression receipt.
+4. Run the compact 10-minute normal play path.
+5. Produce object/material change, practice evidence, save/return continuity, returned object-memory behavior, and guided next action.
+6. Record a `start_here_player_path` receipt without opening advanced/debug controls.
 
 This is an integration gate, not a new simulation organ. It makes the existing first-playable loop discoverable from the primary player surface while preserving the rule that the avatar influences conditions instead of commanding residents.

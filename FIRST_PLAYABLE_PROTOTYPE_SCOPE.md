@@ -1297,6 +1297,7 @@ Acceptance requires:
 
 - the browser shell exposes a `Start here` control in the normal player action strip
 - `Start here` runs in Player Mode rather than advanced/debug panels
+- the path produces a normal Physics path receipt with resident language, save/return continuity, and body-expression evidence
 - the path produces a 10-minute normal play receipt
 - the receipt includes object/material change, save/return persistence, practice evidence, returned object-memory behavior, and guided normal action
 - the path records no direct resident command, no hidden-law normal-view exposure, and no tech-tree unlock

@@ -17700,6 +17700,8 @@ function buildPrototypeAcceptanceReceipt() {
   const normalPlayerActionStripReady = normalPlayerRequiredActions.every(action => normalPlayerActionStripButtons.includes(action));
   const normalPlayerHud = buildNormalPlayerHudSnapshot();
   const normalPlayerHudNode = typeof document !== 'undefined' ? document.getElementById('normalPlayerHud') : null;
+  const normalPlaySummary = buildNormalPlaySummarySnapshot();
+  const normalPlaySummaryNode = typeof document !== 'undefined' ? document.getElementById('gamePrototypePlaySummaryOut') : null;
   const normalPlayerGuideHighlight = updateNormalPlayerActionStripGuide();
   const advancedControlsNode = typeof document !== 'undefined' ? document.getElementById('advancedPrototypeControls') : null;
   const advancedControlsButtons = advancedControlsNode ? advancedControlsNode.querySelectorAll('[data-action]').length : 0;
@@ -18020,6 +18022,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'return_journal_visible_physics_follow_continuity', pass: Boolean(returnJournal && returnJournalVisiblePhysicsFollowRows > 0 && returnJournal.forwardReturnVisible === true && returnJournal.saveRestoreVisible === true && returnJournal.noDirectReset === true && returnJournal.noHiddenLawNormalView === true), evidence: returnJournal ? `visibleFollowRows=${returnJournalVisiblePhysicsFollowRows}` : 'not run' },
     { id: 'normal_player_action_strip', pass: Boolean(normalPlayerActionStripReady && normalPlayerActionStripButtons.length >= normalPlayerRequiredActions.length), evidence: `buttons=${normalPlayerActionStripButtons.length}/${normalPlayerRequiredActions.length}, continue=${normalPlayerActionStripButtons.includes('runPrototypeGuidedStep')}` },
     { id: 'normal_player_hud', pass: Boolean(normalPlayerHudNode && normalPlayerHud.next_action && normalPlayerHud.selected_resident && normalPlayerHud.boundary && normalPlayerHud.boundary.includes('no command')), evidence: `next=${normalPlayerHud.next_action}, resident=${normalPlayerHud.selected_resident}, proposal=${normalPlayerHud.latest_proposal}, continuity=${normalPlayerHud.save_return}` },
+    { id: 'normal_play_summary_card', pass: Boolean(normalPlaySummaryNode && normalPlaySummary.next_action && normalPlaySummary.resident && normalPlaySummary.boundary && normalPlaySummary.boundary.includes('no command')), evidence: `next=${normalPlaySummary.next_action}, resident=${normalPlaySummary.resident}, proposal=${normalPlaySummary.proposal}, continuity=${normalPlaySummary.continuity}` },
     { id: 'normal_player_guided_action_highlight', pass: Boolean(normalPlayerGuideHighlight && normalPlayerGuideHighlight.matched === true), evidence: `recommended=${normalPlayerGuideHighlight.recommended_action}, highlighted=${normalPlayerGuideHighlight.highlighted_action}, matched=${normalPlayerGuideHighlight.matched === true}` },
     { id: 'advanced_prototype_controls_secondary', pass: Boolean(advancedControlsNode && advancedControlsNode.tagName === 'DETAILS' && advancedControlsButtons > 0), evidence: `details=${Boolean(advancedControlsNode)}, buttons=${advancedControlsButtons}, open=${advancedControlsNode ? advancedControlsNode.open === true : false}` },
     { id: 'first_playable_milestone_surface', pass: Boolean(firstPlayableMilestone && firstPlayableMilestone.surface_ready === true && firstPlayableMilestone.rows.length >= 10 && firstPlayableMilestone.next_action && firstPlayableMilestone.boundary), evidence: firstPlayableMilestone ? `ready=${firstPlayableMilestone.ready_rows}, partial=${firstPlayableMilestone.partial_rows}, missing=${firstPlayableMilestone.missing_rows}, next=${firstPlayableMilestone.next_action}` : 'not built' },
@@ -18261,6 +18264,51 @@ function formatNormalPlayerHud() {
   ].join('');
 }
 
+function buildNormalPlaySummarySnapshot() {
+  const guide = derivePrototypePlayerGuide();
+  const hud = buildNormalPlayerHudSnapshot();
+  const board = world.villageBoard || null;
+  const practiceGraph = world.emergentPracticeGraph || null;
+  const saves = world.gamePrototypeSaves || null;
+  const session = world.gamePrototypePlaySession || null;
+  const worldStage = world.gamePrototypeWorldStage || null;
+  const latestConcern = board && board.concerns && board.concerns.length ? board.concerns[board.concerns.length - 1] : null;
+  const latestProposal = board && board.projectProposals && board.projectProposals.length ? board.projectProposals[board.projectProposals.length - 1] : null;
+  const latestPractice = practiceGraph && practiceGraph.nodes && practiceGraph.nodes.length ? practiceGraph.nodes[practiceGraph.nodes.length - 1] : null;
+  const latestCue = worldStage && worldStage.canvasCueLedger && worldStage.canvasCueLedger.length ? worldStage.canvasCueLedger[worldStage.canvasCueLedger.length - 1] : null;
+  const saveCount = saves && saves.slots ? saves.slots.length : 0;
+  const returnCount = saves && saves.returnLog ? saves.returnLog.length : 0;
+  return {
+    next_action: guide.nextAction,
+    phase: guide.phase,
+    reason: guide.why,
+    resident: hud.selected_resident,
+    resident_context: `${hud.resident_schedule}; ${hud.resident_memory}`,
+    concern: latestConcern ? latestConcern.title || latestConcern.concern_id || 'resident concern' : 'none',
+    proposal: latestProposal ? `${latestProposal.proposal_id || 'proposal'} / ${latestProposal.status || 'unknown'}` : 'none',
+    practice: latestPractice ? `${latestPractice.local_name || latestPractice.practice_id} / ${latestPractice.status || 'unknown'}` : 'none',
+    continuity: `${saveCount} save(s), ${returnCount} return(s)`,
+    canvas_cue: latestCue ? latestCue.cue_id || latestCue.reason || 'visible cue' : 'none',
+    session: session ? `steps=${session.stepLedger ? session.stepLedger.length : 0}; ready=${session.acceptanceReady === true}` : 'not started',
+    boundary: 'summary reads existing public prototype state only; no command, no hidden law, no tech unlock',
+  };
+}
+
+function formatNormalPlaySummary() {
+  const summary = buildNormalPlaySummarySnapshot();
+  return [
+    `Next: ${summary.next_action} (${summary.phase})`,
+    `Why: ${summary.reason}`,
+    `Resident: ${summary.resident} / ${summary.resident_context}`,
+    `Concern: ${summary.concern}`,
+    `Proposal: ${summary.proposal}`,
+    `Practice: ${summary.practice}`,
+    `Continuity: ${summary.continuity}; session ${summary.session}`,
+    `Canvas cue: ${summary.canvas_cue}`,
+    `Boundary: ${summary.boundary}`,
+  ].join('\n');
+}
+
 function updateNormalPlayerActionStripGuide() {
   if (typeof document === 'undefined') return { recommended_action: 'none', matched: false };
   const guide = derivePrototypePlayerGuide();
@@ -18370,6 +18418,7 @@ function formatPrototypeDivergence() {
 function renderGamePrototypeSurface() {
   const objectiveNode = document.getElementById('gamePrototypeObjectiveOut');
   const normalPlayerHudNode = document.getElementById('normalPlayerHud');
+  const playSummaryNode = document.getElementById('gamePrototypePlaySummaryOut');
   const villageNode = document.getElementById('gamePrototypeVillageOut');
   const publicNode = document.getElementById('gamePrototypePublicOut');
   const guideNode = document.getElementById('gamePrototypeGuideOut');
@@ -18419,6 +18468,7 @@ function renderGamePrototypeSurface() {
   const prototype = world.gamePrototype || ensureGamePrototype();
   if (objectiveNode) objectiveNode.textContent = prototype.objective;
   if (normalPlayerHudNode) normalPlayerHudNode.innerHTML = formatNormalPlayerHud();
+  if (playSummaryNode) playSummaryNode.textContent = formatNormalPlaySummary();
   updateNormalPlayerActionStripGuide();
   if (villageNode) villageNode.textContent = formatPrototypeVillageState();
   if (publicNode) publicNode.textContent = formatPrototypePublicOutcomes();

@@ -428,6 +428,18 @@ Required evidence:
 - the HUD is read-only and does not create world state, command residents, expose hidden law, or unlock technology
 - exported acceptance checks the HUD exists and preserves the no-command boundary
 
+## Added scope gate: Normal Play Summary Card
+
+`normal_play_summary_card` is now part of first playable prototype scope.
+
+Required evidence:
+
+- a `Now / next` card appears near the top of the prototype surface before detailed report cards
+- the card summarizes current guide action, reason, selected resident, concern, proposal, practice, continuity, canvas cue, and session state
+- the card reads existing public prototype state only
+- the card does not create world state, command residents, expose hidden law, or unlock technology
+- exported acceptance checks the card exists and preserves the no-command boundary
+
 ## Added scope gate: Normal Player Guided Action Highlight
 
 `normal_player_guided_action_highlight` is now part of first playable prototype scope.

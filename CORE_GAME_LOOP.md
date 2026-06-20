@@ -568,6 +568,12 @@ The hero surface now shows a compact read-only HUD before the normal action stri
 
 The HUD is an orientation surface for ordinary play. It does not create simulation state.
 
+## Normal play summary card loop
+
+The prototype surface now has a `Now / next` card before the detailed cards. It summarizes the current Player guide action, reason, selected resident, concern, proposal, emergent practice, save/return continuity, canvas cue, and session state.
+
+The summary is read-only. It keeps ordinary play oriented without creating state, commanding residents, exposing hidden law, or replacing the audit cards.
+
 ## Normal player guided action highlight
 
 The normal action strip now marks the button that matches the current Player guide step. If the current guide action is not one of the compact strip buttons, `Continue` is highlighted because it runs the guide step through the existing sequencer.

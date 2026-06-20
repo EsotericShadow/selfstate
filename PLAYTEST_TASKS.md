@@ -310,9 +310,11 @@
 
 - Inspect the hero surface and confirm the normal player action strip appears before the debug-heavy prototype control grid.
 - Confirm the normal player HUD appears above the strip and shows next action, selected resident, latest proposal/practice, and save/return continuity.
+- Confirm the `Now / next` card appears before detailed cards and summarizes current action, resident, proposal/practice, continuity, and session state.
 - Confirm one normal strip button is visibly highlighted for the current Player guide step, or Continue is highlighted as fallback.
 - Confirm the strip exposes Continue, Look, Move, Ask, Talk, Objects, Handling, Proposals, Ask proposal, Support, Wait, Save, Return, Physics path, Follow, and Space.
 - Export acceptance and confirm `normal_player_hud` appears as a requirement.
+- Export acceptance and confirm `normal_play_summary_card` appears as a requirement.
 - Export acceptance and confirm `normal_player_guided_action_highlight` appears as a requirement.
 - Export acceptance and confirm `normal_player_action_strip` appears as a requirement.
 - Confirm the large prototype/debug action grid is under `Advanced prototype / debug controls`, not visually primary.

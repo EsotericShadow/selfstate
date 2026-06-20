@@ -515,6 +515,12 @@ The prototype hero now includes a compact normal-player HUD above the action str
 
 This keeps the first playable legible without requiring the player to scan debug panels. The HUD is read-only and preserves no-command, no-hidden-law, and no-tech-tree boundaries. The acceptance gate is `normal_player_hud`.
 
+## Prototype v0 normal play summary card
+
+The prototype surface now includes a `Now / next` card before the detailed cards. It shows the current guide action, reason, selected resident, concern, proposal, practice, continuity, canvas cue, and session state from existing public ledgers.
+
+This is a readability layer for ordinary play. It does not create state or replace audit detail. The acceptance gate is `normal_play_summary_card`.
+
 ## Prototype v0 guided action highlight
 
 The compact action strip now highlights the current Player guide action. If the guide points to a deeper prototype action not present in the compact strip, the `Continue` button is highlighted as the safe fallback.

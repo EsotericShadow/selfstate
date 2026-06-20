@@ -57,7 +57,8 @@
 5. Repeated usefulness can update an emergent practice with local language.
 6. Save and return preserve the chain as source history.
 7. The primary play surface and world canvas show the active chain as a public cue.
-8. The first-playable session receipt exposes the single chain without exposing hidden simulator law or installing a modern concept.
+8. The normal action rail offers `Follow` to continue the next missing public link without opening debug panels.
+9. The first-playable session receipt exposes the single chain without exposing hidden simulator law or installing a modern concept.
 
 ## Resident language/gloss loop
 

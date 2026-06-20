@@ -146,6 +146,12 @@ The primary play surface and world canvas now carry the latest integrated `FPI-.
 
 The `primary_play_surface` acceptance gate now requires at least one integrated-chain canvas cue. This makes the first playable loop visible in the actual player surface instead of only in a session receipt.
 
+## Prototype v0 actionable integrated-chain update
+
+The normal action rail now includes `Follow`. This player-facing verb reads the current integrated `FPI-...` chain and advances the next missing public link through existing resident-mediated systems: proposal cards, material handling, lived-practice physics, save, restore, return journal, or surface refresh.
+
+`Follow` is not a command to a resident and does not unlock a technology. It is a player navigation affordance for continuing the visible chain while preserving no-direct-command, no hidden-law normal view, and no tech-tree boundaries.
+
 ## Prototype v0 save-slot update
 
 The game prototype shell now includes browser-local prototype save slots. The player can save a slot, advance the autonomous simulation, return to the saved slot, and export a save receipt. This is intentionally scoped as prototype persistence evidence: it preserves meaningful village state, practice/proposal summaries, deep-time year, autonomous day, return log, and replay row counts without claiming production persistence.

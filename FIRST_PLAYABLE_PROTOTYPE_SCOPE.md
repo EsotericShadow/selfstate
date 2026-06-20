@@ -26,6 +26,7 @@
 - One normal player-facing interface.
 - One integrated first-playable causality chain linking ordinary action, resident bottleneck/test, proposal, physical handling, lived physics, emergent practice, save, and restore.
 - One primary-surface/canvas cue for the integrated chain so the loop is playable without opening debug-only panels.
+- One normal `Follow` verb that advances or refreshes the active integrated chain without directly commanding residents.
 - One bounded resident language/gloss layer for local terms that emerge from grounded practice history.
 
 ## First prototype success condition
@@ -172,6 +173,7 @@ Required evidence:
 - save slot row
 - restore row
 - primary play-surface or canvas cue carrying the chain ID
+- normal action-rail follow row carrying the chain ID
 - no direct player command
 - no hidden simulator law in normal view
 - no tech-tree unlock or installed modern concept

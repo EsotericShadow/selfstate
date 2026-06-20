@@ -238,6 +238,10 @@
 146. Run World stage after the integrated chain exists and confirm Primary play surface acceptance requires an integrated-chain canvas cue.
 147. Enter Player mode after the integrated chain exists and confirm the normal view summarizes the active chain without exposing hidden simulator law.
 148. Export acceptance and confirm `primary_play_surface` evidence includes an integrated canvas cue count.
+149. Use the normal `Follow` action after an `FPI-...` chain appears and confirm it records an `NPF-...` follow row.
+150. Confirm `Follow` advances the next missing public chain link through proposal, handling, lived practice, save, restore, return journal, or surface refresh without directly commanding a resident.
+151. Save after using `Follow`, return the slot, and confirm Save / return shows normal action rows plus follow-row counts.
+152. Export acceptance and confirm `normal_play_action_rail` evidence includes follow-row counts.
 
 ## Physics-to-practice slice playtests
 

@@ -610,6 +610,8 @@ Save/return records the latest object cue id, component id, cue kind, visible ch
 
 When the saved object cue survives restore, a resident gets a return behavior row (`OCRB-...`) and visible expression. The resident may guard, recheck, notice, or watch the affected component based on the restored cue kind, without the avatar commanding follow-up work.
 
+The active `OCRB-...` row now biases the normal action rail toward `Look`, `Objects`, `Support`, or `Wait`. When the matching verb runs, the behavior row is marked consumed by that normal action id so the memory affects the next step without permanently hijacking play.
+
 The Follow verb can now follow an object-objection chain as well as the broader integrated chain. It reuses existing actions and records object-chain phase, response id, proposal id, resolution id, and recheck result without giving the avatar direct object control.
 
 ## Player mode interface loop

@@ -507,6 +507,9 @@ Required behavior:
 - exported acceptance includes `object_interaction_cue_save_return_persistence`
 - restored object cues produce resident return behavior rows (`OCRB-...`) with visible expression and source-preserved memory
 - exported acceptance includes `object_cue_return_resident_behavior`
+- active `OCRB-...` rows can recommend normal verbs: `Look`, `Objects`, `Support`, or `Wait`
+- matching normal action rows consume the active object-cue return behavior and keep the source id visible
+- exported acceptance includes `object_cue_return_guides_normal_action`
 
 ## Prototype v0 milestone: Player Mode Interface
 

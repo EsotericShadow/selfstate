@@ -30,6 +30,7 @@
 - One resident-visible `Follow` response that records memory and a public body-language cue.
 - One calibrated `Follow` boundary path where residents can guard or refuse under pressure.
 - One normal `Space` verb that recovers after guarded/refused `Follow` without advancing the chain.
+- One guided ambient physics happy path that uses normal verbs to surface stochastic physics pressure as resident language, a proposal, save/return continuity, and visible return body language.
 - One 10-minute playable loop that proves object/material change, emergent practice evidence, and save/return persistence in one normal play path.
 - One canvas-visible material-state overlay for the active physical component.
 - One direct canvas component selection path that inspects simulated objects without direct manipulation.
@@ -189,6 +190,27 @@ Required evidence:
 - no tech-tree unlock or installed modern concept
 
 This gate prevents the first playable from being a collection of isolated panels.
+
+## Added scope gate: Guided ambient physics happy path
+
+`first_playable_ambient_physics_happy_path` is part of the first playable prototype scope.
+
+Required evidence:
+
+- player-facing normal verbs advance the path
+- ambient stochastic physics row exists
+- resident pressure-language term exists
+- resident proposal exists
+- proposal can be reached through the normal proposal deck
+- save slot exists
+- restore row proves the ambient physics proposal/language survived return
+- returned resident public body-language expression exists
+- no debug physics button is used
+- no direct resident command is used
+- no hidden simulator law appears in normal view
+- no tech-tree unlock or installed modern concept occurs
+
+This gate makes the first playable path legible as gameplay: the player can follow one physical pressure from ordinary action to resident interpretation, proposal, return continuity, and visible behavior.
 
 ## Added scope gate: Resident routines use physical context
 

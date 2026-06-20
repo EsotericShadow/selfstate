@@ -146,6 +146,12 @@ The primary play surface and world canvas now carry the latest integrated `FPI-.
 
 The `primary_play_surface` acceptance gate now requires at least one integrated-chain canvas cue. This makes the first playable loop visible in the actual player surface instead of only in a session receipt.
 
+## Prototype v0 ambient physics happy-path update
+
+The maintained shell now includes `runFirstPlayableAmbientPhysicsHappyPath`. This is a player-facing route through existing normal verbs: player mode, Look, Wait, Handling, Follow, Proposal deck, Support, Save, Wait, and Return.
+
+The receipt proves that ambient stochastic physics pressure can surface through normal play as resident language, a resident proposal, save/return continuity, and visible public body language after return. It does not expose hidden simulator law in normal view, use a debug physics button, directly command a resident, or unlock a named technology.
+
 ## Prototype v0 actionable integrated-chain update
 
 The normal action rail now includes `Follow`. This player-facing verb reads the current integrated `FPI-...` chain and advances the next missing public link through existing resident-mediated systems: proposal cards, material handling, lived-practice physics, save, restore, return journal, or surface refresh.

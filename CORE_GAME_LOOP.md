@@ -63,6 +63,16 @@
 11. `Space` can recover from guarded/refused `Follow` pressure without advancing the chain.
 12. The first-playable session receipt exposes the single chain without exposing hidden simulator law or installing a modern concept.
 
+## Guided ambient physics happy-path loop
+
+1. The player enters Player mode and uses normal verbs instead of debug sequencing.
+2. Look, Wait, Handling, and Follow advance ambient stochastic physics through ordinary play.
+3. A maintenance pressure can become resident language and a resident-generated proposal.
+4. The player can inspect/support the proposal card, but still cannot command the resident.
+5. Save and Return preserve the ambient physics proposal and pressure-language source.
+6. Returned residents express the remembered physical pressure through public body language.
+7. The receipt requires no debug physics button, no direct resident command, no hidden law in normal view, and no tech-tree unlock.
+
 ## Resident language/gloss loop
 
 1. Residents repeatedly attend to a material, action, place, risk, or useful practice.

@@ -720,3 +720,16 @@ Required evidence:
 - interaction rows record `resident_recheck_result`
 - `handling_auto_allowed=false` remains preserved
 - no LLM, open-ended language, direct command, hidden-law exposure, resource spawning, or tech-tree unlock occurs
+
+## Added scope gate: Object-objection save/return persistence
+
+`object_objection_save_return_persistence` is now part of first playable prototype scope.
+
+Required evidence:
+
+- save slots record object interaction rows, object response rows, object resolution rows, and object recheck-response rows
+- save slots record latest `OIRR-...` resolution id and latest recheck response id
+- restore logs report restored object resolution rows and recheck-response rows
+- return journal snapshots show object-chain state before save, after away time, and after restore
+- first-playable session snapshots preserve object-chain counts across Journal, Save, and Return steps
+- the saved/restored object chain remains resident-mediated and does not expose hidden law or create direct object permission

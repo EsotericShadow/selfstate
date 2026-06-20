@@ -617,3 +617,11 @@ The object surface now uses `OIRR-...` rows during later `Objects` actions. If t
 There are two recheck outcomes. `post_resolution_recheck` means the resident agrees to try careful handling after visible work changed the object. `recheck_still_blocks` means the resident inspected the changed situation and still refuses handling because the object remains unsafe or unavailable. Neither path gives the avatar direct object permission.
 
 The acceptance gate is `object_objection_recheck_response`. It requires a post-resolution resident response linked to an `OIRR-...` row plus a handling row with `resident_recheck_result`, `handling_auto_allowed=false`, no LLM, no open-ended language, no direct command, no hidden-law exposure in normal view, and no tech-tree unlock.
+
+## Prototype v0 object-objection save/return persistence update
+
+Object-objection continuity now appears in save-slot, restore, return-journal, and first-playable session receipts. Save slots summarize object interaction rows, response rows, `OIRR-...` resolution rows, recheck response rows, latest resolution id, latest recheck response id, and latest recheck result.
+
+The return journal shows object-chain counts before save, after away time, and after save-slot restoration. This proves the object objection chain is part of playable continuity, not only a live debug surface.
+
+The acceptance gate is `object_objection_save_return_persistence`. It requires at least one saved slot and restore log preserving object resolution and recheck-response evidence, while keeping the same no-direct-command, no-hidden-law normal view, and no-tech-tree boundary.

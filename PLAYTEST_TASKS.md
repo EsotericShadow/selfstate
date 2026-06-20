@@ -418,3 +418,7 @@
 - Confirm `recheck_still_blocks` keeps `manipulation_id=none` when the object is still unsafe or unavailable.
 - Confirm the row records `resident_recheck_result` and keeps `handling_auto_allowed=false`.
 - Export acceptance and confirm `object_objection_recheck_response` appears with recheck response and handling evidence.
+- Save after an `OIRR-...` resolution and recheck response exist, then return the slot and confirm the Save / return card shows object resolutions and object recheck responses.
+- Open Journal and confirm object-chain counts appear before save, after away time, and after save-slot restore.
+- Run Session and confirm Journal, Save, and Return steps preserve latest object resolution id and recheck result in their snapshots.
+- Export acceptance and confirm `object_objection_save_return_persistence` appears with saved and restored object-chain evidence.

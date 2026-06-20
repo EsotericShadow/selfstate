@@ -97,6 +97,7 @@
 4. Practices can persist, burden, be forgotten, or revive.
 5. Lived-action physics row counts and latest physics IDs persist so ordinary-action material consequences survive return.
 6. Avatar presence, comfort, boundary pressure, refusal risk, and return greeting tone persist as social history rather than being recalculated from a blank slate.
+7. Object-objection chains preserve `OIR`, `VBP`, `OIRR`, and resident recheck-response counts in save slots and restore logs.
 
 ## Deep-time civilization loop
 
@@ -679,7 +680,8 @@ Object inspection now has a social step before handling:
 12. Resident work can create an `OIRR-...` resolution row that marks resident recheck required without auto-allowing handling.
 13. A later `Objects` action reads that `OIRR-...` row and records either `post_resolution_recheck` or `recheck_still_blocks`.
 14. Recheck can reroute careful handling or preserve the block, but `handling_auto_allowed=false` remains true.
-15. The exported acceptance receipt records `resident_object_response`, `resident_object_response_affects_handling`, `blocked_object_response_creates_proposal`, `object_objection_proposal_actionable`, `object_objection_resolution_recheck`, and `object_objection_recheck_response`.
+15. Save/return and return-journal receipts preserve object resolution and recheck-response counts.
+16. The exported acceptance receipt records `resident_object_response`, `resident_object_response_affects_handling`, `blocked_object_response_creates_proposal`, `object_objection_proposal_actionable`, `object_objection_resolution_recheck`, `object_objection_recheck_response`, and `object_objection_save_return_persistence`.
 
 ## Player movement route loop
 

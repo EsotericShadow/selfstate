@@ -7368,6 +7368,11 @@ function returnJournalSnapshot(label) {
   const latestSlot = saves.slots.length ? saves.slots[saves.slots.length - 1] : null;
   const projects = world.gamePrototypeProjects || null;
   const latestProjectVisual = projects && projects.visualLedger && projects.visualLedger.length ? projects.visualLedger[projects.visualLedger.length - 1] : null;
+  const objectInteraction = world.gamePrototypeObjectInteraction || null;
+  const objectResolutionRows = objectInteraction && objectInteraction.resolutionLedger ? objectInteraction.resolutionLedger.length : 0;
+  const objectRecheckResponseRows = objectInteraction && objectInteraction.responseLedger ? objectInteraction.responseLedger.filter(row => row.recheck_resolution_id && row.recheck_resolution_id !== 'none').length : 0;
+  const latestObjectResolution = objectInteraction && objectInteraction.resolutionLedger && objectInteraction.resolutionLedger.length ? objectInteraction.resolutionLedger[objectInteraction.resolutionLedger.length - 1] : null;
+  const latestObjectRecheck = objectInteraction && objectInteraction.responseLedger ? objectInteraction.responseLedger.slice().reverse().find(row => row.recheck_resolution_id && row.recheck_resolution_id !== 'none') : null;
   return {
     label,
     tick: world.tick,
@@ -7398,6 +7403,19 @@ function returnJournalSnapshot(label) {
     latest_restore_day: latestRestore ? latestRestore.restored_autonomous_day : 'none',
     latest_restore_project_visual_rows: latestRestore ? Number(latestRestore.restored_project_visual_rows || 0) : 0,
     latest_restore_project_visual_id: latestRestore ? latestRestore.restored_latest_project_visual_id || 'none' : 'none',
+    object_interaction_rows: objectInteraction && objectInteraction.interactionLedger ? objectInteraction.interactionLedger.length : 0,
+    object_response_rows: objectInteraction && objectInteraction.responseLedger ? objectInteraction.responseLedger.length : 0,
+    object_resolution_rows: objectResolutionRows,
+    object_recheck_response_rows: objectRecheckResponseRows,
+    latest_object_resolution_id: latestObjectResolution ? latestObjectResolution.resolution_id : 'none',
+    latest_object_recheck_response_id: latestObjectRecheck ? latestObjectRecheck.response_id : 'none',
+    latest_object_recheck_result: latestObjectRecheck ? latestObjectRecheck.resident_recheck_result : 'none',
+    latest_slot_object_resolution_rows: latestSlot ? Number(latestSlot.object_resolution_rows || 0) : 0,
+    latest_slot_object_recheck_response_rows: latestSlot ? Number(latestSlot.object_recheck_response_rows || 0) : 0,
+    latest_slot_object_resolution_id: latestSlot ? latestSlot.latest_object_resolution_id || 'none' : 'none',
+    latest_restore_object_resolution_rows: latestRestore ? Number(latestRestore.restored_object_resolution_rows || 0) : 0,
+    latest_restore_object_recheck_response_rows: latestRestore ? Number(latestRestore.restored_object_recheck_response_rows || 0) : 0,
+    latest_restore_object_resolution_id: latestRestore ? latestRestore.restored_latest_object_resolution_id || 'none' : 'none',
     latest_slot_lived_practice_physics_rows: latestSlot ? Number(latestSlot.lived_practice_physics_rows || 0) : 0,
     latest_slot_project_visual_rows: latestSlot ? Number(latestSlot.project_visual_rows || 0) : 0,
     latest_slot_project_visual_id: latestSlot ? latestSlot.latest_project_visual_id || 'none' : 'none',
@@ -7432,6 +7450,10 @@ function updateReturnJournalAcceptance() {
     save_returns: latest.save_returns,
     project_visual_rows: latest.project_visual_rows,
     latest_project_visual_id: latest.latest_project_visual_id,
+    object_resolution_rows: latest.object_resolution_rows,
+    object_recheck_response_rows: latest.object_recheck_response_rows,
+    latest_object_resolution_id: latest.latest_object_resolution_id,
+    latest_object_recheck_result: latest.latest_object_recheck_result,
     active_slot: latest.active_slot,
     boundary: journal.boundary,
   };
@@ -7506,6 +7528,19 @@ function runReturnJournalLoop() {
     latest_project_visual_after_restore: afterRestore.latest_project_visual_id,
     latest_slot_project_visual_rows: afterRestore.latest_slot_project_visual_rows,
     latest_slot_project_visual_id: afterRestore.latest_slot_project_visual_id,
+    object_resolution_rows_before: before.object_resolution_rows,
+    object_resolution_rows_after_away: afterAway.object_resolution_rows,
+    object_resolution_rows_after_restore: afterRestore.object_resolution_rows,
+    object_recheck_response_rows_before: before.object_recheck_response_rows,
+    object_recheck_response_rows_after_away: afterAway.object_recheck_response_rows,
+    object_recheck_response_rows_after_restore: afterRestore.object_recheck_response_rows,
+    latest_object_resolution_after_restore: afterRestore.latest_object_resolution_id,
+    latest_object_recheck_result_after_restore: afterRestore.latest_object_recheck_result,
+    latest_slot_object_resolution_rows: afterRestore.latest_slot_object_resolution_rows,
+    latest_slot_object_resolution_id: afterRestore.latest_slot_object_resolution_id,
+    latest_restore_object_resolution_rows: afterRestore.latest_restore_object_resolution_rows,
+    latest_restore_object_recheck_response_rows: afterRestore.latest_restore_object_recheck_response_rows,
+    latest_restore_object_resolution_id: afterRestore.latest_restore_object_resolution_id,
     restore_slot: afterRestore.latest_restore_slot,
     restore_year: afterRestore.latest_restore_year,
     restore_day: afterRestore.latest_restore_day,
@@ -7545,7 +7580,7 @@ function runReturnJournalLoop() {
 function formatReturnJournal() {
   const journal = world.gamePrototypeReturnJournal || ensureReturnJournal();
   const latest = journal.snapshotLedger.length ? journal.snapshotLedger[journal.snapshotLedger.length - 1].snapshot : returnJournalSnapshot('current');
-  const rows = journal.journalLedger.slice(-6).map(row => `${row.journal_id}: forward=${row.forward_return_id} away=${row.days_away}d remembered=${row.remembered_residents.join('+') || 'none'} restored=${row.restore_slot}; resources ${row.resource_total_before}->${row.resource_total_after_away}->${row.resource_total_after_restore}; livedPhysics ${row.lived_practice_physics_before || 0}->${row.lived_practice_physics_after_restore || 0}; projectVisuals ${row.project_visual_rows_before || 0}->${row.project_visual_rows_after_restore || 0}/${row.latest_project_visual_after_restore || 'none'}`);
+  const rows = journal.journalLedger.slice(-6).map(row => `${row.journal_id}: forward=${row.forward_return_id} away=${row.days_away}d remembered=${row.remembered_residents.join('+') || 'none'} restored=${row.restore_slot}; resources ${row.resource_total_before}->${row.resource_total_after_away}->${row.resource_total_after_restore}; livedPhysics ${row.lived_practice_physics_before || 0}->${row.lived_practice_physics_after_restore || 0}; projectVisuals ${row.project_visual_rows_before || 0}->${row.project_visual_rows_after_restore || 0}/${row.latest_project_visual_after_restore || 'none'}; objectChain resolutions ${row.object_resolution_rows_before || 0}->${row.object_resolution_rows_after_restore || 0}/${row.latest_object_resolution_after_restore || 'none'} rechecks=${row.object_recheck_response_rows_after_restore || 0}/${row.latest_object_recheck_result_after_restore || 'none'}`);
   return [
     `Acceptance ready: ${journal.acceptanceReady ? 'yes' : 'no'}`,
     `Rows: ${journal.journalLedger.length} / snapshots=${journal.snapshotLedger.length}`,
@@ -7555,6 +7590,7 @@ function formatReturnJournal() {
     `Latest restore: slot=${latest.latest_restore_slot}; year=${latest.latest_restore_year}; day=${latest.latest_restore_day}`,
     `Lived physics rows: current=${latest.lived_practice_physics_rows || 0}; slot=${latest.latest_slot_lived_practice_physics_rows || 0}; latest=${latest.latest_lived_practice_physics_id || 'none'}`,
     `Project visuals: current=${latest.project_visual_rows || 0}; slot=${latest.latest_slot_project_visual_rows || 0}/${latest.latest_slot_project_visual_id || 'none'}; forwardAdded=${latest.latest_forward_project_visual_rows_added || 0}/${latest.latest_forward_project_visual_id || 'none'}; latest=${latest.latest_project_visual_id || 'none'}`,
+    `Object objection chain: current resolutions=${latest.object_resolution_rows || 0}/${latest.latest_object_resolution_id || 'none'}; rechecks=${latest.object_recheck_response_rows || 0}/${latest.latest_object_recheck_response_id || 'none'} result=${latest.latest_object_recheck_result || 'none'}; slot=${latest.latest_slot_object_resolution_rows || 0}/${latest.latest_slot_object_resolution_id || 'none'}; restored=${latest.latest_restore_object_resolution_rows || 0}/${latest.latest_restore_object_resolution_id || 'none'}`,
     `Remembered residents: ${latest.latest_forward_remembered.join(', ') || 'none'}`,
     `No direct reset in normal view: ${journal.noDirectReset ? 'yes' : 'no'}`,
     'Recent return journal rows:',
@@ -8532,6 +8568,11 @@ function firstPlayableSessionSnapshot(label) {
     lived_practice_physical_causality_ready: world.gamePrototypeLivedPractice ? world.gamePrototypeLivedPractice.physicalCausalityReady === true : false,
     lived_practice_physics_rows: world.gamePrototypeLivedPractice && world.gamePrototypeLivedPractice.physicsLedger ? world.gamePrototypeLivedPractice.physicsLedger.length : 0,
     latest_lived_practice_physics_id: world.gamePrototypeLivedPractice && world.gamePrototypeLivedPractice.physicsLedger && world.gamePrototypeLivedPractice.physicsLedger.length ? world.gamePrototypeLivedPractice.physicsLedger[world.gamePrototypeLivedPractice.physicsLedger.length - 1].physics_id : 'none',
+    object_resolution_rows: objectInteraction && objectInteraction.resolutionLedger ? objectInteraction.resolutionLedger.length : 0,
+    object_recheck_response_rows: objectInteraction && objectInteraction.responseLedger ? objectInteraction.responseLedger.filter(row => row.recheck_resolution_id && row.recheck_resolution_id !== 'none').length : 0,
+    latest_object_resolution_id: objectInteraction && objectInteraction.resolutionLedger && objectInteraction.resolutionLedger.length ? objectInteraction.resolutionLedger[objectInteraction.resolutionLedger.length - 1].resolution_id : 'none',
+    latest_object_recheck_response_id: objectInteraction && objectInteraction.responseLedger ? (objectInteraction.responseLedger.slice().reverse().find(row => row.recheck_resolution_id && row.recheck_resolution_id !== 'none') || {}).response_id || 'none' : 'none',
+    latest_object_recheck_result: objectInteraction && objectInteraction.responseLedger ? (objectInteraction.responseLedger.slice().reverse().find(row => row.recheck_resolution_id && row.recheck_resolution_id !== 'none') || {}).resident_recheck_result || 'none' : 'none',
     material_handling_rows: manipulationLoop && manipulationLoop.actionLedger ? manipulationLoop.actionLedger.length : 0,
     material_handling_practice_links: manipulationLoop && manipulationLoop.practiceLinks ? manipulationLoop.practiceLinks.length : 0,
     latest_material_handling_id: latestManipulation ? latestManipulation.manipulation_id : 'none',
@@ -8650,6 +8691,13 @@ function recordFirstPlayableSessionStep(stepId, actionLabel, actionFn) {
     integrated_loop_after: after.integrated_loop_rows || 0,
     latest_integrated_loop_id: after.latest_integrated_loop_id || 'none',
     integrated_loop_complete: after.integrated_loop_complete === true,
+    object_resolution_before: before.object_resolution_rows || 0,
+    object_resolution_after: after.object_resolution_rows || 0,
+    object_recheck_response_before: before.object_recheck_response_rows || 0,
+    object_recheck_response_after: after.object_recheck_response_rows || 0,
+    latest_object_resolution_id: after.latest_object_resolution_id || 'none',
+    latest_object_recheck_response_id: after.latest_object_recheck_response_id || 'none',
+    latest_object_recheck_result: after.latest_object_recheck_result || 'none',
     player_facing: true,
     avatar_direct_command: false,
     hidden_law_normal_view: false,
@@ -13603,6 +13651,13 @@ function saveSlotSummary(slot) {
     project_visual_rows: slot.project_visual_rows,
     latest_project_visual_id: slot.latest_project_visual_id,
     latest_project_visual_cue: slot.latest_project_visual_cue,
+    object_interaction_rows: slot.object_interaction_rows,
+    object_response_rows: slot.object_response_rows,
+    object_resolution_rows: slot.object_resolution_rows,
+    object_recheck_response_rows: slot.object_recheck_response_rows,
+    latest_object_resolution_id: slot.latest_object_resolution_id,
+    latest_object_recheck_response_id: slot.latest_object_recheck_response_id,
+    latest_object_recheck_result: slot.latest_object_recheck_result,
     commons_support_rows: slot.commons_support_rows,
     nearby_action_rows: slot.nearby_action_rows,
     village_day_rows: slot.village_day_rows,
@@ -13813,6 +13868,13 @@ function savePrototypeSlot(label = 'manual prototype save') {
     resident_worksite_ready: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.acceptanceReady === true : false,
     resident_worksite_rows: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.watchLedger.length : 0,
     resident_worksite_snapshots: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.snapshotLedger.length : 0,
+    object_interaction_rows: world.gamePrototypeObjectInteraction && world.gamePrototypeObjectInteraction.interactionLedger ? world.gamePrototypeObjectInteraction.interactionLedger.length : 0,
+    object_response_rows: world.gamePrototypeObjectInteraction && world.gamePrototypeObjectInteraction.responseLedger ? world.gamePrototypeObjectInteraction.responseLedger.length : 0,
+    object_resolution_rows: world.gamePrototypeObjectInteraction && world.gamePrototypeObjectInteraction.resolutionLedger ? world.gamePrototypeObjectInteraction.resolutionLedger.length : 0,
+    object_recheck_response_rows: world.gamePrototypeObjectInteraction && world.gamePrototypeObjectInteraction.responseLedger ? world.gamePrototypeObjectInteraction.responseLedger.filter(row => row.recheck_resolution_id && row.recheck_resolution_id !== 'none').length : 0,
+    latest_object_resolution_id: world.gamePrototypeObjectInteraction && world.gamePrototypeObjectInteraction.resolutionLedger && world.gamePrototypeObjectInteraction.resolutionLedger.length ? world.gamePrototypeObjectInteraction.resolutionLedger[world.gamePrototypeObjectInteraction.resolutionLedger.length - 1].resolution_id : 'none',
+    latest_object_recheck_response_id: world.gamePrototypeObjectInteraction && world.gamePrototypeObjectInteraction.responseLedger ? (world.gamePrototypeObjectInteraction.responseLedger.slice().reverse().find(row => row.recheck_resolution_id && row.recheck_resolution_id !== 'none') || {}).response_id || 'none' : 'none',
+    latest_object_recheck_result: world.gamePrototypeObjectInteraction && world.gamePrototypeObjectInteraction.responseLedger ? (world.gamePrototypeObjectInteraction.responseLedger.slice().reverse().find(row => row.recheck_resolution_id && row.recheck_resolution_id !== 'none') || {}).resident_recheck_result || 'none' : 'none',
     return_journal_ready: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.acceptanceReady === true : false,
     return_journal_rows: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.journalLedger.length : 0,
     return_journal_snapshots: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.snapshotLedger.length : 0,
@@ -13901,6 +13963,13 @@ function returnPrototypeSlot() {
     restored_project_visual_rows: slot.project_visual_rows || 0,
     restored_latest_project_visual_id: slot.latest_project_visual_id || 'none',
     restored_latest_project_visual_cue: slot.latest_project_visual_cue || 'none',
+    restored_object_interaction_rows: slot.object_interaction_rows || 0,
+    restored_object_response_rows: slot.object_response_rows || 0,
+    restored_object_resolution_rows: slot.object_resolution_rows || 0,
+    restored_object_recheck_response_rows: slot.object_recheck_response_rows || 0,
+    restored_latest_object_resolution_id: slot.latest_object_resolution_id || 'none',
+    restored_latest_object_recheck_response_id: slot.latest_object_recheck_response_id || 'none',
+    restored_latest_object_recheck_result: slot.latest_object_recheck_result || 'none',
     restored_first_playable_integrated_rows: slot.first_playable_integrated_rows || 0,
     restored_first_playable_latest_integrated_id: slot.first_playable_latest_integrated_id || 'none',
     restored_first_playable_integrated_complete: slot.first_playable_integrated_complete === true,
@@ -14063,6 +14132,8 @@ function buildPrototypeAcceptanceReceipt() {
   const objectResponseRecheckRows = objectInteraction && objectInteraction.interactionLedger ? objectInteraction.interactionLedger.filter(row => row.proposal_resolution_id && row.proposal_resolution_id !== 'none' && row.resident_recheck_required === true && row.handling_auto_allowed === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
   const objectResponseRecheckAttemptRows = objectInteraction && objectInteraction.responseLedger ? objectInteraction.responseLedger.filter(row => row.recheck_resolution_id && row.recheck_resolution_id !== 'none' && ['post_resolution_recheck', 'recheck_still_blocks'].includes(row.response_kind) && row.handling_auto_allowed === false && row.no_llm === true && row.phrasebook_only === true && row.open_ended_language === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
   const objectResponseRecheckHandlingRows = objectInteraction && objectInteraction.interactionLedger ? objectInteraction.interactionLedger.filter(row => row.recheck_resolution_id && row.recheck_resolution_id !== 'none' && ['allows_careful_handling_after_recheck', 'still_blocks_after_recheck'].includes(row.resident_recheck_result) && row.handling_auto_allowed === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
+  const objectResponseSaveRows = saves && saves.slots ? saves.slots.filter(slot => Number(slot.object_resolution_rows || 0) > 0 && Number(slot.object_recheck_response_rows || 0) > 0 && slot.latest_object_resolution_id && slot.latest_object_resolution_id !== 'none' && slot.latest_object_recheck_response_id && slot.latest_object_recheck_response_id !== 'none').length : 0;
+  const objectResponseRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => Number(row.restored_object_resolution_rows || 0) > 0 && Number(row.restored_object_recheck_response_rows || 0) > 0 && row.restored_latest_object_resolution_id && row.restored_latest_object_resolution_id !== 'none' && row.restored_latest_object_recheck_response_id && row.restored_latest_object_recheck_response_id !== 'none').length : 0;
   const proposalDeckCards = proposalDeck ? proposalDeck.cardLedger.length : 0;
   const proposalDeckActions = proposalDeck ? proposalDeck.actionLedger.length : 0;
   const livedPracticeRows = livedPractice ? livedPractice.actionLedger.length : 0;
@@ -14181,6 +14252,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'object_objection_proposal_actionable', pass: Boolean(objectInteraction && board && proposalDeck && projects && worksite && objectResponseDeckActionRows > 0 && (objectResponseProjectRows > 0 || objectResponseWorksiteRows > 0)), evidence: objectInteraction && board ? `deckActions=${objectResponseDeckActionRows}, projectRows=${objectResponseProjectRows}, worksiteRows=${objectResponseWorksiteRows}` : 'not run' },
     { id: 'object_objection_resolution_recheck', pass: Boolean(objectInteraction && objectResponseResolutionRows > 0 && objectResponseRecheckRows > 0), evidence: objectInteraction ? `resolutionRows=${objectResponseResolutionRows}, recheckRows=${objectResponseRecheckRows}` : 'not run' },
     { id: 'object_objection_recheck_response', pass: Boolean(objectInteraction && objectResponseRecheckAttemptRows > 0 && objectResponseRecheckHandlingRows > 0), evidence: objectInteraction ? `recheckResponses=${objectResponseRecheckAttemptRows}, recheckHandling=${objectResponseRecheckHandlingRows}` : 'not run' },
+    { id: 'object_objection_save_return_persistence', pass: Boolean(saves && objectResponseSaveRows > 0 && objectResponseRestoreRows > 0), evidence: saves ? `saved=${objectResponseSaveRows}, restored=${objectResponseRestoreRows}` : 'not run' },
     { id: 'resident_proposal_deck', pass: Boolean(proposalDeck && proposalDeck.acceptanceReady && proposalDeckCards > 0 && proposalDeckActions >= 3 && proposalDeck.avatarCannotForce === true && proposalDeck.noDirectCommand === true && proposalDeck.noHiddenLawNormalView === true && proposalDeck.playerGlossesOnly === true), evidence: proposalDeck ? `cardSnapshots=${proposalDeckCards}, actions=${proposalDeckActions}` : 'not run' },
     { id: 'lived_practice_loop', pass: Boolean(livedPractice && livedPractice.acceptanceReady && livedPracticeRows >= 4 && livedPracticeSnapshots > 0 && livedPracticePhysicsRows >= 4 && livedPracticeCanvasCueRows > 0 && livedPractice.physicalCausalityReady === true && livedPractice.noDirectCommand === true && livedPractice.noHiddenLawNormalView === true && livedPractice.noPredeclaredTechTree === true && livedPractice.noCorrectConceptInstalled === true), evidence: livedPractice ? `actions=${livedPracticeRows}, snapshots=${livedPracticeSnapshots}, livedPhysics=${livedPracticePhysicsRows}, canvasCues=${livedPracticeCanvasCueRows}` : 'not run' },
     { id: 'resident_worksite', pass: Boolean(worksite && worksite.acceptanceReady && worksiteRows >= 2 && worksiteSnapshots > 0 && worksite.avatarCannotAssignJobs === true && worksite.noDirectCommand === true && worksite.noHiddenLawNormalView === true && worksite.noResourceSpawning === true), evidence: worksite ? `watchRows=${worksiteRows}, snapshots=${worksiteSnapshots}` : 'not run' },
@@ -14293,14 +14365,20 @@ function formatPrototypeClock() {
 function formatPrototypeSaves() {
   const saves = world.gamePrototypeSaves || ensurePrototypeSaves();
   const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; projectVisuals=${slot.project_visual_rows || 0}/${slot.latest_project_visual_id || 'none'}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; integrated=${slot.first_playable_integrated_rows || 0}/${slot.first_playable_latest_integrated_id || 'none'} complete=${slot.first_playable_integrated_complete ? 'yes' : 'no'}; normalActions=${slot.normal_play_action_rows || 0}/${slot.normal_play_follow_rows || 0} follow/${slot.normal_play_follow_recovery_rows || 0} space; avatarPresence=${slot.avatar_presence_rows || 0}/${slot.avatar_presence_latest_id || 'none'} comfort=${slot.avatar_comfort_rows || 0} returnTone=${slot.avatar_presence_return_tone || 'none'}; livedPhysics=${slot.lived_practice_physics_rows || 0}/${slot.lived_practice_latest_physics_id || 'none'}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals/${slot.physical_field_rows || 0} fields/${slot.physical_energy_rows || 0} energy; structural=${slot.structural_stress_rows || 0} stress/${slot.structural_deformation_rows || 0} deform/${slot.structural_repair_rows || 0} repair; constraints=${slot.contact_constraint_rows || 0} contact/${slot.joint_constraint_rows || 0} joints/${slot.constraint_repair_rows || 0} repair; materialState=${slot.material_state_rows || 0} state/${slot.phase_change_rows || 0} phase/${slot.property_drift_rows || 0} props; terrain=${slot.terrain_steps || 0} steps/${slot.terrain_flow_rows || 0} flow/${slot.terrain_support_rows || 0} support; tools=${slot.tool_use_rows || 0} uses/${slot.tool_failure_rows || 0} failures/${slot.tool_repair_rows || 0} repairs; resources=${slot.resource_stock_rows || 0} steps/${slot.resource_loss_rows || 0} losses/${slot.resource_gain_rows || 0} gains; thermal=${slot.thermal_heat_rows || 0} heat/${slot.thermal_smoke_rows || 0} smoke/${slot.thermal_safety_rows || 0} safety; water=${slot.water_flow_rows || 0} flows/${slot.water_leak_rows || 0} leaks/${slot.water_safety_rows || 0} safety; ecology=${slot.ecology_growth_rows || 0} growth/${slot.ecology_harvest_rows || 0} harvest/${slot.ecology_hunger_rows || 0} hunger; manipulation=${slot.material_manipulation_rows || 0}/${slot.material_manipulation_practice_links || 0} practice links; bodies=${slot.resident_body_steps || 0} steps/${slot.resident_body_contacts || 0} contacts/${slot.resident_body_recoveries || 0} recoveries; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; deepPhysics=${slot.deep_time_physics_epochs || 0} epochs/${slot.deep_time_material_flux_rows || 0} flux/${slot.deep_time_physical_effects || 0} effects/${slot.physical_heritage_rows || 0} heritage; survival=${slot.survival_status}`);
+  const objectSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: objectChain interactions=${slot.object_interaction_rows || 0}, responses=${slot.object_response_rows || 0}, resolutions=${slot.object_resolution_rows || 0}/${slot.latest_object_resolution_id || 'none'}, rechecks=${slot.object_recheck_response_rows || 0}/${slot.latest_object_recheck_response_id || 'none'} result=${slot.latest_object_recheck_result || 'none'}`);
   const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, livedPhysics=${row.restored_lived_practice_physics_rows || 0}/${row.restored_lived_practice_latest_physics_id || 'none'}, projectVisuals=${row.restored_project_visual_rows || 0}/${row.restored_latest_project_visual_id || 'none'}, integrated=${row.restored_first_playable_integrated_rows || 0}/${row.restored_first_playable_latest_integrated_id || 'none'} complete=${row.restored_first_playable_integrated_complete ? 'yes' : 'no'} follow=${row.restored_normal_play_follow_rows || 0}/${row.restored_normal_play_follow_recovery_rows || 0} space, avatarPresence=${row.restored_avatar_presence_rows || 0}/${row.restored_avatar_presence_return_id || 'none'} tone=${row.restored_avatar_presence_tone_after_restore || row.restored_avatar_presence_tone || 'none'}, from replay=${row.returned_from_replay_rows}`);
+  const objectReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredObjectChain interactions=${row.restored_object_interaction_rows || 0}, responses=${row.restored_object_response_rows || 0}, resolutions=${row.restored_object_resolution_rows || 0}/${row.restored_latest_object_resolution_id || 'none'}, rechecks=${row.restored_object_recheck_response_rows || 0}/${row.restored_latest_object_recheck_response_id || 'none'} result=${row.restored_latest_object_recheck_result || 'none'}`);
   return [
     `Active slot: ${saves.activeSlotId || 'none'}`,
     `Boundary: ${saves.boundary}`,
     'Slots:',
     ...(slots.length ? slots : ['none']),
+    'Object objection continuity:',
+    ...(objectSlots.length ? objectSlots : ['none']),
     'Returns:',
     ...(returns.length ? returns : ['none']),
+    'Object returns:',
+    ...(objectReturns.length ? objectReturns : ['none']),
     `Export receipt: ${saves.exportReceipt ? `${saves.exportReceipt.slots.length} slot(s) prepared` : 'not prepared'}`,
   ].join('\n');
 }

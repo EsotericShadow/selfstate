@@ -158,6 +158,12 @@ When the player uses `Follow`, the selected resident now records a small memory/
 
 This makes chain-following readable as a resident-noticed interaction rather than a silent UI automation step. The response remains bounded: it adjusts memory, comfort, trust, and public posture only; it does not command work, expose hidden state, or install knowledge.
 
+## Prototype v0 calibrated Follow boundary update
+
+`Follow` is now calibrated instead of always positive. Residents can treat it as constructive tracking, guarded tracking, helpful recognition, or a boundary refusal depending on recent follow pressure, comfort, boundary pressure, and refusal risk.
+
+If boundary/refusal pressure is high, `Follow` records the resident-held boundary and does not advance the chain. The normal action-rail acceptance gate now requires calibrated follow evidence as well as response-expression evidence.
+
 ## Prototype v0 save-slot update
 
 The game prototype shell now includes browser-local prototype save slots. The player can save a slot, advance the autonomous simulation, return to the saved slot, and export a save receipt. This is intentionally scoped as prototype persistence evidence: it preserves meaningful village state, practice/proposal summaries, deep-time year, autonomous day, return log, and replay row counts without claiming production persistence.

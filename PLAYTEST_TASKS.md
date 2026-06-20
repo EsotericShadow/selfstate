@@ -245,6 +245,9 @@
 153. After using `Follow`, inspect Readable behavior or Autonomous residents and confirm the selected resident shows a public `tracking` cue tied to the follow row.
 154. Confirm the selected resident memory mentions following the public chain without claiming hidden-law knowledge or obedience.
 155. Export acceptance and confirm `normal_play_action_rail` evidence includes follow-expression counts.
+156. Use `Follow` repeatedly or after high boundary pressure and confirm the follow row can become `guarded_tracking` or `refused_boundary`.
+157. Confirm a refused `Follow` records `resident_allowed_follow=false` and does not advance the chain as if the resident obeyed.
+158. Export acceptance and confirm `normal_play_action_rail` evidence includes calibrated follow counts.
 
 ## Physics-to-practice slice playtests
 

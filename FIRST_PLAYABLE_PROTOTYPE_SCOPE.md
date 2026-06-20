@@ -28,6 +28,7 @@
 - One primary-surface/canvas cue for the integrated chain so the loop is playable without opening debug-only panels.
 - One normal `Follow` verb that advances or refreshes the active integrated chain without directly commanding residents.
 - One resident-visible `Follow` response that records memory and a public body-language cue.
+- One calibrated `Follow` boundary path where residents can guard or refuse under pressure.
 - One bounded resident language/gloss layer for local terms that emerge from grounded practice history.
 
 ## First prototype success condition
@@ -176,6 +177,7 @@ Required evidence:
 - primary play-surface or canvas cue carrying the chain ID
 - normal action-rail follow row carrying the chain ID
 - resident response expression linked to the follow row
+- calibrated outcome showing constructive, guarded, helpful, or refused follow pressure
 - no direct player command
 - no hidden simulator law in normal view
 - no tech-tree unlock or installed modern concept

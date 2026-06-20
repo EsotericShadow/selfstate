@@ -5853,12 +5853,73 @@ function chooseFollowChainAction(chain) {
   return { action: 'recordPrimaryPlaySurfaceSnapshot', label: 'keep chain visible', reason: 'chain is complete; refresh normal surface cue' };
 }
 
+function deriveFollowChainResponse(residentName, chain, chosen) {
+  const rail = ensureNormalPlayActionRail();
+  const resident = world.residents[residentName] || currentResident();
+  const chainId = chain ? chain.integration_id : 'none';
+  const recentRows = (rail.followChainLedger || []).slice(-10);
+  const recentResidentRows = recentRows.filter(row => row.resident === residentName).length;
+  const recentChainRows = recentRows.filter(row => row.chain_after === chainId || row.chain_before === chainId).length;
+  const boundaryPressure = Number(resident.boundaryPressure || 0);
+  const refusalRisk = Number(resident.refusalRisk || 0);
+  const socialComfort = Number(resident.socialComfort ?? 0.5);
+  const pressureScore = boundaryPressure + refusalRisk + Math.max(0, recentResidentRows - 2) * 0.08 + Math.max(0, recentChainRows - 2) * 0.05 + (chosen.action === 'recordPrimaryPlaySurfaceSnapshot' ? 0.05 : 0);
+  if (pressureScore > 1.05 || refusalRisk > 0.62) {
+    return {
+      outcome: 'refused_boundary',
+      execute: false,
+      trust_delta: -0.004,
+      comfort_delta: -0.006,
+      boundary_delta: 0.014,
+      refusal_delta: 0.012,
+      memory: `held boundary when Gabriel kept following ${chainId}`,
+      expression_action: 'follow_chain_guarded',
+    };
+  }
+  if (pressureScore > 0.68 || boundaryPressure > 0.42 || recentResidentRows >= 3) {
+    return {
+      outcome: 'guarded_tracking',
+      execute: true,
+      trust_delta: 0.001,
+      comfort_delta: -0.002,
+      boundary_delta: 0.006,
+      refusal_delta: 0.004,
+      memory: `tracked ${chainId} with Gabriel but kept a work boundary`,
+      expression_action: 'follow_chain_guarded',
+    };
+  }
+  if (chain && chain.chain_complete === true && socialComfort >= 0.42) {
+    return {
+      outcome: 'recognized_helpful',
+      execute: true,
+      trust_delta: 0.005,
+      comfort_delta: 0.004,
+      boundary_delta: -0.002,
+      refusal_delta: -0.002,
+      memory: `recognized Gabriel following ${chainId} through practice and return`,
+      expression_action: 'follow_chain',
+    };
+  }
+  return {
+    outcome: 'constructive_tracking',
+    execute: true,
+    trust_delta: 0.003,
+    comfort_delta: 0.002,
+    boundary_delta: 0,
+    refusal_delta: 0,
+    memory: `noticed Gabriel following ${chainId} toward ${chosen.label}`,
+    expression_action: 'follow_chain',
+  };
+}
+
 function runNormalPlayFollowChain() {
   const rail = ensureNormalPlayActionRail();
   const beforeChain = latestIntegratedChainRow();
   const chosen = chooseFollowChainAction(beforeChain);
+  const response = deriveFollowChainResponse(world.selected, beforeChain, chosen);
   let receipt = null;
-  if (chosen.action === 'recordFirstPlayableIntegratedLoop') receipt = recordFirstPlayableIntegratedLoop('normal_play_follow_chain_seed');
+  if (response.execute === false) receipt = { event: 'followChainBoundaryHeld', chosenAction: chosen.action };
+  else if (chosen.action === 'recordFirstPlayableIntegratedLoop') receipt = recordFirstPlayableIntegratedLoop('normal_play_follow_chain_seed');
   else if (chosen.action === 'runPlayerProposalDeckLoop') receipt = runPlayerProposalDeckLoop();
   else if (chosen.action === 'runResidentMaterialManipulationStep') receipt = runResidentMaterialManipulationStep('follow_chain');
   else if (chosen.action === 'runLivedPracticeLoop') receipt = runLivedPracticeLoop();
@@ -5866,18 +5927,23 @@ function runNormalPlayFollowChain() {
   else if (chosen.action === 'returnPrototypeSlot') receipt = returnPrototypeSlot();
   else if (chosen.action === 'runReturnJournalLoop') receipt = runReturnJournalLoop();
   else receipt = { event: 'recordPrimaryPlaySurfaceSnapshot', snapshot: recordPrimaryPlaySurfaceSnapshot('follow integrated chain') };
-  const afterChainReceipt = recordFirstPlayableIntegratedLoop('normal_play_follow_chain');
+  const afterChainReceipt = response.execute === false
+    ? { integrationId: beforeChain ? beforeChain.integration_id : 'none' }
+    : recordFirstPlayableIntegratedLoop('normal_play_follow_chain');
   const snapshot = recordPrimaryPlaySurfaceSnapshot('follow integrated chain visible');
   if (world.gamePrototypePlayerMode) updatePlayerModeInterfaceAcceptance();
   const afterChain = latestIntegratedChainRow();
   const row = {
     follow_id: `NPF-${String(rail.followChainLedger.length + 1).padStart(3, '0')}`,
     tick: world.tick,
+    resident: world.selected,
     chain_before: beforeChain ? beforeChain.integration_id : 'none',
     chain_after: afterChain ? afterChain.integration_id : 'none',
     chosen_action: chosen.action,
     chosen_label: chosen.label,
     reason: chosen.reason,
+    response_outcome: response.outcome,
+    resident_allowed_follow: response.execute === true,
     result_event: receipt && receipt.event ? receipt.event : receipt && receipt.type ? receipt.type : chosen.action,
     refreshed_chain_id: afterChainReceipt.integrationId || 'none',
     chain_complete_after: afterChain ? afterChain.chain_complete === true : false,
@@ -5892,19 +5958,17 @@ function runNormalPlayFollowChain() {
     hidden_law_normal_view: false,
     tech_tree_unlock: false,
   };
-  const responseTrustDelta = row.chain_complete_after ? 0.005 : row.chosen_action === 'recordFirstPlayableIntegratedLoop' ? 0.001 : 0.003;
-  const responseComfortDelta = row.chain_complete_after ? 0.004 : 0.002;
   mutateResident(world.selected, {
-    trust: responseTrustDelta,
-    progress: 0.004,
-    socialComfort: responseComfortDelta,
-    memory: row.chain_complete_after
-      ? `Gabriel followed the public chain ${row.chain_after} back through practice and return`
-      : `Gabriel followed the public chain ${row.chain_after} toward ${row.chosen_label}`,
+    trust: response.trust_delta,
+    progress: response.execute === false ? -0.001 : 0.004,
+    socialComfort: response.comfort_delta,
+    boundaryPressure: response.boundary_delta,
+    refusalRisk: response.refusal_delta,
+    memory: response.memory,
     historyEvent: 'normal play follow chain',
-    historyDetail: `${row.follow_id}; ${row.chosen_action}; complete=${row.chain_complete_after}`
+    historyDetail: `${row.follow_id}; ${row.chosen_action}; outcome=${row.response_outcome}; allowed=${row.resident_allowed_follow}`
   });
-  const expressionRow = recordVisibleResidentExpression(world.selected, 'follow_chain');
+  const expressionRow = recordVisibleResidentExpression(world.selected, response.expression_action);
   row.resident_response_expression_id = expressionRow.expression_id;
   row.resident_response_marker = expressionRow.marker;
   row.resident_response_posture = expressionRow.posture;
@@ -6085,7 +6149,7 @@ function formatNormalPlayActionRail() {
   const options = normalPlayOptions();
   const optionRows = options.map(option => `${option.label}: ${option.intent}; recommended=${option.recommended ? 'yes' : 'no'}`);
   const actionRows = rail.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.label} -> ${row.underlying_action}; proposal=${row.proposal_id}; practice=${row.practice_id}; handling=${row.manipulation_id || 'none'}; follow=${row.follow_chain_id || 'none'}/${row.follow_chain_after || 'none'}; save=${row.save_slot_id}`);
-  const followRows = (rail.followChainLedger || []).slice(-5).map(row => `${row.follow_id}: ${row.chosen_label}; chain=${row.chain_before}->${row.chain_after}; complete=${row.chain_complete_after}; response=${row.resident_response_expression_id || 'none'}/${row.resident_response_marker || 'none'}; proposal=${row.proposal_id}; practice=${row.practice_id}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
+  const followRows = (rail.followChainLedger || []).slice(-5).map(row => `${row.follow_id}: ${row.chosen_label}; outcome=${row.response_outcome || 'none'}; allowed=${row.resident_allowed_follow !== false}; chain=${row.chain_before}->${row.chain_after}; complete=${row.chain_complete_after}; response=${row.resident_response_expression_id || 'none'}/${row.resident_response_marker || 'none'}; proposal=${row.proposal_id}; practice=${row.practice_id}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
   return [
     `Acceptance ready: ${rail.acceptanceReady ? 'yes' : 'no'}`,
     `Actions: ${rail.actionLedger.length} / option snapshots=${rail.optionLedger.length}`,
@@ -11168,6 +11232,12 @@ function deriveVisibleResidentExpression(residentName, action = 'observe', needs
 	    gazeCue = 'checks the proposal, material, and saved trace';
 	    marker = 'tracking';
 	    reason = 'avatar followed a public causality chain';
+  } else if (action === 'follow_chain_guarded') {
+	    posture = 'half-turned toward the chain';
+	    movementCue = 'keeps one hand on the work boundary';
+	    gazeCue = 'checks the avatar before the proposal';
+	    marker = 'guarded tracking';
+	    reason = 'avatar followed the chain under boundary pressure';
 		  } else if (action === 'body_physics') {
 	    posture = 'weight shifted into footing';
 	    movementCue = 'paces by load and ground';
@@ -13234,6 +13304,7 @@ function buildPrototypeAcceptanceReceipt() {
   const actionRailOptions = actionRail ? actionRail.optionLedger.length : 0;
   const actionRailFollowRows = actionRail && actionRail.followChainLedger ? actionRail.followChainLedger.length : 0;
   const actionRailFollowExpressionRows = actionRail && actionRail.followChainLedger ? actionRail.followChainLedger.filter(row => row.resident_response_expression_id && row.resident_response_expression_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
+  const actionRailFollowCalibratedRows = actionRail && actionRail.followChainLedger ? actionRail.followChainLedger.filter(row => row.response_outcome && typeof row.resident_allowed_follow === 'boolean' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const playerModeSessions = playerMode ? playerMode.sessionLedger.length : 0;
   const playerModeVisibleCards = playerMode && playerMode.visibleSurface ? playerMode.visibleSurface.visible_cards.length : 0;
   const movementRouteRows = movementRoute ? movementRoute.routeLedger.length : 0;
@@ -13342,7 +13413,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'playable_village_day_0_3', pass: Boolean(villageDay03 && villageDay03.acceptanceReady && villageDay03Rows >= 4 && villageDay03PlayerRows >= 4 && villageDay03ResidentRows >= 4 && villageDay03WorldRows >= 4 && villageDay03.physicsLinks.length > 0 && villageDay03.proposalLinks.length > 0 && villageDay03.practiceLinks.length > 0 && villageDay03.saveLinks.length > 0 && villageDay03ReturnLinks > 0 && villageDay03.noDirectCommand === true && villageDay03.noTechTreeUnlock === true), evidence: villageDay03 ? `${villageDay03.phase}; rows=${villageDay03Rows}, player=${villageDay03PlayerRows}, resident=${villageDay03ResidentRows}, world=${villageDay03WorldRows}, returns=${villageDay03ReturnLinks}` : 'not run' },
     { id: 'primary_play_surface', pass: Boolean(worldStage && worldStage.acceptanceReady && worldStageFocusRows >= 3 && worldStageCueRows >= 3 && worldStagePromptRows >= 3 && integratedCanvasCueRows > 0 && worldStage.canvasFirst === true && worldStage.noHiddenLawInNormalView === true && worldStage.noDirectCommand === true), evidence: worldStage ? `${worldStage.phase}; focus=${worldStageFocusRows}, cues=${worldStageCueRows}, integrated=${integratedCanvasCueRows}, prompts=${worldStagePromptRows}` : 'not run' },
     { id: 'first_playable_walkthrough', pass: Boolean(walkthrough && walkthrough.acceptanceReady && walkthroughSteps >= walkthrough.requiredSteps.length && walkthroughLinks >= walkthrough.requiredSteps.length && walkthrough.noDirectCommand === true && walkthrough.noTechTreeUnlock === true && walkthrough.noHiddenLawNormalView === true), evidence: walkthrough ? `${walkthrough.phase}; steps=${walkthroughSteps}, links=${walkthroughLinks}` : 'not run' },
-    { id: 'normal_play_action_rail', pass: Boolean(actionRail && actionRail.acceptanceReady && actionRailRows >= actionRail.verbs.length && actionRailOptions > 0 && actionRailFollowRows > 0 && actionRailFollowExpressionRows > 0 && actionRail.playerLanguageOnly === true && actionRail.noDirectCommand === true && actionRail.noTechTreeUnlock === true), evidence: actionRail ? `actions=${actionRailRows}, optionSnapshots=${actionRailOptions}, follow=${actionRailFollowRows}, followExpression=${actionRailFollowExpressionRows}, verbs=${actionRail.verbs.join('/')}` : 'not run' },
+    { id: 'normal_play_action_rail', pass: Boolean(actionRail && actionRail.acceptanceReady && actionRailRows >= actionRail.verbs.length && actionRailOptions > 0 && actionRailFollowRows > 0 && actionRailFollowExpressionRows > 0 && actionRailFollowCalibratedRows > 0 && actionRail.playerLanguageOnly === true && actionRail.noDirectCommand === true && actionRail.noTechTreeUnlock === true), evidence: actionRail ? `actions=${actionRailRows}, optionSnapshots=${actionRailOptions}, follow=${actionRailFollowRows}, followExpression=${actionRailFollowExpressionRows}, calibrated=${actionRailFollowCalibratedRows}, verbs=${actionRail.verbs.join('/')}` : 'not run' },
     { id: 'player_mode_interface', pass: Boolean(playerMode && playerMode.acceptanceReady && playerModeSessions > 0 && playerModeVisibleCards >= 6 && playerMode.normalViewOnly === true && playerMode.debugPanelsHidden === true && playerMode.noDirectCommand === true && playerMode.noHiddenLawNormalView === true && playerMode.playerGlossesOnly === true), evidence: playerMode ? `enabled=${playerMode.enabled}, sessions=${playerModeSessions}, visibleCards=${playerModeVisibleCards}` : 'not run' },
     { id: 'player_movement_route', pass: Boolean(movementRoute && movementRoute.acceptanceReady && movementRouteRows > 0 && movementRouteSnapshots > 0 && movementRoute.routeLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.no_teleport === true && row.distance > 0) && movementRoute.noDirectCommand === true), evidence: movementRoute ? `rows=${movementRouteRows}, snapshots=${movementRouteSnapshots}` : 'not run' },
     { id: 'player_resident_encounter', pass: Boolean(residentEncounter && residentEncounter.acceptanceReady && residentEncounterRows > 0 && residentEncounterSnapshots > 0 && residentEncounter.encounterLedger.every(row => row.player_facing === true && row.no_llm === true && row.phrasebook_only === true && row.open_ended_language === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.source_history_preserved === true) && residentEncounter.noOpenEndedLanguage === true && residentEncounter.noDirectCommand === true), evidence: residentEncounter ? `rows=${residentEncounterRows}, snapshots=${residentEncounterSnapshots}` : 'not run' },

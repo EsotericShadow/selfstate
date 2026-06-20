@@ -59,7 +59,8 @@
 7. The primary play surface and world canvas show the active chain as a public cue.
 8. The normal action rail offers `Follow` to continue the next missing public link without opening debug panels.
 9. Residents visibly notice `Follow` through memory and public body-language cues.
-10. The first-playable session receipt exposes the single chain without exposing hidden simulator law or installing a modern concept.
+10. Residents may accept, guard, or refuse the follow pressure; refusal records a boundary instead of advancing the chain.
+11. The first-playable session receipt exposes the single chain without exposing hidden simulator law or installing a modern concept.
 
 ## Resident language/gloss loop
 

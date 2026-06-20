@@ -6695,6 +6695,7 @@ function normalPlayOptions() {
     { verb: 'wait', label: 'Wait', action: 'endVillageDay', intent: 'let residents and world systems advance one step', recommended: guide.button === 'endVillageDay' || guide.button === 'runPlayableVillageDay03Step' },
     { verb: 'return', label: 'Return', action: 'leaveAndReturnLater', intent: 'leave and come back to check continuity', recommended: guide.button === 'leaveAndReturnLater' },
     { verb: 'save', label: 'Save', action: 'savePrototypeSlot', intent: 'save current village and walkthrough state', recommended: guide.button === 'exportPrototypeAcceptanceReceipt' || guide.button === 'runFirstPlayableWalkthrough' },
+    { verb: 'physics_path', label: 'Physics path', action: 'runFirstPlayableAmbientPhysicsHappyPath', intent: 'follow ambient physical pressure through resident language, proposal, save/return, and public body language', recommended: guide.button === 'runFirstPlayableAmbientPhysicsHappyPath' },
     { verb: 'follow', label: 'Follow', action: 'runNormalPlayFollowChain', intent: objectChain.active && objectChain.phase !== 'object chain persisted' ? `follow object chain ${objectChain.response_id}->${objectChain.proposal_id}->${objectChain.resolution_id}: ${objectChain.next_label}` : normalTestChain.active && normalTestChain.phase !== 'normal test persisted' ? `follow normal-test chain ${normalTestChain.action_id}->${normalTestChain.test_id}->${normalTestChain.proposal_id}: ${normalTestChain.next_label}` : latest.integrated_loop_id && latest.integrated_loop_id !== 'none' ? `follow chain ${latest.integrated_loop_id} through the next missing public link` : 'create and follow the first integrated causality chain', recommended: guide.button === 'runNormalPlayFollowChain' || Boolean(objectChain.active && objectChain.phase !== 'object chain persisted') || Boolean(normalTestChain.active && normalTestChain.phase !== 'normal test persisted') || Boolean(latest.integrated_loop_id && latest.integrated_loop_id !== 'none' && latest.integrated_loop_complete !== true) },
     { verb: 'space', label: 'Space', action: 'runNormalPlayGiveSpace', intent: boundaryFollow ? `give space after ${boundaryFollow.response_outcome} on ${boundaryFollow.chain_after}` : 'give residents room before pressing the chain again', recommended: guide.button === 'runNormalPlayGiveSpace' || Boolean(boundaryFollow) },
   ].map(option => ({
@@ -7510,6 +7511,10 @@ function playerModeVisibleSurfaceSnapshot() {
   const expression = latestVisibleExpressionFor(world.selected);
   const practice = world.emergentPracticeGraph && world.emergentPracticeGraph.nodes.length ? world.emergentPracticeGraph.nodes[world.emergentPracticeGraph.nodes.length - 1] : null;
   const proposal = world.villageBoard && world.villageBoard.projectProposals.length ? world.villageBoard.projectProposals[world.villageBoard.projectProposals.length - 1] : null;
+  const playSession = world.gamePrototypePlaySession || null;
+  const ambientPath = playSession && playSession.ambientPhysicsHappyPathLedger && playSession.ambientPhysicsHappyPathLedger.length
+    ? playSession.ambientPhysicsHappyPathLedger[playSession.ambientPhysicsHappyPathLedger.length - 1]
+    : null;
   return {
     tick: world.tick,
     selected_resident: world.selected,
@@ -7526,7 +7531,15 @@ function playerModeVisibleSurfaceSnapshot() {
     integrated_chain: latest.integrated_loop_id && latest.integrated_loop_id !== 'none'
       ? `${latest.integrated_loop_id}: ${latest.integrated_loop_complete ? 'complete' : 'forming'} / proposal ${latest.integrated_loop_proposal_id} / practice ${latest.integrated_loop_practice_id} / physics ${latest.integrated_loop_physics_id}`
       : 'none',
-    visible_cards: ['world canvas', 'normal action rail', 'player guide', 'primary play surface', 'first playable walkthrough', 'normal play action rail', 'player mode interface', 'resident encounter', 'physical object interaction', 'resident proposal deck', 'lived practice loop', 'resident worksite', 'return journal', 'first playable session receipt', 'public outcomes'],
+    ambient_physics_path: ambientPath
+      ? `${ambientPath.happy_path_id}: ${ambientPath.acceptance_ready ? 'ready' : 'forming'} / proposal ${ambientPath.proposal_id} / word ${ambientPath.resident_word} / restore ${ambientPath.restore_match ? 'matched' : 'not matched'} / body ${ambientPath.body_expression_id}`
+      : 'not started',
+    ambient_physics_path_ready: ambientPath ? ambientPath.acceptance_ready === true : false,
+    ambient_physics_path_id: ambientPath ? ambientPath.happy_path_id : 'none',
+    ambient_physics_path_proposal_id: ambientPath ? ambientPath.proposal_id : 'none',
+    ambient_physics_path_word: ambientPath ? ambientPath.resident_word : 'none',
+    ambient_physics_path_body_expression_id: ambientPath ? ambientPath.body_expression_id : 'none',
+    visible_cards: ['world canvas', 'normal action rail', 'player guide', 'primary play surface', 'ambient physics path', 'first playable walkthrough', 'normal play action rail', 'player mode interface', 'resident encounter', 'physical object interaction', 'resident proposal deck', 'lived practice loop', 'resident worksite', 'return journal', 'first playable session receipt', 'public outcomes'],
     hidden_by_default: ['trace JSON', 'QA manifest', 'deep debug panels', 'prototype subsystem action grid', 'hidden simulator law detail'],
     audit_access: 'available after leaving player mode or through explicit audit/deep-panel controls',
     shows_public_state: true,
@@ -7553,6 +7566,8 @@ function updatePlayerModeInterfaceAcceptance() {
     mode.sessionLedger.length > 0 &&
     snapshot.visible_cards.length >= 6 &&
     snapshot.action_verbs.length >= 6 &&
+    snapshot.visible_cards.includes('ambient physics path') &&
+    snapshot.action_verbs.includes('Physics path') &&
     snapshot.shows_public_state === true &&
     snapshot.exposes_hidden_law === false &&
     snapshot.direct_command === false
@@ -7565,6 +7580,8 @@ function updatePlayerModeInterfaceAcceptance() {
     hidden_by_default: snapshot.hidden_by_default,
     action_verbs: snapshot.action_verbs,
     latest_next_action: snapshot.next_action,
+    ambient_physics_path: snapshot.ambient_physics_path,
+    ambient_physics_path_ready: snapshot.ambient_physics_path_ready,
     boundary: mode.boundary,
   };
   return mode.acceptanceReady;
@@ -7661,6 +7678,7 @@ function formatPlayerModeInterface() {
     `Resident cue: ${snapshot.resident_cue}`,
     `Suggested next action: ${snapshot.next_action} (${snapshot.next_action_hook})`,
     `Integrated chain: ${snapshot.integrated_chain}`,
+    `Ambient physics path: ${snapshot.ambient_physics_path}`,
     `Normal verbs: ${snapshot.action_verbs.join(', ')}`,
     `Visible cards: ${snapshot.visible_cards.join(', ')}`,
     `Hidden by default: ${snapshot.hidden_by_default.join(', ')}`,
@@ -14935,7 +14953,7 @@ function derivePrototypePlayerGuide() {
     return { ...guide, phase: 'follow integrated chain', nextAction: 'Follow chain', why: `continue ${integratedChain.integration_id} through the normal action rail instead of opening debug panels`, button: 'runNormalPlayFollow' };
   }
   if (!world.gamePrototypeActionRail || !world.gamePrototypeActionRail.acceptanceReady) {
-    return { ...guide, phase: 'normal play controls', nextAction: 'Normal play loop', why: 'prove the prototype can be driven through player-language verbs: Look, Move, Ask, Talk, Objects, Handling, Support, Wait, Return, Save, and Follow', button: 'runNormalPlayActionRailLoop' };
+    return { ...guide, phase: 'normal play controls', nextAction: 'Normal play loop', why: 'prove the prototype can be driven through player-language verbs: Look, Move, Ask, Talk, Objects, Handling, Support, Wait, Return, Save, Physics path, and Follow', button: 'runNormalPlayActionRailLoop' };
   }
   if (!world.gamePrototypePlayerMode || !world.gamePrototypePlayerMode.acceptanceReady) {
     return { ...guide, phase: 'player mode interface', nextAction: 'Player mode loop', why: 'switch the shell into a normal player-facing view that foregrounds the canvas, resident cues, public problems, and player-language verbs while hiding debug-heavy panels', button: 'runPlayerModeInterfaceLoop' };

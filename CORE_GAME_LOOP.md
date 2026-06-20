@@ -550,9 +550,10 @@ The prototype now has a normal player-facing mode:
 
 1. The player enters Player mode from the normal action rail or prototype surface.
 2. The shell foregrounds the canvas, selected resident cue, current problem, player guide, primary play surface, normal action rail, and public outcomes.
-3. Debug-heavy subsystem actions, deep trace panels, QA manifest, and hidden-law audit detail are hidden by default.
-4. The player can still leave Player mode and use audit/reviewer surfaces explicitly.
-5. Entering or leaving Player mode records a receipt row but does not alter resident decisions, spawn resources, unlock technology, or expose hidden simulator law.
+3. The shell includes `Physics path` and an ambient physics path card when the guided physics path is available.
+4. Debug-heavy subsystem actions, deep trace panels, QA manifest, and hidden-law audit detail are hidden by default.
+5. The player can still leave Player mode and use audit/reviewer surfaces explicitly.
+6. Entering or leaving Player mode records a receipt row but does not alter resident decisions, spawn resources, unlock technology, or expose hidden simulator law.
 
 This loop is an interface constraint, not a new simulation organ. It keeps the first playable path readable while preserving the audit split.
 

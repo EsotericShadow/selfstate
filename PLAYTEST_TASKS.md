@@ -306,8 +306,8 @@
 
 ## Player mode interface playtests
 
-- Toggle `Player mode` from the normal action rail and confirm debug-heavy controls disappear while Look, Move, Ask, Talk, Objects, Support, Wait, Return, Save, and Player mode remain reachable.
-- Confirm the canvas, player guide, primary play surface, normal action rail, public outcomes, and Player mode interface card remain visible.
+- Toggle `Player mode` from the normal action rail and confirm debug-heavy controls disappear while Look, Move, Ask, Talk, Objects, Support, Wait, Return, Save, Physics path, and Player mode remain reachable.
+- Confirm the canvas, player guide, primary play surface, normal action rail, ambient physics path, public outcomes, and Player mode interface card remain visible.
 - Confirm Player mode records a session row with no direct resident command and no hidden-law exposure in normal view.
 - Leave Player mode and confirm audit/reviewer surfaces are still recoverable explicitly.
 - Export acceptance and confirm `player_mode_interface` appears as a requirement after the Player mode loop runs.

@@ -500,6 +500,8 @@ The browser shell now includes a `Player mode` toggle and `Player mode loop` mil
 
 While player mode is active, debug-heavy controls, subsystem action grids, QA manifest, deep traces, and hidden-law audit panels are hidden by default. They remain available by leaving player mode or using explicit audit/reviewer controls. The mode records `player_mode_interface` acceptance evidence without spawning resources, commanding residents, exposing hidden simulator law, or adding a tech-tree shortcut.
 
+Player mode now also includes the `Physics path` normal action and an `ambient physics path` card. The card summarizes the latest happy-path receipt, proposal, resident word, restore match, and body-language expression so physics-driven resident proposals can be followed from the normal view.
+
 This is game-build interface work, not a research report. The goal is to make the existing village prototype playable before adding more systems.
 
 ## Game prototype v0 update: Resident Proposal Deck

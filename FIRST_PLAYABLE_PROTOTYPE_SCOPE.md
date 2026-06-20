@@ -1001,3 +1001,7 @@ A pressure-grounded management card should preserve:
 - proposal deck card carrying the same language fields
 - Ask/Support/Wait action row carrying the same language fields
 - no direct avatar command, hidden-law exposure, resource spawning, or forced job assignment
+
+## Added scope gate: Pressure language reaches project worksite
+
+The first playable scope now expects pressure-language proposals to remain intact after support. Acceptance requires at least one pressure-language project row, one worksite watch row, and one visual construction row with resident word, player gloss, no direct avatar command, no hidden-law normal-view exposure, no fixed asset shortcut, and no resource spawning.

@@ -810,3 +810,9 @@ Implementation boundary:
 - The proposal remains resident-authored and cannot be forced by the avatar.
 - The card uses resident language plus a gloss, not an English technology label.
 - Hidden simulator law remains audit-only and no resource is spawned by the deck.
+
+## Prototype increment: pressure-language project/worksite continuity
+
+Supported pressure-language proposals now keep their local resident word, imperfect player gloss, pressure id, root id, term id, component id, and pressure kind when residents turn the proposal into project work. The lineage is carried through support events, project rows, material-world construction rows, visual construction cues, resident worksite watch rows, and the first-playable acceptance gate.
+
+This keeps the game rule intact: the avatar can support conditions, but the resident meaning travels with the resident action. Normal view still shows local wording and glosses without exposing hidden physical law or installing a correct concept.

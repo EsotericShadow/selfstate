@@ -601,3 +601,7 @@
 4. Use Ask, Support, or Wait.
 5. Confirm the deck action row preserves the same pressure-language fields.
 6. Confirm the card cannot force the resident and does not expose hidden simulator law.
+
+## Playtest task: support a pressure-language proposal into a worksite
+
+Find a proposal carrying a local pressure-language term, support it without assigning a job, then watch residents advance the project. Confirm the resident word and imperfect gloss remain visible in project/worksite/visual evidence, while audit-only physics remains hidden from normal view.

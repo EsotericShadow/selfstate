@@ -875,3 +875,9 @@ This moves cultivated resident language into ordinary play. The player hears the
 physics pressure -> resident proposal -> pressure-language grounding -> proposal card -> Ask/Support/Wait deck action.
 
 This makes diegetic village management use resident language. A card can show what residents call the pressure while still keeping the avatar in an influence-not-command role.
+
+## Pressure-language project/worksite loop
+
+The playable chain now includes: resident physics pressure -> grounded resident word -> proposal card -> avatar support -> resident project work -> material-world construction row -> visual worksite cue -> resident worksite watch row.
+
+The player influences the conditions around a proposal, but does not command labor or grant knowledge. The resulting project/worksite evidence remains tied to the resident term and imperfect gloss so physical world changes stay culturally and causally traceable.

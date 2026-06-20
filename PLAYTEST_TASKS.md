@@ -474,3 +474,11 @@
 - Open the proposal deck and confirm a `VBP-NAT-...` card appears with the resident-test source.
 - Use Ask, Support, or Wait and confirm the card remains resident-mediated and no-force.
 - Export or inspect acceptance and confirm `normal_test_reaches_village_board` passes without hidden-law exposure or a tech-tree unlock.
+
+## Normal-test actionable project/worksite playtests
+
+- Generate a normal-action resident test, then open the proposal deck and support the `VBP-NAT-...` proposal.
+- Run resident worksite or project advancement and confirm project rows show `normalTest=...`.
+- Confirm worksite watch rows show the same resident-test source.
+- Confirm visual construction cues preserve the normal-test lineage and still draw physical component changes.
+- Export or inspect acceptance and confirm `normal_test_proposal_actionable` passes with support, project, worksite, and visual evidence.

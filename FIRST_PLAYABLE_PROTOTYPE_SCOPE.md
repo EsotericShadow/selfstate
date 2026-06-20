@@ -811,3 +811,15 @@ Evidence required:
 - proposal card fields include source normal action, resident test, and auto-test IDs
 - avatar can ask/support/wait but cannot force the resident project
 - no hidden-law exposure and no tech-tree unlock
+
+## Added scope gate: Normal-test proposal actionable
+
+The first playable scope now requires normal-action resident tests to become actionable resident work, not just board cards.
+
+Evidence required:
+- at least one `normal_test_proposal_actionable` acceptance row
+- normal-test support event with `forced=false`
+- project row linked to a resident test ID
+- worksite row linked to the same normal-test path
+- visual construction cue linked to the normal-test path
+- no hidden-law exposure, no resource spawning, and no direct command

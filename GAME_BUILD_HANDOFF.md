@@ -679,3 +679,11 @@ Resident tests generated from normal player actions now post diegetic village-bo
 The proposal deck carries these links as normal player-facing cards. The avatar may ask, support, or wait, but cannot force the project or install the correct explanation.
 
 The acceptance gate is `normal_test_reaches_village_board`. It requires at least one normal-action resident test to reach the village board as a no-force, no-hidden-law, no-tech-unlock proposal.
+
+## Prototype v0 normal-test actionable project/worksite update
+
+`VBP-NAT-...` proposals are now actionable through the existing resident project and worksite path. Support events, project rows, construction rows, visual construction cues, completion rows, and resident worksite watch rows now preserve normal-action test lineage: normal action ID, resident test ID, auto-test ID, and source manipulation where available.
+
+The project and worksite panels show `normalTest=...` so a playtester can trace ordinary action -> resident test -> board proposal -> support -> resident work -> visible construction without reading debug-only state.
+
+The acceptance gate is `normal_test_proposal_actionable`. It requires normal-test proposals to produce support, project, worksite, and visual rows while preserving no-force, no-resource-spawning, and no-hidden-law boundaries.

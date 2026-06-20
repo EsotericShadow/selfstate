@@ -7818,6 +7818,11 @@ function recordResidentWorksiteWatch(result, beforeRows, beforeConstructions) {
     object_response_resolution_id: activeProposal ? activeProposal.object_response_resolution_id || 'none' : 'none',
     object_response_resolution_status: activeProposal ? activeProposal.object_response_resolution_status || 'none' : 'none',
     object_objection_path: Boolean(activeProposal && activeProposal.related_object_response_id && activeProposal.related_object_response_id !== 'none'),
+    normal_action_test_path: Boolean(activeProposal && activeProposal.normal_action_test_path === true),
+    related_normal_action_id: activeProposal ? activeProposal.related_normal_action_id || 'none' : 'none',
+    related_resident_test_id: activeProposal ? activeProposal.related_resident_test_id || 'none' : 'none',
+    related_auto_test_id: activeProposal ? activeProposal.related_auto_test_id || 'none' : 'none',
+    related_source_manipulation_id: activeProposal ? activeProposal.related_source_manipulation_id || 'none' : 'none',
     proposer: snapshot.proposer,
     problem: snapshot.problem,
     status: snapshot.status,
@@ -7891,7 +7896,7 @@ function runResidentWorksiteLoop() {
 function formatResidentWorksite() {
   const worksite = world.gamePrototypeWorksite || ensureResidentWorksite();
   const snapshot = worksite.snapshotLedger.length ? worksite.snapshotLedger[worksite.snapshotLedger.length - 1].snapshot : residentWorksiteSnapshot();
-  const watchRows = worksite.watchLedger.slice(-8).map(row => `${row.watch_id}: ${row.proposal_id} ${row.status} progress=${row.progress}; objectSource=${row.related_object_response_id || 'none'}; resolution=${row.object_response_resolution_status || 'none'}; visual=${row.construction_visual_id || 'none'} ${row.construction_stage || 'none'}; construction+${row.constructions_added}; added=${row.components_added}; repaired=${row.components_repaired}; direct=${row.avatar_direct_command}`);
+  const watchRows = worksite.watchLedger.slice(-8).map(row => `${row.watch_id}: ${row.proposal_id} ${row.status} progress=${row.progress}; objectSource=${row.related_object_response_id || 'none'}; normalTest=${row.related_resident_test_id || 'none'}; resolution=${row.object_response_resolution_status || 'none'}; visual=${row.construction_visual_id || 'none'} ${row.construction_stage || 'none'}; construction+${row.constructions_added}; added=${row.components_added}; repaired=${row.components_repaired}; direct=${row.avatar_direct_command}`);
   return [
     `Acceptance ready: ${worksite.acceptanceReady ? 'yes' : 'no'}`,
     `Watch rows: ${worksite.watchLedger.length} / snapshots=${worksite.snapshotLedger.length}`,
@@ -13398,11 +13403,11 @@ function formatPrototypeProjects() {
   const active = board && board.projectProposals
     ? board.projectProposals.filter(row => !row.project_completed).slice(-5)
     : [];
-  const activeRows = active.map(row => `${row.proposal_id}: ${row.proposer} / ${row.status} / progress=${Number(row.project_progress || 0).toFixed(2)} / materials=${(row.materials_needed || []).join('+')}`);
-  const workRows = projects.projectLedger.slice(-6).map(row => `${row.project_id}: ${row.proposal_id} ${row.status} progress=${row.progress_before ?? 'n/a'}->${row.progress} tool=${row.tool_id || 'none'} fit=${row.tool_fit || 0} failed=${row.tool_failed === true} consumed=${Object.entries(row.materials_consumed || {}).map(([key, value]) => `${key}:${value}`).join('+') || 'none'} construction=${row.construction_id || 'none'} visual=${row.visual_id || 'none'} added=${row.components_added ? row.components_added.length : 0} repaired=${row.components_repaired ? row.components_repaired.length : 0}`);
-  const completionRows = projects.completionLedger.slice(-4).map(row => `${row.completion_id}: ${row.proposal_id} completed ${row.problem_addressed}; construction=${row.construction_id || 'none'} added=${row.components_added ? row.components_added.length : 0}; maintenance=${row.maintenance_cost}`);
+  const activeRows = active.map(row => `${row.proposal_id}: ${row.proposer} / ${row.status} / normalTest=${row.related_resident_test_id || 'none'} / progress=${Number(row.project_progress || 0).toFixed(2)} / materials=${(row.materials_needed || []).join('+')}`);
+  const workRows = projects.projectLedger.slice(-6).map(row => `${row.project_id}: ${row.proposal_id} ${row.status} progress=${row.progress_before ?? 'n/a'}->${row.progress} normalTest=${row.related_resident_test_id || 'none'} tool=${row.tool_id || 'none'} fit=${row.tool_fit || 0} failed=${row.tool_failed === true} consumed=${Object.entries(row.materials_consumed || {}).map(([key, value]) => `${key}:${value}`).join('+') || 'none'} construction=${row.construction_id || 'none'} visual=${row.visual_id || 'none'} added=${row.components_added ? row.components_added.length : 0} repaired=${row.components_repaired ? row.components_repaired.length : 0}`);
+  const completionRows = projects.completionLedger.slice(-4).map(row => `${row.completion_id}: ${row.proposal_id} completed ${row.problem_addressed}; normalTest=${row.related_resident_test_id || 'none'} construction=${row.construction_id || 'none'} added=${row.components_added ? row.components_added.length : 0}; maintenance=${row.maintenance_cost}`);
   const stalledRows = projects.stalledLedger.slice(-4).map(row => `${row.project_id}: ${row.proposal_id} stalled because ${row.stalled_reason}; progress=${row.progress}`);
-  const visualRows = (projects.visualLedger || []).slice(-6).map(row => `${row.visual_id}: ${row.proposal_id} ${row.stage}; progress=${row.progress_before ?? 'n/a'}->${row.progress_after}; affected=${row.affected_component_ids.join(',') || 'none'}; cue=${row.canvas_cue}`);
+  const visualRows = (projects.visualLedger || []).slice(-6).map(row => `${row.visual_id}: ${row.proposal_id} ${row.stage}; normalTest=${row.related_resident_test_id || 'none'}; progress=${row.progress_before ?? 'n/a'}->${row.progress_after}; affected=${row.affected_component_ids.join(',') || 'none'}; cue=${row.canvas_cue}`);
   return [
     `Runs: ${projects.runCount} / work rows=${projects.projectLedger.length} / visuals=${projects.visualLedger ? projects.visualLedger.length : 0} / completed=${projects.completionLedger.length} / stalled=${projects.stalledLedger.length}`,
     `Boundary: ${projects.boundary}`,
@@ -14752,6 +14757,10 @@ function buildPrototypeAcceptanceReceipt() {
   const normalActionResidentTestRows = actionRail && actionRail.actionLedger ? actionRail.actionLedger.filter(row => row.ordinary_bottleneck_feed_id && row.ordinary_bottleneck_feed_id !== 'none' && row.ordinary_bottleneck_test_id && row.ordinary_bottleneck_test_id !== 'none' && row.ordinary_bottleneck_triggered_test === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const normalActionAutoTestRows = world.practicalDiscovery && world.practicalDiscovery.autoGeneratedTests ? world.practicalDiscovery.autoGeneratedTests.filter(row => row.sourceNormalActionId && row.sourceNormalActionId !== 'none' && row.testId && row.testId !== 'none' && row.noPredeclaredInvention === true && row.noCorrectConceptInstalled === true).length : 0;
   const normalActionBoardProposalRows = board && board.projectProposals ? board.projectProposals.filter(row => row.normal_action_test_path === true && row.related_normal_action_id && row.related_normal_action_id !== 'none' && row.related_resident_test_id && row.related_resident_test_id !== 'none' && row.avatar_can_force === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
+  const normalTestSupportRows = board && board.supportEvents ? board.supportEvents.filter(row => row.normal_action_test_path === true && row.related_resident_test_id && row.related_resident_test_id !== 'none' && row.forced === false).length : 0;
+  const normalTestProjectRows = projects && projects.projectLedger ? projects.projectLedger.filter(row => row.normal_action_test_path === true && row.related_resident_test_id && row.related_resident_test_id !== 'none' && row.avatar_direct_command === false).length : 0;
+  const normalTestWorksiteRows = worksite && worksite.watchLedger ? worksite.watchLedger.filter(row => row.normal_action_test_path === true && row.related_resident_test_id && row.related_resident_test_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.resource_spawning === false).length : 0;
+  const normalTestVisualRows = projects && projects.visualLedger ? projects.visualLedger.filter(row => row.normal_action_test_path === true && row.related_resident_test_id && row.related_resident_test_id !== 'none' && row.no_resource_spawning === true && row.hidden_law_normal_view === false).length : 0;
   const actionRailFollowRecoveryRows = actionRail && actionRail.followRecoveryLedger ? actionRail.followRecoveryLedger.length : 0;
   const actionRailFollowRecoveryExpressionRows = actionRail && actionRail.followRecoveryLedger ? actionRail.followRecoveryLedger.filter(row => row.resident_response_expression_id && row.resident_response_expression_id !== 'none' && row.chain_advanced === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const objectGuidedOptionRows = actionRail && actionRail.optionLedger ? actionRail.optionLedger.filter(snapshot => (snapshot.options || []).some(option => option.object_chain_phase && option.object_chain_phase !== 'none' && option.object_chain_next_action && option.object_chain_next_action !== 'none' && option.recommended === true)).length : 0;
@@ -14893,6 +14902,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'normal_handling_practice_emergence', pass: Boolean(actionRail && normalHandlingPracticeRows > 0), evidence: actionRail ? `handlingPracticeRows=${normalHandlingPracticeRows}` : 'not run' },
     { id: 'normal_action_resident_generated_test', pass: Boolean(actionRail && normalActionResidentTestRows > 0 && normalActionAutoTestRows > 0), evidence: actionRail ? `normalActionTests=${normalActionResidentTestRows}, autoTests=${normalActionAutoTestRows}` : 'not run' },
     { id: 'normal_test_reaches_village_board', pass: Boolean(board && normalActionBoardProposalRows > 0), evidence: board ? `normalTestBoardProposals=${normalActionBoardProposalRows}` : 'not run' },
+    { id: 'normal_test_proposal_actionable', pass: Boolean(board && projects && worksite && normalTestSupportRows > 0 && normalTestProjectRows > 0 && normalTestWorksiteRows > 0 && normalTestVisualRows > 0), evidence: board && projects && worksite ? `support=${normalTestSupportRows}, project=${normalTestProjectRows}, worksite=${normalTestWorksiteRows}, visual=${normalTestVisualRows}` : 'not run' },
     { id: 'object_objection_guided_next_step', pass: Boolean(actionRail && (objectGuidedOptionRows > 0 || objectGuidedFollowRows > 0)), evidence: actionRail ? `guidedOptions=${objectGuidedOptionRows}, guidedFollow=${objectGuidedFollowRows}` : 'not run' },
     { id: 'object_objection_canvas_cue', pass: Boolean(worldStage && objectChainCanvasCueRows > 0), evidence: worldStage ? `objectChainCues=${objectChainCanvasCueRows}` : 'not run' },
     { id: 'player_mode_interface', pass: Boolean(playerMode && playerMode.acceptanceReady && playerModeSessions > 0 && playerModeVisibleCards >= 6 && playerMode.normalViewOnly === true && playerMode.debugPanelsHidden === true && playerMode.noDirectCommand === true && playerMode.noHiddenLawNormalView === true && playerMode.playerGlossesOnly === true), evidence: playerMode ? `enabled=${playerMode.enabled}, sessions=${playerModeSessions}, visibleCards=${playerModeVisibleCards}` : 'not run' },
@@ -17113,6 +17123,7 @@ function supportVillageProposal() {
   if (!board.projectProposals.length) runVillageBoardLoop();
   const proposal = preferredObjectResponseProposal(board, true) || board.projectProposals.find(row => row.status !== 'accepted' && row.status !== 'refused' && row.status !== 'completed' && !row.project_completed) || board.projectProposals[board.projectProposals.length - 1];
   const objectObjectionPath = Boolean(proposal.related_object_response_id && proposal.related_object_response_id !== 'none');
+  const normalActionTestPath = proposal.normal_action_test_path === true;
   const supportMaterials = (proposal.materials_needed && proposal.materials_needed.length ? proposal.materials_needed : ['fiber', 'care']).slice();
   const supportShortages = resourceShortagesFor(supportMaterials);
   const targetComponent = projectTargetComponentForProposal(proposal);
@@ -17130,15 +17141,15 @@ function supportVillageProposal() {
       consumed[material] = (consumed[material] || 0) + 1;
     });
     proposal.support_materials_consumed = { ...(proposal.support_materials_consumed || {}), ...consumed };
-    mutateResident(proposal.proposer, { trust: 0.006 + avatarPresence.trust_delta, progress: 0.008, memory: objectObjectionPath ? `felt supported after ${proposal.related_object_response_id}` : avatarPresence.near_worksite ? `felt supported nearby on ${proposal.problem_addressed}` : `felt supported on ${proposal.problem_addressed}`, historyEvent: 'village board support', historyDetail: `${proposal.proposal_id}; presence ${avatarPresence.presence_id}` });
+    mutateResident(proposal.proposer, { trust: 0.006 + avatarPresence.trust_delta, progress: 0.008, memory: objectObjectionPath ? `felt supported after ${proposal.related_object_response_id}` : normalActionTestPath ? `felt supported after ${proposal.related_resident_test_id}` : avatarPresence.near_worksite ? `felt supported nearby on ${proposal.problem_addressed}` : `felt supported on ${proposal.problem_addressed}`, historyEvent: 'village board support', historyDetail: `${proposal.proposal_id}; presence ${avatarPresence.presence_id}` });
   }
-  board.supportEvents.push({ proposalId: proposal.proposal_id, accepted, avatarAction: 'support conditions', whoFeltThis: proposal.proposer, forced: false, related_object_response_id: proposal.related_object_response_id || 'none', object_objection_path: objectObjectionPath, support_materials_consumed: consumed, support_shortages: supportShortages, avatar_presence_id: avatarPresence.presence_id, near_worksite: avatarPresence.near_worksite });
+  board.supportEvents.push({ proposalId: proposal.proposal_id, accepted, avatarAction: 'support conditions', whoFeltThis: proposal.proposer, forced: false, related_object_response_id: proposal.related_object_response_id || 'none', object_objection_path: objectObjectionPath, normal_action_test_path: normalActionTestPath, related_normal_action_id: proposal.related_normal_action_id || 'none', related_resident_test_id: proposal.related_resident_test_id || 'none', related_auto_test_id: proposal.related_auto_test_id || 'none', support_materials_consumed: consumed, support_shortages: supportShortages, avatar_presence_id: avatarPresence.presence_id, near_worksite: avatarPresence.near_worksite });
   recordRealityConstraint('proposal_support', {
     resident: proposal.proposer,
     sourceBeliefId: proposal.proposal_id,
     materials: supportMaterials,
     publicObservation: proposal.problem_addressed,
-    residentInterpretation: accepted ? `support accepted${objectObjectionPath ? ` after ${proposal.related_object_response_id}` : ''}; presence ${avatarPresence.influence_type}` : supportShortages.length ? `support blocked by ${supportShortages.join(', ')}; presence ${avatarPresence.influence_type}` : `support not enough yet; presence ${avatarPresence.influence_type}`,
+    residentInterpretation: accepted ? `support accepted${objectObjectionPath ? ` after ${proposal.related_object_response_id}` : normalActionTestPath ? ` after ${proposal.related_resident_test_id}` : ''}; presence ${avatarPresence.influence_type}` : supportShortages.length ? `support blocked by ${supportShortages.join(', ')}; presence ${avatarPresence.influence_type}` : `support not enough yet; presence ${avatarPresence.influence_type}`,
     materialTransformation: accepted ? `consumed ${Object.entries(consumed).map(([material, count]) => `${count} ${material}`).join(', ')} as support` : 'no material consumed yet',
     timeCost: 1,
     workCost: accepted ? 2 : 1,
@@ -17148,7 +17159,7 @@ function supportVillageProposal() {
     hiddenLawInvolved: 'none in normal view',
     conservationCheck: true
   });
-  return log('supportVillageProposal', { proposalId: proposal.proposal_id, accepted, support: proposal.current_support_level, resident: proposal.proposer, relatedObjectResponseId: proposal.related_object_response_id || 'none', objectObjectionPath, supportMaterials: Object.keys(consumed).join(',') || 'none', supportShortages: supportShortages.join(',') || 'none', avatarPresenceId: avatarPresence.presence_id, nearWorksite: avatarPresence.near_worksite, avatarDirectCommand: false });
+  return log('supportVillageProposal', { proposalId: proposal.proposal_id, accepted, support: proposal.current_support_level, resident: proposal.proposer, relatedObjectResponseId: proposal.related_object_response_id || 'none', objectObjectionPath, normalActionTestPath, relatedResidentTestId: proposal.related_resident_test_id || 'none', supportMaterials: Object.keys(consumed).join(',') || 'none', supportShortages: supportShortages.join(',') || 'none', avatarPresenceId: avatarPresence.presence_id, nearWorksite: avatarPresence.near_worksite, avatarDirectCommand: false });
 }
 
 function askVillageBoardQuestion() {
@@ -17198,6 +17209,11 @@ function recordProjectConstructionVisualCue(proposal, projectRow, construction) 
     related_object_response_id: proposal.related_object_response_id || 'none',
     object_response_kind: proposal.object_response_kind || 'none',
     object_objection_path: Boolean(proposal.related_object_response_id && proposal.related_object_response_id !== 'none'),
+    normal_action_test_path: proposal.normal_action_test_path === true,
+    related_normal_action_id: proposal.related_normal_action_id || 'none',
+    related_resident_test_id: proposal.related_resident_test_id || 'none',
+    related_auto_test_id: proposal.related_auto_test_id || 'none',
+    related_source_manipulation_id: proposal.related_source_manipulation_id || 'none',
     project_id: projectRow.project_id,
     construction_id: construction.construction_id,
     proposer: proposal.proposer,
@@ -17343,6 +17359,11 @@ function applyProjectConstructionToMaterialWorld(proposal, projectRow, consumed)
     related_object_response_id: proposal.related_object_response_id || 'none',
     object_response_kind: proposal.object_response_kind || 'none',
     object_objection_path: Boolean(proposal.related_object_response_id && proposal.related_object_response_id !== 'none'),
+    normal_action_test_path: proposal.normal_action_test_path === true,
+    related_normal_action_id: proposal.related_normal_action_id || 'none',
+    related_resident_test_id: proposal.related_resident_test_id || 'none',
+    related_auto_test_id: proposal.related_auto_test_id || 'none',
+    related_source_manipulation_id: proposal.related_source_manipulation_id || 'none',
     project_id: projectRow.project_id,
     proposer: proposal.proposer,
     problem_addressed: proposal.problem_addressed,
@@ -17424,6 +17445,10 @@ function advanceVillageProject() {
       related_object_response_id: proposal.related_object_response_id || 'none',
       object_response_kind: proposal.object_response_kind || 'none',
       object_objection_path: Boolean(proposal.related_object_response_id && proposal.related_object_response_id !== 'none'),
+      normal_action_test_path: proposal.normal_action_test_path === true,
+      related_normal_action_id: proposal.related_normal_action_id || 'none',
+      related_resident_test_id: proposal.related_resident_test_id || 'none',
+      related_auto_test_id: proposal.related_auto_test_id || 'none',
       tick: world.tick,
       proposer: proposal.proposer,
       problem_addressed: proposal.problem_addressed,
@@ -17460,6 +17485,10 @@ function advanceVillageProject() {
       related_object_response_id: proposal.related_object_response_id || 'none',
       object_response_kind: proposal.object_response_kind || 'none',
       object_objection_path: Boolean(proposal.related_object_response_id && proposal.related_object_response_id !== 'none'),
+      normal_action_test_path: proposal.normal_action_test_path === true,
+      related_normal_action_id: proposal.related_normal_action_id || 'none',
+      related_resident_test_id: proposal.related_resident_test_id || 'none',
+      related_auto_test_id: proposal.related_auto_test_id || 'none',
       tick: world.tick,
       proposer: proposal.proposer,
       problem_addressed: proposal.problem_addressed,
@@ -17507,6 +17536,11 @@ function advanceVillageProject() {
     related_object_response_id: proposal.related_object_response_id || 'none',
     object_response_kind: proposal.object_response_kind || 'none',
     object_objection_path: Boolean(proposal.related_object_response_id && proposal.related_object_response_id !== 'none'),
+    normal_action_test_path: proposal.normal_action_test_path === true,
+    related_normal_action_id: proposal.related_normal_action_id || 'none',
+    related_resident_test_id: proposal.related_resident_test_id || 'none',
+    related_auto_test_id: proposal.related_auto_test_id || 'none',
+    related_source_manipulation_id: proposal.related_source_manipulation_id || 'none',
     tick: world.tick,
     proposer: proposal.proposer,
     problem_addressed: proposal.problem_addressed,
@@ -17558,6 +17592,10 @@ function advanceVillageProject() {
       object_response_resolution_id: proposal.object_response_resolution_id || 'none',
       object_response_resolution_status: proposal.object_response_resolution_status || 'none',
       object_objection_path: Boolean(proposal.related_object_response_id && proposal.related_object_response_id !== 'none'),
+      normal_action_test_path: proposal.normal_action_test_path === true,
+      related_normal_action_id: proposal.related_normal_action_id || 'none',
+      related_resident_test_id: proposal.related_resident_test_id || 'none',
+      related_auto_test_id: proposal.related_auto_test_id || 'none',
       tick: world.tick,
       proposer: proposal.proposer,
       problem_addressed: proposal.problem_addressed,

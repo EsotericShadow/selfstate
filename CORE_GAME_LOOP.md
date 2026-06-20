@@ -774,3 +774,12 @@ The goal is readable continuity: the resident response should reflect what happe
 4. The proposal deck shows the proposal as a normal card with Ask, Support, and Wait actions.
 5. Support remains conditional on resident willingness and materials.
 6. No proposal directly unlocks a technology or exposes hidden simulator law.
+
+## Normal-test actionable project/worksite loop
+
+1. A normal action creates a resident-generated test.
+2. The test posts a `VBP-NAT-...` village-board proposal.
+3. The player can Ask, Support, or Wait through the proposal deck.
+4. If residents accept support and materials exist, resident project work advances.
+5. Project, construction, visual, completion, and worksite rows keep the resident-test source ID.
+6. The visible work remains causal: materials are consumed, residents work, structures/components change, and hidden law stays audit-only.

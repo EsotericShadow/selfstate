@@ -505,7 +505,7 @@ This moves the prototype closer to a playable interface: the player no longer ne
 
 ## Prototype v0 normal player action strip
 
-The prototype hero now puts the main player verbs before the debug-heavy control grid: Continue, Look, Move, Ask, Talk, Objects, Handling, Proposals, Support, Wait, Save, Return, Physics path, Follow, and Space.
+The prototype hero now puts the main player verbs before the debug-heavy control grid: Continue, Look, Move, Ask, Talk, Objects, Handling, Proposals, Ask proposal, Support, Wait, Save, Return, Physics path, Follow, and Space.
 
 This is a UI narrowing step, not a new simulation system. The buttons call existing player-facing functions and preserve resident mediation, hidden-law boundaries, and no-tech-tree constraints. The acceptance gate is `normal_player_action_strip`.
 

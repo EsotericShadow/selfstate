@@ -410,7 +410,7 @@ This is the main player-facing control layer for the first playable shell.
 Required evidence:
 
 - the hero surface exposes normal player verbs before debug-heavy prototype controls
-- the strip includes Continue, Look, Move, Ask, Talk, Objects, Handling, Proposals, Support, Wait, Save, Return, Physics path, Follow, and Space
+- the strip includes Continue, Look, Move, Ask, Talk, Objects, Handling, Proposals, Ask proposal, Support, Wait, Save, Return, Physics path, Follow, and Space
 - each button maps to an existing player-facing function
 - the strip does not add direct resident commands, hidden-law exposure, or tech unlocks
 - exported acceptance checks the strip exists with the required action bindings

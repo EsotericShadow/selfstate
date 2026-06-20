@@ -15491,6 +15491,9 @@ function runPrototypeQASmoke() {
     actionRailReady: world.gamePrototypeActionRail ? world.gamePrototypeActionRail.acceptanceReady === true : false,
     actionRailRows: world.gamePrototypeActionRail ? world.gamePrototypeActionRail.actionLedger.length : 0,
     actionRailOptionRows: world.gamePrototypeActionRail ? world.gamePrototypeActionRail.optionLedger.length : 0,
+    actionRailPhysicsPathRows: world.gamePrototypeActionRail && world.gamePrototypeActionRail.actionLedger ? world.gamePrototypeActionRail.actionLedger.filter(row => row.verb === 'physics_path' && row.physics_path_ready === true && row.physics_path_happy_path_id && row.physics_path_happy_path_id !== 'none' && row.physics_path_body_expression_id && row.physics_path_body_expression_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0,
+    physicsPathSaveRows: world.gamePrototypeSaves && world.gamePrototypeSaves.slots ? world.gamePrototypeSaves.slots.filter(slot => Number(slot.normal_play_physics_path_ready_rows || 0) > 0 && slot.normal_play_physics_path_fingerprint && slot.normal_play_physics_path_fingerprint !== 'none').length : 0,
+    physicsPathRestoreRows: world.gamePrototypeSaves && world.gamePrototypeSaves.returnLog ? world.gamePrototypeSaves.returnLog.filter(row => row.restored_normal_play_physics_path_matches_saved === true && Number(row.restored_normal_play_physics_path_ready_rows || 0) > 0).length : 0,
     playerModeReady: world.gamePrototypePlayerMode ? world.gamePrototypePlayerMode.acceptanceReady === true : false,
     playerModeSessions: world.gamePrototypePlayerMode ? world.gamePrototypePlayerMode.sessionLedger.length : 0,
     playerModeVisibleCards: world.gamePrototypePlayerMode && world.gamePrototypePlayerMode.visibleSurface ? world.gamePrototypePlayerMode.visibleSurface.visible_cards.length : 0,
@@ -15548,7 +15551,8 @@ function runPrototypeQASmoke() {
     { id: 'playable-village-day-0-3', pass: Boolean(world.gamePrototypeVillageDay03 && savedCounts.villageDay03Ready && savedCounts.villageDay03Rows >= 4 && savedCounts.villageDay03PlayerRows >= 4 && savedCounts.villageDay03ResidentRows >= 4 && savedCounts.villageDay03WorldRows >= 4 && savedCounts.villageDay03PhysicsLinks > 0 && savedCounts.villageDay03ProposalLinks > 0 && savedCounts.villageDay03PracticeLinks > 0 && savedCounts.villageDay03SaveLinks > 0 && savedCounts.villageDay03ReturnLinks > 0 && world.gamePrototypeVillageDay03.noDirectCommand === true && world.gamePrototypeVillageDay03.noTechTreeUnlock === true), evidence: `${savedCounts.villageDay03Rows} day row(s), ${savedCounts.villageDay03PhysicsLinks} physics link(s), ${savedCounts.villageDay03ProposalLinks} proposal link(s), ${savedCounts.villageDay03PracticeLinks} practice link(s), ${savedCounts.villageDay03ReturnLinks} return link(s)` },
     { id: 'primary-play-surface', pass: Boolean(world.gamePrototypeWorldStage && savedCounts.primaryPlaySurfaceReady && savedCounts.primaryPlaySurfaceFocusRows >= 3 && savedCounts.primaryPlaySurfaceCueRows >= 3 && savedCounts.primaryPlaySurfacePromptRows >= 3 && world.gamePrototypeWorldStage.canvasFirst === true && world.gamePrototypeWorldStage.noHiddenLawInNormalView === true && world.gamePrototypeWorldStage.noDirectCommand === true), evidence: `${savedCounts.primaryPlaySurfaceFocusRows} focus row(s), ${savedCounts.primaryPlaySurfaceCueRows} cue row(s), ${savedCounts.primaryPlaySurfacePromptRows} prompt row(s)` },
     { id: 'first-playable-walkthrough', pass: Boolean(world.gamePrototypeWalkthrough && savedCounts.walkthroughReady && savedCounts.walkthroughSteps >= world.gamePrototypeWalkthrough.requiredSteps.length && savedCounts.walkthroughLinks >= world.gamePrototypeWalkthrough.requiredSteps.length && world.gamePrototypeWalkthrough.noDirectCommand === true && world.gamePrototypeWalkthrough.noTechTreeUnlock === true && world.gamePrototypeWalkthrough.noHiddenLawNormalView === true), evidence: `${savedCounts.walkthroughSteps} step row(s), ${savedCounts.walkthroughLinks} evidence link(s)` },
-    { id: 'normal-play-action-rail', pass: Boolean(world.gamePrototypeActionRail && savedCounts.actionRailReady && savedCounts.actionRailRows >= world.gamePrototypeActionRail.verbs.length && savedCounts.actionRailOptionRows > 0 && world.gamePrototypeActionRail.playerLanguageOnly === true && world.gamePrototypeActionRail.noDirectCommand === true && world.gamePrototypeActionRail.noTechTreeUnlock === true), evidence: `${savedCounts.actionRailRows} action row(s), ${savedCounts.actionRailOptionRows} option snapshot(s)` },
+    { id: 'normal-play-action-rail', pass: Boolean(world.gamePrototypeActionRail && savedCounts.actionRailReady && savedCounts.actionRailRows >= world.gamePrototypeActionRail.verbs.length && savedCounts.actionRailOptionRows > 0 && savedCounts.actionRailPhysicsPathRows > 0 && world.gamePrototypeActionRail.playerLanguageOnly === true && world.gamePrototypeActionRail.noDirectCommand === true && world.gamePrototypeActionRail.noTechTreeUnlock === true), evidence: `${savedCounts.actionRailRows} action row(s), ${savedCounts.actionRailOptionRows} option snapshot(s), physicsPath=${savedCounts.actionRailPhysicsPathRows}` },
+    { id: 'normal-play-physics-path-persistence', pass: Boolean(savedCounts.physicsPathSaveRows > 0 && savedCounts.physicsPathRestoreRows > 0), evidence: `${savedCounts.physicsPathSaveRows} saved physics path row(s), ${savedCounts.physicsPathRestoreRows} restored match row(s)` },
     { id: 'player-mode-interface', pass: Boolean(world.gamePrototypePlayerMode && savedCounts.playerModeReady && savedCounts.playerModeSessions > 0 && savedCounts.playerModeVisibleCards >= 6 && world.gamePrototypePlayerMode.normalViewOnly === true && world.gamePrototypePlayerMode.debugPanelsHidden === true && world.gamePrototypePlayerMode.noDirectCommand === true && world.gamePrototypePlayerMode.noHiddenLawNormalView === true), evidence: `${savedCounts.playerModeSessions} player-mode session(s), ${savedCounts.playerModeVisibleCards} visible card(s)` },
     { id: 'player-movement-route', pass: Boolean(world.gamePrototypeMovementRoute && savedCounts.movementRouteReady && savedCounts.movementRouteRows > 0 && savedCounts.movementRouteSnapshots > 0 && world.gamePrototypeMovementRoute.routeLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.no_teleport === true && row.distance > 0)), evidence: `${savedCounts.movementRouteRows} movement row(s), ${savedCounts.movementRouteSnapshots} snapshot(s)` },
     { id: 'player-resident-encounter', pass: Boolean(world.gamePrototypeResidentEncounter && savedCounts.residentEncounterReady && savedCounts.residentEncounterRows > 0 && savedCounts.residentEncounterSnapshots > 0 && world.gamePrototypeResidentEncounter.encounterLedger.every(row => row.no_llm === true && row.phrasebook_only === true && row.open_ended_language === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.source_history_preserved === true)), evidence: `${savedCounts.residentEncounterRows} resident encounter row(s), ${savedCounts.residentEncounterSnapshots} snapshot(s)` },
@@ -15626,6 +15630,15 @@ function browserQaReadinessChecks() {
   const livedPhysicsRows = lived && lived.physicsLedger ? lived.physicsLedger.length : 0;
   const saveSlots = saves && saves.slots ? saves.slots.length : 0;
   const saveReturns = saves && saves.returnLog ? saves.returnLog.length : 0;
+  const physicsPathRows = actionRail && actionRail.actionLedger
+    ? actionRail.actionLedger.filter(row => row.verb === 'physics_path' && row.physics_path_ready === true && row.physics_path_happy_path_id && row.physics_path_happy_path_id !== 'none' && row.physics_path_body_expression_id && row.physics_path_body_expression_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length
+    : 0;
+  const physicsPathSaveRows = saves && saves.slots
+    ? saves.slots.filter(slot => Number(slot.normal_play_physics_path_ready_rows || 0) > 0 && slot.normal_play_physics_path_fingerprint && slot.normal_play_physics_path_fingerprint !== 'none').length
+    : 0;
+  const physicsPathRestoreRows = saves && saves.returnLog
+    ? saves.returnLog.filter(row => row.restored_normal_play_physics_path_matches_saved === true && Number(row.restored_normal_play_physics_path_ready_rows || 0) > 0).length
+    : 0;
   const readiness = [
     {
       id: 'normal-player-surface',
@@ -15656,6 +15669,18 @@ function browserQaReadinessChecks() {
       pass: Boolean(saveSlots > 0 && saveReturns > 0 && returnJournal && returnJournal.acceptanceReady),
       evidence: `slots=${saveSlots}, returns=${saveReturns}, journal=${returnJournal ? returnJournal.acceptanceReady === true : false}`,
       next_action: 'runReturnJournalLoop then save/return',
+    },
+    {
+      id: 'physics-path-normal-rail',
+      pass: Boolean(actionRail && physicsPathRows > 0),
+      evidence: `physicsPathRows=${physicsPathRows}, actionRail=${actionRail ? actionRail.acceptanceReady === true : false}`,
+      next_action: 'runNormalPlayPhysicsPath',
+    },
+    {
+      id: 'physics-path-save-return-continuity',
+      pass: Boolean(physicsPathSaveRows > 0 && physicsPathRestoreRows > 0),
+      evidence: `saved=${physicsPathSaveRows}, restoredMatches=${physicsPathRestoreRows}`,
+      next_action: 'runNormalPlayPhysicsPath then save/return or export acceptance',
     },
     {
       id: 'causal-ledger-boundary',

@@ -96,6 +96,8 @@ The maintained shell now includes a player-facing `QA readiness` control. It ins
 
 This preflight deliberately does not run Prototype QA or export acceptance. It exists to make the next browser-validation pass explicit and inspectable before validation is authorized.
 
+The readiness preflight now also checks `Physics path` as a first-class normal-rail route. It reports whether a ready physics-path action row exists and whether save/return continuity restored the matching physics-path fingerprint before Prototype QA or acceptance export is run.
+
 ## Prototype v0 auto-simulation update
 
 The prototype now includes a browser-local auto-simulation clock. `Start auto sim` advances resident ticks on a timer; `Pause auto sim` stops it; `Auto burst` runs twenty inspected steps. The cadence advances resident autonomy every step, supports proposals periodically, runs deep-time epochs, audits survival, and saves on schedule. This makes the prototype watchable without manually pressing every subsystem button.

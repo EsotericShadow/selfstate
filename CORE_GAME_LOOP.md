@@ -214,8 +214,9 @@
 
 1. Inspect the current browser state without running Prototype QA.
 2. Check whether Player mode, the canvas surface, first-playable session evidence, lived-action physics cues, save/return continuity, and causal-ledger boundaries are present.
-3. Report readiness blockers and the next authorized validation action.
-4. Preserve the distinction between readiness evidence and completed QA evidence.
+3. Check whether `Physics path` exists as a normal-rail row and whether its save/return fingerprint restored.
+4. Report readiness blockers and the next authorized validation action.
+5. Preserve the distinction between readiness evidence and completed QA evidence.
 
 ## Auto-simulation loop
 

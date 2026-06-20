@@ -50,6 +50,7 @@
 29. Toggle audit and confirm engine concepts and hidden material/physics laws are audit-only while resident-facing language remains local terms plus imperfect player glosses.
 
 30. Use QA readiness before running Prototype QA and confirm it reports normal player surface, canvas cues, first-playable session evidence, lived-action physics visibility, save/return continuity, causal-ledger boundaries, and that QA was not executed.
+31. In QA readiness, confirm `physics-path-normal-rail` and `physics-path-save-return-continuity` report ready only after the normal `Physics path` action and matching save/return evidence exist.
 
 31. Use Handling from the normal rail and confirm a resident-chosen material manipulation changes or fails against a real component, appears in Player Mode, and is recorded in the first-playable session as handling evidence rather than a direct command.
 
@@ -94,6 +95,7 @@
 46. Save after resident material handling, mutate the world, return the slot, and confirm Save / return preserves material handling and handling-practice counts.
 
 47. Export acceptance and confirm the receipt includes resident material manipulation as a required physics-first gate.
+48. Run Prototype QA after `Physics path` and confirm `normal-play-physics-path-persistence` passes with saved and restored match rows.
 
 48. Use Physics epoch and confirm the Deep-time civilization card shows a stochastic physics epoch with mass before/after, damage, stability, ruined traces, and lineage pressure links.
 

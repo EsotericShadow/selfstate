@@ -749,6 +749,8 @@ Required evidence:
 - the path includes Look, Move, Talk, Objects, Handling, Support, Practice, Save, Wait, and Return
 - object/material state changes visibly through resident-mediated handling
 - the changed state persists after save/return
+- the restored object cue produces resident return behavior
+- the object-memory behavior guides one follow-up normal action
 - one emergent practice id is linked to the lived evidence
 - residents are not directly commanded
 - hidden simulator law remains out of normal view

@@ -10768,6 +10768,8 @@ function updateTenMinutePlayableAcceptance() {
       row.practice_id && row.practice_id !== 'none' &&
       row.save_slot_id && row.save_slot_id !== 'none' &&
       row.restore_slot_id && row.restore_slot_id !== 'none' &&
+      row.object_cue_return_behavior_id && row.object_cue_return_behavior_id !== 'none' &&
+      row.object_cue_return_guided_action_id && row.object_cue_return_guided_action_id !== 'none' &&
       row.player_facing === true &&
       row.avatar_direct_command === false &&
       row.hidden_law_normal_view === false &&
@@ -10803,6 +10805,13 @@ function runTenMinutePlayableLoop() {
   const latestReturnEntry = world.gamePrototypeSaves && world.gamePrototypeSaves.returnLog && world.gamePrototypeSaves.returnLog.length ? world.gamePrototypeSaves.returnLog[world.gamePrototypeSaves.returnLog.length - 1] : null;
   const restoredSlotId = latestReturnEntry ? latestReturnEntry.slot_id : returnPayload.slotId || 'none';
   const objectAfterRestore = playerObjectInteractionSnapshot('ten-minute-after-restore');
+  const objectCueBehavior = latestObjectCueReturnBehaviorFor(world.selected) || latestObjectCueReturnBehaviorFor(null);
+  const objectCueBias = objectCueReturnActionBias(objectCueBehavior);
+  const objectCueGuidanceReceipt = objectCueBias ? runNormalPlayAction(objectCueBias.verb) : null;
+  const objectCueGuidanceAction = world.gamePrototypeActionRail && world.gamePrototypeActionRail.actionLedger
+    ? world.gamePrototypeActionRail.actionLedger.slice().reverse().find(action => objectCueBehavior && action.object_cue_return_behavior_id === objectCueBehavior.behavior_id && action.object_cue_return_consumed === true) || null
+    : null;
+  const objectAfterGuidance = playerObjectInteractionSnapshot('ten-minute-after-object-memory-guidance');
   const integrated = recordFirstPlayableIntegratedLoop('ten_minute_playable_loop');
   const session = restoreFirstPlayableSessionAfterWorldSwap(sessionBefore);
   const actionRailAfter = world.gamePrototypeActionRail && world.gamePrototypeActionRail.actionLedger ? world.gamePrototypeActionRail.actionLedger.length : actionRailBefore;
@@ -10811,14 +10820,22 @@ function runTenMinutePlayableLoop() {
     loop_id: `TMP-${String((session.tenMinuteLedger || []).length + 1).padStart(3, '0')}`,
     tick: world.tick,
     minutes_simulated: 10,
-    player_path: ['Look', 'Move', 'Talk', 'Objects', 'Handling', 'Support', 'Practice', 'Save', 'Wait', 'Return'],
+    player_path: ['Look', 'Move', 'Talk', 'Objects', 'Handling', 'Support', 'Practice', 'Save', 'Wait', 'Return', objectCueBias ? objectCueBias.label : 'Object memory guidance'],
     normal_action_rows_added: Math.max(0, actionRailAfter - actionRailBefore),
     object_before: objectBefore,
     object_after_change: objectAfterChange,
     object_after_away: objectAfterAway,
     object_after_restore: objectAfterRestore,
+    object_after_guidance: objectAfterGuidance,
     object_change_visible: objectMaterialStateChanged(objectBefore, objectAfterChange),
     material_state_persisted: objectMaterialStatePersisted(objectAfterChange, objectAfterRestore),
+    object_cue_return_behavior_id: objectCueBehavior ? objectCueBehavior.behavior_id : 'none',
+    object_cue_return_behavior_kind: objectCueBehavior ? objectCueBehavior.behavior_kind : 'none',
+    object_cue_return_component_id: objectCueBehavior ? objectCueBehavior.component_id : 'none',
+    object_cue_return_recommended_verb: objectCueBias ? objectCueBias.verb : 'none',
+    object_cue_return_guided_action_id: objectCueGuidanceAction ? objectCueGuidanceAction.action_id : 'none',
+    object_cue_return_guided_action_label: objectCueGuidanceAction ? objectCueGuidanceAction.label : 'none',
+    object_cue_return_guidance_event: objectCueGuidanceReceipt ? objectCueGuidanceReceipt.event || objectCueGuidanceReceipt.type || 'normal_action' : 'none',
     practice_id: practiceAfterRestore !== 'none' ? practiceAfterRestore : practiceBeforeSave,
     save_slot_id: savedSlotId,
     restore_slot_id: restoredSlotId,
@@ -10837,6 +10854,8 @@ function runTenMinutePlayableLoop() {
     row.practice_id !== 'none' &&
     row.save_slot_id !== 'none' &&
     row.restore_slot_id !== 'none' &&
+    row.object_cue_return_behavior_id !== 'none' &&
+    row.object_cue_return_guided_action_id !== 'none' &&
     row.avatar_direct_command === false &&
     row.hidden_law_normal_view === false &&
     row.tech_tree_unlock === false
@@ -10852,13 +10871,13 @@ function runTenMinutePlayableLoop() {
     sourceBeliefId: row.loop_id,
     materials: [row.object_after_restore.component_id, row.object_after_restore.material_id, row.practice_id].filter(value => value && value !== 'none'),
     publicObservation: `${row.loop_id} changed ${row.object_before.component_id} then restored ${row.object_after_restore.component_id} from save`,
-    residentInterpretation: `practice ${row.practice_id} survived normal play and return`,
+    residentInterpretation: `practice ${row.practice_id} survived normal play and return; object memory ${row.object_cue_return_behavior_id} guided ${row.object_cue_return_recommended_verb}`,
     materialTransformation: row.object_change_visible ? `visible object/material state changed through resident-mediated handling` : 'object state did not visibly change',
     timeCost: row.minutes_simulated,
     workCost: row.normal_action_rows_added,
     toolWear: 0,
     maintenanceObligation: row.practice_id !== 'none' ? `maintain practice ${row.practice_id}` : 'repeat lived actions until practice forms',
-    unintendedConsequence: row.material_state_persisted ? 'object state continuity is now visible in normal play' : 'save/return material persistence still incomplete',
+    unintendedConsequence: row.object_cue_return_guided_action_id !== 'none' ? 'returned object memory biased the next normal player action' : row.material_state_persisted ? 'object state continuity is now visible in normal play' : 'save/return material persistence still incomplete',
     hiddenLawInvolved: 'audit only',
     conservationCheck: true
   });
@@ -10867,8 +10886,10 @@ function runTenMinutePlayableLoop() {
     loop: row.loop_id,
     practice: row.practice_id,
     persisted: row.material_state_persisted,
+    objectMemory: row.object_cue_return_behavior_id,
+    guidedAction: row.object_cue_return_guided_action_id,
   });
-  return log('runTenMinutePlayableLoop', { ready: session.tenMinuteAcceptanceReady, loopId: row.loop_id, practice: row.practice_id, objectChanged: row.object_change_visible, persisted: row.material_state_persisted });
+  return log('runTenMinutePlayableLoop', { ready: session.tenMinuteAcceptanceReady, loopId: row.loop_id, practice: row.practice_id, objectChanged: row.object_change_visible, persisted: row.material_state_persisted, objectMemory: row.object_cue_return_behavior_id, guidedAction: row.object_cue_return_guided_action_id });
 }
 
 function runFirstPlayableAmbientPhysicsHappyPath() {
@@ -11062,7 +11083,7 @@ function formatFirstPlayableSession() {
   const latest = session.snapshotLedger.length ? session.snapshotLedger[session.snapshotLedger.length - 1].snapshot : firstPlayableSessionSnapshot('current');
   const steps = session.stepLedger.slice(-8).map(row => `${row.step_id}: ${row.action_label}; event=${row.result_event}; room=${row.after.room}; proposal=${row.after.latest_proposal}; practice=${row.after.latest_practice}; livedPhysics=${row.lived_practice_physics_before || 0}->${row.lived_practice_physics_after || 0}; worldPressure=${row.world_pressure_day_before || 0}->${row.world_pressure_day_after || 0}/${row.latest_world_pressure_day_id || 'none'} full=${row.world_pressure_full_physics_ready ? 'yes' : 'no'} saved/restored=${row.world_pressure_saved_rows || 0}/${row.world_pressure_restored_rows || 0} match=${row.latest_world_pressure_restore_match ? 'yes' : 'no'} terrain=${row.latest_world_pressure_terrain_step_id || 'none'} water=${row.latest_world_pressure_water_step_id || 'none'}; ambient=${row.ambient_physics_happy_path_before || 0}->${row.ambient_physics_happy_path_after || 0}/${row.latest_ambient_happy_path_id || 'none'}; physicsPath=${row.normal_physics_path_before || 0}->${row.normal_physics_path_after || 0}/${row.latest_normal_physics_path_action_id || 'none'}; visibleFollow=${row.visible_physics_follow_before || 0}->${row.visible_physics_follow_after || 0}/${row.visible_physics_follow_id || 'none'} body=${row.visible_physics_follow_body_expression_id || 'none'} journal=${row.return_journal_visible_physics_follow_rows || 0}; handling=${row.material_handling_before || 0}->${row.material_handling_after || 0}/${row.latest_material_handling_id || 'none'} body=${row.latest_resident_body_step_id || 'none'} integrated=${row.integrated_loop_before || 0}->${row.integrated_loop_after || 0}/${row.latest_integrated_loop_id || 'none'}`);
   const integratedRows = (session.integratedLoopLedger || []).slice(-4).map(row => `${row.integration_id}: complete=${row.chain_complete}; ordinary=${row.ordinary_feed_id}; test=${row.resident_test_id}; proposal=${row.proposal_id}; practice=${row.practice_id}; physics=${row.physics_id}; handling=${row.material_handling_id}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
-  const tenMinuteRows = (session.tenMinuteLedger || []).slice(-4).map(row => `${row.loop_id}: ready=${row.acceptance_ready}; minutes=${row.minutes_simulated}; actions=${row.normal_action_rows_added}; objectChanged=${row.object_change_visible}; persisted=${row.material_state_persisted}; practice=${row.practice_id}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
+  const tenMinuteRows = (session.tenMinuteLedger || []).slice(-4).map(row => `${row.loop_id}: ready=${row.acceptance_ready}; minutes=${row.minutes_simulated}; actions=${row.normal_action_rows_added}; objectChanged=${row.object_change_visible}; persisted=${row.material_state_persisted}; practice=${row.practice_id}; objectMemory=${row.object_cue_return_behavior_id || 'none'} -> ${row.object_cue_return_guided_action_id || 'none'}/${row.object_cue_return_recommended_verb || 'none'}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
   const ambientHappyPathRows = (session.ambientPhysicsHappyPathLedger || []).slice(-4).map(row => `${row.happy_path_id}: ready=${row.acceptance_ready}; action=${row.ambient_action_id}; physics=${row.ambient_physics_id}; proposal=${row.proposal_id}; word=${row.resident_word}; save=${row.save_slot_id}; restore=${row.restore_slot_id}; body=${row.body_expression_id}`);
   return [
     `Acceptance ready: ${session.acceptanceReady ? 'yes' : 'no'}`,
@@ -18246,7 +18267,7 @@ function buildPrototypeAcceptanceReceipt() {
   const playSessionWorldPressureRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_world_pressure_matches_saved === true && row.restored_world_pressure_ready === true && row.restored_world_pressure_fingerprint && row.restored_world_pressure_fingerprint !== 'none').length : 0;
   const playSessionVisiblePhysicsFollowRows = playSession && playSession.stepLedger ? playSession.stepLedger.filter(row => row.step_id === 'visible_physics_follow' && row.visible_physics_follow_ready === true && row.visible_physics_follow_id && row.visible_physics_follow_id !== 'none' && row.visible_physics_follow_body_expression_id && row.visible_physics_follow_body_expression_id !== 'none' && Number(row.return_journal_visible_physics_follow_rows || 0) > 0 && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
   const playSessionTenMinuteRows = playSession && playSession.tenMinuteLedger ? playSession.tenMinuteLedger.length : 0;
-  const playSessionTenMinuteCompleteRows = playSession && playSession.tenMinuteLedger ? playSession.tenMinuteLedger.filter(row => row.acceptance_ready === true && row.object_change_visible === true && row.material_state_persisted === true && row.practice_id && row.practice_id !== 'none' && row.save_slot_id && row.save_slot_id !== 'none' && row.restore_slot_id && row.restore_slot_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
+  const playSessionTenMinuteCompleteRows = playSession && playSession.tenMinuteLedger ? playSession.tenMinuteLedger.filter(row => row.acceptance_ready === true && row.object_change_visible === true && row.material_state_persisted === true && row.practice_id && row.practice_id !== 'none' && row.save_slot_id && row.save_slot_id !== 'none' && row.restore_slot_id && row.restore_slot_id !== 'none' && row.object_cue_return_behavior_id && row.object_cue_return_behavior_id !== 'none' && row.object_cue_return_guided_action_id && row.object_cue_return_guided_action_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
   const terrainRows = terrain && terrain.terrainLedger ? terrain.terrainLedger.length : 0;
   const terrainFlowRows = terrain && terrain.flowLedger ? terrain.flowLedger.length : 0;
   const terrainSupportRows = terrain && terrain.supportLedger ? terrain.supportLedger.length : 0;

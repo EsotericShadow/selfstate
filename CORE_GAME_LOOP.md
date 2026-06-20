@@ -728,7 +728,9 @@ The shell now has a compact proof loop for the first actual game-prototype miles
 4. The lived practice loop links that evidence to an emergent practice id.
 5. The player saves, waits, and returns.
 6. The loop compares object state before interaction, after change, after away time, and after restore.
-7. The loop passes only if material state persisted through save/return and no resident was directly commanded.
+7. The restored object cue creates an `OCRB-...` resident behavior row.
+8. The loop follows the recommended normal verb from that object memory.
+9. The loop passes only if material state persisted through save/return, object memory guided a normal action, and no resident was directly commanded.
 
 This is not a research panel. It is a short player path proving the game can carry a material consequence into practice memory and return-session continuity.
 

@@ -1099,3 +1099,17 @@ Acceptance requires:
 - normal view remains free of hidden simulator law and direct resident commands
 
 This ensures the first playable saves what the player actually saw, not only internal physics ledger state.
+## Added scope gate: Follow restored visible Physics path
+
+`follow_restored_visible_physics_path` is now part of first playable prototype scope.
+
+Acceptance requires:
+
+- `Follow` can route through the visible first-playable Physics path chain
+- Follow rows record visible Physics path phase, action id, happy-path id, cue rows, saved rows, restored rows, match status, and body-expression id
+- normal action rail QA requires at least one Follow row with visible Physics path evidence
+- exported acceptance requires Follow-visible-physics evidence in the normal action rail gate
+- object chains and normal-test chains keep priority over the Physics path branch
+- no hidden simulator law or direct resident command is exposed
+
+This turns the visible Physics path from a receipt into a resumable player-facing thread.

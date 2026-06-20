@@ -875,3 +875,8 @@ The primary surface readiness gate now requires a visible session Physics path c
 Prototype save slots now persist the player-facing first-playable Physics path cue from the primary surface. The saved slot records the visible cue id, action id, happy-path id, proposal/word, save slot, restore slot, body-expression id, and a fingerprint.
 
 Return logs recompute the same primary-surface cue after restore and report whether it matches the saved visible fingerprint. Browser readiness, Prototype QA, and exported acceptance now require the visible cue to be saved and restored, not only the underlying normal action-rail Physics path.
+## Prototype v0 Follow restored Physics path update
+
+The normal `Follow` verb can now resume the visible first-playable Physics path after save/return. Follow checks the player-facing primary-surface Physics path cue, saved visible-cue fingerprint, restored visible-cue fingerprint, and public body-expression id, then routes to the next missing step: run Physics path, show it on the primary surface, save it, return to it, resurface it, or show return continuity.
+
+Follow rows now report the visible Physics path phase, action id, happy-path id, cue rows, saved/restored rows, match status, and body-expression id. Prototype QA and exported acceptance require at least one Follow row that carries visible Physics path state, so this is a playable behavior rather than a passive receipt.

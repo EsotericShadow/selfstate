@@ -964,3 +964,15 @@ The save/return loop now preserves what the player saw in normal view:
 5. Readiness, QA, and acceptance require visible cue save/return continuity.
 
 This keeps persistence tied to player-facing state, not just hidden continuity rows.
+## Follow restored Physics path loop
+
+The normal `Follow` verb can now continue the visible Physics path continuity chain:
+
+1. If no Physics path exists, Follow runs the normal `Physics path`.
+2. If the path exists but is not visible, Follow refreshes the primary surface.
+3. If the visible cue is unsaved, Follow saves it.
+4. If the saved cue has not been restored, Follow returns to it.
+5. If the cue is restored but not current, Follow resurfaces it.
+6. If the cue is restored and visible, Follow shows return continuity.
+
+Object and normal-test chains still take priority. The visible Physics path branch fills the gap when that restored physics chain is the active player-facing continuity thread.

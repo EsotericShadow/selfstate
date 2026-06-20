@@ -653,3 +653,10 @@ Create an ambient physics proposal through normal play, save, return, and observ
 3. Inspect `Save / return` and confirm `Primary-surface Physics path visibility` shows a saved cue, action id, happy-path id, save id, restore id, and body-expression id.
 4. Confirm `Primary-surface Physics path returns` reports `match=yes`.
 5. Run `QA readiness` and confirm `first-playable-session-physics-path` includes visible cue, visible saved, and visible restored counts.
+## Playtest task: Follow restored visible Physics path
+
+1. Run `First playable` until `First playable Physics path` is visible on the primary surface.
+2. Save and return so the visible cue has a saved/restored match.
+3. Use `Follow`.
+4. Inspect the normal action rail and confirm the latest Follow row reports `visiblePhysics=...`, saved/restored counts, and `match=yes`.
+5. Confirm `normal-play-action-rail` QA/acceptance evidence includes `followVisiblePhysics`.

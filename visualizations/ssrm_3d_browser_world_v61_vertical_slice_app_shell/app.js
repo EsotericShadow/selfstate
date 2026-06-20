@@ -5663,6 +5663,9 @@ function currentPrimaryPlaySurfaceSnapshot() {
   const latestNormalTestExpression = autonomous && autonomous.expressionLedger
     ? autonomous.expressionLedger.slice().reverse().find(row => /^normal_test_/.test(row.action || '') || (row.related_resident_test_id && row.related_resident_test_id !== 'none')) || null
     : null;
+  const latestStartHereComponentExpression = autonomous && autonomous.expressionLedger
+    ? autonomous.expressionLedger.slice().reverse().find(row => row.start_here_component_return_path === true) || null
+    : null;
   const canvasSelection = world.gamePrototypeCanvasSelection || null;
   const latestCanvasSelection = canvasSelection && canvasSelection.selectionLedger && canvasSelection.selectionLedger.length ? canvasSelection.selectionLedger[canvasSelection.selectionLedger.length - 1] : null;
   const selectedComponent = canvasSelection && canvasSelection.selected_component_id && canvasSelection.selected_component_id !== 'none' && materialWorld && materialWorld.components
@@ -5727,6 +5730,16 @@ function currentPrimaryPlaySurfaceSnapshot() {
     normal_test_expression_action: latestNormalTestExpression ? latestNormalTestExpression.action || 'none' : 'none',
     normal_test_expression_marker: latestNormalTestExpression ? latestNormalTestExpression.marker || 'none' : 'none',
     normal_test_expression_posture: latestNormalTestExpression ? latestNormalTestExpression.posture || 'none' : 'none',
+    start_here_component_expression_id: latestStartHereComponentExpression ? latestStartHereComponentExpression.expression_id : 'none',
+    start_here_component_expression_action: latestStartHereComponentExpression ? latestStartHereComponentExpression.action || 'none' : 'none',
+    start_here_component_expression_marker: latestStartHereComponentExpression ? latestStartHereComponentExpression.marker || 'none' : 'none',
+    start_here_component_expression_posture: latestStartHereComponentExpression ? latestStartHereComponentExpression.posture || 'none' : 'none',
+    start_here_component_expression_component_id: latestStartHereComponentExpression ? latestStartHereComponentExpression.component_id || 'none' : 'none',
+    start_here_component_expression_selection_id: latestStartHereComponentExpression ? latestStartHereComponentExpression.selection_id || 'none' : 'none',
+    start_here_component_expression_cue_id: latestStartHereComponentExpression ? latestStartHereComponentExpression.cue_id || 'none' : 'none',
+    start_here_component_expression_word: latestStartHereComponentExpression ? latestStartHereComponentExpression.resident_word || 'none' : 'none',
+    start_here_component_expression_gloss: latestStartHereComponentExpression ? latestStartHereComponentExpression.player_gloss || 'none' : 'none',
+    start_here_component_expression_normal_action_id: latestStartHereComponentExpression ? latestStartHereComponentExpression.normal_action_id || 'none' : 'none',
     active_component_id: latestComponent ? latestComponent.component_id : 'none',
     active_component_gloss: latestComponent ? (latestComponent.player_gloss || latestComponent.material_id || latestComponent.component_id) : 'none',
     active_component_material_id: latestComponent ? latestComponent.material_id || 'none' : 'none',
@@ -5822,6 +5835,7 @@ function currentPrimaryPlaySurfaceSnapshot() {
       latestNormalResidentTestAction ? `resident test ${latestNormalResidentTestAction.ordinary_bottleneck_test_id} from ${latestNormalResidentTestAction.action_id} board=${latestNormalResidentTestAction.ordinary_bottleneck_board_proposal_id || 'none'} bottleneck=${latestNormalResidentTestAction.ordinary_bottleneck_type}` : 'normal play has not generated a resident test yet',
       latestNormalTestComponentCue ? `normal test component ${latestNormalTestComponentCue.cue_id} ${latestNormalTestComponentCue.component_id} ${latestNormalTestComponentCue.visible_change}` : 'normal-test component cue not visible yet',
       latestNormalTestExpression ? `normal test expression ${latestNormalTestExpression.expression_id} ${latestNormalTestExpression.marker || 'visible cue'} / ${latestNormalTestExpression.posture || 'posture'}` : 'normal-test resident expression not visible yet',
+      latestStartHereComponentExpression ? `start here component expression ${latestStartHereComponentExpression.expression_id} ${latestStartHereComponentExpression.marker || 'visible cue'} / component=${latestStartHereComponentExpression.component_id || 'none'} / word=${latestStartHereComponentExpression.resident_word || 'none'}` : 'start-here component expression not visible yet',
       latestComponent ? `component ${latestComponent.component_id}` : 'physical components not initialized',
       latestCanvasSelection ? `canvas selection ${latestCanvasSelection.selection_id} ${latestCanvasSelection.component_id} ${latestCanvasSelection.resident_term}` : 'canvas object not selected yet',
       latestComponent ? `material state ${latestComponent.component_id} ${latestComponent.material_id} m=${Number(latestComponent.moisture || 0).toFixed(2)} d=${Number(latestComponent.damage || 0).toFixed(2)} s=${Number(latestComponent.stability || 0).toFixed(2)} carried=${latestComponent.carried_by || 'none'}` : 'material state not visible yet',
@@ -5907,6 +5921,13 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     normal_test_expression_action: snapshot.normal_test_expression_action,
     normal_test_expression_marker: snapshot.normal_test_expression_marker,
     normal_test_expression_posture: snapshot.normal_test_expression_posture,
+    start_here_component_expression_id: snapshot.start_here_component_expression_id,
+    start_here_component_expression_action: snapshot.start_here_component_expression_action,
+    start_here_component_expression_marker: snapshot.start_here_component_expression_marker,
+    start_here_component_expression_posture: snapshot.start_here_component_expression_posture,
+    start_here_component_expression_component_id: snapshot.start_here_component_expression_component_id,
+    start_here_component_expression_selection_id: snapshot.start_here_component_expression_selection_id,
+    start_here_component_expression_cue_id: snapshot.start_here_component_expression_cue_id,
     reason,
     canvas_first: true,
   });
@@ -5917,6 +5938,10 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     component_id: snapshot.active_component_id,
     material_id: snapshot.active_component_material_id,
     canvas_selection_id: snapshot.canvas_selection_id,
+    start_here_component_expression_id: snapshot.start_here_component_expression_id,
+    start_here_component_expression_component_id: snapshot.start_here_component_expression_component_id,
+    start_here_component_expression_selection_id: snapshot.start_here_component_expression_selection_id,
+    start_here_component_expression_cue_id: snapshot.start_here_component_expression_cue_id,
     routine_context_id: snapshot.routine_context_id,
     avatar_presence_id: snapshot.avatar_presence_id,
     integrated_loop_id: snapshot.integrated_loop_id,
@@ -6069,6 +6094,7 @@ function formatPrimaryPlaySurface() {
     `Normal-test component: ${snapshot.normal_test_component_cue_id} / ${snapshot.normal_test_component_id} / ${snapshot.normal_test_component_visible_change}`,
     `Normal-test practice feedback: ${snapshot.normal_test_practice_feedback_id} / ${snapshot.normal_test_practice_feedback_practice_id} / ${snapshot.normal_test_practice_feedback_schedule}`,
     `Normal-test expression: ${snapshot.normal_test_expression_id} / ${snapshot.normal_test_expression_marker} / posture=${snapshot.normal_test_expression_posture}`,
+    `Start Here expression: ${snapshot.start_here_component_expression_id} / ${snapshot.start_here_component_expression_marker} / component=${snapshot.start_here_component_expression_component_id} / word=${snapshot.start_here_component_expression_word}`,
     `Resource pressure: ${snapshot.resource_pressure.length ? snapshot.resource_pressure.join(', ') : 'none'}`,
     `Rows: focus=${surface.focusLedger.length}, cues=${surface.canvasCueLedger.length}, prompts=${surface.actionPromptLedger.length}`,
     `Boundary: ${surface.boundary}`,
@@ -7632,6 +7658,7 @@ function runNormalPlayAction(verb) {
   } else if (verb === 'follow') receipt = runNormalPlayFollowChain();
   else if (verb === 'space') receipt = runNormalPlayGiveSpace();
   const startHereComponentExpression = consumedStartHereComponent ? recordStartHereComponentResidentExpression(consumedStartHereComponent, normalActionId) : null;
+  if (startHereComponentExpression) recordPrimaryPlaySurfaceSnapshot('start here component expression visible');
   const ambientPhysics = runNormalPlayAmbientPhysics(option.verb, normalActionId);
   const evidence = latestWalkthroughEvidence();
   const manipulationLoop = world.gamePrototypeMaterialManipulation || null;
@@ -18678,6 +18705,7 @@ function buildPrototypeAcceptanceReceipt() {
   const startHereComponentOptionRows = actionRail && actionRail.optionLedger ? actionRail.optionLedger.filter(snapshot => (snapshot.options || []).some(option => option.start_here_component_return_recommended_verb === 'objects' && option.start_here_component_return_component_id && option.start_here_component_return_component_id !== 'none' && option.recommended === true)).length : 0;
   const startHereComponentActionRows = actionRail && actionRail.actionLedger ? actionRail.actionLedger.filter(row => row.verb === 'objects' && row.start_here_component_return_consumed === true && row.start_here_component_return_component_id && row.start_here_component_return_component_id !== 'none' && row.start_here_component_return_selection_id && row.start_here_component_return_selection_id !== 'none' && row.start_here_component_return_cue_id && row.start_here_component_return_cue_id !== 'none' && row.start_here_component_return_expression_id && row.start_here_component_return_expression_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const startHereComponentExpressionRows = autonomous && autonomous.expressionLedger ? autonomous.expressionLedger.filter(row => row.start_here_component_return_path === true && row.normal_action_id && row.normal_action_id !== 'none' && row.component_id && row.component_id !== 'none' && row.selection_id && row.selection_id !== 'none' && row.cue_id && row.cue_id !== 'none' && row.publicCueOnly === true && row.hiddenStateExposed === false).length : 0;
+  const startHereComponentExpressionCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.start_here_component_expression_id && row.start_here_component_expression_id !== 'none' && (row.cues || []).some(cue => /start here component expression/.test(cue)) && row.normal_view_hidden_law_exposed === false).length : 0;
   const worksiteRows = worksite ? worksite.watchLedger.length : 0;
   const worksiteSnapshots = worksite ? worksite.snapshotLedger.length : 0;
   const returnJournalRows = returnJournal ? returnJournal.journalLedger.length : 0;
@@ -18880,7 +18908,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'start_here_player_visible_receipt', pass: Boolean(normalPlayerHudNode && normalPlaySummaryNode && normalPlayerHud.start_here_ready === true && normalPlayerHud.start_here_receipt !== 'none' && normalPlayerHud.start_here_physics_path !== 'none' && normalPlayerHud.start_here_physics_happy_path !== 'none' && normalPlayerHud.start_here_resident_word !== 'none' && normalPlayerHud.start_here_player_gloss !== 'none' && normalPlayerHud.start_here_body_expression !== 'none' && normalPlayerHud.start_here_object_memory !== 'none'), evidence: `receipt=${normalPlayerHud.start_here_receipt}, physics=${normalPlayerHud.start_here_physics_path}/${normalPlayerHud.start_here_physics_happy_path}, word=${normalPlayerHud.start_here_resident_word}, body=${normalPlayerHud.start_here_body_expression}, objectMemory=${normalPlayerHud.start_here_object_memory}` },
     { id: 'start_here_component_selected_on_canvas', pass: Boolean(playSession && playSession.startHereAcceptanceReady === true && startHereSelectedRows > 0 && startHereVisibleCueRows > 0), evidence: `selected=${startHereSelectedRows}, visibleCues=${startHereVisibleCueRows}` },
     { id: 'start_here_component_save_return_continuity', pass: Boolean(playSession && playSession.startHereAcceptanceReady === true && startHereComponentSaveRows > 0 && startHereComponentRestoreRows > 0), evidence: `saved=${startHereComponentSaveRows}, restored=${startHereComponentRestoreRows}` },
-    { id: 'start_here_component_drives_objects_action', pass: Boolean(playSession && startHereComponentRestoreRows > 0 && startHereComponentOptionRows > 0 && startHereComponentActionRows > 0 && startHereComponentExpressionRows > 0), evidence: `restored=${startHereComponentRestoreRows}, options=${startHereComponentOptionRows}, actions=${startHereComponentActionRows}, expressions=${startHereComponentExpressionRows}` },
+    { id: 'start_here_component_drives_objects_action', pass: Boolean(playSession && startHereComponentRestoreRows > 0 && startHereComponentOptionRows > 0 && startHereComponentActionRows > 0 && startHereComponentExpressionRows > 0 && startHereComponentExpressionCanvasCueRows > 0), evidence: `restored=${startHereComponentRestoreRows}, options=${startHereComponentOptionRows}, actions=${startHereComponentActionRows}, expressions=${startHereComponentExpressionRows}, canvasExpressions=${startHereComponentExpressionCanvasCueRows}` },
     { id: 'normal_play_summary_card', pass: Boolean(normalPlaySummaryNode && normalPlaySummary.next_action && normalPlaySummary.resident && normalPlaySummary.boundary && normalPlaySummary.boundary.includes('no command')), evidence: `next=${normalPlaySummary.next_action}, resident=${normalPlaySummary.resident}, proposal=${normalPlaySummary.proposal}, continuity=${normalPlaySummary.continuity}` },
     { id: 'normal_player_guided_action_highlight', pass: Boolean(normalPlayerGuideHighlight && normalPlayerGuideHighlight.matched === true), evidence: `recommended=${normalPlayerGuideHighlight.recommended_action}, highlighted=${normalPlayerGuideHighlight.highlighted_action}, matched=${normalPlayerGuideHighlight.matched === true}` },
     { id: 'advanced_prototype_controls_secondary', pass: Boolean(advancedControlsNode && advancedControlsNode.tagName === 'DETAILS' && advancedControlsButtons > 0), evidence: `details=${Boolean(advancedControlsNode)}, buttons=${advancedControlsButtons}, open=${advancedControlsNode ? advancedControlsNode.open === true : false}` },

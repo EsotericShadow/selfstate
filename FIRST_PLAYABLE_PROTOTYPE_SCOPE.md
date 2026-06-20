@@ -1153,6 +1153,8 @@ Acceptance requires:
 - Player Mode readiness requires visible Physics Follow continuity instead of treating it as export-only evidence
 - QA readiness includes a `player-mode-visible-physics-follow` preflight row
 - exported acceptance includes `player_mode_visible_physics_follow_continuity`
+- save slots persist the Player Mode visible Physics Follow card fingerprint
+- return logs compare the restored visible Follow card through `player_mode_visible_physics_follow_save_return_continuity`
 - object and normal-test Follow chains keep priority before the Physics path branch
 - resident boundary/refusal behavior remains possible and recoverable with `Space`
 - no direct resident command, hidden-law normal-view exposure, or tech-tree unlock is introduced

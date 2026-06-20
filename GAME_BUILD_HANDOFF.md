@@ -215,6 +215,8 @@ The prototype now includes an `Audit commons` action and `Commons / causality` c
 
 The prototype now includes a `Guide step` action. It reads the current Player guide phase and executes the matching existing prototype action, recording a guide history row with source phase, action, next phase, selected resident, and no direct resident command. This turns the advisory guide into a playable one-button path while preserving resident autonomy and avoiding scripted technology unlocks.
 
+Guide history now carries the ambient physics happy-path receipt when `Guide step` reaches the `Physics path` phase. The Player guide card also reports the latest path ID, proposal, resident word, restore match, and return body-language expression so the player can see the chain as game state instead of only as an audit gate.
+
 
 ## Prototype v0 resident project update
 

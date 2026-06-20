@@ -283,7 +283,8 @@ The first playable loop includes a direct save/return pass: enter the village, l
 1. The Player guide derives the current phase from existing world state.
 2. Guide step executes the suggested existing action, including the special repeated schedule ask used for ordinary-play practice seeding.
 3. The shell records guide history so the player can see how phases advanced.
-4. Guided steps do not directly command residents; they only operate the avatar/prototype controls already available to the player.
+4. Guide history records the ambient physics happy-path receipt when the guided phase is `Physics path`.
+5. Guided steps do not directly command residents; they only operate the avatar/prototype controls already available to the player.
 
 
 ## Resident project progress loop

@@ -10307,6 +10307,10 @@ function runPrototypeGuidedStep() {
     result = window[guide.button]();
   }
   const afterGuide = derivePrototypePlayerGuide();
+  const playSession = world.gamePrototypePlaySession || null;
+  const latestAmbientHappyPath = playSession && playSession.ambientPhysicsHappyPathLedger && playSession.ambientPhysicsHappyPathLedger.length
+    ? playSession.ambientPhysicsHappyPathLedger[playSession.ambientPhysicsHappyPathLedger.length - 1]
+    : null;
   const row = {
     id: `GPG-${String(prototype.guideHistory.length + 1).padStart(3, '0')}`,
     from_phase: guide.phase,
@@ -10316,6 +10320,14 @@ function runPrototypeGuidedStep() {
     resident: world.selected,
     commanded_resident: false,
     result_event: result && result.event ? result.event : 'none',
+    ambient_physics_happy_path_id: latestAmbientHappyPath ? latestAmbientHappyPath.happy_path_id : 'none',
+    ambient_physics_happy_path_ready: latestAmbientHappyPath ? latestAmbientHappyPath.acceptance_ready === true : false,
+    ambient_physics_happy_path_proposal_id: latestAmbientHappyPath ? latestAmbientHappyPath.proposal_id : 'none',
+    ambient_physics_happy_path_word: latestAmbientHappyPath ? latestAmbientHappyPath.resident_word : 'none',
+    player_facing: true,
+    avatar_direct_command: false,
+    hidden_law_normal_view: false,
+    tech_tree_unlock: false,
   };
   prototype.guideHistory.push(row);
   if (prototype.guideHistory.length > 40) prototype.guideHistory.shift();
@@ -15036,6 +15048,7 @@ function formatPrototypePlayerGuide() {
   const dayCycle = world.gamePrototypeDayCycle || null;
   const returnLater = world.gamePrototypeReturnLater || null;
   const objectChain = typeof latestObjectObjectionChainState === 'function' ? latestObjectObjectionChainState() : { phase: 'none', next_label: 'none', reason: 'not available', response_id: 'none', proposal_id: 'none', resolution_id: 'none', recheck_result: 'none', saved_rows: 0, restored_rows: 0 };
+  const latestAmbientHappyPath = playSession && playSession.ambientPhysicsHappyPathLedger && playSession.ambientPhysicsHappyPathLedger.length ? playSession.ambientPhysicsHappyPathLedger[playSession.ambientPhysicsHappyPathLedger.length - 1] : null;
   const history = prototype.guideHistory.slice(-5).map(row => `${row.id}: ${row.from_phase}->${row.next_phase} via ${row.action}`);
   return [
     `Phase: ${guide.phase}`,
@@ -15059,6 +15072,7 @@ function formatPrototypePlayerGuide() {
     `Resident worksite: ${worksite ? `ready=${worksite.acceptanceReady}; watches=${worksite.watchLedger.length}; snapshots=${worksite.snapshotLedger.length}` : 'not started'}`,
     `Return journal: ${returnJournal ? `ready=${returnJournal.acceptanceReady}; rows=${returnJournal.journalLedger.length}; snapshots=${returnJournal.snapshotLedger.length}` : 'not started'}`,
     `Play session: ${playSession ? `ready=${playSession.acceptanceReady}; steps=${playSession.stepLedger.length}/${playSession.requiredSteps.length}; snapshots=${playSession.snapshotLedger.length}` : 'not started'}`,
+    `Ambient physics path: ${latestAmbientHappyPath ? `ready=${latestAmbientHappyPath.acceptance_ready}; id=${latestAmbientHappyPath.happy_path_id}; proposal=${latestAmbientHappyPath.proposal_id}; word=${latestAmbientHappyPath.resident_word}; restore=${latestAmbientHappyPath.restore_match}; body=${latestAmbientHappyPath.body_expression_id}` : 'not started'}`,
     `Projects: ${projects ? `${projects.projectLedger.length} work row(s), completed=${projects.completionLedger.length}, stalled=${projects.stalledLedger.length}` : 'not advanced'}`,
     `Commons support: ${commonsSupport ? `${commonsSupport.supportLedger.length} support row(s), recoveries=${commonsSupport.recoveryLedger.length}` : 'not supported'}`,
     `Nearby actions: ${nearby ? `${nearby.actionLedger.length} action(s), current=${nearbyActionPlan().label}->${nearbyActionPlan().action}` : `${nearbyActionPlan().label}->${nearbyActionPlan().action}`}`,

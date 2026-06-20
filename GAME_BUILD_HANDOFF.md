@@ -736,3 +736,12 @@ Implementation boundary:
 - The avatar follows/supports the chain; the resident still performs the movement and manipulation.
 - The target comes from the resident-generated test/component cue, not from a hidden tech unlock.
 - The row records component cue ID, manipulation ID, body step ID, target source, and no hidden-law exposure in normal view.
+
+## Prototype increment: normal-test practice feedback
+
+Normal-test Follow handling now feeds back into the emergent practice graph and Village Board state. A resident manipulation created from a normal-test component cue can create/update a practice node, write a normal-test practice feedback row, bias the resident's schedule/memory, and attach the resulting practice back to the originating proposal.
+
+Implementation boundary:
+- This is feedback from lived resident manipulation, not a scripted tech unlock.
+- The proposal receives practice pressure only after the resident body/manipulation row exists.
+- Future schedules remember the local practice pressure through resident memory and public-facing schedule bias.

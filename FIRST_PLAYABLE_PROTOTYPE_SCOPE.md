@@ -896,3 +896,15 @@ A normal-test chain should not stop at a visible component cue. When followed, i
 - a follow-chain row preserving manipulation ID and body step ID
 - no direct avatar command
 - no hidden-law exposure in normal view
+
+## Added scope gate: Normal-test Follow updates practice feedback
+
+`normal_test_follow_updates_practice_feedback` is now part of first playable prototype scope.
+
+A normal-test Follow handling step should be able to produce:
+
+- a practice graph node or update tied to the manipulation
+- a normal-test feedback row tied to the test, component, body step, and practice
+- proposal feedback fields linking the practice back to the Village Board item
+- resident schedule and memory bias from the practice feedback
+- no hidden-law exposure and no direct avatar command

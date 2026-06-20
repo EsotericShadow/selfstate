@@ -2778,11 +2778,12 @@ function ensureMaterialManipulationLoop() {
       actionLedger: [],
       observationLedger: [],
       practiceLinks: [],
+      feedbackLedger: [],
       failureLedger: [],
       boundary: 'resident-chosen physical manipulation only; avatar supports conditions and cannot command object handling',
     };
   }
-  ['actionLedger', 'observationLedger', 'practiceLinks', 'failureLedger'].forEach(key => {
+  ['actionLedger', 'observationLedger', 'practiceLinks', 'feedbackLedger', 'failureLedger'].forEach(key => {
     if (!Array.isArray(world.gamePrototypeMaterialManipulation[key])) world.gamePrototypeMaterialManipulation[key] = [];
   });
   return world.gamePrototypeMaterialManipulation;
@@ -2902,7 +2903,8 @@ function updatePracticeFromMaterialManipulation(row, term) {
   const loop = ensureMaterialManipulationLoop();
   const graph = ensureEmergentPracticeGraph();
   const repeated = loop.actionLedger.filter(existing => existing.action === row.action && existing.material_id === row.material_id && existing.success).length;
-  const shouldCreate = row.success ? repeated >= 2 || row.action === 'test' : true;
+  const isNormalTestFollow = row.normal_test_follow_target === true;
+  const shouldCreate = isNormalTestFollow || (row.success ? repeated >= 2 || row.action === 'test' : true);
   if (!shouldCreate) return null;
   const localVerb = row.action.replace('_', ' ');
   const localName = `${term ? term.resident_word : 'local'} ${localVerb} handling habit`;
@@ -2937,12 +2939,21 @@ function updatePracticeFromMaterialManipulation(row, term) {
     avatar_role: 'witness_or_condition_supporter',
     hidden_properties_audit_only: true,
     source_manipulation_rows: [],
+    source_normal_test_ids: [],
+    normal_test_feedback_ids: [],
+    proposal_feedback_ids: [],
+    schedule_bias_residents: [],
     construction_component_ids: [],
     component_affordances: [],
     language_term_id: term ? term.term_id : null,
     translation_confidence: term ? term.translation_confidence : 0.5,
   };
   node.source_manipulation_rows = Array.from(new Set((node.source_manipulation_rows || []).concat([row.manipulation_id])));
+  if (row.normal_test_follow_target === true) {
+    node.source_normal_test_ids = Array.from(new Set((node.source_normal_test_ids || []).concat([row.normal_test_chain_test_id || 'none']).filter(id => id && id !== 'none')));
+    node.proposal_feedback_ids = Array.from(new Set((node.proposal_feedback_ids || []).concat([row.normal_test_chain_proposal_id || 'none']).filter(id => id && id !== 'none')));
+    node.schedule_bias_residents = Array.from(new Set((node.schedule_bias_residents || []).concat([row.resident])));
+  }
   node.construction_component_ids = Array.from(new Set((node.construction_component_ids || []).concat([row.component_id])));
   node.component_affordances = Array.from(new Set((node.component_affordances || []).concat([row.affordance])));
   node.observations_supporting = Array.from(new Set((node.observations_supporting || []).concat([row.public_observation])));
@@ -2957,6 +2968,11 @@ function updatePracticeFromMaterialManipulation(row, term) {
   node.taboo_score = Number(clamp(Number(node.taboo_score || 0) + (row.success ? 0.01 : 0.18)).toFixed(3));
   node.dispute_score = Number(clamp(Number(node.dispute_score || 0) + (row.success ? 0.03 : 0.16)).toFixed(3));
   node.risk_flags = Array.from(new Set((node.risk_flags || []).concat(row.success ? ['material handling maintenance'] : ['failed manipulation warning'])));
+  if (row.normal_test_follow_target === true) {
+    node.risk_flags = Array.from(new Set(node.risk_flags.concat(['normal-test follow pressure'])));
+    node.practical_score = Number(clamp(Number(node.practical_score || 0) + (row.success ? 0.06 : 0.01)).toFixed(3));
+    node.dispute_score = Number(clamp(Number(node.dispute_score || 0) + (row.success ? 0.01 : 0.05)).toFixed(3));
+  }
   node.generations_survived = Math.max(Number(node.generations_survived || 0), Math.floor(node.adoption_count / 2));
   node.status = !row.success ? 'disputed' : node.adoption_count >= 4 && node.practical_score > 0.4 ? 'practical' : 'emerging';
   if (!existing) graph.nodes.push(node);
@@ -2973,6 +2989,74 @@ function updatePracticeFromMaterialManipulation(row, term) {
     if (term.adoption_count >= 8 && !term.variants.includes(`${term.resident_word}-ko`)) term.variants.push(`${term.resident_word}-ko`);
   }
   return node;
+}
+
+function recordNormalTestPracticeFeedback(row, practiceNode) {
+  if (!row || row.normal_test_follow_target !== true || !practiceNode) return null;
+  const loop = ensureMaterialManipulationLoop();
+  const board = ensureVillageBoard();
+  const proposal = board.projectProposals.find(item => item.proposal_id === row.normal_test_chain_proposal_id) || null;
+  const cue = world.gamePrototype3DWorld && world.gamePrototype3DWorld.normalTestComponentCueLedger
+    ? world.gamePrototype3DWorld.normalTestComponentCueLedger.find(item => item.cue_id === row.normal_test_component_cue_id) || null
+    : null;
+  const scheduleBias = row.success
+    ? `returns to ${practiceNode.local_name}`
+    : `warns about ${row.resident_term}`;
+  const residentMemory = row.success
+    ? `${row.normal_test_chain_test_id} became practice pressure through ${practiceNode.local_name}`
+    : `${row.normal_test_chain_test_id} stayed a warning after ${row.manipulation_id}`;
+  const feedback = {
+    feedback_id: `NTPF-${String(loop.feedbackLedger.length + 1).padStart(3, '0')}`,
+    tick: world.tick,
+    resident: row.resident,
+    manipulation_id: row.manipulation_id,
+    body_step_id: row.body_step_id || 'none',
+    component_id: row.component_id,
+    normal_test_component_cue_id: row.normal_test_component_cue_id || 'none',
+    normal_test_id: row.normal_test_chain_test_id || 'none',
+    normal_test_proposal_id: row.normal_test_chain_proposal_id || 'none',
+    practice_id: practiceNode.practice_id,
+    practice_name: practiceNode.local_name,
+    proposal_id: proposal ? proposal.proposal_id : 'none',
+    cue_visible_change: cue ? cue.visible_change : 'none',
+    schedule_bias: scheduleBias,
+    resident_memory: residentMemory,
+    proposal_feedback_applied: Boolean(proposal),
+    no_direct_avatar_command: true,
+    hidden_law_normal_view: false,
+  };
+  loop.feedbackLedger.push(feedback);
+  loop.feedbackLedger = loop.feedbackLedger.slice(-80);
+  row.normal_test_practice_feedback_id = feedback.feedback_id;
+  row.linked_practice_id = practiceNode.practice_id;
+  practiceNode.normal_test_feedback_ids = Array.from(new Set((practiceNode.normal_test_feedback_ids || []).concat([feedback.feedback_id])));
+  practiceNode.source_normal_test_ids = Array.from(new Set((practiceNode.source_normal_test_ids || []).concat([feedback.normal_test_id]).filter(id => id && id !== 'none')));
+  practiceNode.proposal_feedback_ids = Array.from(new Set((practiceNode.proposal_feedback_ids || []).concat([feedback.proposal_id]).filter(id => id && id !== 'none')));
+  practiceNode.schedule_bias_residents = Array.from(new Set((practiceNode.schedule_bias_residents || []).concat([row.resident])));
+  if (proposal) {
+    proposal.related_practice_nodes = Array.from(new Set((proposal.related_practice_nodes || []).concat([practiceNode.practice_id])));
+    proposal.normal_test_practice_feedback_id = feedback.feedback_id;
+    proposal.normal_test_feedback_practice_id = practiceNode.practice_id;
+    proposal.normal_test_schedule_bias = scheduleBias;
+    proposal.related_memories = Array.from(new Set((proposal.related_memories || []).concat([residentMemory])));
+    proposal.possible_failure_modes = Array.from(new Set((proposal.possible_failure_modes || []).concat(['practice upkeep follows body handling'])));
+  }
+  recordRealityConstraint('normal_test_practice_feedback', {
+    resident: row.resident,
+    sourceBeliefId: feedback.feedback_id,
+    materials: [row.component_id, practiceNode.practice_id],
+    publicObservation: `${row.resident} tied ${row.normal_test_chain_test_id} to ${practiceNode.local_name}`,
+    residentInterpretation: residentMemory,
+    materialTransformation: 'no new material created; resident manipulation became practice/proposal/schedule feedback',
+    timeCost: 1,
+    workCost: 1,
+    toolWear: 0,
+    maintenanceObligation: practiceNode.practice_id,
+    unintendedConsequence: 'future schedule and proposal interpretation now lean toward the remembered practice',
+    hiddenLawInvolved: 'none in normal view',
+    conservationCheck: true
+  });
+  return feedback;
 }
 
 function runResidentMaterialManipulationStep(actionOverride = 'resident_choice', targetOverride = null) {
@@ -3130,15 +3214,16 @@ function runResidentMaterialManipulationStep(actionOverride = 'resident_choice',
   loop.observationLedger = loop.observationLedger.slice(-120);
   loop.failureLedger = loop.failureLedger.slice(-80);
   const linkedPractice = updatePracticeFromMaterialManipulation(row, plan.term);
+  const normalTestFeedback = recordNormalTestPracticeFeedback(row, linkedPractice);
   mutateResident(residentName, {
     trust: success ? 0.002 : -0.001,
     progress: success ? 0.008 : 0.002,
-    schedule: success ? `${plan.action.replace('_', ' ')} ${row.resident_term}` : `warns about ${row.resident_term}`,
-    memory: residentInterpretation,
-    historyEvent: 'resident material manipulation',
-    historyDetail: `${row.manipulation_id} ${plan.action} ${component.component_id}`
+    schedule: normalTestFeedback ? normalTestFeedback.schedule_bias : success ? `${plan.action.replace('_', ' ')} ${row.resident_term}` : `warns about ${row.resident_term}`,
+    memory: normalTestFeedback ? normalTestFeedback.resident_memory : residentInterpretation,
+    historyEvent: normalTestFeedback ? 'normal test practice feedback' : 'resident material manipulation',
+    historyDetail: normalTestFeedback ? `${normalTestFeedback.feedback_id} ${normalTestFeedback.practice_id} ${component.component_id}` : `${row.manipulation_id} ${plan.action} ${component.component_id}`
   });
-  if (world.autonomousResidents) recordVisibleResidentExpression(residentName, success ? 'material_manipulation' : 'experiment', world.autonomousResidents.needState[residentName]);
+  if (world.autonomousResidents) recordVisibleResidentExpression(residentName, normalTestFeedback ? 'normal_test_practice_feedback' : success ? 'material_manipulation' : 'experiment', world.autonomousResidents.needState[residentName]);
   recordRealityConstraint('resident_material_manipulation', {
     resident: residentName,
     sourceBeliefId: row.manipulation_id,
@@ -5494,6 +5579,7 @@ function currentPrimaryPlaySurfaceSnapshot() {
   const latestPractice = graph && graph.nodes && graph.nodes.length ? graph.nodes[graph.nodes.length - 1] : null;
   const manipulationLoop = world.gamePrototypeMaterialManipulation || null;
   const latestHandlingPracticeLink = manipulationLoop && manipulationLoop.practiceLinks && manipulationLoop.practiceLinks.length ? manipulationLoop.practiceLinks[manipulationLoop.practiceLinks.length - 1] : null;
+  const latestNormalTestPracticeFeedback = manipulationLoop && manipulationLoop.feedbackLedger && manipulationLoop.feedbackLedger.length ? manipulationLoop.feedbackLedger[manipulationLoop.feedbackLedger.length - 1] : null;
   const latestHandlingPractice = latestHandlingPracticeLink && graph && graph.nodes ? graph.nodes.find(node => node.practice_id === latestHandlingPracticeLink.practice_id) : null;
   const actionRail = world.gamePrototypeActionRail || null;
   const latestNormalResidentTestAction = actionRail && actionRail.actionLedger
@@ -5548,6 +5634,10 @@ function currentPrimaryPlaySurfaceSnapshot() {
     handling_practice_manipulation_id: latestHandlingPracticeLink ? latestHandlingPracticeLink.manipulation_id : 'none',
     handling_practice_name: latestHandlingPractice ? latestHandlingPractice.local_name || latestHandlingPractice.practice_id : 'none',
     handling_practice_status: latestHandlingPractice ? latestHandlingPractice.status : 'none',
+    normal_test_practice_feedback_id: latestNormalTestPracticeFeedback ? latestNormalTestPracticeFeedback.feedback_id : 'none',
+    normal_test_practice_feedback_practice_id: latestNormalTestPracticeFeedback ? latestNormalTestPracticeFeedback.practice_id : 'none',
+    normal_test_practice_feedback_resident: latestNormalTestPracticeFeedback ? latestNormalTestPracticeFeedback.resident : 'none',
+    normal_test_practice_feedback_schedule: latestNormalTestPracticeFeedback ? latestNormalTestPracticeFeedback.schedule_bias : 'none',
     normal_resident_test_action_id: latestNormalResidentTestAction ? latestNormalResidentTestAction.action_id : 'none',
     normal_resident_test_id: latestNormalResidentTestAction ? latestNormalResidentTestAction.ordinary_bottleneck_test_id : 'none',
     normal_resident_test_proposal_id: latestNormalResidentTestAction ? latestNormalResidentTestAction.ordinary_bottleneck_proposal_id : 'none',
@@ -5644,6 +5734,7 @@ function currentPrimaryPlaySurfaceSnapshot() {
       latestProposal ? `proposal ${latestProposal.proposal_id}` : 'village board has no current proposal',
       latestPractice ? `practice ${latestPractice.local_name || latestPractice.practice_id}` : 'practice graph not yet visible',
       latestHandlingPracticeLink ? `handling practice ${latestHandlingPracticeLink.practice_id} from ${latestHandlingPracticeLink.manipulation_id} relation=${latestHandlingPracticeLink.relation}` : 'normal handling has not seeded a practice yet',
+      latestNormalTestPracticeFeedback ? `normal test practice feedback ${latestNormalTestPracticeFeedback.feedback_id} ${latestNormalTestPracticeFeedback.normal_test_id}->${latestNormalTestPracticeFeedback.practice_id} schedule=${latestNormalTestPracticeFeedback.schedule_bias}` : 'normal-test follow has not biased a practice yet',
       latestNormalResidentTestAction ? `resident test ${latestNormalResidentTestAction.ordinary_bottleneck_test_id} from ${latestNormalResidentTestAction.action_id} board=${latestNormalResidentTestAction.ordinary_bottleneck_board_proposal_id || 'none'} bottleneck=${latestNormalResidentTestAction.ordinary_bottleneck_type}` : 'normal play has not generated a resident test yet',
       latestNormalTestComponentCue ? `normal test component ${latestNormalTestComponentCue.cue_id} ${latestNormalTestComponentCue.component_id} ${latestNormalTestComponentCue.visible_change}` : 'normal-test component cue not visible yet',
       latestNormalTestExpression ? `normal test expression ${latestNormalTestExpression.expression_id} ${latestNormalTestExpression.marker || 'visible cue'} / ${latestNormalTestExpression.posture || 'posture'}` : 'normal-test resident expression not visible yet',
@@ -5702,6 +5793,10 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     normal_test_chain_component_cue_id: snapshot.normal_test_chain_component_cue_id,
     normal_test_chain_component_id: snapshot.normal_test_chain_component_id,
     normal_test_chain_handling_rows: snapshot.normal_test_chain_handling_rows,
+    normal_test_practice_feedback_id: snapshot.normal_test_practice_feedback_id,
+    normal_test_practice_feedback_practice_id: snapshot.normal_test_practice_feedback_practice_id,
+    normal_test_practice_feedback_resident: snapshot.normal_test_practice_feedback_resident,
+    normal_test_practice_feedback_schedule: snapshot.normal_test_practice_feedback_schedule,
     normal_test_chain_project_rows: snapshot.normal_test_chain_project_rows,
     normal_test_chain_worksite_rows: snapshot.normal_test_chain_worksite_rows,
     normal_test_chain_visual_rows: snapshot.normal_test_chain_visual_rows,
@@ -5866,6 +5961,7 @@ function formatPrimaryPlaySurface() {
     `Object chain: active=${snapshot.object_chain_active ? 'yes' : 'no'} / phase=${snapshot.object_chain_phase} / next=${snapshot.object_chain_next_action} / response=${snapshot.object_chain_response_id} / proposal=${snapshot.object_chain_proposal_id} / resolution=${snapshot.object_chain_resolution_id} / recheck=${snapshot.object_chain_recheck_result}`,
     `Normal-test chain: active=${snapshot.normal_test_chain_active ? 'yes' : 'no'} / phase=${snapshot.normal_test_chain_phase} / next=${snapshot.normal_test_chain_next_action} / action=${snapshot.normal_test_chain_action_id} / test=${snapshot.normal_test_chain_test_id} / board=${snapshot.normal_test_chain_proposal_id} / handling=${snapshot.normal_test_chain_handling_rows}`,
     `Normal-test component: ${snapshot.normal_test_component_cue_id} / ${snapshot.normal_test_component_id} / ${snapshot.normal_test_component_visible_change}`,
+    `Normal-test practice feedback: ${snapshot.normal_test_practice_feedback_id} / ${snapshot.normal_test_practice_feedback_practice_id} / ${snapshot.normal_test_practice_feedback_schedule}`,
     `Normal-test expression: ${snapshot.normal_test_expression_id} / ${snapshot.normal_test_expression_marker} / posture=${snapshot.normal_test_expression_posture}`,
     `Resource pressure: ${snapshot.resource_pressure.length ? snapshot.resource_pressure.join(', ') : 'none'}`,
     `Rows: focus=${surface.focusLedger.length}, cues=${surface.canvasCueLedger.length}, prompts=${surface.actionPromptLedger.length}`,
@@ -6458,6 +6554,8 @@ function runNormalPlayFollowChain() {
     normal_test_follow_target_action: normalTestTarget ? normalTestTarget.action : 'none',
     normal_test_follow_manipulation_id: normalTestFollowManipulation ? normalTestFollowManipulation.manipulation_id : 'none',
     normal_test_follow_body_step_id: normalTestFollowManipulation ? normalTestFollowManipulation.body_step_id || 'none' : 'none',
+    normal_test_follow_feedback_id: normalTestFollowManipulation ? normalTestFollowManipulation.normal_test_practice_feedback_id || 'none' : 'none',
+    normal_test_follow_practice_id: normalTestFollowManipulation ? normalTestFollowManipulation.linked_practice_id || 'none' : 'none',
     normal_test_follow_target_source: normalTestFollowManipulation ? normalTestFollowManipulation.target_source || 'none' : 'none',
     normal_test_chain_project_rows: normalTestChainAfter.project_rows,
     normal_test_chain_worksite_rows: normalTestChainAfter.worksite_rows,
@@ -7269,7 +7367,7 @@ function formatNormalPlayActionRail() {
   const options = normalPlayOptions();
   const optionRows = options.map(option => `${option.label}: ${option.intent}; recommended=${option.recommended ? 'yes' : 'no'}`);
   const actionRows = rail.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.label} -> ${row.underlying_action}; proposal=${row.proposal_id}; practice=${row.practice_id}; handling=${row.manipulation_id || 'none'}; handlingPractice=${row.handling_practice_id || 'none'}; residentTest=${row.ordinary_bottleneck_test_id || 'none'}; follow=${row.follow_chain_id || 'none'}/${row.follow_chain_after || 'none'}; object=${row.object_chain_phase || 'none'}/${row.object_chain_resolution_id || 'none'}; normalTest=${row.normal_test_chain_phase || 'none'}/${row.normal_test_chain_test_id || 'none'}; recovery=${row.follow_recovery_id || 'none'}; save=${row.save_slot_id}`);
-  const followRows = (rail.followChainLedger || []).slice(-5).map(row => `${row.follow_id}: ${row.chosen_label}; outcome=${row.response_outcome || 'none'}; allowed=${row.resident_allowed_follow !== false}; chain=${row.chain_before}->${row.chain_after}; object=${row.object_chain_phase || 'none'}/${row.object_chain_resolution_id || 'none'} result=${row.object_chain_recheck_result || 'none'}; normalTest=${row.normal_test_chain_phase || 'none'}/${row.normal_test_chain_test_id || 'none'} board=${row.normal_test_chain_proposal_id || 'none'} handling=${row.normal_test_chain_handling_rows || 0}/${row.normal_test_follow_manipulation_id || 'none'} body=${row.normal_test_follow_body_step_id || 'none'}; complete=${row.chain_complete_after}; response=${row.resident_response_expression_id || 'none'}/${row.resident_response_marker || 'none'}; proposal=${row.proposal_id}; practice=${row.practice_id}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
+  const followRows = (rail.followChainLedger || []).slice(-5).map(row => `${row.follow_id}: ${row.chosen_label}; outcome=${row.response_outcome || 'none'}; allowed=${row.resident_allowed_follow !== false}; chain=${row.chain_before}->${row.chain_after}; object=${row.object_chain_phase || 'none'}/${row.object_chain_resolution_id || 'none'} result=${row.object_chain_recheck_result || 'none'}; normalTest=${row.normal_test_chain_phase || 'none'}/${row.normal_test_chain_test_id || 'none'} board=${row.normal_test_chain_proposal_id || 'none'} handling=${row.normal_test_chain_handling_rows || 0}/${row.normal_test_follow_manipulation_id || 'none'} body=${row.normal_test_follow_body_step_id || 'none'} feedback=${row.normal_test_follow_feedback_id || 'none'} practice=${row.normal_test_follow_practice_id || 'none'}; complete=${row.chain_complete_after}; response=${row.resident_response_expression_id || 'none'}/${row.resident_response_marker || 'none'}; proposal=${row.proposal_id}; practice=${row.practice_id}; save=${row.save_slot_id}; restore=${row.restore_slot_id}`);
   const recoveryRows = (rail.followRecoveryLedger || []).slice(-5).map(row => `${row.recovery_id}: ${row.recovery_outcome}; source=${row.source_follow_id}/${row.source_outcome}; chain=${row.chain_id}; response=${row.resident_response_expression_id || 'none'}/${row.resident_response_marker || 'none'}; advanced=${row.chain_advanced}`);
   return [
     `Acceptance ready: ${rail.acceptanceReady ? 'yes' : 'no'}`,
@@ -13633,8 +13731,9 @@ function formatPrototypeMaterialManipulation() {
   const observations = loop.observationLedger.slice(-5).map(row => `${row.observation_id}: ${row.public_observation} -> ${row.resident_interpretation}`);
   const failures = loop.failureLedger.slice(-5).map(row => `${row.manipulation_id}: ${row.failure_reason}; recoverable=${row.recoverable}`);
   const links = loop.practiceLinks.slice(-6).map(row => `${row.manipulation_id}->${row.practice_id} (${row.relation})`);
+  const feedback = (loop.feedbackLedger || []).slice(-5).map(row => `${row.feedback_id}: ${row.normal_test_id}->${row.practice_id}; resident=${row.resident}; component=${row.component_id}; schedule=${row.schedule_bias}; proposal=${row.proposal_id}`);
   return [
-    `Runs: ${loop.runCount} / actions=${loop.actionLedger.length} / observations=${loop.observationLedger.length} / practiceLinks=${loop.practiceLinks.length}`,
+    `Runs: ${loop.runCount} / actions=${loop.actionLedger.length} / observations=${loop.observationLedger.length} / practiceLinks=${loop.practiceLinks.length} / feedback=${(loop.feedbackLedger || []).length}`,
     `Boundary: ${loop.boundary}`,
     'Resident physical handling:',
     ...(actions.length ? actions : ['none']),
@@ -13644,6 +13743,8 @@ function formatPrototypeMaterialManipulation() {
     ...(failures.length ? failures : ['none']),
     'Practice links:',
     ...(links.length ? links : ['none']),
+    'Normal-test practice feedback:',
+    ...(feedback.length ? feedback : ['none']),
   ].join('\n');
 }
 
@@ -15234,6 +15335,10 @@ function buildPrototypeAcceptanceReceipt() {
   const normalTestFollowManipulationRows = manipulation && manipulation.actionLedger ? manipulation.actionLedger.filter(row => row.normal_test_follow_target === true && row.normal_test_component_cue_id && row.normal_test_component_cue_id !== 'none' && row.normal_test_chain_test_id && row.normal_test_chain_test_id !== 'none' && row.body_step_id && row.body_step_id !== 'none' && row.target_source === 'normal_test_component_cue' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const normalTestFollowBodyRows = residentBodies && residentBodies.bodyLedger ? residentBodies.bodyLedger.filter(row => row.source === 'resident_material_manipulation' && row.target_component_id && row.target_component_id !== 'none' && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
   const normalTestFollowChainRows = actionRail && actionRail.followChainLedger ? actionRail.followChainLedger.filter(row => row.normal_test_follow_manipulation_id && row.normal_test_follow_manipulation_id !== 'none' && row.normal_test_follow_body_step_id && row.normal_test_follow_body_step_id !== 'none' && row.normal_test_follow_target_source === 'normal_test_component_cue' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
+  const normalTestPracticeFeedbackRows = manipulation && manipulation.feedbackLedger ? manipulation.feedbackLedger.filter(row => row.normal_test_id && row.normal_test_id !== 'none' && row.practice_id && row.practice_id !== 'none' && row.manipulation_id && row.manipulation_id !== 'none' && row.body_step_id && row.body_step_id !== 'none' && row.no_direct_avatar_command === true && row.hidden_law_normal_view === false).length : 0;
+  const normalTestPracticeFeedbackNodeRows = practiceGraph && practiceGraph.nodes ? practiceGraph.nodes.filter(row => row.normal_test_feedback_ids && row.normal_test_feedback_ids.length > 0 && row.source_normal_test_ids && row.source_normal_test_ids.length > 0 && row.schedule_bias_residents && row.schedule_bias_residents.length > 0).length : 0;
+  const normalTestPracticeFeedbackProposalRows = board && board.projectProposals ? board.projectProposals.filter(row => row.normal_action_test_path === true && row.normal_test_practice_feedback_id && row.normal_test_practice_feedback_id !== 'none' && row.normal_test_feedback_practice_id && row.normal_test_feedback_practice_id !== 'none' && row.normal_test_schedule_bias && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
+  const normalTestPracticeFeedbackFollowRows = actionRail && actionRail.followChainLedger ? actionRail.followChainLedger.filter(row => row.normal_test_follow_feedback_id && row.normal_test_follow_feedback_id !== 'none' && row.normal_test_follow_practice_id && row.normal_test_follow_practice_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const actionRailFollowRecoveryRows = actionRail && actionRail.followRecoveryLedger ? actionRail.followRecoveryLedger.length : 0;
   const actionRailFollowRecoveryExpressionRows = actionRail && actionRail.followRecoveryLedger ? actionRail.followRecoveryLedger.filter(row => row.resident_response_expression_id && row.resident_response_expression_id !== 'none' && row.chain_advanced === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const objectGuidedOptionRows = actionRail && actionRail.optionLedger ? actionRail.optionLedger.filter(snapshot => (snapshot.options || []).some(option => option.object_chain_phase && option.object_chain_phase !== 'none' && option.object_chain_next_action && option.object_chain_next_action !== 'none' && option.recommended === true)).length : 0;
@@ -15389,6 +15494,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'normal_test_visible_resident_expression', pass: Boolean(autonomous && board && projects && worldStage && normalTestExpressionRows > 0 && normalTestProposalExpressionRows > 0 && normalTestSupportExpressionRows > 0 && normalTestProjectExpressionRows > 0 && normalTestExpressionCanvasCueRows > 0), evidence: `expressions=${normalTestExpressionRows}, proposals=${normalTestProposalExpressionRows}, support=${normalTestSupportExpressionRows}, project=${normalTestProjectExpressionRows}, canvas=${normalTestExpressionCanvasCueRows}` },
     { id: 'normal_test_visible_component_cue', pass: Boolean(materialWorld && actionRail && board && worldStage && normalTestComponentCueRows > 0 && normalTestActionComponentRows > 0 && normalTestBoardComponentRows > 0 && normalTestComponentCanvasCueRows > 0), evidence: `componentCues=${normalTestComponentCueRows}, actions=${normalTestActionComponentRows}, board=${normalTestBoardComponentRows}, canvas=${normalTestComponentCanvasCueRows}` },
     { id: 'normal_test_follow_drives_body_manipulation', pass: Boolean(actionRail && manipulation && residentBodies && normalTestFollowManipulationRows > 0 && normalTestFollowBodyRows > 0 && normalTestFollowChainRows > 0), evidence: `manipulations=${normalTestFollowManipulationRows}, bodyRows=${normalTestFollowBodyRows}, followRows=${normalTestFollowChainRows}` },
+    { id: 'normal_test_follow_updates_practice_feedback', pass: Boolean(actionRail && manipulation && practiceGraph && board && normalTestPracticeFeedbackRows > 0 && normalTestPracticeFeedbackNodeRows > 0 && normalTestPracticeFeedbackProposalRows > 0 && normalTestPracticeFeedbackFollowRows > 0), evidence: `feedback=${normalTestPracticeFeedbackRows}, practiceNodes=${normalTestPracticeFeedbackNodeRows}, proposals=${normalTestPracticeFeedbackProposalRows}, followRows=${normalTestPracticeFeedbackFollowRows}` },
     { id: 'object_objection_guided_next_step', pass: Boolean(actionRail && (objectGuidedOptionRows > 0 || objectGuidedFollowRows > 0)), evidence: actionRail ? `guidedOptions=${objectGuidedOptionRows}, guidedFollow=${objectGuidedFollowRows}` : 'not run' },
     { id: 'object_objection_canvas_cue', pass: Boolean(worldStage && objectChainCanvasCueRows > 0), evidence: worldStage ? `objectChainCues=${objectChainCanvasCueRows}` : 'not run' },
     { id: 'player_mode_interface', pass: Boolean(playerMode && playerMode.acceptanceReady && playerModeSessions > 0 && playerModeVisibleCards >= 6 && playerMode.normalViewOnly === true && playerMode.debugPanelsHidden === true && playerMode.noDirectCommand === true && playerMode.noHiddenLawNormalView === true && playerMode.playerGlossesOnly === true), evidence: playerMode ? `enabled=${playerMode.enabled}, sessions=${playerModeSessions}, visibleCards=${playerModeVisibleCards}` : 'not run' },

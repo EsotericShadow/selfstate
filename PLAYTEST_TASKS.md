@@ -530,3 +530,12 @@
 3. Use Follow and confirm the proposer moves toward the cued component through a body-physics row.
 4. Confirm the same step creates a resident material manipulation row against the cued component.
 5. Confirm the Follow row shows manipulation ID, body step ID, target source, and no direct avatar command.
+
+## Playtest task: normal-test practice feedback
+
+1. Create a resident-generated normal test with a visible component cue.
+2. Follow it until resident body handling occurs on the cued component.
+3. Confirm the handling creates or updates an emergent practice node.
+4. Confirm the material handling panel shows a normal-test feedback row.
+5. Confirm the related Village Board proposal records the feedback practice and resident schedule bias.
+6. Confirm the resident's visible schedule or memory now reflects the local practice pressure.

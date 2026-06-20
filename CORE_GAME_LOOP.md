@@ -827,3 +827,9 @@ This closes the gap between resident tests and physical world readability: the p
 resident-generated test -> visible component cue -> Follow -> resident proposer moves toward the cued component -> resident material manipulation -> body physics step -> chain records manipulation/body IDs -> worksite/project path can continue.
 
 This makes Follow a playable bridge from public test evidence into embodied resident action. The player does not command the object directly; the resident acts through existing carry/tie/dry/test constraints.
+
+## Normal-test practice feedback loop
+
+normal-test Follow -> resident body/manipulation row -> emergent practice update -> feedback row -> resident schedule/memory bias -> originating proposal records the practice pressure.
+
+This turns normal-test handling into future behavior pressure. The test does not simply complete a UI chain; it becomes remembered local evidence that can influence what the resident returns to and how the board proposal is interpreted.

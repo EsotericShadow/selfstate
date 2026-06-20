@@ -773,3 +773,13 @@ Implementation boundary:
 - Resident routine context and action rows carry `RPP-...` pressure IDs.
 - The pressure row is public-facing behavior pressure, not hidden simulator truth.
 - No resources spawn and no direct avatar command is created by the physics tick.
+
+## Prototype increment: physics pressure cultivates language
+
+Resident language now changes when residents experience ordinary stochastic physics pressure. A pressure row can create or update a grounded sound root, a pressure term, meaning drift, variants, translation confidence, and a `LPP-...` language-pressure ledger row.
+
+Implementation boundary:
+- Sound forms are deterministic semantic roots, not random fantasy labels.
+- Terms are grounded in public observations and linked pressure/component evidence.
+- Player glosses remain imperfect and separate from engine concepts.
+- Hidden simulator law remains audit-only.

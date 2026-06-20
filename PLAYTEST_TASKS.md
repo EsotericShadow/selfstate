@@ -566,3 +566,12 @@
 4. Confirm the same resident action row shows `phys=RPP-...`.
 5. Confirm the routine context shows the pressure kind and component.
 6. Confirm the pressure did not reveal hidden simulator law, spawn resources, or issue a direct avatar command.
+
+## Playtest task: pressure-grounded resident language
+
+1. Enter the prototype village and run one autonomous resident tick.
+2. Open the 3D material world panel.
+3. Confirm `Pressure-grounded language` shows a `LPP-...` row.
+4. Confirm the row includes a resident word, an imperfect player gloss, a sound root, a pressure ID, and a component ID.
+5. Confirm the related sound root has a grounded event and adoption count.
+6. Confirm the resident term is not an English technology label and does not reveal hidden simulator law.

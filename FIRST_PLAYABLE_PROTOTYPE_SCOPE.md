@@ -949,3 +949,16 @@ An autonomous resident tick should prove that stochastic physics participates in
 - the autonomous action row carries the same pressure ID as behavior bias
 - the pressure row is mirrored into the physics ledger
 - no direct avatar command, hidden-law exposure, or resource spawning occurs
+
+## Added scope gate: Physics pressure cultivates language
+
+`physics_pressure_cultivates_language` is now part of first playable prototype scope.
+
+A physics pressure event should be able to cultivate resident language:
+
+- a `LPP-...` language-pressure row links to the pressure ID
+- a grounded sound root records public observation, resident, material, and action context
+- a resident pressure term or drift entry is created from roots
+- player gloss is imperfect and separate from engine concept
+- generated language is structured, not random gibberish
+- hidden simulator law stays out of normal view

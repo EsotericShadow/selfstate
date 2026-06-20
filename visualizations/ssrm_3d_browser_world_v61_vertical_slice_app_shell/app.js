@@ -1517,6 +1517,7 @@ function ensurePrototype3DWorld() {
             current_status: 'practical root word',
           }
         ],
+        soundPressureLedger: [],
       },
 	      observationLedger: [
 	        { observation_id: 'G3O-001', public_observation: 'vessels off wet ground spoiled less often', resident_interpretation: 'taku-ren is safer for ku when ground is wet', linked_structure: 'G3S-001', hidden_law_visible_normal_view: false, engine_concept_audit_only: 'raised_dry_storage_surface' },
@@ -1528,6 +1529,10 @@ function ensurePrototype3DWorld() {
 	    };
 	  }
   if (!Array.isArray(world.gamePrototype3DWorld.constructionLedger)) world.gamePrototype3DWorld.constructionLedger = [];
+  if (!world.gamePrototype3DWorld.language) world.gamePrototype3DWorld.language = { soundRoots: [], terms: [], soundPressureLedger: [] };
+  if (!Array.isArray(world.gamePrototype3DWorld.language.soundRoots)) world.gamePrototype3DWorld.language.soundRoots = [];
+  if (!Array.isArray(world.gamePrototype3DWorld.language.terms)) world.gamePrototype3DWorld.language.terms = [];
+  if (!Array.isArray(world.gamePrototype3DWorld.language.soundPressureLedger)) world.gamePrototype3DWorld.language.soundPressureLedger = [];
 	  if (!world.gamePrototype3DWorld.physics) {
     world.gamePrototype3DWorld.physics = {
       kernel_id: 'G3P-KERNEL-001',
@@ -12738,6 +12743,136 @@ function classifyResidentPhysicsPressure(pressure) {
   return 'ordinary physical drift';
 }
 
+function pressureLanguageSeed(pressureKind) {
+  const seeds = {
+    'component failure': { sound_id: 'SND-DAK', sound_form: 'dak', phonetic_shape: 'hard stop + closed warning', meaning_association: 'break, failed support, sharp warning', player_gloss: 'break or failed support', root_gloss: 'break/fail warning', emotional_weight: 0.72, practical_weight: 0.68, taboo_weight: 0.28 },
+    'contact or collision': { sound_id: 'SND-TOK', sound_form: 'tok', phonetic_shape: 'front stop + back close', meaning_association: 'hit, knock, contact shock', player_gloss: 'knock or contact', root_gloss: 'hit/contact', emotional_weight: 0.5, practical_weight: 0.58, taboo_weight: 0.14 },
+    'weak component': { sound_id: 'SND-RI', sound_form: 'ri', phonetic_shape: 'quick liquid vowel', meaning_association: 'loose, thin, weak, needs watching', player_gloss: 'loose or weak', root_gloss: 'loose/weak', emotional_weight: 0.38, practical_weight: 0.62, taboo_weight: 0.1 },
+    'low support stability': { sound_id: 'SND-REN', sound_form: 'ren', phonetic_shape: 'liquid + nasal close', meaning_association: 'raised, held above, kept off ground, support under load', player_gloss: 'raised support under load', root_gloss: 'raised/support', emotional_weight: 0.42, practical_weight: 0.74, taboo_weight: 0.1 },
+    'wet material risk': { sound_id: 'SND-WA', sound_form: 'wa', phonetic_shape: 'open rounded water sound', meaning_association: 'wet, damp, softening, water-near', player_gloss: 'wet or damp risk', root_gloss: 'wet/damp', emotional_weight: 0.46, practical_weight: 0.66, taboo_weight: 0.18 },
+    'field stress': { sound_id: 'SND-KAR', sound_form: 'kar', phonetic_shape: 'hard scrape + open close', meaning_association: 'strain, pull, hard resistance', player_gloss: 'strain or pull', root_gloss: 'strain/pull', emotional_weight: 0.44, practical_weight: 0.64, taboo_weight: 0.12 },
+    'heat strain': { sound_id: 'SND-SHA', sound_form: 'sha', phonetic_shape: 'breath friction + open heat', meaning_association: 'heat, warmth, drying, burn caution', player_gloss: 'heat or drying', root_gloss: 'heat/dry caution', emotional_weight: 0.5, practical_weight: 0.6, taboo_weight: 0.2 },
+    'ordinary physical drift': { sound_id: 'SND-MO', sound_form: 'mo', phonetic_shape: 'soft nasal drift', meaning_association: 'slow change, ordinary material drift', player_gloss: 'slow material change', root_gloss: 'slow change', emotional_weight: 0.22, practical_weight: 0.42, taboo_weight: 0.04 },
+  };
+  return seeds[pressureKind] || seeds['ordinary physical drift'];
+}
+
+function groundPhysicsPressureLanguage(row, baseTerm, component, structure) {
+  const materialWorld = ensurePrototype3DWorld();
+  const language = materialWorld.language;
+  const seed = pressureLanguageSeed(row.pressure_kind);
+  let root = language.soundRoots.find(item => item.sound_id === seed.sound_id);
+  const groundedEvent = row.public_observation || `${row.resident} noticed ${row.pressure_kind}`;
+  if (!root) {
+    root = {
+      sound_id: seed.sound_id,
+      sound_form: seed.sound_form,
+      phonetic_shape: seed.phonetic_shape,
+      meaning_association: seed.meaning_association,
+      grounded_event: groundedEvent,
+      linked_observation: row.public_observation,
+      linked_material: component ? component.material_id : 'mixed_material',
+      linked_action: row.active ? 'inspect and repair pressure' : 'watch ordinary drift',
+      linked_place: structure ? structure.structure_id : component ? component.affordance : 'local worksite',
+      linked_resident: row.resident,
+      linked_practice: structure ? structure.structure_id : 'none',
+      emotional_weight: seed.emotional_weight,
+      practical_weight: seed.practical_weight,
+      ritual_weight: row.active ? 0.12 : 0.04,
+      taboo_weight: seed.taboo_weight,
+      first_speaker: row.resident,
+      first_household: `${row.resident} household`,
+      transmission_path: [row.resident],
+      variants: [`${seed.sound_form}a`],
+      drift_history: [groundedEvent],
+      adoption_count: 1,
+      translation_confidence: row.active ? 0.42 : 0.34,
+      player_gloss: seed.player_gloss,
+    };
+    language.soundRoots.push(root);
+  } else {
+    root.adoption_count = Number(root.adoption_count || 0) + 1;
+    root.practical_weight = Number(clamp(Number(root.practical_weight || seed.practical_weight) + (row.active ? 0.012 : 0.004)).toFixed(3));
+    root.emotional_weight = Number(clamp(Number(root.emotional_weight || seed.emotional_weight) + (row.active ? 0.006 : 0.002)).toFixed(3));
+    root.taboo_weight = Number(clamp(Number(root.taboo_weight || seed.taboo_weight) + (/failure|wet|collision|heat/.test(row.pressure_kind) ? 0.006 : 0.001)).toFixed(3));
+    root.translation_confidence = Number(clamp(Number(root.translation_confidence || 0.4) + 0.005).toFixed(3));
+    root.transmission_path = Array.from(new Set([...(root.transmission_path || []), row.resident])).slice(-8);
+    root.drift_history = root.drift_history || [];
+    if (!root.drift_history.includes(groundedEvent)) root.drift_history.push(groundedEvent);
+  }
+  const baseWord = baseTerm ? baseTerm.resident_word : 'lok';
+  const pressureWord = `${baseWord}-${seed.sound_form}`;
+  let pressureTerm = language.terms.find(item => item.pressure_root_id === root.sound_id && item.base_term_id === (baseTerm ? baseTerm.term_id : 'none'));
+  if (!pressureTerm) {
+    pressureTerm = {
+      term_id: `TERM-PHY-${root.sound_id.replace(/^SND-/, '')}-${baseTerm ? baseTerm.term_id.replace(/^TERM-/, '') : 'LOCAL'}`,
+      resident_word: pressureWord,
+      player_gloss: `roughly ${seed.player_gloss} around ${baseTerm ? baseTerm.player_gloss : 'local material'}`,
+      engine_concept: 'resident_physics_pressure_interpretation',
+      roots: Array.from(new Set([...(baseTerm ? baseTerm.roots || [] : []), root.sound_id])),
+      root_glosses: Array.from(new Set([...(baseTerm ? baseTerm.root_glosses || [] : []), seed.root_gloss])),
+      origin_resident: row.resident,
+      origin_household: `${row.resident} household`,
+      origin_event: groundedEvent,
+      linked_practice_id: structure ? structure.structure_id : baseTerm ? baseTerm.linked_practice_id : 'none',
+      linked_materials: Array.from(new Set([...(baseTerm ? baseTerm.linked_materials || [] : []), component ? component.material_id : 'mixed_material'])),
+      adoption_count: 1,
+      variants: [pressureWord.replace('-', '')],
+      meaning_drift: [`${baseWord} now carries ${seed.player_gloss} after ${row.pressure_id}`],
+      taboo_score: seed.taboo_weight,
+      ritual_score: row.active ? 0.1 : 0.04,
+      practical_score: seed.practical_weight,
+      translation_confidence: 0.38,
+      current_status: row.active ? 'emerging pressure term' : 'watched drift term',
+      pressure_root_id: root.sound_id,
+      base_term_id: baseTerm ? baseTerm.term_id : 'none',
+      source_pressure_ids: [row.pressure_id],
+    };
+    language.terms.push(pressureTerm);
+  } else if (pressureTerm) {
+    pressureTerm.adoption_count = Number(pressureTerm.adoption_count || 0) + 1;
+    pressureTerm.translation_confidence = Number(clamp(Number(pressureTerm.translation_confidence || 0.38) + 0.006).toFixed(3));
+    pressureTerm.practical_score = Number(clamp(Number(pressureTerm.practical_score || seed.practical_weight) + (row.active ? 0.01 : 0.003)).toFixed(3));
+    pressureTerm.source_pressure_ids = Array.from(new Set([...(pressureTerm.source_pressure_ids || []), row.pressure_id])).slice(-12);
+    pressureTerm.meaning_drift = pressureTerm.meaning_drift || [];
+    const drift = `${pressureTerm.resident_word} repeated through ${row.pressure_kind} at ${row.component_id}`;
+    if (!pressureTerm.meaning_drift.includes(drift)) pressureTerm.meaning_drift.push(drift);
+  }
+  if (baseTerm) {
+    baseTerm.adoption_count = Number(baseTerm.adoption_count || 0) + 1;
+    baseTerm.meaning_drift = baseTerm.meaning_drift || [];
+    const drift = `${baseTerm.resident_word} includes ${seed.player_gloss} pressure`;
+    if (!baseTerm.meaning_drift.includes(drift)) baseTerm.meaning_drift.push(drift);
+    baseTerm.variants = baseTerm.variants || [];
+    if (!baseTerm.variants.includes(pressureWord)) baseTerm.variants.push(pressureWord);
+    baseTerm.translation_confidence = Number(clamp(Number(baseTerm.translation_confidence || 0.5) + 0.004).toFixed(3));
+    if (!(baseTerm.roots || []).includes(root.sound_id)) baseTerm.roots = Array.from(new Set([...(baseTerm.roots || []), root.sound_id]));
+    if (!(baseTerm.root_glosses || []).includes(seed.root_gloss)) baseTerm.root_glosses = Array.from(new Set([...(baseTerm.root_glosses || []), seed.root_gloss]));
+  }
+  const languageLedger = language.soundPressureLedger;
+  const languageRow = {
+    language_pressure_id: `LPP-${String(languageLedger.length + 1).padStart(3, '0')}`,
+    pressure_id: row.pressure_id,
+    physics_step_id: row.physics_step_id,
+    resident: row.resident,
+    pressure_kind: row.pressure_kind,
+    component_id: row.component_id,
+    root_id: root.sound_id,
+    sound_form: root.sound_form,
+    resident_word: pressureTerm ? pressureTerm.resident_word : pressureWord,
+    player_gloss: pressureTerm ? pressureTerm.player_gloss : `roughly ${seed.player_gloss}`,
+    base_term_id: baseTerm ? baseTerm.term_id : 'none',
+    pressure_term_id: pressureTerm ? pressureTerm.term_id : 'none',
+    grounded_event: groundedEvent,
+    translation_confidence: pressureTerm ? pressureTerm.translation_confidence : root.translation_confidence,
+    no_random_gibberish: true,
+    hidden_law_normal_view: false,
+  };
+  languageLedger.push(languageRow);
+  language.soundPressureLedger = languageLedger.slice(-120);
+  return languageRow;
+}
+
 function recordResidentPhysicsPressure(residentName, entropy, source = 'autonomous resident tick') {
   const sim = ensureAutonomousResidents();
   const materialWorld = ensurePrototype3DWorld();
@@ -12792,6 +12927,13 @@ function recordResidentPhysicsPressure(residentName, entropy, source = 'autonomo
     hidden_law_normal_view: false,
     conservation_check: true,
   };
+  const languageGrounding = groundPhysicsPressureLanguage(row, term, component, structure);
+  row.language_pressure_id = languageGrounding.language_pressure_id;
+  row.language_root_id = languageGrounding.root_id;
+  row.language_pressure_term_id = languageGrounding.pressure_term_id;
+  row.resident_pressure_word = languageGrounding.resident_word;
+  row.player_pressure_gloss = languageGrounding.player_gloss;
+  row.translation_confidence = languageGrounding.translation_confidence;
   ledger.push(row);
   if (ledger.length > 120) ledger.shift();
   materialWorld.physics.residentPressureLedger.push(row);
@@ -13874,7 +14016,8 @@ function formatPrototypeMaterialWorld() {
   const structures = sim.structures.slice(-3).map(row => `${row.structure_id}: ${row.resident_term_id} / ${row.player_gloss}; stability=${row.stability}; moisture=${row.moisture_risk}; fixedAsset=${row.no_fixed_asset === false}`);
   const components = sim.components.slice(0, 8).map(row => `${row.component_id}: ${row.shape} ${row.material_id} ${row.affordance}; pos=(${row.position3d.x},${row.position3d.y},${row.position3d.z}); stability=${row.stability}; damage=${row.damage}; stress=${row.field_stress || 0}; temp=${row.temperature || 'n/a'}; term=${row.resident_term_id}`);
 	  const terms = sim.language.terms.map(row => `${row.resident_word} ~ ${row.player_gloss}; engine=${world.audit ? row.engine_concept : 'audit only'}; roots=${row.root_glosses.join('+')}; variants=${row.variants.join(', ')}; confidence=${row.translation_confidence}`);
-	  const roots = sim.language.soundRoots.map(row => `${row.sound_form}: ${row.player_gloss}; grounded=${row.grounded_event}; adoption=${row.adoption_count}`);
+  const roots = sim.language.soundRoots.map(row => `${row.sound_form}: ${row.player_gloss}; grounded=${row.grounded_event}; adoption=${row.adoption_count}`);
+  const pressureLanguageRows = (sim.language.soundPressureLedger || []).slice(-6).map(row => `${row.language_pressure_id}: ${row.resident_word} ~ ${row.player_gloss}; root=${row.sound_form}; pressure=${row.pressure_id}/${row.pressure_kind}; component=${row.component_id}; confidence=${row.translation_confidence}`);
 	  const latestPhysics = physics.latestStep;
 	  const board = world.villageBoard || null;
 	  const physicsProposals = board && board.projectProposals ? board.projectProposals.filter(row => row.related_physics_step).slice(-4).map(row => `${row.proposal_id}: ${row.problem_addressed}; status=${row.status}; materials=${(row.materials_needed || []).join('+')}`) : [];
@@ -13892,6 +14035,8 @@ function formatPrototypeMaterialWorld() {
     ...(terms.length ? terms : ['none']),
     'Grounded sound roots:',
     ...(roots.length ? roots : ['none']),
+    'Pressure-grounded language:',
+    ...(pressureLanguageRows.length ? pressureLanguageRows : ['none']),
 		    'Physics:',
 		    latestPhysics ? `${latestPhysics.step_id}: support=${latestPhysics.support_checks}, collisions=${latestPhysics.collisions}, failures=${latestPhysics.failures}, field=${latestPhysics.field_id || 'none'}, heat=${latestPhysics.field_heat || 'n/a'}, moisture=${latestPhysics.field_moisture || 'n/a'}, stress=${latestPhysics.field_stress || 'n/a'}, entropy=${latestPhysics.entropy}` : 'none',
 		    `Force rows=${physics.forceLedger.length} / support rows=${physics.supportLedger.length} / collision rows=${physics.collisionLedger.length} / failure rows=${physics.failureLedger.length} / field rows=${physics.fieldLedger ? physics.fieldLedger.length : 0} / energy rows=${physics.energyLedger ? physics.energyLedger.length : 0}`,
@@ -14444,7 +14589,7 @@ function formatPrototypeAutonomousResidents() {
   const comfortRows = (world.gamePrototypeAvatarPresence && world.gamePrototypeAvatarPresence.comfortLedger ? world.gamePrototypeAvatarPresence.comfortLedger : []).slice(-6).map(row => `${row.comfort_id}: ${row.resident}; presence=${row.presence_id}; comfort=${row.comfort_before}->${row.comfort_after}; boundary=${row.boundary_pressure_after}; refusal=${row.refusal_risk_after}; canRefuse=${row.resident_can_refuse}`);
   const presenceReturnRows = (world.gamePrototypeAvatarPresence && world.gamePrototypeAvatarPresence.returnLedger ? world.gamePrototypeAvatarPresence.returnLedger : []).slice(-6).map(row => `${row.return_presence_id}: ${row.resident}; tone=${row.remembered_tone}; presence=${row.presence_rows}; comfort=${row.comfort_rows}; preserved=${row.source_history_preserved}; greeting=${row.return_greeting}`);
   const normalTestReturnRows = (sim.normalTestReturnBehaviorLedger || []).slice(-6).map(row => `${row.behavior_id}: ${row.resident}; feedback=${row.feedback_id}; practice=${row.practice_id}; kind=${row.behavior_kind}; expression=${row.expression_id}; consumed=${row.consumed_by_action_id || 'none'}`);
-  const physicsPressureRows = (sim.physicsPressureLedger || []).slice(-6).map(row => `${row.pressure_id}: ${row.resident}; step=${row.physics_step_id}; kind=${row.pressure_kind}; component=${row.component_id}; active=${row.active}; proposal=${row.board_proposal_id}`);
+  const physicsPressureRows = (sim.physicsPressureLedger || []).slice(-6).map(row => `${row.pressure_id}: ${row.resident}; step=${row.physics_step_id}; kind=${row.pressure_kind}; component=${row.component_id}; word=${row.resident_pressure_word || 'none'} ~ ${row.player_pressure_gloss || 'none'}; active=${row.active}; proposal=${row.board_proposal_id}`);
   return [
     `Day: ${sim.day} / season: ${sim.season}`,
     `Boundary: stochastic autonomous actions; no direct player command; actions cost time/needs/materials.`,
@@ -15742,6 +15887,9 @@ function buildPrototypeAcceptanceReceipt() {
   const residentPhysicsPressureRoutineRows = autonomous && autonomous.routineContextLedger ? autonomous.routineContextLedger.filter(row => row.resident_physics_pressure_id && row.resident_physics_pressure_id !== 'none' && row.resident_physics_pressure_step_id && row.resident_physics_pressure_step_id !== 'none' && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
   const residentPhysicsPressureActionRows = autonomous && autonomous.actionLog ? autonomous.actionLog.filter(row => row.physics_pressure_id && row.physics_pressure_id !== 'none' && row.physics_pressure_step_id && row.physics_pressure_step_id !== 'none' && row.post_physics_pressure_bias === true && row.no_direct_player_command === true).length : 0;
   const residentPhysicsPressurePhysicsRows = physics && physics.residentPressureLedger ? physics.residentPressureLedger.filter(row => row.physics_step_id && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
+  const residentPhysicsLanguageRows = materialWorld && materialWorld.language && materialWorld.language.soundPressureLedger ? materialWorld.language.soundPressureLedger.filter(row => row.pressure_id && row.pressure_id !== 'none' && row.root_id && row.root_id !== 'none' && row.resident_word && row.no_random_gibberish === true && row.hidden_law_normal_view === false).length : 0;
+  const residentPhysicsLanguageRootRows = materialWorld && materialWorld.language && materialWorld.language.soundRoots ? materialWorld.language.soundRoots.filter(row => row.grounded_event && row.linked_observation && Number(row.adoption_count || 0) > 0 && row.player_gloss).length : 0;
+  const residentPhysicsLanguageTermRows = materialWorld && materialWorld.language && materialWorld.language.terms ? materialWorld.language.terms.filter(row => row.pressure_root_id && row.source_pressure_ids && row.source_pressure_ids.length > 0 && row.resident_word && row.player_gloss && row.engine_concept === 'resident_physics_pressure_interpretation').length : 0;
   const worksiteProximityRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.length : 0;
   const worksiteEffectRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.filter(row => row.effect_applied === true && row.target_component_id !== 'none' && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
   const worksiteBlockedRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.filter(row => row.blocked_by_distance === true && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
@@ -15775,6 +15923,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'normal_test_feedback_return_affects_behavior', pass: Boolean(autonomous && saves && normalTestFeedbackReturnBehaviorRows > 0 && normalTestFeedbackReturnRestoreRows > 0 && normalTestFeedbackReturnActionRows > 0), evidence: `returnBehavior=${normalTestFeedbackReturnBehaviorRows}, restoreRows=${normalTestFeedbackReturnRestoreRows}, actionBias=${normalTestFeedbackReturnActionRows}` },
     { id: 'autonomous_stochastic_residents', pass: Boolean(autonomous && autonomous.actionLog.length > 0 && autonomous.entropyLedger.length > 0), evidence: autonomous ? `${autonomous.actionLog.length} action(s), entropy rows=${autonomous.entropyLedger.length}` : 'not started' },
     { id: 'ordinary_physics_pressure_drives_residents', pass: Boolean(autonomous && physics && residentPhysicsPressureRows > 0 && residentPhysicsPressureRoutineRows > 0 && residentPhysicsPressureActionRows > 0 && residentPhysicsPressurePhysicsRows > 0), evidence: `pressureRows=${residentPhysicsPressureRows}, routine=${residentPhysicsPressureRoutineRows}, action=${residentPhysicsPressureActionRows}, physicsLedger=${residentPhysicsPressurePhysicsRows}` },
+    { id: 'physics_pressure_cultivates_language', pass: Boolean(materialWorld && residentPhysicsLanguageRows > 0 && residentPhysicsLanguageRootRows > 0 && residentPhysicsLanguageTermRows > 0), evidence: `languagePressure=${residentPhysicsLanguageRows}, groundedRoots=${residentPhysicsLanguageRootRows}, pressureTerms=${residentPhysicsLanguageTermRows}` },
     { id: 'reality_grounded_causality', pass: Boolean(ledger && ledger.rows.length > 0 && ledger.rows.every(row => row.conservation_check && row.normal_view_hidden_law_exposed === false)), evidence: ledger ? `${ledger.rows.length} causal row(s)` : 'no ledger' },
     { id: 'emergent_beliefs_and_practices', pass: Boolean(practiceGraph && practiceGraph.nodes.length > 0 && practiceGraph.noPredefinedTechTree === true), evidence: practiceGraph ? `${practiceGraph.nodes.length} node(s), no tech tree=${practiceGraph.noPredefinedTechTree}` : 'no practice graph' },
     { id: 'village_management_without_command', pass: Boolean(board && board.projectProposals.length > 0 && board.avatarCannotForce === true), evidence: board ? `${board.projectProposals.length} proposal(s), force=${board.avatarCannotForce === false}` : 'no board' },

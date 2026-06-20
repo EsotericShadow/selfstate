@@ -851,3 +851,9 @@ This closes the loop between persistence and ordinary play. A resident does not 
 autonomous tick -> stochastic 3D physics step -> component/field pressure row -> resident routine context -> action selection -> body/worksite behavior -> reality ledger.
 
 This makes physics part of normal lived play. Residents feel physical pressure as local material strain, heat, moisture, collision, weak support, or ordinary drift. They do not learn hidden physics law; they receive public observations that can redirect schedules, proposals, and repair behavior.
+
+## Physics pressure language cultivation loop
+
+physics pressure row -> grounded sound root -> pressure term or term drift -> imperfect player gloss -> future resident language variant.
+
+This keeps language tied to lived experience. A resident word changes because a resident noticed a pressure event around a component, not because the engine assigned an English tech label.

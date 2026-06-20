@@ -1101,7 +1101,7 @@ The first playable shell now has one normal-facing entry point: `Start here`.
 3. Run the normal `Physics path` so ambient physical pressure produces resident language, proposal evidence, save/return continuity, and a body-expression receipt.
 4. Run the compact 10-minute normal play path.
 5. Produce object/material change, practice evidence, save/return continuity, returned object-memory behavior, and guided next action.
-6. Surface the receipt in the normal HUD and play summary: physics path, local resident word, imperfect gloss, component, body expression, save/return match, and object-memory next action.
+6. Surface the receipt in the normal HUD and play summary: physics path, local resident word, imperfect gloss, component, body expression, save/return match, Start resident expression, and object-memory next action.
 7. Pin the receipt component into inspect-only canvas selection so the physical consequence is highlighted in the visible world.
 8. Save and return the pinned component as explicit normal-view continuity.
 9. Recommend the ordinary `Objects` verb so the player can inspect the restored component through gameplay.

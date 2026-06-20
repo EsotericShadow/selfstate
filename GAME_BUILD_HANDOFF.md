@@ -822,3 +822,9 @@ This keeps the game rule intact: the avatar can support conditions, but the resi
 Direct stochastic 3D physics steps can now create village-board repair proposals with resident pressure-language attached at creation time. A physics step that creates maintenance pressure records a resident pressure row, grounds a local pressure term, attaches the resident word and imperfect player gloss to the physics proposal, and keeps hidden physical law audit-only.
 
 This moves the prototype closer to the target loop where physics is not just a debug substrate. Physics produces visible strain, residents notice it through their language, and village management receives the concern as a resident proposal rather than a raw engine event.
+
+## Prototype increment: normal play advances physics-language proposals
+
+Normal player-facing verbs now advance the stochastic 3D physics substrate through an ambient action-rail physics row. Look, Move, Objects, Handling, Wait, Return, and Follow can step material physics, surface maintenance pressure, create or reuse a resident proposal, and carry resident pressure-language into the normal action row.
+
+This reduces dependence on debug physics buttons. The player can wait, return, or act normally and still see the village produce resident-language proposals from physical strain without exposing hidden simulator law.

@@ -609,3 +609,7 @@ Find a proposal carrying a local pressure-language term, support it without assi
 ## Playtest task: physics creates a resident-language proposal
 
 Run or wait through a stochastic physics step until a material strain creates a village-board concern. Confirm the proposal carries a local resident pressure word and imperfect gloss, links back to the physics step and affected component, and does not expose hidden support/moisture/failure law in normal view.
+
+## Playtest task: wait or return into a physics-language proposal
+
+Use normal player verbs such as Wait or Return instead of a debug physics button. Confirm the action rail records an ambient physics step, a resident proposal appears from material strain, and the proposal/action row carries a local pressure word and imperfect gloss without revealing hidden simulator law.

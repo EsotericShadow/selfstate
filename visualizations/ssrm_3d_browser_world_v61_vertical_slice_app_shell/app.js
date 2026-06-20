@@ -6257,6 +6257,7 @@ function ensureNormalPlayActionRail() {
   }
   if (!Array.isArray(world.gamePrototypeActionRail.followChainLedger)) world.gamePrototypeActionRail.followChainLedger = [];
   if (!Array.isArray(world.gamePrototypeActionRail.followRecoveryLedger)) world.gamePrototypeActionRail.followRecoveryLedger = [];
+  if (!Array.isArray(world.gamePrototypeActionRail.ambientPhysicsLedger)) world.gamePrototypeActionRail.ambientPhysicsLedger = [];
   const preferredRailVerbs = ['look', 'move', 'ask', 'talk', 'objects', 'handling', 'support', 'wait', 'return', 'save', 'follow', 'space'];
   world.gamePrototypeActionRail.verbs = preferredRailVerbs.concat(world.gamePrototypeActionRail.verbs.filter(verb => !preferredRailVerbs.includes(verb)));
   return world.gamePrototypeActionRail;
@@ -7215,6 +7216,74 @@ function recordNormalActionResidentGeneratedTest(payload) {
   };
 }
 
+function runNormalPlayAmbientPhysics(verb, normalActionId) {
+  const physicsVerbs = ['look', 'move', 'objects', 'handling', 'wait', 'return', 'follow'];
+  if (!physicsVerbs.includes(verb)) return null;
+  const rail = ensureNormalPlayActionRail();
+  const board = ensureVillageBoard();
+  const proposalCountBefore = board.projectProposals.length;
+  const source = `normal_play_${verb}`;
+  const step = applyPrototypePhysicsStep(source);
+  let consequence = applyPhysicsConsequencesToVillage(step, source);
+  const proposal = consequence && consequence.proposal ? consequence.proposal : null;
+  const concern = consequence && consequence.concern
+    ? consequence.concern
+    : board.concerns.find(row => row.source === step.step_id) || null;
+  if (proposal && (!proposal.pressure_language_id || proposal.pressure_language_id === 'none') && concern) {
+    const bridge = recordPhysicsStepProposalLanguage(step, proposal.proposer || world.selected, source, proposal, concern);
+    consequence = { concern, proposal, pressureLanguageBridge: bridge };
+  }
+  const pressureBridge = consequence && consequence.pressureLanguageBridge ? consequence.pressureLanguageBridge : null;
+  const row = {
+    ambient_physics_id: `NPAP-${String(rail.ambientPhysicsLedger.length + 1).padStart(3, '0')}`,
+    normal_action_id: normalActionId,
+    verb,
+    tick: world.tick,
+    source,
+    physics_step_id: step.step_id,
+    field_id: step.field_id || 'none',
+    energy_id: step.energy_id || 'none',
+    maintenance_pressure: step.maintenance_pressure === true,
+    support_checks: step.support_checks,
+    collisions: step.collisions,
+    failures: step.failures,
+    min_stability: step.min_stability,
+    max_damage: step.max_damage,
+    moisture_risk: step.moisture_risk,
+    proposal_id: proposal ? proposal.proposal_id : 'none',
+    proposal_created_by_this_action: proposal ? board.projectProposals.length > proposalCountBefore : false,
+    pressure_language_id: proposal ? proposal.pressure_language_id || 'none' : 'none',
+    pressure_language_pressure_id: proposal ? proposal.pressure_language_pressure_id || 'none' : 'none',
+    pressure_language_resident_word: proposal ? proposal.pressure_language_resident_word || 'none' : 'none',
+    pressure_language_player_gloss: proposal ? proposal.pressure_language_player_gloss || 'none' : 'none',
+    pressure_language_component_id: proposal ? proposal.pressure_language_component_id || 'none' : 'none',
+    pressure_language_kind: proposal ? proposal.pressure_language_kind || 'none' : 'none',
+    language_pressure_row_id: pressureBridge && pressureBridge.row ? pressureBridge.row.pressure_id : proposal ? proposal.related_resident_physics_pressure_id || proposal.pressure_language_pressure_id || 'none' : 'none',
+    normal_play_surface: true,
+    avatar_direct_command: false,
+    hidden_law_normal_view: false,
+    no_resource_spawning: true,
+    conservation_check: true,
+  };
+  rail.ambientPhysicsLedger.push(row);
+  rail.ambientPhysicsLedger = rail.ambientPhysicsLedger.slice(-80);
+  recordRealityConstraint('normal_play_ambient_physics', {
+    sourceBeliefId: row.normal_action_id,
+    materials: row.pressure_language_component_id !== 'none' ? [row.pressure_language_component_id] : ['local physical world'],
+    materialTransformation: row.maintenance_pressure ? `normal ${verb} advanced stochastic physics ${row.physics_step_id} into proposal ${row.proposal_id}` : `normal ${verb} advanced stochastic physics ${row.physics_step_id} without proposal`,
+    timeCost: verb === 'wait' || verb === 'return' ? 1 : 0,
+    workCost: 0,
+    toolWear: row.failures,
+    hiddenLawInvolved: 'none in normal view',
+    publicObservation: row.pressure_language_resident_word !== 'none' ? `${row.pressure_language_resident_word}: ${row.pressure_language_player_gloss}` : `physical world changed under ${verb}`,
+    residentInterpretation: row.proposal_id,
+    conservationCheck: true,
+    maintenanceObligation: row.proposal_id !== 'none' ? row.proposal_id : 'watch physical drift',
+    unintendedConsequence: row.proposal_id !== 'none' ? 'normal play surfaced a resident proposal from physics' : 'normal play still changes material conditions',
+  });
+  return row;
+}
+
 function runNormalPlayAction(verb) {
   const rail = ensureNormalPlayActionRail();
   rail.runCount += 1;
@@ -7245,6 +7314,7 @@ function runNormalPlayAction(verb) {
     receipt = savePrototypeSlot('normal play action rail');
   } else if (verb === 'follow') receipt = runNormalPlayFollowChain();
   else if (verb === 'space') receipt = runNormalPlayGiveSpace();
+  const ambientPhysics = runNormalPlayAmbientPhysics(option.verb, normalActionId);
   const evidence = latestWalkthroughEvidence();
   const manipulationLoop = world.gamePrototypeMaterialManipulation || null;
   const latestManipulation = manipulationLoop && manipulationLoop.actionLedger.length ? manipulationLoop.actionLedger[manipulationLoop.actionLedger.length - 1] : null;
@@ -7299,6 +7369,14 @@ function runNormalPlayAction(verb) {
     object_chain_resolution_id: objectChain.resolution_id,
     object_chain_recheck_response_id: objectChain.recheck_response_id,
     object_chain_recheck_result: objectChain.recheck_result,
+    ambient_physics_id: ambientPhysics ? ambientPhysics.ambient_physics_id : 'none',
+    ambient_physics_step_id: ambientPhysics ? ambientPhysics.physics_step_id : 'none',
+    ambient_physics_proposal_id: ambientPhysics ? ambientPhysics.proposal_id : 'none',
+    ambient_physics_maintenance_pressure: ambientPhysics ? ambientPhysics.maintenance_pressure === true : false,
+    ambient_physics_pressure_language_id: ambientPhysics ? ambientPhysics.pressure_language_id : 'none',
+    ambient_physics_resident_word: ambientPhysics ? ambientPhysics.pressure_language_resident_word : 'none',
+    ambient_physics_player_gloss: ambientPhysics ? ambientPhysics.pressure_language_player_gloss : 'none',
+    ambient_physics_component_id: ambientPhysics ? ambientPhysics.pressure_language_component_id : 'none',
     ordinary_bottleneck_feed_id: residentTestResult.feedId || 'none',
     ordinary_bottleneck_test_id: residentTestResult.testId || 'none',
     ordinary_bottleneck_auto_test_id: residentTestResult.autoTestId || 'none',
@@ -7349,7 +7427,7 @@ function runNormalPlayAction(verb) {
     action_rows: rail.actionLedger.length,
     option_rows: rail.optionLedger.length,
   });
-  return log('runNormalPlayAction', { ready: rail.acceptanceReady, verb: row.verb, actionRows: rail.actionLedger.length, proposal: row.proposal_id, practice: row.practice_id });
+  return log('runNormalPlayAction', { ready: rail.acceptanceReady, verb: row.verb, actionRows: rail.actionLedger.length, proposal: row.proposal_id, practice: row.practice_id, ambientPhysicsId: row.ambient_physics_id, ambientPhysicsProposal: row.ambient_physics_proposal_id, ambientPhysicsWord: row.ambient_physics_resident_word });
 }
 
 function runNormalPlayLook() { return runNormalPlayAction('look'); }
@@ -16083,6 +16161,9 @@ function buildPrototypeAcceptanceReceipt() {
   const actionRailFollowExpressionRows = actionRail && actionRail.followChainLedger ? actionRail.followChainLedger.filter(row => row.resident_response_expression_id && row.resident_response_expression_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const actionRailFollowCalibratedRows = actionRail && actionRail.followChainLedger ? actionRail.followChainLedger.filter(row => row.response_outcome && typeof row.resident_allowed_follow === 'boolean' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const normalHandlingPracticeRows = actionRail && actionRail.actionLedger ? actionRail.actionLedger.filter(row => row.verb === 'handling' && row.manipulation_id && row.manipulation_id !== 'none' && row.handling_practice_id && row.handling_practice_id !== 'none' && Number(row.handling_practice_links_after || 0) >= Number(row.handling_practice_links_before || 0) && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
+  const normalPlayAmbientPhysicsRows = actionRail && actionRail.ambientPhysicsLedger ? actionRail.ambientPhysicsLedger.filter(row => row.normal_action_id && row.normal_action_id !== 'none' && row.physics_step_id && row.physics_step_id !== 'none' && row.normal_play_surface === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.no_resource_spawning === true).length : 0;
+  const normalPlayAmbientPhysicsProposalRows = actionRail && actionRail.ambientPhysicsLedger ? actionRail.ambientPhysicsLedger.filter(row => row.proposal_id && row.proposal_id !== 'none' && row.pressure_language_id && row.pressure_language_id !== 'none' && row.pressure_language_resident_word && row.pressure_language_player_gloss && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
+  const normalPlayAmbientPhysicsActionRows = actionRail && actionRail.actionLedger ? actionRail.actionLedger.filter(row => row.ambient_physics_id && row.ambient_physics_id !== 'none' && row.ambient_physics_step_id && row.ambient_physics_step_id !== 'none' && row.ambient_physics_proposal_id && row.ambient_physics_proposal_id !== 'none' && row.ambient_physics_pressure_language_id && row.ambient_physics_pressure_language_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const normalActionResidentTestRows = actionRail && actionRail.actionLedger ? actionRail.actionLedger.filter(row => row.ordinary_bottleneck_feed_id && row.ordinary_bottleneck_feed_id !== 'none' && row.ordinary_bottleneck_test_id && row.ordinary_bottleneck_test_id !== 'none' && row.ordinary_bottleneck_triggered_test === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const normalActionAutoTestRows = world.practicalDiscovery && world.practicalDiscovery.autoGeneratedTests ? world.practicalDiscovery.autoGeneratedTests.filter(row => row.sourceNormalActionId && row.sourceNormalActionId !== 'none' && row.testId && row.testId !== 'none' && row.noPredeclaredInvention === true && row.noCorrectConceptInstalled === true).length : 0;
   const normalActionBoardProposalRows = board && board.projectProposals ? board.projectProposals.filter(row => row.normal_action_test_path === true && row.related_normal_action_id && row.related_normal_action_id !== 'none' && row.related_resident_test_id && row.related_resident_test_id !== 'none' && row.avatar_can_force === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
@@ -16282,6 +16363,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'canvas_component_selection', pass: Boolean(canvasSelection && canvasSelection.acceptanceReady === true && canvasSelectionRows > 0 && canvasSelectionCueRows > 0 && canvasSelection.selectionLedger.every(row => row.inspect_only === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false)), evidence: canvasSelection ? `selections=${canvasSelectionRows}, cueRows=${canvasSelectionCueRows}, selected=${canvasSelection.selected_component_id || 'none'}` : 'not run' },
     { id: 'first_playable_walkthrough', pass: Boolean(walkthrough && walkthrough.acceptanceReady && walkthroughSteps >= walkthrough.requiredSteps.length && walkthroughLinks >= walkthrough.requiredSteps.length && walkthrough.noDirectCommand === true && walkthrough.noTechTreeUnlock === true && walkthrough.noHiddenLawNormalView === true), evidence: walkthrough ? `${walkthrough.phase}; steps=${walkthroughSteps}, links=${walkthroughLinks}` : 'not run' },
     { id: 'normal_play_action_rail', pass: Boolean(actionRail && actionRail.acceptanceReady && actionRailRows >= actionRail.verbs.length && actionRailOptions > 0 && actionRailFollowRows > 0 && actionRailFollowExpressionRows > 0 && actionRailFollowCalibratedRows > 0 && actionRailFollowRecoveryRows > 0 && actionRailFollowRecoveryExpressionRows > 0 && actionRail.playerLanguageOnly === true && actionRail.noDirectCommand === true && actionRail.noTechTreeUnlock === true), evidence: actionRail ? `actions=${actionRailRows}, optionSnapshots=${actionRailOptions}, follow=${actionRailFollowRows}, followExpression=${actionRailFollowExpressionRows}, calibrated=${actionRailFollowCalibratedRows}, followRecovery=${actionRailFollowRecoveryRows}, followRecoveryExpression=${actionRailFollowRecoveryExpressionRows}, verbs=${actionRail.verbs.join('/')}` : 'not run' },
+    { id: 'normal_play_advances_physics_language_proposals', pass: Boolean(actionRail && normalPlayAmbientPhysicsRows > 0 && normalPlayAmbientPhysicsProposalRows > 0 && normalPlayAmbientPhysicsActionRows > 0), evidence: actionRail ? `ambientPhysics=${normalPlayAmbientPhysicsRows}, proposals=${normalPlayAmbientPhysicsProposalRows}, actions=${normalPlayAmbientPhysicsActionRows}` : 'not run' },
     { id: 'normal_handling_practice_emergence', pass: Boolean(actionRail && normalHandlingPracticeRows > 0), evidence: actionRail ? `handlingPracticeRows=${normalHandlingPracticeRows}` : 'not run' },
     { id: 'normal_action_resident_generated_test', pass: Boolean(actionRail && normalActionResidentTestRows > 0 && normalActionAutoTestRows > 0), evidence: actionRail ? `normalActionTests=${normalActionResidentTestRows}, autoTests=${normalActionAutoTestRows}` : 'not run' },
     { id: 'normal_test_reaches_village_board', pass: Boolean(board && normalActionBoardProposalRows > 0), evidence: board ? `normalTestBoardProposals=${normalActionBoardProposalRows}` : 'not run' },

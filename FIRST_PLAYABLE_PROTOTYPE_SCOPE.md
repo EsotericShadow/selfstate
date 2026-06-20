@@ -1005,3 +1005,7 @@ A pressure-grounded management card should preserve:
 ## Added scope gate: Pressure language reaches project worksite
 
 The first playable scope now expects pressure-language proposals to remain intact after support. Acceptance requires at least one pressure-language project row, one worksite watch row, and one visual construction row with resident word, player gloss, no direct avatar command, no hidden-law normal-view exposure, no fixed asset shortcut, and no resource spawning.
+
+## Added scope gate: Normal play advances physics-language proposals
+
+The first playable scope now expects normal player verbs to advance physics-driven resident proposals without using debug controls. Acceptance requires ambient action-rail physics rows, physics-linked proposals carrying resident pressure-language, and normal action rows that preserve the physics step, proposal id, local word, imperfect gloss, no direct avatar command, no hidden-law normal-view exposure, and no resource spawning.

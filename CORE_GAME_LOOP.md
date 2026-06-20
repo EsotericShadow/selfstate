@@ -887,3 +887,9 @@ The player influences the conditions around a proposal, but does not command lab
 The physics loop now includes: stochastic solver step -> support/collision/failure pressure -> resident pressure row -> grounded pressure term -> village concern/proposal -> proposal deck/project/worksite lineage.
 
 The player sees local wording and an imperfect gloss. The engine keeps the hidden support, moisture, heat, fatigue, and stochastic thresholds in audit surfaces only.
+
+## Normal-play ambient physics loop
+
+The playable loop now includes: normal verb -> ambient stochastic physics step -> resident pressure-language proposal -> action-rail evidence -> proposal/worksite continuation.
+
+Wait and Return are no longer only calendar/save actions. They can let the physical world drift, strain, create maintenance pressure, and push a local resident term into the visible proposal flow.

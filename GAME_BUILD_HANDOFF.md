@@ -754,3 +754,12 @@ Implementation boundary:
 - Feedback continuity is tied to resident-generated tests and lived body/manipulation evidence.
 - Save/return preserves source history; it does not recreate feedback from a hidden script.
 - Normal player surfaces can see restored feedback IDs without exposing simulator law.
+
+## Prototype increment: normal-test return behavior continuity
+
+Restored normal-test feedback now changes ordinary post-return resident behavior. When a return slot restores matching feedback, the shell writes a `NTRB-...` behavior row, updates the resident's public schedule/memory, records a visible expression cue, and lets the next autonomous resident action consume that restored feedback as a normal behavior bias.
+
+Implementation boundary:
+- The restored behavior is caused by saved resident feedback, not by a new avatar command.
+- The next autonomous action records the feedback/practice IDs that shaped it.
+- Normal view shows the resident behavior and local practice pressure; hidden simulator law remains audit-only.

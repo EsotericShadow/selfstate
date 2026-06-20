@@ -839,3 +839,9 @@ This turns normal-test handling into future behavior pressure. The test does not
 normal-test feedback row -> save slot records feedback/practice/body/component fields -> restore slot -> normal-test continuity snapshot recomputes feedback state -> return log proves saved/restored feedback match.
 
 This makes resident practice feedback durable across return sessions instead of being only a live runtime artifact.
+
+## Normal-test restored feedback behavior loop
+
+normal-test feedback row -> save/return continuity match -> restored feedback behavior row -> resident schedule/memory/expression update -> next autonomous action consumes the restored bias.
+
+This closes the loop between persistence and ordinary play. A resident does not merely carry a restored ID; they resume, avoid, or retest a local practice through normal post-return behavior without the avatar directly commanding them.

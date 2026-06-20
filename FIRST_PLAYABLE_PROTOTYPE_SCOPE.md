@@ -923,3 +923,16 @@ A saved normal-test feedback path should preserve:
 - component ID
 - resident and schedule bias
 - continuity fingerprint match after restore
+
+## Added scope gate: Normal-test feedback return affects behavior
+
+`normal_test_feedback_return_affects_behavior` is now part of first playable prototype scope.
+
+A restored normal-test feedback path should affect ordinary resident behavior after return:
+
+- return log records a restored feedback behavior ID
+- behavior row preserves feedback, practice, body, component, resident, and source history
+- resident schedule/memory changes without a direct avatar command
+- visible expression cue is recorded
+- next autonomous action consumes the restored feedback bias
+- hidden simulator law stays out of normal view

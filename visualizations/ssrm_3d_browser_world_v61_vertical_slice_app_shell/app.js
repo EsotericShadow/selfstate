@@ -13125,6 +13125,101 @@ function latestVisibleExpressionFor(residentName) {
   return deriveVisibleResidentExpression(residentName);
 }
 
+function ensureNormalTestReturnBehaviorLedger() {
+  const sim = ensureAutonomousResidents();
+  if (!Array.isArray(sim.normalTestReturnBehaviorLedger)) sim.normalTestReturnBehaviorLedger = [];
+  return sim.normalTestReturnBehaviorLedger;
+}
+
+function latestNormalTestReturnBehaviorFor(residentName) {
+  const sim = world.autonomousResidents;
+  if (!sim || !Array.isArray(sim.normalTestReturnBehaviorLedger)) return null;
+  return sim.normalTestReturnBehaviorLedger
+    .slice()
+    .reverse()
+    .find(row => row.resident === residentName && row.active_for_next_action === true) || null;
+}
+
+function applyRestoredNormalTestFeedbackBehavior(returnEntry) {
+  if (!returnEntry || returnEntry.restored_normal_test_continuity_matches_saved !== true) return null;
+  const feedbackId = returnEntry.restored_normal_test_latest_feedback_id || 'none';
+  const practiceId = returnEntry.restored_normal_test_feedback_practice_id || 'none';
+  const bodyStepId = returnEntry.restored_normal_test_feedback_body_step_id || 'none';
+  if (feedbackId === 'none' || practiceId === 'none' || bodyStepId === 'none') return null;
+  const savedResident = returnEntry.restored_normal_test_feedback_resident || 'none';
+  const residentName = savedResident !== 'none' && world.residents && world.residents[savedResident]
+    ? savedResident
+    : (world.selected && world.residents && world.residents[world.selected] ? world.selected : Object.keys(world.residents || {})[0]);
+  if (!residentName || !world.residents || !world.residents[residentName]) return null;
+  const ledger = ensureNormalTestReturnBehaviorLedger();
+  const returnKey = `${returnEntry.slot_id}:${returnEntry.returned_from_replay_rows}:${returnEntry.restored_normal_test_continuity_fingerprint || 'none'}`;
+  const duplicate = ledger.find(row => row.return_key === returnKey && row.feedback_id === feedbackId);
+  if (duplicate) return duplicate;
+  const restoredSchedule = String(returnEntry.restored_normal_test_feedback_schedule || '').toLowerCase();
+  const cautious = /avoid|warn|risk|unsafe|failed|dull|blocked|strain|leak|wet/.test(restoredSchedule);
+  const behaviorKind = cautious ? 'avoid_or_retest_carefully' : 'resume_or_maintain_practice';
+  const schedule = cautious
+    ? `keeps caution around ${practiceId} after restored feedback`
+    : `returns to ${practiceId} after restored feedback`;
+  const memory = `returned remembering ${feedbackId} from ${practiceId}; behavior=${behaviorKind}`;
+  mutateResident(residentName, {
+    trust: 0.001,
+    progress: cautious ? 0.001 : 0.003,
+    schedule,
+    memory,
+    historyEvent: 'normal test feedback return behavior',
+    historyDetail: `${returnEntry.slot_id}; ${feedbackId}; ${practiceId}; ${behaviorKind}`
+  });
+  const expression = recordVisibleResidentExpression(residentName, cautious ? 'normal_test_return_avoidance' : 'normal_test_return_resumption', ensureAutonomousResidents().needState[residentName]);
+  const resident = world.residents[residentName];
+  const row = {
+    behavior_id: `NTRB-${String(ledger.length + 1).padStart(3, '0')}`,
+    day: ensureAutonomousResidents().day,
+    slot_id: returnEntry.slot_id,
+    return_key: returnKey,
+    returned_from_replay_rows: returnEntry.returned_from_replay_rows,
+    resident: residentName,
+    feedback_id: feedbackId,
+    practice_id: practiceId,
+    manipulation_id: returnEntry.restored_normal_test_feedback_manipulation_id || 'none',
+    body_step_id: bodyStepId,
+    component_id: returnEntry.restored_normal_test_feedback_component_id || 'none',
+    behavior_kind: behaviorKind,
+    restored_schedule,
+    schedule_after: resident.schedule,
+    memory_after: resident.memory,
+    expression_id: expression.expression_id,
+    expression_marker: expression.marker,
+    expression_posture: expression.posture,
+    no_direct_avatar_command: true,
+    no_direct_player_command: true,
+    hidden_law_normal_view: false,
+    source_history_preserved: true,
+    active_for_next_action: true,
+    consumed_by_action_id: 'none',
+  };
+  ledger.push(row);
+  if (ledger.length > 50) ledger.shift();
+  returnEntry.restored_normal_test_feedback_behavior_id = row.behavior_id;
+  returnEntry.restored_normal_test_feedback_behavior_kind = row.behavior_kind;
+  returnEntry.restored_normal_test_feedback_behavior_resident = row.resident;
+  returnEntry.restored_normal_test_feedback_behavior_expression_id = row.expression_id;
+  recordRealityConstraint('normal_test_feedback_return_behavior', {
+    resident: residentName,
+    sourceBeliefId: row.behavior_id,
+    materials: [],
+    publicObservation: schedule,
+    residentInterpretation: memory,
+    materialTransformation: 'no material transformed; restored feedback biases the next ordinary resident behavior',
+    timeCost: 1,
+    workCost: 0,
+    conservationCheck: true,
+    normalViewHiddenLawExposed: false,
+    hiddenLawInvolved: 'none in normal player view',
+  });
+  return row;
+}
+
 function applyAutonomousResidentAction(residentName, action, entropy) {
   const sim = ensureAutonomousResidents();
   const routineContext = deriveResidentPhysicalRoutineContext(residentName, entropy);
@@ -13137,6 +13232,7 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
   const board = ensureVillageBoard();
   const proposal = board.projectProposals[board.projectProposals.length - 1] || null;
   const practice = world.emergentPracticeGraph && world.emergentPracticeGraph.nodes.length ? world.emergentPracticeGraph.nodes[world.emergentPracticeGraph.nodes.length - 1] : null;
+  const restoredNormalTestBias = latestNormalTestReturnBehaviorFor(residentName);
   let schedule = resident.schedule;
   let memory = resident.memory;
   let materialCost = [];
@@ -13239,6 +13335,18 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
     schedule = 'observes village pressure';
     memory = 'noticed pressure without acting yet';
   }
+  if (restoredNormalTestBias) {
+    const practiceLabel = restoredNormalTestBias.practice_id && restoredNormalTestBias.practice_id !== 'none'
+      ? restoredNormalTestBias.practice_id
+      : 'restored local practice';
+    const biasText = restoredNormalTestBias.behavior_kind === 'avoid_or_retest_carefully'
+      ? `keeps restored caution around ${practiceLabel}`
+      : `resumes ${practiceLabel} from restored feedback`;
+    schedule = `${schedule}; ${biasText}`;
+    memory = `${memory}; return memory ${restoredNormalTestBias.feedback_id}`;
+    progressDelta += restoredNormalTestBias.behavior_kind === 'avoid_or_retest_carefully' ? 0.001 : 0.002;
+    trustDelta += 0.001;
+  }
   const worksiteEffect = worksiteProximity.actionable && worksiteProximity.target_component_id !== 'none'
     ? applyResidentWorksiteComponentEffect(worksiteProximity, materialCost)
     : null;
@@ -13304,8 +13412,18 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
     body_fatigue_after: bodyPhysicsRow.after.fatigue,
     body_footing: bodyPhysicsRow.after.footing,
     body_contacts: bodyPhysicsRow.collision_count,
+    normal_test_return_behavior_id: restoredNormalTestBias ? restoredNormalTestBias.behavior_id : 'none',
+    normal_test_return_feedback_id: restoredNormalTestBias ? restoredNormalTestBias.feedback_id : 'none',
+    normal_test_return_practice_id: restoredNormalTestBias ? restoredNormalTestBias.practice_id : 'none',
+    post_return_feedback_bias: Boolean(restoredNormalTestBias),
   };
   sim.actionLog.push(row);
+  if (restoredNormalTestBias) {
+    restoredNormalTestBias.active_for_next_action = false;
+    restoredNormalTestBias.consumed_by_action_id = row.action_id;
+    restoredNormalTestBias.consumed_action = action;
+    restoredNormalTestBias.consumed_schedule = schedule;
+  }
   if (worksiteEffect) worksiteEffect.action_id = row.action_id;
   const expression = recordVisibleResidentExpression(residentName, action, needs);
   row.visible_expression_id = expression.expression_id;
@@ -14178,7 +14296,7 @@ function formatPrototypeResidentBodies() {
 function formatPrototypeAutonomousResidents() {
   const sim = world.autonomousResidents;
   if (!sim) return 'No autonomous resident ticks yet. Run Resident tick or Resident season.';
-  const actions = sim.actionLog.slice(-8).map(row => `${row.action_id}: day ${row.day}, ${row.resident} chose ${row.action}; energy=${row.needs.energy.toFixed(2)} hunger=${row.needs.hunger.toFixed(2)} safety=${row.needs.safety.toFixed(2)}; body=${row.body_physics_step_id || 'none'}; ctx=${row.routine_context_id || 'none'}${row.physical_context ? `/${row.physical_context.suggested_action}` : ''}; worksite=${row.worksite_effect_id || 'none'}/${row.worksite_effect_applied ? 'applied' : row.worksite_blocked_by_distance ? 'blocked' : 'none'}`);
+  const actions = sim.actionLog.slice(-8).map(row => `${row.action_id}: day ${row.day}, ${row.resident} chose ${row.action}; energy=${row.needs.energy.toFixed(2)} hunger=${row.needs.hunger.toFixed(2)} safety=${row.needs.safety.toFixed(2)}; body=${row.body_physics_step_id || 'none'}; ctx=${row.routine_context_id || 'none'}${row.physical_context ? `/${row.physical_context.suggested_action}` : ''}; worksite=${row.worksite_effect_id || 'none'}/${row.worksite_effect_applied ? 'applied' : row.worksite_blocked_by_distance ? 'blocked' : 'none'}; returnBias=${row.normal_test_return_behavior_id || 'none'}`);
   const refusals = sim.refusalLog.slice(-4).map(row => `day ${row.day}: ${row.resident} refused because ${row.reason}`);
   const care = sim.careLedger.slice(-6).map(row => `${row.action_id}: ${row.resident} energy=${row.energy.toFixed(2)} hunger=${row.hunger.toFixed(2)} autonomy=${row.autonomy.toFixed(2)}`);
   const expressions = (sim.expressionLedger || []).slice(-8).map(row => `${row.expression_id}: ${row.resident} ${row.marker}; posture=${row.posture}; movement=${row.movementCue}; gaze=${row.gazeCue}`);
@@ -14187,6 +14305,7 @@ function formatPrototypeAutonomousResidents() {
   const presenceRows = (world.gamePrototypeAvatarPresence && world.gamePrototypeAvatarPresence.presenceLedger ? world.gamePrototypeAvatarPresence.presenceLedger : []).slice(-6).map(row => `${row.presence_id}: ${row.resident}; component=${row.component_id}; distance=${row.distance_to_worksite}; near=${row.near_worksite}; crowd=${row.crowding}; repeated=${row.repeated_nearby_count}; influence=${row.influence_type}; comfortDelta=${row.comfort_delta}; boundaryDelta=${row.boundary_pressure_delta}; command=${row.avatar_direct_command}`);
   const comfortRows = (world.gamePrototypeAvatarPresence && world.gamePrototypeAvatarPresence.comfortLedger ? world.gamePrototypeAvatarPresence.comfortLedger : []).slice(-6).map(row => `${row.comfort_id}: ${row.resident}; presence=${row.presence_id}; comfort=${row.comfort_before}->${row.comfort_after}; boundary=${row.boundary_pressure_after}; refusal=${row.refusal_risk_after}; canRefuse=${row.resident_can_refuse}`);
   const presenceReturnRows = (world.gamePrototypeAvatarPresence && world.gamePrototypeAvatarPresence.returnLedger ? world.gamePrototypeAvatarPresence.returnLedger : []).slice(-6).map(row => `${row.return_presence_id}: ${row.resident}; tone=${row.remembered_tone}; presence=${row.presence_rows}; comfort=${row.comfort_rows}; preserved=${row.source_history_preserved}; greeting=${row.return_greeting}`);
+  const normalTestReturnRows = (sim.normalTestReturnBehaviorLedger || []).slice(-6).map(row => `${row.behavior_id}: ${row.resident}; feedback=${row.feedback_id}; practice=${row.practice_id}; kind=${row.behavior_kind}; expression=${row.expression_id}; consumed=${row.consumed_by_action_id || 'none'}`);
   return [
     `Day: ${sim.day} / season: ${sim.season}`,
     `Boundary: stochastic autonomous actions; no direct player command; actions cost time/needs/materials.`,
@@ -14202,6 +14321,8 @@ function formatPrototypeAutonomousResidents() {
     ...(comfortRows.length ? comfortRows : ['none']),
     'Presence return memory:',
     ...(presenceReturnRows.length ? presenceReturnRows : ['none']),
+    'Normal-test feedback return behavior:',
+    ...(normalTestReturnRows.length ? normalTestReturnRows : ['none']),
     'Visible expression cues:',
     ...(expressions.length ? expressions : ['none']),
     'Refusals:',
@@ -15230,6 +15351,13 @@ function returnPrototypeSlot() {
   returnEntry.restored_normal_test_feedback_schedule = restoredNormalTestContinuity.latest_feedback_schedule;
   returnEntry.restored_normal_test_continuity_fingerprint = restoredNormalTestContinuity.fingerprint;
   returnEntry.restored_normal_test_continuity_matches_saved = Boolean(slot.normal_test_continuity_fingerprint && slot.normal_test_continuity_fingerprint !== 'none' && slot.normal_test_continuity_fingerprint === restoredNormalTestContinuity.fingerprint);
+  const restoredNormalTestFeedbackBehavior = applyRestoredNormalTestFeedbackBehavior(returnEntry);
+  if (restoredNormalTestFeedbackBehavior) {
+    returnEntry.restored_normal_test_feedback_behavior_id = restoredNormalTestFeedbackBehavior.behavior_id;
+    returnEntry.restored_normal_test_feedback_behavior_kind = restoredNormalTestFeedbackBehavior.behavior_kind;
+    returnEntry.restored_normal_test_feedback_behavior_resident = restoredNormalTestFeedbackBehavior.resident;
+    returnEntry.restored_normal_test_feedback_behavior_expression_id = restoredNormalTestFeedbackBehavior.expression_id;
+  }
   const restoredPresenceReturn = applyAvatarPresenceReturnMemory('save_slot_restore', returnEntry.returned_from_replay_rows);
   if (restoredPresenceReturn) {
     returnEntry.restored_avatar_presence_return_id = restoredPresenceReturn.return_presence_id;
@@ -15490,12 +15618,16 @@ function buildPrototypeAcceptanceReceipt() {
   const normalTestContinuityRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_normal_test_continuity_matches_saved === true && row.restored_normal_test_id && row.restored_normal_test_id !== 'none' && Number(row.restored_normal_test_project_rows || 0) > 0 && Number(row.restored_normal_test_worksite_rows || 0) > 0 && Number(row.restored_normal_test_visual_rows || 0) > 0).length : 0;
   const normalTestFeedbackContinuitySaveRows = saves && saves.slots ? saves.slots.filter(slot => slot.normal_test_id && slot.normal_test_id !== 'none' && Number(slot.normal_test_feedback_rows || 0) > 0 && slot.normal_test_latest_feedback_id && slot.normal_test_latest_feedback_id !== 'none' && slot.normal_test_feedback_practice_id && slot.normal_test_feedback_practice_id !== 'none' && slot.normal_test_feedback_body_step_id && slot.normal_test_feedback_body_step_id !== 'none' && slot.normal_test_continuity_fingerprint && slot.normal_test_continuity_fingerprint !== 'none').length : 0;
   const normalTestFeedbackContinuityRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_normal_test_continuity_matches_saved === true && row.restored_normal_test_id && row.restored_normal_test_id !== 'none' && Number(row.restored_normal_test_feedback_rows || 0) > 0 && row.restored_normal_test_latest_feedback_id && row.restored_normal_test_latest_feedback_id !== 'none' && row.restored_normal_test_feedback_practice_id && row.restored_normal_test_feedback_practice_id !== 'none' && row.restored_normal_test_feedback_body_step_id && row.restored_normal_test_feedback_body_step_id !== 'none').length : 0;
+  const normalTestFeedbackReturnBehaviorRows = autonomous && autonomous.normalTestReturnBehaviorLedger ? autonomous.normalTestReturnBehaviorLedger.filter(row => row.feedback_id && row.feedback_id !== 'none' && row.practice_id && row.practice_id !== 'none' && row.return_key && row.no_direct_avatar_command === true && row.hidden_law_normal_view === false && row.source_history_preserved === true).length : 0;
+  const normalTestFeedbackReturnActionRows = autonomous && autonomous.actionLog ? autonomous.actionLog.filter(row => row.normal_test_return_behavior_id && row.normal_test_return_behavior_id !== 'none' && row.normal_test_return_feedback_id && row.normal_test_return_feedback_id !== 'none' && row.post_return_feedback_bias === true && row.no_direct_player_command === true).length : 0;
+  const normalTestFeedbackReturnRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_normal_test_feedback_behavior_id && row.restored_normal_test_feedback_behavior_id !== 'none' && row.restored_normal_test_feedback_behavior_kind && row.restored_normal_test_feedback_behavior_kind !== 'none').length : 0;
 	  const requirements = [
     { id: 'basic_visual_surface', pass: Boolean(world.entered && Object.keys(world.residents).length <= 6), evidence: `${Object.keys(world.residents).length} resident(s), room=${world.avatar.room}` },
     { id: 'persistent_save_return', pass: Boolean(saves && saves.slots && saves.slots.length > 0 && saves.returnLog && saves.returnLog.length > 0), evidence: saves ? `${saves.slots.length} slot(s), ${saves.returnLog.length} return(s)` : 'no prototype saves' },
     { id: 'material_state_save_return_continuity', pass: Boolean(saves && materialContinuitySaveRows > 0 && materialContinuityRestoreRows > 0), evidence: saves ? `savedMaterial=${materialContinuitySaveRows}, restoredMatches=${materialContinuityRestoreRows}` : 'no prototype saves' },
     { id: 'normal_test_save_return_continuity', pass: Boolean(saves && normalTestContinuitySaveRows > 0 && normalTestContinuityRestoreRows > 0), evidence: saves ? `savedNormalTests=${normalTestContinuitySaveRows}, restoredMatches=${normalTestContinuityRestoreRows}` : 'no prototype saves' },
     { id: 'normal_test_feedback_save_return_continuity', pass: Boolean(saves && normalTestFeedbackContinuitySaveRows > 0 && normalTestFeedbackContinuityRestoreRows > 0), evidence: saves ? `savedFeedback=${normalTestFeedbackContinuitySaveRows}, restoredFeedback=${normalTestFeedbackContinuityRestoreRows}` : 'no prototype saves' },
+    { id: 'normal_test_feedback_return_affects_behavior', pass: Boolean(autonomous && saves && normalTestFeedbackReturnBehaviorRows > 0 && normalTestFeedbackReturnRestoreRows > 0 && normalTestFeedbackReturnActionRows > 0), evidence: `returnBehavior=${normalTestFeedbackReturnBehaviorRows}, restoreRows=${normalTestFeedbackReturnRestoreRows}, actionBias=${normalTestFeedbackReturnActionRows}` },
     { id: 'autonomous_stochastic_residents', pass: Boolean(autonomous && autonomous.actionLog.length > 0 && autonomous.entropyLedger.length > 0), evidence: autonomous ? `${autonomous.actionLog.length} action(s), entropy rows=${autonomous.entropyLedger.length}` : 'not started' },
     { id: 'reality_grounded_causality', pass: Boolean(ledger && ledger.rows.length > 0 && ledger.rows.every(row => row.conservation_check && row.normal_view_hidden_law_exposed === false)), evidence: ledger ? `${ledger.rows.length} causal row(s)` : 'no ledger' },
     { id: 'emergent_beliefs_and_practices', pass: Boolean(practiceGraph && practiceGraph.nodes.length > 0 && practiceGraph.noPredefinedTechTree === true), evidence: practiceGraph ? `${practiceGraph.nodes.length} node(s), no tech tree=${practiceGraph.noPredefinedTechTree}` : 'no practice graph' },
@@ -15665,7 +15797,7 @@ function formatPrototypeSaves() {
   const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, livedPhysics=${row.restored_lived_practice_physics_rows || 0}/${row.restored_lived_practice_latest_physics_id || 'none'}, projectVisuals=${row.restored_project_visual_rows || 0}/${row.restored_latest_project_visual_id || 'none'}, integrated=${row.restored_first_playable_integrated_rows || 0}/${row.restored_first_playable_latest_integrated_id || 'none'} complete=${row.restored_first_playable_integrated_complete ? 'yes' : 'no'} follow=${row.restored_normal_play_follow_rows || 0}/${row.restored_normal_play_follow_recovery_rows || 0} space, avatarPresence=${row.restored_avatar_presence_rows || 0}/${row.restored_avatar_presence_return_id || 'none'} tone=${row.restored_avatar_presence_tone_after_restore || row.restored_avatar_presence_tone || 'none'}, from replay=${row.returned_from_replay_rows}`);
   const objectReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredObjectChain interactions=${row.restored_object_interaction_rows || 0}, responses=${row.restored_object_response_rows || 0}, resolutions=${row.restored_object_resolution_rows || 0}/${row.restored_latest_object_resolution_id || 'none'}, rechecks=${row.restored_object_recheck_response_rows || 0}/${row.restored_latest_object_recheck_response_id || 'none'} result=${row.restored_latest_object_recheck_result || 'none'}`);
   const materialReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredMaterial handling=${row.restored_material_continuity_latest_id || 'none'} action=${row.restored_material_continuity_action || 'none'} component=${row.restored_material_continuity_component_id || 'none'} target=${row.restored_material_continuity_target_source || 'none'} match=${row.restored_material_continuity_matches_saved ? 'yes' : 'no'}`);
-  const normalTestReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredNormalTest action=${row.restored_normal_test_action_id || 'none'} test=${row.restored_normal_test_id || 'none'} board=${row.restored_normal_test_board_proposal_id || 'none'} project=${row.restored_normal_test_project_rows || 0}/${row.restored_normal_test_latest_project_id || 'none'} worksite=${row.restored_normal_test_worksite_rows || 0}/${row.restored_normal_test_latest_worksite_id || 'none'} visual=${row.restored_normal_test_visual_rows || 0}/${row.restored_normal_test_latest_visual_id || 'none'} feedback=${row.restored_normal_test_feedback_rows || 0}/${row.restored_normal_test_latest_feedback_id || 'none'} practice=${row.restored_normal_test_feedback_practice_id || 'none'} body=${row.restored_normal_test_feedback_body_step_id || 'none'} match=${row.restored_normal_test_continuity_matches_saved ? 'yes' : 'no'}`);
+  const normalTestReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredNormalTest action=${row.restored_normal_test_action_id || 'none'} test=${row.restored_normal_test_id || 'none'} board=${row.restored_normal_test_board_proposal_id || 'none'} project=${row.restored_normal_test_project_rows || 0}/${row.restored_normal_test_latest_project_id || 'none'} worksite=${row.restored_normal_test_worksite_rows || 0}/${row.restored_normal_test_latest_worksite_id || 'none'} visual=${row.restored_normal_test_visual_rows || 0}/${row.restored_normal_test_latest_visual_id || 'none'} feedback=${row.restored_normal_test_feedback_rows || 0}/${row.restored_normal_test_latest_feedback_id || 'none'} practice=${row.restored_normal_test_feedback_practice_id || 'none'} body=${row.restored_normal_test_feedback_body_step_id || 'none'} behavior=${row.restored_normal_test_feedback_behavior_id || 'none'}/${row.restored_normal_test_feedback_behavior_kind || 'none'} match=${row.restored_normal_test_continuity_matches_saved ? 'yes' : 'no'}`);
   return [
     `Active slot: ${saves.activeSlotId || 'none'}`,
     `Boundary: ${saves.boundary}`,

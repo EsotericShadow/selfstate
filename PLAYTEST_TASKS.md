@@ -548,3 +548,12 @@
 4. Restore the slot.
 5. Confirm the Save / return card shows the same normal-test feedback ID, practice ID, body step ID, and continuity match.
 6. Confirm the restored normal view still hides hidden simulator law.
+
+## Playtest task: normal-test return behavior
+
+1. Create normal-test practice feedback through Follow and resident body handling.
+2. Save the prototype slot, advance the world, and restore the slot.
+3. Confirm the Save / return card shows a restored feedback behavior ID and behavior kind.
+4. Run one autonomous resident tick after return.
+5. Confirm the resident action row shows the restored feedback behavior ID as a return bias.
+6. Confirm the resident schedule, memory, or visible expression changed without a direct avatar command.

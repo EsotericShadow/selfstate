@@ -65,6 +65,7 @@ select { width: 100%; padding: 10px; border-radius: 14px; border: 1px solid rgba
 .prototype-card h3 { margin: 0 0 10px; font-size: 1.2rem; letter-spacing: -0.02em; }
 .prototype-card pre { max-height: 260px; background: rgba(245, 232, 199, 0.12); color: #fff6de; border: 1px solid rgba(249, 235, 201, 0.18); }
 .physical-inspector-card { border-color: rgba(240, 195, 91, 0.44); background: linear-gradient(145deg, rgba(17, 24, 22, 0.96), rgba(47, 87, 82, 0.88)); }
+.physical-inspector-card button { width: 100%; margin-bottom: 10px; background: #f0c35b; color: #111816; }
 .physical-inspector-card pre { max-height: 320px; border-color: rgba(240, 195, 91, 0.34); }
 .normal-player-hud { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 14px; margin: 16px 0 4px; padding: 14px; border-radius: 20px; background: rgba(11, 24, 24, 0.42); border: 1px solid rgba(249, 235, 201, 0.18); color: #fff6de; font-size: 0.92rem; }
 .normal-player-hud span { color: #f5e0a7; font-weight: 800; }

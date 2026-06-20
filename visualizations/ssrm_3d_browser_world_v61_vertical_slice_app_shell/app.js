@@ -9645,16 +9645,28 @@ function currentObjectInteractionTarget() {
   const stage = world.gamePrototypeWorldStage || null;
   const latest = stage && stage.latestSnapshot ? stage.latestSnapshot : currentPrimaryPlaySurfaceSnapshot();
   const selection = world.gamePrototypeCanvasSelection || null;
+  const latestSelection = selection && selection.selectionLedger && selection.selectionLedger.length ? selection.selectionLedger[selection.selectionLedger.length - 1] : null;
   const activeId = selection && selection.selected_component_id && selection.selected_component_id !== 'none'
     ? selection.selected_component_id
     : latest.active_component_id || latest.component_id || null;
+  const inspectorComponent = typeof selectPrototypePhysicalInspectorComponent === 'function'
+    ? selectPrototypePhysicalInspectorComponent()
+    : null;
   const component = sim.components.find(row => row.component_id === activeId)
+    || inspectorComponent
     || sim.components.slice().sort((a, b) => (Number(a.stability || 1) - Number(b.stability || 1)) || (Number(b.damage || 0) - Number(a.damage || 0)) || (Number(b.moisture || 0) - Number(a.moisture || 0)))[0]
     || sim.components[0];
   const term = component ? sim.language.terms.find(row => row.term_id === component.resident_term_id) || sim.language.terms[0] : null;
   const loop = world.gamePrototypeMaterialManipulation || null;
   const latestManipulation = loop && loop.actionLedger.length ? loop.actionLedger[loop.actionLedger.length - 1] : null;
-  return { sim, component, term, latestManipulation };
+  const targetSource = selection && selection.selected_component_id && selection.selected_component_id !== 'none'
+    ? 'canvas_selection'
+    : latest.active_component_id && latest.active_component_id !== 'none'
+      ? 'primary_surface'
+      : inspectorComponent && component && inspectorComponent.component_id === component.component_id
+        ? 'physical_inspector'
+        : 'physical_inspector_pressure';
+  return { sim, component, term, latestManipulation, targetSource, selectionId: latestSelection ? latestSelection.selection_id : 'none' };
 }
 
 function playerObjectInteractionSnapshot(label) {
@@ -9681,6 +9693,8 @@ function playerObjectInteractionSnapshot(label) {
     latest_manipulation: target.latestManipulation ? target.latestManipulation.manipulation_id : 'none',
     latest_action: target.latestManipulation ? target.latestManipulation.action : 'none',
     latest_success: target.latestManipulation ? target.latestManipulation.success === true : false,
+    target_source: target.targetSource || 'physical_inspector_pressure',
+    selection_id: target.selectionId || 'none',
     visible_player_action: 'inspect object and ask what residents can do',
     avatar_direct_command: false,
     resident_chosen: true,
@@ -9997,9 +10011,14 @@ function runPlayerObjectInteractionLoop() {
     interaction_id: `POI-${String(interaction.interactionLedger.length + 1).padStart(2, '0')}`,
     tick: world.tick,
     component_id: payload.componentId || before.component_id,
+    inspector_component_id: before.component_id,
+    inspector_target_source: before.target_source || 'physical_inspector_pressure',
+    selection_id: before.selection_id || 'none',
     resident_term: after.resident_term,
     player_gloss: after.player_gloss,
     player_intent: 'inspect a physical component and ask residents what they can do',
+    physical_inspector_action: true,
+    normal_play_object_action: true,
     look_event: lookReceipt && lookReceipt.event ? lookReceipt.event : 'runPrimaryPlaySurfaceStep',
     resident_response_id: residentResponse ? residentResponse.response_id : 'none',
     resident_response_kind: residentResponse ? residentResponse.response_kind : 'none',
@@ -10059,7 +10078,7 @@ function runPlayerObjectInteractionLoop() {
 function formatPlayerObjectInteraction() {
   const interaction = world.gamePrototypeObjectInteraction || ensurePlayerObjectInteraction();
   const latest = interaction.snapshotLedger.length ? interaction.snapshotLedger[interaction.snapshotLedger.length - 1].after : playerObjectInteractionSnapshot('current');
-  const rows = interaction.interactionLedger.slice(-6).map(row => `${row.interaction_id}: ${row.resident} ${row.resident_action} ${row.resident_term}; component=${row.component_id}; response=${row.resident_response_id || 'none'}/${row.resident_response_effect || 'none'}; blocked=${row.handling_blocked_by_response === true}; rerouted=${row.handling_rerouted_by_response === true}; proposal=${row.follow_up_proposal_id || 'none'}; resolution=${row.proposal_resolution_status || row.recheck_resolution_id || 'none'}; recheck=${row.resident_recheck_required === true || row.recheck_resolution_id !== 'none'}; result=${row.resident_recheck_result || 'none'}; manipulation=${row.manipulation_id}; success=${row.success}; practice=${row.practice_id}`);
+  const rows = interaction.interactionLedger.slice(-6).map(row => `${row.interaction_id}: ${row.resident} ${row.resident_action} ${row.resident_term}; component=${row.component_id}; inspector=${row.inspector_component_id || 'none'}/${row.inspector_target_source || 'none'}; response=${row.resident_response_id || 'none'}/${row.resident_response_effect || 'none'}; blocked=${row.handling_blocked_by_response === true}; rerouted=${row.handling_rerouted_by_response === true}; proposal=${row.follow_up_proposal_id || 'none'}; resolution=${row.proposal_resolution_status || row.recheck_resolution_id || 'none'}; recheck=${row.resident_recheck_required === true || row.recheck_resolution_id !== 'none'}; result=${row.resident_recheck_result || 'none'}; manipulation=${row.manipulation_id}; success=${row.success}; practice=${row.practice_id}`);
   const responseRows = (interaction.responseLedger || []).slice(-5).map(row => `${row.response_id}: ${row.resident} ${row.response_kind}; effect=${row.handling_effect || 'pending'}; proposal=${row.follow_up_proposal_id || 'none'}; resolution=${row.resolution_status || row.recheck_resolution_id || 'none'}; recheckResult=${row.resident_recheck_result || 'none'}; component=${row.component_id}; selection=${row.selection_id}; allowed=${row.manipulation_allowed}; expression=${row.expression_marker}; "${row.response_text}"`);
   const resolutionRows = (interaction.resolutionLedger || []).slice(-5).map(row => `${row.resolution_id}: ${row.response_id}->${row.proposal_id}/${row.project_id}; status=${row.resolution_status}; component=${row.component_id}; repaired=${row.components_repaired.length}; added=${row.components_added.length}; recheck=${row.resident_recheck_required}`);
   return [
@@ -17793,6 +17812,8 @@ function buildPrototypeAcceptanceReceipt() {
   const playDetailsCards = playDetailsNode ? playDetailsNode.querySelectorAll('.prototype-card').length : 0;
   const auditTraceNode = typeof document !== 'undefined' ? document.getElementById('auditTraceDetails') : null;
   const auditTracePanels = auditTraceNode ? auditTraceNode.querySelectorAll('.panel').length : 0;
+  const physicalInspectorNode = typeof document !== 'undefined' ? document.getElementById('gamePrototypePhysicalInspectorOut') : null;
+  const physicalInspectorActionButtons = typeof document !== 'undefined' ? document.querySelectorAll('.physical-inspector-card [data-action="runPlayerObjectInteractionLoop"]').length : 0;
 		  const materialWorld = world.gamePrototype3DWorld || null;
   const terrain = world.gamePrototypeTerrain || null;
   const tools = world.gamePrototypeTools || null;
@@ -17863,6 +17884,7 @@ function buildPrototypeAcceptanceReceipt() {
   const normalTestProposalExpressionRows = board && board.projectProposals ? board.projectProposals.filter(row => row.normal_action_test_path === true && row.normal_test_expression_id && row.normal_test_expression_id !== 'none' && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
   const normalTestSupportExpressionRows = board && board.supportEvents ? board.supportEvents.filter(row => row.normal_action_test_path === true && row.normal_test_expression_id && row.normal_test_expression_id !== 'none' && row.forced === false).length : 0;
   const normalTestProjectExpressionRows = projects && projects.projectLedger ? projects.projectLedger.filter(row => row.normal_action_test_path === true && row.normal_test_expression_id && row.normal_test_expression_id !== 'none' && row.avatar_direct_command === false).length : 0;
+  const physicalInspectorObjectRows = objectInteraction && objectInteraction.interactionLedger ? objectInteraction.interactionLedger.filter(row => row.physical_inspector_action === true && row.normal_play_object_action === true && row.inspector_component_id && row.inspector_component_id !== 'none' && row.component_id === row.inspector_component_id && row.avatar_direct_command === false && row.resident_chosen === true && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
   const normalTestComponentCueRows = materialWorld && materialWorld.normalTestComponentCueLedger ? materialWorld.normalTestComponentCueLedger.filter(row => row.test_id && row.test_id !== 'none' && row.component_id && row.component_id !== 'none' && row.no_effect_without_cause === true && row.no_resource_spawning === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const normalTestActionComponentRows = actionRail && actionRail.actionLedger ? actionRail.actionLedger.filter(row => row.ordinary_bottleneck_component_cue_id && row.ordinary_bottleneck_component_cue_id !== 'none' && row.ordinary_bottleneck_component_id && row.ordinary_bottleneck_component_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const normalTestBoardComponentRows = board && board.projectProposals ? board.projectProposals.filter(row => row.normal_action_test_path === true && row.normal_test_component_cue_id && row.normal_test_component_cue_id !== 'none' && row.normal_test_component_id && row.normal_test_component_id !== 'none' && row.hidden_law_normal_view === false && row.tech_tree_unlock === false).length : 0;
@@ -18098,6 +18120,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'player_object_interaction', pass: Boolean(objectInteraction && objectInteraction.acceptanceReady && objectInteractionRows > 0 && objectInteractionSnapshots > 0 && objectInteraction.interactionLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.resident_chosen === true && row.hidden_law_normal_view === false && row.tech_tree_unlock === false) && objectInteraction.noDirectCommand === true && objectInteraction.noHiddenLawNormalView === true), evidence: objectInteraction ? `rows=${objectInteractionRows}, snapshots=${objectInteractionSnapshots}` : 'not run' },
     { id: 'resident_object_response', pass: Boolean(objectInteraction && objectResponseRows > 0 && objectResponseBoundedRows > 0), evidence: objectInteraction ? `responses=${objectResponseRows}, bounded=${objectResponseBoundedRows}` : 'not run' },
     { id: 'resident_object_response_affects_handling', pass: Boolean(objectInteraction && objectResponseEffectRows > 0), evidence: objectInteraction ? `effectRows=${objectResponseEffectRows}` : 'not run' },
+    { id: 'physical_inspector_object_action', pass: Boolean(physicalInspectorNode && physicalInspectorActionButtons > 0 && objectInteraction && physicalInspectorObjectRows > 0), evidence: `node=${Boolean(physicalInspectorNode)}, buttons=${physicalInspectorActionButtons}, rows=${physicalInspectorObjectRows}` },
     { id: 'blocked_object_response_creates_proposal', pass: Boolean(objectInteraction && board && objectResponseProposalRows > 0 && objectResponseBoardProposalRows > 0), evidence: objectInteraction && board ? `interactionLinks=${objectResponseProposalRows}, boardLinks=${objectResponseBoardProposalRows}` : 'not run' },
     { id: 'object_objection_proposal_actionable', pass: Boolean(objectInteraction && board && proposalDeck && projects && worksite && objectResponseDeckActionRows > 0 && (objectResponseProjectRows > 0 || objectResponseWorksiteRows > 0)), evidence: objectInteraction && board ? `deckActions=${objectResponseDeckActionRows}, projectRows=${objectResponseProjectRows}, worksiteRows=${objectResponseWorksiteRows}` : 'not run' },
     { id: 'object_objection_resolution_recheck', pass: Boolean(objectInteraction && objectResponseResolutionRows > 0 && objectResponseRecheckRows > 0), evidence: objectInteraction ? `resolutionRows=${objectResponseResolutionRows}, recheckRows=${objectResponseRecheckRows}` : 'not run' },

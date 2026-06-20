@@ -499,6 +499,8 @@ Required behavior:
 - it links to recent material, structural, constraint, resident cue, and handling rows when those rows exist
 - it preserves the normal-view boundary by showing observations and trace pointers, not hidden material law
 - it makes physical objects readable during player mode without requiring the reviewer trace panels
+- it includes an `Ask resident about this object` action that routes the inspected component into resident-mediated object interaction
+- object interaction rows record `physical_inspector_action`, `inspector_component_id`, and the target source while preserving resident choice and no direct command
 
 ## Prototype v0 milestone: Player Mode Interface
 

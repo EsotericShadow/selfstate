@@ -442,3 +442,11 @@
 - Confirm the canvas handling marker includes the target source near the manipulated component.
 - Export or inspect acceptance and confirm `handling_selected_component_binding` has at least one selected/focused handling row.
 - Confirm the resident still chooses the handling action and that carry limits, tools, resources, moisture, support, or failure can still affect the result.
+
+## Handled-material save/return playtests
+
+- Use `Handling` on a selected or focused physical component, then use `Save` and `Return`.
+- Inspect the prototype save panel and confirm `Material continuity` lists the handled component, action, target source, selected binding, and body step.
+- Confirm `Material returns` reports the same component and `match=yes` after return.
+- Export or inspect acceptance and confirm `material_state_save_return_continuity` passes when saved and restored fingerprints match.
+- Confirm this evidence is normal-view safe and does not expose hidden simulator law.

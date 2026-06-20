@@ -647,3 +647,11 @@ Normal `Handling` now prefers the physical component the player selected on the 
 Material handling rows now record `target_source`, `target_reason`, and `selected_component_bound`. The canvas cue and resident handling card expose that source in normal view without revealing hidden material law.
 
 The acceptance gate is `handling_selected_component_binding`. It requires at least one resident-mediated handling row bound to either `canvas_selection` or `primary_surface` with no direct command and no hidden-law exposure.
+
+## Prototype v0 handled-material save/return continuity update
+
+Prototype saves now record explicit continuity metadata for the latest resident-handled component: handling row, action, component ID, target source, selected-component binding, body step, canvas cue, and a public material-state fingerprint. Return restores compare the saved fingerprint against the restored component state and record whether the physical object state still matches.
+
+This does not replace the browser-local world snapshot. It makes the already-restored material state inspectable as first-playable evidence.
+
+The acceptance gate is `material_state_save_return_continuity`. It requires a saved handled-component state and a return row proving the restored component fingerprint matches the saved state.

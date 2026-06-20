@@ -767,3 +767,14 @@ Evidence required:
 - `target_source` is `canvas_selection` or `primary_surface`
 - handling remains resident-mediated and can fail under material/body/tool constraints
 - normal view does not expose hidden law or grant direct object control
+
+## Added scope gate: Material state save/return continuity
+
+The first playable scope now requires handled physical components to survive save/return with explicit continuity evidence.
+
+Evidence required:
+- at least one saved handled-component fingerprint
+- at least one return row where restored material state matches the saved fingerprint
+- saved and restored rows identify component ID, handling action, target source, and body step where available
+- continuity is derived from restored world state, not a separate fake counter
+- normal view does not expose hidden material law

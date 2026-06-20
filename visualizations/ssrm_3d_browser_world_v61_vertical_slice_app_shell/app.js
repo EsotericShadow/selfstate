@@ -13964,6 +13964,39 @@ function snapshotWorldForPrototypeSlot(saves) {
   return JSON.stringify({ ...world, gamePrototypeSaves: shallowSaves });
 }
 
+function materialHandlingContinuitySnapshot(sourceWorld = world) {
+  const manipulation = sourceWorld.gamePrototypeMaterialManipulation || null;
+  const actionRows = manipulation && manipulation.actionLedger ? manipulation.actionLedger : [];
+  const latest = actionRows.length ? actionRows[actionRows.length - 1] : null;
+  const sim = sourceWorld.gamePrototype3DWorld || null;
+  const components = sim && sim.components ? sim.components : [];
+  const component = latest ? components.find(row => row.component_id === latest.component_id) : null;
+  const componentState = component ? {
+    component_id: component.component_id,
+    material_id: component.material_id || 'none',
+    position3d: { ...(component.position3d || {}) },
+    moisture: Number(component.moisture || 0),
+    damage: Number(component.damage || 0),
+    stability: Number(component.stability || 0),
+    field_stress: Number(component.field_stress || 0),
+    carried_by: component.carried_by || 'none',
+    resident_term_id: component.resident_term_id || 'none',
+  } : null;
+  return {
+    rows: actionRows.length,
+    practice_links: manipulation && manipulation.practiceLinks ? manipulation.practiceLinks.length : 0,
+    latest_manipulation_id: latest ? latest.manipulation_id : 'none',
+    latest_action: latest ? latest.action : 'none',
+    latest_component_id: latest ? latest.component_id : 'none',
+    latest_target_source: latest ? latest.target_source || 'resident_constraint_choice' : 'none',
+    latest_selected_component_bound: latest ? latest.selected_component_bound === true : false,
+    latest_body_step_id: latest ? latest.body_step_id || 'none' : 'none',
+    latest_canvas_cue: latest ? latest.canvas_cue || 'none' : 'none',
+    component_state: componentState,
+    component_state_fingerprint: componentState ? JSON.stringify(componentState) : 'none',
+  };
+}
+
 function savePrototypeSlot(label = 'manual prototype save') {
   ensureGamePrototype();
   const saves = ensurePrototypeSaves();
@@ -13973,6 +14006,7 @@ function savePrototypeSlot(label = 'manual prototype save') {
   const avatarPresenceSnapshot = avatarPresenceSocialSnapshot();
   const integratedLedger = world.gamePrototypePlaySession && world.gamePrototypePlaySession.integratedLoopLedger ? world.gamePrototypePlaySession.integratedLoopLedger : [];
   const latestIntegratedLoop = integratedLedger.length ? integratedLedger[integratedLedger.length - 1] : null;
+  const materialContinuity = materialHandlingContinuitySnapshot(world);
   const slotNumber = saves.slots.length + 1;
   const slot = {
     slot_id: `GPS-${String(slotNumber).padStart(2, '0')}`,
@@ -14103,6 +14137,15 @@ function savePrototypeSlot(label = 'manual prototype save') {
 	    material_manipulation_rows: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.actionLedger ? world.gamePrototypeMaterialManipulation.actionLedger.length : 0,
 	    material_manipulation_practice_links: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.practiceLinks ? world.gamePrototypeMaterialManipulation.practiceLinks.length : 0,
 	    material_manipulation_body_links: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.actionLedger ? world.gamePrototypeMaterialManipulation.actionLedger.filter(row => row.body_step_id).length : 0,
+    material_continuity_latest_id: materialContinuity.latest_manipulation_id,
+    material_continuity_component_id: materialContinuity.latest_component_id,
+    material_continuity_action: materialContinuity.latest_action,
+    material_continuity_target_source: materialContinuity.latest_target_source,
+    material_continuity_selected_component_bound: materialContinuity.latest_selected_component_bound,
+    material_continuity_body_step_id: materialContinuity.latest_body_step_id,
+    material_continuity_canvas_cue: materialContinuity.latest_canvas_cue,
+    material_continuity_state: materialContinuity.component_state,
+    material_continuity_fingerprint: materialContinuity.component_state_fingerprint,
 	    resident_body_steps: world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.bodyLedger ? world.gamePrototypeResidentBodies.bodyLedger.length : 0,
 	    resident_body_contacts: world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.contactLedger ? world.gamePrototypeResidentBodies.contactLedger.length : 0,
 	    resident_body_recoveries: world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.recoveryLedger ? world.gamePrototypeResidentBodies.recoveryLedger.length : 0,
@@ -14161,11 +14204,29 @@ function returnPrototypeSlot() {
     restored_avatar_presence_social_comfort: slot.avatar_presence_social_comfort || 'none',
     restored_avatar_presence_boundary_pressure: slot.avatar_presence_boundary_pressure || 'none',
     restored_avatar_presence_refusal_risk: slot.avatar_presence_refusal_risk || 'none',
+    saved_material_continuity_latest_id: slot.material_continuity_latest_id || 'none',
+    saved_material_continuity_component_id: slot.material_continuity_component_id || 'none',
+    saved_material_continuity_action: slot.material_continuity_action || 'none',
+    saved_material_continuity_target_source: slot.material_continuity_target_source || 'none',
+    saved_material_continuity_selected_component_bound: slot.material_continuity_selected_component_bound === true,
+    saved_material_continuity_body_step_id: slot.material_continuity_body_step_id || 'none',
+    saved_material_continuity_canvas_cue: slot.material_continuity_canvas_cue || 'none',
+    saved_material_continuity_fingerprint: slot.material_continuity_fingerprint || 'none',
   };
   const nextWorld = JSON.parse(slot.snapshot);
   saves.returnLog.push(returnEntry);
   nextWorld.gamePrototypeSaves = saves;
   world = nextWorld;
+  const restoredMaterialContinuity = materialHandlingContinuitySnapshot(world);
+  returnEntry.restored_material_continuity_latest_id = restoredMaterialContinuity.latest_manipulation_id;
+  returnEntry.restored_material_continuity_component_id = restoredMaterialContinuity.latest_component_id;
+  returnEntry.restored_material_continuity_action = restoredMaterialContinuity.latest_action;
+  returnEntry.restored_material_continuity_target_source = restoredMaterialContinuity.latest_target_source;
+  returnEntry.restored_material_continuity_selected_component_bound = restoredMaterialContinuity.latest_selected_component_bound;
+  returnEntry.restored_material_continuity_body_step_id = restoredMaterialContinuity.latest_body_step_id;
+  returnEntry.restored_material_continuity_canvas_cue = restoredMaterialContinuity.latest_canvas_cue;
+  returnEntry.restored_material_continuity_fingerprint = restoredMaterialContinuity.component_state_fingerprint;
+  returnEntry.restored_material_continuity_matches_saved = Boolean(slot.material_continuity_fingerprint && slot.material_continuity_fingerprint !== 'none' && slot.material_continuity_fingerprint === restoredMaterialContinuity.component_state_fingerprint);
   const restoredPresenceReturn = applyAvatarPresenceReturnMemory('save_slot_restore', returnEntry.returned_from_replay_rows);
   if (restoredPresenceReturn) {
     returnEntry.restored_avatar_presence_return_id = restoredPresenceReturn.return_presence_id;
@@ -14393,9 +14454,12 @@ function buildPrototypeAcceptanceReceipt() {
   const avatarPresenceReturnIntegrity = avatarPresence && avatarPresence.returnLedger ? avatarPresence.returnLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.resident_can_refuse === true && row.source_history_preserved === true) : false;
   const avatarPresenceSaveRows = saves && saves.slots ? saves.slots.filter(slot => Number(slot.avatar_presence_rows || 0) > 0 && Number(slot.avatar_comfort_rows || 0) > 0 && typeof slot.avatar_presence_return_tone === 'string').length : 0;
   const avatarPresenceRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => Number(row.restored_avatar_presence_rows || 0) > 0 && row.restored_avatar_presence_return_id && row.restored_avatar_presence_return_id !== 'none').length : 0;
+  const materialContinuitySaveRows = saves && saves.slots ? saves.slots.filter(slot => slot.material_continuity_component_id && slot.material_continuity_component_id !== 'none' && slot.material_continuity_fingerprint && slot.material_continuity_fingerprint !== 'none').length : 0;
+  const materialContinuityRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_material_continuity_matches_saved === true && row.restored_material_continuity_component_id && row.restored_material_continuity_component_id !== 'none').length : 0;
 	  const requirements = [
     { id: 'basic_visual_surface', pass: Boolean(world.entered && Object.keys(world.residents).length <= 6), evidence: `${Object.keys(world.residents).length} resident(s), room=${world.avatar.room}` },
     { id: 'persistent_save_return', pass: Boolean(saves && saves.slots && saves.slots.length > 0 && saves.returnLog && saves.returnLog.length > 0), evidence: saves ? `${saves.slots.length} slot(s), ${saves.returnLog.length} return(s)` : 'no prototype saves' },
+    { id: 'material_state_save_return_continuity', pass: Boolean(saves && materialContinuitySaveRows > 0 && materialContinuityRestoreRows > 0), evidence: saves ? `savedMaterial=${materialContinuitySaveRows}, restoredMatches=${materialContinuityRestoreRows}` : 'no prototype saves' },
     { id: 'autonomous_stochastic_residents', pass: Boolean(autonomous && autonomous.actionLog.length > 0 && autonomous.entropyLedger.length > 0), evidence: autonomous ? `${autonomous.actionLog.length} action(s), entropy rows=${autonomous.entropyLedger.length}` : 'not started' },
     { id: 'reality_grounded_causality', pass: Boolean(ledger && ledger.rows.length > 0 && ledger.rows.every(row => row.conservation_check && row.normal_view_hidden_law_exposed === false)), evidence: ledger ? `${ledger.rows.length} causal row(s)` : 'no ledger' },
     { id: 'emergent_beliefs_and_practices', pass: Boolean(practiceGraph && practiceGraph.nodes.length > 0 && practiceGraph.noPredefinedTechTree === true), evidence: practiceGraph ? `${practiceGraph.nodes.length} node(s), no tech tree=${practiceGraph.noPredefinedTechTree}` : 'no practice graph' },
@@ -14550,8 +14614,10 @@ function formatPrototypeSaves() {
   const saves = world.gamePrototypeSaves || ensurePrototypeSaves();
   const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; projectVisuals=${slot.project_visual_rows || 0}/${slot.latest_project_visual_id || 'none'}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; integrated=${slot.first_playable_integrated_rows || 0}/${slot.first_playable_latest_integrated_id || 'none'} complete=${slot.first_playable_integrated_complete ? 'yes' : 'no'}; normalActions=${slot.normal_play_action_rows || 0}/${slot.normal_play_follow_rows || 0} follow/${slot.normal_play_follow_recovery_rows || 0} space; avatarPresence=${slot.avatar_presence_rows || 0}/${slot.avatar_presence_latest_id || 'none'} comfort=${slot.avatar_comfort_rows || 0} returnTone=${slot.avatar_presence_return_tone || 'none'}; livedPhysics=${slot.lived_practice_physics_rows || 0}/${slot.lived_practice_latest_physics_id || 'none'}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals/${slot.physical_field_rows || 0} fields/${slot.physical_energy_rows || 0} energy; structural=${slot.structural_stress_rows || 0} stress/${slot.structural_deformation_rows || 0} deform/${slot.structural_repair_rows || 0} repair; constraints=${slot.contact_constraint_rows || 0} contact/${slot.joint_constraint_rows || 0} joints/${slot.constraint_repair_rows || 0} repair; materialState=${slot.material_state_rows || 0} state/${slot.phase_change_rows || 0} phase/${slot.property_drift_rows || 0} props; terrain=${slot.terrain_steps || 0} steps/${slot.terrain_flow_rows || 0} flow/${slot.terrain_support_rows || 0} support; tools=${slot.tool_use_rows || 0} uses/${slot.tool_failure_rows || 0} failures/${slot.tool_repair_rows || 0} repairs; resources=${slot.resource_stock_rows || 0} steps/${slot.resource_loss_rows || 0} losses/${slot.resource_gain_rows || 0} gains; thermal=${slot.thermal_heat_rows || 0} heat/${slot.thermal_smoke_rows || 0} smoke/${slot.thermal_safety_rows || 0} safety; water=${slot.water_flow_rows || 0} flows/${slot.water_leak_rows || 0} leaks/${slot.water_safety_rows || 0} safety; ecology=${slot.ecology_growth_rows || 0} growth/${slot.ecology_harvest_rows || 0} harvest/${slot.ecology_hunger_rows || 0} hunger; manipulation=${slot.material_manipulation_rows || 0}/${slot.material_manipulation_practice_links || 0} practice links; bodies=${slot.resident_body_steps || 0} steps/${slot.resident_body_contacts || 0} contacts/${slot.resident_body_recoveries || 0} recoveries; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; deepPhysics=${slot.deep_time_physics_epochs || 0} epochs/${slot.deep_time_material_flux_rows || 0} flux/${slot.deep_time_physical_effects || 0} effects/${slot.physical_heritage_rows || 0} heritage; survival=${slot.survival_status}`);
   const objectSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: objectChain interactions=${slot.object_interaction_rows || 0}, responses=${slot.object_response_rows || 0}, resolutions=${slot.object_resolution_rows || 0}/${slot.latest_object_resolution_id || 'none'}, rechecks=${slot.object_recheck_response_rows || 0}/${slot.latest_object_recheck_response_id || 'none'} result=${slot.latest_object_recheck_result || 'none'}`);
+  const materialSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: materialContinuity handling=${slot.material_continuity_latest_id || 'none'} action=${slot.material_continuity_action || 'none'} component=${slot.material_continuity_component_id || 'none'} target=${slot.material_continuity_target_source || 'none'} selected=${slot.material_continuity_selected_component_bound ? 'yes' : 'no'} body=${slot.material_continuity_body_step_id || 'none'}`);
   const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, livedPhysics=${row.restored_lived_practice_physics_rows || 0}/${row.restored_lived_practice_latest_physics_id || 'none'}, projectVisuals=${row.restored_project_visual_rows || 0}/${row.restored_latest_project_visual_id || 'none'}, integrated=${row.restored_first_playable_integrated_rows || 0}/${row.restored_first_playable_latest_integrated_id || 'none'} complete=${row.restored_first_playable_integrated_complete ? 'yes' : 'no'} follow=${row.restored_normal_play_follow_rows || 0}/${row.restored_normal_play_follow_recovery_rows || 0} space, avatarPresence=${row.restored_avatar_presence_rows || 0}/${row.restored_avatar_presence_return_id || 'none'} tone=${row.restored_avatar_presence_tone_after_restore || row.restored_avatar_presence_tone || 'none'}, from replay=${row.returned_from_replay_rows}`);
   const objectReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredObjectChain interactions=${row.restored_object_interaction_rows || 0}, responses=${row.restored_object_response_rows || 0}, resolutions=${row.restored_object_resolution_rows || 0}/${row.restored_latest_object_resolution_id || 'none'}, rechecks=${row.restored_object_recheck_response_rows || 0}/${row.restored_latest_object_recheck_response_id || 'none'} result=${row.restored_latest_object_recheck_result || 'none'}`);
+  const materialReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredMaterial handling=${row.restored_material_continuity_latest_id || 'none'} action=${row.restored_material_continuity_action || 'none'} component=${row.restored_material_continuity_component_id || 'none'} target=${row.restored_material_continuity_target_source || 'none'} match=${row.restored_material_continuity_matches_saved ? 'yes' : 'no'}`);
   return [
     `Active slot: ${saves.activeSlotId || 'none'}`,
     `Boundary: ${saves.boundary}`,
@@ -14559,10 +14625,14 @@ function formatPrototypeSaves() {
     ...(slots.length ? slots : ['none']),
     'Object objection continuity:',
     ...(objectSlots.length ? objectSlots : ['none']),
+    'Material continuity:',
+    ...(materialSlots.length ? materialSlots : ['none']),
     'Returns:',
     ...(returns.length ? returns : ['none']),
     'Object returns:',
     ...(objectReturns.length ? objectReturns : ['none']),
+    'Material returns:',
+    ...(materialReturns.length ? materialReturns : ['none']),
     `Export receipt: ${saves.exportReceipt ? `${saves.exportReceipt.slots.length} slot(s) prepared` : 'not prepared'}`,
   ].join('\n');
 }

@@ -738,3 +738,12 @@ The goal is readable continuity: the resident response should reflect what happe
 4. Material constraints can still block or alter the result.
 5. The handling row records whether the target came from `canvas_selection`, `primary_surface`, carried state, or resident constraint choice.
 6. The canvas marker shows the resident-body link and target source without exposing hidden simulator law.
+
+## Handled-material save/return loop
+
+1. A resident manipulates a physical component through normal `Handling` or object interaction.
+2. Save records the latest handled component, target source, body step, canvas cue, and public material-state fingerprint.
+3. Return restores the browser-local world snapshot.
+4. The return log recomputes the handled component state from the restored world.
+5. The save panel reports whether the restored material fingerprint matches the saved one.
+6. This proves physical object continuity without exposing hidden simulator law in normal view.

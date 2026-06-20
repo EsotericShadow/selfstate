@@ -1056,3 +1056,18 @@ Acceptance requires:
 - no direct avatar command, hidden-law normal-view exposure, fixed tech unlock, or debug-only physics shortcut is used
 
 This closes the gap between a physics-path readiness check and an actual playable-session proof.
+## Added scope gate: Exported first-playable Physics path acceptance
+
+`first_playable_physics_path_export_acceptance` is now part of first playable prototype scope.
+
+Acceptance requires:
+
+- browser readiness includes `first-playable-session-physics-path`
+- exported acceptance requires a `physics_path` row inside the first-playable session
+- exported acceptance requires a ready ambient happy-path row
+- exported acceptance requires a normal rail Physics path row
+- exported acceptance requires save/return preservation for the Physics path fingerprint
+- exported acceptance requires restored public body-language expression evidence
+- the Physics path proof remains normal-view safe and does not reveal hidden simulator law
+
+This prevents the prototype from passing first-playable acceptance with only generic session rows and a separate physics artifact.

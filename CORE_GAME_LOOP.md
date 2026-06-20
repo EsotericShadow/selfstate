@@ -931,3 +931,14 @@ The first playable session now includes `Physics path` as an explicit required s
 5. Record both ambient happy-path rows and normal physics-path rows in the session card.
 
 This keeps the first playable loop aligned with the game direction: physics appears through ordinary player actions, resident interpretation, proposals, persistence, and readable behavior.
+## Exported first-playable Physics path gate
+
+Acceptance export and QA readiness now check that the first-playable session itself contains the physics path proof:
+
+1. `First playable` records a `physics_path` session step.
+2. The step links to a ready ambient happy-path row.
+3. The normal rail has a ready Physics path row.
+4. Save and Return preserve the Physics path fingerprint.
+5. The restored pressure creates a public body-language expression.
+
+The exported gate fails if Physics path exists only as a separate action-rail artifact and not as part of the first-playable session receipt.

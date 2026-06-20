@@ -860,3 +860,8 @@ This makes return continuity readable in the village surface: residents do not m
 `Physics path` is now a required first-playable session step, not only a normal action-rail verb. Running `First playable` routes through the same player-facing physics path used by normal play, records the ambient happy-path row, records the normal physics-path row, and then performs the session save/return pass.
 
 The session receipt now exposes ambient physics happy-path readiness, normal physics-path row counts, latest physics-path action id, save slot, restore slot, restored proposal/word continuity, and body-language expression. This keeps stochastic physical pressure inside the first playable loop instead of leaving it as a separate readiness artifact.
+## Prototype v0 exported Physics path session gate update
+
+The exported acceptance and browser readiness layers now treat first-playable Physics path continuity as part of the `first_playable_session` proof. A passing session must contain a `physics_path` session step, a ready ambient happy-path row, a normal action-rail Physics path row, matching save/return evidence, and the restored body-language expression.
+
+Browser QA readiness now includes a separate `first-playable-session-physics-path` preflight row. This row is inspection-only: it reports whether the current browser-local state already proves the session Physics path chain without running Prototype QA or acceptance export.

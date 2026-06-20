@@ -632,3 +632,10 @@ Create an ambient physics proposal through normal play, save, return, and observ
 3. Confirm the session card shows an `Ambient physics happy path` row with `ready=yes`.
 4. Confirm the session card shows `Normal Physics path` with a latest action id, happy-path id, save id, restore id, and body-language id.
 5. Confirm the first-playable receipt remains normal-view safe: no hidden law is revealed, no resident is directly commanded, and no named technology unlock appears.
+## Playtest task: exported Physics path session gate
+
+1. Run `First playable`.
+2. Run `QA readiness` without running Prototype QA.
+3. Confirm `first-playable-session-physics-path` reports session physics, ambient ready rows, normal rail rows, saved rows, and restored match rows.
+4. Export acceptance and confirm `first_playable_session` evidence includes ambient happy-path rows, Physics path rows, saved rows, and restored rows.
+5. Confirm the exported proof still reports no hidden-law normal-view exposure and no direct resident command.

@@ -182,6 +182,7 @@
 ## Normal rail visible Physics Follow playtest
 
 - Run the normal action rail loop and confirm the action-rail receipt reports both a ready `Physics path` row and at least one visible Physics Follow row with action id, happy-path id, body-expression id, save/return counts, no direct command, and no hidden-law exposure in normal view.
+- Enter Player mode after the rail loop and confirm a `visible physics follow continuity` card appears with the latest Follow row, action id, happy-path id, save/return counts, and body-expression id.
 
 ## Contact/joint constraint playtests
 

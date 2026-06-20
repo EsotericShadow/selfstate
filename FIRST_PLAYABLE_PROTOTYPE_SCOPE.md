@@ -1149,6 +1149,8 @@ Acceptance requires:
 - the rail loop performs a bounded Follow completion pass when visible Physics-path evidence is missing
 - at least one Follow row records visible Physics path phase, action id, happy-path id, body-expression id, save/return counts, and normal-view boundary fields
 - the action-rail receipt reports ready Physics path rows and visible Physics Follow rows
+- Player Mode includes a `visible physics follow continuity` card
+- Player Mode readiness requires visible Physics Follow continuity instead of treating it as export-only evidence
 - object and normal-test Follow chains keep priority before the Physics path branch
 - resident boundary/refusal behavior remains possible and recoverable with `Space`
 - no direct resident command, hidden-law normal-view exposure, or tech-tree unlock is introduced

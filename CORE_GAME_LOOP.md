@@ -997,3 +997,12 @@ The browser shell now has direct controls for:
 3. `Space`
 
 This lets a playtester follow a restored visible Physics path from the same player-facing control area that starts the path, while still respecting resident boundaries through `Space`.
+
+## Player-mode visible Physics Follow continuity loop
+
+1. The normal action rail produces a ready `Physics path` row.
+2. The normal action rail performs bounded Follow completion if no visible Physics Follow row exists.
+3. Player Mode reads the latest visible Physics Follow row.
+4. Player Mode shows a `visible physics follow continuity` card with Follow id, action id, happy-path id, save/return counts, and public body-expression id.
+5. Player Mode readiness requires the card so the continuity proof stays inside the normal player surface.
+6. Hidden simulator law remains audit-only and residents are not directly commanded.

@@ -6940,6 +6940,21 @@ function normalRailVisiblePhysicsFollowRows(rail) {
   )).length;
 }
 
+function latestNormalRailVisiblePhysicsFollowRow(rail = world.gamePrototypeActionRail || null) {
+  if (!rail || !rail.followChainLedger) return null;
+  const rows = rail.followChainLedger.filter(row => (
+    row.visible_physics_path_phase_after &&
+    row.visible_physics_path_phase_after !== 'none' &&
+    row.visible_physics_path_action_id &&
+    row.visible_physics_path_action_id !== 'none' &&
+    row.visible_physics_path_body_expression_id &&
+    row.visible_physics_path_body_expression_id !== 'none' &&
+    row.avatar_direct_command === false &&
+    row.hidden_law_normal_view === false
+  ));
+  return rows.length ? rows[rows.length - 1] : null;
+}
+
 function normalPlayDiscoveryActionFor(verb, latestManipulation) {
   if (verb === 'handling') return latestManipulation && latestManipulation.success === false ? 'handlingFailure' : 'materialHandling';
   if (verb === 'objects') return 'inspectObject';
@@ -7866,6 +7881,9 @@ function playerModeVisibleSurfaceSnapshot() {
   const ambientPath = playSession && playSession.ambientPhysicsHappyPathLedger && playSession.ambientPhysicsHappyPathLedger.length
     ? playSession.ambientPhysicsHappyPathLedger[playSession.ambientPhysicsHappyPathLedger.length - 1]
     : null;
+  const actionRail = world.gamePrototypeActionRail || null;
+  const visiblePhysicsFollow = latestNormalRailVisiblePhysicsFollowRow(actionRail);
+  const visiblePhysicsFollowEvidence = actionRail && actionRail.visiblePhysicsFollowEvidence ? actionRail.visiblePhysicsFollowEvidence : null;
   return {
     tick: world.tick,
     selected_resident: world.selected,
@@ -7896,7 +7914,16 @@ function playerModeVisibleSurfaceSnapshot() {
     first_playable_physics_path_ready: latest.session_physics_path_ready === true,
     first_playable_physics_path_action_id: latest.session_physics_path_action_id || 'none',
     first_playable_physics_path_body_expression_id: latest.session_physics_path_body_expression_id || 'none',
-    visible_cards: ['world canvas', 'normal action rail', 'player guide', 'primary play surface', 'ambient physics path', 'first playable physics path', 'first playable walkthrough', 'normal play action rail', 'player mode interface', 'resident encounter', 'physical object interaction', 'resident proposal deck', 'lived practice loop', 'resident worksite', 'return journal', 'first playable session receipt', 'public outcomes'],
+    visible_physics_follow: visiblePhysicsFollow
+      ? `${visiblePhysicsFollow.follow_id}: ${visiblePhysicsFollow.visible_physics_path_phase_after} / action ${visiblePhysicsFollow.visible_physics_path_action_id} / happy ${visiblePhysicsFollow.visible_physics_path_happy_path_id} / saved ${visiblePhysicsFollow.visible_physics_path_saved_rows} / restored ${visiblePhysicsFollow.visible_physics_path_restored_rows} / body ${visiblePhysicsFollow.visible_physics_path_body_expression_id}`
+      : 'not started',
+    visible_physics_follow_ready: Boolean(visiblePhysicsFollow),
+    visible_physics_follow_id: visiblePhysicsFollow ? visiblePhysicsFollow.follow_id : 'none',
+    visible_physics_follow_action_id: visiblePhysicsFollow ? visiblePhysicsFollow.visible_physics_path_action_id : 'none',
+    visible_physics_follow_body_expression_id: visiblePhysicsFollow ? visiblePhysicsFollow.visible_physics_path_body_expression_id : 'none',
+    visible_physics_follow_match: visiblePhysicsFollow ? visiblePhysicsFollow.visible_physics_path_match === true : false,
+    visible_physics_follow_completion_attempts: visiblePhysicsFollowEvidence ? visiblePhysicsFollowEvidence.attempts : 0,
+    visible_cards: ['world canvas', 'normal action rail', 'player guide', 'primary play surface', 'ambient physics path', 'first playable physics path', 'visible physics follow continuity', 'first playable walkthrough', 'normal play action rail', 'player mode interface', 'resident encounter', 'physical object interaction', 'resident proposal deck', 'lived practice loop', 'resident worksite', 'return journal', 'first playable session receipt', 'public outcomes'],
     hidden_by_default: ['trace JSON', 'QA manifest', 'deep debug panels', 'prototype subsystem action grid', 'hidden simulator law detail'],
     audit_access: 'available after leaving player mode or through explicit audit/deep-panel controls',
     shows_public_state: true,
@@ -7925,7 +7952,9 @@ function updatePlayerModeInterfaceAcceptance() {
     snapshot.action_verbs.length >= 6 &&
     snapshot.visible_cards.includes('ambient physics path') &&
     snapshot.visible_cards.includes('first playable physics path') &&
+    snapshot.visible_cards.includes('visible physics follow continuity') &&
     snapshot.action_verbs.includes('Physics path') &&
+    snapshot.visible_physics_follow_ready === true &&
     snapshot.shows_public_state === true &&
     snapshot.exposes_hidden_law === false &&
     snapshot.direct_command === false
@@ -7942,6 +7971,11 @@ function updatePlayerModeInterfaceAcceptance() {
     ambient_physics_path_ready: snapshot.ambient_physics_path_ready,
     first_playable_physics_path: snapshot.first_playable_physics_path,
     first_playable_physics_path_ready: snapshot.first_playable_physics_path_ready,
+    visible_physics_follow: snapshot.visible_physics_follow,
+    visible_physics_follow_ready: snapshot.visible_physics_follow_ready,
+    visible_physics_follow_id: snapshot.visible_physics_follow_id,
+    visible_physics_follow_action_id: snapshot.visible_physics_follow_action_id,
+    visible_physics_follow_body_expression_id: snapshot.visible_physics_follow_body_expression_id,
     boundary: mode.boundary,
   };
   return mode.acceptanceReady;
@@ -8040,6 +8074,7 @@ function formatPlayerModeInterface() {
     `Integrated chain: ${snapshot.integrated_chain}`,
     `Ambient physics path: ${snapshot.ambient_physics_path}`,
     `First playable Physics path: ${snapshot.first_playable_physics_path}`,
+    `Visible Physics Follow: ${snapshot.visible_physics_follow}`,
     `Normal verbs: ${snapshot.action_verbs.join(', ')}`,
     `Visible cards: ${snapshot.visible_cards.join(', ')}`,
     `Hidden by default: ${snapshot.hidden_by_default.join(', ')}`,
@@ -15488,6 +15523,7 @@ function formatPrototypePlayerGuide() {
   const worldStage = world.gamePrototypeWorldStage || null;
   const walkthrough = world.gamePrototypeWalkthrough || null;
   const actionRail = world.gamePrototypeActionRail || null;
+  const visiblePhysicsFollowRow = latestNormalRailVisiblePhysicsFollowRow(actionRail);
   const playerMode = world.gamePrototypePlayerMode || null;
   const movementRoute = world.gamePrototypeMovementRoute || null;
   const residentEncounter = world.gamePrototypeResidentEncounter || null;
@@ -15518,7 +15554,7 @@ function formatPrototypePlayerGuide() {
     `Village Day 0-3: ${villageDay03 ? `${villageDay03.phase}; ready=${villageDay03.acceptanceReady}; rows=${villageDay03.dayLedger.length}; returns=${villageDay03.returnLinks.length}` : 'not started'}`,
     `Primary play surface: ${worldStage ? `${worldStage.phase}; ready=${worldStage.acceptanceReady}; focus=${worldStage.focusLedger.length}; prompts=${worldStage.actionPromptLedger.length}` : 'not started'}`,
     `First playable: ${walkthrough ? `${walkthrough.phase}; ready=${walkthrough.acceptanceReady}; steps=${walkthrough.stepLedger.length}/${walkthrough.requiredSteps.length}` : 'not started'}`,
-    `Normal controls: ${actionRail ? `ready=${actionRail.acceptanceReady}; actions=${actionRail.actionLedger.length}; verbs=${actionRail.verbs.join('/')}` : 'not started'}`,
+    `Normal controls: ${actionRail ? `ready=${actionRail.acceptanceReady}; actions=${actionRail.actionLedger.length}; visiblePhysicsFollow=${visiblePhysicsFollowRow ? `${visiblePhysicsFollowRow.follow_id}/${visiblePhysicsFollowRow.visible_physics_path_action_id}` : 'none'}; verbs=${actionRail.verbs.join('/')}` : 'not started'}`,
     `Player mode: ${playerMode ? `enabled=${playerMode.enabled}; ready=${playerMode.acceptanceReady}; sessions=${playerMode.sessionLedger.length}` : 'not started'}`,
     `Movement: ${movementRoute ? `ready=${movementRoute.acceptanceReady}; rows=${movementRoute.routeLedger.length}; snapshots=${movementRoute.snapshotLedger.length}` : 'not started'}`,
     `Resident encounter: ${residentEncounter ? `ready=${residentEncounter.acceptanceReady}; rows=${residentEncounter.encounterLedger.length}; snapshots=${residentEncounter.snapshotLedger.length}` : 'not started'}`,

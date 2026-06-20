@@ -17698,6 +17698,8 @@ function buildPrototypeAcceptanceReceipt() {
     ? Array.from(document.querySelectorAll('#normalPlayerActionStrip [data-action]')).map(button => button.getAttribute('data-action'))
     : [];
   const normalPlayerActionStripReady = normalPlayerRequiredActions.every(action => normalPlayerActionStripButtons.includes(action));
+  const normalPlayerHud = buildNormalPlayerHudSnapshot();
+  const normalPlayerHudNode = typeof document !== 'undefined' ? document.getElementById('normalPlayerHud') : null;
 		  const materialWorld = world.gamePrototype3DWorld || null;
   const terrain = world.gamePrototypeTerrain || null;
   const tools = world.gamePrototypeTools || null;
@@ -18014,6 +18016,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'return_journal', pass: Boolean(returnJournal && returnJournal.acceptanceReady && returnJournalRows > 0 && returnJournalSnapshots >= 3 && returnJournalVisiblePhysicsFollowRows > 0 && returnJournal.forwardReturnVisible === true && returnJournal.saveRestoreVisible === true && returnJournal.noDirectReset === true && returnJournal.noHiddenLawNormalView === true), evidence: returnJournal ? `rows=${returnJournalRows}, snapshots=${returnJournalSnapshots}, visibleFollow=${returnJournalVisiblePhysicsFollowRows}` : 'not run' },
     { id: 'return_journal_visible_physics_follow_continuity', pass: Boolean(returnJournal && returnJournalVisiblePhysicsFollowRows > 0 && returnJournal.forwardReturnVisible === true && returnJournal.saveRestoreVisible === true && returnJournal.noDirectReset === true && returnJournal.noHiddenLawNormalView === true), evidence: returnJournal ? `visibleFollowRows=${returnJournalVisiblePhysicsFollowRows}` : 'not run' },
     { id: 'normal_player_action_strip', pass: Boolean(normalPlayerActionStripReady && normalPlayerActionStripButtons.length >= normalPlayerRequiredActions.length), evidence: `buttons=${normalPlayerActionStripButtons.length}/${normalPlayerRequiredActions.length}, continue=${normalPlayerActionStripButtons.includes('runPrototypeGuidedStep')}` },
+    { id: 'normal_player_hud', pass: Boolean(normalPlayerHudNode && normalPlayerHud.next_action && normalPlayerHud.selected_resident && normalPlayerHud.boundary && normalPlayerHud.boundary.includes('no command')), evidence: `next=${normalPlayerHud.next_action}, resident=${normalPlayerHud.selected_resident}, proposal=${normalPlayerHud.latest_proposal}, continuity=${normalPlayerHud.save_return}` },
     { id: 'first_playable_milestone_surface', pass: Boolean(firstPlayableMilestone && firstPlayableMilestone.surface_ready === true && firstPlayableMilestone.rows.length >= 10 && firstPlayableMilestone.next_action && firstPlayableMilestone.boundary), evidence: firstPlayableMilestone ? `ready=${firstPlayableMilestone.ready_rows}, partial=${firstPlayableMilestone.partial_rows}, missing=${firstPlayableMilestone.missing_rows}, next=${firstPlayableMilestone.next_action}` : 'not built' },
     { id: 'first_playable_session', pass: Boolean(playSession && playSession.acceptanceReady && playSessionSteps >= playSession.requiredSteps.length && playSessionSnapshots >= playSession.requiredSteps.length && playSessionIntegratedCompleteRows > 0 && playSessionWorldPressureRows > 0 && playSessionWorldPressureSaveRows > 0 && playSessionWorldPressureRestoreRows > 0 && livedPracticePhysicsRows > 0 && normalPlayAmbientHappyPathReadyRows > 0 && actionRailPhysicsPathRows > 0 && normalPlayPhysicsPathSaveRows > 0 && normalPlayPhysicsPathRestoreRows > 0 && playerModeVisiblePhysicsFollowReadyRows > 0 && playerModeVisiblePhysicsFollowSaveRows > 0 && playerModeVisiblePhysicsFollowRestoreRows > 0 && returnJournalVisiblePhysicsFollowRows > 0 && playSessionVisiblePhysicsFollowRows > 0 && playSession.stepLedger.some(row => row.step_id === 'physics_path' && row.latest_ambient_happy_path_ready === true && row.latest_normal_physics_path_ready === true && row.latest_normal_physics_path_save_slot_id && row.latest_normal_physics_path_save_slot_id !== 'none' && row.latest_normal_physics_path_restore_slot_id && row.latest_normal_physics_path_restore_slot_id !== 'none' && row.latest_normal_physics_path_body_expression_id && row.latest_normal_physics_path_body_expression_id !== 'none') && playSession.stepLedger.some(row => row.step_id === 'world_pressure' && row.world_pressure_full_physics_ready === true && row.latest_world_pressure_physics_step_id && row.latest_world_pressure_physics_step_id !== 'none' && row.latest_world_pressure_terrain_step_id && row.latest_world_pressure_terrain_step_id !== 'none' && row.latest_world_pressure_resource_step_id && row.latest_world_pressure_resource_step_id !== 'none' && row.latest_world_pressure_thermal_step_id && row.latest_world_pressure_thermal_step_id !== 'none' && row.latest_world_pressure_water_step_id && row.latest_world_pressure_water_step_id !== 'none' && row.latest_world_pressure_ecology_step_id && row.latest_world_pressure_ecology_step_id !== 'none' && row.latest_world_pressure_structural_step_id && row.latest_world_pressure_structural_step_id !== 'none' && row.latest_world_pressure_constraint_step_id && row.latest_world_pressure_constraint_step_id !== 'none' && row.latest_world_pressure_material_state_step_id && row.latest_world_pressure_material_state_step_id !== 'none') && playSession.stepLedger.some(row => row.step_id === 'visible_physics_follow' && row.visible_physics_follow_ready === true && row.visible_physics_follow_id && row.visible_physics_follow_id !== 'none' && row.visible_physics_follow_body_expression_id && row.visible_physics_follow_body_expression_id !== 'none' && Number(row.return_journal_visible_physics_follow_rows || 0) > 0) && playSession.stepLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false) && playSession.noDirectCommand === true && playSession.noHiddenLawNormalView === true && playSession.noTechTreeUnlock === true), evidence: playSession ? `steps=${playSessionSteps}/${playSession.requiredSteps.length}, snapshots=${playSessionSnapshots}, integrated=${playSessionIntegratedCompleteRows}/${playSessionIntegratedRows}, worldPressure=${playSessionWorldPressureRows}, worldPressureSaved=${playSessionWorldPressureSaveRows}, worldPressureRestored=${playSessionWorldPressureRestoreRows}, livedPhysics=${livedPracticePhysicsRows}, ambientHappy=${normalPlayAmbientHappyPathReadyRows}, physicsPath=${actionRailPhysicsPathRows}, saved=${normalPlayPhysicsPathSaveRows}, restored=${normalPlayPhysicsPathRestoreRows}, visibleFollow=${playSessionVisiblePhysicsFollowRows}, playerModeVisibleFollow=${playerModeVisiblePhysicsFollowReadyRows}, journalVisibleFollow=${returnJournalVisiblePhysicsFollowRows}` : 'not run' },
     { id: 'ten_minute_playable_loop', pass: Boolean(playSession && playSession.tenMinuteAcceptanceReady === true && playSessionTenMinuteRows > 0 && playSessionTenMinuteCompleteRows > 0), evidence: playSession ? `rows=${playSessionTenMinuteRows}, complete=${playSessionTenMinuteCompleteRows}, ready=${playSession.tenMinuteAcceptanceReady === true}` : 'not run' },
@@ -18212,6 +18215,47 @@ function firstPlayableMilestoneRow(id, label, ready, partial, evidence, nextActi
   };
 }
 
+function buildNormalPlayerHudSnapshot() {
+  const guide = derivePrototypePlayerGuide();
+  const resident = world.residents[world.selected] || {};
+  const rail = world.gamePrototypeActionRail || null;
+  const board = world.villageBoard || null;
+  const practiceGraph = world.emergentPracticeGraph || null;
+  const saves = world.gamePrototypeSaves || null;
+  const latestAction = rail && rail.actionLedger && rail.actionLedger.length ? rail.actionLedger[rail.actionLedger.length - 1] : null;
+  const latestProposal = board && board.projectProposals && board.projectProposals.length ? board.projectProposals[board.projectProposals.length - 1] : null;
+  const latestPractice = practiceGraph && practiceGraph.nodes && practiceGraph.nodes.length ? practiceGraph.nodes[practiceGraph.nodes.length - 1] : null;
+  const latestReturn = saves && saves.returnLog && saves.returnLog.length ? saves.returnLog[saves.returnLog.length - 1] : null;
+  return {
+    guide_phase: guide.phase,
+    next_action: guide.nextAction,
+    selected_resident: world.selected,
+    resident_schedule: resident.schedule || 'unknown',
+    resident_memory: resident.memory || 'none',
+    latest_action: latestAction ? `${latestAction.verb || 'action'} / ${latestAction.action_id || 'none'}` : 'none',
+    latest_proposal: latestProposal ? latestProposal.proposal_id || 'proposal' : 'none',
+    latest_proposal_status: latestProposal ? latestProposal.status || 'unknown' : 'none',
+    latest_practice: latestPractice ? `${latestPractice.local_name || latestPractice.practice_id} / ${latestPractice.status || 'unknown'}` : 'none',
+    save_return: saves ? `${saves.slots ? saves.slots.length : 0} save(s), ${saves.returnLog ? saves.returnLog.length : 0} return(s)` : 'none',
+    latest_return: latestReturn ? latestReturn.slot_id || 'return' : 'none',
+    boundary: 'normal player HUD only; no command, no hidden law, no tech unlock',
+  };
+}
+
+function formatNormalPlayerHud() {
+  const hud = buildNormalPlayerHudSnapshot();
+  return [
+    `<div>Next: <span>${hud.next_action}</span> (${hud.guide_phase})</div>`,
+    `<div>Resident: <span>${hud.selected_resident}</span> / ${hud.resident_schedule}</div>`,
+    `<div>Memory: <span>${hud.resident_memory}</span></div>`,
+    `<div>Last action: <span>${hud.latest_action}</span></div>`,
+    `<div>Proposal: <span>${hud.latest_proposal}</span> / ${hud.latest_proposal_status}</div>`,
+    `<div>Practice: <span>${hud.latest_practice}</span></div>`,
+    `<div>Continuity: <span>${hud.save_return}</span> / latest ${hud.latest_return}</div>`,
+    `<div>Boundary: <span>${hud.boundary}</span></div>`,
+  ].join('');
+}
+
 function buildFirstPlayableMilestoneSnapshot() {
   const guide = derivePrototypePlayerGuide();
   const rail = world.gamePrototypeActionRail || null;
@@ -18301,6 +18345,7 @@ function formatPrototypeDivergence() {
 
 function renderGamePrototypeSurface() {
   const objectiveNode = document.getElementById('gamePrototypeObjectiveOut');
+  const normalPlayerHudNode = document.getElementById('normalPlayerHud');
   const villageNode = document.getElementById('gamePrototypeVillageOut');
   const publicNode = document.getElementById('gamePrototypePublicOut');
   const guideNode = document.getElementById('gamePrototypeGuideOut');
@@ -18349,6 +18394,7 @@ function renderGamePrototypeSurface() {
   const ecologyPhysicsNode = document.getElementById('gamePrototypeEcologyPhysicsOut');
   const prototype = world.gamePrototype || ensureGamePrototype();
   if (objectiveNode) objectiveNode.textContent = prototype.objective;
+  if (normalPlayerHudNode) normalPlayerHudNode.innerHTML = formatNormalPlayerHud();
   if (villageNode) villageNode.textContent = formatPrototypeVillageState();
   if (publicNode) publicNode.textContent = formatPrototypePublicOutcomes();
   if (guideNode) guideNode.textContent = formatPrototypePlayerGuide();

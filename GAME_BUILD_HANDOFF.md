@@ -509,6 +509,12 @@ The prototype hero now puts the main player verbs before the debug-heavy control
 
 This is a UI narrowing step, not a new simulation system. The buttons call existing player-facing functions and preserve resident mediation, hidden-law boundaries, and no-tech-tree constraints. The acceptance gate is `normal_player_action_strip`.
 
+## Prototype v0 normal player HUD
+
+The prototype hero now includes a compact normal-player HUD above the action strip. It shows the current Player guide next action, selected resident, resident schedule/memory, latest action, latest proposal, latest practice, and save/return continuity.
+
+This keeps the first playable legible without requiring the player to scan debug panels. The HUD is read-only and preserves no-command, no-hidden-law, and no-tech-tree boundaries. The acceptance gate is `normal_player_hud`.
+
 ## Game prototype v0 update: Player Mode Interface
 
 The browser shell now includes a `Player mode` toggle and `Player mode loop` milestone. Player mode foregrounds the actual play surface: canvas, normal action rail, selected resident cue, current problem, player guide, primary play surface, walkthrough state, normal action receipt, and public outcomes.

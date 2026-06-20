@@ -557,6 +557,17 @@ The hero surface now exposes a compact normal-action strip before the debug-heav
 
 The strip calls existing player-facing functions. It does not create direct object placement, direct job assignment, hidden-law exposure, or a new tech unlock.
 
+## Normal player HUD loop
+
+The hero surface now shows a compact read-only HUD before the normal action strip:
+
+1. Current Player guide phase and next action.
+2. Selected resident, schedule, and recent memory.
+3. Latest normal action, proposal, emergent practice, and save/return continuity.
+4. Boundary reminder that the HUD does not command residents, expose hidden law, or unlock technology.
+
+The HUD is an orientation surface for ordinary play. It does not create simulation state.
+
 The Follow verb can now follow an object-objection chain as well as the broader integrated chain. It reuses existing actions and records object-chain phase, response id, proposal id, resolution id, and recheck result without giving the avatar direct object control.
 
 ## Player mode interface loop

@@ -415,6 +415,19 @@ Required evidence:
 - the strip does not add direct resident commands, hidden-law exposure, or tech unlocks
 - exported acceptance checks the strip exists with the required action bindings
 
+## Added scope gate: Normal Player HUD
+
+`normal_player_hud` is now part of first playable prototype scope.
+
+Required evidence:
+
+- the hero surface shows a compact HUD before the normal action strip
+- the HUD shows current Player guide next action and phase
+- the HUD shows selected resident, schedule, and recent memory
+- the HUD shows latest normal action, proposal, practice, and save/return continuity
+- the HUD is read-only and does not create world state, command residents, expose hidden law, or unlock technology
+- exported acceptance checks the HUD exists and preserves the no-command boundary
+
 ## Prototype v0 milestone: Player Mode Interface
 
 `player_mode_interface` is now part of first playable prototype scope.

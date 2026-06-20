@@ -309,7 +309,9 @@
 ## Normal play action rail playtests
 
 - Inspect the hero surface and confirm the normal player action strip appears before the debug-heavy prototype control grid.
+- Confirm the normal player HUD appears above the strip and shows next action, selected resident, latest proposal/practice, and save/return continuity.
 - Confirm the strip exposes Continue, Look, Move, Talk, Objects, Handling, Proposals, Support, Wait, Save, Return, and Follow.
+- Export acceptance and confirm `normal_player_hud` appears as a requirement.
 - Export acceptance and confirm `normal_player_action_strip` appears as a requirement.
 - Use Look, Move, Ask, Talk, Objects, Handling, Support, Wait, Return, Save, Physics path, Follow, and Space from the normal action rail.
 - Confirm each action creates a row in the `Normal play action rail` card.

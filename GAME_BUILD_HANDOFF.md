@@ -727,3 +727,12 @@ Implementation boundary:
 - The cue is caused by a resident-generated bottleneck/test, not by a direct avatar command.
 - The cue adds bounded public stress/attention evidence; it does not spawn resources or install hidden-law knowledge.
 - Board proposals, support rows, project rows, action rail rows, and acceptance evidence can trace back to the same component cue.
+
+## Prototype increment: normal-test follow body manipulation
+
+The normal `Follow` path can now drive a resident toward the component marked by a resident-generated normal test. When a normal-test component cue exists, Follow creates a targeted resident material manipulation row and body-physics row against that component before the chain proceeds to project/worksite evidence.
+
+Implementation boundary:
+- The avatar follows/supports the chain; the resident still performs the movement and manipulation.
+- The target comes from the resident-generated test/component cue, not from a hidden tech unlock.
+- The row records component cue ID, manipulation ID, body step ID, target source, and no hidden-law exposure in normal view.

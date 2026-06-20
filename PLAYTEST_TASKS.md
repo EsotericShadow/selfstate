@@ -522,3 +522,11 @@
 3. Inspect the canvas and confirm the affected primitive component has a visible resident-test ring or marker.
 4. Support or follow the related proposal and confirm the same component cue remains linked through board/support/project evidence.
 5. Confirm the cue does not reveal hidden simulator law in normal view and does not create free resources.
+
+## Playtest task: normal-test Follow moves a resident
+
+1. Create or surface a resident-generated normal test with a visible component cue.
+2. Support the related proposal until Follow recommends the normal-test component handling step.
+3. Use Follow and confirm the proposer moves toward the cued component through a body-physics row.
+4. Confirm the same step creates a resident material manipulation row against the cued component.
+5. Confirm the Follow row shows manipulation ID, body step ID, target source, and no direct avatar command.

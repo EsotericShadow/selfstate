@@ -883,3 +883,16 @@ A resident-generated test should identify a real affected component and carry th
 - drawn primitive-component highlight
 - no resource spawning
 - no hidden-law exposure in normal view
+
+## Added scope gate: Normal-test Follow drives body manipulation
+
+`normal_test_follow_drives_body_manipulation` is now part of first playable prototype scope.
+
+A normal-test chain should not stop at a visible component cue. When followed, it must be able to produce:
+
+- a resident-selected target from the normal-test component cue
+- a material manipulation row against that component
+- a resident body-physics step toward that component
+- a follow-chain row preserving manipulation ID and body step ID
+- no direct avatar command
+- no hidden-law exposure in normal view

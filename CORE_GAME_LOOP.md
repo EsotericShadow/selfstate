@@ -821,3 +821,9 @@ This keeps the normal-test chain readable as lived resident behavior. The player
 ordinary player action -> resident bottleneck -> affected 3D component selected -> resident-generated test -> bounded component cue/stress evidence -> board proposal -> support/project path -> canvas ring around the physical component.
 
 This closes the gap between resident tests and physical world readability: the player can see which primitive component became socially and materially salient without receiving audit-only simulator truth.
+
+## Normal-test follow body-manipulation loop
+
+resident-generated test -> visible component cue -> Follow -> resident proposer moves toward the cued component -> resident material manipulation -> body physics step -> chain records manipulation/body IDs -> worksite/project path can continue.
+
+This makes Follow a playable bridge from public test evidence into embodied resident action. The player does not command the object directly; the resident acts through existing carry/tie/dry/test constraints.

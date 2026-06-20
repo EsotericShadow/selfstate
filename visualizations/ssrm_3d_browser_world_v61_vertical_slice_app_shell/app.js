@@ -11052,6 +11052,7 @@ function ensureAutonomousResidents() {
   if (!world.autonomousResidents.expressionLedger) world.autonomousResidents.expressionLedger = [];
   if (!world.autonomousResidents.routineContextLedger) world.autonomousResidents.routineContextLedger = [];
   if (!world.autonomousResidents.worksiteProximityLedger) world.autonomousResidents.worksiteProximityLedger = [];
+  if (!world.autonomousResidents.normalPlayAmbientReturnBehaviorLedger) world.autonomousResidents.normalPlayAmbientReturnBehaviorLedger = [];
   if (!world.autonomousResidents.boundary.expressionsArePublicCuesOnly) world.autonomousResidents.boundary.expressionsArePublicCuesOnly = true;
   if (!world.autonomousResidents.boundary.routinesUsePhysicalContext) world.autonomousResidents.boundary.routinesUsePhysicalContext = true;
   if (!world.autonomousResidents.boundary.worksiteProximityAffectsWork) world.autonomousResidents.boundary.worksiteProximityAffectsWork = true;
@@ -13609,12 +13610,24 @@ function deriveVisibleResidentExpression(residentName, action = 'observe', needs
 	    gazeCue = 'checks the weak or claimed part';
 	    marker = 'object objection';
 	    reason = 'resident warned or objected before handling';
-		  } else if (action === 'body_physics') {
+  } else if (action === 'body_physics') {
 	    posture = 'weight shifted into footing';
 	    movementCue = 'paces by load and ground';
 	    gazeCue = 'checks route underfoot';
 	    marker = 'moving';
 	    reason = 'body physics pressure';
+  } else if (action === 'ambient_physics_return_caution') {
+    posture = 'braced near remembered strain';
+    movementCue = 'slow retest step';
+    gazeCue = 'checks the restored pressure place';
+    marker = 'return caution';
+    reason = 'restored physics proposal memory';
+  } else if (action === 'ambient_physics_return_ready') {
+    posture = 'turns toward remembered repair';
+    movementCue = 'measured approach';
+    gazeCue = 'checks the proposal word and component';
+    marker = 'return follow-up';
+    reason = 'restored normal-play physics proposal';
 		  } else if (action === 'teach') {
     posture = 'open teaching stance';
     movementCue = 'small demonstration';
@@ -13679,6 +13692,12 @@ function ensureNormalTestReturnBehaviorLedger() {
   const sim = ensureAutonomousResidents();
   if (!Array.isArray(sim.normalTestReturnBehaviorLedger)) sim.normalTestReturnBehaviorLedger = [];
   return sim.normalTestReturnBehaviorLedger;
+}
+
+function ensureNormalPlayAmbientReturnBehaviorLedger() {
+  const sim = ensureAutonomousResidents();
+  if (!Array.isArray(sim.normalPlayAmbientReturnBehaviorLedger)) sim.normalPlayAmbientReturnBehaviorLedger = [];
+  return sim.normalPlayAmbientReturnBehaviorLedger;
 }
 
 function latestNormalTestReturnBehaviorFor(residentName) {
@@ -13766,6 +13785,108 @@ function applyRestoredNormalTestFeedbackBehavior(returnEntry) {
     conservationCheck: true,
     normalViewHiddenLawExposed: false,
     hiddenLawInvolved: 'none in normal player view',
+  });
+  return row;
+}
+
+function applyRestoredAmbientPhysicsProposalBehavior(returnEntry) {
+  if (!returnEntry || returnEntry.restored_normal_play_ambient_physics_matches_saved !== true) return null;
+  const proposalId = returnEntry.restored_normal_play_ambient_latest_proposal_id || 'none';
+  const languageId = returnEntry.restored_normal_play_ambient_pressure_language_id || 'none';
+  const stepId = returnEntry.restored_normal_play_ambient_latest_step_id || 'none';
+  if (proposalId === 'none' || languageId === 'none' || stepId === 'none') return null;
+  const board = world.villageBoard || null;
+  const proposal = board && board.projectProposals ? board.projectProposals.find(row => row.proposal_id === proposalId) || null : null;
+  const proposer = proposal && proposal.proposer && world.residents && world.residents[proposal.proposer] ? proposal.proposer : null;
+  const residentName = proposer || (world.selected && world.residents && world.residents[world.selected] ? world.selected : Object.keys(world.residents || {})[0]);
+  if (!residentName || !world.residents || !world.residents[residentName]) return null;
+  const ledger = ensureNormalPlayAmbientReturnBehaviorLedger();
+  const returnKey = `${returnEntry.slot_id}:${returnEntry.returned_from_replay_rows}:${returnEntry.restored_normal_play_ambient_continuity_fingerprint || 'none'}`;
+  const duplicate = ledger.find(row => row.return_key === returnKey && row.proposal_id === proposalId && row.pressure_language_id === languageId);
+  if (duplicate) return duplicate;
+  const pressureKind = String(returnEntry.restored_normal_play_ambient_pressure_kind || '').toLowerCase();
+  const cautious = /failure|collision|weak|wet|heat|strain|stress|support/.test(pressureKind);
+  const behaviorKind = cautious ? 'cautious_restored_pressure_check' : 'resume_restored_pressure_followup';
+  const residentWord = returnEntry.restored_normal_play_ambient_resident_word || (proposal ? proposal.pressure_language_resident_word : 'local pressure word') || 'local pressure word';
+  const componentId = returnEntry.restored_normal_play_ambient_component_id || (proposal ? proposal.pressure_language_component_id : 'none') || 'none';
+  const schedule = cautious
+    ? `moves carefully near ${componentId} after ${residentWord} returned`
+    : `returns to ${residentWord} proposal after restore`;
+  const memory = `returned remembering ${residentWord} from ${proposalId}; physics step ${stepId}`;
+  mutateResident(residentName, {
+    trust: 0.001,
+    progress: cautious ? 0.001 : 0.003,
+    schedule,
+    memory,
+    historyEvent: 'normal play ambient physics return behavior',
+    historyDetail: `${returnEntry.slot_id}; ${proposalId}; ${languageId}; ${behaviorKind}`
+  });
+  const expression = recordVisibleResidentExpression(residentName, cautious ? 'ambient_physics_return_caution' : 'ambient_physics_return_ready', ensureAutonomousResidents().needState[residentName]);
+  Object.assign(expression, cautious ? {
+    posture: 'braced near remembered strain',
+    movementCue: 'slow retest step',
+    gazeCue: 'checks the restored pressure place',
+    marker: 'return caution',
+    reason: `restored ${residentWord} pressure from ${proposalId}`,
+  } : {
+    posture: 'turns toward remembered repair',
+    movementCue: 'measured approach',
+    gazeCue: 'checks the proposal word and component',
+    marker: 'return follow-up',
+    reason: `restored ${residentWord} proposal from ${proposalId}`,
+  });
+  const row = {
+    behavior_id: `NPARB-${String(ledger.length + 1).padStart(3, '0')}`,
+    day: ensureAutonomousResidents().day,
+    slot_id: returnEntry.slot_id,
+    return_key: returnKey,
+    returned_from_replay_rows: returnEntry.returned_from_replay_rows,
+    resident: residentName,
+    proposal_id: proposalId,
+    physics_step_id: stepId,
+    normal_action_id: returnEntry.restored_normal_play_ambient_latest_action_id || 'none',
+    pressure_language_id: languageId,
+    pressure_language_pressure_id: returnEntry.restored_normal_play_ambient_pressure_language_pressure_id || 'none',
+    resident_word: residentWord,
+    player_gloss: returnEntry.restored_normal_play_ambient_player_gloss || (proposal ? proposal.pressure_language_player_gloss : 'none') || 'none',
+    component_id: componentId,
+    pressure_kind: returnEntry.restored_normal_play_ambient_pressure_kind || 'none',
+    behavior_kind: behaviorKind,
+    schedule_after: world.residents[residentName].schedule,
+    memory_after: world.residents[residentName].memory,
+    expression_id: expression.expression_id,
+    expression_marker: expression.marker,
+    expression_posture: expression.posture,
+    expression_movement: expression.movementCue,
+    expression_gaze: expression.gazeCue,
+    no_direct_avatar_command: true,
+    no_direct_player_command: true,
+    hidden_law_normal_view: false,
+    source_history_preserved: true,
+    public_body_language: true,
+    active_for_next_action: true,
+  };
+  ledger.push(row);
+  if (ledger.length > 50) ledger.shift();
+  returnEntry.restored_normal_play_ambient_behavior_id = row.behavior_id;
+  returnEntry.restored_normal_play_ambient_behavior_kind = row.behavior_kind;
+  returnEntry.restored_normal_play_ambient_behavior_resident = row.resident;
+  returnEntry.restored_normal_play_ambient_behavior_expression_id = row.expression_id;
+  returnEntry.restored_normal_play_ambient_behavior_posture = row.expression_posture;
+  recordRealityConstraint('normal_play_ambient_physics_return_body_language', {
+    resident: residentName,
+    sourceBeliefId: row.behavior_id,
+    materials: componentId !== 'none' ? [componentId] : ['resident memory'],
+    publicObservation: `${residentName} shows ${row.expression_marker} around ${residentWord}`,
+    residentInterpretation: row.schedule_after,
+    materialTransformation: 'return memory changed public posture and movement cue only; no material spawned',
+    timeCost: 0,
+    workCost: 0,
+    toolWear: 0,
+    maintenanceObligation: proposalId,
+    unintendedConsequence: cautious ? 'resident slows around restored pressure source' : 'resident resumes proposal follow-up',
+    hiddenLawInvolved: 'none in normal view',
+    conservationCheck: true
   });
   return row;
 }
@@ -16127,6 +16248,14 @@ function returnPrototypeSlot() {
   returnEntry.restored_normal_play_ambient_pressure_kind = restoredAmbientPhysicsContinuity.latest_pressure_kind;
   returnEntry.restored_normal_play_ambient_continuity_fingerprint = restoredAmbientPhysicsContinuity.fingerprint;
   returnEntry.restored_normal_play_ambient_physics_matches_saved = Boolean(slot.normal_play_ambient_continuity_fingerprint && slot.normal_play_ambient_continuity_fingerprint !== 'none' && slot.normal_play_ambient_continuity_fingerprint === restoredAmbientPhysicsContinuity.fingerprint);
+  const restoredAmbientPhysicsBehavior = applyRestoredAmbientPhysicsProposalBehavior(returnEntry);
+  if (restoredAmbientPhysicsBehavior) {
+    returnEntry.restored_normal_play_ambient_behavior_id = restoredAmbientPhysicsBehavior.behavior_id;
+    returnEntry.restored_normal_play_ambient_behavior_kind = restoredAmbientPhysicsBehavior.behavior_kind;
+    returnEntry.restored_normal_play_ambient_behavior_resident = restoredAmbientPhysicsBehavior.resident;
+    returnEntry.restored_normal_play_ambient_behavior_expression_id = restoredAmbientPhysicsBehavior.expression_id;
+    returnEntry.restored_normal_play_ambient_behavior_posture = restoredAmbientPhysicsBehavior.expression_posture;
+  }
   const restoredPresenceReturn = applyAvatarPresenceReturnMemory('save_slot_restore', returnEntry.returned_from_replay_rows);
   if (restoredPresenceReturn) {
     returnEntry.restored_avatar_presence_return_id = restoredPresenceReturn.return_presence_id;
@@ -16409,6 +16538,9 @@ function buildPrototypeAcceptanceReceipt() {
   const normalTestFeedbackReturnBehaviorRows = autonomous && autonomous.normalTestReturnBehaviorLedger ? autonomous.normalTestReturnBehaviorLedger.filter(row => row.feedback_id && row.feedback_id !== 'none' && row.practice_id && row.practice_id !== 'none' && row.return_key && row.no_direct_avatar_command === true && row.hidden_law_normal_view === false && row.source_history_preserved === true).length : 0;
   const normalTestFeedbackReturnActionRows = autonomous && autonomous.actionLog ? autonomous.actionLog.filter(row => row.normal_test_return_behavior_id && row.normal_test_return_behavior_id !== 'none' && row.normal_test_return_feedback_id && row.normal_test_return_feedback_id !== 'none' && row.post_return_feedback_bias === true && row.no_direct_player_command === true).length : 0;
   const normalTestFeedbackReturnRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_normal_test_feedback_behavior_id && row.restored_normal_test_feedback_behavior_id !== 'none' && row.restored_normal_test_feedback_behavior_kind && row.restored_normal_test_feedback_behavior_kind !== 'none').length : 0;
+  const normalPlayAmbientReturnBehaviorRows = autonomous && autonomous.normalPlayAmbientReturnBehaviorLedger ? autonomous.normalPlayAmbientReturnBehaviorLedger.filter(row => row.proposal_id && row.proposal_id !== 'none' && row.pressure_language_id && row.pressure_language_id !== 'none' && row.expression_id && row.expression_id !== 'none' && row.public_body_language === true && row.no_direct_avatar_command === true && row.hidden_law_normal_view === false && row.source_history_preserved === true).length : 0;
+  const normalPlayAmbientReturnExpressionRows = autonomous && autonomous.expressionLedger ? autonomous.expressionLedger.filter(row => /^ambient_physics_return_/.test(row.action || '') && row.publicCueOnly === true && row.hiddenStateExposed === false).length : 0;
+  const normalPlayAmbientReturnRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_normal_play_ambient_behavior_id && row.restored_normal_play_ambient_behavior_id !== 'none' && row.restored_normal_play_ambient_behavior_expression_id && row.restored_normal_play_ambient_behavior_expression_id !== 'none' && row.restored_normal_play_ambient_behavior_posture && row.restored_normal_play_ambient_behavior_posture !== 'none').length : 0;
   const pressureLanguageContinuitySaveRows = saves && saves.slots ? saves.slots.filter(slot => Number(slot.pressure_language_rows || 0) > 0 && slot.pressure_language_latest_id && slot.pressure_language_latest_id !== 'none' && slot.pressure_language_root_id && slot.pressure_language_root_id !== 'none' && slot.pressure_language_term_id && slot.pressure_language_term_id !== 'none' && slot.pressure_language_continuity_fingerprint && slot.pressure_language_continuity_fingerprint !== 'none').length : 0;
   const pressureLanguageContinuityRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_pressure_language_matches_saved === true && Number(row.restored_pressure_language_rows || 0) > 0 && row.restored_pressure_language_latest_id && row.restored_pressure_language_latest_id !== 'none' && row.restored_pressure_language_root_id && row.restored_pressure_language_root_id !== 'none' && row.restored_pressure_language_term_id && row.restored_pressure_language_term_id !== 'none').length : 0;
   const normalPlayAmbientPhysicsSaveRows = saves && saves.slots ? saves.slots.filter(slot => Number(slot.normal_play_ambient_physics_rows || 0) > 0 && Number(slot.normal_play_ambient_physics_proposals || 0) > 0 && slot.normal_play_ambient_latest_proposal_id && slot.normal_play_ambient_latest_proposal_id !== 'none' && slot.normal_play_ambient_pressure_language_id && slot.normal_play_ambient_pressure_language_id !== 'none' && slot.normal_play_ambient_continuity_fingerprint && slot.normal_play_ambient_continuity_fingerprint !== 'none').length : 0;
@@ -16421,6 +16553,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'normal_test_feedback_save_return_continuity', pass: Boolean(saves && normalTestFeedbackContinuitySaveRows > 0 && normalTestFeedbackContinuityRestoreRows > 0), evidence: saves ? `savedFeedback=${normalTestFeedbackContinuitySaveRows}, restoredFeedback=${normalTestFeedbackContinuityRestoreRows}` : 'no prototype saves' },
     { id: 'normal_test_feedback_return_affects_behavior', pass: Boolean(autonomous && saves && normalTestFeedbackReturnBehaviorRows > 0 && normalTestFeedbackReturnRestoreRows > 0 && normalTestFeedbackReturnActionRows > 0), evidence: `returnBehavior=${normalTestFeedbackReturnBehaviorRows}, restoreRows=${normalTestFeedbackReturnRestoreRows}, actionBias=${normalTestFeedbackReturnActionRows}` },
     { id: 'normal_play_physics_language_save_return_continuity', pass: Boolean(saves && normalPlayAmbientPhysicsSaveRows > 0 && normalPlayAmbientPhysicsRestoreRows > 0), evidence: saves ? `savedAmbientPhysics=${normalPlayAmbientPhysicsSaveRows}, restoredMatches=${normalPlayAmbientPhysicsRestoreRows}` : 'no prototype saves' },
+    { id: 'normal_play_physics_return_body_language', pass: Boolean(autonomous && saves && normalPlayAmbientReturnBehaviorRows > 0 && normalPlayAmbientReturnExpressionRows > 0 && normalPlayAmbientReturnRestoreRows > 0), evidence: `returnBehavior=${normalPlayAmbientReturnBehaviorRows}, expressions=${normalPlayAmbientReturnExpressionRows}, restoreRows=${normalPlayAmbientReturnRestoreRows}` },
     { id: 'autonomous_stochastic_residents', pass: Boolean(autonomous && autonomous.actionLog.length > 0 && autonomous.entropyLedger.length > 0), evidence: autonomous ? `${autonomous.actionLog.length} action(s), entropy rows=${autonomous.entropyLedger.length}` : 'not started' },
     { id: 'ordinary_physics_pressure_drives_residents', pass: Boolean(autonomous && physics && residentPhysicsPressureRows > 0 && residentPhysicsPressureRoutineRows > 0 && residentPhysicsPressureActionRows > 0 && residentPhysicsPressurePhysicsRows > 0), evidence: `pressureRows=${residentPhysicsPressureRows}, routine=${residentPhysicsPressureRoutineRows}, action=${residentPhysicsPressureActionRows}, physicsLedger=${residentPhysicsPressurePhysicsRows}` },
     { id: 'physics_pressure_cultivates_language', pass: Boolean(materialWorld && residentPhysicsLanguageRows > 0 && residentPhysicsLanguageRootRows > 0 && residentPhysicsLanguageTermRows > 0), evidence: `languagePressure=${residentPhysicsLanguageRows}, groundedRoots=${residentPhysicsLanguageRootRows}, pressureTerms=${residentPhysicsLanguageTermRows}` },

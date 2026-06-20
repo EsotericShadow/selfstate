@@ -1013,3 +1013,7 @@ The first playable scope now expects normal player verbs to advance physics-driv
 ## Added scope gate: Normal-play physics-language save/return continuity
 
 The first playable scope now requires normal-play ambient physics proposals to persist through save/return. Acceptance requires saved ambient physics rows, restored matching rows, a proposal id, a pressure-language id, resident word/gloss continuity, and a fingerprint match.
+
+## Added scope gate: Normal-play physics return body language
+
+The first playable scope now requires restored normal-play ambient physics proposals to affect readable resident behavior. Acceptance requires a restored ambient physics behavior row, a public expression cue, resident word/proposal linkage, no direct avatar command, and no hidden-law normal-view exposure.

@@ -617,3 +617,7 @@ Use normal player verbs such as Wait or Return instead of a debug physics button
 ## Playtest task: save and return after ambient physics proposal
 
 Use a normal verb such as Wait, Return, Look, or Handling until an ambient physics proposal appears. Save, return, and inspect the save panel. Confirm the ambient physics proposal keeps its normal action id, physics step id, proposal id, resident word, imperfect gloss, and match status after restore.
+
+## Playtest task: watch restored physics memory in body language
+
+Create an ambient physics proposal through normal play, save, return, and observe the proposer. Confirm the resident visibly reacts through posture, movement, or gaze tied to the restored proposal word and component, without exposing hidden physical law.

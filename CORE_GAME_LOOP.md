@@ -899,3 +899,9 @@ Wait and Return are no longer only calendar/save actions. They can let the physi
 The loop now includes: normal verb -> ambient physics proposal -> resident pressure-language -> save slot fingerprint -> return restore comparison -> visible save panel row.
 
 The restored state must preserve the normal action id, physics step id, proposal id, resident word, gloss, and component link without revealing hidden physical law in normal view.
+
+## Restored ambient-physics body-language loop
+
+The loop now includes: saved ambient physics proposal -> restored fingerprint match -> resident memory update -> public body-language expression -> return behavior ledger.
+
+The expression remains a player-facing cue only. It does not reveal hidden physical law and does not let the avatar command a resident body.

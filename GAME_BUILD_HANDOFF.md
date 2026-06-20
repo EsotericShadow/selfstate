@@ -834,3 +834,9 @@ This reduces dependence on debug physics buttons. The player can wait, return, o
 Normal-play ambient physics proposals are now first-class save/return continuity. Save slots store the ambient physics row count, latest normal action, physics step, proposal id, resident pressure-language id, local word, imperfect gloss, component id, pressure kind, and a continuity fingerprint. Return restores compare the saved fingerprint against the restored normal-play ambient physics state.
 
 This keeps normal gameplay history durable: a resident-language proposal created by ordinary player action can survive return sessions as a traceable physical/social event, not just as a transient action rail row.
+
+## Prototype increment: restored physics proposal body language
+
+Restored normal-play ambient physics proposals now create public resident body-language cues. When a save/return restores a physics-language proposal, the resident who owns the proposal can update schedule and memory, record a return behavior row, and show a visible posture/movement/gaze cue such as cautious pressure checking or measured proposal follow-up.
+
+This makes return continuity readable in the village surface: residents do not merely preserve JSON state, they visibly carry restored physical/social history.

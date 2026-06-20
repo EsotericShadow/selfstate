@@ -880,3 +880,8 @@ Return logs recompute the same primary-surface cue after restore and report whet
 The normal `Follow` verb can now resume the visible first-playable Physics path after save/return. Follow checks the player-facing primary-surface Physics path cue, saved visible-cue fingerprint, restored visible-cue fingerprint, and public body-expression id, then routes to the next missing step: run Physics path, show it on the primary surface, save it, return to it, resurface it, or show return continuity.
 
 Follow rows now report the visible Physics path phase, action id, happy-path id, cue rows, saved/restored rows, match status, and body-expression id. Prototype QA and exported acceptance require at least one Follow row that carries visible Physics path state, so this is a playable behavior rather than a passive receipt.
+## Prototype v0 guide-driven visible Physics path update
+
+The Player guide and normal action rail now recognize the visible first-playable Physics path as a resumable thread. When that path exists but is not saved, restored, resurfaced, or journaled, the guide recommends `Follow` and explains the current Physics path phase, action id, and happy-path id.
+
+The normal action options also mark `Follow` as recommended for unfinished visible Physics path continuity. Option snapshots carry the visible Physics path phase, next action, action id, happy-path id, saved/restored row counts, and match status.

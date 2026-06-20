@@ -6834,6 +6834,7 @@ function normalPlayOptions() {
   const boundaryFollow = latestFollowBoundaryPressureRow();
   const objectChain = latestObjectObjectionChainState();
   const normalTestChain = latestNormalTestChainState();
+  const visiblePhysicsPath = latestVisiblePhysicsPathChainState();
   return [
     { verb: 'look', label: 'Look', action: 'runPrimaryPlaySurfaceStep', intent: 'read the current world-stage problem and object context', recommended: guide.button === 'runPrimaryPlaySurfaceStep' || !stage || !stage.acceptanceReady },
     { verb: 'move', label: 'Move', action: 'runPlayerMovementRouteLoop', intent: 'move through village space and update nearby affordances', recommended: guide.button === 'runPlayerMovementRouteLoop' },
@@ -6846,7 +6847,7 @@ function normalPlayOptions() {
     { verb: 'return', label: 'Return', action: 'leaveAndReturnLater', intent: 'leave and come back to check continuity', recommended: guide.button === 'leaveAndReturnLater' },
     { verb: 'save', label: 'Save', action: 'savePrototypeSlot', intent: 'save current village and walkthrough state', recommended: guide.button === 'exportPrototypeAcceptanceReceipt' || guide.button === 'runFirstPlayableWalkthrough' },
     { verb: 'physics_path', label: 'Physics path', action: 'runNormalPlayPhysicsPath', intent: 'follow ambient physical pressure through resident language, proposal, save/return, and public body language', recommended: guide.button === 'runFirstPlayableAmbientPhysicsHappyPath' || guide.button === 'runNormalPlayPhysicsPath' },
-    { verb: 'follow', label: 'Follow', action: 'runNormalPlayFollowChain', intent: objectChain.active && objectChain.phase !== 'object chain persisted' ? `follow object chain ${objectChain.response_id}->${objectChain.proposal_id}->${objectChain.resolution_id}: ${objectChain.next_label}` : normalTestChain.active && normalTestChain.phase !== 'normal test persisted' ? `follow normal-test chain ${normalTestChain.action_id}->${normalTestChain.test_id}->${normalTestChain.proposal_id}: ${normalTestChain.next_label}` : latest.integrated_loop_id && latest.integrated_loop_id !== 'none' ? `follow chain ${latest.integrated_loop_id} through the next missing public link` : 'create and follow the first integrated causality chain', recommended: guide.button === 'runNormalPlayFollowChain' || Boolean(objectChain.active && objectChain.phase !== 'object chain persisted') || Boolean(normalTestChain.active && normalTestChain.phase !== 'normal test persisted') || Boolean(latest.integrated_loop_id && latest.integrated_loop_id !== 'none' && latest.integrated_loop_complete !== true) },
+    { verb: 'follow', label: 'Follow', action: 'runNormalPlayFollowChain', intent: objectChain.active && objectChain.phase !== 'object chain persisted' ? `follow object chain ${objectChain.response_id}->${objectChain.proposal_id}->${objectChain.resolution_id}: ${objectChain.next_label}` : normalTestChain.active && normalTestChain.phase !== 'normal test persisted' ? `follow normal-test chain ${normalTestChain.action_id}->${normalTestChain.test_id}->${normalTestChain.proposal_id}: ${normalTestChain.next_label}` : visiblePhysicsPath.active && visiblePhysicsPath.phase !== 'visible physics path persisted' ? `follow visible physics path ${visiblePhysicsPath.action_id}->${visiblePhysicsPath.happy_path_id}: ${visiblePhysicsPath.next_label}` : latest.integrated_loop_id && latest.integrated_loop_id !== 'none' ? `follow chain ${latest.integrated_loop_id} through the next missing public link` : 'create and follow the first integrated causality chain', recommended: guide.button === 'runNormalPlayFollowChain' || Boolean(objectChain.active && objectChain.phase !== 'object chain persisted') || Boolean(normalTestChain.active && normalTestChain.phase !== 'normal test persisted') || Boolean(visiblePhysicsPath.active && visiblePhysicsPath.phase !== 'visible physics path persisted') || Boolean(latest.integrated_loop_id && latest.integrated_loop_id !== 'none' && latest.integrated_loop_complete !== true) },
     { verb: 'space', label: 'Space', action: 'runNormalPlayGiveSpace', intent: boundaryFollow ? `give space after ${boundaryFollow.response_outcome} on ${boundaryFollow.chain_after}` : 'give residents room before pressing the chain again', recommended: guide.button === 'runNormalPlayGiveSpace' || Boolean(boundaryFollow) },
   ].map(option => ({
     ...option,
@@ -6864,6 +6865,13 @@ function normalPlayOptions() {
     normal_test_chain_next_action: normalTestChain.next_action,
     normal_test_chain_test_id: normalTestChain.test_id,
     normal_test_chain_proposal_id: normalTestChain.proposal_id,
+    visible_physics_path_phase: visiblePhysicsPath.phase,
+    visible_physics_path_next_action: visiblePhysicsPath.next_action,
+    visible_physics_path_action_id: visiblePhysicsPath.action_id,
+    visible_physics_path_happy_path_id: visiblePhysicsPath.happy_path_id,
+    visible_physics_path_saved_rows: visiblePhysicsPath.saved_rows,
+    visible_physics_path_restored_rows: visiblePhysicsPath.restored_rows,
+    visible_physics_path_match: visiblePhysicsPath.match === true,
   }));
 }
 
@@ -10652,6 +10660,7 @@ function runPrototypeGuidedStep() {
   const latestAmbientHappyPath = playSession && playSession.ambientPhysicsHappyPathLedger && playSession.ambientPhysicsHappyPathLedger.length
     ? playSession.ambientPhysicsHappyPathLedger[playSession.ambientPhysicsHappyPathLedger.length - 1]
     : null;
+  const visiblePhysicsPath = typeof latestVisiblePhysicsPathChainState === 'function' ? latestVisiblePhysicsPathChainState() : null;
   const row = {
     id: `GPG-${String(prototype.guideHistory.length + 1).padStart(3, '0')}`,
     from_phase: guide.phase,
@@ -10665,6 +10674,13 @@ function runPrototypeGuidedStep() {
     ambient_physics_happy_path_ready: latestAmbientHappyPath ? latestAmbientHappyPath.acceptance_ready === true : false,
     ambient_physics_happy_path_proposal_id: latestAmbientHappyPath ? latestAmbientHappyPath.proposal_id : 'none',
     ambient_physics_happy_path_word: latestAmbientHappyPath ? latestAmbientHappyPath.resident_word : 'none',
+    visible_physics_path_phase: visiblePhysicsPath ? visiblePhysicsPath.phase : 'none',
+    visible_physics_path_action_id: visiblePhysicsPath ? visiblePhysicsPath.action_id : 'none',
+    visible_physics_path_happy_path_id: visiblePhysicsPath ? visiblePhysicsPath.happy_path_id : 'none',
+    visible_physics_path_next_action: visiblePhysicsPath ? visiblePhysicsPath.next_action : 'none',
+    visible_physics_path_saved_rows: visiblePhysicsPath ? visiblePhysicsPath.saved_rows : 0,
+    visible_physics_path_restored_rows: visiblePhysicsPath ? visiblePhysicsPath.restored_rows : 0,
+    visible_physics_path_match: visiblePhysicsPath ? visiblePhysicsPath.match === true : false,
     player_facing: true,
     avatar_direct_command: false,
     hidden_law_normal_view: false,
@@ -15262,6 +15278,7 @@ function derivePrototypePlayerGuide() {
   }
   const integratedChain = typeof latestIntegratedChainRow === 'function' ? latestIntegratedChainRow() : null;
   const objectChainForGuide = typeof latestObjectObjectionChainState === 'function' ? latestObjectObjectionChainState() : { active: false, phase: 'none' };
+  const visiblePhysicsPathForGuide = typeof latestVisiblePhysicsPathChainState === 'function' ? latestVisiblePhysicsPathChainState() : { active: false, phase: 'none', next_label: 'none', reason: 'not available', action_id: 'none', happy_path_id: 'none' };
   const actionRailForGuide = world.gamePrototypeActionRail || null;
   const followRowsForGuide = actionRailForGuide && actionRailForGuide.followChainLedger ? actionRailForGuide.followChainLedger.length : 0;
   const boundaryFollowForGuide = typeof latestFollowBoundaryPressureRow === 'function' ? latestFollowBoundaryPressureRow() : null;
@@ -15271,6 +15288,9 @@ function derivePrototypePlayerGuide() {
   }
   if (objectChainForGuide.active && objectChainForGuide.phase !== 'object chain persisted') {
     return { ...guide, phase: objectChainForGuide.phase, nextAction: objectChainForGuide.next_label, why: objectChainForGuide.reason, button: 'runNormalPlayFollow' };
+  }
+  if (visiblePhysicsPathForGuide.active && visiblePhysicsPathForGuide.phase !== 'visible physics path persisted') {
+    return { ...guide, phase: visiblePhysicsPathForGuide.phase, nextAction: visiblePhysicsPathForGuide.next_label, why: `${visiblePhysicsPathForGuide.reason}; action=${visiblePhysicsPathForGuide.action_id}, happy=${visiblePhysicsPathForGuide.happy_path_id}`, button: 'runNormalPlayFollow' };
   }
   if (integratedChain && followRowsForGuide <= 0) {
     return { ...guide, phase: 'follow integrated chain', nextAction: 'Follow chain', why: `continue ${integratedChain.integration_id} through the normal action rail instead of opening debug panels`, button: 'runNormalPlayFollow' };
@@ -15389,8 +15409,9 @@ function formatPrototypePlayerGuide() {
   const dayCycle = world.gamePrototypeDayCycle || null;
   const returnLater = world.gamePrototypeReturnLater || null;
   const objectChain = typeof latestObjectObjectionChainState === 'function' ? latestObjectObjectionChainState() : { phase: 'none', next_label: 'none', reason: 'not available', response_id: 'none', proposal_id: 'none', resolution_id: 'none', recheck_result: 'none', saved_rows: 0, restored_rows: 0 };
+  const visiblePhysicsPath = typeof latestVisiblePhysicsPathChainState === 'function' ? latestVisiblePhysicsPathChainState() : { phase: 'none', next_label: 'none', reason: 'not available', action_id: 'none', happy_path_id: 'none', cue_rows: 0, saved_rows: 0, restored_rows: 0, match: false };
   const latestAmbientHappyPath = playSession && playSession.ambientPhysicsHappyPathLedger && playSession.ambientPhysicsHappyPathLedger.length ? playSession.ambientPhysicsHappyPathLedger[playSession.ambientPhysicsHappyPathLedger.length - 1] : null;
-  const history = prototype.guideHistory.slice(-5).map(row => `${row.id}: ${row.from_phase}->${row.next_phase} via ${row.action}`);
+  const history = prototype.guideHistory.slice(-5).map(row => `${row.id}: ${row.from_phase}->${row.next_phase} via ${row.action}; visiblePhysics=${row.visible_physics_path_phase || 'none'}/${row.visible_physics_path_action_id || 'none'} match=${row.visible_physics_path_match ? 'yes' : 'no'}`);
   return [
     `Phase: ${guide.phase}`,
     `Suggested action: ${guide.nextAction} (${guide.button})`,
@@ -15408,6 +15429,7 @@ function formatPrototypePlayerGuide() {
     `Resident encounter: ${residentEncounter ? `ready=${residentEncounter.acceptanceReady}; rows=${residentEncounter.encounterLedger.length}; snapshots=${residentEncounter.snapshotLedger.length}` : 'not started'}`,
     `Objects: ${objectInteraction ? `ready=${objectInteraction.acceptanceReady}; rows=${objectInteraction.interactionLedger.length}; snapshots=${objectInteraction.snapshotLedger.length}` : 'not started'}`,
     `Object chain: phase=${objectChain.phase}; next=${objectChain.next_label}; response=${objectChain.response_id}; proposal=${objectChain.proposal_id}; resolution=${objectChain.resolution_id}; result=${objectChain.recheck_result}; saved/restored=${objectChain.saved_rows}/${objectChain.restored_rows}`,
+    `Visible Physics path: phase=${visiblePhysicsPath.phase}; next=${visiblePhysicsPath.next_label}; action=${visiblePhysicsPath.action_id}; happy=${visiblePhysicsPath.happy_path_id}; cues=${visiblePhysicsPath.cue_rows}; saved/restored=${visiblePhysicsPath.saved_rows}/${visiblePhysicsPath.restored_rows}; match=${visiblePhysicsPath.match ? 'yes' : 'no'}`,
     `Proposal deck: ${proposalDeck ? `ready=${proposalDeck.acceptanceReady}; cards=${proposalDeck.cardLedger.length}; actions=${proposalDeck.actionLedger.length}` : 'not started'}`,
     `Lived practice: ${livedPractice ? `ready=${livedPractice.acceptanceReady}; actions=${livedPractice.actionLedger.length}; snapshots=${livedPractice.practiceSnapshots.length}` : 'not started'}`,
     `Resident worksite: ${worksite ? `ready=${worksite.acceptanceReady}; watches=${worksite.watchLedger.length}; snapshots=${worksite.snapshotLedger.length}` : 'not started'}`,

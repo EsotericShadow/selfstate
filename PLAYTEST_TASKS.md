@@ -660,3 +660,11 @@ Create an ambient physics proposal through normal play, save, return, and observ
 3. Use `Follow`.
 4. Inspect the normal action rail and confirm the latest Follow row reports `visiblePhysics=...`, saved/restored counts, and `match=yes`.
 5. Confirm `normal-play-action-rail` QA/acceptance evidence includes `followVisiblePhysics`.
+## Playtest task: guide recommends visible Physics path Follow
+
+1. Create a visible first-playable Physics path and save/return it.
+2. Open the Player guide.
+3. Confirm the guide phase names the visible Physics path state when it needs Follow.
+4. Confirm the suggested action is `Follow`.
+5. Inspect normal action options and confirm `Follow` is recommended with visible Physics path phase/action/happy-path evidence.
+6. Run `Guide step` and confirm guide history records visible Physics path phase, action id, saved/restored rows, and match status.

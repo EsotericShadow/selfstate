@@ -976,3 +976,14 @@ The normal `Follow` verb can now continue the visible Physics path continuity ch
 6. If the cue is restored and visible, Follow shows return continuity.
 
 Object and normal-test chains still take priority. The visible Physics path branch fills the gap when that restored physics chain is the active player-facing continuity thread.
+## Guide-driven visible Physics path loop
+
+The guide now treats the visible Physics path as a first-class player-facing thread:
+
+1. Detect visible Physics path state from the primary surface, save slots, and return logs.
+2. Recommend `Follow` when the path needs to be surfaced, saved, restored, resurfaced, or journaled.
+3. Keep object and normal-test chains ahead of the Physics path branch.
+4. Show visible Physics path phase and match status in guide history.
+5. Let the normal action rail recommend `Follow` from player-language options.
+
+This makes the restored Physics path discoverable by ordinary play instead of requiring the user to infer it from receipts.

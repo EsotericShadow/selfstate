@@ -1113,3 +1113,17 @@ Acceptance requires:
 - no hidden simulator law or direct resident command is exposed
 
 This turns the visible Physics path from a receipt into a resumable player-facing thread.
+## Added scope gate: Guide recommends visible Physics path Follow
+
+`guide_recommends_visible_physics_path_follow` is now part of first playable prototype scope.
+
+Acceptance requires:
+
+- the guide can detect visible Physics path phase and next action
+- the guide recommends `Follow` when visible Physics path continuity is unfinished
+- normal action options mark `Follow` as recommended for the visible Physics path branch
+- guide history records visible Physics path phase, action id, happy-path id, saved/restored rows, and match status
+- object and normal-test chains keep priority over the visible Physics path branch
+- no hidden simulator law or direct resident command appears in the guide
+
+This turns the restored Physics path into a discoverable play path.

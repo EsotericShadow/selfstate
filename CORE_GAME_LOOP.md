@@ -717,6 +717,7 @@ The first playable surface now has one consolidation card that reads existing le
 1. Ready, partial, and missing rows.
 2. Current Player guide phase and next action.
 3. Start Here player path, Start Here resident expression, normal verbs, ambient physics language, proposals, practice, worksite, save/return, session, 10-minute loop, canvas cues, QA readiness, and acceptance.
+4. The same ready/partial/missing progress and next incomplete milestone are echoed in the normal HUD and play summary so the player can stay oriented without opening audit panels.
 
 The card is read-only. It does not add world law, command residents, expose hidden law, or unlock technology. Its purpose is to make incompleteness visible while keeping the player oriented toward the next ordinary action.
 

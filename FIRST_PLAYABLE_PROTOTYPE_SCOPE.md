@@ -632,6 +632,7 @@ Required evidence:
 - the card reports ready, partial, and missing rows instead of hiding incomplete work
 - the rows cover Start Here player path, Start Here resident expression, normal player verbs, ambient physics language, proposals, emergent practice, worksite consequence, save/return, first-playable session, 10-minute loop, canvas cues, QA readiness, and acceptance
 - the card shows the current Player guide phase and next action
+- the normal HUD and play summary echo ready, partial, missing, and next incomplete milestone state
 - the surface is read-only and does not create world state, command residents, reveal hidden law in normal view, or unlock technology
 
 ## Prototype v0 milestone: Browser QA Readiness

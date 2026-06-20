@@ -18905,12 +18905,12 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'return_journal', pass: Boolean(returnJournal && returnJournal.acceptanceReady && returnJournalRows > 0 && returnJournalSnapshots >= 3 && returnJournalVisiblePhysicsFollowRows > 0 && returnJournal.forwardReturnVisible === true && returnJournal.saveRestoreVisible === true && returnJournal.noDirectReset === true && returnJournal.noHiddenLawNormalView === true), evidence: returnJournal ? `rows=${returnJournalRows}, snapshots=${returnJournalSnapshots}, visibleFollow=${returnJournalVisiblePhysicsFollowRows}` : 'not run' },
     { id: 'return_journal_visible_physics_follow_continuity', pass: Boolean(returnJournal && returnJournalVisiblePhysicsFollowRows > 0 && returnJournal.forwardReturnVisible === true && returnJournal.saveRestoreVisible === true && returnJournal.noDirectReset === true && returnJournal.noHiddenLawNormalView === true), evidence: returnJournal ? `visibleFollowRows=${returnJournalVisiblePhysicsFollowRows}` : 'not run' },
     { id: 'normal_player_action_strip', pass: Boolean(normalPlayerActionStripReady && normalPlayerActionStripButtons.length >= normalPlayerRequiredActions.length), evidence: `buttons=${normalPlayerActionStripButtons.length}/${normalPlayerRequiredActions.length}, startHere=${normalPlayerActionStripButtons.includes('runFirstPlayableStartHere')}, continue=${normalPlayerActionStripButtons.includes('runPrototypeGuidedStep')}` },
-    { id: 'normal_player_hud', pass: Boolean(normalPlayerHudNode && normalPlayerHud.next_action && normalPlayerHud.selected_resident && normalPlayerHud.boundary && normalPlayerHud.boundary.includes('no command')), evidence: `next=${normalPlayerHud.next_action}, resident=${normalPlayerHud.selected_resident}, proposal=${normalPlayerHud.latest_proposal}, continuity=${normalPlayerHud.save_return}` },
+    { id: 'normal_player_hud', pass: Boolean(normalPlayerHudNode && normalPlayerHud.next_action && normalPlayerHud.selected_resident && normalPlayerHud.milestone_progress && normalPlayerHud.milestone_progress !== 'none' && normalPlayerHud.boundary && normalPlayerHud.boundary.includes('no command')), evidence: `next=${normalPlayerHud.next_action}, resident=${normalPlayerHud.selected_resident}, proposal=${normalPlayerHud.latest_proposal}, continuity=${normalPlayerHud.save_return}, milestone=${normalPlayerHud.milestone_progress}` },
     { id: 'start_here_player_visible_receipt', pass: Boolean(normalPlayerHudNode && normalPlaySummaryNode && normalPlayerHud.start_here_ready === true && normalPlayerHud.start_here_receipt !== 'none' && normalPlayerHud.start_here_physics_path !== 'none' && normalPlayerHud.start_here_physics_happy_path !== 'none' && normalPlayerHud.start_here_resident_word !== 'none' && normalPlayerHud.start_here_player_gloss !== 'none' && normalPlayerHud.start_here_body_expression !== 'none' && normalPlayerHud.start_here_component_expression !== 'none' && startHereSummaryExpressionVisible && normalPlayerHud.start_here_object_memory !== 'none'), evidence: `receipt=${normalPlayerHud.start_here_receipt}, physics=${normalPlayerHud.start_here_physics_path}/${normalPlayerHud.start_here_physics_happy_path}, word=${normalPlayerHud.start_here_resident_word}, body=${normalPlayerHud.start_here_body_expression}, expression=${normalPlayerHud.start_here_component_expression}, summaryExpression=${startHereSummaryExpressionVisible}, objectMemory=${normalPlayerHud.start_here_object_memory}` },
     { id: 'start_here_component_selected_on_canvas', pass: Boolean(playSession && playSession.startHereAcceptanceReady === true && startHereSelectedRows > 0 && startHereVisibleCueRows > 0), evidence: `selected=${startHereSelectedRows}, visibleCues=${startHereVisibleCueRows}` },
     { id: 'start_here_component_save_return_continuity', pass: Boolean(playSession && playSession.startHereAcceptanceReady === true && startHereComponentSaveRows > 0 && startHereComponentRestoreRows > 0), evidence: `saved=${startHereComponentSaveRows}, restored=${startHereComponentRestoreRows}` },
     { id: 'start_here_component_drives_objects_action', pass: Boolean(playSession && startHereComponentRestoreRows > 0 && startHereComponentOptionRows > 0 && startHereComponentActionRows > 0 && startHereComponentExpressionRows > 0 && startHereComponentExpressionCanvasCueRows > 0), evidence: `restored=${startHereComponentRestoreRows}, options=${startHereComponentOptionRows}, actions=${startHereComponentActionRows}, expressions=${startHereComponentExpressionRows}, canvasExpressions=${startHereComponentExpressionCanvasCueRows}` },
-    { id: 'normal_play_summary_card', pass: Boolean(normalPlaySummaryNode && normalPlaySummary.next_action && normalPlaySummary.resident && normalPlaySummary.boundary && normalPlaySummary.boundary.includes('no command')), evidence: `next=${normalPlaySummary.next_action}, resident=${normalPlaySummary.resident}, proposal=${normalPlaySummary.proposal}, continuity=${normalPlaySummary.continuity}` },
+    { id: 'normal_play_summary_card', pass: Boolean(normalPlaySummaryNode && normalPlaySummary.next_action && normalPlaySummary.resident && normalPlaySummary.milestone && normalPlaySummary.milestone !== 'none' && normalPlaySummary.boundary && normalPlaySummary.boundary.includes('no command')), evidence: `next=${normalPlaySummary.next_action}, resident=${normalPlaySummary.resident}, proposal=${normalPlaySummary.proposal}, continuity=${normalPlaySummary.continuity}, milestone=${normalPlaySummary.milestone}` },
     { id: 'normal_player_guided_action_highlight', pass: Boolean(normalPlayerGuideHighlight && normalPlayerGuideHighlight.matched === true), evidence: `recommended=${normalPlayerGuideHighlight.recommended_action}, highlighted=${normalPlayerGuideHighlight.highlighted_action}, matched=${normalPlayerGuideHighlight.matched === true}` },
     { id: 'advanced_prototype_controls_secondary', pass: Boolean(advancedControlsNode && advancedControlsNode.tagName === 'DETAILS' && advancedControlsButtons > 0), evidence: `details=${Boolean(advancedControlsNode)}, buttons=${advancedControlsButtons}, open=${advancedControlsNode ? advancedControlsNode.open === true : false}` },
     { id: 'prototype_play_details_secondary', pass: Boolean(playDetailsNode && playDetailsNode.tagName === 'DETAILS' && playDetailsCards > 10), evidence: `details=${Boolean(playDetailsNode)}, cards=${playDetailsCards}, open=${playDetailsNode ? playDetailsNode.open === true : false}` },
@@ -19141,6 +19141,8 @@ function buildNormalPlayerHudSnapshot() {
     : null;
   const objectCueBehavior = latestObjectCueReturnBehaviorFor(world.selected) || latestObjectCueReturnBehaviorFor(null);
   const objectCueBias = objectCueReturnActionBias(objectCueBehavior);
+  const milestone = buildFirstPlayableMilestoneSnapshot();
+  const nextMilestoneRow = milestone && milestone.rows ? milestone.rows.find(row => row.status !== 'READY') || milestone.rows[0] || null : null;
   return {
     guide_phase: guide.phase,
     next_action: guide.nextAction,
@@ -19172,6 +19174,8 @@ function buildNormalPlayerHudSnapshot() {
     object_cue_return_behavior: objectCueBehavior ? `${objectCueBehavior.behavior_id} / ${objectCueBehavior.behavior_kind}` : 'none',
     object_cue_return_component: objectCueBehavior ? objectCueBehavior.component_id : 'none',
     object_cue_return_recommendation: objectCueBias ? objectCueBias.label : 'none',
+    milestone_progress: milestone ? `ready=${milestone.ready_rows}, partial=${milestone.partial_rows}, missing=${milestone.missing_rows}` : 'none',
+    milestone_next: nextMilestoneRow ? `${nextMilestoneRow.label} / ${nextMilestoneRow.status} -> ${nextMilestoneRow.next_action}` : 'none',
     boundary: 'normal player HUD only; no command, no hidden law, no tech unlock',
   };
 }
@@ -19186,6 +19190,7 @@ function formatNormalPlayerHud() {
     `<div>Proposal: <span>${hud.latest_proposal}</span> / ${hud.latest_proposal_status}</div>`,
     `<div>Practice: <span>${hud.latest_practice}</span></div>`,
     `<div>Continuity: <span>${hud.save_return}</span> / latest ${hud.latest_return}</div>`,
+    `<div>Milestone: <span>${hud.milestone_progress}</span> / next ${hud.milestone_next}</div>`,
     `<div>Start here: <span>${hud.start_here_receipt}</span> / ready=${hud.start_here_ready ? 'yes' : 'no'}</div>`,
     `<div>Physics receipt: <span>${hud.start_here_physics_path}</span> / ${hud.start_here_physics_happy_path}; ${hud.start_here_resident_word} ~ ${hud.start_here_player_gloss}; component ${hud.start_here_component}; body ${hud.start_here_body_expression}</div>`,
     `<div>Physics return: <span>${hud.start_here_physics_restore}</span></div>`,
@@ -19223,6 +19228,7 @@ function buildNormalPlaySummarySnapshot() {
     proposal: latestProposal ? `${latestProposal.proposal_id || 'proposal'} / ${latestProposal.status || 'unknown'}` : 'none',
     practice: latestPractice ? `${latestPractice.local_name || latestPractice.practice_id} / ${latestPractice.status || 'unknown'}` : 'none',
     continuity: `${saveCount} save(s), ${returnCount} return(s)`,
+    milestone: `${hud.milestone_progress}; next=${hud.milestone_next}`,
     start_here: `${hud.start_here_receipt}; ready=${hud.start_here_ready}; physics=${hud.start_here_physics_path}/${hud.start_here_physics_happy_path}; word=${hud.start_here_resident_word}; body=${hud.start_here_body_expression}; restore=${hud.start_here_physics_restore}; componentReturn=${hud.start_here_component_return}; expression=${hud.start_here_component_expression}; objectMemory=${hud.start_here_object_memory}`,
     object_memory: objectCueBehavior ? `${objectCueBehavior.behavior_id} ${objectCueBehavior.behavior_kind} on ${objectCueBehavior.component_id}; recommend ${objectCueBias ? objectCueBias.label : 'none'}` : 'none',
     canvas_cue: latestCue ? latestCue.cue_id || latestCue.reason || 'visible cue' : 'none',
@@ -19241,6 +19247,7 @@ function formatNormalPlaySummary() {
     `Proposal: ${summary.proposal}`,
     `Practice: ${summary.practice}`,
     `Continuity: ${summary.continuity}; session ${summary.session}`,
+    `Milestone: ${summary.milestone}`,
     `Start here receipt: ${summary.start_here}`,
     `Object memory: ${summary.object_memory}`,
     `Canvas cue: ${summary.canvas_cue}`,

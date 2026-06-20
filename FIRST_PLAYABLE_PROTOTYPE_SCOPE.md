@@ -505,6 +505,8 @@ Required behavior:
 - exported acceptance includes `object_interaction_visible_world_cue`
 - save/return records and restores the latest object cue fingerprint, component id, cue kind, and component-side cue pointer
 - exported acceptance includes `object_interaction_cue_save_return_persistence`
+- restored object cues produce resident return behavior rows (`OCRB-...`) with visible expression and source-preserved memory
+- exported acceptance includes `object_cue_return_resident_behavior`
 
 ## Prototype v0 milestone: Player Mode Interface
 

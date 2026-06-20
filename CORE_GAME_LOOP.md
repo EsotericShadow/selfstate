@@ -608,6 +608,8 @@ The object interaction loop now writes a persistent visible cue row (`OIC-...`) 
 
 Save/return records the latest object cue id, component id, cue kind, visible change, and component-side cue pointer. Restore compares the saved fingerprint with the restored world so object-action consequences can survive return sessions as physical world history.
 
+When the saved object cue survives restore, a resident gets a return behavior row (`OCRB-...`) and visible expression. The resident may guard, recheck, notice, or watch the affected component based on the restored cue kind, without the avatar commanding follow-up work.
+
 The Follow verb can now follow an object-objection chain as well as the broader integrated chain. It reuses existing actions and records object-chain phase, response id, proposal id, resolution id, and recheck result without giving the avatar direct object control.
 
 ## Player mode interface loop

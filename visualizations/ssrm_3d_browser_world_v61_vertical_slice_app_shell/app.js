@@ -14663,6 +14663,12 @@ function ensureNormalPlayAmbientReturnBehaviorLedger() {
   return sim.normalPlayAmbientReturnBehaviorLedger;
 }
 
+function ensureObjectCueReturnBehaviorLedger() {
+  const sim = ensureAutonomousResidents();
+  if (!Array.isArray(sim.objectCueReturnBehaviorLedger)) sim.objectCueReturnBehaviorLedger = [];
+  return sim.objectCueReturnBehaviorLedger;
+}
+
 function latestNormalTestReturnBehaviorFor(residentName) {
   const sim = world.autonomousResidents;
   if (!sim || !Array.isArray(sim.normalTestReturnBehaviorLedger)) return null;
@@ -14743,6 +14749,97 @@ function applyRestoredNormalTestFeedbackBehavior(returnEntry) {
     publicObservation: schedule,
     residentInterpretation: memory,
     materialTransformation: 'no material transformed; restored feedback biases the next ordinary resident behavior',
+    timeCost: 1,
+    workCost: 0,
+    conservationCheck: true,
+    normalViewHiddenLawExposed: false,
+    hiddenLawInvolved: 'none in normal player view',
+  });
+  return row;
+}
+
+function applyRestoredObjectCueReturnBehavior(returnEntry) {
+  if (!returnEntry || returnEntry.restored_object_visual_cue_matches_saved !== true) return null;
+  const cueId = returnEntry.restored_object_latest_visual_cue_id || 'none';
+  const componentId = returnEntry.restored_object_latest_visual_cue_component_id || 'none';
+  if (cueId === 'none' || componentId === 'none') return null;
+  const savedResident = returnEntry.restored_object_latest_visual_cue_resident || 'none';
+  const residentName = savedResident !== 'none' && world.residents && world.residents[savedResident]
+    ? savedResident
+    : (world.selected && world.residents && world.residents[world.selected] ? world.selected : Object.keys(world.residents || {})[0]);
+  if (!residentName || !world.residents || !world.residents[residentName]) return null;
+  const ledger = ensureObjectCueReturnBehaviorLedger();
+  const returnKey = `${returnEntry.slot_id}:${returnEntry.returned_from_replay_rows}:${returnEntry.restored_object_visual_cue_fingerprint || 'none'}`;
+  const duplicate = ledger.find(row => row.return_key === returnKey && row.cue_id === cueId);
+  if (duplicate) return duplicate;
+  const cueKind = String(returnEntry.restored_object_latest_visual_cue_kind || 'watch_only');
+  const term = returnEntry.restored_object_latest_visual_cue_term || componentId;
+  const visibleChange = returnEntry.restored_object_latest_visual_cue_change || 'remembered object cue';
+  const behaviorByKind = {
+    resident_block: ['guard_remembered_object_boundary', 'object_cue_return_guard', `keeps distance around ${term} after the restored block`],
+    resident_reroute: ['recheck_remembered_object_route', 'object_cue_return_recheck', `rechecks ${term} before taking the old route`],
+    state_changed: ['notice_remembered_object_change', 'object_cue_return_notice', `looks back at changed ${term}`],
+    watch_only: ['keep_remembered_object_watch', 'object_cue_return_watch', `keeps watch on ${term}`],
+  };
+  const [behaviorKind, expressionAction, schedule] = behaviorByKind[cueKind] || behaviorByKind.watch_only;
+  const memory = `returned remembering ${cueId} on ${componentId}: ${visibleChange}`;
+  mutateResident(residentName, {
+    trust: 0.001,
+    progress: cueKind === 'state_changed' ? 0.003 : 0.001,
+    schedule,
+    memory,
+    historyEvent: 'object cue return behavior',
+    historyDetail: `${returnEntry.slot_id}; ${cueId}; ${componentId}; ${behaviorKind}`
+  });
+  const expression = recordVisibleResidentExpression(residentName, expressionAction, ensureAutonomousResidents().needState[residentName]);
+  Object.assign(expression, {
+    posture: cueKind === 'resident_block' ? 'sets a small boundary near the object' : cueKind === 'resident_reroute' ? 'leans in and retests the object route' : cueKind === 'state_changed' ? 'turns toward the changed object' : 'keeps a watchful pause',
+    movementCue: cueKind === 'state_changed' ? 'returns to inspect' : cueKind === 'resident_block' ? 'holds back' : 'slow check',
+    gazeCue: `checks ${componentId}`,
+    marker: `object cue return: ${cueKind}`,
+    reason: memory,
+  });
+  const resident = world.residents[residentName];
+  const row = {
+    behavior_id: `OCRB-${String(ledger.length + 1).padStart(3, '0')}`,
+    day: ensureAutonomousResidents().day,
+    slot_id: returnEntry.slot_id,
+    return_key: returnKey,
+    returned_from_replay_rows: returnEntry.returned_from_replay_rows,
+    resident: residentName,
+    cue_id: cueId,
+    interaction_id: returnEntry.restored_object_latest_visual_cue_interaction_id || 'none',
+    component_id: componentId,
+    cue_kind: cueKind,
+    visible_change: visibleChange,
+    behavior_kind: behaviorKind,
+    resident_term: term,
+    player_gloss: returnEntry.restored_object_latest_visual_cue_gloss || 'object consequence',
+    schedule_after: resident.schedule,
+    memory_after: resident.memory,
+    expression_id: expression.expression_id,
+    expression_marker: expression.marker,
+    expression_posture: expression.posture,
+    no_direct_avatar_command: true,
+    no_direct_player_command: true,
+    hidden_law_normal_view: false,
+    source_history_preserved: true,
+    active_for_next_action: true,
+    consumed_by_action_id: 'none',
+  };
+  ledger.push(row);
+  if (ledger.length > 50) ledger.shift();
+  returnEntry.restored_object_cue_behavior_id = row.behavior_id;
+  returnEntry.restored_object_cue_behavior_kind = row.behavior_kind;
+  returnEntry.restored_object_cue_behavior_resident = row.resident;
+  returnEntry.restored_object_cue_behavior_expression_id = row.expression_id;
+  recordRealityConstraint('object_cue_return_behavior', {
+    resident: residentName,
+    sourceBeliefId: row.behavior_id,
+    materials: [componentId],
+    publicObservation: schedule,
+    residentInterpretation: memory,
+    materialTransformation: 'no material transformed; restored object cue biases visible resident behavior',
     timeCost: 1,
     workCost: 0,
     conservationCheck: true,
@@ -17732,6 +17829,13 @@ function returnPrototypeSlot() {
   returnEntry.restored_object_component_cue_count = restoredObjectCueContinuity.component_cue_count;
   returnEntry.restored_object_visual_cue_fingerprint = restoredObjectCueContinuity.fingerprint;
   returnEntry.restored_object_visual_cue_matches_saved = Boolean(slot.object_visual_cue_fingerprint && slot.object_visual_cue_fingerprint !== 'none' && slot.object_visual_cue_fingerprint === restoredObjectCueContinuity.fingerprint);
+  const restoredObjectCueBehavior = applyRestoredObjectCueReturnBehavior(returnEntry);
+  if (restoredObjectCueBehavior) {
+    returnEntry.restored_object_cue_behavior_id = restoredObjectCueBehavior.behavior_id;
+    returnEntry.restored_object_cue_behavior_kind = restoredObjectCueBehavior.behavior_kind;
+    returnEntry.restored_object_cue_behavior_resident = restoredObjectCueBehavior.resident;
+    returnEntry.restored_object_cue_behavior_expression_id = restoredObjectCueBehavior.expression_id;
+  }
   returnEntry.restored_material_continuity_latest_id = restoredMaterialContinuity.latest_manipulation_id;
   returnEntry.restored_material_continuity_component_id = restoredMaterialContinuity.latest_component_id;
   returnEntry.restored_material_continuity_action = restoredMaterialContinuity.latest_action;
@@ -18058,6 +18162,7 @@ function buildPrototypeAcceptanceReceipt() {
   const objectResponseRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => Number(row.restored_object_resolution_rows || 0) > 0 && Number(row.restored_object_recheck_response_rows || 0) > 0 && row.restored_latest_object_resolution_id && row.restored_latest_object_resolution_id !== 'none' && row.restored_latest_object_recheck_response_id && row.restored_latest_object_recheck_response_id !== 'none').length : 0;
   const objectCueSaveRows = saves && saves.slots ? saves.slots.filter(slot => Number(slot.object_visual_cue_rows || 0) > 0 && slot.object_latest_visual_cue_id && slot.object_latest_visual_cue_id !== 'none' && slot.object_latest_visual_cue_component_id && slot.object_latest_visual_cue_component_id !== 'none' && slot.object_visual_cue_fingerprint && slot.object_visual_cue_fingerprint !== 'none').length : 0;
   const objectCueRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_object_visual_cue_matches_saved === true && row.restored_object_latest_visual_cue_id && row.restored_object_latest_visual_cue_id !== 'none' && row.restored_object_latest_visual_cue_component_id && row.restored_object_latest_visual_cue_component_id !== 'none').length : 0;
+  const objectCueReturnBehaviorRows = autonomous && autonomous.objectCueReturnBehaviorLedger ? autonomous.objectCueReturnBehaviorLedger.filter(row => row.cue_id && row.cue_id !== 'none' && row.component_id && row.component_id !== 'none' && row.expression_id && row.expression_id !== 'none' && row.no_direct_player_command === true && row.hidden_law_normal_view === false && row.source_history_preserved === true).length : 0;
   const proposalDeckCards = proposalDeck ? proposalDeck.cardLedger.length : 0;
   const proposalDeckActions = proposalDeck ? proposalDeck.actionLedger.length : 0;
   const livedPracticeRows = livedPractice ? livedPractice.actionLedger.length : 0;
@@ -18256,6 +18361,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'physical_inspector_object_action', pass: Boolean(physicalInspectorNode && physicalInspectorActionButtons > 0 && objectInteraction && physicalInspectorObjectRows > 0), evidence: `node=${Boolean(physicalInspectorNode)}, buttons=${physicalInspectorActionButtons}, rows=${physicalInspectorObjectRows}` },
     { id: 'object_interaction_visible_world_cue', pass: Boolean(objectInteraction && objectInteractionVisibleCueRows > 0), evidence: objectInteraction ? `visibleCues=${objectInteractionVisibleCueRows}` : 'not run' },
     { id: 'object_interaction_cue_save_return_persistence', pass: Boolean(saves && objectCueSaveRows > 0 && objectCueRestoreRows > 0), evidence: saves ? `saved=${objectCueSaveRows}, restored=${objectCueRestoreRows}` : 'not run' },
+    { id: 'object_cue_return_resident_behavior', pass: Boolean(saves && objectCueRestoreRows > 0 && objectCueReturnBehaviorRows > 0), evidence: `restoredCues=${objectCueRestoreRows}, behaviors=${objectCueReturnBehaviorRows}` },
     { id: 'blocked_object_response_creates_proposal', pass: Boolean(objectInteraction && board && objectResponseProposalRows > 0 && objectResponseBoardProposalRows > 0), evidence: objectInteraction && board ? `interactionLinks=${objectResponseProposalRows}, boardLinks=${objectResponseBoardProposalRows}` : 'not run' },
     { id: 'object_objection_proposal_actionable', pass: Boolean(objectInteraction && board && proposalDeck && projects && worksite && objectResponseDeckActionRows > 0 && (objectResponseProjectRows > 0 || objectResponseWorksiteRows > 0)), evidence: objectInteraction && board ? `deckActions=${objectResponseDeckActionRows}, projectRows=${objectResponseProjectRows}, worksiteRows=${objectResponseWorksiteRows}` : 'not run' },
     { id: 'object_objection_resolution_recheck', pass: Boolean(objectInteraction && objectResponseResolutionRows > 0 && objectResponseRecheckRows > 0), evidence: objectInteraction ? `resolutionRows=${objectResponseResolutionRows}, recheckRows=${objectResponseRecheckRows}` : 'not run' },
@@ -18393,7 +18499,7 @@ function formatPrototypeSaves() {
   const ambientPhysicsSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ambientPhysics rows=${slot.normal_play_ambient_physics_rows || 0} proposals=${slot.normal_play_ambient_physics_proposals || 0} action=${slot.normal_play_ambient_latest_action_id || 'none'} step=${slot.normal_play_ambient_latest_step_id || 'none'} proposal=${slot.normal_play_ambient_latest_proposal_id || 'none'} word=${slot.normal_play_ambient_resident_word || 'none'} gloss=${slot.normal_play_ambient_player_gloss || 'none'}`);
   const pressureLanguageSlots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: pressureLanguage pressure=${slot.physics_pressure_rows || 0}/${slot.physics_pressure_latest_id || 'none'} step=${slot.physics_pressure_latest_step_id || 'none'} component=${slot.physics_pressure_component_id || 'none'} kind=${slot.physics_pressure_kind || 'none'} language=${slot.pressure_language_rows || 0}/${slot.pressure_language_latest_id || 'none'} root=${slot.pressure_language_root_id || 'none'} term=${slot.pressure_language_term_id || 'none'} word=${slot.pressure_language_resident_word || 'none'} gloss=${slot.pressure_language_player_gloss || 'none'}`);
   const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, livedPhysics=${row.restored_lived_practice_physics_rows || 0}/${row.restored_lived_practice_latest_physics_id || 'none'}, projectVisuals=${row.restored_project_visual_rows || 0}/${row.restored_latest_project_visual_id || 'none'}, integrated=${row.restored_first_playable_integrated_rows || 0}/${row.restored_first_playable_latest_integrated_id || 'none'} complete=${row.restored_first_playable_integrated_complete ? 'yes' : 'no'} follow=${row.restored_normal_play_follow_rows || 0}/${row.restored_normal_play_follow_recovery_rows || 0} space, avatarPresence=${row.restored_avatar_presence_rows || 0}/${row.restored_avatar_presence_return_id || 'none'} tone=${row.restored_avatar_presence_tone_after_restore || row.restored_avatar_presence_tone || 'none'}, from replay=${row.returned_from_replay_rows}`);
-  const objectReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredObjectChain interactions=${row.restored_object_interaction_rows || 0}, responses=${row.restored_object_response_rows || 0}, cues=${row.restored_object_visual_cue_rows || 0}/${row.restored_object_latest_visual_cue_id || 'none'} component=${row.restored_object_latest_visual_cue_component_id || 'none'} kind=${row.restored_object_latest_visual_cue_kind || 'none'} match=${row.restored_object_visual_cue_matches_saved ? 'yes' : 'no'}, resolutions=${row.restored_object_resolution_rows || 0}/${row.restored_latest_object_resolution_id || 'none'}, rechecks=${row.restored_object_recheck_response_rows || 0}/${row.restored_latest_object_recheck_response_id || 'none'} result=${row.restored_latest_object_recheck_result || 'none'}`);
+  const objectReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredObjectChain interactions=${row.restored_object_interaction_rows || 0}, responses=${row.restored_object_response_rows || 0}, cues=${row.restored_object_visual_cue_rows || 0}/${row.restored_object_latest_visual_cue_id || 'none'} component=${row.restored_object_latest_visual_cue_component_id || 'none'} kind=${row.restored_object_latest_visual_cue_kind || 'none'} match=${row.restored_object_visual_cue_matches_saved ? 'yes' : 'no'}, behavior=${row.restored_object_cue_behavior_id || 'none'}/${row.restored_object_cue_behavior_kind || 'none'} resident=${row.restored_object_cue_behavior_resident || 'none'}, resolutions=${row.restored_object_resolution_rows || 0}/${row.restored_latest_object_resolution_id || 'none'}, rechecks=${row.restored_object_recheck_response_rows || 0}/${row.restored_latest_object_recheck_response_id || 'none'} result=${row.restored_latest_object_recheck_result || 'none'}`);
   const materialReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredMaterial handling=${row.restored_material_continuity_latest_id || 'none'} action=${row.restored_material_continuity_action || 'none'} component=${row.restored_material_continuity_component_id || 'none'} target=${row.restored_material_continuity_target_source || 'none'} match=${row.restored_material_continuity_matches_saved ? 'yes' : 'no'}`);
   const normalTestReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredNormalTest action=${row.restored_normal_test_action_id || 'none'} test=${row.restored_normal_test_id || 'none'} board=${row.restored_normal_test_board_proposal_id || 'none'} project=${row.restored_normal_test_project_rows || 0}/${row.restored_normal_test_latest_project_id || 'none'} worksite=${row.restored_normal_test_worksite_rows || 0}/${row.restored_normal_test_latest_worksite_id || 'none'} visual=${row.restored_normal_test_visual_rows || 0}/${row.restored_normal_test_latest_visual_id || 'none'} feedback=${row.restored_normal_test_feedback_rows || 0}/${row.restored_normal_test_latest_feedback_id || 'none'} practice=${row.restored_normal_test_feedback_practice_id || 'none'} body=${row.restored_normal_test_feedback_body_step_id || 'none'} behavior=${row.restored_normal_test_feedback_behavior_id || 'none'}/${row.restored_normal_test_feedback_behavior_kind || 'none'} match=${row.restored_normal_test_continuity_matches_saved ? 'yes' : 'no'}`);
   const worldPressureReturns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restoredWorldPressure rows=${row.restored_world_pressure_rows || 0} ready=${row.restored_world_pressure_ready_rows || 0} day=${row.restored_world_pressure_latest_day_id || 'none'} material=${row.restored_world_pressure_physics_step_id || 'none'} terrain=${row.restored_world_pressure_terrain_step_id || 'none'} resources=${row.restored_world_pressure_resource_step_id || 'none'} thermal=${row.restored_world_pressure_thermal_step_id || 'none'} water=${row.restored_world_pressure_water_step_id || 'none'} ecology=${row.restored_world_pressure_ecology_step_id || 'none'} structure=${row.restored_world_pressure_structural_step_id || 'none'} constraints=${row.restored_world_pressure_constraint_step_id || 'none'} materialState=${row.restored_world_pressure_material_state_step_id || 'none'} match=${row.restored_world_pressure_matches_saved ? 'yes' : 'no'}`);

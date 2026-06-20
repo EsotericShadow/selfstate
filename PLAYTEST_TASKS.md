@@ -319,6 +319,8 @@
 - Export acceptance and confirm `normal_player_action_strip` appears as a requirement.
 - Confirm the large prototype/debug action grid is under `Advanced prototype / debug controls`, not visually primary.
 - Export acceptance and confirm `advanced_prototype_controls_secondary` appears as a requirement.
+- Confirm detailed prototype cards are under `Play details and receipts`, after the `Now / next` summary.
+- Export acceptance and confirm `prototype_play_details_secondary` appears as a requirement.
 - Use Look, Move, Ask, Talk, Objects, Handling, Support, Wait, Return, Save, Physics path, Follow, and Space from the normal action rail.
 - Confirm each action creates a row in the `Normal play action rail` card.
 - Confirm Support is recorded as condition support, not direct job assignment.

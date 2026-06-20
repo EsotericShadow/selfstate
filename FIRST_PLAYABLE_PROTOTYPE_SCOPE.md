@@ -464,6 +464,18 @@ Required evidence:
 - moving controls into the advanced section does not remove hooks, command residents, expose hidden law in normal view, or unlock technology
 - exported acceptance confirms the advanced controls exist as a secondary details section
 
+## Added scope gate: Prototype Play Details Secondary
+
+`prototype_play_details_secondary` is now part of first playable prototype scope.
+
+Required evidence:
+
+- the hero, normal HUD, normal action strip, and `Now / next` summary stay immediately visible
+- detailed prototype cards are grouped under `Play details and receipts`
+- detailed cards remain available for inspection and audit
+- grouping cards does not create state, command residents, expose hidden law in normal view, remove hooks, or unlock technology
+- exported acceptance confirms the detailed cards exist inside the secondary details section
+
 ## Prototype v0 milestone: Player Mode Interface
 
 `player_mode_interface` is now part of first playable prototype scope.

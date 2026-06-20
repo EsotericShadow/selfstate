@@ -533,6 +533,12 @@ The prototype hero now keeps normal play primary by grouping the large prototype
 
 The acceptance gate is `advanced_prototype_controls_secondary`.
 
+## Prototype v0 play details secondary
+
+Detailed prototype cards now sit under `Play details and receipts` after the `Now / next` summary. This keeps ordinary play oriented around the hero, HUD, action strip, and summary while preserving all detailed receipts for inspection.
+
+The acceptance gate is `prototype_play_details_secondary`.
+
 ## Game prototype v0 update: Player Mode Interface
 
 The browser shell now includes a `Player mode` toggle and `Player mode loop` milestone. Player mode foregrounds the actual play surface: canvas, normal action rail, selected resident cue, current problem, player guide, primary play surface, walkthrough state, normal action receipt, and public outcomes.

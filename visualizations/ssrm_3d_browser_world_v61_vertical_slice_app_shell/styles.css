@@ -56,6 +56,9 @@ select { width: 100%; padding: 10px; border-radius: 14px; border: 1px solid rgba
 }
 .prototype-hero-card { grid-row: span 2; }
 .play-summary-card { grid-column: span 2; }
+.prototype-play-details { grid-column: 1 / -1; border: 1px solid rgba(249, 235, 201, 0.18); border-radius: 22px; background: rgba(11, 24, 24, 0.22); padding: 0 12px 12px; }
+.prototype-play-details summary { cursor: pointer; padding: 14px 4px; color: #f5e0a7; font-weight: 900; letter-spacing: 0.01em; }
+.prototype-detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
 .prototype-card h2 { margin: 0 0 12px; font-size: clamp(2rem, 4vw, 4.6rem); line-height: 0.9; letter-spacing: -0.055em; }
 .prototype-card h3 { margin: 0 0 10px; font-size: 1.2rem; letter-spacing: -0.02em; }
 .prototype-card pre { max-height: 260px; background: rgba(245, 232, 199, 0.12); color: #fff6de; border: 1px solid rgba(249, 235, 201, 0.18); }
@@ -120,5 +123,6 @@ body.player-mode-active .prototype-card pre {
   .normal-player-hud { grid-template-columns: 1fr; }
   .normal-player-actions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .play-summary-card { grid-column: auto; }
+  .prototype-detail-grid { grid-template-columns: 1fr; }
   .prototype-hero-card { grid-row: auto; }
 }

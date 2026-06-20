@@ -586,6 +586,12 @@ The normal HUD and compact action strip are the primary hero controls. Debug-hea
 
 This preserves developer reachability without changing simulation state or resident autonomy.
 
+## Prototype play details secondary loop
+
+After the `Now / next` card, detailed prototype cards are grouped under `Play details and receipts`. They remain available for audit and debugging, but ordinary play first sees the hero, HUD, action strip, and compact summary.
+
+This is a presentation boundary only. It does not change resident behavior, world state, hidden-law exposure, or save/return logic.
+
 The Follow verb can now follow an object-objection chain as well as the broader integrated chain. It reuses existing actions and records object-chain phase, response id, proposal id, resolution id, and recheck result without giving the avatar direct object control.
 
 ## Player mode interface loop

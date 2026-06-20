@@ -7631,6 +7631,7 @@ function runNormalPlayAction(verb) {
     receipt = savePrototypeSlot('normal play action rail');
   } else if (verb === 'follow') receipt = runNormalPlayFollowChain();
   else if (verb === 'space') receipt = runNormalPlayGiveSpace();
+  const startHereComponentExpression = consumedStartHereComponent ? recordStartHereComponentResidentExpression(consumedStartHereComponent, normalActionId) : null;
   const ambientPhysics = runNormalPlayAmbientPhysics(option.verb, normalActionId);
   const evidence = latestWalkthroughEvidence();
   const manipulationLoop = world.gamePrototypeMaterialManipulation || null;
@@ -7698,6 +7699,8 @@ function runNormalPlayAction(verb) {
     start_here_component_return_cue_id: consumedStartHereComponent ? consumedStartHereComponent.cue_id : option.start_here_component_return_cue_id || 'none',
     start_here_component_return_consumed: Boolean(consumedStartHereComponent),
     start_here_component_return_reason: consumedStartHereComponent ? consumedStartHereComponent.reason : 'none',
+    start_here_component_return_expression_id: startHereComponentExpression ? startHereComponentExpression.expression_id : 'none',
+    start_here_component_return_expression_marker: startHereComponentExpression ? startHereComponentExpression.marker : 'none',
     ambient_physics_id: ambientPhysics ? ambientPhysics.ambient_physics_id : 'none',
     ambient_physics_step_id: ambientPhysics ? ambientPhysics.physics_step_id : 'none',
     ambient_physics_proposal_id: ambientPhysics ? ambientPhysics.proposal_id : 'none',
@@ -15029,6 +15032,25 @@ function consumeStartHereComponentReturnForAction(verb, actionId) {
   return bias;
 }
 
+function recordStartHereComponentResidentExpression(componentReturn, actionId) {
+  if (!componentReturn) return null;
+  const residentName = world.selected;
+  const expression = recordVisibleResidentExpression(residentName, 'start_here_component_return_objects', ensureAutonomousResidents().needState[residentName]);
+  expression.start_here_component_return_path = true;
+  expression.normal_action_id = actionId;
+  expression.start_id = componentReturn.start_id;
+  expression.component_id = componentReturn.component_id;
+  expression.selection_id = componentReturn.selection_id;
+  expression.cue_id = componentReturn.cue_id;
+  expression.resident_word = componentReturn.resident_word;
+  expression.player_gloss = componentReturn.player_gloss;
+  expression.body_expression_id = componentReturn.body_expression_id;
+  expression.publicCueOnly = true;
+  expression.hiddenStateExposed = false;
+  if (componentReturn.start) componentReturn.start.component_return_expression_id = expression.expression_id;
+  return expression;
+}
+
 function applyRestoredNormalTestFeedbackBehavior(returnEntry) {
   if (!returnEntry || returnEntry.restored_normal_test_continuity_matches_saved !== true) return null;
   const feedbackId = returnEntry.restored_normal_test_latest_feedback_id || 'none';
@@ -18654,7 +18676,8 @@ function buildPrototypeAcceptanceReceipt() {
   const startHereComponentSaveRows = saves && saves.slots ? saves.slots.filter(slot => slot.start_here_component_ready === true && slot.start_here_component_id && slot.start_here_component_id !== 'none' && slot.start_here_component_selection_id && slot.start_here_component_selection_id !== 'none' && slot.start_here_component_visible_cue_id && slot.start_here_component_visible_cue_id !== 'none' && slot.start_here_component_fingerprint && slot.start_here_component_fingerprint !== 'none').length : 0;
   const startHereComponentRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_start_here_component_matches_saved === true && row.restored_start_here_component_id && row.restored_start_here_component_id !== 'none' && row.restored_start_here_component_selection_id && row.restored_start_here_component_selection_id !== 'none' && row.restored_start_here_component_visible_cue_id && row.restored_start_here_component_visible_cue_id !== 'none').length : 0;
   const startHereComponentOptionRows = actionRail && actionRail.optionLedger ? actionRail.optionLedger.filter(snapshot => (snapshot.options || []).some(option => option.start_here_component_return_recommended_verb === 'objects' && option.start_here_component_return_component_id && option.start_here_component_return_component_id !== 'none' && option.recommended === true)).length : 0;
-  const startHereComponentActionRows = actionRail && actionRail.actionLedger ? actionRail.actionLedger.filter(row => row.verb === 'objects' && row.start_here_component_return_consumed === true && row.start_here_component_return_component_id && row.start_here_component_return_component_id !== 'none' && row.start_here_component_return_selection_id && row.start_here_component_return_selection_id !== 'none' && row.start_here_component_return_cue_id && row.start_here_component_return_cue_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
+  const startHereComponentActionRows = actionRail && actionRail.actionLedger ? actionRail.actionLedger.filter(row => row.verb === 'objects' && row.start_here_component_return_consumed === true && row.start_here_component_return_component_id && row.start_here_component_return_component_id !== 'none' && row.start_here_component_return_selection_id && row.start_here_component_return_selection_id !== 'none' && row.start_here_component_return_cue_id && row.start_here_component_return_cue_id !== 'none' && row.start_here_component_return_expression_id && row.start_here_component_return_expression_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
+  const startHereComponentExpressionRows = autonomous && autonomous.expressionLedger ? autonomous.expressionLedger.filter(row => row.start_here_component_return_path === true && row.normal_action_id && row.normal_action_id !== 'none' && row.component_id && row.component_id !== 'none' && row.selection_id && row.selection_id !== 'none' && row.cue_id && row.cue_id !== 'none' && row.publicCueOnly === true && row.hiddenStateExposed === false).length : 0;
   const worksiteRows = worksite ? worksite.watchLedger.length : 0;
   const worksiteSnapshots = worksite ? worksite.snapshotLedger.length : 0;
   const returnJournalRows = returnJournal ? returnJournal.journalLedger.length : 0;
@@ -18857,7 +18880,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'start_here_player_visible_receipt', pass: Boolean(normalPlayerHudNode && normalPlaySummaryNode && normalPlayerHud.start_here_ready === true && normalPlayerHud.start_here_receipt !== 'none' && normalPlayerHud.start_here_physics_path !== 'none' && normalPlayerHud.start_here_physics_happy_path !== 'none' && normalPlayerHud.start_here_resident_word !== 'none' && normalPlayerHud.start_here_player_gloss !== 'none' && normalPlayerHud.start_here_body_expression !== 'none' && normalPlayerHud.start_here_object_memory !== 'none'), evidence: `receipt=${normalPlayerHud.start_here_receipt}, physics=${normalPlayerHud.start_here_physics_path}/${normalPlayerHud.start_here_physics_happy_path}, word=${normalPlayerHud.start_here_resident_word}, body=${normalPlayerHud.start_here_body_expression}, objectMemory=${normalPlayerHud.start_here_object_memory}` },
     { id: 'start_here_component_selected_on_canvas', pass: Boolean(playSession && playSession.startHereAcceptanceReady === true && startHereSelectedRows > 0 && startHereVisibleCueRows > 0), evidence: `selected=${startHereSelectedRows}, visibleCues=${startHereVisibleCueRows}` },
     { id: 'start_here_component_save_return_continuity', pass: Boolean(playSession && playSession.startHereAcceptanceReady === true && startHereComponentSaveRows > 0 && startHereComponentRestoreRows > 0), evidence: `saved=${startHereComponentSaveRows}, restored=${startHereComponentRestoreRows}` },
-    { id: 'start_here_component_drives_objects_action', pass: Boolean(playSession && startHereComponentRestoreRows > 0 && startHereComponentOptionRows > 0 && startHereComponentActionRows > 0), evidence: `restored=${startHereComponentRestoreRows}, options=${startHereComponentOptionRows}, actions=${startHereComponentActionRows}` },
+    { id: 'start_here_component_drives_objects_action', pass: Boolean(playSession && startHereComponentRestoreRows > 0 && startHereComponentOptionRows > 0 && startHereComponentActionRows > 0 && startHereComponentExpressionRows > 0), evidence: `restored=${startHereComponentRestoreRows}, options=${startHereComponentOptionRows}, actions=${startHereComponentActionRows}, expressions=${startHereComponentExpressionRows}` },
     { id: 'normal_play_summary_card', pass: Boolean(normalPlaySummaryNode && normalPlaySummary.next_action && normalPlaySummary.resident && normalPlaySummary.boundary && normalPlaySummary.boundary.includes('no command')), evidence: `next=${normalPlaySummary.next_action}, resident=${normalPlaySummary.resident}, proposal=${normalPlaySummary.proposal}, continuity=${normalPlaySummary.continuity}` },
     { id: 'normal_player_guided_action_highlight', pass: Boolean(normalPlayerGuideHighlight && normalPlayerGuideHighlight.matched === true), evidence: `recommended=${normalPlayerGuideHighlight.recommended_action}, highlighted=${normalPlayerGuideHighlight.highlighted_action}, matched=${normalPlayerGuideHighlight.matched === true}` },
     { id: 'advanced_prototype_controls_secondary', pass: Boolean(advancedControlsNode && advancedControlsNode.tagName === 'DETAILS' && advancedControlsButtons > 0), evidence: `details=${Boolean(advancedControlsNode)}, buttons=${advancedControlsButtons}, open=${advancedControlsNode ? advancedControlsNode.open === true : false}` },

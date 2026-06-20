@@ -539,6 +539,12 @@ Detailed prototype cards now sit under `Play details and receipts` after the `No
 
 The acceptance gate is `prototype_play_details_secondary`.
 
+## Prototype v0 audit trace details secondary
+
+Reviewer, trace, receipt, playtest, and QA panels now sit under `Audit / reviewer traces`. They remain available, but they no longer dominate the default visual flow.
+
+The acceptance gate is `audit_trace_details_secondary`.
+
 ## Game prototype v0 update: Player Mode Interface
 
 The browser shell now includes a `Player mode` toggle and `Player mode loop` milestone. Player mode foregrounds the actual play surface: canvas, normal action rail, selected resident cue, current problem, player guide, primary play surface, walkthrough state, normal action receipt, and public outcomes.

@@ -38,6 +38,8 @@ select { width: 100%; padding: 10px; border-radius: 14px; border: 1px solid rgba
 .dashboard article { min-height: 86px; padding: 10px; border-radius: 16px; background: rgba(245, 232, 199, 0.82); border: 1px solid rgba(17, 24, 22, 0.14); }
 .dashboard span { display: block; margin-top: 6px; }
 .trace-grid { display: grid; grid-template-columns: 1.1fr 0.9fr 1fr; gap: 16px; margin-top: 16px; }
+.audit-trace-details { margin-top: 16px; border: 1px solid rgba(17, 24, 22, 0.16); border-radius: 22px; background: rgba(245, 232, 199, 0.48); padding: 0 12px 12px; }
+.audit-trace-details summary { cursor: pointer; padding: 14px 4px; color: #17211d; font-weight: 900; letter-spacing: 0.01em; }
 .game-prototype {
   display: grid;
   grid-template-columns: 1.15fr 0.95fr 0.95fr;

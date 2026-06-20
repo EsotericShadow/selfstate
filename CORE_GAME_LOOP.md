@@ -592,6 +592,12 @@ After the `Now / next` card, detailed prototype cards are grouped under `Play de
 
 This is a presentation boundary only. It does not change resident behavior, world state, hidden-law exposure, or save/return logic.
 
+## Audit trace details secondary loop
+
+Reviewer, trace, source, and QA panels now sit under `Audit / reviewer traces`. They remain available for inspection, but the first visible surface is the game prototype rather than the research dashboard.
+
+This keeps the audit boundary intact while making ordinary play the default view.
+
 The Follow verb can now follow an object-objection chain as well as the broader integrated chain. It reuses existing actions and records object-chain phase, response id, proposal id, resolution id, and recheck result without giving the avatar direct object control.
 
 ## Player mode interface loop

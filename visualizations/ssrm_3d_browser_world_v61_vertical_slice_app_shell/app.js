@@ -5346,6 +5346,9 @@ function currentPrimaryPlaySurfaceSnapshot() {
     ? materialWorld.components.find(component => component.component_id === latestRoutine.latest_component_id)
     : null;
   const latestComponent = routineComponent || (materialWorld && materialWorld.components && materialWorld.components.length ? materialWorld.components[materialWorld.components.length - 1] : null);
+  const latestComponentTerm = latestComponent && materialWorld && materialWorld.language && materialWorld.language.terms
+    ? materialWorld.language.terms.find(term => term.term_id === latestComponent.resident_term_id)
+    : null;
   const latestPhysics = physics && physics.latestMaterialStateStep ? physics.latestMaterialStateStep : (physics && physics.latestStructuralStep ? physics.latestStructuralStep : (physics && physics.latestConstraintStep ? physics.latestConstraintStep : (physics ? physics.latestStep : null)));
   const resourcePressure = Object.entries(world.resources)
     .filter(([, value]) => Number(value || 0) <= 3)
@@ -5374,6 +5377,15 @@ function currentPrimaryPlaySurfaceSnapshot() {
     active_practice_name: latestPractice ? (latestPractice.local_name || latestPractice.practice_id) : 'none',
     active_component_id: latestComponent ? latestComponent.component_id : 'none',
     active_component_gloss: latestComponent ? (latestComponent.player_gloss || latestComponent.material_id || latestComponent.component_id) : 'none',
+    active_component_material_id: latestComponent ? latestComponent.material_id || 'none' : 'none',
+    active_component_resident_term: latestComponentTerm ? latestComponentTerm.resident_word : (latestComponent ? latestComponent.resident_term_id || 'none' : 'none'),
+    active_component_player_gloss: latestComponentTerm ? latestComponentTerm.player_gloss : (latestComponent ? latestComponent.player_gloss || latestComponent.material_id || latestComponent.component_id : 'none'),
+    active_component_mass: latestComponent ? Number(latestComponent.mass || 0) : 0,
+    active_component_moisture: latestComponent ? Number(latestComponent.moisture || 0) : 0,
+    active_component_damage: latestComponent ? Number(latestComponent.damage || 0) : 0,
+    active_component_stability: latestComponent ? Number(latestComponent.stability || 0) : 0,
+    active_component_field_stress: latestComponent ? Number(latestComponent.field_stress || 0) : 0,
+    active_component_carried_by: latestComponent && latestComponent.carried_by ? latestComponent.carried_by : 'none',
     latest_physics_id: latestPhysics ? (latestPhysics.step_id || latestPhysics.event_id || 'physics-row') : 'none',
     latest_lived_physics_id: latestLivedPhysics ? latestLivedPhysics.physics_id : 'none',
     latest_lived_physics_component_id: latestLivedPhysics ? latestLivedPhysics.component_id : 'none',
@@ -5409,6 +5421,7 @@ function currentPrimaryPlaySurfaceSnapshot() {
       latestProposal ? `proposal ${latestProposal.proposal_id}` : 'village board has no current proposal',
       latestPractice ? `practice ${latestPractice.local_name || latestPractice.practice_id}` : 'practice graph not yet visible',
       latestComponent ? `component ${latestComponent.component_id}` : 'physical components not initialized',
+      latestComponent ? `material state ${latestComponent.component_id} ${latestComponent.material_id} m=${Number(latestComponent.moisture || 0).toFixed(2)} d=${Number(latestComponent.damage || 0).toFixed(2)} s=${Number(latestComponent.stability || 0).toFixed(2)} carried=${latestComponent.carried_by || 'none'}` : 'material state not visible yet',
       latestLivedPhysics ? `lived physics ${latestLivedPhysics.physics_id} on ${latestLivedPhysics.component_id}` : 'lived-action physics not visible yet',
       latestRoutine ? `routine context ${latestRoutine.context_id} ${latestRoutine.resident} -> ${latestRoutine.suggested_action || latestRoutine.action} near ${latestRoutine.latest_project_visual_id !== 'none' ? latestRoutine.latest_project_visual_id : latestRoutine.latest_component_id !== 'none' ? latestRoutine.latest_component_id : latestRoutine.practice_id}` : 'routine context not visible yet',
       latestPresence ? `avatar presence ${latestPresence.presence_id} ${latestPresence.influence_type} near=${latestPresence.near_worksite} component=${latestPresence.component_id}` : 'avatar presence not linked to worksite yet',
@@ -13600,6 +13613,7 @@ function buildPrototypeAcceptanceReceipt() {
   const livedPracticePhysicsRows = livedPractice && livedPractice.physicsLedger ? livedPractice.physicsLedger.length : 0;
   const livedPracticeCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => (row.cues || []).some(cue => /lived physics/.test(cue))).length : 0;
   const integratedCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => row.integrated_loop_id && row.integrated_loop_id !== 'none' && (row.cues || []).some(cue => /integrated chain/.test(cue))).length : 0;
+  const materialStateCanvasCueRows = worldStage ? worldStage.canvasCueLedger.filter(row => (row.cues || []).some(cue => /material state/.test(cue)) && row.component_id && row.component_id !== 'none').length : 0;
   const worksiteRows = worksite ? worksite.watchLedger.length : 0;
   const worksiteSnapshots = worksite ? worksite.snapshotLedger.length : 0;
   const returnJournalRows = returnJournal ? returnJournal.journalLedger.length : 0;
@@ -13694,6 +13708,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'physics_to_practice_playable_slice', pass: Boolean(playableSlice && playableSlice.acceptanceReady && playableSlicePhysicsRows > 0 && playableSliceProposalRows > 0 && playableSlicePracticeRows > 0 && playableSliceReturnRows > 0 && playableSlice.noDirectCommand === true && playableSlice.noPredeclaredTechTree === true && playableSlice.noCorrectConceptInstalled === true), evidence: playableSlice ? `${playableSlice.phase}; physics=${playableSlicePhysicsRows}, proposals=${playableSliceProposalRows}, practices=${playableSlicePracticeRows}, return=${playableSliceReturnRows}` : 'not run' },
     { id: 'playable_village_day_0_3', pass: Boolean(villageDay03 && villageDay03.acceptanceReady && villageDay03Rows >= 4 && villageDay03PlayerRows >= 4 && villageDay03ResidentRows >= 4 && villageDay03WorldRows >= 4 && villageDay03.physicsLinks.length > 0 && villageDay03.proposalLinks.length > 0 && villageDay03.practiceLinks.length > 0 && villageDay03.saveLinks.length > 0 && villageDay03ReturnLinks > 0 && villageDay03.noDirectCommand === true && villageDay03.noTechTreeUnlock === true), evidence: villageDay03 ? `${villageDay03.phase}; rows=${villageDay03Rows}, player=${villageDay03PlayerRows}, resident=${villageDay03ResidentRows}, world=${villageDay03WorldRows}, returns=${villageDay03ReturnLinks}` : 'not run' },
     { id: 'primary_play_surface', pass: Boolean(worldStage && worldStage.acceptanceReady && worldStageFocusRows >= 3 && worldStageCueRows >= 3 && worldStagePromptRows >= 3 && integratedCanvasCueRows > 0 && worldStage.canvasFirst === true && worldStage.noHiddenLawInNormalView === true && worldStage.noDirectCommand === true), evidence: worldStage ? `${worldStage.phase}; focus=${worldStageFocusRows}, cues=${worldStageCueRows}, integrated=${integratedCanvasCueRows}, prompts=${worldStagePromptRows}` : 'not run' },
+    { id: 'canvas_material_state_visible', pass: Boolean(worldStage && materialStateCanvasCueRows > 0 && worldStage.latestSnapshot && worldStage.latestSnapshot.active_component_id !== 'none' && worldStage.latestSnapshot.active_component_material_id !== 'none' && worldStage.latestSnapshot.hidden_law_normal_view === false && worldStage.noHiddenLawInNormalView === true), evidence: worldStage && worldStage.latestSnapshot ? `materialCues=${materialStateCanvasCueRows}, component=${worldStage.latestSnapshot.active_component_id}, material=${worldStage.latestSnapshot.active_component_material_id}, moisture=${worldStage.latestSnapshot.active_component_moisture}, damage=${worldStage.latestSnapshot.active_component_damage}, stability=${worldStage.latestSnapshot.active_component_stability}` : 'not run' },
     { id: 'first_playable_walkthrough', pass: Boolean(walkthrough && walkthrough.acceptanceReady && walkthroughSteps >= walkthrough.requiredSteps.length && walkthroughLinks >= walkthrough.requiredSteps.length && walkthrough.noDirectCommand === true && walkthrough.noTechTreeUnlock === true && walkthrough.noHiddenLawNormalView === true), evidence: walkthrough ? `${walkthrough.phase}; steps=${walkthroughSteps}, links=${walkthroughLinks}` : 'not run' },
     { id: 'normal_play_action_rail', pass: Boolean(actionRail && actionRail.acceptanceReady && actionRailRows >= actionRail.verbs.length && actionRailOptions > 0 && actionRailFollowRows > 0 && actionRailFollowExpressionRows > 0 && actionRailFollowCalibratedRows > 0 && actionRailFollowRecoveryRows > 0 && actionRailFollowRecoveryExpressionRows > 0 && actionRail.playerLanguageOnly === true && actionRail.noDirectCommand === true && actionRail.noTechTreeUnlock === true), evidence: actionRail ? `actions=${actionRailRows}, optionSnapshots=${actionRailOptions}, follow=${actionRailFollowRows}, followExpression=${actionRailFollowExpressionRows}, calibrated=${actionRailFollowCalibratedRows}, followRecovery=${actionRailFollowRecoveryRows}, followRecoveryExpression=${actionRailFollowRecoveryExpressionRows}, verbs=${actionRail.verbs.join('/')}` : 'not run' },
     { id: 'player_mode_interface', pass: Boolean(playerMode && playerMode.acceptanceReady && playerModeSessions > 0 && playerModeVisibleCards >= 6 && playerMode.normalViewOnly === true && playerMode.debugPanelsHidden === true && playerMode.noDirectCommand === true && playerMode.noHiddenLawNormalView === true && playerMode.playerGlossesOnly === true), evidence: playerMode ? `enabled=${playerMode.enabled}, sessions=${playerModeSessions}, visibleCards=${playerModeVisibleCards}` : 'not run' },
@@ -14908,14 +14923,70 @@ function draw() {
     const activeComponent = materialWorld.components.find(component => component.component_id === stageSnapshot.active_component_id);
     if (activeComponent) {
       const point = project3D(activeComponent.position3d || {});
+      const activeTerm = materialWorld.language && materialWorld.language.terms
+        ? materialWorld.language.terms.find(termRow => termRow.term_id === activeComponent.resident_term_id)
+        : null;
+      const materialStateRows = [
+        ['wet', Number(activeComponent.moisture || 0), '#2f717b'],
+        ['damage', Number(activeComponent.damage || 0), '#b75d39'],
+        ['stable', Number(activeComponent.stability || 0), '#9fca77'],
+        ['stress', Number(activeComponent.field_stress || 0), '#d5a13a'],
+      ];
       ctx.strokeStyle = '#f0c35b';
       ctx.lineWidth = 5;
       ctx.beginPath();
       ctx.arc(point.x, point.y, 34, 0, Math.PI * 2);
       ctx.stroke();
+      if (Number(activeComponent.moisture || 0) > 0.28) {
+        ctx.strokeStyle = 'rgba(47,113,123,0.78)';
+        ctx.lineWidth = 4;
+        ctx.beginPath();
+        ctx.arc(point.x, point.y, 43, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+      if (Number(activeComponent.damage || 0) > 0.1) {
+        ctx.strokeStyle = 'rgba(183,93,57,0.9)';
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.moveTo(point.x - 22, point.y - 24);
+        ctx.lineTo(point.x - 6, point.y - 6);
+        ctx.lineTo(point.x - 18, point.y + 10);
+        ctx.lineTo(point.x + 12, point.y + 28);
+        ctx.stroke();
+      }
       ctx.fillStyle = '#f9ebc9';
       ctx.font = '12px Optima, sans-serif';
       ctx.fillText('current object', point.x + 38, point.y - 8);
+      ctx.save();
+      const cardX = Math.min(780, Math.max(42, point.x + 54));
+      const cardY = Math.min(430, Math.max(170, point.y - 52));
+      ctx.fillStyle = 'rgba(17,24,22,0.86)';
+      ctx.fillRect(cardX, cardY, 232, 108);
+      ctx.strokeStyle = 'rgba(240,195,91,0.72)';
+      ctx.lineWidth = 2;
+      ctx.strokeRect(cardX, cardY, 232, 108);
+      ctx.fillStyle = '#f0c35b';
+      ctx.font = '12px Optima, sans-serif';
+      ctx.fillText(`${activeComponent.component_id} ${activeComponent.material_id}`.slice(0, 30), cardX + 10, cardY + 18);
+      ctx.fillStyle = '#f9ebc9';
+      ctx.font = '11px Optima, sans-serif';
+      ctx.fillText(`${activeTerm ? activeTerm.resident_word : activeComponent.resident_term_id || 'term'} ~ ${activeTerm ? activeTerm.player_gloss : activeComponent.player_gloss || activeComponent.affordance}`.slice(0, 34), cardX + 10, cardY + 34);
+      ctx.fillText(`mass ${Number(activeComponent.mass || 0).toFixed(1)} carried ${activeComponent.carried_by || 'none'}`.slice(0, 34), cardX + 10, cardY + 50);
+      materialStateRows.forEach(([label, value, color], rowIndex) => {
+        const y = cardY + 64 + rowIndex * 10;
+        const width = Math.max(3, Math.min(96, Number(value || 0) * 96));
+        ctx.fillStyle = 'rgba(249,235,201,0.16)';
+        ctx.fillRect(cardX + 56, y - 7, 98, 6);
+        ctx.fillStyle = color;
+        ctx.fillRect(cardX + 56, y - 7, width, 6);
+        ctx.fillStyle = '#f9ebc9';
+        ctx.font = '9px Optima, sans-serif';
+        ctx.fillText(`${label} ${Number(value || 0).toFixed(2)}`, cardX + 10, y - 2);
+      });
+      ctx.fillStyle = '#aad0c3';
+      ctx.font = '9px Optima, sans-serif';
+      ctx.fillText('normal view: observed state, not hidden law', cardX + 10, cardY + 102);
+      ctx.restore();
     }
     const manipulation = world.gamePrototypeMaterialManipulation;
     const manipulationRows = manipulation && manipulation.actionLedger ? manipulation.actionLedger.slice(-4) : [];

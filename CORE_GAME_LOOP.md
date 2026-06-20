@@ -633,6 +633,19 @@ The shell now has a compact proof loop for the first actual game-prototype miles
 
 This is not a research panel. It is a short player path proving the game can carry a material consequence into practice memory and return-session continuity.
 
+## Canvas material-state loop
+
+The main canvas must show actual simulated material state for the active object:
+
+1. The primary play surface selects the current physical component.
+2. The canvas projects the component into the village space.
+3. The highlighted component shows local resident term and imperfect player gloss.
+4. Material state bars show moisture, damage, stability, and stress.
+5. Carry state and mass are visible when relevant.
+6. The exported acceptance receipt records `canvas_material_state_visible`.
+
+This keeps the first playable grounded in visible objects instead of panel-only numbers.
+
 ## Player movement route loop
 
 1. The avatar moves through bounded village space instead of teleporting.

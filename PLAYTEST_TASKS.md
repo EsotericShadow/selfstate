@@ -382,3 +382,7 @@
 - Confirm resident handling is recorded as resident-chosen, not a direct avatar object command.
 - Confirm the row links a physics step and, when available, a practice id.
 - Export acceptance and confirm `player_object_interaction` appears as a requirement after the object interaction loop runs.
+- Run World stage or Objects and confirm the main canvas highlights the current physical component.
+- Confirm the canvas badge shows resident term, player gloss, material id, mass, and carried state.
+- Confirm the canvas badge shows moisture, damage, stability, and stress bars.
+- Export acceptance and confirm `canvas_material_state_visible` appears with material cue evidence.

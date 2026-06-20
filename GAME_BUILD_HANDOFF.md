@@ -561,3 +561,9 @@ The maintained shell now includes a `10 min loop` player-facing action. It runs 
 The receipt records object/material state before interaction, after resident-mediated change, after away time, and after save-slot return. The acceptance gate is `ten_minute_playable_loop`: object/material change must be visible, the changed state must persist through save/return, and an emergent practice id must be linked without direct command, hidden-law exposure, or tech-tree unlock.
 
 This is the first explicit 10-minute prototype proof: a player can affect material conditions, get resident-mediated practice evidence, leave/return, and see continuity in the normal play surface.
+
+## Prototype v0 canvas material-state update
+
+The main world canvas now renders the active physical component as visible material state, not only as a component id in a receipt. The highlighted object shows local resident term, player gloss, material id, mass, carried state, moisture, damage, stability, and field stress through a compact canvas badge and state bars.
+
+The acceptance gate is `canvas_material_state_visible`. It requires a current component, current material id, material-state cue rows, and normal-view hidden-law separation.

@@ -31,6 +31,7 @@
 - One calibrated `Follow` boundary path where residents can guard or refuse under pressure.
 - One normal `Space` verb that recovers after guarded/refused `Follow` without advancing the chain.
 - One 10-minute playable loop that proves object/material change, emergent practice evidence, and save/return persistence in one normal play path.
+- One canvas-visible material-state overlay for the active physical component.
 - One bounded resident language/gloss layer for local terms that emerge from grounded practice history.
 
 ## First prototype success condition
@@ -602,6 +603,19 @@ Required evidence:
 - residents are not directly commanded
 - hidden simulator law remains out of normal view
 - no tech-tree unlock occurs
+
+## Added scope gate: Canvas material state visible
+
+`canvas_material_state_visible` is now part of first playable prototype scope.
+
+Required evidence:
+
+- the main canvas highlights the active physical component
+- the canvas shows resident term and imperfect player gloss
+- the canvas shows material id, mass, and carried state
+- the canvas shows moisture, damage, stability, and stress as visible state bars
+- exported acceptance includes material-state canvas cue rows
+- hidden simulator law remains out of normal view
 - no step installs a tech-tree unlock or correct resident concept
 
 This milestone makes resident continuity readable during ordinary play. It does not add an open-ended language system.

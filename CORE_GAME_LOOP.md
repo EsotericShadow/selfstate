@@ -942,3 +942,14 @@ Acceptance export and QA readiness now check that the first-playable session its
 5. The restored pressure creates a public body-language expression.
 
 The exported gate fails if Physics path exists only as a separate action-rail artifact and not as part of the first-playable session receipt.
+## Normal-view first-playable Physics path loop
+
+After `First playable` runs, the normal primary surface should show the physics path proof directly:
+
+1. The session records `physics_path`.
+2. The primary surface snapshot reads that session row.
+3. The canvas cue ledger records the session Physics path id, readiness, save, restore, and body-expression evidence.
+4. Player Mode shows a `first playable physics path` card.
+5. The canvas HUD names the playable physics path beside the existing physical-chain cues.
+
+This keeps the physics path as ordinary game state, not a hidden export-only proof.

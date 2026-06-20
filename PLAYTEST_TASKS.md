@@ -639,3 +639,10 @@ Create an ambient physics proposal through normal play, save, return, and observ
 3. Confirm `first-playable-session-physics-path` reports session physics, ambient ready rows, normal rail rows, saved rows, and restored match rows.
 4. Export acceptance and confirm `first_playable_session` evidence includes ambient happy-path rows, Physics path rows, saved rows, and restored rows.
 5. Confirm the exported proof still reports no hidden-law normal-view exposure and no direct resident command.
+## Playtest task: normal-view first-playable Physics path
+
+1. Run `First playable`.
+2. Inspect the primary play surface and confirm `First playable Physics path` shows a ready action id, happy-path id, proposal/word, save id, restore id, and body-expression id.
+3. Inspect Player Mode and confirm the visible cards include `first playable physics path`.
+4. Inspect the canvas HUD and confirm `Playable physics path` appears beside the normal-test and integrated-chain cues.
+5. Confirm the normal view does not reveal hidden simulator law or offer direct resident command controls.

@@ -1071,3 +1071,17 @@ Acceptance requires:
 - the Physics path proof remains normal-view safe and does not reveal hidden simulator law
 
 This prevents the prototype from passing first-playable acceptance with only generic session rows and a separate physics artifact.
+## Added scope gate: Normal-view first-playable Physics path visibility
+
+`first_playable_physics_path_normal_view_visibility` is now part of first playable prototype scope.
+
+Acceptance requires:
+
+- the primary play surface snapshot carries the latest session `physics_path` row
+- the canvas cue ledger records the session Physics path proof
+- primary-surface readiness requires the visible session Physics path cue
+- Player Mode includes a `first playable physics path` visible card
+- the canvas HUD shows the playable Physics path action id, readiness, happy-path id, save slot, and restore slot
+- hidden simulator law remains absent from normal view
+
+This makes the Physics path proof inspectable during ordinary play rather than only through readiness/export receipts.

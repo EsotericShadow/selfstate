@@ -5584,6 +5584,10 @@ function currentPrimaryPlaySurfaceSnapshot() {
   const playSession = world.gamePrototypePlaySession || null;
   const integratedRows = playSession && playSession.integratedLoopLedger ? playSession.integratedLoopLedger : [];
   const latestIntegrated = integratedRows.length ? integratedRows[integratedRows.length - 1] : null;
+  const sessionPhysicsPathRows = playSession && playSession.stepLedger ? playSession.stepLedger.filter(row => row.step_id === 'physics_path') : [];
+  const latestSessionPhysicsPath = sessionPhysicsPathRows.length ? sessionPhysicsPathRows[sessionPhysicsPathRows.length - 1] : null;
+  const ambientHappyPathRows = playSession && playSession.ambientPhysicsHappyPathLedger ? playSession.ambientPhysicsHappyPathLedger : [];
+  const latestAmbientHappyPath = ambientHappyPathRows.length ? ambientHappyPathRows[ambientHappyPathRows.length - 1] : null;
   const objectChain = latestObjectObjectionChainState();
   const normalTestChain = latestNormalTestChainState();
   const selected = world.residents[world.selected] || currentResident();
@@ -5710,6 +5714,18 @@ function currentPrimaryPlaySurfaceSnapshot() {
     integrated_loop_save_slot_id: latestIntegrated ? latestIntegrated.save_slot_id : 'none',
     integrated_loop_restore_slot_id: latestIntegrated ? latestIntegrated.restore_slot_id : 'none',
     integrated_loop_rows: integratedRows.length,
+    session_physics_path_step_id: latestSessionPhysicsPath ? latestSessionPhysicsPath.step_id : 'none',
+    session_physics_path_ready: latestSessionPhysicsPath ? latestSessionPhysicsPath.latest_ambient_happy_path_ready === true && latestSessionPhysicsPath.latest_normal_physics_path_ready === true : false,
+    session_physics_path_action_id: latestSessionPhysicsPath ? latestSessionPhysicsPath.latest_normal_physics_path_action_id || 'none' : 'none',
+    session_physics_path_happy_path_id: latestSessionPhysicsPath ? latestSessionPhysicsPath.latest_normal_physics_path_happy_path_id || latestSessionPhysicsPath.latest_ambient_happy_path_id || 'none' : 'none',
+    session_physics_path_proposal_id: latestSessionPhysicsPath ? latestSessionPhysicsPath.latest_ambient_happy_path_proposal_id || 'none' : latestAmbientHappyPath ? latestAmbientHappyPath.proposal_id || 'none' : 'none',
+    session_physics_path_word: latestSessionPhysicsPath ? latestSessionPhysicsPath.latest_ambient_happy_path_word || 'none' : latestAmbientHappyPath ? latestAmbientHappyPath.resident_word || 'none' : 'none',
+    session_physics_path_save_slot_id: latestSessionPhysicsPath ? latestSessionPhysicsPath.latest_normal_physics_path_save_slot_id || 'none' : 'none',
+    session_physics_path_restore_slot_id: latestSessionPhysicsPath ? latestSessionPhysicsPath.latest_normal_physics_path_restore_slot_id || 'none' : 'none',
+    session_physics_path_body_expression_id: latestSessionPhysicsPath ? latestSessionPhysicsPath.latest_normal_physics_path_body_expression_id || 'none' : latestAmbientHappyPath ? latestAmbientHappyPath.body_expression_id || 'none' : 'none',
+    session_physics_path_rows: sessionPhysicsPathRows.length,
+    session_ambient_happy_path_rows: ambientHappyPathRows.length,
+    session_ambient_happy_path_ready: latestAmbientHappyPath ? latestAmbientHappyPath.acceptance_ready === true : false,
     object_chain_active: objectChain.active === true,
     object_chain_phase: objectChain.phase || 'none',
     object_chain_next_action: objectChain.next_action || 'none',
@@ -5757,6 +5773,7 @@ function currentPrimaryPlaySurfaceSnapshot() {
       latestRoutine ? `routine context ${latestRoutine.context_id} ${latestRoutine.resident} -> ${latestRoutine.suggested_action || latestRoutine.action} near ${latestRoutine.latest_project_visual_id !== 'none' ? latestRoutine.latest_project_visual_id : latestRoutine.latest_component_id !== 'none' ? latestRoutine.latest_component_id : latestRoutine.practice_id}` : 'routine context not visible yet',
       latestPresence ? `avatar presence ${latestPresence.presence_id} ${latestPresence.influence_type} near=${latestPresence.near_worksite} component=${latestPresence.component_id}` : 'avatar presence not linked to worksite yet',
       latestIntegrated ? `integrated chain ${latestIntegrated.integration_id} complete=${latestIntegrated.chain_complete} proposal=${latestIntegrated.proposal_id} practice=${latestIntegrated.practice_id} physics=${latestIntegrated.physics_id}` : 'integrated first-playable chain not visible yet',
+      latestSessionPhysicsPath ? `first playable physics path ${latestSessionPhysicsPath.latest_normal_physics_path_action_id || 'none'} ready=${latestSessionPhysicsPath.latest_normal_physics_path_ready === true} happy=${latestSessionPhysicsPath.latest_ambient_happy_path_id || 'none'} save=${latestSessionPhysicsPath.latest_normal_physics_path_save_slot_id || 'none'} restore=${latestSessionPhysicsPath.latest_normal_physics_path_restore_slot_id || 'none'} body=${latestSessionPhysicsPath.latest_normal_physics_path_body_expression_id || 'none'}` : 'first playable physics path not visible yet',
       objectChain.active ? `object chain ${objectChain.phase} next=${objectChain.next_action} response=${objectChain.response_id} proposal=${objectChain.proposal_id} resolution=${objectChain.resolution_id} recheck=${objectChain.recheck_result}` : 'object-objection chain not active yet',
       normalTestChain.active ? `normal test chain ${normalTestChain.phase} next=${normalTestChain.next_action} action=${normalTestChain.action_id} test=${normalTestChain.test_id} board=${normalTestChain.proposal_id} handling=${normalTestChain.handling_rows || 0} work=${normalTestChain.project_rows}/${normalTestChain.worksite_rows}/${normalTestChain.visual_rows} return=${normalTestChain.saved_rows}/${normalTestChain.restored_rows}` : 'normal-test chain not active yet',
     ],
@@ -5788,6 +5805,15 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     avatar_presence_id: snapshot.avatar_presence_id,
     integrated_loop_id: snapshot.integrated_loop_id,
     integrated_loop_complete: snapshot.integrated_loop_complete,
+    session_physics_path_step_id: snapshot.session_physics_path_step_id,
+    session_physics_path_ready: snapshot.session_physics_path_ready,
+    session_physics_path_action_id: snapshot.session_physics_path_action_id,
+    session_physics_path_happy_path_id: snapshot.session_physics_path_happy_path_id,
+    session_physics_path_proposal_id: snapshot.session_physics_path_proposal_id,
+    session_physics_path_word: snapshot.session_physics_path_word,
+    session_physics_path_save_slot_id: snapshot.session_physics_path_save_slot_id,
+    session_physics_path_restore_slot_id: snapshot.session_physics_path_restore_slot_id,
+    session_physics_path_body_expression_id: snapshot.session_physics_path_body_expression_id,
     object_chain_active: snapshot.object_chain_active,
     object_chain_phase: snapshot.object_chain_phase,
     object_chain_next_action: snapshot.object_chain_next_action,
@@ -5839,6 +5865,13 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     avatar_presence_id: snapshot.avatar_presence_id,
     integrated_loop_id: snapshot.integrated_loop_id,
     integrated_loop_complete: snapshot.integrated_loop_complete,
+    session_physics_path_step_id: snapshot.session_physics_path_step_id,
+    session_physics_path_ready: snapshot.session_physics_path_ready,
+    session_physics_path_action_id: snapshot.session_physics_path_action_id,
+    session_physics_path_happy_path_id: snapshot.session_physics_path_happy_path_id,
+    session_physics_path_save_slot_id: snapshot.session_physics_path_save_slot_id,
+    session_physics_path_restore_slot_id: snapshot.session_physics_path_restore_slot_id,
+    session_physics_path_body_expression_id: snapshot.session_physics_path_body_expression_id,
     object_chain_active: snapshot.object_chain_active,
     object_chain_phase: snapshot.object_chain_phase,
     object_chain_next_action: snapshot.object_chain_next_action,
@@ -5876,6 +5909,9 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     normal_test_chain_next_action: snapshot.normal_test_chain_next_action,
     normal_test_chain_test_id: snapshot.normal_test_chain_test_id,
     normal_test_chain_proposal_id: snapshot.normal_test_chain_proposal_id,
+    session_physics_path_ready: snapshot.session_physics_path_ready,
+    session_physics_path_action_id: snapshot.session_physics_path_action_id,
+    session_physics_path_happy_path_id: snapshot.session_physics_path_happy_path_id,
     direct_command: false,
   });
   surface.acceptanceReady = Boolean(
@@ -5886,6 +5922,7 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     surface.focusLedger.some(row => row.practice_id !== 'none') &&
     surface.focusLedger.some(row => row.component_id !== 'none') &&
     surface.canvasCueLedger.some(row => row.integrated_loop_id && row.integrated_loop_id !== 'none') &&
+    surface.canvasCueLedger.some(row => row.session_physics_path_step_id === 'physics_path' && row.session_physics_path_ready === true && row.session_physics_path_body_expression_id && row.session_physics_path_body_expression_id !== 'none') &&
     surface.canvasFirst === true &&
     surface.noHiddenLawInNormalView === true &&
     surface.noDirectCommand === true
@@ -5970,6 +6007,7 @@ function formatPrimaryPlaySurface() {
     `Latest lived physics: ${snapshot.latest_lived_physics_id} / component=${snapshot.latest_lived_physics_component_id} / rows=${snapshot.lived_physics_rows}`,
     `Routine context: ${snapshot.routine_context_id} / ${snapshot.routine_context_resident} -> ${snapshot.routine_context_suggested_action} / source=${snapshot.routine_context_source}`,
     `Avatar presence: ${snapshot.avatar_presence_id} / ${snapshot.avatar_presence_resident} near=${snapshot.avatar_presence_near_worksite} / component=${snapshot.avatar_presence_component_id} / influence=${snapshot.avatar_presence_influence}`,
+    `First playable Physics path: step=${snapshot.session_physics_path_step_id} / ready=${snapshot.session_physics_path_ready ? 'yes' : 'no'} / action=${snapshot.session_physics_path_action_id} / happy=${snapshot.session_physics_path_happy_path_id} / proposal=${snapshot.session_physics_path_proposal_id} / word=${snapshot.session_physics_path_word} / save=${snapshot.session_physics_path_save_slot_id} / restore=${snapshot.session_physics_path_restore_slot_id} / body=${snapshot.session_physics_path_body_expression_id}`,
     `Object chain: active=${snapshot.object_chain_active ? 'yes' : 'no'} / phase=${snapshot.object_chain_phase} / next=${snapshot.object_chain_next_action} / response=${snapshot.object_chain_response_id} / proposal=${snapshot.object_chain_proposal_id} / resolution=${snapshot.object_chain_resolution_id} / recheck=${snapshot.object_chain_recheck_result}`,
     `Normal-test chain: active=${snapshot.normal_test_chain_active ? 'yes' : 'no'} / phase=${snapshot.normal_test_chain_phase} / next=${snapshot.normal_test_chain_next_action} / action=${snapshot.normal_test_chain_action_id} / test=${snapshot.normal_test_chain_test_id} / board=${snapshot.normal_test_chain_proposal_id} / handling=${snapshot.normal_test_chain_handling_rows}`,
     `Normal-test component: ${snapshot.normal_test_component_cue_id} / ${snapshot.normal_test_component_id} / ${snapshot.normal_test_component_visible_change}`,
@@ -7637,7 +7675,13 @@ function playerModeVisibleSurfaceSnapshot() {
     ambient_physics_path_proposal_id: ambientPath ? ambientPath.proposal_id : 'none',
     ambient_physics_path_word: ambientPath ? ambientPath.resident_word : 'none',
     ambient_physics_path_body_expression_id: ambientPath ? ambientPath.body_expression_id : 'none',
-    visible_cards: ['world canvas', 'normal action rail', 'player guide', 'primary play surface', 'ambient physics path', 'first playable walkthrough', 'normal play action rail', 'player mode interface', 'resident encounter', 'physical object interaction', 'resident proposal deck', 'lived practice loop', 'resident worksite', 'return journal', 'first playable session receipt', 'public outcomes'],
+    first_playable_physics_path: latest.session_physics_path_step_id === 'physics_path'
+      ? `${latest.session_physics_path_action_id}: ${latest.session_physics_path_ready ? 'ready' : 'forming'} / happy ${latest.session_physics_path_happy_path_id} / word ${latest.session_physics_path_word} / save ${latest.session_physics_path_save_slot_id} / restore ${latest.session_physics_path_restore_slot_id} / body ${latest.session_physics_path_body_expression_id}`
+      : 'not started',
+    first_playable_physics_path_ready: latest.session_physics_path_ready === true,
+    first_playable_physics_path_action_id: latest.session_physics_path_action_id || 'none',
+    first_playable_physics_path_body_expression_id: latest.session_physics_path_body_expression_id || 'none',
+    visible_cards: ['world canvas', 'normal action rail', 'player guide', 'primary play surface', 'ambient physics path', 'first playable physics path', 'first playable walkthrough', 'normal play action rail', 'player mode interface', 'resident encounter', 'physical object interaction', 'resident proposal deck', 'lived practice loop', 'resident worksite', 'return journal', 'first playable session receipt', 'public outcomes'],
     hidden_by_default: ['trace JSON', 'QA manifest', 'deep debug panels', 'prototype subsystem action grid', 'hidden simulator law detail'],
     audit_access: 'available after leaving player mode or through explicit audit/deep-panel controls',
     shows_public_state: true,
@@ -7665,6 +7709,7 @@ function updatePlayerModeInterfaceAcceptance() {
     snapshot.visible_cards.length >= 6 &&
     snapshot.action_verbs.length >= 6 &&
     snapshot.visible_cards.includes('ambient physics path') &&
+    snapshot.visible_cards.includes('first playable physics path') &&
     snapshot.action_verbs.includes('Physics path') &&
     snapshot.shows_public_state === true &&
     snapshot.exposes_hidden_law === false &&
@@ -7680,6 +7725,8 @@ function updatePlayerModeInterfaceAcceptance() {
     latest_next_action: snapshot.next_action,
     ambient_physics_path: snapshot.ambient_physics_path,
     ambient_physics_path_ready: snapshot.ambient_physics_path_ready,
+    first_playable_physics_path: snapshot.first_playable_physics_path,
+    first_playable_physics_path_ready: snapshot.first_playable_physics_path_ready,
     boundary: mode.boundary,
   };
   return mode.acceptanceReady;
@@ -7777,6 +7824,7 @@ function formatPlayerModeInterface() {
     `Suggested next action: ${snapshot.next_action} (${snapshot.next_action_hook})`,
     `Integrated chain: ${snapshot.integrated_chain}`,
     `Ambient physics path: ${snapshot.ambient_physics_path}`,
+    `First playable Physics path: ${snapshot.first_playable_physics_path}`,
     `Normal verbs: ${snapshot.action_verbs.join(', ')}`,
     `Visible cards: ${snapshot.visible_cards.join(', ')}`,
     `Hidden by default: ${snapshot.hidden_by_default.join(', ')}`,
@@ -18254,6 +18302,7 @@ function draw() {
   ctx.fillText(`Object chain ${stageSnapshot.object_chain_phase}: next ${stageSnapshot.object_chain_next_action} | response ${stageSnapshot.object_chain_response_id} | proposal ${stageSnapshot.object_chain_proposal_id} | resolution ${stageSnapshot.object_chain_resolution_id}`.slice(0, 112), 44, 152);
   ctx.fillText(`Normal-test chain ${stageSnapshot.normal_test_chain_phase}: next ${stageSnapshot.normal_test_chain_next_action} | test ${stageSnapshot.normal_test_chain_test_id} | board ${stageSnapshot.normal_test_chain_proposal_id}`.slice(0, 112), 44, 172);
   ctx.fillText(`Normal-test component ${stageSnapshot.normal_test_component_cue_id}: ${stageSnapshot.normal_test_component_id} / ${stageSnapshot.normal_test_component_visible_change} | integrated ${stageSnapshot.integrated_loop_id}`.slice(0, 112), 44, 192);
+  ctx.fillText(`Playable physics path ${stageSnapshot.session_physics_path_action_id}: ready=${stageSnapshot.session_physics_path_ready ? 'yes' : 'no'} happy=${stageSnapshot.session_physics_path_happy_path_id} save=${stageSnapshot.session_physics_path_save_slot_id} restore=${stageSnapshot.session_physics_path_restore_slot_id}`.slice(0, 112), 44, 212);
 
   const materialWorld = world.gamePrototype3DWorld;
   if (materialWorld && materialWorld.components) {

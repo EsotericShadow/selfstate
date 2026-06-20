@@ -865,3 +865,8 @@ The session receipt now exposes ambient physics happy-path readiness, normal phy
 The exported acceptance and browser readiness layers now treat first-playable Physics path continuity as part of the `first_playable_session` proof. A passing session must contain a `physics_path` session step, a ready ambient happy-path row, a normal action-rail Physics path row, matching save/return evidence, and the restored body-language expression.
 
 Browser QA readiness now includes a separate `first-playable-session-physics-path` preflight row. This row is inspection-only: it reports whether the current browser-local state already proves the session Physics path chain without running Prototype QA or acceptance export.
+## Prototype v0 normal-view Physics path proof update
+
+The normal primary play surface now carries the first-playable Physics path proof as player-facing state. The surface snapshot, focus ledger, canvas cue ledger, Player Mode card, and canvas HUD expose the latest `physics_path` session step, happy-path id, proposal/word, save slot, restore slot, and public body-language expression.
+
+The primary surface readiness gate now requires a visible session Physics path cue. This prevents the first playable from being accepted only through receipts while the normal village view remains unaware of the physics path chain.

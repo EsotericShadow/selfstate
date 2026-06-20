@@ -6893,12 +6893,13 @@ function normalPlayOptions() {
   const visiblePhysicsPath = latestVisiblePhysicsPathChainState();
   const objectCueReturnBehavior = latestObjectCueReturnBehaviorFor(world.selected) || latestObjectCueReturnBehaviorFor(null);
   const objectCueBias = objectCueReturnActionBias(objectCueReturnBehavior);
+  const startHereComponentBias = startHereComponentReturnActionBias(latestStartHereComponentReturnForAction());
   return [
     { verb: 'look', label: 'Look', action: 'runPrimaryPlaySurfaceStep', intent: objectCueBias && objectCueBias.verb === 'look' ? objectCueBias.reason : 'read the current world-stage problem and object context', recommended: guide.button === 'runPrimaryPlaySurfaceStep' || !stage || !stage.acceptanceReady || (objectCueBias && objectCueBias.verb === 'look') },
     { verb: 'move', label: 'Move', action: 'runPlayerMovementRouteLoop', intent: 'move through village space and update nearby affordances', recommended: guide.button === 'runPlayerMovementRouteLoop' },
     { verb: 'ask', label: 'Ask', action: 'askSchedule', intent: `ask ${world.selected} about schedule and current concern`, recommended: guide.button === 'askSchedule' },
     { verb: 'talk', label: 'Talk', action: 'runPlayerResidentEncounterLoop', intent: `have a bounded source-traced encounter with ${world.selected}`, recommended: guide.button === 'runPlayerResidentEncounterLoop' },
-    { verb: 'objects', label: 'Objects', action: 'runPlayerObjectInteractionLoop', intent: objectCueBias && objectCueBias.verb === 'objects' ? objectCueBias.reason : objectChain.phase === 'object recheck' ? `ask resident to recheck ${objectChain.resolution_id}` : 'inspect a real physical component and let residents choose a handling response', recommended: guide.button === 'runPlayerObjectInteractionLoop' || objectChain.next_action === 'runPlayerObjectInteractionLoop' || (objectCueBias && objectCueBias.verb === 'objects') },
+    { verb: 'objects', label: 'Objects', action: 'runPlayerObjectInteractionLoop', intent: startHereComponentBias && startHereComponentBias.verb === 'objects' ? startHereComponentBias.reason : objectCueBias && objectCueBias.verb === 'objects' ? objectCueBias.reason : objectChain.phase === 'object recheck' ? `ask resident to recheck ${objectChain.resolution_id}` : 'inspect a real physical component and let residents choose a handling response', recommended: guide.button === 'runPlayerObjectInteractionLoop' || objectChain.next_action === 'runPlayerObjectInteractionLoop' || (objectCueBias && objectCueBias.verb === 'objects') || (startHereComponentBias && startHereComponentBias.verb === 'objects') },
     { verb: 'handling', label: 'Handling', action: 'runResidentMaterialManipulationStep', intent: 'watch a resident move, tie, dry, wet-test, stack, or test material under constraints', recommended: guide.button === 'runNormalPlayHandling' || guide.button === 'runResidentMaterialManipulationStep' },
     { verb: 'support', label: 'Support', action: 'supportResourceCommons', intent: objectCueBias && objectCueBias.verb === 'support' ? objectCueBias.reason : 'offer material help without assigning a job', recommended: guide.button === 'supportResourceCommons' || (objectCueBias && objectCueBias.verb === 'support') },
     { verb: 'wait', label: 'Wait', action: 'endVillageDay', intent: objectCueBias && objectCueBias.verb === 'wait' ? objectCueBias.reason : 'let residents and world systems advance one step', recommended: guide.button === 'endVillageDay' || guide.button === 'runPlayableVillageDay03Step' || (objectCueBias && objectCueBias.verb === 'wait') },
@@ -6919,6 +6920,11 @@ function normalPlayOptions() {
     object_cue_return_behavior_id: objectCueReturnBehavior ? objectCueReturnBehavior.behavior_id : 'none',
     object_cue_return_behavior_kind: objectCueReturnBehavior ? objectCueReturnBehavior.behavior_kind : 'none',
     object_cue_return_recommended_verb: objectCueBias ? objectCueBias.verb : 'none',
+    start_here_component_return_start_id: startHereComponentBias ? startHereComponentBias.start_id : 'none',
+    start_here_component_return_component_id: startHereComponentBias ? startHereComponentBias.component_id : 'none',
+    start_here_component_return_selection_id: startHereComponentBias ? startHereComponentBias.selection_id : 'none',
+    start_here_component_return_cue_id: startHereComponentBias ? startHereComponentBias.cue_id : 'none',
+    start_here_component_return_recommended_verb: startHereComponentBias ? startHereComponentBias.verb : 'none',
     object_chain_next_action: objectChain.next_action,
     object_chain_resolution_id: objectChain.resolution_id,
     object_chain_recheck_result: objectChain.recheck_result,
@@ -7606,6 +7612,7 @@ function runNormalPlayAction(verb) {
   const option = options.find(row => row.verb === verb) || options[0];
   const normalActionId = `NPAR-${String(rail.actionLedger.length + 1).padStart(2, '0')}`;
   const consumedObjectCueBehavior = consumeObjectCueReturnBehaviorForAction(option.verb, normalActionId);
+  const consumedStartHereComponent = consumeStartHereComponentReturnForAction(option.verb, normalActionId);
   const handlingPracticeLinksBefore = world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.practiceLinks ? world.gamePrototypeMaterialManipulation.practiceLinks.length : 0;
   let receipt = null;
   if (verb === 'look') receipt = runPrimaryPlaySurfaceStep();
@@ -7685,6 +7692,12 @@ function runNormalPlayAction(verb) {
     object_cue_return_behavior_kind: consumedObjectCueBehavior ? consumedObjectCueBehavior.behavior_kind : option.object_cue_return_behavior_kind || 'none',
     object_cue_return_component_id: consumedObjectCueBehavior ? consumedObjectCueBehavior.component_id : 'none',
     object_cue_return_consumed: Boolean(consumedObjectCueBehavior),
+    start_here_component_return_start_id: consumedStartHereComponent ? consumedStartHereComponent.start_id : option.start_here_component_return_start_id || 'none',
+    start_here_component_return_component_id: consumedStartHereComponent ? consumedStartHereComponent.component_id : option.start_here_component_return_component_id || 'none',
+    start_here_component_return_selection_id: consumedStartHereComponent ? consumedStartHereComponent.selection_id : option.start_here_component_return_selection_id || 'none',
+    start_here_component_return_cue_id: consumedStartHereComponent ? consumedStartHereComponent.cue_id : option.start_here_component_return_cue_id || 'none',
+    start_here_component_return_consumed: Boolean(consumedStartHereComponent),
+    start_here_component_return_reason: consumedStartHereComponent ? consumedStartHereComponent.reason : 'none',
     ambient_physics_id: ambientPhysics ? ambientPhysics.ambient_physics_id : 'none',
     ambient_physics_step_id: ambientPhysics ? ambientPhysics.physics_step_id : 'none',
     ambient_physics_proposal_id: ambientPhysics ? ambientPhysics.proposal_id : 'none',
@@ -14955,6 +14968,67 @@ function consumeObjectCueReturnBehaviorForAction(verb, actionId) {
   return row;
 }
 
+function latestStartHereComponentReturnForAction() {
+  const session = world.gamePrototypePlaySession || null;
+  const saves = world.gamePrototypeSaves || null;
+  const startRows = session && Array.isArray(session.startHereLedger) ? session.startHereLedger : [];
+  const returnRows = saves && Array.isArray(saves.returnLog) ? saves.returnLog : [];
+  const start = startRows
+    .slice()
+    .reverse()
+    .find(row =>
+      row.acceptance_ready === true &&
+      row.component_restore_match === true &&
+      row.component_restore_component_id &&
+      row.component_restore_component_id !== 'none' &&
+      row.component_return_consumed !== true
+    ) || null;
+  if (!start) return null;
+  const returnRow = returnRows
+    .slice()
+    .reverse()
+    .find(row =>
+      row.restored_start_here_component_matches_saved === true &&
+      row.restored_start_here_component_id === start.component_restore_component_id &&
+      row.restored_start_here_component_selection_id === start.component_restore_selection_id
+    ) || null;
+  if (!returnRow) return null;
+  return {
+    start,
+    returnRow,
+    start_id: start.start_id,
+    component_id: start.component_restore_component_id,
+    selection_id: start.component_restore_selection_id || 'none',
+    cue_id: start.component_restore_cue_id || 'none',
+    resident_word: returnRow.restored_start_here_component_resident_word || start.physics_path_resident_word || 'none',
+    player_gloss: returnRow.restored_start_here_component_player_gloss || start.physics_path_player_gloss || 'none',
+    body_expression_id: returnRow.restored_start_here_component_body_expression_id || start.physics_path_body_expression_id || 'none',
+  };
+}
+
+function startHereComponentReturnActionBias(row) {
+  if (!row) return null;
+  return {
+    ...row,
+    verb: 'objects',
+    label: 'Objects',
+    button: 'runNormalPlayObjects',
+    reason: `inspect restored Start Here component ${row.component_id} (${row.resident_word} / ${row.player_gloss}) after return`,
+  };
+}
+
+function consumeStartHereComponentReturnForAction(verb, actionId) {
+  const row = latestStartHereComponentReturnForAction();
+  const bias = startHereComponentReturnActionBias(row);
+  if (!row || !bias || bias.verb !== verb) return null;
+  row.start.component_return_consumed = true;
+  row.start.component_return_consumed_by_action_id = actionId;
+  row.start.component_return_consumed_by_verb = verb;
+  row.start.component_return_consumed_at_tick = world.tick;
+  row.start.component_return_consumed_reason = bias.reason;
+  return bias;
+}
+
 function applyRestoredNormalTestFeedbackBehavior(returnEntry) {
   if (!returnEntry || returnEntry.restored_normal_test_continuity_matches_saved !== true) return null;
   const feedbackId = returnEntry.restored_normal_test_latest_feedback_id || 'none';
@@ -16184,8 +16258,13 @@ function derivePrototypePlayerGuide() {
   const recoveryRowsForGuide = actionRailForGuide && actionRailForGuide.followRecoveryLedger ? actionRailForGuide.followRecoveryLedger.length : 0;
   const objectCueReturnForGuide = typeof latestObjectCueReturnBehaviorFor === 'function' ? (latestObjectCueReturnBehaviorFor(world.selected) || latestObjectCueReturnBehaviorFor(null)) : null;
   const objectCueBiasForGuide = typeof objectCueReturnActionBias === 'function' ? objectCueReturnActionBias(objectCueReturnForGuide) : null;
+  const startHereComponentForGuide = typeof latestStartHereComponentReturnForAction === 'function' ? latestStartHereComponentReturnForAction() : null;
+  const startHereComponentBiasForGuide = typeof startHereComponentReturnActionBias === 'function' ? startHereComponentReturnActionBias(startHereComponentForGuide) : null;
   if (boundaryFollowForGuide && recoveryRowsForGuide <= 0) {
     return { ...guide, phase: 'follow boundary recovery', nextAction: 'Give space', why: `respect ${boundaryFollowForGuide.response_outcome} before following ${boundaryFollowForGuide.chain_after} again`, button: 'runNormalPlaySpace' };
+  }
+  if (startHereComponentForGuide && startHereComponentBiasForGuide) {
+    return { ...guide, phase: 'start here restored component', nextAction: startHereComponentBiasForGuide.label, why: startHereComponentBiasForGuide.reason, button: startHereComponentBiasForGuide.button };
   }
   if (objectCueReturnForGuide && objectCueBiasForGuide) {
     return { ...guide, phase: 'object cue return behavior', nextAction: objectCueBiasForGuide.label, why: `${objectCueBiasForGuide.reason}; behavior=${objectCueReturnForGuide.behavior_id}`, button: objectCueBiasForGuide.button };
@@ -18574,6 +18653,8 @@ function buildPrototypeAcceptanceReceipt() {
   const startHereVisibleCueRows = worldStage && playSession && playSession.startHereLedger ? worldStage.canvasCueLedger.filter(cue => cue.canvas_selection_id && cue.canvas_selection_id !== 'none' && playSession.startHereLedger.some(start => start.visible_world_cue_id === cue.cue_id && start.visible_world_component_id === start.physics_path_component_id && start.visible_world_component_bound === true && cue.component_id === start.physics_path_component_id)).length : 0;
   const startHereComponentSaveRows = saves && saves.slots ? saves.slots.filter(slot => slot.start_here_component_ready === true && slot.start_here_component_id && slot.start_here_component_id !== 'none' && slot.start_here_component_selection_id && slot.start_here_component_selection_id !== 'none' && slot.start_here_component_visible_cue_id && slot.start_here_component_visible_cue_id !== 'none' && slot.start_here_component_fingerprint && slot.start_here_component_fingerprint !== 'none').length : 0;
   const startHereComponentRestoreRows = saves && saves.returnLog ? saves.returnLog.filter(row => row.restored_start_here_component_matches_saved === true && row.restored_start_here_component_id && row.restored_start_here_component_id !== 'none' && row.restored_start_here_component_selection_id && row.restored_start_here_component_selection_id !== 'none' && row.restored_start_here_component_visible_cue_id && row.restored_start_here_component_visible_cue_id !== 'none').length : 0;
+  const startHereComponentOptionRows = actionRail && actionRail.optionLedger ? actionRail.optionLedger.filter(snapshot => (snapshot.options || []).some(option => option.start_here_component_return_recommended_verb === 'objects' && option.start_here_component_return_component_id && option.start_here_component_return_component_id !== 'none' && option.recommended === true)).length : 0;
+  const startHereComponentActionRows = actionRail && actionRail.actionLedger ? actionRail.actionLedger.filter(row => row.verb === 'objects' && row.start_here_component_return_consumed === true && row.start_here_component_return_component_id && row.start_here_component_return_component_id !== 'none' && row.start_here_component_return_selection_id && row.start_here_component_return_selection_id !== 'none' && row.start_here_component_return_cue_id && row.start_here_component_return_cue_id !== 'none' && row.avatar_direct_command === false && row.hidden_law_normal_view === false).length : 0;
   const worksiteRows = worksite ? worksite.watchLedger.length : 0;
   const worksiteSnapshots = worksite ? worksite.snapshotLedger.length : 0;
   const returnJournalRows = returnJournal ? returnJournal.journalLedger.length : 0;
@@ -18776,6 +18857,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'start_here_player_visible_receipt', pass: Boolean(normalPlayerHudNode && normalPlaySummaryNode && normalPlayerHud.start_here_ready === true && normalPlayerHud.start_here_receipt !== 'none' && normalPlayerHud.start_here_physics_path !== 'none' && normalPlayerHud.start_here_physics_happy_path !== 'none' && normalPlayerHud.start_here_resident_word !== 'none' && normalPlayerHud.start_here_player_gloss !== 'none' && normalPlayerHud.start_here_body_expression !== 'none' && normalPlayerHud.start_here_object_memory !== 'none'), evidence: `receipt=${normalPlayerHud.start_here_receipt}, physics=${normalPlayerHud.start_here_physics_path}/${normalPlayerHud.start_here_physics_happy_path}, word=${normalPlayerHud.start_here_resident_word}, body=${normalPlayerHud.start_here_body_expression}, objectMemory=${normalPlayerHud.start_here_object_memory}` },
     { id: 'start_here_component_selected_on_canvas', pass: Boolean(playSession && playSession.startHereAcceptanceReady === true && startHereSelectedRows > 0 && startHereVisibleCueRows > 0), evidence: `selected=${startHereSelectedRows}, visibleCues=${startHereVisibleCueRows}` },
     { id: 'start_here_component_save_return_continuity', pass: Boolean(playSession && playSession.startHereAcceptanceReady === true && startHereComponentSaveRows > 0 && startHereComponentRestoreRows > 0), evidence: `saved=${startHereComponentSaveRows}, restored=${startHereComponentRestoreRows}` },
+    { id: 'start_here_component_drives_objects_action', pass: Boolean(playSession && startHereComponentRestoreRows > 0 && startHereComponentOptionRows > 0 && startHereComponentActionRows > 0), evidence: `restored=${startHereComponentRestoreRows}, options=${startHereComponentOptionRows}, actions=${startHereComponentActionRows}` },
     { id: 'normal_play_summary_card', pass: Boolean(normalPlaySummaryNode && normalPlaySummary.next_action && normalPlaySummary.resident && normalPlaySummary.boundary && normalPlaySummary.boundary.includes('no command')), evidence: `next=${normalPlaySummary.next_action}, resident=${normalPlaySummary.resident}, proposal=${normalPlaySummary.proposal}, continuity=${normalPlaySummary.continuity}` },
     { id: 'normal_player_guided_action_highlight', pass: Boolean(normalPlayerGuideHighlight && normalPlayerGuideHighlight.matched === true), evidence: `recommended=${normalPlayerGuideHighlight.recommended_action}, highlighted=${normalPlayerGuideHighlight.highlighted_action}, matched=${normalPlayerGuideHighlight.matched === true}` },
     { id: 'advanced_prototype_controls_secondary', pass: Boolean(advancedControlsNode && advancedControlsNode.tagName === 'DETAILS' && advancedControlsButtons > 0), evidence: `details=${Boolean(advancedControlsNode)}, buttons=${advancedControlsButtons}, open=${advancedControlsNode ? advancedControlsNode.open === true : false}` },
@@ -19024,7 +19106,7 @@ function buildNormalPlayerHudSnapshot() {
     start_here_component: latestStartHere ? latestStartHere.physics_path_component_id || 'none' : 'none',
     start_here_body_expression: latestStartHere ? latestStartHere.physics_path_body_expression_id || 'none' : 'none',
     start_here_object_memory: latestStartHere ? `${latestStartHere.object_memory_behavior_id || 'none'} -> ${latestStartHere.object_memory_guided_action_id || 'none'}` : 'none',
-    start_here_component_return: latestStartHere ? `${latestStartHere.component_save_slot_id || 'none'} / ${latestStartHere.component_restore_component_id || 'none'} / match=${latestStartHere.component_restore_match === true}` : 'none',
+    start_here_component_return: latestStartHere ? `${latestStartHere.component_save_slot_id || 'none'} / ${latestStartHere.component_restore_component_id || 'none'} / match=${latestStartHere.component_restore_match === true} / consumed=${latestStartHere.component_return_consumed_by_action_id || 'none'}` : 'none',
     object_cue_return_behavior: objectCueBehavior ? `${objectCueBehavior.behavior_id} / ${objectCueBehavior.behavior_kind}` : 'none',
     object_cue_return_component: objectCueBehavior ? objectCueBehavior.component_id : 'none',
     object_cue_return_recommendation: objectCueBias ? objectCueBias.label : 'none',

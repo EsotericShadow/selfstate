@@ -1104,6 +1104,7 @@ The first playable shell now has one normal-facing entry point: `Start here`.
 6. Surface the receipt in the normal HUD and play summary: physics path, local resident word, imperfect gloss, component, body expression, save/return match, and object-memory next action.
 7. Pin the receipt component into inspect-only canvas selection so the physical consequence is highlighted in the visible world.
 8. Save and return the pinned component as explicit normal-view continuity.
-9. Record a `start_here_player_path` receipt without opening advanced/debug controls.
+9. Recommend the ordinary `Objects` verb so the player can inspect the restored component through gameplay.
+10. Record a `start_here_player_path` receipt without opening advanced/debug controls.
 
 This is an integration gate, not a new simulation organ. It makes the existing first-playable loop discoverable from the primary player surface while preserving the rule that the avatar influences conditions instead of commanding residents.

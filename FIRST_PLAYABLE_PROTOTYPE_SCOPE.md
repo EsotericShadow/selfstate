@@ -1303,6 +1303,7 @@ Acceptance requires:
 - the normal HUD and play summary expose the receipt through player-facing terms: resident word, imperfect gloss, physical component, body expression, save/return match, and object-memory next action
 - the receipt component is selected through the inspect-only canvas-selection path and appears as a primary-surface visible cue
 - the selected receipt component survives a focused save/return with matching component, selection, cue, resident word, gloss, and body-expression evidence
+- the restored component becomes an ordinary `Objects` recommendation and can be consumed by a normal player action
 - the path records no direct resident command, no hidden-law normal-view exposure, and no tech-tree unlock
 - the first-playable milestone surface reports the Start Here path as ready only after the lived path has generated evidence
 

@@ -17,7 +17,11 @@ body {
     linear-gradient(135deg, #f5e8c7 0%, #d9c78f 48%, #98ad87 100%);
   font-family: Optima, Avenir Next, sans-serif;
 }
-.shell { max-width: 1320px; margin: 0 auto; padding: 22px; }
+.shell { display: flex; flex-direction: column; max-width: 1320px; margin: 0 auto; padding: 22px; }
+.hero { order: 1; }
+.game-prototype { order: 2; }
+.layout { order: 3; margin-top: 16px; }
+.audit-trace-details { order: 4; }
 .hero h1 { margin: 0; max-width: 1080px; font-size: clamp(2.3rem, 5.4vw, 6rem); line-height: 0.86; letter-spacing: -0.06em; }
 .eyebrow { text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.82rem; }
 .boundary { padding: 14px 16px; border-left: 10px solid var(--clay); background: var(--panel); }
@@ -116,6 +120,9 @@ body.player-mode-active .side-panel .dashboard {
 }
 body.player-mode-active .game-prototype {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+body.player-mode-active .play-summary-card {
+  grid-column: auto;
 }
 body.player-mode-active .prototype-card:not(.player-mode-keep) {
   display: none;

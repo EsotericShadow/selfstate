@@ -59,6 +59,32 @@ if (urlParams.get('reset') === '1') {
   [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, PROTOTYPE_SAVE_KEY, PROTOTYPE_ACCEPTANCE_KEY, WALKTHROUGH_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY].forEach(key => localStorage.removeItem(key));
 }
 
+let browserPersistenceState = {
+  mode: 'browser-local',
+  failedKey: null,
+  reason: 'ready',
+};
+
+function persistBrowserLocal(key, value) {
+  try {
+    localStorage.setItem(key, value);
+    return true;
+  } catch (error) {
+    browserPersistenceState = {
+      mode: 'session-memory',
+      failedKey: key,
+      reason: error && error.name === 'QuotaExceededError' ? 'browser storage limit reached' : 'browser storage write unavailable',
+    };
+    return false;
+  }
+}
+
+function formatBrowserPersistenceState() {
+  return browserPersistenceState.mode === 'browser-local'
+    ? 'browser-local ready'
+    : `session memory only; ${browserPersistenceState.reason}`;
+}
+
 let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   entered: false,
   tick: 0,
@@ -566,8 +592,8 @@ function log(event, payload) {
   const row = { event, tick: world.tick++, selected: world.selected, room: world.avatar.room, payload };
   world.replay.push(row);
   if (world.replay.length > 240) world.replay.shift();
-  localStorage.setItem(STATE_KEY, JSON.stringify(world));
-  localStorage.setItem(REPLAY_KEY, JSON.stringify(world.replay));
+  persistBrowserLocal(STATE_KEY, JSON.stringify(world));
+  persistBrowserLocal(REPLAY_KEY, JSON.stringify(world.replay));
   render();
   renderReturnContinuity();
   renderReturnGreetingContinuity();
@@ -1230,7 +1256,7 @@ function villageDayWeather(entropy, dayNumber) {
   return patterns[(entropy + dayNumber) % patterns.length];
 }
 
-function applyResourceDelta(resource, delta) {
+function applySingleResourceDelta(resource, delta) {
   if (!resource || !delta) return 0;
   const before = Number(world.resources[resource] || 0);
   world.resources[resource] = Math.max(0, Math.min(99, before + delta));
@@ -1246,9 +1272,9 @@ function endVillageDay(options = {}) {
   const entropy = deepTimeEntropyByte();
   const weather = villageDayWeather(entropy, dayNumber);
   const resourceDeltas = {};
-  const primaryDelta = applyResourceDelta(weather.material, weather.delta);
+  const primaryDelta = applySingleResourceDelta(weather.material, weather.delta);
   if (weather.material) resourceDeltas[weather.material] = primaryDelta;
-  const bonusDelta = applyResourceDelta(weather.bonus, weather.bonusDelta);
+  const bonusDelta = applySingleResourceDelta(weather.bonus, weather.bonusDelta);
   if (weather.bonus) resourceDeltas[weather.bonus] = bonusDelta;
   const weatherRow = {
     weather_id: `GPDW-${String(cycle.weatherLedger.length + 1).padStart(3, '0')}`,
@@ -3805,7 +3831,7 @@ function residentNeedSnapshot(name) {
   const dominant = energy < 0.35 ? 'rest' : comfort < 0.42 ? 'safety' : focus < 0.5 ? 'finish-work' : 'explore';
   return { energy, comfort, focus, dominant };
 }
-function applyResourceDelta(delta) {
+function applyResourceDeltaMap(delta) {
   Object.keys(delta).forEach(key => {
     world.resources[key] = Math.max(0, (world.resources[key] || 0) + delta[key]);
   });
@@ -3837,7 +3863,7 @@ function runStochasticConsequencePulse() {
     const value = event.delta[key];
     scaledDelta[key] = value < 0 && intensity > 1.1 ? value - 1 : value;
   });
-  applyResourceDelta(scaledDelta);
+  applyResourceDeltaMap(scaledDelta);
   let scheduleCoupling = '';
   if (pendingSlot && ['roof_leak', 'tool_snag', 'argument_echo'].includes(event.id)) {
     pendingSlot.status = event.id === 'argument_echo' ? 'stochastically disputed' : 'stochastically delayed';
@@ -5027,9 +5053,10 @@ function ensurePlayableSliceProposal(pressure) {
   if (!proposal) {
     proposal = {
       proposal_id: proposalId,
+      proposer: 'Nia',
       resident_proposer: 'Nia',
       problem_addressed: pressure.problem,
-      materials_needed: { fiber: 1, wood: 1, care: 1 },
+      materials_needed: ['fiber', 'wood', 'care'],
       likely_helpers: ['Ari', 'Fay'],
       resident_willingness: 0.74,
       known_objections: ['Milo worries that fiber stores are already strained', 'Ari wants a small test before broad adoption'],
@@ -5047,6 +5074,16 @@ function ensurePlayableSliceProposal(pressure) {
       hidden_law_normal_view: false,
     };
     board.projectProposals.push(proposal);
+  }
+  proposal.proposer = proposal.proposer || proposal.resident_proposer || 'Nia';
+  proposal.resident_proposer = proposal.resident_proposer || proposal.proposer;
+  if (!Array.isArray(proposal.materials_needed)) {
+    const legacyMaterials = proposal.materials_needed && typeof proposal.materials_needed === 'object'
+      ? Object.entries(proposal.materials_needed)
+        .filter(([, amount]) => Number(amount) > 0)
+        .map(([material]) => material)
+      : [];
+    proposal.materials_needed = legacyMaterials.length ? legacyMaterials : ['fiber', 'wood', 'care'];
   }
   proposal.current_support_level = Math.min(1, (proposal.current_support_level || 0) + 0.25);
   proposal.status = proposal.current_support_level >= 0.5 ? 'conditions supported; resident decision pending' : proposal.status;
@@ -5086,11 +5123,8 @@ function ensurePlayableSliceLanguageTerm(practice) {
       resident_word: 'taku-ren',
       player_gloss: 'roughly raised dry vessel repair habit',
       engine_concept: 'physics_to_practice_playable_slice',
-      roots: [
-        { sound: 'ta', gloss: 'dry/safe/sun-warmed', grounded_event: 'stored vessels fared better away from wet ground' },
-        { sound: 'ku', gloss: 'hollow vessel/container', grounded_event: 'clay vessels repeatedly carried stored material' },
-        { sound: 'ren', gloss: 'held above/tied up', grounded_event: 'supports and lashings kept vessels off wet ground' }
-      ],
+      roots: ['SND-TA', 'SND-KU', 'SND-REN'],
+      root_glosses: ['dry/safe', 'vessel/hollow thing', 'raised/held above'],
       origin_resident: practice.origin_resident,
       origin_household: practice.origin_household,
       origin_event: practice.origin_event,
@@ -5108,6 +5142,17 @@ function ensurePlayableSliceLanguageTerm(practice) {
     };
     materialWorld.language.terms.push(term);
   }
+  if (!Array.isArray(term.root_glosses)) {
+    term.root_glosses = Array.isArray(term.roots)
+      ? term.roots
+        .map(root => root && typeof root === 'object' ? root.gloss : null)
+        .filter(Boolean)
+      : [];
+  }
+  if (Array.isArray(term.roots) && term.roots.some(root => root && typeof root === 'object')) {
+    term.roots = ['SND-TA', 'SND-KU', 'SND-REN'];
+  }
+  if (!Array.isArray(term.variants)) term.variants = [];
   term.adoption_count = practice.adoption_count;
   term.current_status = practice.status === 'practical' ? 'practical household term' : 'emerging household term';
   return term;
@@ -5219,7 +5264,7 @@ function runPlayablePhysicsPracticeSliceStep(action = 'guided playable slice') {
 
   const proposal = ensurePlayableSliceProposal(pressure);
   recordPlayableSlicePhase('resident_proposal', {
-    public_summary: `${proposal.resident_proposer} proposes a repair/test instead of receiving a command`,
+    public_summary: `${proposal.proposer} proposes a repair/test instead of receiving a command`,
     audit_summary: `${proposal.proposal_id}, support=${proposal.current_support_level}`,
   });
 
@@ -10904,7 +10949,8 @@ function runTenMinutePlayableLoop() {
   const savedSlotId = latestSavedSlot ? latestSavedSlot.slot_id : savePayload.slotId || 'none';
   runNormalPlayWait();
   const objectAfterAway = playerObjectInteractionSnapshot('ten-minute-after-away');
-  const returnResult = runNormalPlayReturn();
+  runNormalPlayReturn();
+  const returnResult = returnPrototypeSlot();
   const returnPayload = returnResult && returnResult.payload ? returnResult.payload : {};
   const latestReturnEntry = world.gamePrototypeSaves && world.gamePrototypeSaves.returnLog && world.gamePrototypeSaves.returnLog.length ? world.gamePrototypeSaves.returnLog[world.gamePrototypeSaves.returnLog.length - 1] : null;
   const restoredSlotId = latestReturnEntry ? latestReturnEntry.slot_id : returnPayload.slotId || 'none';
@@ -11147,7 +11193,12 @@ function runFirstPlayableAmbientPhysicsHappyPath() {
   if (!Array.isArray(session.ambientPhysicsHappyPathLedger)) session.ambientPhysicsHappyPathLedger = [];
   session.runCount += 1;
   if (!world.entered) runPrototypeOpening();
-  runPlayerModeInterfaceLoop();
+  const playerMode = ensurePlayerModeInterface();
+  if (!playerMode.enabled) enterPlayerMode();
+  else {
+    updatePlayerModeInterfaceAcceptance();
+    applyPlayerModeClass();
+  }
   const actionRailBefore = world.gamePrototypeActionRail && world.gamePrototypeActionRail.actionLedger ? world.gamePrototypeActionRail.actionLedger.length : 0;
   const pathSteps = [];
   const runStep = (label, fn) => {
@@ -15972,7 +16023,7 @@ function formatPrototypeMaterialWorld() {
   const physics = sim.physics || { mode: 'stochastic physics first', gravity: 9.8, solver_layers: ['mass', 'support', 'collision/contact', 'friction', 'stochastic failure'], forceLedger: [], supportLedger: [], collisionLedger: [], failureLedger: [], fieldLedger: [], energyLedger: [], transformationLedger: [] };
   const structures = sim.structures.slice(-3).map(row => `${row.structure_id}: ${row.resident_term_id} / ${row.player_gloss}; stability=${row.stability}; moisture=${row.moisture_risk}; fixedAsset=${row.no_fixed_asset === false}`);
   const components = sim.components.slice(0, 8).map(row => `${row.component_id}: ${row.shape} ${row.material_id} ${row.affordance}; pos=(${row.position3d.x},${row.position3d.y},${row.position3d.z}); stability=${row.stability}; damage=${row.damage}; stress=${row.field_stress || 0}; temp=${row.temperature || 'n/a'}; term=${row.resident_term_id}`);
-	  const terms = sim.language.terms.map(row => `${row.resident_word} ~ ${row.player_gloss}; engine=${world.audit ? row.engine_concept : 'audit only'}; roots=${row.root_glosses.join('+')}; variants=${row.variants.join(', ')}; confidence=${row.translation_confidence}`);
+	  const terms = sim.language.terms.map(row => `${row.resident_word} ~ ${row.player_gloss}; engine=${world.audit ? row.engine_concept : 'audit only'}; roots=${(row.root_glosses || []).join('+') || 'none'}; variants=${(row.variants || []).join(', ') || 'none'}; confidence=${row.translation_confidence}`);
   const roots = sim.language.soundRoots.map(row => `${row.sound_form}: ${row.player_gloss}; grounded=${row.grounded_event}; adoption=${row.adoption_count}`);
   const pressureLanguageRows = (sim.language.soundPressureLedger || []).slice(-6).map(row => `${row.language_pressure_id}: ${row.resident_word} ~ ${row.player_gloss}; root=${row.sound_form}; pressure=${row.pressure_id}/${row.pressure_kind}; component=${row.component_id}; confidence=${row.translation_confidence}`);
 	  const latestPhysics = physics.latestStep;
@@ -16423,6 +16474,7 @@ function formatPrototypePlayerGuide() {
   const playableSlice = world.gamePrototypePlayableSlice || null;
   const villageDay03 = world.gamePrototypeVillageDay03 || null;
   const worldStage = world.gamePrototypeWorldStage || null;
+  const canvasSelection = world.gamePrototypeCanvasSelection || null;
   const walkthrough = world.gamePrototypeWalkthrough || null;
   const actionRail = world.gamePrototypeActionRail || null;
   const visiblePhysicsFollowRow = latestNormalRailVisiblePhysicsFollowRow(actionRail);
@@ -16435,7 +16487,6 @@ function formatPrototypePlayerGuide() {
   const worksite = world.gamePrototypeWorksite || null;
   const returnJournal = world.gamePrototypeReturnJournal || null;
   const playSession = world.gamePrototypePlaySession || null;
-  const canvasSelection = world.gamePrototypeCanvasSelection || null;
   const projects = world.gamePrototypeProjects || null;
   const commonsSupport = world.gamePrototypeCommonsSupport || null;
   const nearby = world.gamePrototypeNearbyActions || null;
@@ -17356,12 +17407,22 @@ function ensurePrototypeSaves() {
       boundary: 'browser-local prototype save slots; not production persistence',
     };
   }
-  return world.gamePrototypeSaves;
+  const saves = world.gamePrototypeSaves;
+  if (!Array.isArray(saves.slots)) saves.slots = [];
+  if (!Array.isArray(saves.returnLog)) saves.returnLog = [];
+  const highestSlotSequence = saves.slots.reduce((highest, row) => {
+    const match = /^GPS-(\d+)$/.exec(row && row.slot_id ? row.slot_id : '');
+    return match ? Math.max(highest, Number(match[1])) : highest;
+  }, 0);
+  if (!Number.isInteger(saves.nextSlotSequence) || saves.nextSlotSequence < highestSlotSequence) {
+    saves.nextSlotSequence = highestSlotSequence;
+  }
+  return saves;
 }
 
 function persistPrototypeSaves() {
   const saves = ensurePrototypeSaves();
-  localStorage.setItem(PROTOTYPE_SAVE_KEY, JSON.stringify(saves));
+  return persistBrowserLocal(PROTOTYPE_SAVE_KEY, JSON.stringify(saves));
 }
 
 function snapshotWorldForPrototypeSlot(saves) {
@@ -17843,7 +17904,8 @@ function savePrototypeSlot(label = 'manual prototype save') {
   const playerModeVisiblePhysicsFollowContinuity = playerModeVisiblePhysicsFollowContinuitySnapshot(world);
   const objectCueContinuity = objectInteractionCueContinuitySnapshot(world);
   const startHereComponentContinuity = startHereComponentContinuitySnapshot(world);
-  const slotNumber = saves.slots.length + 1;
+  saves.nextSlotSequence += 1;
+  const slotNumber = saves.nextSlotSequence;
   const slot = {
     slot_id: `GPS-${String(slotNumber).padStart(2, '0')}`,
     label,
@@ -18139,7 +18201,7 @@ function savePrototypeSlot(label = 'manual prototype save') {
 
 function returnPrototypeSlot() {
   const saves = ensurePrototypeSaves();
-  const slot = saves.slots.find(row => row.slot_id === saves.activeSlotId) || saves.slots[saves.slots.length - 1];
+  const slot = saves.slots.slice().reverse().find(row => row.slot_id === saves.activeSlotId) || saves.slots[saves.slots.length - 1];
   if (!slot || !slot.snapshot) return log('returnPrototypeSlot', { restored: false, reason: 'no prototype save slot' });
   const returnEntry = {
     slot_id: slot.slot_id,
@@ -18535,6 +18597,7 @@ function buildPrototypeAcceptanceReceipt() {
   const playableSlice = world.gamePrototypePlayableSlice || null;
   const villageDay03 = world.gamePrototypeVillageDay03 || null;
   const worldStage = world.gamePrototypeWorldStage || null;
+  const canvasSelection = world.gamePrototypeCanvasSelection || null;
   const walkthrough = world.gamePrototypeWalkthrough || null;
   const actionRail = world.gamePrototypeActionRail || null;
   const playerMode = world.gamePrototypePlayerMode || null;
@@ -19176,6 +19239,7 @@ function buildNormalPlayerHudSnapshot() {
     object_cue_return_recommendation: objectCueBias ? objectCueBias.label : 'none',
     milestone_progress: milestone ? `ready=${milestone.ready_rows}, partial=${milestone.partial_rows}, missing=${milestone.missing_rows}` : 'none',
     milestone_next: nextMilestoneRow ? `${nextMilestoneRow.label} / ${nextMilestoneRow.status} -> ${nextMilestoneRow.next_action}` : 'none',
+    persistence: formatBrowserPersistenceState(),
     boundary: 'normal player HUD only; no command, no hidden law, no tech unlock',
   };
 }
@@ -19198,6 +19262,7 @@ function formatNormalPlayerHud() {
     `<div>Start resident expression: <span>${hud.start_here_component_expression}</span> / ${hud.start_here_component_expression_word} ~ ${hud.start_here_component_expression_gloss}; component ${hud.start_here_component_expression_component}; action ${hud.start_here_component_expression_action}</div>`,
     `<div>Object memory: <span>${hud.object_cue_return_behavior}</span> / ${hud.object_cue_return_component} -> ${hud.object_cue_return_recommendation}</div>`,
     `<div>Start object memory: <span>${hud.start_here_object_memory}</span></div>`,
+    `<div>Persistence: <span>${hud.persistence}</span></div>`,
     `<div>Boundary: <span>${hud.boundary}</span></div>`,
   ].join('');
 }
@@ -19233,6 +19298,7 @@ function buildNormalPlaySummarySnapshot() {
     object_memory: objectCueBehavior ? `${objectCueBehavior.behavior_id} ${objectCueBehavior.behavior_kind} on ${objectCueBehavior.component_id}; recommend ${objectCueBias ? objectCueBias.label : 'none'}` : 'none',
     canvas_cue: latestCue ? latestCue.cue_id || latestCue.reason || 'visible cue' : 'none',
     session: session ? `steps=${session.stepLedger ? session.stepLedger.length : 0}; ready=${session.acceptanceReady === true}` : 'not started',
+    persistence: hud.persistence,
     boundary: 'summary reads existing public prototype state only; no command, no hidden law, no tech unlock',
   };
 }
@@ -19251,6 +19317,7 @@ function formatNormalPlaySummary() {
     `Start here receipt: ${summary.start_here}`,
     `Object memory: ${summary.object_memory}`,
     `Canvas cue: ${summary.canvas_cue}`,
+    `Persistence: ${summary.persistence}`,
     `Boundary: ${summary.boundary}`,
   ].join('\n');
 }
@@ -19258,8 +19325,21 @@ function formatNormalPlaySummary() {
 function updateNormalPlayerActionStripGuide() {
   if (typeof document === 'undefined') return { recommended_action: 'none', matched: false };
   const guide = derivePrototypePlayerGuide();
+  const playSession = world.gamePrototypePlaySession || null;
+  const needsStartHere = !playSession || playSession.startHereAcceptanceReady !== true;
+  const startHereComponentBias = startHereComponentReturnActionBias(latestStartHereComponentReturnForAction());
+  const recommendedAction = startHereComponentBias
+    ? startHereComponentBias.button
+    : needsStartHere
+      ? 'runFirstPlayableStartHere'
+      : guide.button;
+  const recommendationReason = startHereComponentBias
+    ? startHereComponentBias.reason
+    : needsStartHere
+      ? 'begin the compact player-facing path through physical change, resident response, save, return, and object memory'
+      : guide.why;
   const buttons = Array.from(document.querySelectorAll('#normalPlayerActionStrip [data-action]'));
-  const exactButton = buttons.find(button => button.getAttribute('data-action') === guide.button) || null;
+  const exactButton = buttons.find(button => button.getAttribute('data-action') === recommendedAction) || null;
   const fallbackButton = buttons.find(button => button.getAttribute('data-action') === 'runPrototypeGuidedStep') || null;
   const targetButton = exactButton || fallbackButton;
   let matched = false;
@@ -19267,11 +19347,11 @@ function updateNormalPlayerActionStripGuide() {
     const isRecommended = button === targetButton;
     button.classList.toggle('recommended-action', isRecommended);
     button.setAttribute('aria-current', isRecommended ? 'step' : 'false');
-    if (isRecommended) button.setAttribute('title', `Recommended: ${guide.why}`);
+    if (isRecommended) button.setAttribute('title', `Recommended: ${recommendationReason}`);
     if (!isRecommended) button.removeAttribute('title');
     matched = matched || isRecommended;
   });
-  return { recommended_action: guide.button || 'none', highlighted_action: targetButton ? targetButton.getAttribute('data-action') : 'none', matched };
+  return { recommended_action: recommendedAction || 'none', highlighted_action: targetButton ? targetButton.getAttribute('data-action') : 'none', matched };
 }
 
 function buildFirstPlayableMilestoneSnapshot() {
@@ -19564,7 +19644,7 @@ function recordResidentHistory(name, event, detail) {
     memory: resident.memory
   });
   history[name] = rows.slice(-14);
-  localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+  persistBrowserLocal(HISTORY_KEY, JSON.stringify(history));
   return history;
 }
 function interruptWork() {
@@ -19624,7 +19704,7 @@ function readRelationships() {
   }
 }
 function writeRelationships(graph) {
-  localStorage.setItem(RELATION_KEY, JSON.stringify(graph));
+  persistBrowserLocal(RELATION_KEY, JSON.stringify(graph));
   return graph;
 }
 function selectedRelationshipTarget(name = world.selected) {
@@ -20055,7 +20135,7 @@ function recordCheckpoint(label) {
     replayRows: world.replay.length
   });
   const trimmed = rows.slice(-18);
-  localStorage.setItem(CHECKPOINT_KEY, JSON.stringify(trimmed));
+  persistBrowserLocal(CHECKPOINT_KEY, JSON.stringify(trimmed));
   return trimmed;
 }
 function describeReplayRow(row) {

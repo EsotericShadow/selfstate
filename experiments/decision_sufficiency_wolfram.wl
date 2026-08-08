@@ -44,7 +44,10 @@ posteriorTable = Table[
   {p, beliefs}
 ];
 
-decisionClasses = GroupBy[posteriorTable, #optimalAction &];
+decisionClasses = GroupBy[
+  posteriorTable,
+  Lookup[#, "optimalAction"] &
+];
 
 (* Two histories with p=.4 and p=.6 require conflicting optimal actions.     *)
 (* If a representation merges them and they are equally likely, the best     *)
@@ -90,6 +93,19 @@ reuseInequality = Reduce[
 
 closedFormThreshold = k > m/(m - c);
 
+(* Prove that no real-valued counterexample to the algebraic equivalence      *)
+(* exists under the declared assumptions.                                    *)
+thresholdCounterexamples = Reduce[
+  Xor[
+    sharedLength[m, c, k] < localLength[m, k],
+    closedFormThreshold
+  ] && m > 0 && 0 <= c < m && k >= 1,
+  {m, c, k},
+  Reals
+];
+
+thresholdEquivalent = SameQ[thresholdCounterexamples, False];
+
 reuseExamples = Flatten[
   Table[
     <|
@@ -108,39 +124,30 @@ reuseExamples = Flatten[
 ];
 
 (* ------------------------------------------------------------------------- *)
-(* Verification tests.                                                       *)
+(* Verification checks.                                                      *)
 (* ------------------------------------------------------------------------- *)
 
-tests = TestReport[{
-  VerificationTest[
+checkResults = <|
+  "distinct-posteriors-same-optimal-action-0" -> SameQ[
     DeleteDuplicates[optimalAction /@ {1/10, 1/4, 2/5}],
-    {0},
-    TestID -> "distinct-posteriors-same-optimal-action-0"
+    {0}
   ],
-  VerificationTest[
+  "distinct-posteriors-same-optimal-action-1" -> SameQ[
     DeleteDuplicates[optimalAction /@ {3/5, 3/4, 9/10}],
-    {1},
-    TestID -> "distinct-posteriors-same-optimal-action-1"
+    {1}
   ],
-  VerificationTest[
+  "merged-conflicting-histories-positive-regret" -> SameQ[
     mergedRepresentationRegret,
-    1/10,
-    TestID -> "merged-conflicting-histories-positive-regret"
+    1/10
   ],
-  VerificationTest[
-    FullSimplify[
-      reuseInequality \[Equivalent] closedFormThreshold,
-      Assumptions -> {m > 0, 0 <= c < m, k >= 1}
-    ],
-    True,
-    TestID -> "reuse-threshold-equivalence"
-  ],
-  VerificationTest[
-    sharedLength[4, 1, 2] < localLength[4, 2],
-    True,
-    TestID -> "shared-latent-cheaper-example"
+  "reuse-threshold-equivalence" -> thresholdEquivalent,
+  "shared-latent-cheaper-example" -> TrueQ[
+    sharedLength[4, 1, 2] < localLength[4, 2]
   ]
-}];
+|>;
+
+testsSucceeded = Count[Values[checkResults], True];
+testsFailed = Count[Values[checkResults], False];
 
 result = <|
   "posteriorCounterexample" -> <|
@@ -159,14 +166,16 @@ result = <|
   "reusePressure" -> <|
     "symbolicCondition" -> ToString[reuseInequality, InputForm],
     "closedFormThreshold" -> ToString[closedFormThreshold, InputForm],
+    "thresholdCounterexamples" -> ToString[thresholdCounterexamples, InputForm],
     "examples" -> reuseExamples,
     "limitation" ->
       "The same compression advantage applies to persistent external world state. Reuse alone does not identify a self-equivalent boundary."
   |>,
-  "testsSucceeded" -> tests["TestsSucceeded"],
-  "testsFailed" -> tests["TestsFailed"]
+  "checks" -> checkResults,
+  "testsSucceeded" -> testsSucceeded,
+  "testsFailed" -> testsFailed
 |>;
 
 Print[ExportString[result, "RawJSON"]];
 
-If[tests["TestsFailed"] > 0, Exit[1], Exit[0]];
+If[testsFailed > 0, Exit[1], Exit[0]];

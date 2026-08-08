@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this research program, software, experiments, or artifacts, cite the repository and the exact commit used."
+title: "SelfState: A Falsifiable Research Program for Self-Equivalent Control State"
+type: software
+authors:
+  - family-names: "Lacroix"
+    given-names: "Gabriel"
+    alias: "EsotericShadow"
+abstract: >-
+  SelfState is an independent computational research program investigating when
+  an adaptive controller benefits from preserving a persistent representation
+  of the continuing system that is acting. The project studies decision-relevant
+  agent state under partial observability, including action-effect dynamics,
+  viability, capability, commitments, recovery, and continuity. It explicitly
+  distinguishes self-equivalent control state from generic hidden-state tracking
+  and does not claim to detect or produce consciousness.
+repository-code: "https://github.com/EsotericShadow/selfstate"
+url: "https://github.com/EsotericShadow/selfstate"
+keywords:
+  - "reinforcement learning"
+  - "partially observable control"
+  - "state representation"
+  - "robot self-modeling"
+  - "predictive control"
+  - "interoception"
+  - "agent state"
+  - "causal representation learning"

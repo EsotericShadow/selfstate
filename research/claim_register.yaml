@@ -1,0 +1,290 @@
+schema_version: "1.0"
+project: "SelfState"
+last_reviewed: "2026-08-07"
+status_note: >-
+  This register separates repository hypotheses from established background,
+  bounded simulation evidence, negative evidence, and unsupported inference.
+  Internal pass gates are engineering acceptance criteria, not statistical or
+  peer-review verdicts.
+
+claim_levels:
+  C0: "Implementation and artifact integrity"
+  C1: "Mechanism possibility in a bounded benchmark"
+  C2: "Robust recovery across controls, seeds, or architectures"
+  C3: "Comparative advantage under matched resource budgets"
+  C4: "Attractor evidence across independent learning systems"
+  C5: "Benchmark-relative necessity with positive regret lower bound"
+  C6: "Generalization across systems plus independent replication"
+
+claims:
+  - id: "SS-H0"
+    name: "Partial-observability baseline"
+    statement: >-
+      When the current observation is not sufficient for control, a controller
+      may benefit from memory, belief state, predictive state, or another history
+      representation.
+    novelty: "established_background"
+    status: "established_in_literature_and_reproduced_in_toys"
+    current_level: "C1"
+    evidence:
+      literature:
+        - "kaelbling1998planning"
+        - "littman2001predictive"
+        - "wang2023belief"
+      repository:
+        - "docs/06_minimal_experiment_report.md"
+        - "docs/61_ssrm_3d_recurrent_observer_report.md"
+        - "docs/62_ssrm_3d_learned_controller_report.md"
+    counterevidence_or_limits:
+      - "Low-pressure spatial stages do not benefit materially from recurrence."
+      - "This claim does not distinguish self state from world state."
+    excluded_inferences:
+      - "Memory implies selfhood."
+      - "Recurrent state implies consciousness."
+
+  - id: "SS-H1"
+    name: "Agent-state decision relevance"
+    statement: >-
+      Hidden properties of the continuing controlled system become necessary
+      relative to a self-blind representation when matched histories differ in
+      agent-state belief and require disjoint optimal actions.
+    novelty: "formalized_repository_claim"
+    status: "formal_proposition_defined_strong_benchmark_test_open"
+    current_level: "C1"
+    evidence:
+      repository:
+        - "docs/05_formal_core_v2.md"
+        - "experiments/decision_sufficiency_wolfram.wl"
+        - "docs/06_minimal_experiment_report.md"
+    counterevidence_or_limits:
+      - "Full posterior recovery is not generally necessary."
+      - "A smaller policy-sufficient quotient may solve the task."
+      - "No large-scale regret lower bound has yet been established."
+    strongest_next_test: >-
+      Construct conflicting-history pairs matched on world information, estimate
+      optimal-action gaps, and measure the minimum regret imposed by every model
+      in a declared self-blind comparator class.
+    falsifiers:
+      - >-
+        An equally compact self-blind representation preserves optimal action
+        and transfer across the declared task family.
+      - >-
+        The apparent agent-state distinction disappears when world information
+        and compute budgets are matched.
+    excluded_inferences:
+      - "The complete posterior over agent state is required."
+      - "The representation must be explicit or interpretable."
+
+  - id: "SS-H2"
+    name: "Self-world attribution"
+    statement: >-
+      Action-conditioned representation can separate changed agent/action-effect
+      dynamics from changed external dynamics when observations alone are
+      ambiguous.
+    novelty: "extension_of_forward_model_and_robot_self_modeling_literature"
+    status: "supported_in_bounded_toy_benchmarks"
+    current_level: "C2"
+    evidence:
+      literature:
+        - "wolpert1995internal"
+        - "crapse2008corollary"
+        - "straka2018predictive"
+        - "bongard2006resilient"
+      repository:
+        - "docs/06_minimal_experiment_report.md"
+        - "docs/07_representation_search_report.md"
+        - "docs/08_predictive_state_emergence_report.md"
+        - "docs/15_selfhood_boundary_probe_report.md"
+        - "docs/16_architecture_convergence_report.md"
+    counterevidence_or_limits:
+      - "Useful controllable external variables can mimic action alignment."
+      - "Detachable-tool boundary recovery remains difficult."
+      - "Some architecture and seed sweeps are only partially convergent."
+    strongest_next_test: >-
+      Learn the boundary across held-out bodies and detachable tools using
+      interventions not supplied during training or representation discovery.
+    falsifiers:
+      - "World-state or tool-state interventions produce the same boundary signature."
+      - "Generic recurrence matches transfer with no stable agent-bounded factor."
+    excluded_inferences:
+      - "Agency attribution equals persistent identity."
+      - "Action correlation alone identifies self state."
+
+  - id: "SS-H3"
+    name: "Viability and capability control"
+    statement: >-
+      A persistent estimate of hidden internal viability or capability improves
+      long-horizon control when current actions change future ability, survival,
+      or available options.
+    novelty: "extension_of_homeostatic_and_allostatic_control"
+    status: "supported_in_bounded_simulations"
+    current_level: "C2"
+    evidence:
+      literature:
+        - "keramati2014homeostatic"
+        - "petzschner2021interoception"
+        - "sennesh2022allostasis"
+      repository:
+        - "docs/09_hidden_viability_survival_report.md"
+        - "docs/61_ssrm_3d_recurrent_observer_report.md"
+        - "docs/62_ssrm_3d_learned_controller_report.md"
+    counterevidence_or_limits:
+      - "Future-viability targets can make internal variables easier to decode by design."
+      - "Direct learned-policy edits remain weak in important reports."
+      - "Hand-designed policies and source traces remain in parts of the stack."
+    strongest_next_test: >-
+      Train online from return across held-out viability dynamics, then discover
+      and edit an agent-state factor without using viability labels.
+    falsifiers:
+      - "A matched world-only or generic-memory model achieves equal regret and transfer."
+      - "Ablating the proposed internal factor does not selectively alter policy value."
+    excluded_inferences:
+      - "Homeostatic regulation is consciousness."
+      - "An internal variable is self-equivalent merely because it is internal."
+
+  - id: "SS-H4"
+    name: "Cross-context reuse and compression"
+    statement: >-
+      Under representation cost, a shared decision-relevant latent should become
+      more competitive as more contexts and future decisions depend on the same
+      persistent hidden variable.
+    novelty: "repository_attractor_precursor"
+    status: "conditional_toy_support_boundary_not_established_by_compression"
+    current_level: "C2"
+    evidence:
+      literature:
+        - "littman2001predictive"
+        - "ni2024bridging"
+        - "zhang2021invariant"
+      repository:
+        - "docs/07_representation_search_report.md"
+        - "docs/23_cross_context_self_reuse_report.md"
+        - "docs/24_reuse_pressure_sweep_report.md"
+        - "docs/37_horizon_pressure_sweep_report.md"
+        - "experiments/decision_sufficiency_wolfram.wl"
+    counterevidence_or_limits:
+      - "Persistent external world state has the same compression advantage."
+      - "Compression alone does not identify causal semantics."
+      - "Candidate representation families are often designed or constrained."
+    strongest_next_test: >-
+      Run a matched information-bottleneck sweep where the reusable latent is
+      alternately agent-bounded, external, detachable, independent, or irrelevant.
+    falsifiers:
+      - "Shared agent-state does not gain relative value as reuse pressure increases."
+      - "The selected latent follows scenario labels or task-local correlations."
+    excluded_inferences:
+      - "A compressed latent is automatically a self."
+      - "Reuse pressure is a theorem of natural emergence."
+
+  - id: "SS-H5"
+    name: "Learned causal policy use"
+    statement: >-
+      Under agent-state pressure, learned recurrent policy state should carry a
+      causally active agent-bounded factor whose intervention changes action or
+      value in the predicted direction.
+    novelty: "central_empirical_target"
+    status: "partial"
+    current_level: "C2"
+    evidence:
+      repository:
+        - "docs/61_ssrm_3d_recurrent_observer_report.md"
+        - "docs/62_ssrm_3d_learned_controller_report.md"
+        - "docs/97_ssrm_3d_return_selected_hidden_regime_controller_report.md"
+    counterevidence_or_limits:
+      - "Observer edits are stronger than direct policy edits."
+      - "Learned-controller action-edit swings are small."
+      - "Social/culture ablations are unstable in several experiments."
+      - "Return-selected models are still trained from designed traces."
+    strongest_next_test: >-
+      Discover a policy-state factor without evaluation labels and compare
+      directional edits against equal-norm random, world, passive-internal, and
+      detachable-tool directions on held-out worlds.
+    falsifiers:
+      - "The factor is decodable but policy and value are invariant to intervention."
+      - "Causal effects disappear outside the training simulator family."
+    excluded_inferences:
+      - "Decodability proves use."
+      - "High task return proves self-equivalent boundary discovery."
+
+  - id: "SS-H6"
+    name: "Continuity and ownership"
+    statement: >-
+      Identity-like control requires a representation that distinguishes which
+      memories, commitments, social records, restore state, and branch history
+      belong to the same continuing controlled process.
+    novelty: "synthetic_continuity_hypothesis"
+    status: "bounded_precursor"
+    current_level: "C1"
+    evidence:
+      repository:
+        - "docs/10_interruption_coherence_report.md"
+        - "docs/69_ssrm_3d_agent_continuity_report.md"
+    counterevidence_or_limits:
+      - "Current records are synthetic and designed."
+      - "A smaller non-identity task-state record may reproduce the behavior."
+      - "Continuity behavior does not imply phenomenal persistence."
+    strongest_next_test: >-
+      Independently corrupt weights, generic memory, body state, commitments,
+      social history, tools, event position, and branch identity, then identify
+      the minimal record required across held-out continuation tasks.
+    falsifiers:
+      - "Task-local memory solves continuation with no stable ownership index."
+      - "A strictly smaller record reproduces all declared continuity endpoints."
+    excluded_inferences:
+      - "Restore continuity establishes a metaphysical identity."
+      - "Continuity records imply subjective experience."
+
+  - id: "SS-H7"
+    name: "General self-state attractor"
+    statement: >-
+      As agent-state reuse, horizon, drift, and action/value dependence increase,
+      independent constrained learners should increasingly converge on a shared
+      agent-bounded decision quotient.
+    novelty: "highest_level_repository_hypothesis"
+    status: "open"
+    current_level: "C3"
+    evidence:
+      repository:
+        - "docs/16_architecture_convergence_report.md"
+        - "docs/47_architecture_boundary_stress_test_report.md"
+        - "docs/54_architecture_policy_gradient_seed_sweep_report.md"
+        - "docs/55_architecture_policy_gradient_budget_sweep_report.md"
+        - "docs/56_architecture_torch_actor_critic_report.md"
+    counterevidence_or_limits:
+      - "Hard-return and online-return convergence is partial."
+      - "Seed stability is mixed."
+      - "Detachable-tool and social boundaries remain difficult."
+      - "The environment and learner families remain internally designed."
+      - "There is no independent replication."
+    strongest_next_test: >-
+      Freeze a compact cross-environment benchmark and test convergence
+      probability across independently implemented learner families, optimizers,
+      seeds, embodiments, and external reproduction teams.
+    falsifiers:
+      - "Convergence probability does not increase with the predicted pressures."
+      - "Recovered factors track environment identity rather than agent boundary."
+      - "Only one architecture or optimizer family recovers the factor."
+    excluded_inferences:
+      - "The attractor law is already established."
+      - "A general selfhood law follows from report count."
+
+  - id: "SS-H8"
+    name: "Consciousness"
+    statement: >-
+      Current experiments do not test whether any simulated or learned system has
+      subjective experience.
+    novelty: "explicit_exclusion"
+    status: "not_tested_and_outside_current_scope"
+    current_level: "C0"
+    evidence:
+      repository:
+        - "SCIENTIFIC_STATUS.md"
+        - "docs/05_formal_core_v2.md"
+        - "docs/14_hidden_state_boundary_attack.md"
+    counterevidence_or_limits:
+      - "Behavioral richness, recurrence, language, affective-control state, and continuity are not consciousness measures."
+    strongest_next_test: "None within the current control-state research program."
+    falsifiers: []
+    excluded_inferences:
+      - "Self-equivalent control state implies consciousness."
+      - "The repository has created moral patients."

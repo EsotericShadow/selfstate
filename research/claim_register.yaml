@@ -218,7 +218,7 @@ claims:
     evidence:
       repository:
         - "docs/10_interruption_coherence_report.md"
-        - "docs/69_ssrm_3d_agent_continuity_report.md"
+        - "docs/68_ssrm_3d_agent_continuity_report.md"
     counterevidence_or_limits:
       - "Current records are synthetic and designed."
       - "A smaller non-identity task-state record may reproduce the behavior."
@@ -246,10 +246,10 @@ claims:
     evidence:
       repository:
         - "docs/16_architecture_convergence_report.md"
-        - "docs/47_architecture_boundary_stress_test_report.md"
-        - "docs/54_architecture_policy_gradient_seed_sweep_report.md"
-        - "docs/55_architecture_policy_gradient_budget_sweep_report.md"
-        - "docs/56_architecture_torch_actor_critic_report.md"
+        - "docs/49_architecture_boundary_stress_report.md"
+        - "docs/57_architecture_policy_gradient_seed_sweep_report.md"
+        - "docs/58_architecture_policy_gradient_budget_sweep_report.md"
+        - "docs/59_architecture_torch_actor_critic_report.md"
     counterevidence_or_limits:
       - "Hard-return and online-return convergence is partial."
       - "Seed stability is mixed."
